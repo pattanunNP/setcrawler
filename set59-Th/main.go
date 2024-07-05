@@ -124,8 +124,9 @@ func main() {
 	step := 30 * 24 * time.Hour
 	dateRanges := generateDateRanges(startDate, endDate, step)
 
+	processRecords := make(map[string]bool)
 	resultCount := 0
-	const maxResults = 30
+	const maxResults = 10
 
 	for _, dropdownValue := range dropdownValues {
 		for _, dateRange := range dateRanges {
@@ -150,7 +151,9 @@ func main() {
 				continue
 			}
 
-			printRecordsAsJSON(records, recordsEN)
+			// Filter out records
+			uniqRecords, uniqRecordsEN := filterRedanduntRecords(records, recordsEN, processRecords)
+			printRecordsAsJSON(uniqRecords, uniqRecordsEN)
 
 			resultCount++
 			if resultCount >= maxResults {
@@ -528,4 +531,28 @@ func postFormData(postURL string, formData FormData) (string, error) {
 	}
 
 	return string(body), nil
+}
+
+func filterRedanduntRecords(records []Record, recordsEN []RecordEN, processedRecords map[string]bool) ([]Record, []RecordEN) {
+	var uniqRecords []Record
+	var uniqRecodesEn []RecordEN
+
+	// filter thai Records
+	for _, record := range records {
+		uniqId := record.BatchNo
+		if !processedRecords[uniqId] {
+			uniqRecords = append(uniqRecords, record)
+			processedRecords[uniqId] = true
+		}
+	}
+
+	// filter English Records
+	for _, recordEN := range recordsEN {
+		uniqId := recordEN.BatchNo
+		if !processedRecords[uniqId] {
+			uniqRecodesEn = append(uniqRecodesEn, recordEN)
+			processedRecords[uniqId] = true
+		}
+	}
+	return uniqRecords, uniqRecodesEn
 }
