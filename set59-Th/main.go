@@ -8,6 +8,7 @@ import (
 	"log"
 	"net/http"
 	"net/url"
+	"os"
 	"strconv"
 	"strings"
 	"time"
@@ -154,6 +155,16 @@ func main() {
 			// Filter out records
 			uniqRecords, uniqRecordsEN := filterRedanduntRecords(records, recordsEN, processRecords)
 			printRecordsAsJSON(uniqRecords, uniqRecordsEN)
+
+			// Save records to file
+			err = saveRecordsToFile("records_th.json", uniqRecords)
+			if err != nil {
+				log.Printf("Failed to save records to file: %v\n", err)
+			}
+			err = saveRecordsToFile("records_en.json", uniqRecordsEN)
+			if err != nil {
+				log.Printf("Failed to save recordsEN to file: %v\n", err)
+			}
 
 			resultCount++
 			if resultCount >= maxResults {
@@ -555,4 +566,21 @@ func filterRedanduntRecords(records []Record, recordsEN []RecordEN, processedRec
 		}
 	}
 	return uniqRecords, uniqRecodesEn
+}
+
+func saveRecordsToFile(filename string, records interface{}) error {
+	file, err := os.Create(filename)
+	if err != nil {
+		return nil
+	}
+	defer file.Close()
+
+	encoder := json.NewEncoder(file)
+	encoder.SetIndent("", " ")
+	err = encoder.Encode(records)
+	if err != nil {
+		return err
+	}
+
+	return nil
 }
