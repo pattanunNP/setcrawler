@@ -1,0 +1,40 @@
+[
+ {
+  "batch_no": "592000401902",
+  "company": "บริษัท ควอลิตี้เฮ้าส์ จำกัด (มหาชน)",
+  "reporter": "นาย อดิศักดิ์ ศรีสุข",
+  "position": "ผู้บริหาร (ผู้ช่วยกรรมการผู้จัดการ)",
+  "trans_executor": "ผู้รายงาน",
+  "secu_type": "หุ้นสามัญ",
+  "trans_date": "2018-01-10T00:00:00Z",
+  "outstanding_before": "23,333 *",
+  "trans_volumn": "23,300",
+  "avg_price": 3.14,
+  "outstanding_after": "33",
+  "trans_type": "ขาย (-)",
+  "market_source": "ทำรายการผ่านตลาดหลักทรัพย์ (Auto Matching) (บริษัท หลักทรัพย์ เอเซีย พลัส จำกัด)",
+  "target_info": "- (-)",
+  "record_status": "NORMAL",
+  "trans_id": "103181_2_1",
+  "reporter_url": "CTRL_P_0000107852"
+ },
+ {
+  "batch_no": "592014342003",
+  "company": "บริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน)",
+  "reporter": "นาย วรพันธ์ ช้อนทอง",
+  "position": "กรรมการ (CFO)",
+  "trans_executor": "ผู้รายงาน",
+  "secu_type": "หุ้นสามัญ",
+  "trans_date": "2018-01-16T00:00:00Z",
+  "outstanding_before": "2,355,285 *",
+  "trans_volumn": "1,121,000",
+  "avg_price": 26,
+  "outstanding_after": "1,234,285",
+  "trans_type": "ขาย (ขาย(เป็นการทำรายการผ่านนางสาวปรียา วงศ์ส่องจ้า))",
+  "market_source": "ทำรายการผ่านตลาดหลักทรัพย์ (Auto Matching) (บริษัท หลักทรัพย์ซีจีเอส-ซีไอเอ็มบี (ประเทศไทย) จำกัด)",
+  "target_info": "เป็นการทำรายการผ่านนางสาวปรียา วงศ์ส่องจ้า",
+  "record_status": "NORMAL",
+  "trans_id": "111385_2_1",
+  "reporter_url": "CTRL_P_0000011713"
+ }
+]

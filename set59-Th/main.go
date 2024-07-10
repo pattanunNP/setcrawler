@@ -99,13 +99,17 @@ type RecordEN struct {
 }
 
 type FormData struct {
-	Company  string `json:"ctl00$CPH$ddlCompany"`
-	DateType string `json:"ctl00$CPH$rblDateType"`
-	DateFrom string `json:"ctl00$CPH$BSDateFrom"`
-	DateTo   string `json:"ctl00$CPH$BSDateTo"`
+	Company            string `json:"ctl00$CPH$ddlCompany"`
+	DateType           string `json:"ctl00$CPH$rblDateType"`
+	DateFrom           string `json:"ctl00$CPH$BSDateFrom"`
+	DateTo             string `json:"ctl00$CPH$BSDateTo"`
+	ViewState          string `json:"__VIEWSTATE"`
+	ViewStateGenerator string `json:"__VIEWSTATEGENERATOR"`
+	EventValidation    string `json:"__EVENTVALIDATION"`
 }
 
 func main() {
+	defer handlePanic()
 	initialURL := "https://market.sec.or.th/public/idisc/th/r59"
 
 	dropdownValues, err := getDropDownValues(initialURL)
@@ -121,21 +125,30 @@ func main() {
 	// Simulate date
 	startDate := time.Date(1975, 4, 30, 0, 0, 0, 0, time.UTC)
 	endDate := time.Now()
+	// startDate, endDate := getRandomTenYearPeriod()
 
 	step := 30 * 24 * time.Hour
 	dateRanges := generateDateRanges(startDate, endDate, step)
 
 	processRecords := make(map[string]bool)
-	resultCount := 0
-	const maxResults = 10
+	// resultCount := 0
+	// const maxResults = 10
 
 	for _, dropdownValue := range dropdownValues {
 		for _, dateRange := range dateRanges {
+			viewState, viewStateGenerator, evenValidation, err := getHiddenFields(initialURL)
+			if err != nil {
+				log.Fatalf("Failed to get hidden fields: %v\n", err)
+			}
+
 			formData := FormData{
-				Company:  dropdownValue,
-				DateType: radioValue,
-				DateFrom: dateRange.DateFrom,
-				DateTo:   dateRange.DateTo,
+				Company:            dropdownValue,
+				DateType:           radioValue,
+				DateFrom:           dateRange.DateFrom,
+				DateTo:             dateRange.DateTo,
+				ViewState:          viewState,
+				ViewStateGenerator: viewStateGenerator,
+				EventValidation:    evenValidation,
 			}
 
 			responseBody, err := postFormData(initialURL, formData)
@@ -166,15 +179,43 @@ func main() {
 				log.Printf("Failed to save recordsEN to file: %v\n", err)
 			}
 
-			resultCount++
-			if resultCount >= maxResults {
-				fmt.Println("Reached the maximum number of results. Stopping..")
-				return
-			}
+			// resultCount++
+			// if resultCount >= maxResults {
+			// 	fmt.Println("Reached the maximum number of results. Stopping..")
+			// 	return
+			// }
 		}
 	}
 
 	//fmt.Println(dropdownValues)
+}
+
+func handlePanic() {
+	if r := recover(); r != nil {
+		log.Printf("Program crashed with error: %v\n", r)
+	}
+}
+
+func getHiddenFields(url string) (string, string, string, error) {
+	res, err := http.Get(url)
+	if err != nil {
+		return "", "", "", err
+	}
+	defer res.Body.Close()
+	if res.StatusCode != 200 {
+		return "", "", "", fmt.Errorf("status code error: %d %s", res.StatusCode, res.Status)
+	}
+
+	doc, err := goquery.NewDocumentFromReader(res.Body)
+	if err != nil {
+		return "", "", "", err
+	}
+
+	viewState, _ := doc.Find("input[name='__VIEWSTATE']").Attr("value")
+	viewStateGenerator, _ := doc.Find("input[name='__VIEWSTATEGENERATOR']").Attr("value")
+	eventValidation, _ := doc.Find("input[name='__EVENTVALIDATION']").Attr("value")
+
+	return viewState, viewStateGenerator, eventValidation, nil
 }
 
 func collectContent(responseBody string) ([]Record, []RecordEN) {
@@ -226,6 +267,16 @@ func collectContent(responseBody string) ([]Record, []RecordEN) {
 
 	return allRecords, allRecordEN
 }
+
+// func getRandomTenYearPeriod() (time.Time, time.Time) {
+// 	rand.Seed(time.Now().UnixNano())
+// 	currentTime := time.Now()
+// 	maxStartYear := currentTime.Year()
+// 	startYear := rand.Intn(maxStartYear-1975) + 1975
+// 	startDate := time.Date(startYear, time.Month(rand.Intn(12)+1), rand.Intn(28)+1, 0, 0, 0, 0, time.UTC)
+// 	endDate := startDate.AddDate(10, 0, 0)
+// 	return startDate, endDate
+// }
 
 func collectContentFromLink(batchNo, transId, reporterParam string) ([]Record, []RecordEN) {
 	postURL := "https://market.sec.or.th/r59/publicapi/report"
@@ -306,7 +357,7 @@ func collectContentFromLink(batchNo, transId, reporterParam string) ([]Record, [
 	// Iterate over all transactions and create a record for each in Thai
 	for _, transaction := range apiResponseTh.Report.TransactionList {
 		// Convert TransDate to ISO 8601 format
-		transDateISO, err := convertDateToISO8601(transaction.TransDate)
+		transDateISO, err := convertThaiDateToISO8601(transaction.TransDate)
 		if err != nil {
 			log.Printf("Failed to convert date: %s\n", transaction.TransDate)
 			continue
@@ -380,6 +431,16 @@ func collectContentFromLink(batchNo, transId, reporterParam string) ([]Record, [
 	}
 
 	return records, recordsEN
+}
+
+func convertThaiDateToISO8601(dateStr string) (string, error) {
+	const inputFormat = "02/01/2006"
+	parsedDate, err := time.Parse(inputFormat, dateStr)
+	if err != nil {
+		return "", err
+	}
+
+	return parsedDate.AddDate(-543, 0, 0).Format(time.RFC3339), nil
 }
 
 func convertDateToISO8601(dateStr string) (string, error) {
@@ -516,6 +577,10 @@ func postFormData(postURL string, formData FormData) (string, error) {
 	form.Set("ctl00$CPH$rblDateType", formData.DateType)
 	form.Set("ctl00$CPH$BSDateFrom", formData.DateFrom)
 	form.Set("ctl00$CPH$BSDateTo", formData.DateTo)
+	form.Set("__VIEWSTATE", formData.ViewState)
+	form.Set("__VIEWSTATEGENERATOR", formData.ViewStateGenerator)
+	form.Set("__EVENTVALIDATION", formData.EventValidation)
+	form.Set("ctl00$CPH$btSearch", "ค้นหา")
 
 	req, err := http.NewRequest("POST", postURL, bytes.NewBufferString(form.Encode()))
 	if err != nil {
