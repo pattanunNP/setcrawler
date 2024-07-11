@@ -8,7 +8,6 @@ import (
 	"log"
 	"net/http"
 	"net/url"
-	"os"
 	"strconv"
 	"strings"
 	"time"
@@ -16,7 +15,56 @@ import (
 	"github.com/PuerkitoBio/goquery"
 )
 
-// Define the Transaction struct
+// Define the Table struct to store the extracted table data
+type Record struct {
+	CompanyName  string `json:"company_name"`
+	Reporter     string `json:"reporter"`
+	Relation     string `json:"relation"`
+	AssetType    string `json:"asset_type"`
+	TransDate    string `json:"trans_date"`
+	Amount       string `json:"amount"`
+	Price        string `json:"price"`
+	MarketSource string `json:"market_source"`
+	Note         Note   `json:"note"`
+}
+
+type Note struct {
+	BatchNo           string  `json:"batch_no"`
+	Company           string  `json:"company"`
+	Reporter          string  `json:"reporter"`
+	Position          string  `json:"position"`
+	TransExecutor     string  `json:"trans_executor"`
+	SecuType          string  `json:"secu_type"`
+	TransDate         string  `json:"trans_date"`
+	OutstandingBefore string  `json:"outstanding_before"`
+	TransVolumn       string  `json:"trans_volumn"`
+	AvgPrice          float64 `json:"avg_price"`
+	OutstandingAfter  string  `json:"outstanding_after"`
+	TransType         string  `json:"trans_type"`
+	MarketSource      string  `json:"market_source"`
+	TargetInfo        string  `json:"target_info"`
+	RecordStatus      string  `json:"record_status"`
+	TransId           string  `json:"trans_id"`
+	ReporterUrl       string  `json:"reporter_url"`
+	Language          string  `json:"language"`
+}
+
+type TableData struct {
+	Records []Record `json:"records"`
+}
+
+type ApiResponse struct {
+	Report Report `json:"Report"`
+}
+
+type Report struct {
+	BatchNo         string        `json:"BatchNo"`
+	Company         string        `json:"Company"`
+	Reporter        string        `json:"Reporter"`
+	Position        string        `json:"Position"`
+	TransactionList []Transaction `json:"TransactionList"`
+}
+
 type Transaction struct {
 	TransExecutor     string `json:"TransExecutor"`
 	SecuType          string `json:"SecuType"`
@@ -31,459 +79,51 @@ type Transaction struct {
 	RecordStatus      string `json:"RecordStatus"`
 }
 
-// Define the Report struct
-type Report struct {
-	BatchNo          string        `json:"BatchNo"`
-	Company          string        `json:"Company"`
-	Reporter         string        `json:"Reporter"`
-	Position         string        `json:"Position"`
-	SubmitDate       string        `json:"SubmitDate"`
-	BusinessTypeCode string        `json:"BusinessTypeCode"`
-	PrintDate        string        `json:"PrintDate"`
-	TransactionList  []Transaction `json:"TransactionList"`
-}
-
-// Define the ResponseStatus struct
-type ResponseStatus struct {
-	Seq    int     `json:"Seq"`
-	Value  string  `json:"Value"`
-	TextTh *string `json:"TextTh"`
-	TextEn *string `json:"TextEn"`
-}
-
-// Define the ApiResponse struct
-type ApiResponse struct {
-	ResponseStatus ResponseStatus `json:"ResponseStatus"`
-	Report         Report         `json:"Report"`
-}
-
-// Define the Record struct to store desired fields
-type Record struct {
-	BatchNo           string  `json:"batch_no"`
-	Company           string  `json:"company"`
-	Reporter          string  `json:"reporter"`
-	Position          string  `json:"position"`
-	TransExecutor     string  `json:"trans_executor"`
-	SecuType          string  `json:"secu_type"`
-	TransDate         string  `json:"trans_date"`
-	OutstandingBefore string  `json:"outstanding_before"`
-	TransVolumn       string  `json:"trans_volumn"`
-	AvgPrice          float64 `json:"avg_price"`
-	OutstandingAfter  string  `json:"outstanding_after"`
-	TransType         string  `json:"trans_type"`
-	MarketSource      string  `json:"market_source"`
-	TargetInfo        string  `json:"target_info"`
-	RecordStatus      string  `json:"record_status"`
-	TransId           string  `json:"trans_id"`
-	ReporterUrl       string  `json:"reporter_url"`
-}
-
-type RecordEN struct {
-	BatchNo           string  `json:"batch_no"`
-	Company           string  `json:"company"`
-	Reporter          string  `json:"reporter"`
-	Position          string  `json:"position"`
-	TransExecutor     string  `json:"trans_executor"`
-	SecuType          string  `json:"secu_type"`
-	TransDate         string  `json:"trans_date"`
-	OutstandingBefore string  `json:"outstanding_before"`
-	TransVolumn       string  `json:"trans_volumn"`
-	AvgPrice          float64 `json:"avg_price"`
-	OutstandingAfter  string  `json:"outstanding_after"`
-	TransType         string  `json:"trans_type"`
-	MarketSource      string  `json:"market_source"`
-	TargetInfo        string  `json:"target_info"`
-	RecordStatus      string  `json:"record_status"`
-	TransId           string  `json:"trans_id"`
-	ReporterUrl       string  `json:"reporter_url"`
-}
-
-type FormData struct {
-	Company            string `json:"ctl00$CPH$ddlCompany"`
-	DateType           string `json:"ctl00$CPH$rblDateType"`
-	DateFrom           string `json:"ctl00$CPH$BSDateFrom"`
-	DateTo             string `json:"ctl00$CPH$BSDateTo"`
-	ViewState          string `json:"__VIEWSTATE"`
-	ViewStateGenerator string `json:"__VIEWSTATEGENERATOR"`
-	EventValidation    string `json:"__EVENTVALIDATION"`
-}
-
 func main() {
-	defer handlePanic()
 	initialURL := "https://market.sec.or.th/public/idisc/th/r59"
 
+	// Make the first request to get dropdown values
 	dropdownValues, err := getDropDownValues(initialURL)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	radioValue, err := getRadioValue(initialURL)
-	if err != nil {
-		log.Fatal(err)
+	if len(dropdownValues) == 0 {
+		log.Fatal("No dropdown values found")
 	}
 
-	// Simulate date
-	startDate := time.Date(1975, 4, 30, 0, 0, 0, 0, time.UTC)
-	endDate := time.Now()
-	// startDate, endDate := getRandomTenYearPeriod()
+	maxIterations := 2
+	if len(dropdownValues) > maxIterations {
+		dropdownValues = dropdownValues[:maxIterations]
+	}
 
-	step := 30 * 24 * time.Hour
-	dateRanges := generateDateRanges(startDate, endDate, step)
+	// fmt.Printf("Dropdown values: %v\n", dropdownValues)
+	// counter := 0
 
-	processRecords := make(map[string]bool)
-	// resultCount := 0
-	// const maxResults = 10
-
+	// Loop through all dropdown values to make requests and print results
 	for _, dropdownValue := range dropdownValues {
-		for _, dateRange := range dateRanges {
-			viewState, viewStateGenerator, evenValidation, err := getHiddenFields(initialURL)
-			if err != nil {
-				log.Fatalf("Failed to get hidden fields: %v\n", err)
-			}
+		// if counter >= maxIterations {
+		// 	break
+		// }
+		startDate := convertToThaiYear("20120101")
+		endDate := convertToThaiYear("20170711")
+		requestURL := fmt.Sprintf("https://market.sec.or.th/public/idisc/th/Viewmore/r59-2?UniqueIdReference=%s&DateType=1&DateFrom=%s&DateTo=%s",
+			dropdownValue, startDate, endDate)
 
-			formData := FormData{
-				Company:            dropdownValue,
-				DateType:           radioValue,
-				DateFrom:           dateRange.DateFrom,
-				DateTo:             dateRange.DateTo,
-				ViewState:          viewState,
-				ViewStateGenerator: viewStateGenerator,
-				EventValidation:    evenValidation,
-			}
-
-			responseBody, err := postFormData(initialURL, formData)
-			if err != nil {
-				log.Printf("Failed to post form data for company %s, range %s to %s: %v\n", dropdownValue, dateRange.DateFrom, dateRange.DateTo, err)
-				continue
-			}
-
-			fmt.Printf("Successfully posted form data for company %s, range %s to %s\n", dropdownValue, dateRange.DateFrom, dateRange.DateTo)
-
-			records, recordsEN := collectContent(responseBody)
-			if len(records) == 0 && len(recordsEN) == 0 {
-				fmt.Printf("No relevant data found for company %s, range %s to %s. Skipping...\n", dropdownValue, dateRange.DateFrom, dateRange.DateTo)
-				continue
-			}
-
-			// Filter out records
-			uniqRecords, uniqRecordsEN := filterRedanduntRecords(records, recordsEN, processRecords)
-			printRecordsAsJSON(uniqRecords, uniqRecordsEN)
-
-			// Save records to file
-			err = saveRecordsToFile("records_th.json", uniqRecords)
-			if err != nil {
-				log.Printf("Failed to save records to file: %v\n", err)
-			}
-			err = saveRecordsToFile("records_en.json", uniqRecordsEN)
-			if err != nil {
-				log.Printf("Failed to save recordsEN to file: %v\n", err)
-			}
-
-			// resultCount++
-			// if resultCount >= maxResults {
-			// 	fmt.Println("Reached the maximum number of results. Stopping..")
-			// 	return
-			// }
-		}
-	}
-
-	//fmt.Println(dropdownValues)
-}
-
-func handlePanic() {
-	if r := recover(); r != nil {
-		log.Printf("Program crashed with error: %v\n", r)
-	}
-}
-
-func getHiddenFields(url string) (string, string, string, error) {
-	res, err := http.Get(url)
-	if err != nil {
-		return "", "", "", err
-	}
-	defer res.Body.Close()
-	if res.StatusCode != 200 {
-		return "", "", "", fmt.Errorf("status code error: %d %s", res.StatusCode, res.Status)
-	}
-
-	doc, err := goquery.NewDocumentFromReader(res.Body)
-	if err != nil {
-		return "", "", "", err
-	}
-
-	viewState, _ := doc.Find("input[name='__VIEWSTATE']").Attr("value")
-	viewStateGenerator, _ := doc.Find("input[name='__VIEWSTATEGENERATOR']").Attr("value")
-	eventValidation, _ := doc.Find("input[name='__EVENTVALIDATION']").Attr("value")
-
-	return viewState, viewStateGenerator, eventValidation, nil
-}
-
-func collectContent(responseBody string) ([]Record, []RecordEN) {
-	doc, err := goquery.NewDocumentFromReader(strings.NewReader(responseBody))
-	if err != nil {
-		log.Fatal("failed to parse response body:", err)
-	}
-
-	var allRecords []Record
-	var allRecordEN []RecordEN
-
-	//fmt.Println(responseBody)
-
-	// check if the document contain any data
-	if doc.Find("td.RgCol_Center a").Length() == 0 {
-		fmt.Println("No 'td.RgCol_Center a' elements found in response.")
-		return allRecords, allRecordEN
-	}
-
-	// Extract batchNo, transId, reporter from the HTML
-	doc.Find("tr").Each(func(i int, s *goquery.Selection) {
-		link, exists := s.Find("td.RgCol_Center a").Attr("href")
-		if exists {
-			fmt.Println(link) // debug
-			batchNo, err := extractQueryParam(link, "batchNo")
-			if err != nil {
-				log.Fatal(err)
-				fmt.Println(batchNo) // debug
-			}
-			transId, err := extractQueryParam(link, "transId")
-			if err != nil {
-				log.Fatal(err)
-				fmt.Println(transId) //debug
-			}
-			reporterParam, err := extractQueryParam(link, "reporter")
-			if err != nil {
-				log.Fatal(err)
-				fmt.Print(reporterParam) //debug
-			}
-
-			// Collect and process content from the link
-			records, recordsEN := collectContentFromLink(batchNo, transId, reporterParam)
-			if len(records) > 0 || len(recordsEN) > 0 {
-				allRecords = append(allRecords, records...)
-				allRecordEN = append(allRecordEN, recordsEN...)
-			}
-		}
-	})
-
-	return allRecords, allRecordEN
-}
-
-// func getRandomTenYearPeriod() (time.Time, time.Time) {
-// 	rand.Seed(time.Now().UnixNano())
-// 	currentTime := time.Now()
-// 	maxStartYear := currentTime.Year()
-// 	startYear := rand.Intn(maxStartYear-1975) + 1975
-// 	startDate := time.Date(startYear, time.Month(rand.Intn(12)+1), rand.Intn(28)+1, 0, 0, 0, 0, time.UTC)
-// 	endDate := startDate.AddDate(10, 0, 0)
-// 	return startDate, endDate
-// }
-
-func collectContentFromLink(batchNo, transId, reporterParam string) ([]Record, []RecordEN) {
-	postURL := "https://market.sec.or.th/r59/publicapi/report"
-	formDataTh := map[string]string{
-		"BatchNo": batchNo,
-		"Lang":    "Th",
-	}
-	formDataEn := map[string]string{
-		"BatchNo": batchNo,
-		"Lang":    "En",
-	}
-
-	jsonDataTh, err := json.Marshal(formDataTh)
-	if err != nil {
-		log.Fatal(err)
-	}
-	jsonDataEn, err := json.Marshal(formDataEn)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	reqTh, err := http.NewRequest("POST", postURL, bytes.NewBuffer(jsonDataTh))
-	if err != nil {
-		log.Fatal(err)
-	}
-	client := &http.Client{}
-	resTh, err := client.Do(reqTh)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer resTh.Body.Close()
-
-	if resTh.StatusCode != 200 {
-		log.Fatalf("status code error: %d %s", resTh.StatusCode, resTh.Status)
-	}
-
-	bodyTh, err := io.ReadAll(resTh.Body)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	var apiResponseTh ApiResponse
-	err = json.Unmarshal(bodyTh, &apiResponseTh)
-	if err != nil {
-		log.Fatal("Failed to unmarshal JSON:", err)
-	}
-
-	// Create Send POST request for Eng
-	reqEn, err := http.NewRequest("POST", postURL, bytes.NewBuffer(jsonDataEn))
-	if err != nil {
-		log.Fatal(err)
-	}
-	resEn, err := client.Do(reqEn)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer resEn.Body.Close()
-
-	if resEn.StatusCode != 200 {
-		log.Fatalf("status code error: %d %s", resEn.StatusCode, resEn.Status)
-	}
-
-	bodyEn, err := io.ReadAll(resEn.Body)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	var apiResponseEn ApiResponse
-	err = json.Unmarshal(bodyEn, &apiResponseEn)
-	if err != nil {
-		log.Fatal("Failed to unmarshal JSON:", err)
-	}
-
-	// Create lists to hold all records
-	var records []Record
-	var recordsEN []RecordEN
-
-	// Iterate over all transactions and create a record for each in Thai
-	for _, transaction := range apiResponseTh.Report.TransactionList {
-		// Convert TransDate to ISO 8601 format
-		transDateISO, err := convertThaiDateToISO8601(transaction.TransDate)
+		responseBody, err := getRequest(requestURL)
 		if err != nil {
-			log.Printf("Failed to convert date: %s\n", transaction.TransDate)
+			log.Printf("Failed to get data for dropdown value %s: %v\n", dropdownValue, err)
 			continue
 		}
 
-		// Convert AvgPrice to float64
-		avgPriceFloat, err := strconv.ParseFloat(transaction.AvgPrice, 64)
-		if err != nil {
-			log.Printf("Failed to convert avg price: %s\n", transaction.AvgPrice)
-			continue
+		// Process the response body to collect content
+		tableData := collectContent(responseBody)
+		if len(tableData.Records) > 0 {
+			printTablesAsJSON(tableData)
 		}
 
-		record := Record{
-			BatchNo:           apiResponseTh.Report.BatchNo,
-			Company:           apiResponseTh.Report.Company,
-			Reporter:          apiResponseTh.Report.Reporter,
-			Position:          apiResponseTh.Report.Position,
-			TransExecutor:     transaction.TransExecutor,
-			SecuType:          transaction.SecuType,
-			TransDate:         transDateISO,
-			OutstandingBefore: transaction.OutstandingBefore,
-			TransVolumn:       transaction.TransVolumn,
-			AvgPrice:          avgPriceFloat,
-			OutstandingAfter:  transaction.OutstandingAfter,
-			TransType:         transaction.TransType,
-			MarketSource:      transaction.MarketSource,
-			TargetInfo:        transaction.TargetInfo,
-			RecordStatus:      transaction.RecordStatus,
-			TransId:           transId,
-			ReporterUrl:       reporterParam,
-		}
-		records = append(records, record)
+		//counter++
 	}
-
-	// Iterate over all transactions and create a record for each in English
-	for _, transaction := range apiResponseEn.Report.TransactionList {
-		// Convert TransDate to ISO 8601 format
-		transDateISO, err := convertDateToISO8601(transaction.TransDate)
-		if err != nil {
-			log.Printf("Failed to convert date: %s\n", transaction.TransDate)
-			continue
-		}
-
-		// Convert AvgPrice to float64
-		avgPriceFloat, err := strconv.ParseFloat(transaction.AvgPrice, 64)
-		if err != nil {
-			log.Printf("Failed to convert avg price: %s\n", transaction.AvgPrice)
-			continue
-		}
-
-		recordEN := RecordEN{
-			BatchNo:           apiResponseEn.Report.BatchNo,
-			Company:           apiResponseEn.Report.Company,
-			Reporter:          apiResponseEn.Report.Reporter,
-			Position:          apiResponseEn.Report.Position,
-			TransExecutor:     transaction.TransExecutor,
-			SecuType:          transaction.SecuType,
-			TransDate:         transDateISO,
-			OutstandingBefore: transaction.OutstandingBefore,
-			TransVolumn:       transaction.TransVolumn,
-			AvgPrice:          avgPriceFloat,
-			OutstandingAfter:  transaction.OutstandingAfter,
-			TransType:         transaction.TransType,
-			MarketSource:      transaction.MarketSource,
-			TargetInfo:        transaction.TargetInfo,
-			RecordStatus:      transaction.RecordStatus,
-			TransId:           transId,
-			ReporterUrl:       reporterParam,
-		}
-		recordsEN = append(recordsEN, recordEN)
-	}
-
-	return records, recordsEN
-}
-
-func convertThaiDateToISO8601(dateStr string) (string, error) {
-	const inputFormat = "02/01/2006"
-	parsedDate, err := time.Parse(inputFormat, dateStr)
-	if err != nil {
-		return "", err
-	}
-
-	return parsedDate.AddDate(-543, 0, 0).Format(time.RFC3339), nil
-}
-
-func convertDateToISO8601(dateStr string) (string, error) {
-	// Assume the input date is in the format "DD/MM/YYYY"
-	const inputFormat = "02/01/2006"
-	parsedDate, err := time.Parse(inputFormat, dateStr)
-	if err != nil {
-		return "", err
-	}
-	return parsedDate.Format(time.RFC3339), nil
-}
-
-func extractQueryParam(urlStr, param string) (string, error) {
-	// Parse the URL
-	parsedURL, err := url.Parse(urlStr)
-	if err != nil {
-		return "", err
-	}
-
-	// Extract query parameters
-	queryParams := parsedURL.Query()
-
-	// Retrieve the value of the specified query parameter
-	value := queryParams.Get(param)
-	if value == "" {
-		return "", fmt.Errorf("query parameter '%s' not found", param)
-	}
-
-	return value, nil
-}
-
-func printRecordsAsJSON(records []Record, recordsEN []RecordEN) {
-	jsonData, err := json.MarshalIndent(records, "", "  ")
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println(string(jsonData))
-
-	jsonDataEN, err := json.MarshalIndent(recordsEN, "", " ")
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println(string(jsonDataEN))
 }
 
 func getDropDownValues(url string) ([]string, error) {
@@ -492,30 +132,18 @@ func getDropDownValues(url string) ([]string, error) {
 		return nil, err
 	}
 	defer res.Body.Close()
+
 	if res.StatusCode != 200 {
 		return nil, fmt.Errorf("status code error: %d %s", res.StatusCode, res.Status)
 	}
 
-	// Load HTML document
 	doc, err := goquery.NewDocumentFromReader(res.Body)
 	if err != nil {
 		return nil, err
 	}
 
-	var dropdownName string
-	doc.Find("select").Each(func(i int, s *goquery.Selection) {
-		if name, exists := s.Attr("name"); exists {
-			dropdownName = name
-			return
-		}
-	})
-
-	if len(dropdownName) == 0 {
-		return nil, fmt.Errorf("no dropdown found")
-	}
-
 	var dropdownValues []string
-	doc.Find(fmt.Sprintf("select[name='%s'] option", dropdownName)).Each(func(i int, s *goquery.Selection) {
+	doc.Find("select[name='ctl00$CPH$ddlCompany'] option").Each(func(i int, s *goquery.Selection) {
 		value, exists := s.Attr("value")
 		if exists {
 			dropdownValues = append(dropdownValues, value)
@@ -524,74 +152,8 @@ func getDropDownValues(url string) ([]string, error) {
 	return dropdownValues, nil
 }
 
-func getRadioValue(url string) (string, error) {
+func getRequest(url string) (string, error) {
 	res, err := http.Get(url)
-	if err != nil {
-		return "", err
-	}
-	defer res.Body.Close()
-	if res.StatusCode != 200 {
-		return "", fmt.Errorf("status code error: %d %s", res.StatusCode, res.Status)
-	}
-
-	doc, err := goquery.NewDocumentFromReader(res.Body)
-	if err != nil {
-		return "", err
-	}
-
-	var radioValue string
-	doc.Find("input[type='radio']").Each(func(i int, s *goquery.Selection) {
-		if checked, exists := s.Attr("checked"); exists && checked == "checked" {
-			value, _ := s.Attr("value")
-			radioValue = value
-			return
-		}
-	})
-
-	if radioValue == "" {
-		return "", fmt.Errorf("no radio button found")
-	}
-
-	return radioValue, nil
-}
-
-func formatDate(date time.Time) string {
-	return date.Format("02/01/2006")
-}
-
-func generateDateRanges(startDate, endDate time.Time, step time.Duration) []FormData {
-	var formDatalist []FormData
-	for start := startDate; !start.After(endDate); start = start.Add(step) {
-		formData := FormData{
-			DateFrom: formatDate(start),
-			DateTo:   formatDate(start.Add(step - time.Hour*24)),
-		}
-		formDatalist = append(formDatalist, formData)
-	}
-	return formDatalist
-}
-
-func postFormData(postURL string, formData FormData) (string, error) {
-	form := url.Values{}
-	form.Set("ctl00$CPH$ddlCompany", formData.Company)
-	form.Set("ctl00$CPH$rblDateType", formData.DateType)
-	form.Set("ctl00$CPH$BSDateFrom", formData.DateFrom)
-	form.Set("ctl00$CPH$BSDateTo", formData.DateTo)
-	form.Set("__VIEWSTATE", formData.ViewState)
-	form.Set("__VIEWSTATEGENERATOR", formData.ViewStateGenerator)
-	form.Set("__EVENTVALIDATION", formData.EventValidation)
-	form.Set("ctl00$CPH$btSearch", "ค้นหา")
-
-	req, err := http.NewRequest("POST", postURL, bytes.NewBufferString(form.Encode()))
-	if err != nil {
-		return "", err
-	}
-	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
-
-	client := &http.Client{
-		Timeout: 10 * time.Second,
-	}
-	res, err := client.Do(req)
 	if err != nil {
 		return "", err
 	}
@@ -609,43 +171,218 @@ func postFormData(postURL string, formData FormData) (string, error) {
 	return string(body), nil
 }
 
-func filterRedanduntRecords(records []Record, recordsEN []RecordEN, processedRecords map[string]bool) ([]Record, []RecordEN) {
-	var uniqRecords []Record
-	var uniqRecodesEn []RecordEN
-
-	// filter thai Records
-	for _, record := range records {
-		uniqId := record.BatchNo
-		if !processedRecords[uniqId] {
-			uniqRecords = append(uniqRecords, record)
-			processedRecords[uniqId] = true
-		}
+func collectContent(responseBody string) TableData {
+	doc, err := goquery.NewDocumentFromReader(strings.NewReader(responseBody))
+	if err != nil {
+		log.Fatal("failed to parse response body:", err)
 	}
 
-	// filter English Records
-	for _, recordEN := range recordsEN {
-		uniqId := recordEN.BatchNo
-		if !processedRecords[uniqId] {
-			uniqRecodesEn = append(uniqRecodesEn, recordEN)
-			processedRecords[uniqId] = true
+	var tableData TableData
+
+	// Get the table name from div.cardheading
+	tableName := doc.Find(".card card-table .cardheading").Text()
+	fmt.Printf("Table Name: %s\n", tableName)
+
+	doc.Find("tr").Each(func(i int, s *goquery.Selection) {
+		var record Record
+
+		tds := s.Find("td")
+		if tds.Length() < 9 {
+			return
 		}
-	}
-	return uniqRecords, uniqRecodesEn
+
+		record.CompanyName = tds.Eq(0).Text()
+		record.Reporter = tds.Eq(1).Text()
+		record.Relation = tds.Eq(2).Text()
+		record.AssetType = tds.Eq(3).Text()
+		record.TransDate = tds.Eq(4).Text()
+		record.Amount = tds.Eq(5).Text()
+		record.Price = tds.Eq(6).Text()
+		record.MarketSource = tds.Eq(7).Text()
+
+		link, exists := tds.Eq(8).Find("a").Attr("href")
+		if exists {
+			fmt.Printf("Processing link: %s\n", link) // Debugging log
+			noteContent := collectContentFromLink(link)
+			record.Note = noteContent
+		} else {
+			record.Note = Note{TransVolumn: tds.Eq(8).Text()}
+		}
+
+		tableData.Records = append(tableData.Records, record)
+	})
+
+	return tableData
 }
 
-func saveRecordsToFile(filename string, records interface{}) error {
-	file, err := os.Create(filename)
-	if err != nil {
-		return nil
-	}
-	defer file.Close()
+func collectContentFromLink(link string) Note {
+	var note Note
 
-	encoder := json.NewEncoder(file)
-	encoder.SetIndent("", " ")
-	err = encoder.Encode(records)
+	// Collect data in Thai
+	thContent, err := fetchContentFromLink(link, "Th")
 	if err != nil {
-		return err
+		log.Printf("Failed to collect Thai content: %v", err)
+		return note
 	}
 
-	return nil
+	// Collect data in English
+	// enContent, err := fetchContentFromLink(link, "En")
+	// if err != nil {
+	// 	log.Printf("Failed to collect English content: %v", err)
+	// 	return note
+	// }
+
+	// Combine both contents
+	note = Note{
+		BatchNo:           thContent.BatchNo,
+		Company:           thContent.Company,
+		Reporter:          thContent.Reporter,
+		Position:          thContent.Position,
+		TransExecutor:     thContent.TransExecutor,
+		SecuType:          thContent.SecuType,
+		TransDate:         thContent.TransDate,
+		OutstandingBefore: thContent.OutstandingBefore,
+		TransVolumn:       thContent.TransVolumn,
+		AvgPrice:          thContent.AvgPrice,
+		OutstandingAfter:  thContent.OutstandingAfter,
+		TransType:         thContent.TransType,
+		MarketSource:      thContent.MarketSource,
+		TargetInfo:        thContent.TargetInfo,
+		RecordStatus:      thContent.RecordStatus,
+		TransId:           thContent.TransId,
+		ReporterUrl:       thContent.ReporterUrl,
+		Language:          "TH", // Indicating combined content
+	}
+
+	return note
+}
+
+func fetchContentFromLink(link, lang string) (Note, error) {
+	var note Note
+	postURL := "https://market.sec.or.th/r59/publicapi/report"
+
+	batchNo, err := extractQueryParam(link, "batchNo")
+	if err != nil {
+		return note, fmt.Errorf("failed to extract batchNo: %v", err)
+	}
+	transId, err := extractQueryParam(link, "transId")
+	if err != nil {
+		return note, fmt.Errorf("failed to extract transId: %v", err)
+	}
+	reporterParam, err := extractQueryParam(link, "reporter")
+	if err != nil {
+		return note, fmt.Errorf("failed to extract reporterParam: %v", err)
+	}
+
+	formData := map[string]string{
+		"BatchNo": batchNo,
+		"Lang":    lang,
+	}
+
+	jsonData, err := json.Marshal(formData)
+	if err != nil {
+		log.Fatal(err)
+		return note, err
+	}
+
+	req, err := http.NewRequest("POST", postURL, bytes.NewBuffer(jsonData))
+	if err != nil {
+		log.Fatal(err)
+		return note, err
+	}
+	req.Header.Set("Content-Type", "application/json")
+
+	client := &http.Client{}
+	res, err := client.Do(req)
+	if err != nil {
+		log.Fatal(err)
+		return note, err
+	}
+	defer res.Body.Close()
+
+	if res.StatusCode != 200 {
+		return note, fmt.Errorf("status code error: %d %s", res.StatusCode, res.Status)
+	}
+
+	body, err := io.ReadAll(res.Body)
+	if err != nil {
+		log.Fatal(err)
+		return note, err
+	}
+
+	var apiResponse ApiResponse
+	err = json.Unmarshal(body, &apiResponse)
+	if err != nil {
+		log.Fatal("Failed to unmarshal JSON:", err)
+		return note, err
+	}
+
+	// Assuming apiResponse has a Report field containing the relevant data
+	if len(apiResponse.Report.TransactionList) > 0 {
+		transaction := apiResponse.Report.TransactionList[0]
+		avgPriceFloat, _ := strconv.ParseFloat(transaction.AvgPrice, 64)
+		transDateISO := convertDateToISO8601(transaction.TransDate)
+
+		note = Note{
+			BatchNo:           apiResponse.Report.BatchNo,
+			Company:           apiResponse.Report.Company,
+			Reporter:          apiResponse.Report.Reporter,
+			Position:          apiResponse.Report.Position,
+			TransExecutor:     transaction.TransExecutor,
+			SecuType:          transaction.SecuType,
+			TransDate:         transDateISO,
+			OutstandingBefore: transaction.OutstandingBefore,
+			TransVolumn:       transaction.TransVolumn,
+			AvgPrice:          avgPriceFloat,
+			OutstandingAfter:  transaction.OutstandingAfter,
+			TransType:         transaction.TransType,
+			MarketSource:      transaction.MarketSource,
+			TargetInfo:        transaction.TargetInfo,
+			RecordStatus:      transaction.RecordStatus,
+			TransId:           transId,
+			ReporterUrl:       reporterParam,
+			Language:          lang,
+		}
+	}
+
+	return note, nil
+}
+
+func extractQueryParam(urlStr, param string) (string, error) {
+	parsedURL, err := url.Parse(urlStr)
+	if err != nil {
+		return "", err
+	}
+
+	queryParams := parsedURL.Query()
+	value := queryParams.Get(param)
+	if value == "" {
+		return "", fmt.Errorf("query parameter '%s' not found", param)
+	}
+
+	return value, nil
+}
+
+func convertDateToISO8601(dateStr string) string {
+	// Implement the date conversion logic here
+	return dateStr
+}
+
+func printTablesAsJSON(tableData TableData) {
+	jsonData, err := json.MarshalIndent(tableData, "", "  ")
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(string(jsonData))
+}
+
+func convertToThaiYear(dateStr string) string {
+	// Convert the date from ISO 8601 to Thai Buddhist calendar year
+	date, err := time.Parse("20060102", dateStr)
+	if err != nil {
+		log.Fatal(err)
+	}
+	thaiYear := date.Year() + 543
+	return fmt.Sprintf("%04d%02d%02d", thaiYear, date.Month(), date.Day())
+
 }
