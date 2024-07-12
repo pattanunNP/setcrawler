@@ -92,7 +92,7 @@ func main() {
 		log.Fatal("No dropdown values found")
 	}
 
-	maxIterations := 2
+	maxIterations := 1
 	if len(dropdownValues) > maxIterations {
 		dropdownValues = dropdownValues[:maxIterations]
 	}
@@ -106,7 +106,7 @@ func main() {
 		// 	break
 		// }
 		startDate := convertToThaiYear("20120101")
-		endDate := convertToThaiYear("20170711")
+		endDate := convertToThaiYear(time.Now().Format("20060102"))
 		requestURL := fmt.Sprintf("https://market.sec.or.th/public/idisc/th/Viewmore/r59-2?UniqueIdReference=%s&DateType=1&DateFrom=%s&DateTo=%s",
 			dropdownValue, startDate, endDate)
 
@@ -226,33 +226,13 @@ func collectContentFromLink(link string) Note {
 	}
 
 	// Collect data in English
-	// enContent, err := fetchContentFromLink(link, "En")
-	// if err != nil {
-	// 	log.Printf("Failed to collect English content: %v", err)
-	// 	return note
-	// }
-
-	// Combine both contents
-	note = Note{
-		BatchNo:           thContent.BatchNo,
-		Company:           thContent.Company,
-		Reporter:          thContent.Reporter,
-		Position:          thContent.Position,
-		TransExecutor:     thContent.TransExecutor,
-		SecuType:          thContent.SecuType,
-		TransDate:         thContent.TransDate,
-		OutstandingBefore: thContent.OutstandingBefore,
-		TransVolumn:       thContent.TransVolumn,
-		AvgPrice:          thContent.AvgPrice,
-		OutstandingAfter:  thContent.OutstandingAfter,
-		TransType:         thContent.TransType,
-		MarketSource:      thContent.MarketSource,
-		TargetInfo:        thContent.TargetInfo,
-		RecordStatus:      thContent.RecordStatus,
-		TransId:           thContent.TransId,
-		ReporterUrl:       thContent.ReporterUrl,
-		Language:          "TH", // Indicating combined content
+	enContent, err := fetchContentFromLink(link, "En")
+	if err != nil {
+		log.Printf("Failed to collect English content: %v", err)
+		return note
 	}
+
+	note = combineContent(thContent, enContent)
 
 	return note
 }
@@ -319,33 +299,60 @@ func fetchContentFromLink(link, lang string) (Note, error) {
 
 	// Assuming apiResponse has a Report field containing the relevant data
 	if len(apiResponse.Report.TransactionList) > 0 {
-		transaction := apiResponse.Report.TransactionList[0]
-		avgPriceFloat, _ := strconv.ParseFloat(transaction.AvgPrice, 64)
-		transDateISO := convertDateToISO8601(transaction.TransDate)
+		for _, transaction := range apiResponse.Report.TransactionList {
+			transDateISO, err := convertDateToISO8601(transaction.TransDate)
+			if err != nil {
+				log.Printf("Failed to convert date: %s\n", transaction.TransDate)
+			}
+			avgPriceFloat, _ := strconv.ParseFloat(transaction.AvgPrice, 64)
 
-		note = Note{
-			BatchNo:           apiResponse.Report.BatchNo,
-			Company:           apiResponse.Report.Company,
-			Reporter:          apiResponse.Report.Reporter,
-			Position:          apiResponse.Report.Position,
-			TransExecutor:     transaction.TransExecutor,
-			SecuType:          transaction.SecuType,
-			TransDate:         transDateISO,
-			OutstandingBefore: transaction.OutstandingBefore,
-			TransVolumn:       transaction.TransVolumn,
-			AvgPrice:          avgPriceFloat,
-			OutstandingAfter:  transaction.OutstandingAfter,
-			TransType:         transaction.TransType,
-			MarketSource:      transaction.MarketSource,
-			TargetInfo:        transaction.TargetInfo,
-			RecordStatus:      transaction.RecordStatus,
-			TransId:           transId,
-			ReporterUrl:       reporterParam,
-			Language:          lang,
+			note = Note{
+				BatchNo:           apiResponse.Report.BatchNo,
+				Company:           apiResponse.Report.Company,
+				Reporter:          apiResponse.Report.Reporter,
+				Position:          apiResponse.Report.Position,
+				TransExecutor:     transaction.TransExecutor,
+				SecuType:          transaction.SecuType,
+				TransDate:         transDateISO,
+				OutstandingBefore: transaction.OutstandingBefore,
+				TransVolumn:       transaction.TransVolumn,
+				AvgPrice:          avgPriceFloat,
+				OutstandingAfter:  transaction.OutstandingAfter,
+				TransType:         transaction.TransType,
+				MarketSource:      transaction.MarketSource,
+				TargetInfo:        transaction.TargetInfo,
+				RecordStatus:      transaction.RecordStatus,
+				TransId:           transId,
+				ReporterUrl:       reporterParam,
+				Language:          lang,
+			}
 		}
 	}
 
 	return note, nil
+}
+
+func combineContent(thContent, enContent Note) Note {
+	return Note{
+		BatchNo:           thContent.BatchNo,
+		Company:           thContent.Company,
+		Reporter:          thContent.Reporter,
+		Position:          thContent.Position,
+		TransExecutor:     thContent.TransExecutor,
+		SecuType:          thContent.SecuType,
+		TransDate:         thContent.TransDate,
+		OutstandingBefore: thContent.OutstandingBefore,
+		TransVolumn:       thContent.TransVolumn,
+		AvgPrice:          thContent.AvgPrice,
+		OutstandingAfter:  thContent.OutstandingAfter,
+		TransType:         thContent.TransType,
+		MarketSource:      thContent.MarketSource,
+		TargetInfo:        thContent.TargetInfo,
+		RecordStatus:      thContent.RecordStatus,
+		TransId:           thContent.TransId,
+		ReporterUrl:       thContent.ReporterUrl,
+		Language:          thContent.Language + " and " + enContent.Language,
+	}
 }
 
 func extractQueryParam(urlStr, param string) (string, error) {
@@ -363,9 +370,15 @@ func extractQueryParam(urlStr, param string) (string, error) {
 	return value, nil
 }
 
-func convertDateToISO8601(dateStr string) string {
-	// Implement the date conversion logic here
-	return dateStr
+func convertDateToISO8601(dateStr string) (string, error) {
+	// Assume the input date is in the format "DD/MM/YYYY"
+	const inputFormat = "02/01/2006"
+	parsedDate, err := time.Parse(inputFormat, dateStr)
+	if err != nil {
+		return "", nil
+	}
+	return parsedDate.Format(time.RFC3339), nil
+
 }
 
 func printTablesAsJSON(tableData TableData) {
