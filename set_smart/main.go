@@ -1,9 +1,11 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
-	MajorShareHolder "login_token/majorShareHolder"
+	capitalmovement "login_token/capital_movement"
 	"login_token/utils"
+	"os"
 )
 
 func main() {
@@ -13,17 +15,69 @@ func main() {
 
 	cookieStr, _, err := utils.PerformLogin(loginURL, username, password)
 	if err != nil {
-		fmt.Println("Error during login:", err)
+		fmt.Println("Login error:", err)
 		return
 	}
 
-	postURL := "https://www.setsmart.com/ism/majorshareholder.html"
-	formData := "radChoice=1&txtSymbol=scb&radShow=2&submit.x=21&submit.y=11&hidAction=go&hidLastContentType="
-	postResponse, err := MajorShareHolder.FetchDetailedShareholderData(postURL, cookieStr, formData)
+	stocksData, err := utils.ReadJSONFile("/Users/natpisitkao/Desktop/setcrawler/set_smart/stocks_all.json")
 	if err != nil {
-		fmt.Println("Error fetching detailed shareholder data: ", err)
+		fmt.Println("Error reading JSON file:", err)
 		return
 	}
 
-	fmt.Println("Detailed shareholder data response:", postResponse)
+	allResults := make(map[string]utils.OrganizedData)
+	locales := []string{"en_EN", "th_TH"}
+	counter := 0
+
+	for _, stock := range stocksData.Stock {
+		if counter >= 1 {
+			break
+		}
+		// organizedData := utils.OrganizedData{
+		// 	CompanyProfiles: make(map[string]utils.CompanyProfile),
+		// 	Securities:      make(map[string]utils.Securities),
+		// }
+		for _, locale := range locales {
+			response, err := capitalmovement.MakeCapitalMovementRequest(cookieStr, stock.Symbol, locale)
+			if err != nil {
+				fmt.Printf("Request error for symbol %s, locale %s: %v\n", stock.Symbol, locale, err)
+				continue
+			}
+			fmt.Println(response)
+			// 	companyName, companyProfile, securities, err := utils.MakeRequestWithCookies(cookieStr, stock.Symbol, locale)
+			// 	if err != nil {
+			// 		fmt.Printf("Request error for symbol %s, locale %s: %v\n", stock.Symbol, locale, err)
+			// 	} else {
+			// 		localeSuffix := strings.Split(locale, "_")[1]
+			// 		profileKey := fmt.Sprintf("%s_%s", companyName, localeSuffix)
+			// 		organizedData.CompanyProfiles[profileKey] = companyProfile
+			// 		organizedData.Securities[profileKey] = securities
+			// 		fmt.Printf("Request successful for symbol %s, locale %s\n", stock.Symbol, locale)
+			// 	}
+			// }
+			// allResults[stock.Symbol] = organizedData
+			counter++
+		}
+	}
+
+	// Save all results to a single file
+	file, err := os.Create("all_results.json")
+	if err != nil {
+		fmt.Println("Error creating JSON file:", err)
+		return
+	}
+	defer file.Close()
+
+	jsonData, err := json.MarshalIndent(allResults, "", "  ")
+	if err != nil {
+		fmt.Println("Error marshalling JSON: ", err)
+		return
+	}
+
+	_, err = file.Write(jsonData)
+	if err != nil {
+		fmt.Println("Error writing to JSON file: ", err)
+		return
+	}
+
 }

@@ -16,6 +16,7 @@ import (
 	"unicode/utf8"
 
 	"github.com/PuerkitoBio/goquery"
+	"github.com/gen2brain/go-fitz"
 	"github.com/ledongthuc/pdf"
 	"github.com/nguyenthenguyen/docx"
 	"github.com/xuri/excelize/v2"
@@ -62,7 +63,7 @@ func main() {
 
 	// Counter for the number of records processed
 	recordCount := 0
-	const maxRecords = 100
+	const maxRecords = 5
 
 	// Find all <tr> elements
 	doc.Find("tr").Each(func(rowIndex int, row *goquery.Selection) {
@@ -117,19 +118,19 @@ func main() {
 		}
 	})
 	// Convert the Data to JSON
-	// jsonData, err := json.MarshalIndent(data, "", "  ")
-	// if err != nil {
-	// 	log.Fatal(err)
-	// }
-
-	// Save the data to JSON File
-	err = saveResiltsToFile("result.json", data)
+	jsonData, err := json.MarshalIndent(data, "", "  ")
 	if err != nil {
-		log.Fatalf("Error saving resilts to file %v", err)
+		log.Fatal(err)
 	}
 
+	// Save the data to JSON File
+	// err = saveResiltsToFile("result.json", data)
+	// if err != nil {
+	// 	log.Fatalf("Error saving resilts to file %v", err)
+	// }
+
 	// // Print the JSON data
-	// fmt.Println(string(jsonData))
+	fmt.Println(string(jsonData))
 }
 
 func convertToISO8601(dateStr string) (string, error) {
@@ -197,11 +198,15 @@ func downloadAndExtractZip(url string) ([]Document, error) {
 	}
 
 	// Check if the response body is actually a ZIP file
-	if !isZipFile(body) {
-		return nil, fmt.Errorf("the downloaded file is not a valid ZIP archive")
+	if isZipFile(body) {
+		return extractZipFiles(body)
 	}
 
-	// Create ZIP file reader
+	fileType := getFileType(url)
+	return processFile(body, fileType, url)
+}
+
+func extractZipFiles(body []byte) ([]Document, error) {
 	zipReader, err := zip.NewReader(bytes.NewReader(body), int64(len(body)))
 	if err != nil {
 		return nil, err
@@ -222,37 +227,55 @@ func downloadAndExtractZip(url string) ([]Document, error) {
 		}
 
 		fileType := getFileType(file.Name)
-		var pages []string
-		var analysis string
-
-		switch fileType {
-		case "PDF":
-			pages, analysis, err = extractPDFPages(content)
-		case "DOC":
-			pages, err = extractDocPages(content)
-		case "XLSX":
-			pages, err = extractExcelPages(content)
-		case "PPTX":
-			pages, err = extractPPTXPages(content)
-		default:
-			pages = []string{string(content)}
-		}
-
+		documents, err = appendDocument(documents, content, fileType, file.Name)
 		if err != nil {
 			log.Printf("Error processing file %s: %v", file.Name, err)
 			continue
 		}
-
-		doc := Document{
-			DocumentName: getFileName(file.Name),
-			OriginalPath: file.Name,
-			FileType:     fileType,
-			Pages:        pages,
-			Analysis:     analysis,
-		}
-		documents = append(documents, doc)
 	}
 
+	return documents, nil
+}
+
+func processFile(body []byte, fileType, fileName string) ([]Document, error) {
+	var documents []Document
+	documents, err := appendDocument(documents, body, fileType, fileName)
+	if err != nil {
+		log.Printf("Error processing file %s: %v", fileName, err)
+	}
+	return documents, nil
+}
+
+func appendDocument(documents []Document, content []byte, fileType, fileName string) ([]Document, error) {
+	var pages []string
+	var analysis string
+	var err error
+
+	switch fileType {
+	case "PDF":
+		pages, analysis, err = extractPDFPages(content)
+	case "DOC":
+		pages, err = extractDocPages(content)
+	case "XLSX":
+		pages, err = extractExcelPages(content)
+	case "PPTX":
+		pages, err = extractPPTXPages(content)
+	default:
+		pages = []string{string(content)}
+	}
+
+	if err != nil {
+		return documents, err
+	}
+
+	doc := Document{
+		DocumentName: getFileName(fileName),
+		OriginalPath: fileName,
+		FileType:     fileType,
+		Pages:        pages,
+		Analysis:     analysis,
+	}
+	documents = append(documents, doc)
 	return documents, nil
 }
 
@@ -289,41 +312,30 @@ func extractPDFPages(content []byte) ([]string, string, error) {
 	pdfFile.Close()
 
 	// Open the PDF File
-	f, r, err := pdf.Open(pdfFile.Name())
+	doc, err := fitz.New(pdfFile.Name())
 	if err != nil {
 		return nil, "", err
 	}
-	defer f.Close()
+	defer doc.Close()
 
 	var pages []string
-	var analysis string
 
-	for pageNum := 1; pageNum <= r.NumPage(); pageNum++ {
-		page := r.Page(pageNum)
-		if page.V.IsNull() {
-			continue
-		}
-		text, err := extractTextFromPageHandlingErrors(page)
+	for n := 0; n < doc.NumPage(); n++ {
+		page, err := doc.Text(n)
 		if err != nil {
-			log.Printf("Error extracting text from page %d of file %s: %v", pageNum, pdfFile.Name(), err)
+			log.Printf("Error loading page %d: %v", n, err)
 			continue
 		}
-		if isImagePDF(text) {
-			// If the page contains an image, send it to OpenAI for text extraction
-			analysis, err = sendPDFToOpenAI(content)
-			if err != nil {
-				return nil, "", err
-			}
-			break
-		} else if containsTable(page) {
-			// If the page contains a table, format it as TSV
-			pages = append(pages, formatAsTSV(text))
-		} else {
-			pages = append(pages, text)
+		text, err := page.Text()
+		if err != nil {
+			log.Printf("Error extracting text from page %d: %v", n, err)
+			continue
 		}
+		pages = append(pages, text)
+		page.Close()
 	}
 
-	return pages, analysis, nil
+	return pages, "", nil
 }
 
 func isImagePDF(text string) bool {
@@ -500,7 +512,7 @@ func extractPPTXPages(content []byte) ([]string, error) {
 	return pages, nil
 }
 
-func saveResiltsToFile(filename string, data []Data) error {
+func saveResultsToFile(filename string, data []Data) error {
 	file, err := os.Create(filename)
 	if err != nil {
 		return err

@@ -2,9 +2,14 @@ package MajorShareHolder
 
 import (
 	"bytes"
+	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
+	"os"
+	"strings"
+
+	"github.com/PuerkitoBio/goquery"
 )
 
 func FetchDetailedShareholderData(postURL, cookieStr, formData string) (string, error) {
@@ -45,4 +50,101 @@ func FetchDetailedShareholderData(postURL, cookieStr, formData string) (string, 
 	}
 
 	return string(body), nil
+}
+
+// ExtractOptionValues extracts the values of all <option> tags within the specified select box
+func ExtractOptionValues(htmlStr, selectName string) ([]string, error) {
+	// Load the HTML document
+	doc, err := goquery.NewDocumentFromReader(strings.NewReader(htmlStr))
+	if err != nil {
+		return nil, fmt.Errorf("error loading HTML document: %w", err)
+	}
+
+	var values []string
+
+	// Find the select box with the specified name
+	doc.Find(fmt.Sprintf("select[name=%s] option", selectName)).Each(func(index int, item *goquery.Selection) {
+		value, exists := item.Attr("value")
+		if exists {
+			values = append(values, value)
+		}
+	})
+
+	return values, nil
+}
+
+// FetchDataForOptionValues sends a POST request for each option value and returns the results
+func FetchDataForOptionValues(postURL, cookieStr string, optionValues []string) ([]string, error) {
+	var results []string
+
+	for _, value := range optionValues {
+		formData := fmt.Sprintf("radChoice=1&txtSymbol=SCB&radShow=2&hidAction=&hidLastContentType=&lstFreeFloatDate=%s", value)
+		response, err := FetchDetailedShareholderData(postURL, cookieStr, formData)
+		if err != nil {
+			return nil, fmt.Errorf("error fetching data for option value %s: %w", value, err)
+		}
+		results = append(results, response)
+	}
+
+	return results, nil
+}
+
+// ExtractDataFromTable extracts data from <td> elements of a specific table
+func ExtractDataFromTable(doc *goquery.Document, tableIndex int) (map[string]string, error) {
+	data := make(map[string]string)
+
+	// Find the specific table with the class "tfont" by index
+	table := doc.Find("table.tfont").Eq(tableIndex)
+	if table.Length() == 0 {
+		return nil, fmt.Errorf("table with class 'tfont' not found at index %d", tableIndex)
+	}
+
+	// Iterate over the <td> elements
+	table.Find("tr").Each(func(index int, row *goquery.Selection) {
+		name := row.Find("td.table-bold").Text()
+		value := row.Find("td.table").Text()
+		if name != "" && value != "" {
+			// Remove whitespace and newlines
+			name = strings.TrimSpace(name)
+			value = strings.TrimSpace(value)
+			data[name] = value
+		}
+	})
+
+	return data, nil
+}
+
+// ExtractTableRows extracts text content from all rows in a table
+func ExtractTableRows(doc *goquery.Document, tableIndex int) ([]string, error) {
+	var rows []string
+
+	// Find the specific table with the class "tfont" by index
+	table := doc.Find("table.tfont").Eq(tableIndex)
+	if table.Length() == 0 {
+		return nil, fmt.Errorf("table with class 'tfont' not found at index %d", tableIndex)
+	}
+
+	// Iterate over the rows
+	table.Find("tr").Each(func(index int, row *goquery.Selection) {
+		rows = append(rows, row.Text())
+	})
+
+	return rows, nil
+}
+
+// SaveDataAsJSON saves the provided data map as a JSON file
+func SaveDataAsJSON(data map[string]map[string]string, jsonFilename string) error {
+	// Convert the data to JSON
+	jsonData, err := json.MarshalIndent(data, "", "  ")
+	if err != nil {
+		return fmt.Errorf("error marshalling JSON: %w", err)
+	}
+
+	// Save the JSON data to a file
+	err = os.WriteFile(jsonFilename, jsonData, 0644)
+	if err != nil {
+		return fmt.Errorf("error writing JSON file: %w", err)
+	}
+
+	return nil
 }
