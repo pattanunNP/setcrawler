@@ -207,9 +207,11 @@ func MakeRequestWithCookies(cookieStr, symbol, locale string) (string, CompanyPr
 
 	dataMap, companyName := parseHTML(string(body))
 
+	mappedData := mapDataKeys(dataMap, locale)
+
 	// Organize data into desired structure
-	organizedCompanyProfile := organizeData(dataMap)
-	organizeSecurities := organizeSecurities(dataMap)
+	organizedCompanyProfile := organizeData(mappedData)
+	organizeSecurities := organizeSecurities(mappedData)
 
 	return companyName, organizedCompanyProfile, organizeSecurities, nil
 }
@@ -226,35 +228,39 @@ func parseHTML(htmlString string) (map[string]string, string) {
 
 	var f func(*html.Node)
 	f = func(n *html.Node) {
-		if n.Type == html.ElementNode {
-			if n.Data == "tr" {
-				parseRow(n, dataMap)
-				for c := n.FirstChild; c != nil; c = c.NextSibling {
-					if c.Type == html.ElementNode && c.Data == "td" {
-						for cc := c.FirstChild; cc != nil; cc = cc.NextSibling {
-							if cc.Type == html.TextNode && (strings.Contains(cc.Data, "Public Company Limited") || strings.Contains(cc.Data, "บริษัท")) {
-								companyName = strings.TrimSpace(cc.Data)
-							}
-						}
-					}
-				}
+		if n.Type == html.ElementNode && n.Data == "tr" {
+			labelNode, valueNode := extractLabelValueNodes(n)
+			if labelNode != nil && valueNode != nil {
+				label := strings.TrimSpace(getTextContent(labelNode))
+				value := strings.TrimSpace(getTextContent(valueNode))
+				dataMap[label] = value
 			}
 		}
 		for c := n.FirstChild; c != nil; c = c.NextSibling {
-			if c.Type == html.ElementNode && c.Data == "pre" {
-				preContent := getTextContent(c)
-				dataMap["Detail of Security / Information Memorandum"] = preContent
-			}
 			f(c)
 		}
 	}
 	f(doc)
 
-	if companyName == "" {
-		companyName = dataMap["Name (Name Change)"]
-	}
+	companyName = dataMap["Name"]
 
 	return dataMap, companyName
+}
+
+func extractLabelValueNodes(n *html.Node) (*html.Node, *html.Node) {
+	var labelNode, valueNode *html.Node
+	tdCount := 0
+	for c := n.FirstChild; c != nil; c = c.NextSibling {
+		if c.Type == html.ElementNode && c.Data == "td" {
+			tdCount++
+			if tdCount == 1 {
+				labelNode = c
+			} else if tdCount == 2 {
+				valueNode = c
+			}
+		}
+	}
+	return labelNode, valueNode
 }
 
 // func parseFilename(n *html.Node) string {
@@ -272,22 +278,22 @@ func parseHTML(htmlString string) (map[string]string, string) {
 // 	return filename
 // }
 
-func parseRow(n *html.Node, dataMap map[string]string) {
-	tdCount := 0
-	var label, value string
-	for c := n.FirstChild; c != nil; c = c.NextSibling {
-		if c.Type == html.ElementNode && c.Data == "td" {
-			tdCount++
-			if tdCount == 1 {
-				label = strings.TrimSpace(getTextContent(c))
-			} else if tdCount == 2 {
-				value = strings.TrimSpace(getTextContent(c))
-				dataMap[label] = value
-				label, value = "", ""
-			}
-		}
-	}
-}
+// func parseRow(n *html.Node, dataMap map[string]string) {
+// 	tdCount := 0
+// 	var label, value string
+// 	for c := n.FirstChild; c != nil; c = c.NextSibling {
+// 		if c.Type == html.ElementNode && c.Data == "td" {
+// 			tdCount++
+// 			if tdCount == 1 {
+// 				label = strings.TrimSpace(getTextContent(c))
+// 			} else if tdCount == 2 {
+// 				value = strings.TrimSpace(getTextContent(c))
+// 				dataMap[label] = value
+// 				label, value = "", ""
+// 			}
+// 		}
+// 	}
+// }
 
 func getTextContent(n *html.Node) string {
 	if n.Type == html.TextNode {
@@ -298,6 +304,108 @@ func getTextContent(n *html.Node) string {
 		buf.WriteString(getTextContent(c))
 	}
 	return buf.String()
+}
+
+func mapDataKeys(dataMap map[string]string, locale string) map[string]string {
+	mappedData := make(map[string]string)
+	for key, value := range dataMap {
+		switch key {
+		case "Name (Name Change)", "ชื่อบริษัท (การเปลี่ยนชื่อ)":
+			mappedData["Name (Name Change)"] = value
+		case "Address", "ที่อยู่":
+			mappedData["Address"] = value
+		case "Telephone", "เบอร์โทรศัพท์":
+			mappedData["Telephone"] = value
+		case "Fax", "เบอร์โทรสาร":
+			mappedData["Fax"] = value
+		case "URL":
+			mappedData["URL"] = value
+		case "Establishment Date", "วันที่ก่อตั้งบริษัท":
+			mappedData["Establishment Date"] = value
+		case "Juristic Person Registration Number", "เลขทะเบียนนิติบุคคล":
+			mappedData["Juristic Person Registration Number"] = value
+		case "Company Type", "ประเภทบริษัท":
+			mappedData["Company Type"] = value
+		case "Authorized Capital (Common Stock)", "ทุนจดทะเบียน (หุ้นสามัญ)":
+			mappedData["Authorized Capital (Common Stock)"] = value
+		case "Paid-up Capital (Common Stock)", "ทุนจดทะเบียนชำระแล้ว (หุ้นสามัญ)":
+			mappedData["Paid-up Capital (Common Stock)"] = value
+		case "Paid-up Stock (Common Stock)", "จำนวนหุ้นชำระแล้ว (หุ้นสามัญ)":
+			mappedData["Paid-up Stock (Common Stock)"] = value
+		case "Treasury Stock (Common Stock)", "จำนวนหุ้นซื้อคืน (หุ้นสามัญ)":
+			mappedData["Treasury Stock (Common Stock)"] = value
+		case "Voting Stock minus Treasury Stock (Common Stock)", "จำนวนหุ้นที่มีสิทธิออกเสียง หัก หุ้นซื้อคืน (หุ้นสามัญ)":
+			mappedData["Voting Stock minus Treasury Stock (Common Stock)"] = value
+		case "Form56-1 One Report (Thai)", "แบบฟอร์ม 56-1 One Report (ไทย)":
+			mappedData["Form56-1 One Report (Thai)"] = value
+		case "Form56-1 One Report (Eng)", "แบบฟอร์ม 56-1 One Report (อังกฤษ)":
+			mappedData["Form56-1 One Report (Eng)"] = value
+		case "Listed Company Snapshot (Thai)", "Listed Company Snapshot (ไทย)":
+			mappedData["Listed Company Snapshot (Thai)"] = value
+		case "Listed Company Snapshot (Eng)", "Listed Company Snapshot (อังกฤษ)":
+			mappedData["Listed Company Snapshot (Eng)"] = value
+		case "Dividend Policy", "นโยบายเงินปันผล":
+			mappedData["Dividend Policy"] = value
+		case "Auditor/Audit company", "ผู้ตรวจสอบบัญชี/สำนักงานตรวจสอบบัญชี":
+			mappedData["Auditor/Audit company"] = value
+		case "The person taking the highest responsibility in finance and accounting", "ผู้รับผิดชอบสูงสุดในสายงานบัญชีและการเงิน":
+			mappedData["The person taking the highest responsibility in finance and accounting"] = value
+		case "The person supervising accounting", "ผู้ควบคุมดูแลการทำบัญชี":
+			mappedData["The person supervising accounting"] = value
+		case "Listing Condition", "เงื่อนไขการจดทะเบียนในตลท.":
+			mappedData["Listing Condition"] = value
+		case "Securities", "หลักทรัพย์":
+			mappedData["Securities"] = value
+		case "Market", "ตลาด":
+			mappedData["Market"] = value
+		case "Industry/Sector", "กลุ่มอุตสาหากรร/หมวดอุตสาหกรรม":
+			mappedData["Industry/Sector"] = value
+		case "Security Type", "ประเภทหลักทรัพย์":
+			mappedData["Security Type"] = value
+		case "Status", "สถานะ":
+			mappedData["Status"] = value
+		case "Listed Date", "วันที่จดทะเบียนกับตลท":
+			mappedData["Listed Date"] = value
+		case "Par", "ราคาพาร์":
+			mappedData["Par"] = value
+		case "No. of Listed Share", "จำนวนหุ้นจดทะเบียนกับตลท.":
+			mappedData["No. of Listed Share"] = value
+		case "First Trading Date", "วันที่เริ่มต้นซื้อขาย":
+			mappedData["First Trading Date"] = value
+		case "ISIN Number", "เลขรหัสหลักทรัพย์สากล":
+			mappedData["ISIN Number"] = value
+		case "Foreign Limit", "ข้อจำกัดหุ้นต่างด้าว":
+			mappedData["Foreign Limit"] = value
+		case "Foreign Available", "จำนวนหุ้นคงเหลือเพื่อโอน":
+			mappedData["Foreign Available"] = value
+		case "Foreign Queue", "จำนวนหุ้นต่างด้าวที่รอการโอน":
+			mappedData["Foreign Queue"] = value
+		case "Foreign Limit for Exercise", "ข้อจำกัดหุ้นต่างด้าวสำหรับการแปลงสภาพ":
+			mappedData["Foreign Limit for Exercise"] = value
+		case "Account Form", "รูปแบบงบการเงิน":
+			mappedData["Account Form"] = value
+		case "Fiscal Year End", "วันที่สิ้นสุดรอบระยะเวลาบัญชี":
+			mappedData["Fiscal Year End"] = value
+		case "IPO Price", "ราคาเสนอขายหุ้นแก่ประชาชนครั้งแรก":
+			mappedData["IPO Price"] = value
+		case "IPO Financial Advisor", "ที่ปรึกษาทางการเงิน IPO":
+			mappedData["IPO Financial Advisor"] = value
+		case "Subscription Period", "ช่วงเวลาการจองซื้อหุ้น":
+			mappedData["Subscription Period"] = value
+		case "IPO Silent Period", "ระยะเวลาห้ามซื้อขายหุ้น IPO":
+			mappedData["IPO Silent Period"] = value
+		case "Filing", "แบบ Filing":
+			mappedData["Filing"] = value
+		case "Sales Report", "รายงานผลการขาย":
+			mappedData["Sales Report"] = value
+		case "Detail of Security / Information Memorandum", "รายละเอียดหลักทรัพย์ / สรุปข้อสนเทศหลักทรัพย์":
+			mappedData["Detail of Security / Information Memorandum"] = value
+		default:
+			mappedData[key] = value
+		}
+
+	}
+	return mappedData
 }
 
 func organizeData(dataMap map[string]string) CompanyProfile {
