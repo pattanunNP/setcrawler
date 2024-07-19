@@ -1,13 +1,11 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
-	"os"
 	"strings"
 
-	parchange "login_token/Parchange"
 	capitalmovement "login_token/capital_movement"
+	MajorShareHolder "login_token/majorShareHolder"
 	"login_token/utils"
 )
 
@@ -28,30 +26,27 @@ func main() {
 		return
 	}
 
-	allResults := make(map[string]utils.OrganizedData)
+	// allResults := make(map[string]utils.OrganizedData)
 	allmovements := make(map[string]map[string]capitalmovement.CapitalMovement)
+	// var allParChanges []parchange.ParChange
+	allShareHolders := make(map[string]map[string]MajorShareHolder.CombinedShareHolderData)
 
 	locales := []string{"en_EN", "th_TH"}
 	counter := 0
 
-	parChanges, err := parchange.GetParChange(cookieStr, "", "E", "", "1/01/2019", "17/07/2024")
-	if err != nil {
-		fmt.Printf("Par change request error: %v", err)
-		return
-	}
-
 	for _, stock := range stocksData.Stock {
-		if counter >= 5 {
+		if counter >= 10 {
 			break
 		}
 		// Company Profile
-		organizedData := utils.OrganizedData{
-			CompanyProfiles: make(map[string]utils.CompanyProfile),
-			Securities:      make(map[string]utils.Securities),
-		}
+		// organizedData := utils.OrganizedData{
+		// 	CompanyProfiles: make(map[string]utils.CompanyProfile),
+		// 	Securities:      make(map[string]utils.Securities),
+		// }
 
 		// Capital Movement
 		movements := make(map[string]capitalmovement.CapitalMovement)
+		shareHolders := make(map[string]MajorShareHolder.CombinedShareHolderData)
 
 		for _, locale := range locales {
 
@@ -66,45 +61,60 @@ func main() {
 			movements[movementKey] = *movement
 
 			// Company_Profile Reqiest
-			companyName, companyProfile, securities, err := utils.MakeRequestWithCookies(cookieStr, stock.Symbol, locale)
+			// companyName, companyProfile, securities, err := utils.MakeRequestWithCookies(cookieStr, stock.Symbol, locale)
+			// if err != nil {
+			// 	fmt.Printf("Request error for symbol %s, locale %s: %v\n", stock.Symbol, locale, err)
+			// } else {
+			// 	localeSuffix := strings.Split(locale, "_")[1]
+			// 	profileKey := fmt.Sprintf("%s_%s", companyName, localeSuffix)
+			// 	organizedData.CompanyProfiles[profileKey] = companyProfile
+			// 	organizedData.Securities[profileKey] = securities
+			// 	fmt.Printf("Request successful for symbol %s, locale %s\n", stock.Symbol, locale)
+			// }
+
+			shareHoldersData, err := MajorShareHolder.GetMajorShareHoldersAndDetails(cookieStr, stock.Symbol, locale)
 			if err != nil {
-				fmt.Printf("Request error for symbol %s, locale %s: %v\n", stock.Symbol, locale, err)
-			} else {
-				localeSuffix := strings.Split(locale, "_")[1]
-				profileKey := fmt.Sprintf("%s_%s", companyName, localeSuffix)
-				organizedData.CompanyProfiles[profileKey] = companyProfile
-				organizedData.Securities[profileKey] = securities
-				fmt.Printf("Request successful for symbol %s, locale %s\n", stock.Symbol, locale)
+				fmt.Printf("Major shareholder request error for symbol %s, locale %s: %v", stock.Symbol, locale, err)
+				continue
 			}
 
-			// Parchange
-
+			shareHolders[localeSuffix] = shareHoldersData
 		}
 
-		allResults[stock.Symbol] = organizedData
+		// allResults[stock.Symbol] = organizedData
 		allmovements[stock.Symbol] = movements
+		allShareHolders[stock.Symbol] = shareHolders
 		counter++
 	}
 
+	// for _, locale := range locales {
+	// 	parChanges, err := parchange.GetParChange(cookieStr, "", "E", "", "01/01/2019", "17/07/2024", locale)
+	// 	if err != nil {
+	// 		fmt.Printf("Par change request error for locale %s: %v", locale, err)
+	// 		continue
+	// 	}
+	// 	allParChanges = append(allParChanges, parChanges.ParChange...)
+	// }
+
 	// Save all results to a single file
-	file, err := os.Create("company_profile.json")
-	if err != nil {
-		fmt.Println("Error creating JSON file:", err)
-		return
-	}
-	defer file.Close()
+	// file, err := os.Create("company_profile.json")
+	// if err != nil {
+	// 	fmt.Println("Error creating JSON file:", err)
+	// 	return
+	// }
+	// defer file.Close()
 
-	jsonData, err := json.MarshalIndent(allResults, "", "  ")
-	if err != nil {
-		fmt.Println("Error marshalling JSON: ", err)
-		return
-	}
+	// jsonData, err := json.MarshalIndent(allResults, "", "  ")
+	// if err != nil {
+	// 	fmt.Println("Error marshalling JSON: ", err)
+	// 	return
+	// }
 
-	_, err = file.Write(jsonData)
-	if err != nil {
-		fmt.Println("Error writing to JSON file: ", err)
-		return
-	}
+	// _, err = file.Write(jsonData)
+	// if err != nil {
+	// 	fmt.Println("Error writing to JSON file: ", err)
+	// 	return
+	// }
 
 	err = capitalmovement.SaveToFile("capital_movements.json", allmovements)
 	if err != nil {
@@ -112,9 +122,15 @@ func main() {
 		return
 	}
 
-	err = parchange.SaveToFile("par_changes.json", parChanges)
+	// err = parchange.SaveToFile("par_changes.json", allParChanges)
+	// if err != nil {
+	// 	fmt.Println("Error saving par changes JSON file:", err)
+	// 	return
+	// }
+
+	err = MajorShareHolder.SaveFile("major_shareholders.json", allShareHolders)
 	if err != nil {
-		fmt.Println("Error saving par changes JSON file:", err)
+		fmt.Println("Error saving major shareholders JSON file:", err)
 		return
 	}
 

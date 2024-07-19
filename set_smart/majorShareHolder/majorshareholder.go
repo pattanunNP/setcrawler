@@ -8,9 +8,43 @@ import (
 	"net/http"
 	"os"
 	"strings"
+	"time"
 
 	"github.com/PuerkitoBio/goquery"
 )
+
+type ShareHolderDetail struct {
+	Rank          string         `json:"rank"`
+	Shareholder   string         `json:"shareholder"`
+	Shares        string         `json:"shares"`
+	PercentShares string         `json:"percent_shares"`
+	LinkContent   DesiredContent `json:"link_content"`
+}
+
+type MajorShareHolder struct {
+	Date   string            `json:"date"`
+	Values map[string]string `json:"values"`
+}
+
+type DesiredContent struct {
+	Symbol          string `json:"symbol"`
+	Shareholder     string `json:"shareholder"`
+	Shares          string `json:"shares"`
+	PercenShares    string `json:"percent_shares"`
+	ShareholderAsof string `json:"shareholder_as_of"`
+}
+
+type MajorShareHolders struct {
+	FreeFloat   []MajorShareHolder `json:"free_float"`
+	Shareholder []MajorShareHolder `json:"shareholder"`
+}
+
+type CombinedShareHolderData struct {
+	Symbol      string              `json:"symbol"`
+	FreeFloat   []MajorShareHolder  `json:"free_float"`
+	Shareholder []MajorShareHolder  `json:"shareholder"`
+	Details     []ShareHolderDetail `json:"details"`
+}
 
 func FetchDetailedShareholderData(postURL, cookieStr, formData string) (string, error) {
 	req, err := http.NewRequest("POST", postURL, bytes.NewBufferString(formData))
@@ -52,9 +86,30 @@ func FetchDetailedShareholderData(postURL, cookieStr, formData string) (string, 
 	return string(body), nil
 }
 
-// ExtractOptionValues extracts the values of all <option> tags within the specified select box
+func FetchLinkData(link, cookieStr string) (string, error) {
+	req, err := http.NewRequest("GET", link, nil)
+	if err != nil {
+		return "", fmt.Errorf("error creating request: %w", err)
+	}
+	req.Header.Set("Cookie", cookieStr)
+	req.Header.Set("User-Agent", "Mozilla/5.0")
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		return "", fmt.Errorf("error making request: %w", err)
+	}
+	defer resp.Body.Close()
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return "", fmt.Errorf("error reading response body: %w", err)
+	}
+
+	return string(body), nil
+}
+
 func ExtractOptionValues(htmlStr, selectName string) ([]string, error) {
-	// Load the HTML document
 	doc, err := goquery.NewDocumentFromReader(strings.NewReader(htmlStr))
 	if err != nil {
 		return nil, fmt.Errorf("error loading HTML document: %w", err)
@@ -62,89 +117,225 @@ func ExtractOptionValues(htmlStr, selectName string) ([]string, error) {
 
 	var values []string
 
-	// Find the select box with the specified name
 	doc.Find(fmt.Sprintf("select[name=%s] option", selectName)).Each(func(index int, item *goquery.Selection) {
 		value, exists := item.Attr("value")
 		if exists {
 			values = append(values, value)
 		}
 	})
-
 	return values, nil
 }
 
-// FetchDataForOptionValues sends a POST request for each option value and returns the results
-func FetchDataForOptionValues(postURL, cookieStr string, optionValues []string) ([]string, error) {
-	var results []string
-
-	for _, value := range optionValues {
-		formData := fmt.Sprintf("radChoice=1&txtSymbol=SCB&radShow=2&hidAction=&hidLastContentType=&lstFreeFloatDate=%s", value)
-		response, err := FetchDetailedShareholderData(postURL, cookieStr, formData)
-		if err != nil {
-			return nil, fmt.Errorf("error fetching data for option value %s: %w", value, err)
-		}
-		results = append(results, response)
-	}
-
-	return results, nil
-}
-
-// ExtractDataFromTable extracts data from <td> elements of a specific table
-func ExtractDataFromTable(doc *goquery.Document, tableIndex int) (map[string]string, error) {
+func ExtractDataBlock(doc *goquery.Document, selectName string) (map[string]string, error) {
 	data := make(map[string]string)
 
-	// Find the specific table with the class "tfont" by index
-	table := doc.Find("table.tfont").Eq(tableIndex)
+	table := doc.Find("table.tfont")
 	if table.Length() == 0 {
-		return nil, fmt.Errorf("table with class 'tfont' not found at index %d", tableIndex)
+		return nil, fmt.Errorf("table with class 'tfont' not found")
 	}
 
-	// Iterate over the <td> elements
+	table = table.FilterFunction(func(i int, s *goquery.Selection) bool {
+		return s.Find(fmt.Sprintf("select[name='%s']", selectName)).Length() > 0
+	})
+
+	if table.Length() == 0 {
+		return nil, fmt.Errorf("specific table block not found")
+	}
+
 	table.Find("tr").Each(func(index int, row *goquery.Selection) {
-		name := row.Find("td.table-bold").Text()
-		value := row.Find("td.table").Text()
-		if name != "" && value != "" {
-			// Remove whitespace and newlines
-			name = strings.TrimSpace(name)
-			value = strings.TrimSpace(value)
-			data[name] = value
+		tds := row.Find("td")
+		if tds.Length() >= 4 {
+			key1 := strings.TrimSpace(tds.Eq(0).Text())
+			value1 := strings.TrimSpace(tds.Eq(1).Text())
+			key2 := strings.TrimSpace(tds.Eq(2).Text())
+			value2 := strings.TrimSpace(tds.Eq(3).Text())
+			if key1 != "" && value1 != "" {
+				data[key1] = value1
+			}
+			if key2 != "" && value2 != "" {
+				data[key2] = value2
+			}
 		}
 	})
 
 	return data, nil
 }
 
-// ExtractTableRows extracts text content from all rows in a table
-func ExtractTableRows(doc *goquery.Document, tableIndex int) ([]string, error) {
-	var rows []string
+func ExtractShareHolderDetails(doc *goquery.Document, cookieStr string) ([]ShareHolderDetail, error) {
+	var details []ShareHolderDetail
 
-	// Find the specific table with the class "tfont" by index
-	table := doc.Find("table.tfont").Eq(tableIndex)
-	if table.Length() == 0 {
-		return nil, fmt.Errorf("table with class 'tfont' not found at index %d", tableIndex)
-	}
+	doc.Find("table.tfont").Each(func(index int, table *goquery.Selection) {
+		table.Find("tr").Each(func(index int, row *goquery.Selection) {
+			tds := row.Find("td")
+			if tds.Length() == 4 {
+				rank := strings.TrimSpace(tds.Eq(0).Text())
+				shareholder := strings.TrimSpace(tds.Eq(1).Text())
+				shares := strings.TrimSpace(tds.Eq(2).Text())
+				percentShares := strings.TrimSpace(tds.Eq(3).Text())
 
-	// Iterate over the rows
-	table.Find("tr").Each(func(index int, row *goquery.Selection) {
-		rows = append(rows, row.Text())
+				if rank == "Minor Shareholders (Free float)" || rank == "Total Shareholders" || rank == "Rank" {
+					return
+				}
+
+				var linkContent DesiredContent
+				if rank != "" && shareholder != "" && shares != "" && percentShares != "" {
+
+					link, exists := tds.Eq(1).Find("a.olink").Attr("href")
+					if exists {
+						fullLink := fmt.Sprintf("https://www.setsmart.com%s", link)
+						fmt.Printf("processing link: %s\n", fullLink)
+						linkData, err := FetchLinkData(fullLink, cookieStr)
+						if err != nil {
+							fmt.Printf("Error fetching link data for %s: %v\n", shareholder, err)
+						} else {
+							linkDoc, err := goquery.NewDocumentFromReader(strings.NewReader(linkData))
+							if err != nil {
+								fmt.Printf("Error parsing link data for %s: %v\n", shareholder, err)
+							} else {
+								linkContent = extractDesiredContent(linkDoc)
+							}
+						}
+					}
+
+					details = append(details, ShareHolderDetail{
+						Rank:          rank,
+						Shareholder:   shareholder,
+						Shares:        shares,
+						PercentShares: percentShares,
+						LinkContent:   linkContent,
+					})
+				}
+			}
+		})
 	})
 
-	return rows, nil
+	if len(details) == 0 {
+		return nil, fmt.Errorf("no shareholder details found")
+	}
+
+	return details, nil
 }
 
-// SaveDataAsJSON saves the provided data map as a JSON file
-func SaveDataAsJSON(data map[string]map[string]string, jsonFilename string) error {
-	// Convert the data to JSON
-	jsonData, err := json.MarshalIndent(data, "", "  ")
+func extractDesiredContent(doc *goquery.Document) DesiredContent {
+	var content DesiredContent
+
+	doc.Find("table#holder").Each(func(index int, table *goquery.Selection) {
+		table.Find("tbody tr").Each(func(index int, row *goquery.Selection) {
+			tds := row.Find("td")
+			if tds.Length() == 5 {
+				content.Symbol = strings.TrimSpace(tds.Eq(0).Text())
+				content.Shareholder = strings.TrimSpace(tds.Eq(1).Text())
+				content.Shares = strings.TrimSpace(tds.Eq(2).Text())
+				content.PercenShares = strings.TrimSpace(tds.Eq(3).Text())
+				content.ShareholderAsof = strings.TrimSpace(tds.Eq(4).Text())
+			}
+		})
+	})
+	return content
+}
+
+func ConvertToISO8601(dateStr string) string {
+	layout := "2006-01-02"
+	t, err := time.Parse(layout, dateStr)
 	if err != nil {
-		return fmt.Errorf("error marshalling JSON: %w", err)
+		return dateStr
+	}
+	return t.Format(time.RFC3339)
+}
+
+func GetMajorShareHoldersAndDetails(cookieStr, symbol, locale string) (CombinedShareHolderData, error) {
+	initialURL := "https://www.setsmart.com/ism/majorshareholder.html"
+	formData := fmt.Sprintf("txtSymbol=%s&locale=%s&submit.x=0&submit.y=0", symbol, locale)
+
+	htmlStr, err := FetchDetailedShareholderData(initialURL, cookieStr, formData)
+	if err != nil {
+		return CombinedShareHolderData{}, fmt.Errorf("error fetching initial shareholder data: %w", err)
 	}
 
-	// Save the JSON data to a file
-	err = os.WriteFile(jsonFilename, jsonData, 0644)
+	freeFloatDates, err := ExtractOptionValues(htmlStr, "lstFreeFloatDate")
 	if err != nil {
-		return fmt.Errorf("error writing JSON file: %w", err)
+		return CombinedShareHolderData{}, fmt.Errorf("error extracting option values: %w", err)
 	}
 
+	shareHolderDates, err := ExtractOptionValues(htmlStr, "lstDate")
+	if err != nil {
+		return CombinedShareHolderData{}, fmt.Errorf("error extracting option values: %w", err)
+	}
+
+	var combinedData CombinedShareHolderData
+	combinedData.Symbol = symbol
+
+	for _, value := range freeFloatDates {
+		formData = fmt.Sprintf("radChoice=1&txtSymbol=%s&radShow=2&hidAction=&hidLastContentType=&lstFreeFloatDate=%s", symbol, value)
+		response, err := FetchDetailedShareholderData(initialURL, cookieStr, formData)
+		if err != nil {
+			return CombinedShareHolderData{}, fmt.Errorf("error fetching detailed shareholder data: %w", err)
+		}
+
+		doc, err := goquery.NewDocumentFromReader(strings.NewReader(response))
+		if err != nil {
+			return CombinedShareHolderData{}, fmt.Errorf("error loading HTML document: %w", err)
+		}
+
+		shareHolders, err := ExtractDataBlock(doc, "lstFreeFloatDate")
+		if err != nil {
+			return CombinedShareHolderData{}, fmt.Errorf("error extracting shareholders data: %w", err)
+		}
+
+		combinedData.FreeFloat = append(combinedData.FreeFloat, MajorShareHolder{
+			Date:   ConvertToISO8601(value),
+			Values: shareHolders,
+		})
+	}
+
+	for _, value := range shareHolderDates {
+		formData = fmt.Sprintf("radChoice=1&txtSymbol=%s&radShow=2&hidAction=&hidLastContentType=&lstDate=%s", symbol, value)
+		response, err := FetchDetailedShareholderData(initialURL, cookieStr, formData)
+		if err != nil {
+			return CombinedShareHolderData{}, fmt.Errorf("error fetching detailed shareholder data: %w", err)
+		}
+
+		doc, err := goquery.NewDocumentFromReader(strings.NewReader(response))
+		if err != nil {
+			return CombinedShareHolderData{}, fmt.Errorf("error loading HTML document: %w", err)
+		}
+
+		shareHolders, err := ExtractDataBlock(doc, "lstDate")
+		if err != nil {
+			return CombinedShareHolderData{}, fmt.Errorf("error extracting shareholders data: %w", err)
+		}
+
+		combinedData.Shareholder = append(combinedData.Shareholder, MajorShareHolder{
+			Date:   ConvertToISO8601(value),
+			Values: shareHolders,
+		})
+
+		details, err := ExtractShareHolderDetails(doc, cookieStr)
+		if err != nil {
+			return CombinedShareHolderData{}, fmt.Errorf("error extracting shareholder details: %w", err)
+		}
+
+		combinedData.Details = append(combinedData.Details, details...)
+	}
+
+	return combinedData, nil
+}
+
+func SaveFile(filename string, data interface{}) error {
+	file, err := os.Create(filename)
+	if err != nil {
+		return fmt.Errorf("error creating file: %w", err)
+	}
+	defer file.Close()
+
+	jsonData, err := json.MarshalIndent(data, "", " ")
+	if err != nil {
+		return fmt.Errorf("error marshalling data: %w", err)
+	}
+
+	_, err = file.Write(jsonData)
+	if err != nil {
+		return fmt.Errorf("error writing to file: %w", err)
+	}
 	return nil
 }
