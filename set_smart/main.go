@@ -6,6 +6,7 @@ import (
 
 	capitalmovement "login_token/capital_movement"
 	MajorShareHolder "login_token/majorShareHolder"
+	"login_token/news"
 	"login_token/utils"
 )
 
@@ -30,6 +31,7 @@ func main() {
 	allmovements := make(map[string]map[string]capitalmovement.CapitalMovement)
 	// var allParChanges []parchange.ParChange
 	allShareHolders := make(map[string]map[string]MajorShareHolder.CombinedShareHolderData)
+	allNews := make(map[string]map[string][]news.NewsItem)
 
 	locales := []string{"en_EN", "th_TH"}
 	counter := 0
@@ -47,6 +49,7 @@ func main() {
 		// Capital Movement
 		movements := make(map[string]capitalmovement.CapitalMovement)
 		shareHolders := make(map[string]MajorShareHolder.CombinedShareHolderData)
+		stockNews := make(map[string][]news.NewsItem)
 
 		for _, locale := range locales {
 
@@ -79,11 +82,20 @@ func main() {
 			}
 
 			shareHolders[localeSuffix] = shareHoldersData
+
+			// News
+			newsItems, err := news.FetchNews(cookieStr, stock.Symbol, locale)
+			if err != nil {
+				fmt.Printf("News request error for symbol %s, locale %s: %v", stock.Symbol, locale, err)
+				continue
+			}
+			stockNews[localeSuffix] = newsItems
 		}
 
 		// allResults[stock.Symbol] = organizedData
 		allmovements[stock.Symbol] = movements
 		allShareHolders[stock.Symbol] = shareHolders
+		allNews[stock.Symbol] = stockNews
 		counter++
 	}
 
@@ -134,5 +146,9 @@ func main() {
 		return
 	}
 
-	//fmt.Println("Data successfully written to all_results.json")
+	err = news.SaveToFile("news_data.json", allNews)
+	if err != nil {
+		fmt.Println("Error saving news data JSON file:", err)
+		return
+	}
 }

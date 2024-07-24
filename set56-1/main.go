@@ -97,14 +97,14 @@ func main() {
 	var data []Data
 
 	// Counter for the number of records processed
-	// recordCount := 0
-	// const maxRecords = 5
+	recordCount := 0
+	const maxRecords = 5
 
 	// Find all <tr> elements
 	doc.Find("tr").Each(func(rowIndex int, row *goquery.Selection) {
-		// if recordCount >= maxRecords {
-		// 	return // Stop processing if we've reached the limit
-		// }
+		if recordCount >= maxRecords {
+			return // Stop processing if we've reached the limit
+		}
 
 		// Create a slice to hold cell data for this row
 		tds := row.Find("td")
@@ -145,13 +145,13 @@ func main() {
 				Document:    documents,
 			})
 
-			// recordCount++
+			recordCount++
 		}
 
 		// Stop processing if we've reached the limit
-		// if recordCount >= maxRecords {
-		// 	return
-		// }
+		if recordCount >= maxRecords {
+			return
+		}
 	})
 
 	// Save the data to JSON File
@@ -306,36 +306,36 @@ func extractPDFPages(filePath, apiKey, modelName string) ([]string, string, erro
 		page := r.Page(i)
 		text, err := extractTextFromPageHandlingErrors(page)
 		if err != nil {
-			log.Printf("Error extracting text from page %d: %v", i, err)
-			text = "Error extracting text, Attempting image-based extraction"
-			processedTexts = append(processedTexts, text)
+			// log.Printf("Error extracting text from page %d: %v", i, err)
+			// text = "Error extracting text, Attempting image-based extraction"
+			// processedTexts = append(processedTexts, text)
 
-			base64Image, err := convertPageToBase64Image(filePath, i)
-			if err != nil {
-				log.Printf("Failed to convert page %d to base64 image: %v", i, err)
-				continue
-			}
-			orcText, err := sendImageToOpenAI(base64Image, apiKey, modelName)
-			if err != nil {
-				log.Printf("Failed to perform OCR on page %d: %v", i, err)
-				continue
-			}
-			processedTexts = append(processedTexts, orcText)
+			// base64Image, err := convertPageToBase64Image(filePath, i)
+			// if err != nil {
+			// 	log.Printf("Failed to convert page %d to base64 image: %v", i, err)
+			// 	continue
+			// }
+			// orcText, err := sendImageToOpenAI(base64Image, apiKey, modelName)
+			// if err != nil {
+			// 	log.Printf("Failed to perform OCR on page %d: %v", i, err)
+			// 	continue
+			// }
+			// processedTexts = append(processedTexts, orcText)
 		} else {
 
 			if len(text) < 1000 {
 				log.Printf("Text on page %d is less than 1000 converting to image", i)
-				base64Image, err := convertPageToBase64Image(filePath, i)
-				if err != nil {
-					log.Printf("Failed to convert page %d to base64 image: %v", i, err)
-					continue
-				}
-				orcText, err := sendImageToOpenAI(base64Image, apiKey, modelName)
-				if err != nil {
-					log.Printf("Failed to perform OCR on page %d: %v", i, err)
-					continue
-				}
-				processedTexts = append(processedTexts, orcText)
+				// base64Image, err := convertPageToBase64Image(filePath, i)
+				// if err != nil {
+				// 	log.Printf("Failed to convert page %d to base64 image: %v", i, err)
+				// 	continue
+				// }
+				// orcText, err := sendImageToOpenAI(base64Image, apiKey, modelName)
+				// if err != nil {
+				// 	log.Printf("Failed to perform OCR on page %d: %v", i, err)
+				// 	continue
+				// }
+				// processedTexts = append(processedTexts, orcText)
 			} else {
 				processedTexts = append(processedTexts, text)
 			}
@@ -821,7 +821,7 @@ func extractZipFiles(body []byte, apiKey, modelName string) ([]Document, error) 
 		tempFile.Close()
 
 		if filepath.Ext(file.Name) == ".pdf" || filepath.Ext(file.Name) == ".PDF" {
-			exePath := "./extract_pdf_text"
+			exePath := "./extract_text_from_pdf"
 			log.Printf("Executing %s on file: %s", exePath, tempFile.Name())
 
 			output, err := exec.Command(exePath, tempFile.Name()).Output()
