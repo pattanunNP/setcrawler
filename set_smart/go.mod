@@ -3,7 +3,6 @@ module login_token
 go 1.22.0
 
 require (
-	github.com/360EntSecGroup-Skylar/excelize v1.4.1
 	github.com/PuerkitoBio/goquery v1.9.2
 	github.com/ledongthuc/pdf v0.0.0-20240201131950-da5b75280b06
 	github.com/nguyenthenguyen/docx v0.0.0-20230621112118-9c8e795a11db
@@ -19,5 +18,6 @@ require (
 	github.com/xuri/efp v0.0.0-20231025114914-d1ff6096ae53 // indirect
 	github.com/xuri/nfp v0.0.0-20230919160717-d98342af3f05 // indirect
 	golang.org/x/crypto v0.22.0 // indirect
+	golang.org/x/image v0.15.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 )

@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/PuerkitoBio/goquery"
-	pdf "github.com/ledongthuc/pdf"
+	"github.com/ledongthuc/pdf"
 	"github.com/nguyenthenguyen/docx"
 	"github.com/xuri/excelize/v2"
 )
@@ -21,7 +21,7 @@ type NewsItem struct {
 	DateTime string `json:"date_time"`
 	Symbol   string `json:"symbol"`
 	Source   string `json:"source"`
-	Subject  string `json:"subject"`
+	Subject  string `json:"suject"`
 	Detail   string `json:"detail"`
 }
 
@@ -29,15 +29,16 @@ type NewsDetail struct {
 	DateTime            string `json:"date_time"`
 	Headline            string `json:"headline"`
 	Symbol              string `json:"symbol"`
-	FullDetailedNews    string `json:"full_detailed_news"`
+	FulldetailedNews    string `json:"full_detailed_news"`
 	AnnouncementDetails string `json:"announcement_details"`
-	PDFContent          string `json:"pdf_content"`
+	FileContent         string `json:"file_content"`
 }
 
 func FetchNews(cookieStr, symbol, locale string) ([]NewsItem, error) {
-	url := "https://www.setsmart.com/ism/searchTodayNews.html?symbol=%s&exchangeNews=on&lstSecType=&lstSector=A_0_99_0_M&locale=%s&newsType=&submit.x=0&regulatorSymbol=&submit.y=0&txtSubject=&lstView=bySymbol&lstFavorite=0&companyNews=on"
+	url := "https://www.setsmart.com/ism/searchTodayNews.html"
+	payload := strings.NewReader(fmt.Sprintf("companyNews=on&exchangeNews=on&lstView=bySymbol&symbol=%s&regulatorSymbol=&lstSecType=&lstSector=A_0_99_0_M&lstFavorite=0&txtSubject=&newsType=&submit.x=0&submit.y=0", symbol))
 
-	req, err := http.NewRequest("GET", url, nil)
+	req, err := http.NewRequest("POST", url, payload)
 	if err != nil {
 		return nil, fmt.Errorf("error creating request: %v", err)
 	}
@@ -45,9 +46,11 @@ func FetchNews(cookieStr, symbol, locale string) ([]NewsItem, error) {
 	req.Header.Set("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7")
 	req.Header.Set("accept-language", "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7")
 	req.Header.Set("cache-control", "max-age=0")
+	req.Header.Set("content-type", "application/x-www-form-urlencoded")
 	req.Header.Set("cookie", cookieStr)
+	req.Header.Set("origin", "https://www.setsmart.com")
 	req.Header.Set("priority", "u=0, i")
-	req.Header.Set("referer", "https://www.setsmart.com/ism/searchTodayNews.html?symbol=fm&exchangeNews=on&lstSecType=&lstSector=A_0_99_0_M&locale=th_TH&newsType=&submit.x=0&regulatorSymbol=&submit.y=0&txtSubject=&lstView=bySymbol&lstFavorite=0&companyNews=on")
+	req.Header.Set("referer", "https://www.setsmart.com/ism/searchTodayNews.html")
 	req.Header.Set("sec-ch-ua", `"Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"`)
 	req.Header.Set("sec-ch-ua-mobile", "?0")
 	req.Header.Set("sec-ch-ua-platform", `"macOS"`)
@@ -70,12 +73,7 @@ func FetchNews(cookieStr, symbol, locale string) ([]NewsItem, error) {
 		return nil, fmt.Errorf("error reading response body: %v", err)
 	}
 
-	newsItems, err := extractNewsItem(doc, cookieStr)
-	if err != nil {
-		return nil, fmt.Errorf("error extracting news items: %v", err)
-	}
-
-	return newsItems, nil
+	return extractNewsItem(doc, cookieStr)
 }
 
 func extractNewsItem(doc *goquery.Document, cookieStr string) ([]NewsItem, error) {
@@ -83,8 +81,8 @@ func extractNewsItem(doc *goquery.Document, cookieStr string) ([]NewsItem, error
 
 	doc.Find("#item tbody tr").Each(func(i int, row *goquery.Selection) {
 		var item NewsItem
-		row.Find("td").Each(func(j int, cell *goquery.Selection) {
-			switch j {
+		row.Find("td").Each(func(i int, cell *goquery.Selection) {
+			switch i {
 			case 0:
 				item.DateTime = convertToISO8601(cell.Text())
 			case 2:
@@ -96,9 +94,12 @@ func extractNewsItem(doc *goquery.Document, cookieStr string) ([]NewsItem, error
 			case 5:
 				detailURL := cell.Find("a").AttrOr("href", "")
 				if detailURL != "" {
-					detailHTML, err := fectchDetailHTML("https://www.setsmart.com"+detailURL, cookieStr)
+					detail, err := fetchDetailHTML("https://www.setsmart.com"+detailURL, cookieStr)
 					if err == nil {
-						item.Detail = detailHTML
+						detailJSON, err := json.Marshal(detail)
+						if err == nil {
+							item.Detail = string(detailJSON)
+						}
 					}
 				}
 			}
@@ -108,10 +109,10 @@ func extractNewsItem(doc *goquery.Document, cookieStr string) ([]NewsItem, error
 	return newsItems, nil
 }
 
-func fectchDetailHTML(url string, cookieStr string) (string, error) {
+func fetchDetailHTML(url, cookieStr string) (*NewsDetail, error) {
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
-		return "", fmt.Errorf("error creating request: %v", err)
+		return nil, fmt.Errorf("error creating request: %v", err)
 	}
 
 	req.Header.Set("cookie", cookieStr)
@@ -120,55 +121,59 @@ func fectchDetailHTML(url string, cookieStr string) (string, error) {
 	client := &http.Client{}
 	resp, err := client.Do(req)
 	if err != nil {
-		return "", fmt.Errorf("error making request: %v", err)
+		return nil, fmt.Errorf("error making request: %v", err)
 	}
 	defer resp.Body.Close()
 
 	if resp.StatusCode != 200 {
-		return "", fmt.Errorf("error: non-200 status code %d", resp.StatusCode)
-	}
-
-	contentType := resp.Header.Get("Content-Type")
-	if strings.Contains(contentType, "application/zip") {
-		fmt.Println("Detected ZIP file, processing...")
-		return extractZIP(resp.Body)
+		return nil, fmt.Errorf("error: non-200 status code %d", resp.StatusCode)
 	}
 
 	doc, err := goquery.NewDocumentFromReader(resp.Body)
 	if err != nil {
-		return "", fmt.Errorf("error reading response body: %v", err)
+		return nil, fmt.Errorf("error reading response body: %v", err)
 	}
 
-	newsDetail := NewsDetail{}
+	newsDetail := &NewsDetail{}
+	details := make(map[string]string)
 
 	doc.Find("tbody tr").Each(func(i int, row *goquery.Selection) {
-		strongText := row.Find("td strong").Text()
-		switch strongText {
-		case "Date/Time":
-			newsDetail.DateTime = convertToISO8601(row.Find("td").Last().Text())
-		case "Headline":
-			newsDetail.Headline = row.Find("td").Last().Text()
-		case "Symbol":
-			newsDetail.Symbol = row.Find("td").Last().Text()
-		case "Full Detailed News:":
-			pdfURL := row.Find("a").AttrOr("href", "")
-			if pdfURL != "" {
-				pdfContent, err := downloadAndExtractFile("http://www.setsmart.com" + pdfURL)
-				if err == nil {
-					newsDetail.PDFContent = pdfContent
+		cells := row.Find("td")
+		if cells.Length() >= 2 {
+			key := strings.TrimSpace(cells.Eq(0).Text())
+			value := strings.TrimSpace(cells.Eq(1).Text())
+
+			fmt.Printf("Key: %s, Value: %s\n", key, value)
+
+			switch key {
+			case "Date/Time:":
+				newsDetail.DateTime = convertToISO8601(value)
+			case "Headline:":
+				newsDetail.Headline = value
+			case "Symbol:":
+				newsDetail.Symbol = value
+			case "Full Detailed News:":
+				pdfURL := cells.Eq(1).Find("a").AttrOr("href", "")
+				if pdfURL != "" {
+					pdfContent, err := downloadAndExtractFile("https://www.setsmart.com" + pdfURL)
+					if err == nil {
+						newsDetail.FileContent = pdfContent
+					}
 				}
 			}
 		}
 	})
 
 	announcementDetails := doc.Find(".newsstory-body").Text()
-	newsDetail.AnnouncementDetails = announcementDetails
+	details["Announcement Details"] = announcementDetails
 
-	detailJSON, err := json.MarshalIndent(newsDetail, "", " ")
+	detailsStr, err := json.MarshalIndent(details, "", " ")
 	if err != nil {
-		return "", fmt.Errorf("error marshalling news detail to JSON: %v", err)
+		return nil, fmt.Errorf("error marshalling details to JSON: %v", err)
 	}
-	return string(detailJSON), nil
+	newsDetail.AnnouncementDetails = string(detailsStr)
+
+	return newsDetail, nil
 }
 
 func downloadAndExtractFile(url string) (string, error) {
@@ -208,14 +213,14 @@ func extractPDF(reader io.Reader) (string, error) {
 
 	pdfFile, pdfReader, err := pdf.Open(tempFile.Name())
 	if err != nil {
-		return "", fmt.Errorf("error openning PDF file: %v", err)
+		return "", fmt.Errorf("error opening PDF file: %v", err)
 	}
 	defer pdfFile.Close()
 
 	var buf bytes.Buffer
 	textReader, err := pdfReader.GetPlainText()
 	if err != nil {
-		return "", fmt.Errorf("error extractin text from PDF: %v", err)
+		return "", fmt.Errorf("error extracting text from PDF: %v", err)
 	}
 	if _, err := buf.ReadFrom(textReader); err != nil {
 		return "", fmt.Errorf("error reading from text reader: %v", err)
@@ -232,7 +237,7 @@ func extractZIP(reader io.Reader) (string, error) {
 
 	zipReader, err := zip.NewReader(bytes.NewReader(body), int64(len(body)))
 	if err != nil {
-		return "", fmt.Errorf("error openning ZIP archive: %v", err)
+		return "", fmt.Errorf("error opening ZIP archive: %v", err)
 	}
 
 	var extractedText strings.Builder
@@ -247,7 +252,7 @@ func extractZIP(reader io.Reader) (string, error) {
 func extractZIPFile(file *zip.File, extractedText *strings.Builder) error {
 	rc, err := file.Open()
 	if err != nil {
-		return fmt.Errorf("error openning file in ZIP: %v", err)
+		return fmt.Errorf("error opening file in ZIP: %v", err)
 	}
 	defer rc.Close()
 
@@ -303,8 +308,7 @@ func extractDOCXPages(filePath string) (string, error) {
 
 	doc := r.Editable()
 	contentString := doc.GetContent()
-	text := extractTextFromDocxContent(contentString)
-	return text, nil
+	return extractTextFromDocxContent(contentString), nil
 }
 
 func extractTextFromDocxContent(content string) string {
@@ -335,7 +339,7 @@ func extractXLSX(reader io.Reader) (string, error) {
 	defer tempFile.Close()
 
 	if _, err := io.Copy(tempFile, reader); err != nil {
-		return "", fmt.Errorf("error writing to temprary file: %v", err)
+		return "", fmt.Errorf("error writing to temporary file: %v", err)
 	}
 
 	return extractExcelXlsxPages(tempFile.Name())
@@ -364,49 +368,29 @@ func extractExcelXlsxPages(filePath string) (string, error) {
 }
 
 func convertToISO8601(dateStr string) string {
-	const inputLayout1 = "02/01/2006 15:04:05"
-	const inputLayout2 = "02/01/2006 15:04"
+	const inputLayout = "02/01/2006 15:04"
 	const outputLayout = time.RFC3339
 
-	t, err := time.Parse(inputLayout1, dateStr)
+	t, err := time.Parse(inputLayout, dateStr)
 	if err != nil {
-		t, err = time.Parse(inputLayout2, dateStr)
-		if err != nil {
-			fmt.Printf("Error parsing date: %v\n", err)
-			return dateStr
-		}
+		fmt.Printf("Error parsing date: %v\n", err)
+		return dateStr
 	}
-
 	return t.Format(outputLayout)
-}
-
-func LogNewsAsJSON(newsItem []NewsItem) error {
-	newsJSON, err := json.MarshalIndent(newsItem, "", " ")
-	if err != nil {
-		return fmt.Errorf("error marshalling news data to JSON: %v", err)
-	}
-
-	fmt.Println("Fetched news Data:")
-	fmt.Println(string(newsJSON))
-	return nil
 }
 
 func SaveToFile(filename string, data interface{}) error {
 	file, err := os.Create(filename)
 	if err != nil {
-		return fmt.Errorf("error creating JSON file: %v", err)
+		return fmt.Errorf("error creating file: %v", err)
 	}
 	defer file.Close()
 
-	jsonData, err := json.MarshalIndent(data, "", " ")
-	if err != nil {
-		return fmt.Errorf("error marshalling JSON: %v", err)
-	}
+	encoder := json.NewEncoder(file)
+	encoder.SetIndent("", " ")
 
-	_, err = file.Write(jsonData)
-	if err != nil {
-		return fmt.Errorf("error writing to JSON file: %v", err)
+	if err := encoder.Encode(data); err != nil {
+		return fmt.Errorf("error encoding JSON to file: %v", err)
 	}
-
 	return nil
 }

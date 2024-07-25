@@ -19,15 +19,12 @@ import (
 	"strconv"
 	"strings"
 	"time"
-	"unicode/utf8"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/ledongthuc/pdf"
 	"github.com/nfnt/resize"
 	"github.com/nguyenthenguyen/docx"
+	"github.com/pdfcpu/pdfcpu/pkg/api"
 	"github.com/xuri/excelize/v2"
-	"golang.org/x/text/encoding/unicode"
-	"golang.org/x/text/transform"
 )
 
 type Data struct {
@@ -38,11 +35,16 @@ type Data struct {
 }
 
 type Document struct {
-	DocumentName string   `json:"document_name"`
-	OriginalPath string   `json:"original_path"`
-	FileType     string   `json:"file_type"`
-	Pages        []string `json:"pages"`
-	Analysis     string   `json:"analysis,omitempty"`
+	DocumentName string `json:"document_name"`
+	OriginalPath string `json:"original_path"`
+	FileType     string `json:"file_type"`
+	Pages        []Page `json:"pages"`
+	Analysis     string `json:"analysis,omitempty"`
+}
+
+type Page struct {
+	PageNumber int    `json:"page"`
+	Text       string `json:"text"`
 }
 
 type OpenAIRequest struct {
@@ -126,7 +128,6 @@ func main() {
 					}
 				}
 			}
-
 			// Convert yearPeriod and submitDate to ISO8601 format
 			yearPeriodISO, err := convertToISO8601(yearPeriod)
 			if err != nil {
@@ -163,7 +164,7 @@ func main() {
 
 func extractTextFromFile(filePath, apiKey, modelName string, documents []Document) ([]Document, error) {
 	fileType := getFileType(filePath)
-	var pages []string
+	var pages []Page
 	var err error
 
 	switch fileType {
@@ -227,14 +228,14 @@ func convertXlsToXlsx(filePath string) (string, error) {
 	return xlsxFilePath, nil
 }
 
-func extractExcelXlsxPages(filePath string) ([]string, error) {
+func extractExcelXlsxPages(filePath string) ([]Page, error) {
 	f, err := excelize.OpenFile(filePath)
 	if err != nil {
 		return nil, err
 	}
 	defer f.Close()
 
-	var pages []string
+	var pages []Page
 	for _, sheetName := range f.GetSheetMap() {
 		rows, err := f.GetRows(sheetName)
 		if err != nil {
@@ -244,7 +245,10 @@ func extractExcelXlsxPages(filePath string) ([]string, error) {
 		for _, row := range rows {
 			sb.WriteString(strings.TrimSpace(strings.Join(row, "\t")) + "\n")
 		}
-		pages = append(pages, sb.String())
+		pages = append(pages, Page{
+			PageNumber: len(pages) + 1,
+			Text:       sb.String(),
+		})
 	}
 
 	return pages, nil
@@ -260,7 +264,7 @@ func convertDocToDocx(docFilePath string) (string, error) {
 	return docxFilePath, nil
 }
 
-func extractDocxPages(filePath string) ([]string, string, error) {
+func extractDocxPages(filePath string) ([]Page, string, error) {
 	r, err := docx.ReadDocxFile(filePath)
 	if err != nil {
 		return nil, "", err
@@ -270,8 +274,10 @@ func extractDocxPages(filePath string) ([]string, string, error) {
 	doc := r.Editable()
 	contentString := doc.GetContent()
 	text := extractTextFromDocxContent(contentString)
-	pages := []string{text}
-
+	pages := []Page{{
+		PageNumber: 1,
+		Text:       text,
+	}}
 	return pages, "DOCX", nil
 }
 
@@ -294,54 +300,89 @@ func extractTextFromDocxContent(content string) string {
 	return sb.String()
 }
 
-func extractPDFPages(filePath, apiKey, modelName string) ([]string, string, error) {
-	var processedTexts []string
-	f, r, err := pdf.Open(filePath)
+func extractPDFPages(filePath, apiKey, modelName string) ([]Page, string, error) {
+	var processedTexts []Page
+	totalPages, err := getTotalPages(filePath)
 	if err != nil {
-		return nil, "", fmt.Errorf("error opening PDF file: %v", err)
+		return nil, "", fmt.Errorf("error getting total pages: %v", err)
 	}
-	defer f.Close()
 
-	for i := 1; i <= 2 && i <= r.NumPage(); i++ {
-		page := r.Page(i)
-		text, err := extractTextFromPageHandlingErrors(page)
+	for i := 1; i <= totalPages; i++ {
+		text, err := extractTextByPage(filePath, i)
 		if err != nil {
-			// log.Printf("Error extracting text from page %d: %v", i, err)
-			// text = "Error extracting text, Attempting image-based extraction"
-			// processedTexts = append(processedTexts, text)
-
-			// base64Image, err := convertPageToBase64Image(filePath, i)
-			// if err != nil {
-			// 	log.Printf("Failed to convert page %d to base64 image: %v", i, err)
-			// 	continue
-			// }
-			// orcText, err := sendImageToOpenAI(base64Image, apiKey, modelName)
-			// if err != nil {
-			// 	log.Printf("Failed to perform OCR on page %d: %v", i, err)
-			// 	continue
-			// }
-			// processedTexts = append(processedTexts, orcText)
+			log.Printf("Error extracting text from page %d: %v", i, err)
+			processedTexts = append(processedTexts, Page{
+				PageNumber: i,
+				Text:       text,
+			})
 		} else {
-
-			if len(text) < 1000 {
+			cleanedText := CleanText(text)
+			if len(cleanedText) < 1000 {
 				log.Printf("Text on page %d is less than 1000 converting to image", i)
-				// base64Image, err := convertPageToBase64Image(filePath, i)
-				// if err != nil {
-				// 	log.Printf("Failed to convert page %d to base64 image: %v", i, err)
-				// 	continue
-				// }
-				// orcText, err := sendImageToOpenAI(base64Image, apiKey, modelName)
-				// if err != nil {
-				// 	log.Printf("Failed to perform OCR on page %d: %v", i, err)
-				// 	continue
-				// }
-				// processedTexts = append(processedTexts, orcText)
+				base64Image, err := convertPageToBase64Image(filePath, i)
+				if err != nil {
+					log.Printf("Failed to convert page %d: %v", i, err)
+					continue
+				}
+				ocrText, err := sendImageToOpenAI(base64Image, apiKey, modelName)
+				if err != nil {
+					log.Printf("Failed to perform OCR on page %d: %v", i, err)
+					continue
+				}
+				processedTexts = append(processedTexts, Page{
+					PageNumber: i,
+					Text:       ocrText,
+				})
 			} else {
-				processedTexts = append(processedTexts, text)
+				processedTexts = append(processedTexts, Page{
+					PageNumber: i,
+					Text:       cleanedText,
+				})
 			}
 		}
 	}
 	return processedTexts, "PDF", nil
+}
+
+func extractTextByPage(pdfPath string, page int) (string, error) {
+	cmd := exec.Command("java", "-jar", "pdfbox-app-3.0.2.jar", "export:text",
+		"-encoding", "UTF-8", "-startPage", strconv.Itoa(page), "-endPage", strconv.Itoa(page),
+		"-i", pdfPath, "-console")
+	output, err := cmd.Output()
+	if err != nil {
+		return "", fmt.Errorf("error running PDFBox CLI for page %d: %v", page, err)
+	}
+
+	return string(output), nil
+}
+
+func getTotalPages(pdfPath string) (int, error) {
+	ctx, err := api.ReadContextFile(pdfPath)
+	if err != nil {
+		return 0, err
+	}
+	return ctx.PageCount, nil
+}
+
+func CleanText(s string) string {
+	s = strings.ReplaceAll(s, "\\n", "\n")
+	s = strings.TrimSpace(s)
+	s = strings.ReplaceAll(s, "The encoding parameter is ignored when writing to the console.", "")
+	s = regexp.MustCompile(`\s+`).ReplaceAllString(s, " ")
+	s = regexp.MustCompile(`\s([,;.!?])`).ReplaceAllString(s, "$1")
+	unnecessaryChars := regexp.MustCompile(`[\x00-\x1F\x7F-\x9F]`)
+	s = unnecessaryChars.ReplaceAllString(s, "")
+	s = strings.Map(func(r rune) rune {
+		if r == 0x200B || r == 0x200C || r == 0x200D || r == 0xFEFF {
+			return -1
+		}
+		return r
+	}, s)
+	s = strings.ReplaceAll(s, "“", "\"")
+	s = strings.ReplaceAll(s, "”", "\"")
+	s = strings.ReplaceAll(s, "‘", "'")
+	s = strings.ReplaceAll(s, "’", "'")
+	return s
 }
 
 func convertPageToBase64Image(pdfPath string, pageNumber int) (string, error) {
@@ -357,11 +398,7 @@ func convertPageToBase64Image(pdfPath string, pageNumber int) (string, error) {
 	}
 	defer os.Remove(resizedImagePath)
 
-	base64String, err := imageToBase64(resizedImagePath)
-	if err != nil {
-		return "", err
-	}
-	return base64String, nil
+	return imageToBase64(resizedImagePath)
 }
 
 func resizeImage(imagePath string) (string, error) {
@@ -459,24 +496,17 @@ func sendImageToOpenAI(base64Image, apiKey, modelName string) (string, error) {
 	}{
 		{
 			Type: "text",
-			Text: "Extract text from this iomage, output only text.",
+			Text: "Extract text from this image, output only text.",
+		},
+		{
+			Type: "image_url",
+			ImageURL: struct {
+				URL string `json:"url,omitempty"`
+			}{
+				URL: "data:image/png;base64," + base64Image,
+			},
 		},
 	}
-
-	content = append(content, struct {
-		Type     string `json:"type"`
-		Text     string `json:"text,omitempty"`
-		ImageURL struct {
-			URL string `json:"url,omitempty"`
-		} `json:"image_url,omitempty"`
-	}{
-		Type: "image_url",
-		ImageURL: struct {
-			URL string `json:"url,omitempty"`
-		}{
-			URL: "data:image/png;base64," + base64Image,
-		},
-	})
 
 	reqBody := OpenAIRequest{
 		Model: modelName,
@@ -524,99 +554,6 @@ func sendImageToOpenAI(base64Image, apiKey, modelName string) (string, error) {
 	}
 
 	return "", fmt.Errorf("no response from OpenAI")
-}
-
-func extractTextFromPageHandlingErrors(page pdf.Page) (string, error) {
-	var buf bytes.Buffer
-	pageContent, err := page.GetPlainText(nil)
-	if err != nil {
-		log.Printf("Error extracting text from page: %v", err)
-		buf.WriteString(handleTextExtractionErrors(pageContent))
-	} else {
-		buf.WriteString(pageContent)
-	}
-	if containsTable(page) {
-		formattedText := formatAsTSV(buf.String())
-		utf8Text, err := toUTF8(formattedText)
-		if err != nil {
-			return "", err
-		}
-		return utf8Text, nil
-	}
-
-	utf8Text, err := toUTF8(buf.String())
-	if err != nil {
-		return "", err
-	}
-	return utf8Text, nil
-}
-
-func handleTextExtractionErrors(text string) string {
-	// Replace problematic characters
-	replacer := strings.NewReplacer(")", " ", "\\o", " ", "Ã", "A", "Ò", "O", "Ê", "E")
-	cleanedText := replacer.Replace(text)
-
-	// Remove null characters
-	cleanedText = strings.ReplaceAll(cleanedText, "\x00", "")
-
-	// Validate and clean up the UTF-8 text
-	if !utf8.ValidString(cleanedText) {
-		validText := make([]rune, 0, len(cleanedText))
-		for i, r := range cleanedText {
-			if r == utf8.RuneError {
-				_, size := utf8.DecodeRuneInString(cleanedText[i:])
-				if size == 1 {
-					continue
-				}
-			}
-			validText = append(validText, r)
-		}
-		cleanedText = string(validText)
-	}
-
-	return cleanedText
-}
-
-func toUTF8(text string) (string, error) {
-	utf8Reader := transform.NewReader(strings.NewReader(text), unicode.UTF8.NewDecoder())
-	utf8Bytes, err := io.ReadAll(utf8Reader)
-	if err != nil {
-		return "", err
-	}
-	return string(utf8Bytes), nil
-}
-
-func containsTable(page pdf.Page) bool {
-	pageContent, err := page.GetPlainText(nil)
-	if err != nil {
-		log.Printf("Error extracting text from page: %v", err)
-		return false
-	}
-
-	lines := strings.Split(pageContent, "\n")
-	tabCounts := make(map[int]int)
-	for _, line := range lines {
-		tabCount := strings.Count(line, "\t")
-		if tabCount > 0 {
-			tabCounts[tabCount]++
-		}
-	}
-
-	for _, count := range tabCounts {
-		if count > 1 {
-			return true
-		}
-	}
-
-	return false
-}
-
-func formatAsTSV(text string) string {
-	lines := strings.Split(text, "\n")
-	for i, line := range lines {
-		lines[i] = strings.Join(strings.Fields(line), "\t")
-	}
-	return strings.Join(lines, "\n")
 }
 
 func convertToISO8601(dateStr string) (string, error) {
@@ -720,24 +657,13 @@ func downloadAndProcessFile(url, apiKey, modelName string) ([]Document, error) {
 			contentDisposition := resp.Header.Get("Content-Disposition")
 			contentType := resp.Header.Get("Content-Type")
 
-			var fileName string
-			if contentDisposition != "" {
-				_, params, err := mime.ParseMediaType(contentDisposition)
-				if err != nil {
-					fileName = params["filename"]
-				}
-			}
-
-			if fileName == "" {
-				fileName = getFileName(redirectURL)
-			}
-
+			fileName := getFileNameFromDisposition(contentDisposition, redirectURL)
 			fileType := getFileTypeFromContentType(contentType)
 			if fileType == "" {
 				fileType = getFileType(fileName)
 			}
 
-			log.Printf("File Type: %s", fileType) // Log the type of file being downloaded
+			log.Printf("File Type: %s", fileType)
 
 			if strings.Contains(contentType, "text/html") {
 				log.Printf("HTML response detected: %s", string(body[:100]))
@@ -753,18 +679,7 @@ func downloadAndProcessFile(url, apiKey, modelName string) ([]Document, error) {
 	contentDisposition := resp.Header.Get("Content-Disposition")
 	contentType := resp.Header.Get("Content- Type")
 
-	var fileName string
-	if contentDisposition != "" {
-		_, params, err := mime.ParseMediaType(contentDisposition)
-		if err == nil {
-			fileName = params["filename"]
-		}
-	}
-
-	if fileName == "" {
-		fileName = getFileNameURL(url)
-	}
-
+	fileName := getFileNameFromDisposition(contentDisposition, url)
 	fileType := getFileTypeFromContentType(contentType)
 	if fileType == "" {
 		fileType = getFileType(fileName)
@@ -772,7 +687,6 @@ func downloadAndProcessFile(url, apiKey, modelName string) ([]Document, error) {
 
 	log.Printf("File Type: %s", fileType)
 
-	// Handle HTML response indicating an error
 	if strings.Contains(contentType, "text/html") {
 		log.Printf("HTML response detected: %s", string(body))
 		return nil, fmt.Errorf("server returned an HTML page indicating an error: %s", string(body))
@@ -821,21 +735,21 @@ func extractZipFiles(body []byte, apiKey, modelName string) ([]Document, error) 
 		tempFile.Close()
 
 		if filepath.Ext(file.Name) == ".pdf" || filepath.Ext(file.Name) == ".PDF" {
-			exePath := "./extract_text_from_pdf"
-			log.Printf("Executing %s on file: %s", exePath, tempFile.Name())
+			log.Printf("Executing pdfbox-app-3.0.2.jar on file: %s", tempFile.Name())
 
-			output, err := exec.Command(exePath, tempFile.Name()).Output()
+			output, err := exec.Command("java", "-jar", "pdfbox-app-3.0.2.jar", "export:text",
+				"-encoding", "UTF-8", "-i", tempFile.Name(), "-console").Output()
 			if err != nil {
-				log.Printf("Failed to execute .exe file: %v", err)
-				return nil, fmt.Errorf("failed to execute . exe file: %v", err)
+				log.Printf("Failed to execute pdfbox-app-3.0.2.jar: %v", err)
+				return nil, fmt.Errorf("failed to execute pdfbox-app-3.0.2.jar: %v", err)
 			}
 
-			text := string(output)
+			pages := splitTextIntoPages(string(output))
 			doc := Document{
 				DocumentName: filepath.Base(tempFile.Name()),
 				OriginalPath: filepath.Base(tempFile.Name()),
 				FileType:     "PDF",
-				Pages:        []string{text},
+				Pages:        pages,
 			}
 			documents = append(documents, doc)
 		} else {
@@ -864,43 +778,74 @@ func processFile(body []byte, fileType, fileName, apiKey, modelName string) ([]D
 	tempFile.Close()
 
 	if fileType == "PDF" {
-		exePath := filepath.Join("dist", "extract_pdf_text.exe")
-		log.Printf("Execute %s in file: %s", exePath, tempFile.Name())
-
-		// Run the .exe file to extract text from the PDF
-		output, err := exec.Command(exePath, tempFile.Name()).Output()
+		output, err := extractTextWithPDFBOX(tempFile.Name())
 		if err != nil {
-			return nil, fmt.Errorf("failed to execute .exe file: %v", err)
+			return nil, fmt.Errorf("failed to extract text with PDFBox: %v", err)
 		}
 
 		log.Printf("Extracted text: %s", output)
 
-		text := string(output)
+		pages := splitTextIntoPages(output)
 		doc := Document{
 			DocumentName: filepath.Base(tempFile.Name()),
 			OriginalPath: filepath.Base(tempFile.Name()),
 			FileType:     fileType,
-			Pages:        []string{text},
+			Pages:        pages,
 		}
 		return []Document{doc}, nil
 	}
-
-	// parts := strings.Split(tempFile.Name(), "tempfile_")
-	// if len(parts) > 1 {
-	// 	fileName = parts[1]
-	// } else {
-	// 	fileName = tempFile.Name()
-	// }
-	// fmt.Println("Processsed file name: ", fileName)
 	return extractTextFromFile(tempFile.Name(), apiKey, modelName, nil)
 }
 
-func getFileNameURL(filePath string) string {
-	return filepath.Base(filePath)
+func extractTextWithPDFBOX(filePath string) (string, error) {
+	cmd := exec.Command("java", "-jar", "pdfbox-app-3.0.2.jar", "exprt:text",
+		"-encoding", "UTF-8", "-i", filePath, "-console")
+	output, err := cmd.Output()
+	if err != nil {
+		return "", fmt.Errorf("error running PDFBox CLI: %v", err)
+	}
+	return string(output), nil
 }
 
-func getFileName(filename string) string {
-	return filepath.Base(filename)
+func splitTextIntoPages(text string) []Page {
+	lines := strings.Split(text, "\n")
+	pageNumber := 1
+	var pages []Page
+	var currentPageText strings.Builder
+
+	for _, line := range lines {
+		if strings.TrimSpace(line) == "" {
+			continue
+		}
+		if strings.HasPrefix(line, "Page") {
+			if currentPageText.Len() > 0 {
+				pages = append(pages, Page{
+					PageNumber: pageNumber,
+					Text:       currentPageText.String(),
+				})
+				pageNumber++
+				currentPageText.Reset()
+			}
+		}
+		currentPageText.WriteString(line + "\n")
+	}
+
+	if currentPageText.Len() > 0 {
+		pages = append(pages, Page{
+			PageNumber: pageNumber,
+			Text:       currentPageText.String(),
+		})
+	}
+	return pages
+}
+
+func getFileNameFromDisposition(contentDisposition, url string) string {
+	if contentDisposition != "" {
+		if _, params, err := mime.ParseMediaType(contentDisposition); err == nil {
+			return params["filename"]
+		}
+	}
+	return filepath.Base(url)
 }
 
 func getFileType(fileName string) string {
@@ -928,7 +873,7 @@ func getFileTypeFromContentType(contentType string) string {
 	}
 }
 
-func extractPPTXPages(content []byte) ([]string, error) {
+func extractPPTXPages(content []byte) ([]Page, error) {
 	// Create temporary file
 	pptxFile, err := os.CreateTemp("", "*.pptx")
 	if err != nil {
@@ -948,15 +893,20 @@ func extractPPTXPages(content []byte) ([]string, error) {
 		return nil, err
 	}
 
-	var pages []string
+	var pages []Page
 	for _, name := range prs.GetSheetMap() {
 		rows, err := prs.GetRows(name)
 		if err != nil {
 			return nil, err
 		}
+		var sb strings.Builder
 		for _, row := range rows {
-			pages = append(pages, strings.Join(row, " "))
+			sb.WriteString(strings.Join(row, " ") + "\n")
 		}
+		pages = append(pages, Page{
+			PageNumber: len(pages) + 1,
+			Text:       sb.String(),
+		})
 	}
 
 	return pages, nil
