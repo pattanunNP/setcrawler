@@ -8,7 +8,9 @@ import (
 	"net/http"
 	"net/http/cookiejar"
 	"net/url"
+	"regexp"
 	"strings"
+	"time"
 
 	"golang.org/x/net/html"
 )
@@ -473,4 +475,38 @@ func organizeSecurities(dataMap map[string]string) Securities {
 		SalesReport:             dataMap["Sales Report"],
 		DetailOfSecurity:        dataMap["Detail of Security / Information Memorandum"],
 	}
+}
+
+func ConvertToISO8601(dateStr string) string {
+	if dateStr == "" {
+		return ""
+	}
+
+	reDate := regexp.MustCompile(`\d{2}/\d{2}/\d{4}`)
+	reDateTime := regexp.MustCompile(`\d{2}/\d{2}/\d{4} \d{2}:\d{2}`)
+
+	if !reDate.MatchString(dateStr) && !reDateTime.MatchString(dateStr) {
+		// fmt.Printf("Invalid date format: %s\n", dateStr)
+		return dateStr
+	}
+
+	const inputLayoutDate = "02/01/2006"
+	const inputLayoutDateTime = "02/01/2006 15:04"
+	const outputLayout = time.RFC3339
+
+	var t time.Time
+	var err error
+
+	if reDateTime.MatchString(dateStr) {
+		t, err = time.Parse(inputLayoutDateTime, dateStr)
+	} else {
+		t, err = time.Parse(inputLayoutDate, dateStr)
+	}
+
+	if err != nil {
+		// fmt.Printf("Error parsing date: %v\n", err)
+		return dateStr
+	}
+
+	return t.Format(outputLayout)
 }

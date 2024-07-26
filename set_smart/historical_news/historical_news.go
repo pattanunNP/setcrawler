@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"os"
 	"strings"
+	"time"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/ledongthuc/pdf"
@@ -26,51 +27,101 @@ type NewsDetail struct {
 	DateTime            string `json:"date_time"`
 	Headline            string `json:"headline"`
 	Symbol              string `json:"symbol"`
-	FullDetailedNews    string `json:"full_detailed_news"`
-	AnnouncementDetails string `json:"announcement_details"`
+	FullDetailNews      string `json:"full_detailed_news"`
+	AnnouncementDetails string `json:"annoucement_details"`
 	FileContent         string `json:"file_content"`
 }
 
-func FetchHistoricalNews(cookieStr, symbol string) ([]NewsItem, error) {
-	url := "https://www.setsmart.com/ism/historicalNews.html"
-	payload := strings.NewReader(fmt.Sprintf("companyNews=on&exchangeNews=on&lstView=bySymbol&symbol=%s&regulatorSymbol=&lstSecType=&lstSector=A_0_99_0_M&lstFavorite=0&txtSubject=&newsType=&quickPeriod=&lstPeriod=D&showBeginDate=01/01/2020&beginDate=01/01/2020&showEndDate=24/07/2024&endDate=24/07/2024&submit.x=0&submit.y=0", symbol))
+func FetchHistoricalNews(cookieStr, symbol, locale string) ([]NewsItem, error) {
+	baseURL := "https://www.setsmart.com/ism/historicalNews.html"
 
-	req, err := http.NewRequest("POST", url, payload)
-	if err != nil {
-		return nil, fmt.Errorf("error creating request: %v", err)
+	now := time.Now()
+	beginDate := now.AddDate(-5, 0, 0)
+	endDate := now
+
+	beginDateStr := beginDate.Format("02/01/2006")
+	endDateStr := endDate.Format("02/01/2006")
+	if locale == "th_TH" {
+		beginDateStr = convertToBuddhistDate(beginDate)
+		endDateStr = convertToBuddhistDate(endDate)
 	}
 
-	req.Header.Set("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7")
-	req.Header.Set("accept-language", "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7")
-	req.Header.Set("cache-control", "max-age=0")
-	req.Header.Set("content-type", "application/x-www-form-urlencoded")
-	req.Header.Set("cookie", cookieStr)
-	req.Header.Set("origin", "https://www.setsmart.com")
-	req.Header.Set("priority", "u=0, i")
-	req.Header.Set("referer", "https://www.setsmart.com/ism/historicalNews.html")
-	req.Header.Set("sec-ch-ua", `"Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"`)
-	req.Header.Set("sec-ch-ua-mobile", "?0")
-	req.Header.Set("sec-ch-ua-platform", `"macOS"`)
-	req.Header.Set("sec-fetch-dest", "document")
-	req.Header.Set("sec-fetch-mode", "navigate")
-	req.Header.Set("sec-fetch-site", "same-origin")
-	req.Header.Set("sec-fetch-user", "?1")
-	req.Header.Set("upgrade-insecure-requests", "1")
-	req.Header.Set("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
+	payloadTemplate := "companyNews=on&exchangeNews=on&lstView=bySymbol&symbol=%s&locale=%s&regulatorSymbol=&lstSecType=&lstSector=A_0_99_0_M&lstFavorite=0&txtSubject=&newsType=&quickPeriod=5Y&lstPeriod=D&showBeginDate=%s&beginDate=%s&showEndDate=%s&endDate=%s&submit.x=0&submit.y=0"
 
-	client := &http.Client{}
-	resp, err := client.Do(req)
-	if err != nil {
-		return nil, fmt.Errorf("error making request: %v", err)
+	var allNewsItems []NewsItem
+	page := 1
+	visitedPages := make(map[string]bool)
+
+	for {
+		payload := strings.NewReader(fmt.Sprintf(payloadTemplate, symbol, locale, beginDateStr, beginDateStr, endDateStr, endDateStr) + fmt.Sprintf("&d-49489-p=%d", page))
+		req, err := http.NewRequest("POST", baseURL, payload)
+		if err != nil {
+			return nil, fmt.Errorf("error creating request: %v", err)
+		}
+
+		req.Header.Set("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7")
+		req.Header.Set("accept-language", locale)
+		req.Header.Set("cache-control", "max-age=0")
+		req.Header.Set("content-type", "application/x-www-form-urlencoded")
+		req.Header.Set("cookie", cookieStr)
+		req.Header.Set("origin", "https://www.setsmart.com")
+		req.Header.Set("priority", "u=0, i")
+		req.Header.Set("referer", "https://www.setsmart.com/ism/historicalNews.html")
+		req.Header.Set("sec-ch-ua", `"Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"`)
+		req.Header.Set("sec-ch-ua-mobile", "?0")
+		req.Header.Set("sec-ch-ua-platform", `"macOS"`)
+		req.Header.Set("sec-fetch-dest", "document")
+		req.Header.Set("sec-fetch-mode", "navigate")
+		req.Header.Set("sec-fetch-site", "same-origin")
+		req.Header.Set("sec-fetch-user", "?1")
+		req.Header.Set("upgrade-insecure-requests", "1")
+		req.Header.Set("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
+
+		client := &http.Client{}
+		resp, err := client.Do(req)
+		if err != nil {
+			return nil, fmt.Errorf("error making request: %v", err)
+		}
+		defer resp.Body.Close()
+
+		doc, err := goquery.NewDocumentFromReader(resp.Body)
+		if err != nil {
+			return nil, fmt.Errorf("error reading response body: %v", err)
+		}
+
+		newsItems, err := extractNewsItems(doc, cookieStr)
+		if err != nil {
+			return nil, fmt.Errorf("error extracting news items: %v", err)
+		}
+
+		allNewsItems = append(allNewsItems, newsItems...)
+
+		nextPageURL, hasNext := getNextPageURL(doc)
+		if !hasNext || visitedPages[nextPageURL] {
+			break
+		}
+
+		fmt.Printf("Next page URL: %s\n", nextPageURL) // Log the next page URL
+
+		visitedPages[nextPageURL] = true
+		baseURL = "https://www.setsmart.com" + nextPageURL
+		page++
+		time.Sleep(500 * time.Millisecond)
 	}
-	defer resp.Body.Close()
 
-	doc, err := goquery.NewDocumentFromReader(resp.Body)
-	if err != nil {
-		return nil, fmt.Errorf("error reading response body: %v", err)
+	return allNewsItems, nil
+}
+
+func getNextPageURL(doc *goquery.Document) (string, bool) {
+	nextPage := doc.Find(".pagelinks a.olink")
+	if nextPage.Length() > 0 {
+		href, exists := nextPage.Attr("href")
+		if exists {
+			fmt.Printf("Found next page link: %s\n", href) // Log found next page link
+			return href, true
+		}
 	}
-
-	return extractNewsItems(doc, cookieStr)
+	return "", false
 }
 
 func extractNewsItems(doc *goquery.Document, cookieStr string) ([]NewsItem, error) {
@@ -81,7 +132,7 @@ func extractNewsItems(doc *goquery.Document, cookieStr string) ([]NewsItem, erro
 		row.Find("td").Each(func(j int, cell *goquery.Selection) {
 			switch j {
 			case 0:
-				item.DateTime = cell.Text()
+				item.DateTime = convertToISO8601(cell.Text())
 			case 2:
 				item.Symbol = cell.Text()
 			case 3:
@@ -94,6 +145,8 @@ func extractNewsItems(doc *goquery.Document, cookieStr string) ([]NewsItem, erro
 					detailHTML, err := fetchDetailHTML("https://www.setsmart.com"+detailURL, cookieStr)
 					if err == nil {
 						item.Detail = detailHTML
+					} else {
+						fmt.Printf("Error fetching detail HTML: %v\n", err)
 					}
 				}
 			}
@@ -276,4 +329,21 @@ func SaveToFile(filename string, data map[string][]NewsItem) error {
 	}
 
 	return nil
+}
+
+func convertToISO8601(dateStr string) string {
+	const inputLayout = "02/01/2006 15:04"
+	const outputLayout = time.RFC3339
+
+	t, err := time.Parse(inputLayout, dateStr)
+	if err != nil {
+		fmt.Printf("Error parsing date: %v\n", err)
+		return dateStr
+	}
+	return t.Format(outputLayout)
+}
+
+func convertToBuddhistDate(t time.Time) string {
+	buddhistYear := t.Year() + 543
+	return fmt.Sprintf("%02d/%02d/%04d", t.Day(), t.Month(), buddhistYear)
 }

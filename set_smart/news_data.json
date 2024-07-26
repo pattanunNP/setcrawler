@@ -1,42 +1,6 @@
 {
- "24CS": {
-  "EN": null,
-  "TH": null
- },
- "2S": {
-  "EN": null,
-  "TH": null
- },
- "3BBIF": {
-  "EN": null,
-  "TH": null
- },
- "3K-BAT": {
-  "EN": null,
-  "TH": null
- },
- "A": {
-  "EN": null,
-  "TH": null
- },
- "A5": {
-  "EN": null,
-  "TH": null
- },
- "AA": {
-  "EN": null,
-  "TH": null
- },
- "AAI": {
-  "EN": null,
-  "TH": null
- },
- "AAV": {
-  "EN": null,
-  "TH": null
- },
- "ABICO": {
-  "EN": null,
-  "TH": null
- }
+  "24CS": {
+    "en_US": null,
+    "th_TH": null
+  }
 }

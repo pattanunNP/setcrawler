@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"login_token/utils"
 	"net/http"
 	"os"
 	"strings"
@@ -35,16 +36,26 @@ type NewsDetail struct {
 }
 
 func FetchNews(cookieStr, symbol, locale string) ([]NewsItem, error) {
-	url := "https://www.setsmart.com/ism/searchTodayNews.html"
-	payload := strings.NewReader(fmt.Sprintf("companyNews=on&exchangeNews=on&lstView=bySymbol&symbol=%s&regulatorSymbol=&lstSecType=&lstSector=A_0_99_0_M&lstFavorite=0&txtSubject=&newsType=&submit.x=0&submit.y=0", symbol))
+	baseURL := "https://www.setsmart.com/ism/searchTodayNews.html"
+	now := time.Now()
 
-	req, err := http.NewRequest("POST", url, payload)
+	beginDateStr := now.Format("02/01/2006")
+	endDateStr := now.Format("02/01/2006")
+	if locale == "th_TH" {
+		beginDateStr = convertToBuddhistDate(now)
+		endDateStr = convertToBuddhistDate(now)
+	}
+
+	payloadTemplate := "companyNews=on&exchangeNews=on&lstView=bySymbol&symbol=%s&regulatorSymbol=&lstSecType=&lstSector=A_0_99_0_M&lstFavorite=0&txtSubject=&newsType=&submit.x=0&submit.y=0&beginDate=%s&endDate=%s"
+	payload := strings.NewReader(fmt.Sprintf(payloadTemplate, symbol, beginDateStr, endDateStr))
+
+	req, err := http.NewRequest("POST", baseURL, payload)
 	if err != nil {
 		return nil, fmt.Errorf("error creating request: %v", err)
 	}
 
 	req.Header.Set("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7")
-	req.Header.Set("accept-language", "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7")
+	req.Header.Set("accept-language", locale)
 	req.Header.Set("cache-control", "max-age=0")
 	req.Header.Set("content-type", "application/x-www-form-urlencoded")
 	req.Header.Set("cookie", cookieStr)
@@ -84,7 +95,7 @@ func extractNewsItem(doc *goquery.Document, cookieStr string) ([]NewsItem, error
 		row.Find("td").Each(func(i int, cell *goquery.Selection) {
 			switch i {
 			case 0:
-				item.DateTime = convertToISO8601(cell.Text())
+				item.DateTime = utils.ConvertToISO8601(cell.Text())
 			case 2:
 				item.Symbol = cell.Text()
 			case 3:
@@ -393,4 +404,9 @@ func SaveToFile(filename string, data interface{}) error {
 		return fmt.Errorf("error encoding JSON to file: %v", err)
 	}
 	return nil
+}
+
+func convertToBuddhistDate(t time.Time) string {
+	buddhistYear := t.Year() + 543
+	return fmt.Sprintf("%02d/%02d/%04d", t.Day(), t.Month(), buddhistYear)
 }

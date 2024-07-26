@@ -1,10 +1,13 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
-	"strings"
+	"os"
+	"time"
 
 	historicalnews "login_token/historical_news"
+	"login_token/management"
 	"login_token/news"
 	"login_token/utils"
 )
@@ -31,58 +34,78 @@ func main() {
 	// var allParChanges []parchange.ParChange
 	// allShareHolders := make(map[string]map[string]MajorShareHolder.CombinedShareHolderData)
 	allNews := make(map[string]map[string][]news.NewsItem)
-	allHistoricalNews := make(map[string][]historicalnews.NewsItem)
+	allHistoricalNews := make(map[string]map[string][]historicalnews.NewsItem)
+	allManagementData := make(map[string]map[string][]management.ManagementData)
 
-	locales := []string{"en_EN", "th_TH"}
+	locales := []string{"en_US", "th_TH"}
 	counter := 0
 
+	// for _, stock := range stocksData.Stock {
+	// 	if counter >= 10 {
+	// 		break
+	// 	}
+	// 	// Company Profile
+	// 	organizedData := utils.OrganizedData{
+	// 		CompanyProfiles: make(map[string]utils.CompanyProfile),
+	// 		Securities:      make(map[string]utils.Securities),
+	// 	}
+
+	// 	// Capital Movement
+	// 	movements := make(map[string]capitalmovement.CapitalMovement)
+	// 	shareHolders := make(map[string]MajorShareHolder.CombinedShareHolderData)
+	stockNews := make(map[string][]news.NewsItem)
+
+	// 	for _, locale := range locales {
+
+	// 		//Capital Movement
+	// 		movement, err := capitalmovement.GetCapitalMovement(cookieStr, stock.Symbol, locale)
+	// 		if err != nil {
+	// 			fmt.Printf("Capital movement request error for symbol %s, locale %s: %v", stock.Symbol, locale, err)
+	// 			continue
+	// 		}
+	// 		localeSuffix := strings.Split(locale, "_")[1]
+	// 		movementKey := fmt.Sprintf("%s_%s", stock.Symbol, localeSuffix)
+	// 		movements[movementKey] = *movement
+
+	// 		// Company_Profile Reqiest
+	// 		companyName, companyProfile, securities, err := utils.MakeRequestWithCookies(cookieStr, stock.Symbol, locale)
+	// 		if err != nil {
+	// 			fmt.Printf("Request error for symbol %s, locale %s: %v\n", stock.Symbol, locale, err)
+	// 		} else {
+	// 			localeSuffix := strings.Split(locale, "_")[1]
+	// 			profileKey := fmt.Sprintf("%s_%s", companyName, localeSuffix)
+	// 			organizedData.CompanyProfiles[profileKey] = companyProfile
+	// 			organizedData.Securities[profileKey] = securities
+	// 			fmt.Printf("Request successful for symbol %s, locale %s\n", stock.Symbol, locale)
+	// 		}
+
+	// 		// ShareHolders
+	// 		shareHoldersData, err := MajorShareHolder.GetMajorShareHoldersAndDetails(cookieStr, stock.Symbol, locale)
+	// 		if err != nil {
+	// 			fmt.Printf("Major shareholder request error for symbol %s, locale %s: %v", stock.Symbol, locale, err)
+	// 			continue
+	// 		}
+
+	// 		shareHolders[localeSuffix] = shareHoldersData
+
+	// 	}
+
+	// 	allResults[stock.Symbol] = organizedData
+	// 	allmovements[stock.Symbol] = movements
+	// 	allShareHolders[stock.Symbol] = shareHolders
+
+	// 	counter++
+	// }
+
 	for _, stock := range stocksData.Stock {
-		if counter >= 10 {
+		if counter >= 1 {
 			break
 		}
-		// Company Profile
-		// organizedData := utils.OrganizedData{
-		// 	CompanyProfiles: make(map[string]utils.CompanyProfile),
-		// 	Securities:      make(map[string]utils.Securities),
-		// }
 
-		// Capital Movement
-		// movements := make(map[string]capitalmovement.CapitalMovement)
-		// shareHolders := make(map[string]MajorShareHolder.CombinedShareHolderData)
-		stockNews := make(map[string][]news.NewsItem)
+		HisNews := make(map[string][]historicalnews.NewsItem)
+		stockManagementData := make(map[string][]management.ManagementData)
 
 		for _, locale := range locales {
-
-			//Capital Movement
-			// movement, err := capitalmovement.GetCapitalMovement(cookieStr, stock.Symbol, locale)
-			// if err != nil {
-			// 	fmt.Printf("Capital movement request error for symbol %s, locale %s: %v", stock.Symbol, locale, err)
-			// 	continue
-			// }
-			localeSuffix := strings.Split(locale, "_")[1]
-			// movementKey := fmt.Sprintf("%s_%s", stock.Symbol, localeSuffix)
-			// movements[movementKey] = *movement
-
-			// Company_Profile Reqiest
-			// companyName, companyProfile, securities, err := utils.MakeRequestWithCookies(cookieStr, stock.Symbol, locale)
-			// if err != nil {
-			// 	fmt.Printf("Request error for symbol %s, locale %s: %v\n", stock.Symbol, locale, err)
-			// } else {
-			// 	localeSuffix := strings.Split(locale, "_")[1]
-			// 	profileKey := fmt.Sprintf("%s_%s", companyName, localeSuffix)
-			// 	organizedData.CompanyProfiles[profileKey] = companyProfile
-			// 	organizedData.Securities[profileKey] = securities
-			// 	fmt.Printf("Request successful for symbol %s, locale %s\n", stock.Symbol, locale)
-			// }
-
-			// ShareHolders
-			// shareHoldersData, err := MajorShareHolder.GetMajorShareHoldersAndDetails(cookieStr, stock.Symbol, locale)
-			// if err != nil {
-			// 	fmt.Printf("Major shareholder request error for symbol %s, locale %s: %v", stock.Symbol, locale, err)
-			// 	continue
-			// }
-
-			// shareHolders[localeSuffix] = shareHoldersData
 
 			// News
 			newsItems, err := news.FetchNews(cookieStr, stock.Symbol, locale)
@@ -90,26 +113,31 @@ func main() {
 				fmt.Printf("News request error for symbol %s, locale %s: %v", stock.Symbol, locale, err)
 				continue
 			}
-			stockNews[localeSuffix] = newsItems
+			stockNews[locale] = newsItems
+
+			fmt.Printf("Fetching historical news for symbol: %s, locale: %s\n", stock.Symbol, locale)
+			historicalNews, err := historicalnews.FetchHistoricalNews(cookieStr, stock.Symbol, locale)
+			if err != nil {
+				fmt.Printf("Historical news request error for symbol %s, locale %s: %v\n", stock.Symbol, locale, err)
+				continue
+			}
+			HisNews[locale] = historicalNews
+			time.Sleep(500 * time.Millisecond)
+
+			fmt.Printf("Fetching management data for symbol: %s, locale: %s\n", stock.Symbol, locale)
+			managementData, err := management.FetchManagementHTML(cookieStr, locale, stock.Symbol)
+			if err != nil {
+				fmt.Printf("Error fetching management data for symbol %s, locale %s: %v\n", stock.Symbol, locale, err)
+				continue
+			}
+			stockManagementData[locale] = managementData
+			time.Sleep(500 * time.Millisecond)
 		}
 
-		// allResults[stock.Symbol] = organizedData
-		// allmovements[stock.Symbol] = movements
-		// allShareHolders[stock.Symbol] = shareHolders
 		allNews[stock.Symbol] = stockNews
+		allHistoricalNews[stock.Symbol] = HisNews
+		allManagementData[stock.Symbol] = stockManagementData
 		counter++
-	}
-
-	for _, stock := range stocksData.Stock {
-		if counter >= 10 {
-			break
-		}
-		historicalNews, err := historicalnews.FetchHistoricalNews(cookieStr, stock.Symbol)
-		if err != nil {
-			fmt.Printf("Historical news Request")
-			continue
-		}
-		allHistoricalNews[stock.Symbol] = historicalNews
 	}
 
 	// for _, locale := range locales {
@@ -122,52 +150,28 @@ func main() {
 	// }
 
 	// Save all results to a single file
-	// file, err := os.Create("company_profile.json")
-	// if err != nil {
-	// 	fmt.Println("Error creating JSON file:", err)
-	// 	return
-	// }
-	// defer file.Close()
+	// saveJSON("company_profile.json", allResults)
+	// saveJSON("capital_movements.json", allmovements)
+	// saveJSON("par_changes.json", allParChanges)
+	// saveJSON("major_shareholders.json", allShareHolders)
+	saveJSON("news_data.json", allNews)
+	saveJSON("historical_news_data.json", allHistoricalNews)
+	saveJSON("management.json", allManagementData)
+}
 
-	// jsonData, err := json.MarshalIndent(allResults, "", "  ")
-	// if err != nil {
-	// 	fmt.Println("Error marshalling JSON: ", err)
-	// 	return
-	// }
-
-	// _, err = file.Write(jsonData)
-	// if err != nil {
-	// 	fmt.Println("Error writing to JSON file: ", err)
-	// 	return
-	// }
-
-	// err = capitalmovement.SaveToFile("capital_movements.json", allmovements)
-	// if err != nil {
-	// 	fmt.Println("error saving capital movments JSON file:", err)
-	// 	return
-	// }
-
-	// err = parchange.SaveToFile("par_changes.json", allParChanges)
-	// if err != nil {
-	// 	fmt.Println("Error saving par changes JSON file:", err)
-	// 	return
-	// }
-
-	// err = MajorShareHolder.SaveFile("major_shareholders.json", allShareHolders)
-	// if err != nil {
-	// 	fmt.Println("Error saving major shareholders JSON file:", err)
-	// 	return
-	// }
-
-	err = news.SaveToFile("news_data.json", allNews)
+func saveJSON(filename string, data interface{}) {
+	file, err := os.Create(filename)
 	if err != nil {
-		fmt.Println("Error saving news data JSON file:", err)
+		fmt.Printf("Error creating JSON file %s: %v\n", filename, err)
 		return
 	}
+	defer file.Close()
 
-	err = historicalnews.SaveToFile("historical_news_data.json", allHistoricalNews)
+	encoder := json.NewEncoder(file)
+	encoder.SetIndent("", "  ")
+
+	err = encoder.Encode(data)
 	if err != nil {
-		fmt.Println("Error saving historical news data JSON file:", err)
-		return
+		fmt.Printf("Error encoding JSON data to file %s: %v\n", filename, err)
 	}
 }

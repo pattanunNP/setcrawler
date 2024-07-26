@@ -1,0 +1,506 @@
+{
+  "24CS": {
+    "en_US": [
+      {
+        "name": "Lt.Gen. SUCHART WONGMARK",
+        "position": "CHAIRMAN OF THE BOARD OF DIRECTORS",
+        "start_date": "2021-08-13T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "กรรมการอิสระ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "กรรมการตรวจสอบ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "ประธานกรรมการ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "Mr. YODSAWEE WATTANATEERAKITJA",
+        "position": "CHIEF EXECUTIVE OFFICER",
+        "start_date": "2016-06-20T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "นาย ยศวีย์ วัฒนธีระกิจจา",
+            "position": "ประธานเจ้าหน้าที่บริหาร",
+            "start_date": "2016-06-20T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "นาย ยศวีย์ วัฒนธีระกิจจา",
+            "position": "กรรมการ",
+            "start_date": "2016-06-20T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "Mr. YODSAWEE WATTANATEERAKITJA",
+        "position": "DIRECTOR",
+        "start_date": "2016-06-20T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "นาย ยศวีย์ วัฒนธีระกิจจา",
+            "position": "ประธานเจ้าหน้าที่บริหาร",
+            "start_date": "2016-06-20T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "นาย ยศวีย์ วัฒนธีระกิจจา",
+            "position": "กรรมการ",
+            "start_date": "2016-06-20T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "Mr. SANTI MANEEWONG",
+        "position": "DIRECTOR",
+        "start_date": "2019-02-05T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "นาย สันติ มณีวงศ์",
+            "position": "กรรมการ",
+            "start_date": "2019-02-05T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "Mr. THAWATCHAI JIRAWATAUNGKANA",
+        "position": "DIRECTOR",
+        "start_date": "2017-04-01T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "นาย ธวัชชัย จิรวัฒนอังคณา",
+            "position": "กรรมการ",
+            "start_date": "2017-04-01T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "Lt.Gen. SUCHART WONGMARK",
+        "position": "INDEPENDENT DIRECTOR",
+        "start_date": "2021-08-13T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "กรรมการอิสระ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "กรรมการตรวจสอบ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "ประธานกรรมการ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "Mrs. PATTRA SUPANICH",
+        "position": "INDEPENDENT DIRECTOR",
+        "start_date": "2021-08-13T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "นาง ภัทรา สู่พานิช",
+            "position": "กรรมการอิสระ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "นาง ภัทรา สู่พานิช",
+            "position": "ประธานกรรมการตรวจสอบ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "Lt.Gen. PARINYA CHAIDILOK",
+        "position": "INDEPENDENT DIRECTOR",
+        "start_date": "2021-08-13T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "พลโท ปริญญา ฉายดิลก",
+            "position": "กรรมการอิสระ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท ปริญญา ฉายดิลก",
+            "position": "กรรมการตรวจสอบ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "Mrs. PATTRA SUPANICH",
+        "position": "CHAIRMAN OF AUDIT COMMITTEE",
+        "start_date": "2021-08-13T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "นาง ภัทรา สู่พานิช",
+            "position": "กรรมการอิสระ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "นาง ภัทรา สู่พานิช",
+            "position": "ประธานกรรมการตรวจสอบ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "Lt.Gen. SUCHART WONGMARK",
+        "position": "AUDIT COMMITTEE",
+        "start_date": "2021-08-13T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "กรรมการอิสระ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "กรรมการตรวจสอบ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "ประธานกรรมการ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "Lt.Gen. PARINYA CHAIDILOK",
+        "position": "AUDIT COMMITTEE",
+        "start_date": "2021-08-13T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "พลโท ปริญญา ฉายดิลก",
+            "position": "กรรมการอิสระ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท ปริญญา ฉายดิลก",
+            "position": "กรรมการตรวจสอบ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      }
+    ],
+    "th_TH": [
+      {
+        "name": "พลโท สุชาติ วงษ์มาก",
+        "position": "ประธานกรรมการ",
+        "start_date": "2564-08-13T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "กรรมการอิสระ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "กรรมการตรวจสอบ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "ประธานกรรมการ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "นาย ยศวีย์ วัฒนธีระกิจจา",
+        "position": "ประธานเจ้าหน้าที่บริหาร",
+        "start_date": "2559-06-20T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "นาย ยศวีย์ วัฒนธีระกิจจา",
+            "position": "ประธานเจ้าหน้าที่บริหาร",
+            "start_date": "2016-06-20T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "นาย ยศวีย์ วัฒนธีระกิจจา",
+            "position": "กรรมการ",
+            "start_date": "2016-06-20T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "นาย ยศวีย์ วัฒนธีระกิจจา",
+        "position": "กรรมการ",
+        "start_date": "2559-06-20T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "นาย ยศวีย์ วัฒนธีระกิจจา",
+            "position": "ประธานเจ้าหน้าที่บริหาร",
+            "start_date": "2016-06-20T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "นาย ยศวีย์ วัฒนธีระกิจจา",
+            "position": "กรรมการ",
+            "start_date": "2016-06-20T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "นาย สันติ มณีวงศ์",
+        "position": "กรรมการ",
+        "start_date": "2562-02-05T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "นาย สันติ มณีวงศ์",
+            "position": "กรรมการ",
+            "start_date": "2019-02-05T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "นาย ธวัชชัย จิรวัฒนอังคณา",
+        "position": "กรรมการ",
+        "start_date": "2560-04-01T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "นาย ธวัชชัย จิรวัฒนอังคณา",
+            "position": "กรรมการ",
+            "start_date": "2017-04-01T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "พลโท สุชาติ วงษ์มาก",
+        "position": "กรรมการอิสระ",
+        "start_date": "2564-08-13T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "กรรมการอิสระ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "กรรมการตรวจสอบ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "ประธานกรรมการ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "นาง ภัทรา สู่พานิช",
+        "position": "กรรมการอิสระ",
+        "start_date": "2564-08-13T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "นาง ภัทรา สู่พานิช",
+            "position": "กรรมการอิสระ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "นาง ภัทรา สู่พานิช",
+            "position": "ประธานกรรมการตรวจสอบ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "พลโท ปริญญา ฉายดิลก",
+        "position": "กรรมการอิสระ",
+        "start_date": "2564-08-13T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "พลโท ปริญญา ฉายดิลก",
+            "position": "กรรมการอิสระ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท ปริญญา ฉายดิลก",
+            "position": "กรรมการตรวจสอบ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "นาง ภัทรา สู่พานิช",
+        "position": "ประธานกรรมการตรวจสอบ",
+        "start_date": "2564-08-13T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "นาง ภัทรา สู่พานิช",
+            "position": "กรรมการอิสระ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "นาง ภัทรา สู่พานิช",
+            "position": "ประธานกรรมการตรวจสอบ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "พลโท สุชาติ วงษ์มาก",
+        "position": "กรรมการตรวจสอบ",
+        "start_date": "2564-08-13T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "กรรมการอิสระ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "กรรมการตรวจสอบ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท สุชาติ วงษ์มาก",
+            "position": "ประธานกรรมการ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      },
+      {
+        "name": "พลโท ปริญญา ฉายดิลก",
+        "position": "กรรมการตรวจสอบ",
+        "start_date": "2564-08-13T00:00:00Z",
+        "end_date": "",
+        "detail_page": [
+          {
+            "symbol": "24CS",
+            "name": "พลโท ปริญญา ฉายดิลก",
+            "position": "กรรมการอิสระ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          },
+          {
+            "symbol": "24CS",
+            "name": "พลโท ปริญญา ฉายดิลก",
+            "position": "กรรมการตรวจสอบ",
+            "start_date": "2021-08-13T00:00:00Z",
+            "end_date": ""
+          }
+        ]
+      }
+    ]
+  }
+}
