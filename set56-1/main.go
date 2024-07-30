@@ -81,7 +81,7 @@ func main() {
 	// Fetch the URL
 	res, err := http.Get(url)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalf("Failed to fetch URL: %v", err)
 	}
 	defer res.Body.Close()
 
@@ -92,7 +92,7 @@ func main() {
 	// Parse the HTML document
 	doc, err := goquery.NewDocumentFromReader(res.Body)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalf("Failed to parse HTML document: %v", err)
 	}
 
 	// Data structure to hold the extracted row data
@@ -124,10 +124,11 @@ func main() {
 					// Download and Extract file
 					documents, err = downloadAndProcessFile(href, apiKey, modelName)
 					if err != nil {
-						log.Printf("Error Download or Extract a File: %v", err)
+						log.Printf("Error downloading or extracting file: %v", err)
 					}
 				}
 			}
+
 			// Convert yearPeriod and submitDate to ISO8601 format
 			yearPeriodISO, err := convertToISO8601(yearPeriod)
 			if err != nil {
@@ -158,8 +159,187 @@ func main() {
 	// Save the data to JSON File
 	err = saveResultsToFile("result.json", data)
 	if err != nil {
-		log.Fatalf("Error saving resilts to file %v", err)
+		log.Fatalf("Error saving results to file: %v", err)
 	}
+}
+
+func downloadAndProcessFile(url, apiKey, modelName string) ([]Document, error) {
+	url = strings.Replace(url, "as_of=0000-00-00 00:00:00", "as_of=0000-00-00&00:00:00", 1)
+	client := &http.Client{}
+	req, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		return nil, fmt.Errorf("failed to create request: %w", err)
+	}
+
+	// Set headers to mimic the curl command
+	setRequestHeaders(req)
+
+	resp, err := client.Do(req)
+	if err != nil {
+		return nil, fmt.Errorf("failed to execute request: %w", err)
+	}
+	defer resp.Body.Close()
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read response body: %w", err)
+	}
+
+	if strings.Contains(string(body), "<script") {
+		redirectURL, err := extractRedirectURL(body)
+		if err != nil {
+			return nil, fmt.Errorf("failed to extract redirect URL: %w", err)
+		}
+
+		// Make a new request to the redirect URL
+		req, err = http.NewRequest("GET", redirectURL, nil)
+		if err != nil {
+			return nil, fmt.Errorf("failed to create redirect request: %w", err)
+		}
+		req.Header = resp.Request.Header
+
+		resp, err = client.Do(req)
+		if err != nil {
+			return nil, fmt.Errorf("failed to execute redirect request: %w", err)
+		}
+		defer resp.Body.Close()
+
+		body, err = io.ReadAll(resp.Body)
+		if err != nil {
+			return nil, fmt.Errorf("failed to read redirect response body: %w", err)
+		}
+	}
+
+	contentDisposition := resp.Header.Get("Content-Disposition")
+	contentType := resp.Header.Get("Content-Type")
+
+	fileName := getFileNameFromDisposition(contentDisposition, url)
+	fileType := getFileTypeFromContentType(contentType)
+	if fileType == "" {
+		fileType = getFileType(fileName)
+	}
+
+	log.Printf("File Type: %s", fileType)
+
+	if strings.Contains(contentType, "text/html") {
+		log.Printf("HTML response detected: %s", string(body[:100]))
+		return nil, fmt.Errorf("server returned an HTML page indicating an error: %s", string(body[:100]))
+	}
+
+	if fileType == "ZIP" || fileType == "ASPX" {
+		return extractZipFiles(body, apiKey, modelName)
+	}
+
+	return processFile(body, fileType, fileName, apiKey, modelName)
+}
+
+func setRequestHeaders(req *http.Request) {
+	req.Header.Add("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7")
+	req.Header.Add("Accept-Language", "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7")
+	req.Header.Add("Cache-Control", "max-age=0")
+	req.Header.Add("Connection", "keep-alive")
+	req.Header.Add("Upgrade-Insecure-Requests", "1")
+	req.Header.Add("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
+	req.Header.Add("Cookie", "_ga=GA1.1.1504185108.1719892671; TS01703d9d028=01f20e05678a331b2ff9ae1991862aadbe27d4c9f52f2a4b53e65262a893586401a36dab66350d3a58f20c0d785c99d9db2aed93b7; _ga_3NH0QL72D6=GS1.1.1721623445.33.1.1721623576.60.0.0; TS01703d9d=012c1f76db3fb8c2be621423f63d2a297d80aa4e25e794a5754319f9d4ee1378b9449c4888e3a1931d8efa4747e36f77a8a76feac6; TS023e49ee027=08f2067569ab2000f05a908732303db7cc41b0036b90e7ec856654067dfc60b58e4c3a9a4feb8f84087a14ac201130002d0b89c82386b4400d37b703987824bf59b8611a44677822f6efdab1e59aa6f6b8d4f49e5dce66cd3bb8d72210ca1334")
+}
+
+func extractRedirectURL(body []byte) (string, error) {
+	re := regexp.MustCompile(`document.location\s*=\s*'(.*?)';`)
+	matches := re.FindStringSubmatch(string(body))
+	if len(matches) >= 2 {
+		return "http://capital.sec.or.th" + matches[1], nil
+	}
+	return "", fmt.Errorf("redirect URL not found")
+}
+
+func processFile(body []byte, fileType, fileName, apiKey, modelName string) ([]Document, error) {
+	tempFile, err := os.CreateTemp("", fmt.Sprintf("tempfile_*%s", filepath.Ext(fileName)))
+	if err != nil {
+		return nil, fmt.Errorf("failed to create temp file: %w", err)
+	}
+	defer os.Remove(tempFile.Name())
+
+	if _, err := tempFile.Write(body); err != nil {
+		return nil, fmt.Errorf("failed to write to temp file: %v", err)
+	}
+	tempFile.Close()
+
+	if fileType == "PDF" {
+		log.Printf("Processing PDF File: %s", tempFile.Name())
+		pageFiles, err := splitPDFIntoPages(tempFile.Name())
+		if err != nil {
+			return nil, fmt.Errorf("failed to split PDF into pages: %v", err)
+		}
+
+		var documentPages []Page
+		for i, pageFile := range pageFiles {
+			defer os.Remove(pageFile) // Ensure each temporary page file is removed after processing
+
+			output, err := extractTextWithPDFBOX(pageFile)
+			if err != nil {
+				return nil, fmt.Errorf("failed to extract text with PDFBox for page %s: %v", pageFile, err)
+			}
+
+			log.Printf("Extracted text from page %d: %s", i+1, output)
+
+			page := Page{
+				PageNumber: i + 1,
+				Text:       output,
+			}
+
+			documentPages = append(documentPages, page)
+		}
+
+		doc := Document{
+			DocumentName: filepath.Base(tempFile.Name()),
+			OriginalPath: filepath.Base(tempFile.Name()),
+			FileType:     "PDF",
+			Pages:        documentPages,
+		}
+		return []Document{doc}, nil
+	}
+
+	return extractTextFromFile(tempFile.Name(), apiKey, modelName, nil)
+}
+
+func splitPDFIntoPages(pdfPath string) ([]string, error) {
+	totalPages, err := getTotalPages(pdfPath)
+	if err != nil {
+		return nil, fmt.Errorf("error getting total pages: %v", err)
+	}
+
+	var pageFiles []string
+	for i := 1; i <= totalPages; i++ {
+		pageFile := fmt.Sprintf("%s_page_%d.pdf", pdfPath, i)
+		cmd := exec.Command("pdftk", pdfPath, "cat", strconv.Itoa(i), "output", pageFile)
+		if err := cmd.Run(); err != nil {
+			return nil, fmt.Errorf("error splitting PDF into pages: %v", err)
+		}
+		pageFiles = append(pageFiles, pageFile)
+	}
+
+	return pageFiles, nil
+}
+
+func extractTextWithPDFBOX(filePath string) (string, error) {
+	log.Printf("Executing pdfbox-app-3.0.2.jar on file: %s", filePath)
+
+	output, err := exec.Command("java", "-jar", "pdfbox-app-3.0.2.jar", "export:text",
+		"-encoding", "UTF-8", "-i", filePath, "-console").Output()
+	if err != nil {
+		log.Printf("Failed to execute pdfbox-app-3.0.2.jar: %v", err)
+		return "", fmt.Errorf("failed to execute pdfbox-app-3.0.2.jar: %v", err)
+	}
+
+	return string(output), nil
+}
+
+func getTotalPages(pdfPath string) (int, error) {
+	ctx, err := api.ReadContextFile(pdfPath)
+	if err != nil {
+		return 0, err
+	}
+	return ctx.PageCount, nil
 }
 
 func extractTextFromFile(filePath, apiKey, modelName string, documents []Document) ([]Document, error) {
@@ -168,7 +348,7 @@ func extractTextFromFile(filePath, apiKey, modelName string, documents []Documen
 	var err error
 
 	switch fileType {
-	case "PDF":
+	case "PDF", "pdf":
 		pages, _, err = extractPDFPages(filePath, apiKey, modelName)
 	case "DOCX":
 		pages, _, err = extractDocxPages(filePath)
@@ -301,13 +481,16 @@ func extractTextFromDocxContent(content string) string {
 }
 
 func extractPDFPages(filePath, apiKey, modelName string) ([]Page, string, error) {
+	log.Printf("Starting to extract PDF pages from file: %s", filePath)
 	var processedTexts []Page
 	totalPages, err := getTotalPages(filePath)
 	if err != nil {
+		log.Printf("Error getting total pages: %v", err)
 		return nil, "", fmt.Errorf("error getting total pages: %v", err)
 	}
 
 	for i := 1; i <= totalPages; i++ {
+		log.Printf("Processing page %d of %d", i, totalPages)
 		text, err := extractTextByPage(filePath, i)
 		if err != nil {
 			log.Printf("Error extracting text from page %d: %v", i, err)
@@ -318,7 +501,7 @@ func extractPDFPages(filePath, apiKey, modelName string) ([]Page, string, error)
 		} else {
 			cleanedText := CleanText(text)
 			if len(cleanedText) < 1000 {
-				log.Printf("Text on page %d is less than 1000 converting to image", i)
+				log.Printf("Text on page %d is less than 1000 characters, converting to image", i)
 				base64Image, err := convertPageToBase64Image(filePath, i)
 				if err != nil {
 					log.Printf("Failed to convert page %d: %v", i, err)
@@ -341,10 +524,12 @@ func extractPDFPages(filePath, apiKey, modelName string) ([]Page, string, error)
 			}
 		}
 	}
+	log.Printf("Finished extracting PDF pages from file: %s", filePath)
 	return processedTexts, "PDF", nil
 }
 
 func extractTextByPage(pdfPath string, page int) (string, error) {
+	log.Printf("Extracting text from page %d of file: %s", page, pdfPath)
 	cmd := exec.Command("java", "-jar", "pdfbox-app-3.0.2.jar", "export:text",
 		"-encoding", "UTF-8", "-startPage", strconv.Itoa(page), "-endPage", strconv.Itoa(page),
 		"-i", pdfPath, "-console")
@@ -353,21 +538,13 @@ func extractTextByPage(pdfPath string, page int) (string, error) {
 		return "", fmt.Errorf("error running PDFBox CLI for page %d: %v", page, err)
 	}
 
+	log.Printf("Extracted text from page %d: %s", page, string(output))
 	return string(output), nil
-}
-
-func getTotalPages(pdfPath string) (int, error) {
-	ctx, err := api.ReadContextFile(pdfPath)
-	if err != nil {
-		return 0, err
-	}
-	return ctx.PageCount, nil
 }
 
 func CleanText(s string) string {
 	s = strings.ReplaceAll(s, "\\n", "\n")
 	s = strings.TrimSpace(s)
-	s = strings.ReplaceAll(s, "The encoding parameter is ignored when writing to the console.", "")
 	s = regexp.MustCompile(`\s+`).ReplaceAllString(s, " ")
 	s = regexp.MustCompile(`\s([,;.!?])`).ReplaceAllString(s, "$1")
 	unnecessaryChars := regexp.MustCompile(`[\x00-\x1F\x7F-\x9F]`)
@@ -602,107 +779,10 @@ func isYear(s string) bool {
 	return err == nil && len(s) == 4
 }
 
-func downloadAndProcessFile(url, apiKey, modelName string) ([]Document, error) {
-	url = strings.Replace(url, "as_of=0000-00-00 00:00:00", "as_of=0000-00-00&00:00:00", 1)
-	client := &http.Client{}
-	req, err := http.NewRequest("GET", url, nil)
-	if err != nil {
-		return nil, err
-	}
-
-	// Set headers to mimic the curl command
-	req.Header.Add("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7")
-	req.Header.Add("Accept-Language", "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7")
-	req.Header.Add("Cache-Control", "max-age=0")
-	req.Header.Add("Connection", "keep-alive")
-	req.Header.Add("Upgrade-Insecure-Requests", "1")
-	req.Header.Add("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
-	req.Header.Add("Cookie", "_ga=GA1.1.1504185108.1719892671; TS01703d9d028=01f20e05678a331b2ff9ae1991862aadbe27d4c9f52f2a4b53e65262a893586401a36dab66350d3a58f20c0d785c99d9db2aed93b7; _ga_3NH0QL72D6=GS1.1.1721623445.33.1.1721623576.60.0.0; TS01703d9d=012c1f76db3fb8c2be621423f63d2a297d80aa4e25e794a5754319f9d4ee1378b9449c4888e3a1931d8efa4747e36f77a8a76feac6; TS023e49ee027=08f2067569ab2000f05a908732303db7cc41b0036b90e7ec856654067dfc60b58e4c3a9a4feb8f84087a14ac201130002d0b89c82386b4400d37b703987824bf59b8611a44677822f6efdab1e59aa6f6b8d4f49e5dce66cd3bb8d72210ca1334")
-
-	resp, err := client.Do(req)
-	if err != nil {
-		return nil, err
-	}
-	defer resp.Body.Close()
-
-	body, err := io.ReadAll(resp.Body)
-	if err != nil {
-		return nil, err
-	}
-
-	if strings.Contains(string(body), "<script") {
-		re := regexp.MustCompile(`document.location\s*=\s*'(.*?)';`)
-		matches := re.FindStringSubmatch(string(body))
-		if len(matches) >= 2 {
-			redirectURL := "http://capital.sec.or.th" + matches[1]
-			log.Printf("Redirect URL: %s", redirectURL)
-
-			// Make a new request to the redirect URL
-			req, err = http.NewRequest("GET", redirectURL, nil)
-			if err != nil {
-				return nil, err
-			}
-			req.Header = resp.Request.Header
-
-			resp, err = client.Do(req)
-			if err != nil {
-				return nil, err
-			}
-			defer resp.Body.Close()
-
-			body, err = io.ReadAll(resp.Body)
-			if err != nil {
-				return nil, err
-			}
-			contentDisposition := resp.Header.Get("Content-Disposition")
-			contentType := resp.Header.Get("Content-Type")
-
-			fileName := getFileNameFromDisposition(contentDisposition, redirectURL)
-			fileType := getFileTypeFromContentType(contentType)
-			if fileType == "" {
-				fileType = getFileType(fileName)
-			}
-
-			log.Printf("File Type: %s", fileType)
-
-			if strings.Contains(contentType, "text/html") {
-				log.Printf("HTML response detected: %s", string(body[:100]))
-				return nil, fmt.Errorf("server returned an HTML page indicating an error: %s", string(body[:100]))
-			}
-			if fileType == "ZIP" {
-				return extractZipFiles(body, apiKey, modelName)
-			}
-			return processFile(body, fileType, fileName, apiKey, modelName)
-		}
-	}
-
-	contentDisposition := resp.Header.Get("Content-Disposition")
-	contentType := resp.Header.Get("Content- Type")
-
-	fileName := getFileNameFromDisposition(contentDisposition, url)
-	fileType := getFileTypeFromContentType(contentType)
-	if fileType == "" {
-		fileType = getFileType(fileName)
-	}
-
-	log.Printf("File Type: %s", fileType)
-
-	if strings.Contains(contentType, "text/html") {
-		log.Printf("HTML response detected: %s", string(body))
-		return nil, fmt.Errorf("server returned an HTML page indicating an error: %s", string(body))
-	}
-
-	if fileType == "ZIP" || fileType == "ASPX" {
-		return extractZipFiles(body, apiKey, modelName)
-	}
-
-	return processFile(body, fileType, fileName, apiKey, modelName)
-}
-
 func extractZipFiles(body []byte, apiKey, modelName string) ([]Document, error) {
 	zipReader, err := zip.NewReader(bytes.NewReader(body), int64(len(body)))
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("failed to create zip reader: %w", err)
 	}
 
 	var documents []Document
@@ -710,7 +790,7 @@ func extractZipFiles(body []byte, apiKey, modelName string) ([]Document, error) 
 	for _, file := range zipReader.File {
 		f, err := file.Open()
 		if err != nil {
-			log.Printf("Error openning file in ZIP: %v", err)
+			log.Printf("Error opening file in ZIP: %v", err)
 			continue
 		}
 		defer f.Close()
@@ -735,21 +815,38 @@ func extractZipFiles(body []byte, apiKey, modelName string) ([]Document, error) 
 		tempFile.Close()
 
 		if filepath.Ext(file.Name) == ".pdf" || filepath.Ext(file.Name) == ".PDF" {
-			log.Printf("Executing pdfbox-app-3.0.2.jar on file: %s", tempFile.Name())
-
-			output, err := exec.Command("java", "-jar", "pdfbox-app-3.0.2.jar", "export:text",
-				"-encoding", "UTF-8", "-i", tempFile.Name(), "-console").Output()
+			log.Printf("Processing PDF File: %s", tempFile.Name())
+			pageFiles, err := splitPDFIntoPages(tempFile.Name())
 			if err != nil {
-				log.Printf("Failed to execute pdfbox-app-3.0.2.jar: %v", err)
-				return nil, fmt.Errorf("failed to execute pdfbox-app-3.0.2.jar: %v", err)
+				log.Printf("Failed to split PDF into pages: %v", err)
+				continue
 			}
 
-			pages := splitTextIntoPages(string(output))
+			var documentPages []Page
+			for i, pageFile := range pageFiles {
+				defer os.Remove(pageFile) // Ensure each temporary page file is removed after processing
+
+				output, err := extractTextWithPDFBOX(pageFile)
+				if err != nil {
+					log.Printf("Failed to extract text with PDFBox for page %s: %v", pageFile, err)
+					continue
+				}
+
+				log.Printf("Extracted text from page %d: %s", i+1, output)
+
+				page := Page{
+					PageNumber: i + 1,
+					Text:       output,
+				}
+
+				documentPages = append(documentPages, page)
+			}
+
 			doc := Document{
 				DocumentName: filepath.Base(tempFile.Name()),
 				OriginalPath: filepath.Base(tempFile.Name()),
 				FileType:     "PDF",
-				Pages:        pages,
+				Pages:        documentPages,
 			}
 			documents = append(documents, doc)
 		} else {
@@ -760,83 +857,8 @@ func extractZipFiles(body []byte, apiKey, modelName string) ([]Document, error) 
 			}
 			documents = append(documents, docs...)
 		}
-
 	}
 	return documents, nil
-}
-
-func processFile(body []byte, fileType, fileName, apiKey, modelName string) ([]Document, error) {
-	tempFile, err := os.CreateTemp("", fmt.Sprintf("tempfile_*%s", filepath.Ext(fileName)))
-	if err != nil {
-		return nil, fmt.Errorf("failed to create temp file: %w", err)
-	}
-	defer os.Remove(tempFile.Name())
-
-	if _, err := tempFile.Write(body); err != nil {
-		return nil, fmt.Errorf("failed to write to temp file: %v", err)
-	}
-	tempFile.Close()
-
-	if fileType == "PDF" {
-		output, err := extractTextWithPDFBOX(tempFile.Name())
-		if err != nil {
-			return nil, fmt.Errorf("failed to extract text with PDFBox: %v", err)
-		}
-
-		log.Printf("Extracted text: %s", output)
-
-		pages := splitTextIntoPages(output)
-		doc := Document{
-			DocumentName: filepath.Base(tempFile.Name()),
-			OriginalPath: filepath.Base(tempFile.Name()),
-			FileType:     fileType,
-			Pages:        pages,
-		}
-		return []Document{doc}, nil
-	}
-	return extractTextFromFile(tempFile.Name(), apiKey, modelName, nil)
-}
-
-func extractTextWithPDFBOX(filePath string) (string, error) {
-	cmd := exec.Command("java", "-jar", "pdfbox-app-3.0.2.jar", "exprt:text",
-		"-encoding", "UTF-8", "-i", filePath, "-console")
-	output, err := cmd.Output()
-	if err != nil {
-		return "", fmt.Errorf("error running PDFBox CLI: %v", err)
-	}
-	return string(output), nil
-}
-
-func splitTextIntoPages(text string) []Page {
-	lines := strings.Split(text, "\n")
-	pageNumber := 1
-	var pages []Page
-	var currentPageText strings.Builder
-
-	for _, line := range lines {
-		if strings.TrimSpace(line) == "" {
-			continue
-		}
-		if strings.HasPrefix(line, "Page") {
-			if currentPageText.Len() > 0 {
-				pages = append(pages, Page{
-					PageNumber: pageNumber,
-					Text:       currentPageText.String(),
-				})
-				pageNumber++
-				currentPageText.Reset()
-			}
-		}
-		currentPageText.WriteString(line + "\n")
-	}
-
-	if currentPageText.Len() > 0 {
-		pages = append(pages, Page{
-			PageNumber: pageNumber,
-			Text:       currentPageText.String(),
-		})
-	}
-	return pages
 }
 
 func getFileNameFromDisposition(contentDisposition, url string) string {

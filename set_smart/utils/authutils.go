@@ -265,38 +265,6 @@ func extractLabelValueNodes(n *html.Node) (*html.Node, *html.Node) {
 	return labelNode, valueNode
 }
 
-// func parseFilename(n *html.Node) string {
-// 	var filename string
-// 	for c := n.FirstChild; c != nil; c = c.NextSibling {
-// 		if c.Type == html.ElementNode && c.Data == "td" {
-// 			for _, attr := range c.Attr {
-// 				if attr.Key == "class" && attr.Val == "table-bold" {
-// 					filename = strings.TrimSpace(getTextContent(c))
-// 					return filename
-// 				}
-// 			}
-// 		}
-// 	}
-// 	return filename
-// }
-
-// func parseRow(n *html.Node, dataMap map[string]string) {
-// 	tdCount := 0
-// 	var label, value string
-// 	for c := n.FirstChild; c != nil; c = c.NextSibling {
-// 		if c.Type == html.ElementNode && c.Data == "td" {
-// 			tdCount++
-// 			if tdCount == 1 {
-// 				label = strings.TrimSpace(getTextContent(c))
-// 			} else if tdCount == 2 {
-// 				value = strings.TrimSpace(getTextContent(c))
-// 				dataMap[label] = value
-// 				label, value = "", ""
-// 			}
-// 		}
-// 	}
-// }
-
 func getTextContent(n *html.Node) string {
 	if n.Type == html.TextNode {
 		return n.Data

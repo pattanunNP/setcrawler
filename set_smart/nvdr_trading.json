@@ -1,0 +1,286 @@
+{
+  "SET": {
+    "Common Shares": {
+      "NVDR Turnover (Buy)": {
+        "Volume": "164,855,285.19",
+        "Value": "2,487,049.88"
+      },
+      "NVDR Turnover (Sell)": {
+        "Volume": "166,071,923.01",
+        "Value": "2,484,153.10"
+      },
+      "NVDR Turnover (Buy+Sell)": {
+        "Volume": "330,927,208.21",
+        "Value": "4,971,202.99"
+      },
+      "NVDR Turnover (Net)": {
+        "Volume": "-1,216,637.82",
+        "Value": "2,896.78"
+      },
+      "Turnover of Underlying (Buy=Sell+Mkt.TO)": {
+        "Volume": "928,772,755.56",
+        "Value": "9,790,803.68"
+      },
+      "% of NVDR-Buy": {
+        "Volume": "17.75",
+        "Value": "25.40"
+      },
+      "% of NVDR-Sell": {
+        "Volume": "17.88",
+        "Value": "25.37"
+      },
+      "% of NVDR to its Underlying Securities Turnover": {
+        "Volume": "17.82",
+        "Value": "25.39"
+      },
+      "NO. of Sec": "631"
+    },
+    "Preferred Shares": {
+      "NVDR Turnover (Buy)": {
+        "Volume": "67,752.30",
+        "Value": "31.50"
+      },
+      "NVDR Turnover (Sell)": {
+        "Volume": "40,584.41",
+        "Value": "28.11"
+      },
+      "NVDR Turnover (Buy+Sell)": {
+        "Volume": "108,336.71",
+        "Value": "59.61"
+      },
+      "NVDR Turnover (Net)": {
+        "Volume": "27,167.89",
+        "Value": "3.39"
+      },
+      "Turnover of Underlying (Buy=Sell+Mkt.TO)": {
+        "Volume": "1,635,532.89",
+        "Value": "888.96"
+      },
+      "% of NVDR-Buy": {
+        "Volume": "4.14",
+        "Value": "3.54"
+      },
+      "% of NVDR-Sell": {
+        "Volume": "2.48",
+        "Value": "3.16"
+      },
+      "% of NVDR to its Underlying Securities Turnover": {
+        "Volume": "3.31",
+        "Value": "3.35"
+      },
+      "NO. of Sec": "1"
+    },
+    "Total": {
+      "NVDR Turnover (Buy)": {
+        "Volume": "166,457,241.00",
+        "Value": "2,487,571.72"
+      },
+      "NVDR Turnover (Sell)": {
+        "Volume": "167,957,054.98",
+        "Value": "2,484,663.99"
+      },
+      "NVDR Turnover (Buy+Sell)": {
+        "Volume": "334,414,295.98",
+        "Value": "4,972,235.71"
+      },
+      "NVDR Turnover (Net)": {
+        "Volume": "-1,499,813.98",
+        "Value": "2,907.73"
+      },
+      "Turnover of Underlying (Buy=Sell+Mkt.TO)": {
+        "Volume": "991,169,704.69",
+        "Value": "9,811,628.38"
+      },
+      "% of NVDR-Buy": {
+        "Volume": "16.79",
+        "Value": "25.35"
+      },
+      "% of NVDR-Sell": {
+        "Volume": "16.95",
+        "Value": "25.32"
+      },
+      "% of NVDR to its Underlying Securities Turnover": {
+        "Volume": "16.87",
+        "Value": "25.34"
+      },
+      "NO. of Sec": "759"
+    },
+    "Warrants": {
+      "NVDR Turnover (Buy)": {
+        "Volume": "1,534,203.51",
+        "Value": "490.34"
+      },
+      "NVDR Turnover (Sell)": {
+        "Volume": "1,844,547.55",
+        "Value": "482.78"
+      },
+      "NVDR Turnover (Buy+Sell)": {
+        "Volume": "3,378,751.07",
+        "Value": "973.11"
+      },
+      "NVDR Turnover (Net)": {
+        "Volume": "-310,344.04",
+        "Value": "7.56"
+      },
+      "Turnover of Underlying (Buy=Sell+Mkt.TO)": {
+        "Volume": "60,761,416.24",
+        "Value": "19,935.74"
+      },
+      "% of NVDR-Buy": {
+        "Volume": "2.52",
+        "Value": "2.46"
+      },
+      "% of NVDR-Sell": {
+        "Volume": "3.04",
+        "Value": "2.42"
+      },
+      "% of NVDR to its Underlying Securities Turnover": {
+        "Volume": "2.78",
+        "Value": "2.44"
+      },
+      "NO. of Sec": "127"
+    }
+  },
+  "mai": {
+    "Common Shares": {
+      "NVDR Turnover (Buy)": {
+        "Volume": "13,178,205.93",
+        "Value": "35,498.03"
+      },
+      "NVDR Turnover (Sell)": {
+        "Volume": "11,422,848.56",
+        "Value": "33,958.29"
+      },
+      "NVDR Turnover (Buy+Sell)": {
+        "Volume": "24,601,054.49",
+        "Value": "69,456.32"
+      },
+      "NVDR Turnover (Net)": {
+        "Volume": "1,755,357.37",
+        "Value": "1,539.74"
+      },
+      "Turnover of Underlying (Buy=Sell+Mkt.TO)": {
+        "Volume": "184,397,138.62",
+        "Value": "393,365.92"
+      },
+      "% of NVDR-Buy": {
+        "Volume": "7.15",
+        "Value": "9.02"
+      },
+      "% of NVDR-Sell": {
+        "Volume": "6.19",
+        "Value": "8.63"
+      },
+      "% of NVDR to its Underlying Securities Turnover": {
+        "Volume": "6.67",
+        "Value": "8.83"
+      },
+      "NO. of Sec": "223"
+    },
+    "Total": {
+      "NVDR Turnover (Buy)": {
+        "Volume": "13,579,777.48",
+        "Value": "35,610.01"
+      },
+      "NVDR Turnover (Sell)": {
+        "Volume": "11,839,962.69",
+        "Value": "34,083.78"
+      },
+      "NVDR Turnover (Buy+Sell)": {
+        "Volume": "25,419,740.17",
+        "Value": "69,693.78"
+      },
+      "NVDR Turnover (Net)": {
+        "Volume": "1,739,814.79",
+        "Value": "1,526.23"
+      },
+      "Turnover of Underlying (Buy=Sell+Mkt.TO)": {
+        "Volume": "207,179,714.24",
+        "Value": "399,343.76"
+      },
+      "% of NVDR-Buy": {
+        "Volume": "6.55",
+        "Value": "8.92"
+      },
+      "% of NVDR-Sell": {
+        "Volume": "5.71",
+        "Value": "8.53"
+      },
+      "% of NVDR to its Underlying Securities Turnover": {
+        "Volume": "6.13",
+        "Value": "8.73"
+      },
+      "NO. of Sec": "290"
+    },
+    "Warrants": {
+      "NVDR Turnover (Buy)": {
+        "Volume": "401,571.55",
+        "Value": "111.98"
+      },
+      "NVDR Turnover (Sell)": {
+        "Volume": "417,114.13",
+        "Value": "125.48"
+      },
+      "NVDR Turnover (Buy+Sell)": {
+        "Volume": "818,685.68",
+        "Value": "237.46"
+      },
+      "NVDR Turnover (Net)": {
+        "Volume": "-15,542.58",
+        "Value": "-13.51"
+      },
+      "Turnover of Underlying (Buy=Sell+Mkt.TO)": {
+        "Volume": "22,782,575.62",
+        "Value": "5,977.83"
+      },
+      "% of NVDR-Buy": {
+        "Volume": "1.76",
+        "Value": "1.87"
+      },
+      "% of NVDR-Sell": {
+        "Volume": "1.83",
+        "Value": "2.10"
+      },
+      "% of NVDR to its Underlying Securities Turnover": {
+        "Volume": "1.80",
+        "Value": "1.99"
+      },
+      "NO. of Sec": "67"
+    }
+  },
+  "Grand Total": {
+    "NVDR Turnover (Buy)": {
+      "Volume": "",
+      "Value": ""
+    },
+    "NVDR Turnover (Sell)": {
+      "Volume": "",
+      "Value": ""
+    },
+    "NVDR Turnover (Buy+Sell)": {
+      "Volume": "",
+      "Value": ""
+    },
+    "NVDR Turnover (Net)": {
+      "Volume": "",
+      "Value": ""
+    },
+    "Turnover of Underlying (Buy=Sell+Mkt.TO)": {
+      "Volume": "",
+      "Value": ""
+    },
+    "% of NVDR-Buy": {
+      "Volume": "",
+      "Value": ""
+    },
+    "% of NVDR-Sell": {
+      "Volume": "",
+      "Value": ""
+    },
+    "% of NVDR to its Underlying Securities Turnover": {
+      "Volume": "",
+      "Value": ""
+    },
+    "NO. of Sec": ""
+  }
+}
