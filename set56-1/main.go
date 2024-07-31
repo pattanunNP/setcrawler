@@ -73,12 +73,10 @@ type OpenAiResponse struct {
 }
 
 func main() {
-	// URL to crawl
 	url := "https://market.sec.or.th/public/idisc/th/Viewmore/fs-r561"
 	apiKey := "apiKey"
 	modelName := "gpt-4o"
 
-	// Fetch the URL
 	res, err := http.Get(url)
 	if err != nil {
 		log.Fatalf("Failed to fetch URL: %v", err)
@@ -89,26 +87,20 @@ func main() {
 		log.Fatalf("Error: status code %d", res.StatusCode)
 	}
 
-	// Parse the HTML document
 	doc, err := goquery.NewDocumentFromReader(res.Body)
 	if err != nil {
 		log.Fatalf("Failed to parse HTML document: %v", err)
 	}
 
-	// Data structure to hold the extracted row data
 	var data []Data
-
-	// Counter for the number of records processed
 	recordCount := 0
-	const maxRecords = 5
+	const maxRecords = 4
 
-	// Find all <tr> elements
 	doc.Find("tr").Each(func(rowIndex int, row *goquery.Selection) {
 		if recordCount >= maxRecords {
-			return // Stop processing if we've reached the limit
+			return
 		}
 
-		// Create a slice to hold cell data for this row
 		tds := row.Find("td")
 		if tds.Length() >= 4 {
 			companyName := tds.Eq(0).Text()
@@ -121,7 +113,6 @@ func main() {
 				href, exists := link.Attr("href")
 				if exists {
 					log.Printf("Extract href link: %s", href)
-					// Download and Extract file
 					documents, err = downloadAndProcessFile(href, apiKey, modelName)
 					if err != nil {
 						log.Printf("Error downloading or extracting file: %v", err)
@@ -129,7 +120,6 @@ func main() {
 				}
 			}
 
-			// Convert yearPeriod and submitDate to ISO8601 format
 			yearPeriodISO, err := convertToISO8601(yearPeriod)
 			if err != nil {
 				log.Printf("Error converting yearPeriod to ISO8601: %v", err)
@@ -139,7 +129,6 @@ func main() {
 				log.Printf("Error converting submitDate to ISO8601: %v", err)
 			}
 
-			// Assign data to the Data struct
 			data = append(data, Data{
 				CompanyName: companyName,
 				YearPeriod:  yearPeriodISO,
@@ -150,13 +139,11 @@ func main() {
 			recordCount++
 		}
 
-		// Stop processing if we've reached the limit
 		if recordCount >= maxRecords {
 			return
 		}
 	})
 
-	// Save the data to JSON File
 	err = saveResultsToFile("result.json", data)
 	if err != nil {
 		log.Fatalf("Error saving results to file: %v", err)
@@ -171,7 +158,6 @@ func downloadAndProcessFile(url, apiKey, modelName string) ([]Document, error) {
 		return nil, fmt.Errorf("failed to create request: %w", err)
 	}
 
-	// Set headers to mimic the curl command
 	setRequestHeaders(req)
 
 	resp, err := client.Do(req)
@@ -191,7 +177,6 @@ func downloadAndProcessFile(url, apiKey, modelName string) ([]Document, error) {
 			return nil, fmt.Errorf("failed to extract redirect URL: %w", err)
 		}
 
-		// Make a new request to the redirect URL
 		req, err = http.NewRequest("GET", redirectURL, nil)
 		if err != nil {
 			return nil, fmt.Errorf("failed to create redirect request: %w", err)
@@ -231,6 +216,10 @@ func downloadAndProcessFile(url, apiKey, modelName string) ([]Document, error) {
 	}
 
 	return processFile(body, fileType, fileName, apiKey, modelName)
+}
+
+func shouldConvertToImage(text string) bool {
+	return strings.Contains(text, "à¾×!Í¡ÒÃÅ§·Ø¹")
 }
 
 func setRequestHeaders(req *http.Request) {
@@ -273,21 +262,34 @@ func processFile(body []byte, fileType, fileName, apiKey, modelName string) ([]D
 
 		var documentPages []Page
 		for i, pageFile := range pageFiles {
-			defer os.Remove(pageFile) // Ensure each temporary page file is removed after processing
+			defer os.Remove(pageFile)
 
 			output, err := extractTextWithPDFBOX(pageFile)
 			if err != nil {
 				return nil, fmt.Errorf("failed to extract text with PDFBox for page %s: %v", pageFile, err)
 			}
 
-			log.Printf("Extracted text from page %d: %s", i+1, output)
-
-			page := Page{
-				PageNumber: i + 1,
-				Text:       output,
+			if shouldConvertToImage(output) || len(output) < 1000 {
+				log.Printf("Special text pattern detected on page %d, converting to image", i+1)
+				base64Image, err := convertPageToBase64Image(tempFile.Name(), i+1)
+				if err != nil {
+					return nil, fmt.Errorf("failed to convert page %d to image: %v", i+1, err)
+				}
+				output, err = sendImageToOpenAI(base64Image, apiKey, modelName)
+				if err != nil {
+					return nil, fmt.Errorf("failed to send image to OpenAI for page %d: %v", i+1, err)
+				}
+				documentPages = append(documentPages, Page{
+					PageNumber: i + 1,
+					Text:       output,
+				})
+			} else {
+				cleanedText := CleanText(output)
+				documentPages = append(documentPages, Page{
+					PageNumber: i + 1,
+					Text:       cleanedText,
+				})
 			}
-
-			documentPages = append(documentPages, page)
 		}
 
 		doc := Document{
@@ -303,21 +305,21 @@ func processFile(body []byte, fileType, fileName, apiKey, modelName string) ([]D
 }
 
 func splitPDFIntoPages(pdfPath string) ([]string, error) {
-	totalPages, err := getTotalPages(pdfPath)
+	outputDir, err := os.MkdirTemp("", "pdf_pages")
 	if err != nil {
-		return nil, fmt.Errorf("error getting total pages: %v", err)
+		return nil, fmt.Errorf("error creating temp output directory: %v", err)
 	}
 
-	var pageFiles []string
-	for i := 1; i <= totalPages; i++ {
-		pageFile := fmt.Sprintf("%s_page_%d.pdf", pdfPath, i)
-		cmd := exec.Command("pdftk", pdfPath, "cat", strconv.Itoa(i), "output", pageFile)
-		if err := cmd.Run(); err != nil {
-			return nil, fmt.Errorf("error splitting PDF into pages: %v", err)
-		}
-		pageFiles = append(pageFiles, pageFile)
+	cmd := exec.Command("pdfcpu", "split", pdfPath, outputDir)
+	output, err := cmd.CombinedOutput()
+	if err != nil {
+		return nil, fmt.Errorf("error splitting PDF into pages: %v, output: %s", err, output)
 	}
 
+	pageFiles, err := filepath.Glob(filepath.Join(outputDir, "*.pdf"))
+	if err != nil {
+		return nil, fmt.Errorf("error listing split page files: %v", err)
+	}
 	return pageFiles, nil
 }
 
@@ -332,6 +334,11 @@ func extractTextWithPDFBOX(filePath string) (string, error) {
 	}
 
 	return string(output), nil
+}
+
+func cleanExtractedText(text string) string {
+	text = strings.ReplaceAll(text, "The encoding parameter is ignored when writing to the console.", "")
+	return text
 }
 
 func getTotalPages(pdfPath string) (int, error) {
@@ -499,24 +506,25 @@ func extractPDFPages(filePath, apiKey, modelName string) ([]Page, string, error)
 				Text:       text,
 			})
 		} else {
-			cleanedText := CleanText(text)
-			if len(cleanedText) < 1000 {
-				log.Printf("Text on page %d is less than 1000 characters, converting to image", i)
+			if shouldConvertToImage(text) || len(text) < 1000 {
+				log.Printf("Special text pattern on page %d, converting to image", i)
 				base64Image, err := convertPageToBase64Image(filePath, i)
 				if err != nil {
-					log.Printf("Failed to convert page %d: %v", i, err)
+					log.Printf("Failed to convert page %d to image: %v", i, err)
 					continue
 				}
+				// Log the base64 image data to verify if it's sending the right page
+				log.Printf("Base64 image data for page %d: %s", i, base64Image)
 				ocrText, err := sendImageToOpenAI(base64Image, apiKey, modelName)
 				if err != nil {
-					log.Printf("Failed to perform OCR on page %d: %v", i, err)
-					continue
+					return nil, "", fmt.Errorf("failed to send image to OpeAI for page %d: %v", i, err)
 				}
 				processedTexts = append(processedTexts, Page{
 					PageNumber: i,
 					Text:       ocrText,
 				})
 			} else {
+				cleanedText := CleanText(text)
 				processedTexts = append(processedTexts, Page{
 					PageNumber: i,
 					Text:       cleanedText,
@@ -632,7 +640,6 @@ func convertPDFToImage(pdfPath string, pageNumber int) (string, error) {
 		}
 	}
 
-	// Create a new image file
 	newImagePath := fmt.Sprintf("%s-converted.png", outputPrefix)
 	input, err := os.Open(imagePath)
 	if err != nil {
@@ -824,7 +831,7 @@ func extractZipFiles(body []byte, apiKey, modelName string) ([]Document, error) 
 
 			var documentPages []Page
 			for i, pageFile := range pageFiles {
-				defer os.Remove(pageFile) // Ensure each temporary page file is removed after processing
+				defer os.Remove(pageFile)
 
 				output, err := extractTextWithPDFBOX(pageFile)
 				if err != nil {
@@ -832,7 +839,7 @@ func extractZipFiles(body []byte, apiKey, modelName string) ([]Document, error) 
 					continue
 				}
 
-				log.Printf("Extracted text from page %d: %s", i+1, output)
+				output = cleanExtractedText(output)
 
 				page := Page{
 					PageNumber: i + 1,
@@ -896,7 +903,6 @@ func getFileTypeFromContentType(contentType string) string {
 }
 
 func extractPPTXPages(content []byte) ([]Page, error) {
-	// Create temporary file
 	pptxFile, err := os.CreateTemp("", "*.pptx")
 	if err != nil {
 		return nil, err
@@ -909,7 +915,6 @@ func extractPPTXPages(content []byte) ([]Page, error) {
 	}
 	pptxFile.Close()
 
-	// Open the PPTX file
 	prs, err := excelize.OpenFile(pptxFile.Name())
 	if err != nil {
 		return nil, err

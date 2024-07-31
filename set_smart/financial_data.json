@@ -1,0 +1,2754 @@
+{
+ "company": "SCB",
+ "financialData": {
+  "periods": [
+   {
+    "quarter": "Q1",
+    "year": 2024,
+    "beginDate": "2024-01-01T00:00:00+07:00",
+    "endDate": "2024-03-31T00:00:00+07:00",
+    "financialStatementLink": "https://www.setsmart.com/ism/servlet/th.or.set.ism.common.DownloadFileServlet?hostname=http%3A%2F%2Fwww.simsdw.set%2F\u0026filename=dat%2Fnews%2F202405%2F1706FIN150520241911170640E.zip",
+    "fscomp": false,
+    "fsType": "C",
+    "restatementDate": null,
+    "statementType": "O"
+   },
+   {
+    "quarter": "Q4",
+    "year": 2023,
+    "beginDate": "2023-01-01T00:00:00+07:00",
+    "endDate": "2023-12-31T00:00:00+07:00",
+    "financialStatementLink": "https://www.setsmart.com/ism/servlet/th.or.set.ism.common.DownloadFileServlet?hostname=http%3A%2F%2Fwww.simsdw.set%2F\u0026filename=dat%2Fnews%2F202402%2F1706FIN200220241653550858E.zip",
+    "fscomp": false,
+    "fsType": "C",
+    "restatementDate": null,
+    "statementType": "O"
+   },
+   {
+    "quarter": "Q3",
+    "year": 2023,
+    "beginDate": "2023-01-01T00:00:00+07:00",
+    "endDate": "2023-09-30T00:00:00+07:00",
+    "financialStatementLink": "https://www.setsmart.com/ism/servlet/th.or.set.ism.common.DownloadFileServlet?hostname=http%3A%2F%2Fwww.simsdw.set%2F\u0026filename=dat%2Fnews%2F202311%2F1706FIN141120231614180352E.zip",
+    "fscomp": false,
+    "fsType": "C",
+    "restatementDate": null,
+    "statementType": "O"
+   },
+   {
+    "quarter": "Q2",
+    "year": 2023,
+    "beginDate": "2023-01-01T00:00:00+07:00",
+    "endDate": "2023-06-30T00:00:00+07:00",
+    "financialStatementLink": "https://www.setsmart.com/ism/servlet/th.or.set.ism.common.DownloadFileServlet?hostname=http%3A%2F%2Fwww.simsdw.set%2F\u0026filename=dat%2Fnews%2F202308%2F1706FIN110820231642300730E.zip",
+    "fscomp": false,
+    "fsType": "C",
+    "restatementDate": null,
+    "statementType": "O"
+   },
+   {
+    "quarter": "Q1",
+    "year": 2023,
+    "beginDate": "2023-01-01T00:00:00+07:00",
+    "endDate": "2023-03-31T00:00:00+07:00",
+    "financialStatementLink": "https://www.setsmart.com/ism/servlet/th.or.set.ism.common.DownloadFileServlet?hostname=http%3A%2F%2Fwww.simsdw.set%2F\u0026filename=dat%2Fnews%2F202305%2F1706FIN150520232021150996E.zip",
+    "fscomp": false,
+    "fsType": "C",
+    "restatementDate": null,
+    "statementType": "O"
+   },
+   {
+    "quarter": "Q4",
+    "year": 2022,
+    "beginDate": "2022-01-01T00:00:00+07:00",
+    "endDate": "2022-12-31T00:00:00+07:00",
+    "financialStatementLink": "https://www.setsmart.com/ism/servlet/th.or.set.ism.common.DownloadFileServlet?hostname=http%3A%2F%2Fwww.simsdw.set%2F\u0026filename=dat%2Fnews%2F202302%2F23016976.zip",
+    "fscomp": false,
+    "fsType": "C",
+    "restatementDate": null,
+    "statementType": "O"
+   },
+   {
+    "quarter": "Q3",
+    "year": 2022,
+    "beginDate": "2022-01-01T00:00:00+07:00",
+    "endDate": "2022-09-30T00:00:00+07:00",
+    "financialStatementLink": "https://www.setsmart.com/ism/servlet/th.or.set.ism.common.DownloadFileServlet?hostname=http%3A%2F%2Fwww.simsdw.set%2F\u0026filename=dat%2Fnews%2F202211%2F22134241.zip",
+    "fscomp": false,
+    "fsType": "C",
+    "restatementDate": null,
+    "statementType": "O"
+   },
+   {
+    "quarter": "Q2",
+    "year": 2022,
+    "beginDate": "2022-01-01T00:00:00+07:00",
+    "endDate": "2022-06-30T00:00:00+07:00",
+    "financialStatementLink": "https://www.setsmart.com/ism/servlet/th.or.set.ism.common.DownloadFileServlet?hostname=http%3A%2F%2Fwww.simsdw.set%2F\u0026filename=dat%2Fnews%2F202208%2F22095411.zip",
+    "fscomp": false,
+    "fsType": "C",
+    "restatementDate": null,
+    "statementType": "O"
+   },
+   {
+    "quarter": "Q1",
+    "year": 2022,
+    "beginDate": "2022-01-01T00:00:00+07:00",
+    "endDate": "2022-03-31T00:00:00+07:00",
+    "financialStatementLink": "https://www.setsmart.com/ism/servlet/th.or.set.ism.common.DownloadFileServlet?hostname=http%3A%2F%2Fwww.simsdw.set%2F\u0026filename=dat%2Fnews%2F202205%2F22062378.zip",
+    "fscomp": false,
+    "fsType": "C",
+    "restatementDate": null,
+    "statementType": "O"
+   }
+  ],
+  "accounts": [
+   {
+    "accnountName": "Assets",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     }
+    ],
+    "format": "BFG"
+   },
+   {
+    "accnountName": "Cash",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 37296317,
+      "percentChange": -8.308121722982348,
+      "adjusted": false
+     },
+     {
+      "amount": 40675704,
+      "percentChange": 11.938789764345612,
+      "adjusted": false
+     },
+     {
+      "amount": 36337452,
+      "percentChange": -2.2664214818084187,
+      "adjusted": false
+     },
+     {
+      "amount": 37180110,
+      "percentChange": -7.6257202029604505,
+      "adjusted": false
+     },
+     {
+      "amount": 40249418,
+      "percentChange": -14.82250202370906,
+      "adjusted": false
+     },
+     {
+      "amount": 47253581,
+      "percentChange": 6.494903517633081,
+      "adjusted": false
+     },
+     {
+      "amount": 44371683,
+      "percentChange": 2.0445131778234247,
+      "adjusted": false
+     },
+     {
+      "amount": 43482674,
+      "percentChange": 3.583260145032421,
+      "adjusted": false
+     },
+     {
+      "amount": 41978476,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Interbank And Money Market Items - Net",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 310495711,
+      "percentChange": -28.91535668851665,
+      "adjusted": false
+     },
+     {
+      "amount": 436797171,
+      "percentChange": -8.780784131723205,
+      "adjusted": false
+     },
+     {
+      "amount": 478843374,
+      "percentChange": -2.0406741177638734,
+      "adjusted": false
+     },
+     {
+      "amount": 488818568,
+      "percentChange": -5.29169783335592,
+      "adjusted": false
+     },
+     {
+      "amount": 516130642,
+      "percentChange": -1.134930244567107,
+      "adjusted": false
+     },
+     {
+      "amount": 522055609,
+      "percentChange": 11.305102512209231,
+      "adjusted": false
+     },
+     {
+      "amount": 469031156,
+      "percentChange": -17.173480349151586,
+      "adjusted": false
+     },
+     {
+      "amount": 566281377,
+      "percentChange": -3.7502375728937887,
+      "adjusted": false
+     },
+     {
+      "amount": 588345740,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Financial Assets Measured At Fair Value Through Profit Or Loss",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 154936373,
+      "percentChange": 67.43693675263685,
+      "adjusted": false
+     },
+     {
+      "amount": 92534166,
+      "percentChange": -7.401839411217092,
+      "adjusted": false
+     },
+     {
+      "amount": 99930890,
+      "percentChange": 41.614524983226914,
+      "adjusted": false
+     },
+     {
+      "amount": 70565424,
+      "percentChange": 4.329857491135194,
+      "adjusted": false
+     },
+     {
+      "amount": 67636845,
+      "percentChange": 8.520162298799145,
+      "adjusted": false
+     },
+     {
+      "amount": 62326524,
+      "percentChange": -8.976957121725041,
+      "adjusted": false
+     },
+     {
+      "amount": 68473347,
+      "percentChange": 5.44559612756541,
+      "adjusted": false
+     },
+     {
+      "amount": 64937133,
+      "percentChange": -17.208323738263022,
+      "adjusted": false
+     },
+     {
+      "amount": 78434374,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Financial Assets Measured At Fair Value Through Profit Or Loss - Others",
+    "level": 1,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 154936373,
+      "percentChange": 67.43693675263685,
+      "adjusted": false
+     },
+     {
+      "amount": 92534166,
+      "percentChange": -7.401839411217092,
+      "adjusted": false
+     },
+     {
+      "amount": 99930890,
+      "percentChange": 41.614524983226914,
+      "adjusted": false
+     },
+     {
+      "amount": 70565424,
+      "percentChange": 4.329857491135194,
+      "adjusted": false
+     },
+     {
+      "amount": 67636845,
+      "percentChange": 8.520162298799145,
+      "adjusted": false
+     },
+     {
+      "amount": 62326524,
+      "percentChange": -8.976957121725041,
+      "adjusted": false
+     },
+     {
+      "amount": 68473347,
+      "percentChange": 5.44559612756541,
+      "adjusted": false
+     },
+     {
+      "amount": 64937133,
+      "percentChange": -17.208323738263022,
+      "adjusted": false
+     },
+     {
+      "amount": 78434374,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Derivative Assets",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 56237490,
+      "percentChange": 19.700856252650233,
+      "adjusted": false
+     },
+     {
+      "amount": 46981694,
+      "percentChange": -39.4236672765427,
+      "adjusted": false
+     },
+     {
+      "amount": 77557838,
+      "percentChange": 20.94295972357744,
+      "adjusted": false
+     },
+     {
+      "amount": 64127617,
+      "percentChange": 25.872581828756914,
+      "adjusted": false
+     },
+     {
+      "amount": 50946454,
+      "percentChange": -22.906527835290856,
+      "adjusted": false
+     },
+     {
+      "amount": 66084005,
+      "percentChange": -35.35015357516833,
+      "adjusted": false
+     },
+     {
+      "amount": 102218348,
+      "percentChange": 39.081502451735474,
+      "adjusted": false
+     },
+     {
+      "amount": 73495286,
+      "percentChange": 49.670024649281295,
+      "adjusted": false
+     },
+     {
+      "amount": 49104880,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Investments - Net",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 383676899,
+      "percentChange": -0.6436591330163678,
+      "adjusted": false
+     },
+     {
+      "amount": 386162469,
+      "percentChange": 2.5543649585830646,
+      "adjusted": false
+     },
+     {
+      "amount": 376544157,
+      "percentChange": 8.354238237123228,
+      "adjusted": false
+     },
+     {
+      "amount": 347512163,
+      "percentChange": -0.31818154646221214,
+      "adjusted": false
+     },
+     {
+      "amount": 348621412,
+      "percentChange": -10.76347156846309,
+      "adjusted": false
+     },
+     {
+      "amount": 390671195,
+      "percentChange": -0.5917218498777911,
+      "adjusted": false
+     },
+     {
+      "amount": 392996642,
+      "percentChange": 31.448538952391413,
+      "adjusted": false
+     },
+     {
+      "amount": 298973762,
+      "percentChange": 0.2967077235792704,
+      "adjusted": false
+     },
+     {
+      "amount": 298089308,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Investment In Subsidiaries, Associates And Joint Ventures Using The Equity Method - Net",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 2118293,
+      "percentChange": 7.524616076513639,
+      "adjusted": false
+     },
+     {
+      "amount": 1970054,
+      "percentChange": 7.076299283641147,
+      "adjusted": false
+     },
+     {
+      "amount": 1839860,
+      "percentChange": 21.79244458684065,
+      "adjusted": false
+     },
+     {
+      "amount": 1510652,
+      "percentChange": 5.825379423395528,
+      "adjusted": false
+     },
+     {
+      "amount": 1427495,
+      "percentChange": 18.391806511862445,
+      "adjusted": false
+     },
+     {
+      "amount": 1205738,
+      "percentChange": 35.76005557688605,
+      "adjusted": false
+     },
+     {
+      "amount": 888139,
+      "percentChange": 18.558432283427777,
+      "adjusted": false
+     },
+     {
+      "amount": 749115,
+      "percentChange": -11.285289474650318,
+      "adjusted": false
+     },
+     {
+      "amount": 844409,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Loans To Customers And Accrued Interest Receivables - Net",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 2323395385,
+      "percentChange": 0.9713530382398495,
+      "adjusted": false
+     },
+     {
+      "amount": 2301044123,
+      "percentChange": -0.9634831349483934,
+      "adjusted": false
+     },
+     {
+      "amount": 2323429979,
+      "percentChange": 1.3584008127573748,
+      "adjusted": false
+     },
+     {
+      "amount": 2292291473,
+      "percentChange": 1.0869553444969555,
+      "adjusted": false
+     },
+     {
+      "amount": 2267643204,
+      "percentChange": 0.8806270977271509,
+      "adjusted": false
+     },
+     {
+      "amount": 2247848045,
+      "percentChange": 1.4239677106197794,
+      "adjusted": false
+     },
+     {
+      "amount": 2216288808,
+      "percentChange": -0.19523083174825834,
+      "adjusted": false
+     },
+     {
+      "amount": 2220624151,
+      "percentChange": 1.4013671327395307,
+      "adjusted": false
+     },
+     {
+      "amount": 2189935120,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Properties Foreclosed - Net",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 26010439,
+      "percentChange": 0.3070516325400919,
+      "adjusted": false
+     },
+     {
+      "amount": 25930818,
+      "percentChange": 3.90124236001362,
+      "adjusted": false
+     },
+     {
+      "amount": 24957178,
+      "percentChange": -0.20654303247748634,
+      "adjusted": false
+     },
+     {
+      "amount": 25008832,
+      "percentChange": 2.2243980608585265,
+      "adjusted": false
+     },
+     {
+      "amount": 24464641,
+      "percentChange": 9.018538904659762,
+      "adjusted": false
+     },
+     {
+      "amount": 22440808,
+      "percentChange": 1.41366187163924,
+      "adjusted": false
+     },
+     {
+      "amount": 22127993,
+      "percentChange": 5.735993082432624,
+      "adjusted": false
+     },
+     {
+      "amount": 20927588,
+      "percentChange": 14.825871159961107,
+      "adjusted": false
+     },
+     {
+      "amount": 18225499,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Investment Properties - Net",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 482071,
+      "percentChange": -0.8622887978546633,
+      "adjusted": false
+     },
+     {
+      "amount": 486264,
+      "percentChange": -0.8698736675154067,
+      "adjusted": false
+     },
+     {
+      "amount": 490531,
+      "percentChange": -0.8697848777875453,
+      "adjusted": false
+     },
+     {
+      "amount": 494835,
+      "percentChange": -0.8503663748624967,
+      "adjusted": false
+     },
+     {
+      "amount": 499079,
+      "percentChange": 0.7556486909895506,
+      "adjusted": false
+     },
+     {
+      "amount": 495336,
+      "percentChange": -0.8511013074773613,
+      "adjusted": false
+     },
+     {
+      "amount": 499588,
+      "percentChange": -0.8454930852161763,
+      "adjusted": false
+     },
+     {
+      "amount": 503848,
+      "percentChange": -0.827669554160688,
+      "adjusted": false
+     },
+     {
+      "amount": 508053,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Property, Plant And Equipment - Net",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 45715860,
+      "percentChange": -0.5913674919598815,
+      "adjusted": false
+     },
+     {
+      "amount": 45987817,
+      "percentChange": 0.006937100957674399,
+      "adjusted": false
+     },
+     {
+      "amount": 45984627,
+      "percentChange": -0.7969616290925684,
+      "adjusted": false
+     },
+     {
+      "amount": 46354051,
+      "percentChange": 0.0017107751088391672,
+      "adjusted": false
+     },
+     {
+      "amount": 46353258,
+      "percentChange": -0.22305629071153998,
+      "adjusted": false
+     },
+     {
+      "amount": 46456883,
+      "percentChange": 2.0113683334413683,
+      "adjusted": false
+     },
+     {
+      "amount": 45540888,
+      "percentChange": -0.07830776588799625,
+      "adjusted": false
+     },
+     {
+      "amount": 45576578,
+      "percentChange": 1.6563126540586275,
+      "adjusted": false
+     },
+     {
+      "amount": 44833987,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Goodwill And Other Intangible Assets - Net",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 20921707,
+      "percentChange": -3.549552491685285,
+      "adjusted": false
+     },
+     {
+      "amount": 21691664,
+      "percentChange": 6.971048033663953,
+      "adjusted": false
+     },
+     {
+      "amount": 20278070,
+      "percentChange": 0.8687977941256937,
+      "adjusted": false
+     },
+     {
+      "amount": 20103412,
+      "percentChange": -0.5540966860701667,
+      "adjusted": false
+     },
+     {
+      "amount": 20215425,
+      "percentChange": -1.2855221207340335,
+      "adjusted": false
+     },
+     {
+      "amount": 20478683,
+      "percentChange": 3.7462400334765253,
+      "adjusted": false
+     },
+     {
+      "amount": 19739205,
+      "percentChange": 9.814630000751599,
+      "adjusted": false
+     },
+     {
+      "amount": 17975023,
+      "percentChange": 1.8593515406809296,
+      "adjusted": false
+     },
+     {
+      "amount": 17646905,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Deferred Tax Assets",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 5485567,
+      "percentChange": -10.64261113582597,
+      "adjusted": false
+     },
+     {
+      "amount": 6138907,
+      "percentChange": -18.231092901488218,
+      "adjusted": false
+     },
+     {
+      "amount": 7507630,
+      "percentChange": 22.784078104204138,
+      "adjusted": false
+     },
+     {
+      "amount": 6114498,
+      "percentChange": 40.12180483451895,
+      "adjusted": false
+     },
+     {
+      "amount": 4363702,
+      "percentChange": 35.29055040723252,
+      "adjusted": false
+     },
+     {
+      "amount": 3225430,
+      "percentChange": -50.26193431071152,
+      "adjusted": false
+     },
+     {
+      "amount": 6484832,
+      "percentChange": 13.570154986559496,
+      "adjusted": false
+     },
+     {
+      "amount": 5709979,
+      "percentChange": 29.844106909164502,
+      "adjusted": false
+     },
+     {
+      "amount": 4397565,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Other Assets - Net",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 40366023,
+      "percentChange": 24.89070367978742,
+      "adjusted": false
+     },
+     {
+      "amount": 32321079,
+      "percentChange": -28.725552214089298,
+      "adjusted": false
+     },
+     {
+      "amount": 45347358,
+      "percentChange": 12.480418337435118,
+      "adjusted": false
+     },
+     {
+      "amount": 40315780,
+      "percentChange": 44.38036059689622,
+      "adjusted": false
+     },
+     {
+      "amount": 27923313,
+      "percentChange": 16.782639426193512,
+      "adjusted": false
+     },
+     {
+      "amount": 23910500,
+      "percentChange": -54.24665584682981,
+      "adjusted": false
+     },
+     {
+      "amount": 52259568,
+      "percentChange": 30.984702559629174,
+      "adjusted": false
+     },
+     {
+      "amount": 39897459,
+      "percentChange": 4.129729686277858,
+      "adjusted": false
+     },
+     {
+      "amount": 38315147,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Total Assets",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": true,
+    "values": [
+     {
+      "amount": 3407138135,
+      "percentChange": -0.9184748183462453,
+      "adjusted": false
+     },
+     {
+      "amount": 3438721930,
+      "percentChange": -2.8348580533222485,
+      "adjusted": false
+     },
+     {
+      "amount": 3539048944,
+      "percentChange": 2.8674457366431896,
+      "adjusted": false
+     },
+     {
+      "amount": 3440397415,
+      "percentChange": 0.7002108250239245,
+      "adjusted": false
+     },
+     {
+      "amount": 3416474888,
+      "percentChange": -1.0993768416842973,
+      "adjusted": false
+     },
+     {
+      "amount": 3454452337,
+      "percentChange": 0.3932709631510236,
+      "adjusted": false
+     },
+     {
+      "amount": 3440920197,
+      "percentChange": 1.2293197129597222,
+      "adjusted": false
+     },
+     {
+      "amount": 3399133973,
+      "percentChange": 0.8447756384935051,
+      "adjusted": false
+     },
+     {
+      "amount": 3370659463,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": "BU"
+   },
+   {
+    "accnountName": "Liabilities",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     }
+    ],
+    "format": "BFG"
+   },
+   {
+    "accnountName": "Deposits",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 2410605706,
+      "percentChange": -1.3203442187626264,
+      "adjusted": false
+     },
+     {
+      "amount": 2442859865,
+      "percentChange": -4.081710778701201,
+      "adjusted": false
+     },
+     {
+      "amount": 2546813423,
+      "percentChange": 3.186774112795753,
+      "adjusted": false
+     },
+     {
+      "amount": 2468158778,
+      "percentChange": -1.6770900007047682,
+      "adjusted": false
+     },
+     {
+      "amount": 2510258065,
+      "percentChange": -1.7818977805266716,
+      "adjusted": false
+     },
+     {
+      "amount": 2555799805,
+      "percentChange": 0.8892472007913457,
+      "adjusted": false
+     },
+     {
+      "amount": 2533272748,
+      "percentChange": 0.39459988357929426,
+      "adjusted": false
+     },
+     {
+      "amount": 2523315747,
+      "percentChange": 0.7262960915083887,
+      "adjusted": false
+     },
+     {
+      "amount": 2505121150,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Interbank And Money Market Items",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 229916370,
+      "percentChange": 3.819035290364034,
+      "adjusted": false
+     },
+     {
+      "amount": 221458781,
+      "percentChange": 7.923175332694536,
+      "adjusted": false
+     },
+     {
+      "amount": 205200394,
+      "percentChange": 0.4183954754807279,
+      "adjusted": false
+     },
+     {
+      "amount": 204345422,
+      "percentChange": 6.605938682197854,
+      "adjusted": false
+     },
+     {
+      "amount": 191682963,
+      "percentChange": 5.699263268554053,
+      "adjusted": false
+     },
+     {
+      "amount": 181347492,
+      "percentChange": 24.403435431744988,
+      "adjusted": false
+     },
+     {
+      "amount": 145773701,
+      "percentChange": -7.3085219101111845,
+      "adjusted": false
+     },
+     {
+      "amount": 157267641,
+      "percentChange": -12.282023876324489,
+      "adjusted": false
+     },
+     {
+      "amount": 179287813,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Liabilities Payable On Demand",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 17061307,
+      "percentChange": 31.189810423716008,
+      "adjusted": false
+     },
+     {
+      "amount": 13005055,
+      "percentChange": -0.8805625356786547,
+      "adjusted": false
+     },
+     {
+      "amount": 13120590,
+      "percentChange": -13.494410223235043,
+      "adjusted": false
+     },
+     {
+      "amount": 15167332,
+      "percentChange": -4.424271078517647,
+      "adjusted": false
+     },
+     {
+      "amount": 15869439,
+      "percentChange": 38.851278723741025,
+      "adjusted": false
+     },
+     {
+      "amount": 11429091,
+      "percentChange": -31.844436238887614,
+      "adjusted": false
+     },
+     {
+      "amount": 16769124,
+      "percentChange": 26.66871522660155,
+      "adjusted": false
+     },
+     {
+      "amount": 13238568,
+      "percentChange": -38.443377078911574,
+      "adjusted": false
+     },
+     {
+      "amount": 21506326,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Financial Liabilities Measured At Fair Value Through Profit Or Loss",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 1614985,
+      "percentChange": -15.482008228936508,
+      "adjusted": false
+     },
+     {
+      "amount": 1910818,
+      "percentChange": 47491.9800747198,
+      "adjusted": false
+     },
+     {
+      "amount": 4015,
+      "percentChange": -52.34421364985163,
+      "adjusted": false
+     },
+     {
+      "amount": 8425,
+      "percentChange": -21.627906976744185,
+      "adjusted": false
+     },
+     {
+      "amount": 10750,
+      "percentChange": -72.26164365888272,
+      "adjusted": false
+     },
+     {
+      "amount": 38755,
+      "percentChange": 32.427814795831196,
+      "adjusted": false
+     },
+     {
+      "amount": 29265,
+      "percentChange": 93.04089709762533,
+      "adjusted": false
+     },
+     {
+      "amount": 15160,
+      "percentChange": 23.704610363117094,
+      "adjusted": false
+     },
+     {
+      "amount": 12255,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Financial Liabilities Measured At Fair Value Through Profit Or Loss - Others",
+    "level": 1,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 1614985,
+      "percentChange": -15.482008228936508,
+      "adjusted": false
+     },
+     {
+      "amount": 1910818,
+      "percentChange": 47491.9800747198,
+      "adjusted": false
+     },
+     {
+      "amount": 4015,
+      "percentChange": -52.34421364985163,
+      "adjusted": false
+     },
+     {
+      "amount": 8425,
+      "percentChange": -21.627906976744185,
+      "adjusted": false
+     },
+     {
+      "amount": 10750,
+      "percentChange": -72.26164365888272,
+      "adjusted": false
+     },
+     {
+      "amount": 38755,
+      "percentChange": 32.427814795831196,
+      "adjusted": false
+     },
+     {
+      "amount": 29265,
+      "percentChange": 93.04089709762533,
+      "adjusted": false
+     },
+     {
+      "amount": 15160,
+      "percentChange": 23.704610363117094,
+      "adjusted": false
+     },
+     {
+      "amount": 12255,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Derivative Liabilities",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 55349120,
+      "percentChange": 28.861449435674498,
+      "adjusted": false
+     },
+     {
+      "amount": 42952427,
+      "percentChange": -44.56166963123435,
+      "adjusted": false
+     },
+     {
+      "amount": 77477851,
+      "percentChange": 19.932236406926194,
+      "adjusted": false
+     },
+     {
+      "amount": 64601356,
+      "percentChange": 25.188374026872186,
+      "adjusted": false
+     },
+     {
+      "amount": 51603319,
+      "percentChange": -14.890964360244697,
+      "adjusted": false
+     },
+     {
+      "amount": 60632010,
+      "percentChange": -38.31355961681853,
+      "adjusted": false
+     },
+     {
+      "amount": 98290661,
+      "percentChange": 44.73830683148434,
+      "adjusted": false
+     },
+     {
+      "amount": 67909224,
+      "percentChange": 59.46731718616128,
+      "adjusted": false
+     },
+     {
+      "amount": 42585042,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Debts Issued And Borrowings",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 92178169,
+      "percentChange": -16.133509298151726,
+      "adjusted": false
+     },
+     {
+      "amount": 109910607,
+      "percentChange": -2.648760172244933,
+      "adjusted": false
+     },
+     {
+      "amount": 112901086,
+      "percentChange": 2.619699387889834,
+      "adjusted": false
+     },
+     {
+      "amount": 110018921,
+      "percentChange": 50.205140839793955,
+      "adjusted": false
+     },
+     {
+      "amount": 73245776,
+      "percentChange": 1.7351983834101699,
+      "adjusted": false
+     },
+     {
+      "amount": 71996494,
+      "percentChange": -5.637847000622375,
+      "adjusted": false
+     },
+     {
+      "amount": 76298062,
+      "percentChange": -7.565026747823162,
+      "adjusted": false
+     },
+     {
+      "amount": 82542418,
+      "percentChange": 10.651870296964082,
+      "adjusted": false
+     },
+     {
+      "amount": 74596496,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Debts Issued And Borrowings - Others",
+    "level": 1,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 92178169,
+      "percentChange": -16.133509298151726,
+      "adjusted": false
+     },
+     {
+      "amount": 109910607,
+      "percentChange": -2.648760172244933,
+      "adjusted": false
+     },
+     {
+      "amount": 112901086,
+      "percentChange": 2.619699387889834,
+      "adjusted": false
+     },
+     {
+      "amount": 110018921,
+      "percentChange": 50.205140839793955,
+      "adjusted": false
+     },
+     {
+      "amount": 73245776,
+      "percentChange": 1.7351983834101699,
+      "adjusted": false
+     },
+     {
+      "amount": 71996494,
+      "percentChange": -5.637847000622375,
+      "adjusted": false
+     },
+     {
+      "amount": 76298062,
+      "percentChange": -7.565026747823162,
+      "adjusted": false
+     },
+     {
+      "amount": 82542418,
+      "percentChange": 10.651870296964082,
+      "adjusted": false
+     },
+     {
+      "amount": 74596496,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Provisions",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 18409741,
+      "percentChange": -8.52738041091013,
+      "adjusted": false
+     },
+     {
+      "amount": 20125958,
+      "percentChange": -0.6707771790066761,
+      "adjusted": false
+     },
+     {
+      "amount": 20261870,
+      "percentChange": -4.394944742924463,
+      "adjusted": false
+     },
+     {
+      "amount": 21193304,
+      "percentChange": 12.162060606548142,
+      "adjusted": false
+     },
+     {
+      "amount": 18895252,
+      "percentChange": -2.4684672036206194,
+      "adjusted": false
+     },
+     {
+      "amount": 19373480,
+      "percentChange": -2.931731779157199,
+      "adjusted": false
+     },
+     {
+      "amount": 19958613,
+      "percentChange": 0.8941378605933341,
+      "adjusted": false
+     },
+     {
+      "amount": 19781737,
+      "percentChange": 1.5943154908533856,
+      "adjusted": false
+     },
+     {
+      "amount": 19471303,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Deferred Tax Liabilities",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 1135447,
+      "percentChange": 14.493045899182933,
+      "adjusted": false
+     },
+     {
+      "amount": 991717,
+      "percentChange": -29.321492255216523,
+      "adjusted": false
+     },
+     {
+      "amount": 1403138,
+      "percentChange": 17.734846590556295,
+      "adjusted": false
+     },
+     {
+      "amount": 1191778,
+      "percentChange": 27.887446667868517,
+      "adjusted": false
+     },
+     {
+      "amount": 931896,
+      "percentChange": 0.3413277974343348,
+      "adjusted": false
+     },
+     {
+      "amount": 928726,
+      "percentChange": -23.31948713756943,
+      "adjusted": false
+     },
+     {
+      "amount": 1211163,
+      "percentChange": -6.493828342376451,
+      "adjusted": false
+     },
+     {
+      "amount": 1295276,
+      "percentChange": 8.91875551309984,
+      "adjusted": false
+     },
+     {
+      "amount": 1189213,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Other Liabilities",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 85624082,
+      "percentChange": -15.867905624483146,
+      "adjusted": false
+     },
+     {
+      "amount": 101773387,
+      "percentChange": 13.115649249881592,
+      "adjusted": false
+     },
+     {
+      "amount": 89972862,
+      "percentChange": 6.331307343378535,
+      "adjusted": false
+     },
+     {
+      "amount": 84615589,
+      "percentChange": 9.87715153813891,
+      "adjusted": false
+     },
+     {
+      "amount": 77009267,
+      "percentChange": -10.76004048040039,
+      "adjusted": false
+     },
+     {
+      "amount": 86294601,
+      "percentChange": -0.1632646780752217,
+      "adjusted": false
+     },
+     {
+      "amount": 86435720,
+      "percentChange": 7.5154910079063875,
+      "adjusted": false
+     },
+     {
+      "amount": 80393736,
+      "percentChange": 8.107923189467725,
+      "adjusted": false
+     },
+     {
+      "amount": 74364333,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Total Liabilities",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": true,
+    "values": [
+     {
+      "amount": 2911894927,
+      "percentChange": -1.4583368538629717,
+      "adjusted": false
+     },
+     {
+      "amount": 2954988615,
+      "percentChange": -3.6570243637968805,
+      "adjusted": false
+     },
+     {
+      "amount": 3067155229,
+      "percentChange": 3.2955341048535463,
+      "adjusted": false
+     },
+     {
+      "amount": 2969300905,
+      "percentChange": 1.013577472925443,
+      "adjusted": false
+     },
+     {
+      "amount": 2939506727,
+      "percentChange": -1.6176809887988752,
+      "adjusted": false
+     },
+     {
+      "amount": 2987840454,
+      "percentChange": 0.3291225135869667,
+      "adjusted": false
+     },
+     {
+      "amount": 2978039057,
+      "percentChange": 1.0957971933314379,
+      "adjusted": false
+     },
+     {
+      "amount": 2945759507,
+      "percentChange": 0.9466863637246813,
+      "adjusted": false
+     },
+     {
+      "amount": 2918133931,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": "BU"
+   },
+   {
+    "accnountName": "Equity",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     }
+    ],
+    "format": "BFG"
+   },
+   {
+    "accnountName": "Authorised Share Capital",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 33991922,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": -51.44011142857143,
+      "adjusted": false
+     },
+     {
+      "amount": 70000000,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Authorised Preference Shares",
+    "level": 1,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": 35826495,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Authorised Ordinary Shares",
+    "level": 1,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 33991922,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": -0.5313560900469531,
+      "adjusted": false
+     },
+     {
+      "amount": 34173505,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Issued And Paid-Up Share Capital",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 33671073,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33671073,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33671073,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33671073,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33671073,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33671073,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33671073,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33671073,
+      "percentChange": -0.9438977884216139,
+      "adjusted": false
+     },
+     {
+      "amount": 33991922,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Paid-Up Preference Shares",
+    "level": 1,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": 35251,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Paid-Up Ordinary Shares",
+    "level": 1,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 33671073,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33671073,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33671073,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33671073,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33671073,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33671073,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33671073,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 33671073,
+      "percentChange": -0.8410659572606514,
+      "adjusted": false
+     },
+     {
+      "amount": 33956671,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Premium (Discount) On Share Capital",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 11019190,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 11019190,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 11019190,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 11019190,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 11019190,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 11019190,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 11019190,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 11019190,
+      "percentChange": -0.9438978528865605,
+      "adjusted": false
+     },
+     {
+      "amount": 11124191,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Premium (Discount) On Preference Shares",
+    "level": 1,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": null,
+      "percentChange": null,
+      "adjusted": null
+     },
+     {
+      "amount": 13786,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Premium (Discount) On Ordinary Shares",
+    "level": 1,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 11019190,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 11019190,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 11019190,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 11019190,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 11019190,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 11019190,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 11019190,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 11019190,
+      "percentChange": -0.8209871737348908,
+      "adjusted": false
+     },
+     {
+      "amount": 11110405,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Retained Earnings (Deficits)",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 423962051,
+      "percentChange": 2.764088024553915,
+      "adjusted": false
+     },
+     {
+      "amount": 412558569,
+      "percentChange": 2.7864054611282323,
+      "adjusted": false
+     },
+     {
+      "amount": 401374644,
+      "percentChange": 0.33045901655030724,
+      "adjusted": false
+     },
+     {
+      "amount": 400052634,
+      "percentChange": -1.3521431295054593,
+      "adjusted": false
+     },
+     {
+      "amount": 405536062,
+      "percentChange": 2.7748972179591047,
+      "adjusted": false
+     },
+     {
+      "amount": 394586687,
+      "percentChange": 0.8884958474111113,
+      "adjusted": false
+     },
+     {
+      "amount": 391111676,
+      "percentChange": 2.728245207895379,
+      "adjusted": false
+     },
+     {
+      "amount": 380724576,
+      "percentChange": -0.6707689765207951,
+      "adjusted": false
+     },
+     {
+      "amount": 383295604,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Retained Earnings - Appropriated",
+    "level": 1,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 3400000,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 3400000,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 3400000,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 3400000,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 3400000,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 3400000,
+      "percentChange": -50.9657370203061,
+      "adjusted": false
+     },
+     {
+      "amount": 6933927,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 6933927,
+      "percentChange": -0.9439,
+      "adjusted": false
+     },
+     {
+      "amount": 7000000,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Legal And Statutory Reserves",
+    "level": 2,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 3400000,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 3400000,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 3400000,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 3400000,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 3400000,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 3400000,
+      "percentChange": -50.9657370203061,
+      "adjusted": false
+     },
+     {
+      "amount": 6933927,
+      "percentChange": 0,
+      "adjusted": false
+     },
+     {
+      "amount": 6933927,
+      "percentChange": -0.9439,
+      "adjusted": false
+     },
+     {
+      "amount": 7000000,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Retained Earnings (Deficits) - Unappropriated",
+    "level": 1,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 420562051,
+      "percentChange": 2.787056868409372,
+      "adjusted": false
+     },
+     {
+      "amount": 409158569,
+      "percentChange": 2.810210441447119,
+      "adjusted": false
+     },
+     {
+      "amount": 397974644,
+      "percentChange": 0.3332916226140578,
+      "adjusted": false
+     },
+     {
+      "amount": 396652634,
+      "percentChange": -1.363575296562187,
+      "adjusted": false
+     },
+     {
+      "amount": 402136062,
+      "percentChange": 2.7990152435836855,
+      "adjusted": false
+     },
+     {
+      "amount": 391186687,
+      "percentChange": 1.8243997780308718,
+      "adjusted": false
+     },
+     {
+      "amount": 384177749,
+      "percentChange": 2.7788549627414567,
+      "adjusted": false
+     },
+     {
+      "amount": 373790649,
+      "percentChange": -0.6656880849450476,
+      "adjusted": false
+     },
+     {
+      "amount": 376295604,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Other Components Of Equity",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 21001710,
+      "percentChange": 0.807948318725131,
+      "adjusted": false
+     },
+     {
+      "amount": 20833387,
+      "percentChange": 2.478579900424526,
+      "adjusted": false
+     },
+     {
+      "amount": 20329504,
+      "percentChange": -1.817654080136232,
+      "adjusted": false
+     },
+     {
+      "amount": 20705865,
+      "percentChange": -2.0646816244219908,
+      "adjusted": false
+     },
+     {
+      "amount": 21142388,
+      "percentChange": -3.699923865943025,
+      "adjusted": false
+     },
+     {
+      "amount": 21954695,
+      "percentChange": 2.934926265827666,
+      "adjusted": false
+     },
+     {
+      "amount": 21328713,
+      "percentChange": -1.380497415370414,
+      "adjusted": false
+     },
+     {
+      "amount": 21627277,
+      "percentChange": -3.883386758173974,
+      "adjusted": false
+     },
+     {
+      "amount": 22501081,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Other Components Of Equity - Others",
+    "level": 1,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 21001710,
+      "percentChange": 0.807948318725131,
+      "adjusted": false
+     },
+     {
+      "amount": 20833387,
+      "percentChange": 2.478579900424526,
+      "adjusted": false
+     },
+     {
+      "amount": 20329504,
+      "percentChange": -1.817654080136232,
+      "adjusted": false
+     },
+     {
+      "amount": 20705865,
+      "percentChange": -2.0646816244219908,
+      "adjusted": false
+     },
+     {
+      "amount": 21142388,
+      "percentChange": -3.699923865943025,
+      "adjusted": false
+     },
+     {
+      "amount": 21954695,
+      "percentChange": 2.934926265827666,
+      "adjusted": false
+     },
+     {
+      "amount": 21328713,
+      "percentChange": -1.380497415370414,
+      "adjusted": false
+     },
+     {
+      "amount": 21627277,
+      "percentChange": -3.883386758173974,
+      "adjusted": false
+     },
+     {
+      "amount": 22501081,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Equity Attributable To Owners Of The Parent",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": true,
+    "values": [
+     {
+      "amount": 489654024,
+      "percentChange": 2.420463372221756,
+      "adjusted": false
+     },
+     {
+      "amount": 478082219,
+      "percentChange": 2.5059922941486534,
+      "adjusted": false
+     },
+     {
+      "amount": 466394411,
+      "percentChange": 0.2031693018016879,
+      "adjusted": false
+     },
+     {
+      "amount": 465448762,
+      "percentChange": -1.2559066473298155,
+      "adjusted": false
+     },
+     {
+      "amount": 471368713,
+      "percentChange": 2.197825780145679,
+      "adjusted": false
+     },
+     {
+      "amount": 461231645,
+      "percentChange": 0.8971161706303606,
+      "adjusted": false
+     },
+     {
+      "amount": 457130652,
+      "percentChange": 2.256730549297955,
+      "adjusted": false
+     },
+     {
+      "amount": 447042116,
+      "percentChange": -0.8584103217225606,
+      "adjusted": false
+     },
+     {
+      "amount": 450912798,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": "B"
+   },
+   {
+    "accnountName": "Non-Controlling Interests",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 5589184,
+      "percentChange": -1.0955750884430207,
+      "adjusted": false
+     },
+     {
+      "amount": 5651096,
+      "percentChange": 2.7602038367036994,
+      "adjusted": false
+     },
+     {
+      "amount": 5499304,
+      "percentChange": -2.6283750620601345,
+      "adjusted": false
+     },
+     {
+      "amount": 5647748,
+      "percentChange": 0.8625850262383006,
+      "adjusted": false
+     },
+     {
+      "amount": 5599448,
+      "percentChange": 4.074355074998541,
+      "adjusted": false
+     },
+     {
+      "amount": 5380238,
+      "percentChange": -6.438583994958341,
+      "adjusted": false
+     },
+     {
+      "amount": 5750488,
+      "percentChange": -9.188721406744731,
+      "adjusted": false
+     },
+     {
+      "amount": 6332350,
+      "percentChange": 292.64689651238206,
+      "adjusted": false
+     },
+     {
+      "amount": 1612734,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": ""
+   },
+   {
+    "accnountName": "Total Equity",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 495243208,
+      "percentChange": 2.379388113882543,
+      "adjusted": false
+     },
+     {
+      "amount": 483733315,
+      "percentChange": 2.508954797162323,
+      "adjusted": false
+     },
+     {
+      "amount": 471893715,
+      "percentChange": 0.1692232871773981,
+      "adjusted": false
+     },
+     {
+      "amount": 471096510,
+      "percentChange": -1.23103625778493,
+      "adjusted": false
+     },
+     {
+      "amount": 476968161,
+      "percentChange": 2.219462979257217,
+      "adjusted": false
+     },
+     {
+      "amount": 466611883,
+      "percentChange": 0.8059829354896594,
+      "adjusted": false
+     },
+     {
+      "amount": 462881140,
+      "percentChange": 2.0968701841272197,
+      "adjusted": false
+     },
+     {
+      "amount": 453374466,
+      "percentChange": 0.1875991386050677,
+      "adjusted": false
+     },
+     {
+      "amount": 452525532,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": "BU"
+   },
+   {
+    "accnountName": "Total Liabilities And Equity",
+    "level": 0,
+    "divider": 1000,
+    "defaultItem": false,
+    "values": [
+     {
+      "amount": 3407138135,
+      "percentChange": -0.9184748183462453,
+      "adjusted": false
+     },
+     {
+      "amount": 3438721930,
+      "percentChange": -2.8348580533222485,
+      "adjusted": false
+     },
+     {
+      "amount": 3539048944,
+      "percentChange": 2.8674457366431896,
+      "adjusted": false
+     },
+     {
+      "amount": 3440397415,
+      "percentChange": 0.7002108250239245,
+      "adjusted": false
+     },
+     {
+      "amount": 3416474888,
+      "percentChange": -1.0993768416842973,
+      "adjusted": false
+     },
+     {
+      "amount": 3454452337,
+      "percentChange": 0.3932709631510236,
+      "adjusted": false
+     },
+     {
+      "amount": 3440920197,
+      "percentChange": 1.2293197129597222,
+      "adjusted": false
+     },
+     {
+      "amount": 3399133973,
+      "percentChange": 0.8447756384935051,
+      "adjusted": false
+     },
+     {
+      "amount": 3370659463,
+      "percentChange": null,
+      "adjusted": false
+     }
+    ],
+    "format": "BU"
+   }
+  ]
+ }
+}

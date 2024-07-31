@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"login_token/tfex"
+	"login_token/finance"
 	"login_token/utils"
 )
 
@@ -15,7 +15,7 @@ func main() {
 	username := "aowjingti@gmail.com"
 	password := "Zxcvasdf1!"
 
-	cookieStr, _, err := utils.PerformLogin(loginURL, username, password)
+	cookieStr, tokenStr, err := utils.PerformLogin(loginURL, username, password)
 	if err != nil {
 		log.Fatalf("Login error: %v", err)
 	}
@@ -33,9 +33,9 @@ func main() {
 	// allHistoricalNews := make(map[string]map[string][]historicalnews.NewsItem)
 	// allManagementData := make(map[string]map[string][]management.ManagementData)
 	// allHisNVDR := make(map[string]map[string]nvdr.NVDRData)
-	allTFEXData := make(map[string]tfex.TFEXData)
+	// allTFEXData := make(map[string]tfex.TFEXData)
 
-	locales := []string{"en_US", "th_TH"}
+	// locales := []string{"en_US", "th_TH"}
 
 	// for _, stock := range stocksData.Stock {
 	// 	organizedData := utils.OrganizedData{
@@ -156,13 +156,60 @@ func main() {
 	// }
 
 	// TFEX data
-	for _, locale := range locales {
-		tfexData, err := tfex.FetchTFEXData(cookieStr, locale)
-		if err == nil {
-			allTFEXData[locale] = tfexData
-		} else {
-			fmt.Printf("Error fectching TFEX data for locale %s: %v\n", locale, err)
+	// for _, locale := range locales {
+	// 	tfexData, err := tfex.FetchTFEXData(cookieStr, locale)
+	// 	if err == nil {
+	// 		allTFEXData[locale] = tfexData
+	// 	} else {
+	// 		fmt.Printf("Error fectching TFEX data for locale %s: %v\n", locale, err)
+	// 	}
+	// }
+
+	// Fetch Fund Data
+	// ipoYears, err := fund.FetchIPOYears(cookieStr)
+	// if err != nil {
+	// 	log.Fatalf("Error fetching Fund Data: %v", err)
+	// }
+	// fmt.Println("IPO Years:")
+	// for _, year := range ipoYears {
+	// 	fmt.Println(year.Year)
+	// }
+
+	// if len(ipoYears) == 0 {
+	// 	log.Fatal("No IPO years found")
+	// }
+
+	// funds, err := fund.FetchFundsByYear(cookieStr, ipoYears[0].Year)
+	// if err != nil {
+	// 	log.Fatalf("Error fetching funds: %v", err)
+	// }
+
+	// fmt.Println("Funds:")
+	// for _, fund := range funds {
+	// 	fmt.Printf("%+v\n", fund)
+	// }
+
+	// Fetch Financial Data
+	symbol := "SCB"
+	status, err := finance.FetchFinancialData(cookieStr, tokenStr, symbol)
+	if err != nil {
+		log.Fatalf("Error fetching financial data: %v", err)
+	}
+
+	if status {
+		financialData, err := finance.FetchLatestFinancialStatement(cookieStr, tokenStr, symbol)
+		if err != nil {
+			log.Fatalf("Error fetching latest financial statement: %v", err)
 		}
+
+		err = finance.SaveFinancialDataToJSON(financialData, "financial_data.json")
+		if err != nil {
+			log.Fatalf("error saving financial data to JSON: %v", err)
+		}
+
+		fmt.Println("Financial data saved successfully.")
+	} else {
+		log.Fatalf("financial status is not true for symbol %s", symbol)
 	}
 
 	// Save all results to files
@@ -176,9 +223,7 @@ func main() {
 	// saveJSON("nvdr_trading.json", nvdrData)
 	// saveJSON("nvdr_stock_trading_all.json", allHisNVDR)
 	// saveJSON("fund_data.json", fundData)
-	saveJSON("tfex_data.json", allTFEXData)
-
-	fmt.Println("All data fetched and saved successfully.")
+	// saveJSON("tfex_data.json", allTFEXData)
 }
 
 func saveJSON(filename string, data interface{}) {
