@@ -5,94 +5,264 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"net/url"
+	"os"
+	"time"
 )
 
-type IPOYear struct {
-	Year string `json:"year"`
+type FundStatusResponse struct {
+	Status       bool   `json:"status"`
+	ErrorMessage string `json:"errorMessage"`
 }
 
 type Fund struct {
-	FundName string `json:"fundname"`
+	Symbol   string `json:"symbol"`
+	NameEN   string `json:"nameEN"`
+	NameTH   string `json:"nameTH"`
+	ID       string `json:"id"`
+	AmicTypr string `json:"aimcType"`
 }
 
-func FetchIPOYears(cookieStr string) ([]IPOYear, error) {
-	url := "https://www.setsmart.com/api/fund/ipo-year/list"
+type FundResponse struct {
+	Funds []Fund `json:"funds"`
+}
 
-	req, err := http.NewRequest("GET", url, nil)
+func FetchFundData(cookieStr, tokenStr string, symbols []string) error {
+	allData := make(map[string]interface{})
+
+	for _, symbol := range symbols {
+		asOfDate, err := FetchFundStatistics(cookieStr, tokenStr, symbol)
+		if err != nil {
+			return fmt.Errorf("error fetching fund statistics: %w", err)
+		}
+
+		performanceData, err := FetchFundPerformance(cookieStr, tokenStr, symbol, asOfDate)
+		if err != nil {
+			fmt.Printf("Error fetching performance for fund SCB2576: %v\n", err)
+		}
+
+		combinedData := map[string]interface{}{
+			"performance_data": performanceData,
+		}
+		allData[symbol] = combinedData
+
+		time.Sleep(5 * time.Second)
+	}
+
+	saveCombineDataToFile("fund_data.json", allData)
+
+	return nil
+}
+
+func FetchFundList(cookieStr, tokenStr, date string) ([]Fund, error) {
+	url := "https://www.setsmart.com/api/fund/list"
+	method := "GET"
+
+	client := &http.Client{}
+	req, err := http.NewRequest(method, url, nil)
 	if err != nil {
 		return nil, fmt.Errorf("error creating request: %w", err)
 	}
 
-	// Set headers
 	req.Header.Add("accept", "application/json, text/plain, */*")
 	req.Header.Add("accept-language", "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7")
-	req.Header.Add("authorization", "Bearer eyJlbmMiOiJBMTI4R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.0iLYEVb3OZMdUl0bVNmltA8D48AT7Sxsz2JFeyZUz7uCF5f2MRxaRsVkxFAiMfCuKaAO6bWnU0rbA5E-2tYT4-pTF0PsU4AIXz2E5z-0isf8HE4JADt8D0fNJVUD8H2tSu9SKRNpIAWS8CkNiP_rTa1eEmoprK6PtATcTUsq6x-t7LvpH7V1DvPnJa8bsLgD68Q8Sn2tVE5ULvckrfHknLbPlep-G9k65jKd5RUR9W9OPEWJLEyg8r-DSsHCpRERrh9Mq0SBmREEbsV8zxZy1uvVOvGSeV5HpUrAxtgwFJhpWUyNZ8YOyXsZIlvHb17YFAYNqoDLYVcthXjeVgE81jQ76Qv1vP8DtVJ4m4U5bGsy_5l2QBlcD2Tz7H3SoWzRKxFZEDKLBvO_oyOw9WJ9KibBK9D4JVOWydAVWh3YprmzU4XpKuGxyiKzl97Mb21EG1pCNhYp5FxHyUvme9xw6vLhBoKZit8ZjimW-ShpZOiOdWrP9YfMVyAEOzrCVxBJm9g4xgumLUu_q_gxweL6gFZSSruf1yFZR04ymPchmNQ4yv8t-HtgGcFnlk9F0bFTpmkf_SdmbO6Ajgk8wXLPjgJp69J1vIOA29J2KdEm9OJ9UEbhx8sF5I24LYkXyjGorKrxoh8aYvtdpWLeACc09XISehKQ4TTOVWuI0ZZ-O5E.G7mEo3C3STWyYyRs.v4SEx2VRQTkVQRQUQ9NmuwRpMd19O5WNDF39ILdZEJ5PiDu-HmYAN4j8HbIkISPl-EGYfjJ5XUw19arQkqwSoPeuzyUAGiDWeQFMuoUJJu2f7CLkWZbeJfbqwwAEgl7vVm8gnW7Du63iihQl_GIhSgbMQvteve7yK1KJKzqaqsehWmX_ZyY07zJmHhqP73fj87FoyBUndV193Gwhoq21rkJAps52Iz14JY0tatxzL4UOuebWadmWdn3zOW0AYk-txH0M0MW-HOF9nETVURhsC6_ppPMTJUvviYwCm29OiwMN9PRxRHMCwwkl7y0Uo6Mb9fRtgeiQtO8RqFHFle02vieniQTJqiVRNaWgZNHKDrUix7TLXcF9rE1FsPWLso8ctEv8BaROaUgzEVztU2JI1BbQvpcW7KQcAoligO7pZsR63PrqErtLkaFGiwCHIZendA7nYizgeg8qKU7xW1Dla6qGi9EqYJ-KFI-DuiLAKi36P3xE-f7KjkX5x4qMg5X87eXYC8sbnLkH-L1NeHaXg4rNPtXjwOrh6p6IJ9PnTZM0j_d2cGphwTK7FyIYB0ou1uBfqFwf1vE4VuI_ust0aEzMBd4NDWFr9sOf7_ZEi6kRTw2RVd9CeOHDvXplVOtKYTuCPYsBsq459lnukDmd1xhhOZDd4gNjcu1SWb1vt-zkVwsGn6bvzROVbusBzcUsv3Y83zN69EyuUo_H8ZuLGy6QN9-HkvH_UmKjpWflqRoMCfNXncCtqqQOEepcSZfblRQ7lorU6ScMLfHc-213wB_F_AtKFNyKjYIDjCbNCIrCmH4SsVSpawxURMQvDUrkEWtogQfuAjiTHzQp65_-X8YPvahFlx5UrP4YbIdqs5lvglIJ_uAgUJjtZiLSHrdsl7aWK8xZSntNIZkIX8O6NcqE6jZmP7d3ds4scSZtnS1BQof6Z7auMXBOkKfTGp8_d8-HOMC26etbxdR3gLPLNufleC_dqyYfwfn1QuirVpYu9LrIr23yJK0tvg.uyLoG_xvzzN0PTGa1Vr5Mg")
+	req.Header.Add("authorization", fmt.Sprintf("Bearer %s", tokenStr))
 	req.Header.Add("cookie", cookieStr)
+	req.Header.Add("referer", "https://www.setsmart.com/ssm/fundInformation")
+	req.Header.Add("sec-ch-ua", "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"")
+	req.Header.Add("sec-ch-ua-mobile", "?0")
+	req.Header.Add("sec-ch-ua-platform", "\"macOS\"")
+	req.Header.Add("sec-fetch-dest", "empty")
+	req.Header.Add("sec-fetch-mode", "cors")
+	req.Header.Add("sec-fetch-site", "same-origin")
 	req.Header.Add("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
 
-	client := &http.Client{}
-	resp, err := client.Do(req)
+	res, err := client.Do(req)
 	if err != nil {
 		return nil, fmt.Errorf("error making request: %w", err)
 	}
-	defer resp.Body.Close()
+	defer res.Body.Close()
 
-	if resp.StatusCode != http.StatusOK {
-		body, _ := io.ReadAll(resp.Body)
-		return nil, fmt.Errorf("receive non-200 response code: %d, body: %s", resp.StatusCode, string(body))
-	}
-
-	body, err := io.ReadAll(resp.Body)
+	body, err := io.ReadAll(res.Body)
 	if err != nil {
 		return nil, fmt.Errorf("error reading response body: %w", err)
 	}
 
-	var years []IPOYear
-	err = json.Unmarshal(body, &years)
-	if err != nil {
-		return nil, fmt.Errorf("error unmarshaling JSON: %w", err)
+	if res.StatusCode != 200 {
+		return nil, fmt.Errorf("received non-200 response code: %d", res.StatusCode)
 	}
 
-	return years, nil
+	var fundResponse FundResponse
+	err = json.Unmarshal(body, &fundResponse)
+	if err != nil {
+		return nil, fmt.Errorf("error unmarshalling fund list: %w", err)
+	}
+	return fundResponse.Funds, nil
 }
 
-func FetchFundsByYear(cookieStr, year string) ([]Fund, error) {
-	url := fmt.Sprintf("https://www.setsmart.com/api/fund/ipo/list?year=%s", year)
+func FetchFundPerformance(cookieStr, tokenStr, symbol, date string) (map[string]interface{}, error) {
+	parsedDate, err := time.Parse(time.RFC3339, date)
 
-	req, err := http.NewRequest("GET", url, nil)
+	formattedDate := parsedDate.Format("02/01/2006")
+	encodeDate := url.QueryEscape(formattedDate)
+	url := fmt.Sprintf("https://www.setsmart.com/api/fund/%s/performance?date=%s", symbol, encodeDate)
+	method := "GET"
+
+	client := &http.Client{}
+	req, err := http.NewRequest(method, url, nil)
 	if err != nil {
 		return nil, fmt.Errorf("error creating request: %w", err)
 	}
 
-	// Set headers
 	req.Header.Add("accept", "application/json, text/plain, */*")
 	req.Header.Add("accept-language", "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7")
-	req.Header.Add("authorization", "Bearer eyJlbmMiOiJBMTI4R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.0iLYEVb3OZMdUl0bVNmltA8D48AT7Sxsz2JFeyZUz7uCF5f2MRxaRsVkxFAiMfCuKaAO6bWnU0rbA5E-2tYT4-pTF0PsU4AIXz2E5z-0isf8HE4JADt8D0fNJVUD8H2tSu9SKRNpIAWS8CkNiP_rTa1eEmoprK6PtATcTUsq6x-t7LvpH7V1DvPnJa8bsLgD68Q8Sn2tVE5ULvckrfHknLbPlep-G9k65jKd5RUR9W9OPEWJLEyg8r-DSsHCpRERrh9Mq0SBmREEbsV8zxZy1uvVOvGSeV5HpUrAxtgwFJhpWUyNZ8YOyXsZIlvHb17YFAYNqoDLYVcthXjeVgE81jQ76Qv1vP8DtVJ4m4U5bGsy_5l2QBlcD2Tz7H3SoWzRKxFZEDKLBvO_oyOw9WJ9KibBK9D4JVOWydAVWh3YprmzU4XpKuGxyiKzl97Mb21EG1pCNhYp5FxHyUvme9xw6vLhBoKZit8ZjimW-ShpZOiOdWrP9YfMVyAEOzrCVxBJm9g4xgumLUu_q_gxweL6gFZSSruf1yFZR04ymPchmNQ4yv8t-HtgGcFnlk9F0bFTpmkf_SdmbO6Ajgk8wXLPjgJp69J1vIOA29J2KdEm9OJ9UEbhx8sF5I24LYkXyjGorKrxoh8aYvtdpWLeACc09XISehKQ4TTOVWuI0ZZ-O5E.G7mEo3C3STWyYyRs.v4SEx2VRQTkVQRQUQ9NmuwRpMd19O5WNDF39ILdZEJ5PiDu-HmYAN4j8HbIkISPl-EGYfjJ5XUw19arQkqwSoPeuzyUAGiDWeQFMuoUJJu2f7CLkWZbeJfbqwwAEgl7vVm8gnW7Du63iihQl_GIhSgbMQvteve7yK1KJKzqaqsehWmX_ZyY07zJmHhqP73fj87FoyBUndV193Gwhoq21rkJAps52Iz14JY0tatxzL4UOuebWadmWdn3zOW0AYk-txH0M0MW-HOF9nETVURhsC6_ppPMTJUvviYwCm29OiwMN9PRxRHMCwwkl7y0Uo6Mb9fRtgeiQtO8RqFHFle02vieniQTJqiVRNaWgZNHKDrUix7TLXcF9rE1FsPWLso8ctEv8BaROaUgzEVztU2JI1BbQvpcW7KQcAoligO7pZsR63PrqErtLkaFGiwCHIZendA7nYizgeg8qKU7xW1Dla6qGi9EqYJ-KFI-DuiLAKi36P3xE-f7KjkX5x4qMg5X87eXYC8sbnLkH-L1NeHaXg4rNPtXjwOrh6p6IJ9PnTZM0j_d2cGphwTK7FyIYB0ou1uBfqFwf1vE4VuI_ust0aEzMBd4NDWFr9sOf7_ZEi6kRTw2RVd9CeOHDvXplVOtKYTuCPYsBsq459lnukDmd1xhhOZDd4gNjcu1SWb1vt-zkVwsGn6bvzROVbusBzcUsv3Y83zN69EyuUo_H8ZuLGy6QN9-HkvH_UmKjpWflqRoMCfNXncCtqqQOEepcSZfblRQ7lorU6ScMLfHc-213wB_F_AtKFNyKjYIDjCbNCIrCmH4SsVSpawxURMQvDUrkEWtogQfuAjiTHzQp65_-X8YPvahFlx5UrP4YbIdqs5lvglIJ_uAgUJjtZiLSHrdsl7aWK8xZSntNIZkIX8O6NcqE6jZmP7d3ds4scSZtnS1BQof6Z7auMXBOkKfTGp8_d8-HOMC26etbxdR3gLPLNufleC_dqyYfwfn1QuirVpYu9LrIr23yJK0tvg.uyLoG_xvzzN0PTGa1Vr5Mg")
+	req.Header.Add("authorization", fmt.Sprintf("Bearer %s", tokenStr))
 	req.Header.Add("cookie", cookieStr)
+	req.Header.Add("referer", fmt.Sprintf("https://www.setsmart.com/ssm/fundInformation;fundSymbol=%s", symbol))
+	req.Header.Add("sec-ch-ua", "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"")
+	req.Header.Add("sec-ch-ua-mobile", "?0")
+	req.Header.Add("sec-ch-ua-platform", "\"macOS\"")
+	req.Header.Add("sec-fetch-dest", "empty")
+	req.Header.Add("sec-fetch-mode", "cors")
+	req.Header.Add("sec-fetch-site", "same-origin")
 	req.Header.Add("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
 
-	client := &http.Client{}
-	resp, err := client.Do(req)
+	res, err := client.Do(req)
 	if err != nil {
 		return nil, fmt.Errorf("error making request: %w", err)
 	}
-	defer resp.Body.Close()
+	defer res.Body.Close()
 
-	if resp.StatusCode != http.StatusOK {
-		body, _ := io.ReadAll(resp.Body) // Read body for debugging purposes
-		return nil, fmt.Errorf("received non-200 response code: %d, body: %s", resp.StatusCode, string(body))
-	}
-
-	body, err := io.ReadAll(resp.Body)
+	body, err := io.ReadAll(res.Body)
 	if err != nil {
 		return nil, fmt.Errorf("error reading response body: %w", err)
 	}
 
-	var funds []Fund
-	err = json.Unmarshal(body, &funds)
-	if err != nil {
-		return nil, fmt.Errorf("error unmarshling JSON: %w", err)
+	if res.StatusCode != 200 {
+		return nil, fmt.Errorf("received non-200 response code: %d", res.StatusCode)
 	}
 
-	return funds, nil
+	var performanceData map[string]interface{}
+	err = json.Unmarshal(body, &performanceData)
+	if err != nil {
+		return nil, fmt.Errorf("error unmarshalling fund performance data: %w", err)
+	}
+
+	return performanceData, nil
+}
+
+func FetchFundHistoricalPerformance(cookieStr, tokenStr, symbol, date string) (map[string]interface{}, error) {
+	url := fmt.Sprintf("https://www.setsmart.com/api/fund/%s/historical-performance?date=%s", symbol, date)
+	fmt.Printf("Requesting URL: %s\n", url) // Log the request URL
+	method := "GET"
+
+	client := &http.Client{}
+	req, err := http.NewRequest(method, url, nil)
+	if err != nil {
+		return nil, fmt.Errorf("error creating requset: %w", err)
+	}
+
+	req.Header.Add("accept", "application/json, text/plain, */*")
+	req.Header.Add("accept-language", "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7")
+	req.Header.Add("authorization", fmt.Sprintf("Bearer %s", tokenStr))
+	req.Header.Add("cookie", cookieStr)
+	req.Header.Add("referer", fmt.Sprintf("https://www.setsmart.com/ssm/fundInformation;fundSymbol=%s", symbol))
+	req.Header.Add("sec-ch-ua", "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"")
+	req.Header.Add("sec-ch-ua-mobile", "?0")
+	req.Header.Add("sec-ch-ua-platform", "\"macOS\"")
+	req.Header.Add("sec-fetch-dest", "empty")
+	req.Header.Add("sec-fetch-mode", "cors")
+	req.Header.Add("sec-fetch-site", "same-origin")
+	req.Header.Add("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
+
+	res, err := client.Do(req)
+	if err != nil {
+		return nil, fmt.Errorf("error making request: %w", err)
+	}
+	defer res.Body.Close()
+
+	body, err := io.ReadAll(res.Body)
+	if err != nil {
+		return nil, fmt.Errorf("error reading response body: %w", err)
+	}
+
+	if res.StatusCode != 200 {
+		return nil, fmt.Errorf("received non-200 response code: %d", res.StatusCode)
+	}
+
+	var historicalPerformanceData map[string]interface{}
+	err = json.Unmarshal(body, &historicalPerformanceData)
+	if err != nil {
+		return nil, fmt.Errorf("error unmarshalling fund historical performance data: %w", err)
+	}
+	return historicalPerformanceData, nil
+}
+
+func FetchFundStatistics(cookieStr, tokenStr, symbol string) (string, error) {
+	url := fmt.Sprintf("https://www.setsmart.com/api/fund/%s/statistic", symbol)
+	method := "GET"
+
+	client := &http.Client{}
+	req, err := http.NewRequest(method, url, nil)
+	if err != nil {
+		return "", fmt.Errorf("error creating request: %w", err)
+	}
+	req.Header.Add("accept", "application/json, text/plain, */*")
+	req.Header.Add("accept-language", "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7")
+	req.Header.Add("authorization", fmt.Sprintf("Bearer %s", tokenStr))
+	req.Header.Add("cookie", cookieStr)
+	req.Header.Add("referer", fmt.Sprintf("https://www.setsmart.com/ssm/fundInformation;fundSymbol=%s", symbol))
+	req.Header.Add("sec-ch-ua", "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"")
+	req.Header.Add("sec-ch-ua-mobile", "?0")
+	req.Header.Add("sec-ch-ua-platform", "\"macOS\"")
+	req.Header.Add("sec-fetch-dest", "empty")
+	req.Header.Add("sec-fetch-mode", "cors")
+	req.Header.Add("sec-fetch-site", "same-origin")
+	req.Header.Add("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
+
+	res, err := client.Do(req)
+	if err != nil {
+		return "", fmt.Errorf("error making request: %w", err)
+	}
+	defer res.Body.Close()
+
+	body, err := io.ReadAll(res.Body)
+	if err != nil {
+		return "", fmt.Errorf("error reading response body: %w", err)
+	}
+
+	if res.StatusCode != 200 {
+		return "", fmt.Errorf("received non-200 response code: %d", res.StatusCode)
+	}
+
+	var statisticData map[string]interface{}
+	err = json.Unmarshal(body, &statisticData)
+	if err != nil {
+		return "", fmt.Errorf("error unmarshalling fund statistics data: %w", err)
+	}
+
+	asOfDate, ok := statisticData["asOfDate"].(string)
+	if !ok {
+		return "", fmt.Errorf("asOfDate not found in response")
+	}
+
+	fmt.Println(asOfDate)
+	return asOfDate, nil
+}
+
+func saveCombineDataToFile(filename string, data map[string]interface{}) error {
+	file, err := os.Create(filename)
+	if err != nil {
+		return fmt.Errorf("error creating file: %w", err)
+	}
+	defer file.Close()
+
+	encoder := json.NewEncoder(file)
+	encoder.SetIndent("", " ")
+
+	err = encoder.Encode(data)
+	if err != nil {
+		return fmt.Errorf("error encoding JSON data to file: %w", err)
+	}
+	return nil
 }

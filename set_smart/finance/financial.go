@@ -6,6 +6,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"time"
 )
 
 type FinancialStatusResponse struct {
@@ -32,12 +33,13 @@ type Value struct {
 }
 
 type Account struct {
-	AccountName string  `json:"accnountName"`
-	Level       int     `json:"level"`
-	Divider     int     `json:"divider"`
-	DefaultItem bool    `json:"defaultItem"`
-	Values      []Value `json:"values"`
-	Format      string  `json:"format"`
+	AccountName string    `json:"accnountName"`
+	Level       int       `json:"level"`
+	Divider     int       `json:"divider"`
+	DefaultItem bool      `json:"defaultItem"`
+	Values      []Value   `json:"values"`
+	Format      string    `json:"format"`
+	SubAccounts []Account `json:"subAccounts,omitempty"`
 }
 
 type FinancialData struct {
@@ -171,8 +173,8 @@ func parsePeriods(data interface{}) []Period {
 		period := Period{
 			Quarter:                periodMap["quarter"].(string),
 			Year:                   int(periodMap["year"].(float64)),
-			BeginDate:              periodMap["beginDate"].(string),
-			EndDate:                periodMap["endDate"].(string),
+			BeginDate:              formatISO8601(periodMap["beginDate"].(string)),
+			EndDate:                formatISO8601(periodMap["endDate"].(string)),
 			FinancialStatementLink: periodMap["financialStatementLink"].(string),
 			Fscomp:                 periodMap["fscomp"].(bool),
 			FsType:                 periodMap["fsType"].(string),
@@ -207,6 +209,7 @@ func parseAccount(data interface{}) []Account {
 			DefaultItem: accountMap["defaultItem"].(bool),
 			Values:      parseValues(accountMap["values"]),
 			Format:      accountMap["format"].(string),
+			SubAccounts: parseAccount(accountMap["subAccounts"]),
 		}
 
 		accounts = append(accounts, account)
@@ -274,6 +277,15 @@ func parseBoolPointer(data interface{}) *bool {
 		return nil
 	}
 	return &boolVal
+}
+
+func formatISO8601(dateStr string) string {
+	parsedDate, err := time.Parse("2006-01-02T15:04:05-07:00", dateStr)
+	if err != nil {
+		fmt.Printf("Error parsing date: %v\n", err)
+		return dateStr
+	}
+	return parsedDate.Format(time.RFC3339)
 }
 
 func SaveFinancialDataToJSON(data FinancialData, filename string) error {

@@ -15,6 +15,14 @@ type StockData struct {
 	Stock []Stock `json:"stocks"`
 }
 
+type Fund struct {
+	Symbol   string `json:"symbol"`
+	NameEN   string `json:"nameEN"`
+	NameTH   string `json:"nameTH"`
+	ID       string `json:"id"`
+	AimcType string `json:"aimcType"`
+}
+
 func ReadJSONFile(filename string) (*StockData, error) {
 	file, err := os.Open(filename)
 	if err != nil {
@@ -33,4 +41,20 @@ func ReadJSONFile(filename string) (*StockData, error) {
 	}
 
 	return &stocksData, nil
+}
+
+func ReadFundsJSONFile(filepath string) ([]Fund, error) {
+	file, err := os.Open(filepath)
+	if err != nil {
+		return nil, fmt.Errorf("error opening JSON file: %w", err)
+	}
+	defer file.Close()
+
+	var funds []Fund
+	err = json.NewDecoder(file).Decode(&funds)
+	if err != nil {
+		return nil, fmt.Errorf("error unmarshalling JSON: %w", err)
+	}
+
+	return funds, nil
 }

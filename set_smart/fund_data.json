@@ -1,0 +1,902 @@
+{
+  "1AM-DAILY-RA": {
+    "asOfDate": "2024-07-31T00:00:00+07:00",
+    "performance_data": {
+      "performances": [
+        {
+          "percentChange": 1.170456716988344,
+          "period": "YTD",
+          "specificationRank": 276,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.03779110964146071,
+          "period": "1W",
+          "specificationRank": 782,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.18213212858055883,
+          "period": "1M",
+          "specificationRank": 729,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.5086260767764417,
+          "period": "3M",
+          "specificationRank": 314,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.9823089027705123,
+          "period": "6M",
+          "specificationRank": 368,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.9182648113908574,
+          "period": "1Y",
+          "specificationRank": 211,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.9758677487966994,
+          "period": "3Y",
+          "specificationRank": 140,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.7584750917229099,
+          "period": "5Y",
+          "specificationRank": 137,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.0166123032278929,
+          "period": "10Y",
+          "specificationRank": 121,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.4409162752924143,
+          "period": "FIRSTTRADE",
+          "specificationRank": 70,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        }
+      ],
+      "specification": "",
+      "type": null
+    },
+    "symbol": "1AM-DAILY-RA"
+  },
+  "1AM-DAILY-SSF": {
+    "asOfDate": "2024-07-31T00:00:00+07:00",
+    "performance_data": {
+      "performances": [
+        {
+          "percentChange": 1.1673554541618003,
+          "period": "YTD",
+          "specificationRank": 30,
+          "specificationTotal": 340,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.03858267716536634,
+          "period": "1W",
+          "specificationRank": 108,
+          "specificationTotal": 340,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.18215079878249885,
+          "period": "1M",
+          "specificationRank": 78,
+          "specificationTotal": 340,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.5078832659583643,
+          "period": "3M",
+          "specificationRank": 28,
+          "specificationTotal": 340,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.9808051504192727,
+          "period": "6M",
+          "specificationRank": 43,
+          "specificationTotal": 340,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.9152033824982428,
+          "period": "1Y",
+          "specificationRank": 22,
+          "specificationTotal": 340,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.9737914485218546,
+          "period": "3Y",
+          "specificationRank": 8,
+          "specificationTotal": 340,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": null,
+          "period": "5Y",
+          "specificationRank": null,
+          "specificationTotal": null,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": null,
+          "period": "10Y",
+          "specificationRank": null,
+          "specificationTotal": null,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.8309960844275821,
+          "period": "FIRSTTRADE",
+          "specificationRank": 12,
+          "specificationTotal": 340,
+          "typeRank": null,
+          "typeTotal": null
+        }
+      ],
+      "specification": "SSF",
+      "type": null
+    },
+    "symbol": "1AM-DAILY-SSF"
+  },
+  "1AM-TG": {
+    "asOfDate": "2024-07-31T00:00:00+07:00",
+    "performance_data": {
+      "performances": [
+        {
+          "percentChange": 1.1631122606672761,
+          "period": "YTD",
+          "specificationRank": 278,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.036193708729115315,
+          "period": "1W",
+          "specificationRank": 796,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.17800330232371486,
+          "period": "1M",
+          "specificationRank": 741,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.4977375565610842,
+          "period": "3M",
+          "specificationRank": 320,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.9856936392718563,
+          "period": "6M",
+          "specificationRank": 366,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.8797086991406697,
+          "period": "1Y",
+          "specificationRank": 216,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.0466848071058132,
+          "period": "3Y",
+          "specificationRank": 126,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.7480055557816279,
+          "period": "5Y",
+          "specificationRank": 141,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.0323040489826019,
+          "period": "10Y",
+          "specificationRank": 117,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.4005361559354723,
+          "period": "FIRSTTRADE",
+          "specificationRank": 117,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        }
+      ],
+      "specification": "",
+      "type": null
+    },
+    "symbol": "1AM-TG"
+  },
+  "1AMGBF": {
+    "asOfDate": "2019-11-27T00:00:00+07:00",
+    "performance_data": {
+      "performances": [
+        {
+          "percentChange": 7.226873869649664,
+          "period": "YTD",
+          "specificationRank": 378,
+          "specificationTotal": 3537,
+          "typeRank": 11,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 0,
+          "period": "1W",
+          "specificationRank": 824,
+          "specificationTotal": 3537,
+          "typeRank": 23,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 0,
+          "period": "1M",
+          "specificationRank": 718,
+          "specificationTotal": 3537,
+          "typeRank": 22,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": -0.4267097937983966,
+          "period": "3M",
+          "specificationRank": 768,
+          "specificationTotal": 3537,
+          "typeRank": 14,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 4.829604987426639,
+          "period": "6M",
+          "specificationRank": 204,
+          "specificationTotal": 3537,
+          "typeRank": 1,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 7.231901824052289,
+          "period": "1Y",
+          "specificationRank": 263,
+          "specificationTotal": 3537,
+          "typeRank": 9,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 2.1063471105116305,
+          "period": "3Y",
+          "specificationRank": 332,
+          "specificationTotal": 3537,
+          "typeRank": 8,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 2.9449514971487956,
+          "period": "5Y",
+          "specificationRank": 105,
+          "specificationTotal": 3537,
+          "typeRank": 2,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 4.185548337579825,
+          "period": "10Y",
+          "specificationRank": 81,
+          "specificationTotal": 3537,
+          "typeRank": 1,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 3.8977920269343658,
+          "period": "FIRSTTRADE",
+          "specificationRank": 46,
+          "specificationTotal": 3537,
+          "typeRank": 1,
+          "typeTotal": 126
+        }
+      ],
+      "specification": "",
+      "type": "FIXGLDISC"
+    },
+    "symbol": "1AMGBF"
+  },
+  "1AMGFF": {
+    "asOfDate": "2019-11-27T00:00:00+07:00",
+    "performance_data": {
+      "performances": [
+        {
+          "percentChange": 5.894910868315129,
+          "period": "YTD",
+          "specificationRank": 433,
+          "specificationTotal": 3537,
+          "typeRank": 13,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 0,
+          "period": "1W",
+          "specificationRank": 824,
+          "specificationTotal": 3537,
+          "typeRank": 23,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 0,
+          "period": "1M",
+          "specificationRank": 718,
+          "specificationTotal": 3537,
+          "typeRank": 22,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": -0.12203307096222415,
+          "period": "3M",
+          "specificationRank": 735,
+          "specificationTotal": 3537,
+          "typeRank": 12,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 3.238985557011609,
+          "period": "6M",
+          "specificationRank": 272,
+          "specificationTotal": 3537,
+          "typeRank": 3,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 6.386620160748735,
+          "period": "1Y",
+          "specificationRank": 290,
+          "specificationTotal": 3537,
+          "typeRank": 13,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 2.6893250205096697,
+          "period": "3Y",
+          "specificationRank": 295,
+          "specificationTotal": 3537,
+          "typeRank": 6,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 2.7077880946974497,
+          "period": "5Y",
+          "specificationRank": 121,
+          "specificationTotal": 3537,
+          "typeRank": 2,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 3.78005440781497,
+          "period": "10Y",
+          "specificationRank": 87,
+          "specificationTotal": 3537,
+          "typeRank": 1,
+          "typeTotal": 126
+        },
+        {
+          "percentChange": 4.012173748215209,
+          "period": "FIRSTTRADE",
+          "specificationRank": 57,
+          "specificationTotal": 3537,
+          "typeRank": 3,
+          "typeTotal": 126
+        }
+      ],
+      "specification": "",
+      "type": "FIXGLDISC"
+    },
+    "symbol": "1AMGFF"
+  },
+  "1AMSET50-ID": {
+    "asOfDate": "2024-07-31T00:00:00+07:00",
+    "performance_data": {
+      "performances": [
+        {
+          "percentChange": 3.2126534558426734,
+          "period": "YTD",
+          "specificationRank": 86,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.9208360375243316,
+          "period": "1W",
+          "specificationRank": 93,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 2.6014811515117753,
+          "period": "1M",
+          "specificationRank": 133,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 4.721887011921688,
+          "period": "3M",
+          "specificationRank": 4,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 8.262666253826879,
+          "period": "6M",
+          "specificationRank": 67,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -4.680362234545443,
+          "period": "1Y",
+          "specificationRank": 334,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 2.7390776183445986,
+          "period": "3Y",
+          "specificationRank": 45,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -2.377723222340722,
+          "period": "5Y",
+          "specificationRank": 250,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": null,
+          "period": "10Y",
+          "specificationRank": null,
+          "specificationTotal": null,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -1.622149260238459,
+          "period": "FIRSTTRADE",
+          "specificationRank": 236,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        }
+      ],
+      "specification": "",
+      "type": null
+    },
+    "symbol": "1AMSET50-ID"
+  },
+  "1AMSET50-RA": {
+    "asOfDate": "2024-07-31T00:00:00+07:00",
+    "performance_data": {
+      "performances": [
+        {
+          "percentChange": -2.1958169527957594,
+          "period": "YTD",
+          "specificationRank": 414,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.9209301811510038,
+          "period": "1W",
+          "specificationRank": 92,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 2.6000011126172673,
+          "period": "1M",
+          "specificationRank": 134,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -0.7777600439003218,
+          "period": "3M",
+          "specificationRank": 538,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 2.58877714489143,
+          "period": "6M",
+          "specificationRank": 111,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -9.650963319339056,
+          "period": "1Y",
+          "specificationRank": 434,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -0.07097954889311309,
+          "period": "3Y",
+          "specificationRank": 219,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -3.388928927556767,
+          "period": "5Y",
+          "specificationRank": 288,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.7902732935361376,
+          "period": "10Y",
+          "specificationRank": 57,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 8.618833950131055,
+          "period": "FIRSTTRADE",
+          "specificationRank": 7,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        }
+      ],
+      "specification": "",
+      "type": null
+    },
+    "symbol": "1AMSET50-RA"
+  },
+  "1AMSET50-RU": {
+    "asOfDate": "2024-07-31T00:00:00+07:00",
+    "performance_data": {
+      "performances": [
+        {
+          "percentChange": -2.2156749086951977,
+          "period": "YTD",
+          "specificationRank": 416,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.9209527480836819,
+          "period": "1W",
+          "specificationRank": 91,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 2.5982530307044227,
+          "period": "1M",
+          "specificationRank": 136,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -0.7905138339920903,
+          "period": "3M",
+          "specificationRank": 539,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 2.569358313205816,
+          "period": "6M",
+          "specificationRank": 112,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -9.688058111214415,
+          "period": "1Y",
+          "specificationRank": 436,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -0.149896488042911,
+          "period": "3Y",
+          "specificationRank": 226,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -3.4884093913386094,
+          "period": "5Y",
+          "specificationRank": 295,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.7285430810357605,
+          "period": "10Y",
+          "specificationRank": 62,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 8.586966132511819,
+          "period": "FIRSTTRADE",
+          "specificationRank": 8,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        }
+      ],
+      "specification": "",
+      "type": null
+    },
+    "symbol": "1AMSET50-RU"
+  },
+  "1DIV": {
+    "asOfDate": "2024-07-31T00:00:00+07:00",
+    "performance_data": {
+      "performances": [
+        {
+          "percentChange": -2.506638132604133,
+          "period": "YTD",
+          "specificationRank": 432,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 2.06088264274229,
+          "period": "1W",
+          "specificationRank": 69,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.8337990272172089,
+          "period": "1M",
+          "specificationRank": 209,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.6597992982599665,
+          "period": "3M",
+          "specificationRank": 201,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.0007492789473105,
+          "period": "6M",
+          "specificationRank": 361,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -7.659880352340287,
+          "period": "1Y",
+          "specificationRank": 391,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.7896848805371004,
+          "period": "3Y",
+          "specificationRank": 175,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -2.4738391925699155,
+          "period": "5Y",
+          "specificationRank": 254,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -2.3019137072963547,
+          "period": "10Y",
+          "specificationRank": 243,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -0.24935339662035538,
+          "period": "FIRSTTRADE",
+          "specificationRank": 147,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        }
+      ],
+      "specification": "",
+      "type": null
+    },
+    "symbol": "1DIV"
+  },
+  "1GLOBALBOND": {
+    "asOfDate": "2024-07-26T00:00:00+07:00",
+    "performance_data": {
+      "performances": [
+        {
+          "percentChange": -0.1468017392083909,
+          "period": "YTD",
+          "specificationRank": 1132,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.044911020041560334,
+          "period": "1W",
+          "specificationRank": 490,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.3762490002365615,
+          "period": "1M",
+          "specificationRank": 647,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 1.649573917110625,
+          "period": "3M",
+          "specificationRank": 662,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.5688423381226215,
+          "period": "6M",
+          "specificationRank": 1199,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": 0.5344677014151644,
+          "period": "1Y",
+          "specificationRank": 972,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -5.466242934997045,
+          "period": "3Y",
+          "specificationRank": 905,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -4.122569277309962,
+          "period": "5Y",
+          "specificationRank": 726,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -3.183636618703378,
+          "period": "10Y",
+          "specificationRank": 370,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        },
+        {
+          "percentChange": -0.6757556947214249,
+          "period": "FIRSTTRADE",
+          "specificationRank": 139,
+          "specificationTotal": 3537,
+          "typeRank": null,
+          "typeTotal": null
+        }
+      ],
+      "specification": "",
+      "type": null
+    },
+    "symbol": "1GLOBALBOND"
+  }
+}
