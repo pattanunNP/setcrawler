@@ -1,142 +1,168 @@
 package news
 
 import (
-	"encoding/json"
 	"fmt"
 	"html"
 	"io"
 	"net/http"
+	"net/http/cookiejar"
 	"regexp"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
 )
 
-func FetchHTMLContent(url string) string {
-	var result map[string]string
+func FetchHTMLContent(url string) NewsItem {
 
-	if strings.Contains(url, "prachachat") {
-		htmlContent := fetchPrachachatContent(url)
-		result = map[string]string{
-			"source":          "prachachat",
-			"raw_html":        htmlContent,
-			"article_content": ExtractContent(htmlContent),
+	newsItem := NewsItem{URL: url}
+
+	switch {
+	case strings.Contains(url, "prachachat"):
+		doc, err := fetchPrachachatContent(url)
+		if err != nil {
+			return newsItem
 		}
-	} else if strings.Contains(url, "thunhoon") {
+		newsItem.HTMLContent = ExtractContent(doc)
+		newsItem.Title = ExtractTitle(doc)
+	case strings.Contains(url, "thunhoon"):
 		htmlContent := fetchThunhoonContent(url)
-		result = map[string]string{
-			"source":          "thunhoon",
-			"raw_html":        htmlContent,
-			"article_content": ExtractContent(htmlContent),
+		doc, err := goquery.NewDocumentFromReader(strings.NewReader(htmlContent))
+		if err != nil {
+			fmt.Println("Error parsing Thunhoon HTML:", err)
+			return newsItem
 		}
-	} else {
-		fmt.Println("Fetching HTML content from:", url)
-
+		newsItem.HTMLContent = ExtractThunhoonContent(htmlContent)
+		newsItem.Title = ExtractTitle(doc)
+	case strings.Contains(url, "businesstoday"):
+		htmlContent := fetchBusinessTodayContent(url)
+		doc, err := goquery.NewDocumentFromReader(strings.NewReader(htmlContent))
+		if err != nil {
+			fmt.Println("Error parsing Business Tody HTML:", err)
+			return newsItem
+		}
+		newsItem.HTMLContent = ExtractBusinessTodayContent(doc)
+		newsItem.Title = ExtractTitle(doc)
+	case strings.Contains(url, "moneyandbanking"):
+		htmlContent := fetchMoneyAndBankingContent(url)
+		doc, err := goquery.NewDocumentFromReader(strings.NewReader(htmlContent))
+		if err != nil {
+			fmt.Println("Error parsing Money and Banking HTML:", err)
+			return newsItem
+		}
+		newsItem.HTMLContent = ExtractContent(doc)
+		newsItem.Title = ExtractTitle(doc)
+	default:
 		resp, err := http.Get(url)
 		if err != nil {
 			fmt.Println("Error fetching HTML:", err)
-			return ""
+			return newsItem
 		}
 		defer resp.Body.Close()
 
 		body, err := io.ReadAll(resp.Body)
 		if err != nil {
 			fmt.Println("Error reading HTML body:", err)
-			return ""
+			return newsItem
 		}
 
 		htmlContent := string(body)
-		result = map[string]string{
-			"source":          "other",
-			"raw_html":        htmlContent,
-			"article_content": ExtractContent(htmlContent),
+		doc, err := goquery.NewDocumentFromReader(strings.NewReader(htmlContent))
+		if err != nil {
+			fmt.Println("Error parsing HTML:", err)
+			return newsItem
 		}
+		newsItem.HTMLContent = ExtractContent(doc)
+		newsItem.Title = ExtractTitle(doc)
 	}
-
-	return result["raw_html"]
+	return newsItem
 }
 
-func fetchPrachachatContent(url string) string {
-	tokenData, err := getTokenData()
-	if err != nil {
-		fmt.Println("Error fetching token data:", err)
-		return ""
-	}
-
-	bundle := tokenData["bundle"].(string)
-	bidId := tokenData["bidId"].(string)
-	cValue := `{"c":1}`
-
+func fetchMoneyAndBankingContent(url string) string {
+	client := &http.Client{}
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		fmt.Println("Error creating request:", err)
 		return ""
 	}
 
-	req.Header.Set("Cookie", fmt.Sprintf("khaos=%s; bidId=%s", bundle, bidId))
-	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("c", cValue)
+	req.Header.Set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7")
+	req.Header.Set("Accept-Language", "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7")
+	req.Header.Set("Cache-Control", "max-age=0")
+	req.Header.Set("Cookie", "121995=1; verify=test; _cbclose=1; _cbclose12598=1; _uid12598=48B82399.1; _ctout12598=1; _ga_HNFW6HCLEH=GS1.1.1723022831.1.0.1723022831.60.0.0; _ga=GA1.3.197662334.1723022832; _gid=GA1.3.1202061379.1723022832; _gat_UA-23886484-2=1; _cc_id=b1b3e9c5a08d9757c99ac9a189c1e275; panoramaId_expiry=1723109232332; panoramaId=ba7f945564e00215dd81fe01f3cba9fb927a15eda3c9cbd36b893ee58ea0f8ab; panoramaIdType=panoDevice; __gads=ID=c4168dffc840fc9d:T=1723022832:RT=1723022832:S=ALNI_MYyNfcujXzDb4OvsRCRWj-Dxv1NLg; __gpi=UID=00000ec7b7e808fb:T=1723022832:RT=1723022832:S=ALNI_Ma9fcuhJNsO0Td7pPoLlApmP5xrPw; __eoi=ID=d380205082b71cbf:T=1723022832:RT=1723022832:S=AA-Afjbayk_Dx0m0v8E4or4Llt_L; cto_bundle=tyglWl9jRGhjeFQyYmNBMUVybjc5Wm5yOUdZTGtZRnc5JTJCcGx4Mko4NjlEaU54SnY0OTNnZWQxQ2hGNXdwZ1RKaGxxeWh0ZVFqd2txZDAlMkJMaWtDSyUyRmg1RVZ0bXFSenF6QmdpNWRmdldNeVFhVEFxQ1NESGE3aVhlTnlXdGI1R3E2aWZQRm81UVZ1MUxYVVJMNlJmNDN0OGc2ODRqYW16OHY1UnEycyUyRmJNVEFKdjhIN2JPMjdKUXhNUGN5Uzd6Q3JRenFaTUo3Q2RNZSUyRjhLbE5iRGxzem5nY1N2ZyUzRCUzRA; FCNEC=%5B%5B%22AKsRol9FCnmdNn0moJhM622B9n_tJqAf5mITEU1BKPFiZ_UgAI35zPLHVZJmVR2p8_FckoIKVyxGoJ1sb9elVuELM-N8pBndV1WiFepg48NOPX1ihGOTM9UPKJTwC1GwJ3pCCtGTfz_qqJp1iFAqdKQSLexc0jx02Q%3D%3D%22%5D%5D; cookieyes-consent=consentid:d1NTMFN3bmZDbjd3ZFBiWVAzWDhYNzd3VXptN1IxeUQ,consent:yes,action:yes,necessary:yes,functional:yes,analytics:yes,performance:yes,advertisement:yes")
+	req.Header.Set("Priority", "u=0, i")
+	req.Header.Set("Referer", url)
+	req.Header.Set("Sec-Ch-Ua", "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"")
+	req.Header.Set("Sec-Ch-Ua-Mobile", "?0")
+	req.Header.Set("Sec-Ch-Ua-Platform", "\"macOS\"")
+	req.Header.Set("Sec-Fetch-Dest", "document")
+	req.Header.Set("Sec-Fetch-Mode", "navigate")
+	req.Header.Set("Sec-Fetch-Site", "same-origin")
+	req.Header.Set("Sec-Fetch-User", "?1")
+	req.Header.Set("Upgrade-Insecure-Requests", "1")
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
 
-	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		fmt.Println("Error fetching Money and Banking HTML:", err)
+		return ""
+	}
+	defer resp.Body.Close()
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		fmt.Println("Error reading Money and Banking HTML body:", err)
+		return ""
+	}
+
+	return string(body)
+}
+
+func fetchPrachachatContent(url string) (*goquery.Document, error) {
+	jar, _ := cookiejar.New(nil)
+	client := &http.Client{
+		Jar: jar,
+	}
+
+	req, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		fmt.Println("Error creating request:", err)
+		return nil, err
+	}
+
 	resp, err := client.Do(req)
 	if err != nil {
 		fmt.Println("Error fetching Prachachat HTML:", err)
-		return ""
+		return nil, err
 	}
 	defer resp.Body.Close()
 
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		fmt.Println("Error reading Prachachat HTML body:", err)
-		return ""
+		return nil, err
 	}
 
 	htmlContent := string(body)
-	fmt.Println("Fetched Prachachat HTML content: ", htmlContent)
-
-	if strings.Contains(htmlContent, "Enable JavaScript and cookies to continue") {
-		fmt.Println("JavaScript challenge detected. Content may not be fully loaded.")
-		return ""
+	if strings.Contains(htmlContent, "Enable JavaScript and Cookies") {
+		fmt.Println("JavaScript challenge detected. Content may not be fully loaded")
+		return nil, fmt.Errorf("JavaScript challenge detected")
 	}
 
-	return htmlContent
-}
-
-func getTokenData() (map[string]interface{}, error) {
-	tokenURL := "https://gum.criteo.com/sid/json?origin=prebid&topUrl=https%3A%2F%2Fwww.prachachat.net%2F&domain=www.prachachat.net&bundle=Er-__F8lMkZ6JTJGNlllVlFYbnhvaVRKWVE0cVk0RWt5SUsyNmdvRFlHQjdkenRKd2J6RlR3VUloblBRRzZIcHdYUUozV3RBakFpJTJGSDhaNWJkUFZHZTd1RHYzaFJHSyUyRlVOOW00N3J5YTJxSEZtSjRUTnk4VENUYWNhTEpjSlVKMnZ0UVJibUx1R2MzeDVoSks4OVNCRmZ6VlQ5Y2FvQSUzRCUzRA&cw=1&pbt=1&lsw=1"
-	req, err := http.NewRequest("GET", tokenURL, nil)
+	doc, err := goquery.NewDocumentFromReader(strings.NewReader(htmlContent))
 	if err != nil {
-		return nil, fmt.Errorf("error creating request: %v", err)
+		fmt.Println("Error parsing Prachachat HTML:", err)
+		return nil, err
 	}
-
-	req.Header.Set("Accept", "application/json")
-	req.Header.Set("Usert-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
-
-	client := &http.Client{}
-	resp, err := client.Do(req)
-	if err != nil {
-		return nil, fmt.Errorf("error fetching token data: %v", err)
-	}
-	defer resp.Body.Close()
-
-	body, err := io.ReadAll(resp.Body)
-	if err != nil {
-		return nil, fmt.Errorf("error reading token data: %v", err)
-	}
-
-	var tokenData map[string]interface{}
-	err = json.Unmarshal(body, &tokenData)
-	if err != nil {
-		return nil, fmt.Errorf("error parsing token data: %v", err)
-	}
-
-	return tokenData, nil
+	return doc, nil
 }
 
 func fetchThunhoonContent(url string) string {
-	violationURL := "https://player.gliacloud.com/violations/thunhoon.com"
+	jar, _ := cookiejar.New(nil)
+	client := &http.Client{
+		Jar: jar,
+	}
 
-	req, err := http.NewRequest("GET", violationURL, nil)
+	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		fmt.Println("Error creating request:", err)
 		return ""
@@ -156,77 +182,98 @@ func fetchThunhoonContent(url string) string {
 	req.Header.Set("sec-ch-ua-mobile", "?0")
 	req.Header.Set("sec-ch-ua-platform", "\"macOS\"")
 
-	client := &http.Client{}
 	resp, err := client.Do(req)
-	if err != nil {
-		fmt.Println("Error making initial request:", err)
-		return ""
-	}
-	defer resp.Body.Close()
-
-	body, err := io.ReadAll(resp.Body)
-	if err != nil {
-		fmt.Println("Error reading response body:", err)
-		return ""
-	}
-
-	fmt.Println("Initial request response from Thunhoon:", string(body))
-
-	req, err = http.NewRequest("GET", url, nil)
-	if err != nil {
-		fmt.Println("Error creating request:", err)
-		return ""
-	}
-
-	resp, err = client.Do(req)
 	if err != nil {
 		fmt.Println("Error fetching Thunhoon HTML:", err)
 		return ""
 	}
 	defer resp.Body.Close()
 
-	body, err = io.ReadAll(resp.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		fmt.Println("Error reading Thunhoon HTML body:", err)
 		return ""
 	}
 
 	htmlContent := string(body)
-	fmt.Println("Fetched Thunhoon HTML content:", htmlContent)
-
-	if strings.Contains(htmlContent, "Enable JavaScript and cookies to continue") {
-		fmt.Println("JavaScript challenge detected. Content may not be fully loaded.")
+	if strings.Contains(htmlContent, "Enable JavaScript and Cookies to continue") {
+		fmt.Println("JavaScript challenge detected. Content may not be fully loaded")
 		return ""
 	}
 	return htmlContent
 }
 
-func extractArticleContent(html string) (string, error) {
-	doc, err := goquery.NewDocumentFromReader(strings.NewReader(html))
-	if err != nil {
-		return "", err
-	}
-
-	articleSelection := doc.Find("article.post")
-	if articleSelection.Length() == 0 {
-		return "", fmt.Errorf("no article content found")
-	}
-
-	articleHTML, err := articleSelection.Html()
-	if err != nil {
-		return "", err
-	}
-
-	cleanedArticleHTML := CleanHTMLContent(articleHTML)
-	return cleanedArticleHTML, nil
-}
-
-func ExtractContent(html string) string {
+func ExtractThunhoonContent(html string) string {
 	doc, err := goquery.NewDocumentFromReader(strings.NewReader(html))
 	if err != nil {
 		fmt.Println("Error parsing HTML:", err)
 		return ""
 	}
+
+	content := doc.Find("div.col-lg-8.col-sm-12").Text()
+	if content != "" {
+		return CleanHTMLContent(content)
+	}
+	return ""
+}
+
+func fetchBusinessTodayContent(url string) string {
+	jar, _ := cookiejar.New(nil)
+	client := &http.Client{
+		Jar: jar,
+	}
+
+	req, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		fmt.Println("Error creating request:", err)
+		return ""
+	}
+
+	req.Header.Set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7")
+	req.Header.Set("Accept-Language", "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7")
+	req.Header.Set("Cache-Control", "max-age=0")
+	req.Header.Set("Cookie", "cookielawinfo-checkbox-necessary=yes; cookielawinfo-checkbox-non-necessary=yes; _gid=GA1.2.414608578.1722998883; _fbp=fb.1.1722998883662.812601603845803557; CookieLawInfoConsent=eyJuZWNlc3NhcnkiOnRydWUsIm5vbi1uZWNlc3NhcnkiOnRydWV9; viewed_cookie_policy=yes; __gads=ID=cf070b2a4cab58bb:T=1722998883:RT=1723017303:S=ALNI_Mb255-ufB7OuDvUW6HwBZKSB6cOtw; __gpi=UID=00000eb7c58092a0:T=1722998883:RT=1723017303:S=ALNI_MbWwS9_EKDoT4nQQb-7cliJp1ZPVw; __eoi=ID=9ee17185c854a7ab:T=1722998883:RT=1723017303:S=AA-Afja787KsM2-_6lx_8NcHoCk1; _ga=GA1.2.817401315.1722998883; _gat_UA-144169061-1=1; _ga_K4XGKBQ5CR=GS1.1.1723017303.3.1.1723017389.58.0.0")
+	req.Header.Set("Priority", "u=0, i")
+	req.Header.Set("Sec-Ch-Ua", "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"")
+	req.Header.Set("Sec-Ch-Ua-Mobile", "?0")
+	req.Header.Set("Sec-Ch-Ua-Platform", "\"macOS\"")
+	req.Header.Set("Sec-Fetch-Dest", "document")
+	req.Header.Set("Sec-Fetch-Mode", "navigate")
+	req.Header.Set("Sec-Fetch-Site", "none")
+	req.Header.Set("Sec-Fetch-User", "?1")
+	req.Header.Set("Upgrade-Insecure-Requests", "1")
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
+
+	resp, err := client.Do(req)
+	if err != nil {
+		fmt.Println("Error fetching Business Today HTML:", err)
+		return ""
+	}
+	defer resp.Body.Close()
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		fmt.Println("Error reading Business Today HTML body:", err)
+		return ""
+	}
+
+	htmlContent := string(body)
+	if strings.Contains(htmlContent, "403 - Forbidden") {
+		fmt.Println("Access forbidden detected. Content may not be fully loaded")
+		return ""
+	}
+	return htmlContent
+}
+
+func ExtractBusinessTodayContent(doc *goquery.Document) string {
+	content := doc.Find("div.tdb-block-inner.td-fix-index").Text()
+	if content != "" {
+		return CleanHTMLContent(content)
+	}
+	return ""
+}
+
+func ExtractContent(doc *goquery.Document) string {
 
 	patterns := []string{
 		"#article .entry-content",
@@ -236,62 +283,40 @@ func ExtractContent(html string) string {
 		"article",
 	}
 
-	var content string
 	for _, pattern := range patterns {
-		content = doc.Find(pattern).Text()
+		content := doc.Find(pattern).Text()
 		if content != "" {
 			return CleanHTMLContent(content)
 		}
 	}
 
-	content = doc.Find("body").Text()
-	return CleanHTMLContent(content)
+	return CleanHTMLContent(doc.Find("body").Text())
+}
+
+func ExtractTitle(doc *goquery.Document) string {
+	title := doc.Find("title").Text()
+	if title == "" {
+		title = doc.Find("h1").Text()
+	}
+	return title
 }
 
 func CleanHTMLContent(content string) string {
 	content = html.UnescapeString(content)
 
-	re := regexp.MustCompile(`(?i)<(script|style)[^>]*>.*?</\\1>`)
+	re := regexp.MustCompile(`(?i)(function\s*\(w, d, s, l, i\)\s*{[\s\S]*?event:\s*'gtm\.'\s*})`)
 	content = re.ReplaceAllString(content, "")
 
-	re = regexp.MustCompile(`(?i)<[^>]*(on\w+|style)="[^"]*"[^>]*>`)
+	re = regexp.MustCompile(`(?i)<(script|style)[^>]*>.*?</\\1>`)
 	content = re.ReplaceAllString(content, "")
 
-	unwantedPatterns := []string{
-		`(?i)\(function \(w, d, s, l, i\) \{.*?\}\)\(window, document, 'script', 'dataLayer', 'GTM-[A-Z0-9]+'\);`,
-		`(?i)\.icon-social \{.*?\}`,
-		`(?i)/\*.*?\*/`,
-	}
-
-	for _, pattern := range unwantedPatterns {
-		re = regexp.MustCompile(pattern)
-		content = re.ReplaceAllString(content, "")
-	}
-
-	re = regexp.MustCompile(`(?i)<!--.*?-->`)
+	re = regexp.MustCompile(`(?i)<[^>]+>`)
 	content = re.ReplaceAllString(content, "")
 
-	re = regexp.MustCompile(`<[^>]+>`)
-	content = re.ReplaceAllString(content, "")
-
-	content = regexp.MustCompile(`\s+`).ReplaceAllString(content, " ")
+	re = regexp.MustCompile(`\s+`)
+	content = re.ReplaceAllString(content, " ")
 
 	content = strings.TrimSpace(content)
 
 	return content
-}
-
-func ExtractOnlyText(input string) string {
-	jsonPattern := regexp.MustCompile(`"([^"]+)"\s*:\s*"([^"]+)"`)
-	htmlPattern := regexp.MustCompile(`<[^>]+>`)
-	specialCharsPattern := regexp.MustCompile(`[^\w\s]`)
-	whitespacePattern := regexp.MustCompile(`\s+`)
-
-	cleaned := jsonPattern.ReplaceAllString(input, " ")
-	cleaned = htmlPattern.ReplaceAllString(cleaned, " ")
-	cleaned = specialCharsPattern.ReplaceAllString(cleaned, " ")
-	cleaned = whitespacePattern.ReplaceAllString(cleaned, " ")
-	cleaned = strings.TrimSpace(cleaned)
-
-	return cleaned
 }

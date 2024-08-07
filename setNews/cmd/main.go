@@ -1,12 +1,10 @@
 package main
 
 import (
-	"context"
 	"encoding/json"
 	"fmt"
 	"os"
 	"setNews/handle/news"
-	"time"
 )
 
 func main() {
@@ -15,47 +13,37 @@ func main() {
 	allItems := []news.NewsItem{}
 	pageIndex := 0
 
-	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
-	defer cancel()
+	for {
 
-	done := make(chan struct{})
-
-	go func() {
-		for {
-			select {
-			case <-ctx.Done():
-				fmt.Println("Timeout reached, stopping the fetching process.")
-				done <- struct{}{}
-				return
-			default:
-				url := fmt.Sprintf("%s%d%s", baseURL, pageIndex, pageSize)
-				hasNextPage, err := news.FetchNews(url, &allItems)
-				if err != nil {
-					fmt.Println("Error fetching news:", err)
-					done <- struct{}{}
-					return
-				}
-
-				if !hasNextPage {
-					done <- struct{}{}
-					return
-				}
-
-				pageIndex++
-			}
+		url := fmt.Sprintf("%s%d%s", baseURL, pageIndex, pageSize)
+		hasNextPage, err := news.FetchNews(url, &allItems)
+		if err != nil {
+			fmt.Println("Error fetching news:", err)
+			break
 		}
-	}()
-	<-done
 
-	saveToJSON("news_results.json", allItems)
+		if !hasNextPage {
+			break
+		}
+	}
+
+	// Save all news items to a single JSON file, split by title
+	if err := saveToJSON("news_result.json", allItems); err != nil {
+		fmt.Println("Error saving news items to JSON:", err)
+	}
 }
 
-func saveToJSON(filename string, data interface{}) error {
+func saveToJSON(filename string, items []news.NewsItem) error {
 	file, err := os.Create(filename)
 	if err != nil {
 		return err
 	}
 	defer file.Close()
+
+	data := make(map[string]news.NewsItem)
+	for _, item := range items {
+		data[item.Title] = item
+	}
 
 	encoder := json.NewEncoder(file)
 	encoder.SetIndent("", " ")
