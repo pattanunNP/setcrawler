@@ -1,55 +1,50 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
 	"log"
-	"os"
-	"setResearch/client"
-	"setResearch/parser"
+	"setResearch/httpclient"
+	"setResearch/research"
+	"setResearch/utils"
 )
 
 func main() {
-	baseURL := "https://www.settrade.com/api/cms/v1/research-settrade/search?startDate=01%2F08%2F2024&endDate=08%2F08%2F2024&pageSize=10"
-	maxPages := 3
-	allResponses := []client.Response{}
+	client := httpclient.NewClient()
 
-	for pageIndex := 0; pageIndex < maxPages; pageIndex++ {
-		response, err := client.FetchPage(baseURL, pageIndex)
+	var allItems []research.ResearchItem
+	pageIndex := 0
+
+	for {
+		responseData, err := research.FetchResearchItems(client, pageIndex)
 		if err != nil {
-			log.Fatalf("error fetching page %d: %v", pageIndex, err)
+			log.Fatalf("Error fetching research items: %v", err)
 		}
 
-		for i := range response.ResearchItems.Items {
-			item := &response.ResearchItems.Items[i]
-			htmlContent, err := client.FetchHTMLContent(item.URL)
-			if err != nil {
-				log.Printf("error fetching HTML content for URL %s: %v", item.URL, err)
-				continue
+		for i := range responseData.ResearchItems.Items {
+			item := &responseData.ResearchItems.Items[i]
+			if item.URL != "" {
+				fmt.Printf("Processing item: %s\n", item.Title)
+				err := research.ProcessResearchItem(client, item)
+				if err != nil {
+					log.Printf("Error processing item %s: %v\n", item.Title, err)
+					continue
+				}
+				allItems = append(allItems, *item)
 			}
-
-			fileURL, err := parser.ExtractFileURLFromHTML(htmlContent)
-			if err != nil {
-				log.Printf("Error extracting fileUrl for URL %s: %v", item.URL, err)
-				continue
-			}
-			item.FileURL = fileURL
 		}
 
-		allResponses = append(allResponses, *response)
-		if pageIndex >= response.ResearchItems.TotalPages-1 {
+		if responseData.ResearchItems.PageIndex >= responseData.ResearchItems.TotalPages-1 {
 			break
 		}
+
+		pageIndex++
+
 	}
 
-	formattedResponse, err := json.MarshalIndent(allResponses, "", " ")
+	fileName := "response_with_pdf_content.json"
+	err := utils.SaveToFile(fileName, allItems)
 	if err != nil {
-		log.Fatalf("Failed to format response: %v", err)
+		log.Fatalf("Error saving response to file: %v", err)
 	}
-
-	if err := os.WriteFile("research.json", formattedResponse, 0644); err != nil {
-		log.Fatalf("Failed to write to file: %v", err)
-	}
-
-	fmt.Println("Response saved to research.json")
+	fmt.Printf("response with PDF content saved to %s\n", fileName)
 }
