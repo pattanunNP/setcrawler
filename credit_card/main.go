@@ -8,7 +8,6 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"regexp"
 	"strconv"
 	"strings"
 	"time"
@@ -16,56 +15,84 @@ import (
 	"github.com/PuerkitoBio/goquery"
 )
 
-// Product represents the extracted product information.
-type Product struct {
-	Provider     string `json:"provider"`
-	ProductName  string `json:"product_name"`
-	CardType     string `json:"card_type"`
-	BenefitType  string `json:"benefit_type"`
-	Feature      string `json:"feature"`
-	MinAge       string `json:"min_age"`
-	MinIncome    string `json:"min_income"`
-	InterestFree string `json:"interest_free"`
-	CreditLimit  string `json:"credit_limit"`
-	EntranceFee  string `json:"entrance_fee"`
-	AnnualFee    string `json:"annual_fee"`
-	OtherFees    string `json:"other_fees"`
-	CashAdvance  string `json:"cash_advance"`
-	ProductURL   string `json:"product_url"`
-	FeeURL       string `json:"fee_url"`
+type ProductDetails struct {
+	ProductName                string               `json:"product_name"`
+	ProductFeatures            Features             `json:"product_features_conditions"`
+	PrimaryCardApplicantAge    int                  `json:"primary_card_applicant_age"`
+	MinimumIncomeAndConditions IncomeConditions     `json:"minimum_income_and_conditions"`
+	InterestFreePeriod         int                  `json:"interest_free_period"`
+	CreditLimit                int                  `json:"credit_limit"`
+	GeneralFees                []GeneralFee         `json:"general_fees"`
+	PaymentMethods             []PaymentMethod      `json:"payment_methods"`
+	LatePaymentPenalties       []LatePaymentPenalty `json:"late_payment_penalties"`
+	CashWithdrawalFees         []CashWithdrawalFee  `json:"cash_withdrawal_fees"`
+	SupplementaryCard          SupplementaryCard    `json:"supplementary_card"`
+	AdditionInfo               AdditionInfo         `json:"additioninfo"`
 }
 
-// NewProduct represents the desired JSON structure.
-type NewProduct struct {
-	Provider          string   `json:"provider"`
-	ProductName       string   `json:"product_name"`
-	CardType          string   `json:"card_type"`
-	MainBenefit       string   `json:"main_benefit"`
-	ProductFeatures   []string `json:"product_features"`
-	MaximumCreditLine string   `json:"maximum_credit_line"`
-	MinimumAge        string   `json:"minimum_age"`
-	IncomeCondition   struct {
-		Income    string `json:"income"`
-		Condition string `json:"condition"`
-	} `json:"income_condition"`
-	InterestFreePeriod string `json:"interest_free_period"`
-	Fees               struct {
-		EntranceFee string `json:"entrance_fee"`
-		AnnualFee   struct {
-			FirstYear       string `json:"first_year"`
-			SubsequentYears string `json:"subsequent_years"`
-			Conditions      string `json:"conditions"`
-		} `json:"annual_fee"`
-		FxRiskFee      string `json:"fx_risk_fee"`
-		CashAdvanceFee struct {
-			Amount    string `json:"amount"`
-			Condition string `json:"conditions"`
-		} `json:"cash_advance_fee"`
-		AdditionalInfo struct {
-			ProductWebsite string `json:"product_website"`
-			FeeWebsite     string `json:"fee_website"`
-		} `json:"additional_info"`
-	} `json:"fees"`
+type Features struct {
+	BenefitType string   `json:"benefit_type"`
+	Details     []string `json:"details"`
+}
+
+type IncomeConditions struct {
+	IncomeRequirement string   `json:"income_requirement"`
+	Conditions        []string `json:"conditions"`
+}
+
+type GeneralFee struct {
+	FeeType     string      `json:"fee_type"`
+	Amount      int         `json:"amount,omitempty"`
+	AmountRange AmountRange `json:"amount_range,omitempty"`
+	Conditions  []string    `json:"conditions,omitempty"`
+}
+
+type AmountRange struct {
+	Min int `json:"min,omitempty"`
+	Max int `json:"max,omitempty"`
+}
+
+type PaymentMethod struct {
+	MethodType string `json:"method_type"`
+	Details    string `json:"details"`
+}
+
+type LatePaymentPenalty struct {
+	PenaltyType      string   `json:"penalty_type"`
+	AmountPercentage int      `json:"amount_percentage,omitempty"`
+	MinimumAmount    int      `json:"minimum_amount,omitempty"`
+	InterestRate     int      `json:"interest_rate,omitempty"`
+	Conditions       []string `json:"conditions,omitempty"`
+}
+
+type CashWithdrawalFee struct {
+	FeeType          string `json:"fee_type"`
+	InterestRate     int    `json:"interest_rate,omitempty"`
+	AmountPercentage int    `json:"amount_percentage,omitempty"`
+	ConditionsType   string `json:"conditions_type,omitempty"`
+	Details          string `json:"details,omitempty"`
+}
+
+type SupplementaryCard struct {
+	MaxNumberOfCards int            `json:"max_number_of_cards"`
+	AgeRequirement   AgeRequirement `json:"age_requirement"`
+	Fees             []FeeDetails   `json:"fees"`
+}
+
+type AgeRequirement struct {
+	MinAge     int      `json:"min_age"`
+	MaxAge     int      `json:"max_age"`
+	Conditions []string `json:"conditions"`
+}
+
+type FeeDetails struct {
+	FeeType    string   `json:"fee_type"`
+	Conditions []string `json:"conditions"`
+}
+
+type AdditionInfo struct {
+	ProductURL string `json:"product_url"`
+	FeeURL     string `json:"fee_url"`
 }
 
 func main() {
@@ -80,7 +107,6 @@ func main() {
 		log.Fatalf("Error creating request: %v", err)
 	}
 
-	// Set headers (same as your previous implementation)
 	setHeaders(req)
 
 	client := &http.Client{}
@@ -116,7 +142,7 @@ func main() {
 		}
 	})
 
-	var allNewProducts []NewProduct
+	var allProducts []ProductDetails
 
 	// Loop through each page
 	for page := 1; page <= totalPages; page++ {
@@ -147,68 +173,47 @@ func main() {
 		if err != nil {
 			log.Fatalf("Error loading HTML: %v", err)
 		}
-		// Extract data from the table and map directly to NewProduct
-		doc.Find("thead tr.attr-header").Each(func(i int, s *goquery.Selection) {
-			product := Product{}
-			product.Provider = cleanString(s.Find("th.col-s-0").Text())
-			product.ProductName = cleanString(s.Find(".text-bold").Text())
-			product.CardType = cleanString(s.Find("th.font-black").Contents().Not("span").Text())
 
-			doc.Find("tbody tr.attr-header").Each(func(i int, s *goquery.Selection) {
-				header := cleanString(s.Find("td.text-center.frst-col span").Text())
-				switch header {
-				case "ประเภทสิทธิประโยชน์เด่น":
-					product.BenefitType = cleanString(s.Find("td.cmpr-col.col1 span.text-bold").Text())
-				case "ลักษณะเด่น":
-					product.Feature = cleanString(s.Find("td.cmpr-col.col1 span").Text())
-				case "อายุผู้สมัครบัตรหลัก":
-					product.MinAge = cleanString(s.Find("td.cmpr-col.col1 span").Text())
-				case "รายได้ขั้นต่ำ และเงื่อนไขในการสมัคร":
-					product.MinIncome = cleanString(s.Find("td.cmpr-col.col1 span.text-primary").Text())
-				case "ระยะเวลาสูงสุดที่ปลอดดอกเบี้ย":
-					product.InterestFree = cleanString(s.Find("td.cmpr-col.col1 span").Text())
-				case "วงเงินสูงสุด":
-					product.CreditLimit = cleanString(s.Find("td.cmpr-col.col1 span").Text())
-				case "ค่าธรรมเนียมแรกเข้าบัตรหลัก":
-					product.EntranceFee = cleanString(s.Find("td.cmpr-col.col1 span").Text())
-				case "ค่าธรรมเนียมรายปีบัตรหลัก":
-					product.AnnualFee = cleanString(s.Find("td.cmpr-col.col1 span").Text())
-				case "ค่าความเสี่ยงจากการแปลงสกุลเงิน":
-					product.OtherFees = cleanString(s.Find("td.cmpr-col.col1 span").Text())
-				case "ค่าธรรมเนียมเบิกถอนเงินสด":
-					product.CashAdvance = cleanString(s.Find("td.cmpr-col.col1 span").Text())
+		colCount := 1
+		doc.Find("th.font-black.text-center").Each(func(i int, s *goquery.Selection) {
+			productName := strings.TrimSpace(s.Find("span.text-bold").Text() + " " + s.Find("span.txt-normal").Text())
+			if productName != "" {
+				product := ProductDetails{
+					ProductName:                productName,
+					ProductFeatures:            extractFeatures(doc, colCount),
+					PrimaryCardApplicantAge:    extractAgeRequirement(doc, colCount),
+					MinimumIncomeAndConditions: extractIncomeConditions(doc, colCount),
+					InterestFreePeriod:         extractInterestFreePeriod(doc, colCount),
+					CreditLimit:                extractCreditLimit(doc, colCount),
+					GeneralFees:                extractGeneralFees(doc, colCount),
+					PaymentMethods:             extractPaymentMethods(doc, colCount),
+					LatePaymentPenalties:       extractLatePaymentPenalties(doc, colCount),
+					CashWithdrawalFees:         extractCashWithdrawalFees(doc, colCount),
+					SupplementaryCard:          extractSupplementaryCard(doc, colCount),
+					AdditionInfo:               extractAdditionInfo(doc, colCount),
 				}
-			})
-
-			product.ProductURL = cleanString(s.Find("tbody tr.attr-header.attr-url td.cmpr-col.col1 a").AttrOr("href", ""))
-			product.FeeURL = cleanString(s.Find("tbody tr.attr-header.attr-feeurl td.cmpr-col.col1 a").AttrOr("href", ""))
-
-			newProducts := mapToNewProduct(product)
-			allNewProducts = append(allNewProducts, newProducts...)
+				allProducts = append(allProducts, product)
+				colCount++
+			}
 		})
 
-		// Stop for 5 seconds before making the next request
+		// Stop for 5 seconds before making the next request to avoid overloading the server
 		time.Sleep(5 * time.Second)
 	}
 
-	// Convert the combined new products to JSON and save to a file
-	newJSON, err := json.MarshalIndent(allNewProducts, "", "  ")
+	// Convert the combined products to JSON and save to a file
+	jsonData, err := json.MarshalIndent(allProducts, "", "  ")
 	if err != nil {
-		log.Fatalf("Error converting to JSON: %v", err)
+		log.Fatalf("Failed to convert struct to JSON: %v", err)
 	}
 
-	file, err := os.Create("new_products.json")
+	// Save JSON to a file
+	err = os.WriteFile("credit_card_compare.json", jsonData, 0644)
 	if err != nil {
-		log.Fatalf("Error creating file: %v", err)
-	}
-	defer file.Close()
-
-	_, err = file.Write(newJSON)
-	if err != nil {
-		log.Fatalf("Error writing to file: %v", err)
+		log.Fatalf("Failed to write JSON to file: %v", err)
 	}
 
-	log.Println("Product data saved to new_products.json")
+	fmt.Println("Product details saved to credit_card_compare.json")
 }
 
 func setHeaders(req *http.Request) {
@@ -230,54 +235,268 @@ func setHeaders(req *http.Request) {
 	req.Header.Set("X-Requested-With", "XMLHttpRequest")
 }
 
-func mapToNewProduct(product Product) []NewProduct {
-	// Initialize a list to hold the new product information
-	var newProducts []NewProduct
+func extractFeatures(doc *goquery.Document, colCount int) Features {
+	benefitType := cleanText(doc.Find(fmt.Sprintf("tr.attr-header.attr-productBenefitType.trbox-shadow .cmpr-col.col%d", colCount)).Text())
+	details := cleanText(strings.Join(doc.Find(fmt.Sprintf("tr.attr-header.attr-productBenefitMain.trbox-shadow .cmpr-col.col%d span", colCount)).Map(func(i int, s *goquery.Selection) string {
+		return s.Text()
+	}), "\n- "))
 
-	// Directly use the product name as extracted from the scraped data
-	productName := cleanString(product.ProductName)
-	cardType := cleanString(product.CardType)
+	return Features{
+		BenefitType: benefitType,
+		Details:     []string{details},
+	}
+}
 
-	// Create a single NewProduct instance
-	newProduct := NewProduct{
-		Provider:    cleanString(product.Provider),
-		ProductName: productName,
-		CardType:    cardType,
-		MainBenefit: cleanString(product.BenefitType),
-		ProductFeatures: []string{
-			cleanString(product.Feature),
+func extractAgeRequirement(doc *goquery.Document, colCount int) int {
+	var age int
+	ageText := cleanText(doc.Find(fmt.Sprintf("tr.attr-header.attr-primaryAgeOfHolder.trbox-shadow .cmpr-col.col%d span", colCount)).Text())
+	fmt.Sscanf(ageText, "%d", &age)
+	return age
+}
+
+func extractIncomeConditions(doc *goquery.Document, colCount int) IncomeConditions {
+	incomeRequirement := cleanText(doc.Find(fmt.Sprintf("tr.attr-header.attr-minIncomePerMonthDisplay.trbox-shadow .cmpr-col.col%d", colCount)).Text())
+	conditions := []string{cleanText(doc.Find(fmt.Sprintf("tr.attr-header.attr-minIncomePerMonthDisplay.trbox-shadow .cmpr-col.col%d .text-primary", colCount)).Text())}
+
+	return IncomeConditions{
+		IncomeRequirement: incomeRequirement,
+		Conditions:        conditions,
+	}
+}
+
+func extractInterestFreePeriod(doc *goquery.Document, colCount int) int {
+	var days int
+	interestText := cleanText(doc.Find(fmt.Sprintf("tr.attr-header.attr-interestFreePeriodDisplay.trbox-shadow .cmpr-col.col%d span", colCount)).Text())
+	fmt.Sscanf(interestText, "%d", &days)
+	return days
+}
+
+func extractCreditLimit(doc *goquery.Document, colCount int) int {
+	var limit int
+	limitText := cleanText(doc.Find(fmt.Sprintf("tr.attr-header.attr-crditLineMax.trbox-shadow .cmpr-col.col%d span", colCount)).Text())
+	fmt.Sscanf(limitText, "%d", &limit)
+	return limit
+}
+
+func extractGeneralFees(doc *goquery.Document, colCount int) []GeneralFee {
+	var generalFees []GeneralFee
+
+	feeTypes := []struct {
+		FeeTypeSelector string
+		AmountSelector  string
+		IsAmountRange   bool
+	}{
+		{"attr-primaryHolderEntranceFeeDisplay", "attr-primaryHolderEntranceFeeDisplay", false},
+		{"attr-primaryHolderAnnualFee", "attr-primaryHolderAnnualFee", true},
+		{"attr-replacementCardFee", "attr-replacementCardFee", false},
+		{"attr-CostFXRisk", "attr-CostFXRisk", true},
+		{"attr-replacementCardFPinFee", "attr-replacementCardFPinFee", false},
+		{"attr-copyStatementFee", "attr-copyStatementFee", false},
+		{"attr-TransactionVerifyFee", "attr-TransactionVerifyFee", true},
+		{"attr-copySaleSlipFee", "attr-copySaleSlipFee", false},
+		{"attr-fineChequeReturn", "attr-fineChequeReturn", false},
+		{"attr-GovernmentAgencyRelatedPaymentFee", "attr-GovernmentAgencyRelatedPaymentFee", true},
+		{"attr-otherFee", "attr-otherFee", false},
+	}
+
+	for _, feeType := range feeTypes {
+		fee := GeneralFee{
+			FeeType: cleanText(doc.Find(fmt.Sprintf("tr.%s .text-center.frst-col", feeType.FeeTypeSelector)).Text()),
+		}
+
+		if feeType.IsAmountRange {
+			fee.AmountRange = extractAmountRange(doc, colCount, feeType.AmountSelector)
+		} else {
+			fee.Amount = extractAmount(doc, colCount, feeType.AmountSelector)
+		}
+
+		fee.Conditions = []string{cleanText(doc.Find(fmt.Sprintf("tr.%s .text-primary", feeType.FeeTypeSelector)).Text())}
+		generalFees = append(generalFees, fee)
+	}
+
+	return generalFees
+}
+
+func extractAmount(doc *goquery.Document, colCount int, selector string) int {
+	var amount int
+	amountText := cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d span", selector, colCount)).Text())
+	fmt.Sscanf(amountText, "%d", &amount)
+	return amount
+}
+
+func extractAmountRange(doc *goquery.Document, colCount int, selector string) AmountRange {
+	var min, max int
+	amountText := cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d span", selector, colCount)).Text())
+	fmt.Sscanf(amountText, "%d-%d", &min, &max)
+	return AmountRange{Min: min, Max: max}
+}
+
+func extractPaymentMethods(doc *goquery.Document, colCount int) []PaymentMethod {
+	var paymentMethods []PaymentMethod
+
+	paymentTypes := []struct {
+		MethodTypeSelector string
+		DetailsSelector    string
+	}{
+		{"attr-freePaymentChannel", "attr-freePaymentChannel"},
+		{"attr-directDebitFromAccountFee", "attr-directDebitFromAccountFee"},
+		{"attr-directDebitFromAccountFeeOther", "attr-directDebitFromAccountFeeOther"},
+		{"attr-BankCounterServiceFee", "attr-BankCounterServiceFee"},
+		{"attr-BankCounterServiceFeeOther", "attr-BankCounterServiceFeeOther"},
+		{"attr-CounterServiceFeeOther", "attr-CounterServiceFeeOther"},
+		{"attr-paymentOnlineFee", "attr-paymentOnlineFee"},
+		{"attr-paymentCDMATMFee", "attr-paymentCDMATMFee"},
+		{"attr-paymentPhoneFee", "attr-paymentPhoneFee"},
+		{"attr-paymentChequeOrMoneyOrderFee", "attr-paymentChequeOrMoneyOrderFee"},
+		{"attr-paymentOtherChannelFee", "attr-paymentOtherChannelFee"},
+	}
+
+	for _, pt := range paymentTypes {
+		methodType := cleanText(doc.Find(fmt.Sprintf("tr.%s .text-center.frst-col", pt.MethodTypeSelector)).Text())
+		details := cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d span", pt.DetailsSelector, colCount)).Text())
+
+		if methodType != "" && details != "" {
+			paymentMethods = append(paymentMethods, PaymentMethod{
+				MethodType: methodType,
+				Details:    details,
+			})
+		}
+	}
+
+	return paymentMethods
+}
+
+func extractLatePaymentPenalties(doc *goquery.Document, colCount int) []LatePaymentPenalty {
+	var penalties []LatePaymentPenalty
+
+	penaltyTypes := []struct {
+		PenaltyTypeSelector      string
+		AmountPercentageSelector string
+		MinimumAmountSelector    string
+		InterestRateSelector     string
+		ConditionsSelector       string
+	}{
+		{"attr-minAmountRequiredPaymentDisplay", "attr-minAmountRequiredPaymentDisplay", "attr-minAmountRequiredPaymentDisplay", "", ""},
+		{"attr-interestPenaltiyServiceFeeAndOtherChargeDisplay", "", "", "attr-interestPenaltiyServiceFeeAndOtherChargeDisplay", "attr-interestPenaltiyServiceFeeAndOtherChargeDisplay"},
+		{"attr-debtCollectionFee", "", "", "", "attr-debtCollectionFee"},
+	}
+
+	for _, pt := range penaltyTypes {
+		penalty := LatePaymentPenalty{
+			PenaltyType:      cleanText(doc.Find(fmt.Sprintf("tr.%s .text-center.frst-col", pt.PenaltyTypeSelector)).Text()),
+			AmountPercentage: extractPercentage(doc, colCount, pt.AmountPercentageSelector),
+			MinimumAmount:    extractMinimumAmount(doc, colCount, pt.MinimumAmountSelector),
+			InterestRate:     extractInterestRate(doc, colCount, pt.InterestRateSelector),
+			Conditions:       []string{cleanText(doc.Find(fmt.Sprintf("tr.%s .text-primary", pt.ConditionsSelector)).Text())},
+		}
+		penalties = append(penalties, penalty)
+	}
+
+	return penalties
+}
+
+func extractCashWithdrawalFees(doc *goquery.Document, colCount int) []CashWithdrawalFee {
+	var fees []CashWithdrawalFee
+
+	feeTypes := []struct {
+		FeeTypeSelector          string
+		InterestRateSelector     string
+		AmountPercentageSelector string
+		ConditionsTypeSelector   string
+		DetailsSelector          string
+	}{
+		{"attr-InterestPenaltyServiceFeeAndOtherChargeCashAdvance", "attr-InterestPenaltyServiceFeeAndOtherChargeCashAdvance", "", "", ""},
+		{"attr-cashAdvanceFee", "", "attr-cashAdvanceFee", "", ""},
+		{"attr-cashAdvanceCondition", "", "", "attr-cashAdvanceCondition", "attr-cashAdvanceCondition"},
+		{"attr-cashAdvanceAmountMin", "", "", "attr-cashAdvanceAmountMin", "attr-cashAdvanceAmountMin"},
+	}
+
+	for _, ft := range feeTypes {
+		fee := CashWithdrawalFee{
+			FeeType:          cleanText(doc.Find(fmt.Sprintf("tr.%s .text-center.frst-col", ft.FeeTypeSelector)).Text()),
+			InterestRate:     extractInterestRate(doc, colCount, ft.InterestRateSelector),
+			AmountPercentage: extractPercentage(doc, colCount, ft.AmountPercentageSelector),
+			ConditionsType:   cleanText(doc.Find(fmt.Sprintf("tr.%s .text-center.frst-col", ft.ConditionsTypeSelector)).Text()),
+			Details:          cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d span", ft.DetailsSelector, colCount)).Text()),
+		}
+		fees = append(fees, fee)
+	}
+
+	return fees
+}
+
+func extractPercentage(doc *goquery.Document, colCount int, selector string) int {
+	var percentage int
+	text := cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d span", selector, colCount)).Text())
+	fmt.Sscanf(text, "%d%%", &percentage)
+	return percentage
+}
+
+func extractMinimumAmount(doc *goquery.Document, colCount int, selector string) int {
+	var minAmount int
+	text := cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d span", selector, colCount)).Text())
+	fmt.Sscanf(text, "ไม่น้อยกว่า %d บาท", &minAmount)
+	return minAmount
+}
+
+func extractInterestRate(doc *goquery.Document, colCount int, selector string) int {
+	var rate int
+	text := cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d span", selector, colCount)).Text())
+	fmt.Sscanf(text, "%d%%", &rate)
+	return rate
+}
+
+func extractSupplementaryCard(doc *goquery.Document, colCount int) SupplementaryCard {
+	maxNumberOfCards := extractInt(doc, colCount, "attr-supplementaryCardMax")
+	minAge, maxAge := extractAgeRange(doc, colCount, "attr-supplementaryCardHolderAge")
+	conditions := cleanText(doc.Find("tr.attr-supplementaryCardHolderAge .cmpr-col.col" + fmt.Sprint(colCount)).Text())
+
+	fees := []FeeDetails{
+		{
+			FeeType:    cleanText(doc.Find("tr.attr-supplementaryCardHolderEntranceFeeDisplay .text-center.frst-co").Text()),
+			Conditions: []string{cleanText(doc.Find("tr.attr-supplementaryCardHolderEntranceFeeDisplay .cmpr-col.col" + fmt.Sprint(colCount)).Text())},
 		},
-		MaximumCreditLine: cleanString(product.CreditLimit),
-		MinimumAge:        cleanString(product.MinAge),
+		{
+			FeeType:    cleanText(doc.Find("tr.attr-supplementaryCardHolderAnnualFeeFirstYear .text-center.frst-co").Text()),
+			Conditions: []string{cleanText(doc.Find("tr.attr-supplementaryCardHolderAnnualFeeFirstYear .cmpr-col.col" + fmt.Sprint(colCount)).Text())},
+		},
 	}
-	newProduct.IncomeCondition.Income = ""
-	newProduct.IncomeCondition.Condition = cleanString(product.MinIncome)
-	newProduct.InterestFreePeriod = cleanString(product.InterestFree)
 
-	// Populate the Fees struct.
-	newProduct.Fees.EntranceFee = cleanString(product.EntranceFee)
-	annualFeeParts := strings.Split(product.AnnualFee, "ปีถัดไป:")
-	if len(annualFeeParts) == 2 {
-		newProduct.Fees.AnnualFee.FirstYear = strings.TrimSpace(strings.Split(annualFeeParts[0], "ปีแรก:")[1])
-		newProduct.Fees.AnnualFee.SubsequentYears = strings.TrimSpace(annualFeeParts[1])
+	return SupplementaryCard{
+		MaxNumberOfCards: maxNumberOfCards,
+		AgeRequirement: AgeRequirement{
+			MinAge:     minAge,
+			MaxAge:     maxAge,
+			Conditions: []string{conditions},
+		},
+		Fees: fees,
 	}
-	newProduct.Fees.FxRiskFee = cleanString(product.OtherFees)
-	newProduct.Fees.CashAdvanceFee.Amount = cleanString(product.CashAdvance)
-	newProduct.Fees.AdditionalInfo.ProductWebsite = cleanString(product.ProductURL)
-	newProduct.Fees.AdditionalInfo.FeeWebsite = cleanString(product.FeeURL)
-
-	newProducts = append(newProducts, newProduct)
-
-	return newProducts
 }
 
-// cleanString is a helper function to trim and clean strings.
-func cleanString(str string) string {
-	return strings.TrimSpace(str)
+func extractAdditionInfo(doc *goquery.Document, colCount int) AdditionInfo {
+	productURL := cleanText(doc.Find(fmt.Sprintf("tr.attr-url .cmpr-col.col%d a", colCount)).AttrOr("href", ""))
+	feeURL := cleanText(doc.Find(fmt.Sprintf("tr.attr-feeurl .cmpr-col.col%d a", colCount)).AttrOr("href", ""))
+
+	return AdditionInfo{
+		ProductURL: productURL,
+		FeeURL:     feeURL,
+	}
 }
 
-// cleanSpaces removes extra spaces and line breaks within a string.
-func cleanSpaces(str string) string {
-	re := regexp.MustCompile(`\s+`)
-	return re.ReplaceAllString(str, " ")
+func extractInt(doc *goquery.Document, colCount int, selector string) int {
+	var result int
+	text := cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d span", selector, colCount)).Text())
+	fmt.Sscanf(text, "%d", &result)
+	return result
+}
+
+func extractAgeRange(doc *goquery.Document, colCount int, selector string) (int, int) {
+	var minAge, maxAge int
+	text := cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d span", selector, colCount)).Text())
+	fmt.Sscanf(text, "%d %d", &minAge, &maxAge)
+	return minAge, maxAge
+}
+
+func cleanText(text string) string {
+	return strings.Join(strings.Fields(strings.ReplaceAll(text, "\n", "")), " ")
 }
