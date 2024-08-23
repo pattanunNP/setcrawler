@@ -31,43 +31,43 @@ type FeaturesAndConditions struct {
 	Network                 string            `json:"network"`
 	Highlights              []string          `json:"highlights"`
 	AgeRequirement          int               `json:"age_requirement"`
-	ApplicantQualifications string            `json:"applicant_qualificaitons"`
-	UsageConditions         string            `json:"usage_conditions"`
+	ApplicantQualifications []string          `json:"applicant_qualificaitons"`
+	UsageConditions         []string          `json:"usage_conditions"`
 	CardExpiry              string            `json:"card_expiry"`
 	PaymentOptions          []string          `json:"payment_options"`
 	SupplementaryCard       SupplementaryCard `json:"supplemntary_card"`
 }
 
 type SupplementaryCard struct {
-	Available  string   `json:"available"`
+	Available  []string `json:"available"`
 	Conditions []string `json:"conditions"`
 }
 
 type GeneralFees struct {
-	EntranceFee                 string `json:"entrance_fee"`
-	AnnualFee                   string `json:"annual_fee"`
-	CardReplacementFee          string `json:"card_replacement_fee"`
-	PinReplacementFee           string `json:"pin_replacement_fee"`
-	StatementCopyFee            string `json:"statement_copy_fee"`
-	SlipCopyFee                 int    `json:"slip_copy_fee"`
-	TransactionInvestigationFee string `json:"transaction_investigation_fee"`
-	OtherFees                   string `json:"other_fees"`
+	EntranceFee                 string   `json:"entrance_fee"`
+	AnnualFee                   string   `json:"annual_fee"`
+	CardReplacementFee          string   `json:"card_replacement_fee"`
+	PinReplacementFee           string   `json:"pin_replacement_fee"`
+	StatementCopyFee            string   `json:"statement_copy_fee"`
+	SlipCopyFee                 int      `json:"slip_copy_fee"`
+	TransactionInvestigationFee string   `json:"transaction_investigation_fee"`
+	OtherFees                   []string `json:"other_fees"`
 }
 
 type TransactionFeesDomestic struct {
-	FreeTransactionsPerMonth        int    `json:"free_transactions_per_month"`
-	CashWithdrawal                  string `json:"cash_withdrawal"`
-	InServiceAreaBalanceInquiryFee  int    `json:"in_service_area_balance_inquiry_fee"`
-	OutServiceAreaBalanceInquiryFee int    `json:"out_service_area_balance_inquiry_fee"`
-	InServiceAreaCashWithdrawalFee  int    `json:"in_service_area_cash_withdrawal_fee"`
-	OutServiceAreaCashWithdrawalFee int    `json:"out_service_area_cash_withdrawal_fee"`
-	InServiceAreaTransferFee        int    `json:"in_service_area_transfer_fee"`
-	OutServiceAreaTransferFee       int    `json:"out_service_area_transfer_fee"`
-	TransferBetweenProvidersFee     int    `json:"transfer_between_providers_fee"`
-	Under10000Fee                   int    `json:"under_10000_fee"`
-	Between10001And50000Fee         int    `json:"between_10001_and_50000_fee"`
-	AdditionalFee                   int    `json:"additional_fee"`
-	OtherConditions                 string `json:"other_conditions"`
+	FreeTransactionsPerMonth        int      `json:"free_transactions_per_month"`
+	CashWithdrawal                  []string `json:"cash_withdrawal"`
+	InServiceAreaBalanceInquiryFee  int      `json:"in_service_area_balance_inquiry_fee"`
+	OutServiceAreaBalanceInquiryFee int      `json:"out_service_area_balance_inquiry_fee"`
+	InServiceAreaCashWithdrawalFee  int      `json:"in_service_area_cash_withdrawal_fee"`
+	OutServiceAreaCashWithdrawalFee int      `json:"out_service_area_cash_withdrawal_fee"`
+	InServiceAreaTransferFee        int      `json:"in_service_area_transfer_fee"`
+	OutServiceAreaTransferFee       int      `json:"out_service_area_transfer_fee"`
+	TransferBetweenProvidersFee     int      `json:"transfer_between_providers_fee"`
+	Under10000Fee                   int      `json:"under_10000_fee"`
+	Between10001And50000Fee         int      `json:"between_10001_and_50000_fee"`
+	AdditionalFee                   int      `json:"additional_fee"`
+	OtherConditions                 string   `json:"other_conditions"`
 }
 
 type TransactionFeesInternational struct {
@@ -123,6 +123,39 @@ func extractFloatFromString(input string) float64 {
 	return value
 }
 
+var hyphenOrNumberRegex = regexp.MustCompile(`(?:\s*-\s*|\s*\d+\.\s*)`)
+
+func splitByHyphenOrNumber(input string) []string {
+	result := hyphenOrNumberRegex.Split(input, -1)
+
+	for i, val := range result {
+		result[i] = strings.TrimSpace(val)
+	}
+	return filterEmptyStrings(result)
+}
+
+func filterEmptyStrings(arr []string) []string {
+	var filtered []string
+	for _, str := range arr {
+		if str != "" {
+			filtered = append(filtered, str)
+		}
+	}
+	return filtered
+}
+
+func splitByHyphen(input string) []string {
+	parts := strings.Split(input, "-")
+	var result []string
+	for _, part := range parts {
+		part = strings.TrimSpace(part)
+		if part != "" {
+			result = append(result, part)
+		}
+	}
+	return result
+}
+
 func main() {
 	url := "https://app.bot.or.th/1213/MCPD/ProductApp/Debit/CompareProductList"
 	payloadTemplate := `{"ProductIdList":"1234,1459,1466,1606,1460,1468,1463,976,13,14,1378,1379,1380,1381,1365,1366,733,731,1492,721,722,723,1502,720,67,1377,719,718,726,727,725,724,1256,1382,1474,954,950,961,1467,1237,1634,1490,246,1642,1618,16,1499,138,11,1587,682,472,1585,1239,1236,1593,1504,1,946,958,730,732,960,1473,1476,1475,12,15,1457,1462,1469,1456,474,744,1627,1461,1458,17,1503,1478,1477,1482,1481,1484,1480,1483,473,1235,1491,1496,1240,1494,752,749,1641,1488,1485,1487,477,972,750,746,1592,2,1501,1472,1464,748,751,1594,475,964,1465,1612,962,1471,1470,1649,139,1500,1497,1493,1498,1601,1489,1369,1367,1238,1479,1486,728,729,1495","Page":%d,"Limit":3}`
@@ -166,29 +199,13 @@ func main() {
 			return
 		}
 
-		// Check the total number of pages on the first request
-		// if page == 1 {
-		// 	doc.Find("ul.pagination li.MoveLast a").Each(func(i int, s *goquery.Selection) {
-		// 		dataPage, exists := s.Attr("data-page")
-		// 		if exists {
-		// 			totalPages, err = strconv.Atoi(dataPage)
-		// 			if err != nil {
-		// 				fmt.Println("Error converting data-page to int:", err)
-		// 				totalPages = 1
-		// 			}
-		// 		}
-		// 	})
-		// }
-
 		doc.Find("th.cmpr-col").Each(func(i int, s *goquery.Selection) {
 			provider := cleanedText(s.Find("th.col-s span").Last().Text())
 			product := cleanedText(s.Find("th.font-black.text-center").Text())
 
-			// Extract features and conditions
 			productType := cleanedText(doc.Find(fmt.Sprintf(".attr-productTypeName .col%d", i+1)).Text())
 			network := cleanedText(doc.Find(fmt.Sprintf(".attr-networkTypeName .col%d", i+1)).Text())
 
-			// Extract highlights
 			var highlights []string
 			doc.Find(fmt.Sprintf(".attr-productBenefitMain .col%d span", i+1)).Each(func(index int, item *goquery.Selection) {
 				highlight := strings.TrimSpace(item.Text())
@@ -200,57 +217,55 @@ func main() {
 			ageStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-cardholderAge .col%d span", i+1)).Text())
 			ageRequirement, err := strconv.Atoi(strings.ReplaceAll(ageStr, " ปีขึ้นไป", ""))
 			if err != nil {
-				ageRequirement = 0 // Default value if parsing fails
+				ageRequirement = 0
 			}
 
-			// Extract applicant qualifications
-			applicantQualificationsHTML, err := doc.Find(fmt.Sprintf(".attr-conditionToApply .col%d span", i+1)).Html()
-			if err != nil {
-				fmt.Println("Error extracting applicant qualifications:", err)
-				return
-			}
-			applicantQualifications := strings.TrimSpace(applicantQualificationsHTML)
-			applicantQualifications = strings.ReplaceAll(applicantQualifications, "<br>", "\n")
+			applicantQualifications := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-conditionToApply .col%d span", i+1)).Text())
+			applicantQualificationsArray := splitByHyphen(applicantQualifications)
 
 			usageConditions := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-conditionToUse .col%d span", i+1)).Text())
+			usageConditionsArray := splitByHyphen(usageConditions)
 
-			// Extract card expiry
 			cardExpiry := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-usagePeriod .col%d span", i+1)).Text())
 
-			// Extract payment options
 			var paymentOptions []string
 			doc.Find(fmt.Sprintf(".attr-payment .col%d span", i+1)).Each(func(index int, item *goquery.Selection) {
 				option := strings.TrimSpace(item.Text())
 				if option != "" {
-					paymentOptions = append(paymentOptions, option)
+					paymentOptions = append(paymentOptions, splitByHyphen(option)...)
 				}
 			})
 
 			supplementaryAvailable := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-supplementaryCard .col%d span", i+1)).Text())
+			supplementaryAvailableArray := splitByHyphen(supplementaryAvailable)
 
-			var supplementaryConditions []string
+			var supplementaryConditionsArray []string
+
+			var conditionsText string
 			doc.Find(fmt.Sprintf(".attr-otherCondition .col%d span", i+1)).Each(func(index int, item *goquery.Selection) {
-				conditions := strings.TrimSpace(item.Text())
-				if conditions != "" {
-					supplementaryConditions = append(supplementaryConditions, conditions)
+				condition := strings.TrimSpace(item.Text())
+				if condition != "" {
+					conditionsText += condition
 				}
 			})
+			supplementaryConditionsArray = splitByHyphen(conditionsText)
 
-			// Extract general fees
 			entranceFee := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-cardHolderEntranceFeeDisplay .col%d span", i+1)).Text())
 			annualFee := cleanedText(doc.Find(fmt.Sprintf(".attr-annualFeeDisplay .col%d span", i+1)).Text())
-			cardReplacementFee := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-replacementCardFee .col%d span", i+1)).Text())
+			cardReplacementFee := cleanedText(doc.Find(fmt.Sprintf(".attr-replacementCardFee .col%d span", i+1)).Text())
 			pinReplacementFee := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-replacementOfCardPINFee .col%d span", i+1)).Text())
 			statementCopyFee := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-copyofStatementFee .col%d span", i+1)).Text())
 			slipCopyFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-copyOfSalesSlipFee .col%d span", i+1)).Text())
 			slipCopyFee := extractIntFromString(slipCopyFeeStr)
 			transactionInvestigationFee := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-transactionverificationFee .col%d span", i+1)).Text())
 			otherFees := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-otherFee .col%d span", i+1)).Text())
+			otherFeesArray := splitByHyphen(otherFees)
 
 			freeTransactionsPerMonthStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-11 .col%d span", i+1)).Text())
 			freeTransactionsPerMonth := extractIntFromString(freeTransactionsPerMonthStr)
 
 			cashWithdrawal := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-11 .col%d span", i+1)).Text())
+			cashWithdrawalArray := splitByHyphenOrNumber(cashWithdrawal)
 
 			inServiceAreaBalanceInquiryFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-31 .col%d span", i+1)).Text())
 			inServiceAreaBalanceInquiryFee := extractIntFromString(inServiceAreaBalanceInquiryFeeStr)
@@ -293,7 +308,6 @@ func main() {
 			currencyConversionFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-53 .col%d span", i+1)).Text())
 			currencyConversionFee := extractFloatFromString(currencyConversionFeeStr)
 
-			// Extract insurance details
 			insuranceType := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-insuranceTypeName .col%d span", i+1)).Text())
 			insuranceCompany := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-insuranceCompanyName .col%d span", i+1)).Text())
 
@@ -319,7 +333,6 @@ func main() {
 			claimProcedure := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-CoveragePeriod .col%d span", i+1)).Text())
 			contactInsuranceCompany := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-CoveragePeriod .col%d span", i+1)).Text())
 
-			// Extract additional info
 			productWebsite := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-uRL .col%d a", i+1)).AttrOr("href", ""))
 			feeWebsite := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-uRLFee .col%d span", i+1)).Text())
 
@@ -331,13 +344,13 @@ func main() {
 					Network:                 network,
 					Highlights:              highlights,
 					AgeRequirement:          ageRequirement,
-					ApplicantQualifications: cleanedText(applicantQualifications),
-					UsageConditions:         usageConditions,
+					ApplicantQualifications: applicantQualificationsArray,
+					UsageConditions:         usageConditionsArray,
 					CardExpiry:              cardExpiry,
 					PaymentOptions:          paymentOptions,
 					SupplementaryCard: SupplementaryCard{
-						Available:  supplementaryAvailable,
-						Conditions: supplementaryConditions,
+						Available:  supplementaryAvailableArray,
+						Conditions: supplementaryConditionsArray,
 					},
 				},
 				GeneralFees: GeneralFees{
@@ -348,11 +361,11 @@ func main() {
 					StatementCopyFee:            statementCopyFee,
 					SlipCopyFee:                 slipCopyFee,
 					TransactionInvestigationFee: transactionInvestigationFee,
-					OtherFees:                   otherFees,
+					OtherFees:                   otherFeesArray,
 				},
 				TransactionFeesDomestic: TransactionFeesDomestic{
 					FreeTransactionsPerMonth:        freeTransactionsPerMonth,
-					CashWithdrawal:                  cashWithdrawal,
+					CashWithdrawal:                  cashWithdrawalArray,
 					InServiceAreaBalanceInquiryFee:  inServiceAreaBalanceInquiryFee,
 					OutServiceAreaBalanceInquiryFee: outServiceAreaBalanceInquiryFee,
 					InServiceAreaCashWithdrawalFee:  inServiceAreaCashWithdrawalFee,
@@ -419,19 +432,14 @@ func main() {
 }
 
 func cleanedText(input string) string {
-	// Replace \u003c with < and \u003e with >
 	cleaned := strings.ReplaceAll(input, `\u003c`, "<")
 	cleaned = strings.ReplaceAll(cleaned, `\u003e`, ">")
-
-	// Remove HTML tags
 	cleaned = regexp.MustCompile(`<[^>]+>`).ReplaceAllString(cleaned, "")
-
 	cleaned = strings.ReplaceAll(cleaned, "\n", "")
 	cleaned = strings.ReplaceAll(cleaned, "\t", "")
 	cleaned = strings.TrimSpace(cleaned)
-
 	spaceRegex := regexp.MustCompile(`\s+`)
-	cleaned = spaceRegex.ReplaceAllString(cleaned, " ")
+	cleaned = spaceRegex.ReplaceAllString(cleaned, "")
 
 	return cleaned
 }
@@ -453,5 +461,4 @@ func setHeaders(req *http.Request) {
 	req.Header.Set("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36")
 	req.Header.Set("verificationtoken", `ToQWsd6JpdywXWWiHC8F7T8eQZkBkBxMij7tw9cmR-ustXzjzA5kmlRIalkuj-0WblKIrki2wYe-iFBJdeGpAsL5UDE7ix8yTesristz_WY1,9R2bjBfVukm3UcFSumGCpsGpB097wGQ0InKyeYA45PZanVekI2TPT-Jc9AOGVGhWT16oGo44ZKOAzFhfM1Y8uDiDI3hm5n6jnKVf5IlbPL01`)
 	req.Header.Set("x-requested-with", "XMLHttpRequest")
-
 }

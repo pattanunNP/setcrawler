@@ -8,7 +8,6 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"strconv"
 	"strings"
 	"time"
 
@@ -41,10 +40,10 @@ type IncomeConditions struct {
 }
 
 type GeneralFee struct {
-	FeeType     string      `json:"fee_type"`
-	Amount      int         `json:"amount,omitempty"`
-	AmountRange AmountRange `json:"amount_range,omitempty"`
-	Conditions  []string    `json:"conditions,omitempty"`
+	FeeType     string       `json:"fee_type"`
+	Amount      int          `json:"amount,omitempty"`
+	AmountRange *AmountRange `json:"amount_range"`
+	Conditions  []string     `json:"conditions"`
 }
 
 type AmountRange struct {
@@ -53,8 +52,8 @@ type AmountRange struct {
 }
 
 type PaymentMethod struct {
-	MethodType string `json:"method_type"`
-	Details    string `json:"details"`
+	MethodType string   `json:"method_type"`
+	Details    []string `json:"details"`
 }
 
 type LatePaymentPenalty struct {
@@ -69,7 +68,7 @@ type CashWithdrawalFee struct {
 	FeeType          string `json:"fee_type"`
 	InterestRate     int    `json:"interest_rate,omitempty"`
 	AmountPercentage int    `json:"amount_percentage,omitempty"`
-	ConditionsType   string `json:"conditions_type,omitempty"`
+	ConditionsType   string `json:"conditions_type"`
 	Details          string `json:"details,omitempty"`
 }
 
@@ -120,27 +119,27 @@ func main() {
 		log.Fatalf("Failed to retrieve data: %v", resp.Status)
 	}
 
-	body, err := io.ReadAll(resp.Body)
-	if err != nil {
-		log.Fatalf("Error reading response: %v", err)
-	}
+	// body, err := io.ReadAll(resp.Body)
+	// if err != nil {
+	// 	log.Fatalf("Error reading response: %v", err)
+	// }
 
-	doc, err := goquery.NewDocumentFromReader(bytes.NewReader(body))
-	if err != nil {
-		log.Fatalf("Error loading HTML: %v", err)
-	}
+	// doc, err := goquery.NewDocumentFromReader(bytes.NewReader(body))
+	// if err != nil {
+	// 	log.Fatalf("Error loading HTML: %v", err)
+	// }
 
 	// Extract total number of pages
-	totalPages := 1
-	doc.Find("ul.pagination li.MoveLast a").Each(func(i int, s *goquery.Selection) {
-		dataPage, exists := s.Attr("data-page")
-		if exists {
-			totalPages, err = strconv.Atoi(dataPage)
-			if err != nil {
-				log.Fatalf("Error converting data-page to int: %v", err)
-			}
-		}
-	})
+	totalPages := 3
+	// doc.Find("ul.pagination li.MoveLast a").Each(func(i int, s *goquery.Selection) {
+	// 	dataPage, exists := s.Attr("data-page")
+	// 	if exists {
+	// 		totalPages, err = strconv.Atoi(dataPage)
+	// 		if err != nil {
+	// 			log.Fatalf("Error converting data-page to int: %v", err)
+	// 		}
+	// 	}
+	// })
 
 	var allProducts []ProductDetails
 
@@ -235,15 +234,41 @@ func setHeaders(req *http.Request) {
 	req.Header.Set("X-Requested-With", "XMLHttpRequest")
 }
 
+func splitAndClean(text string) []string {
+	// Initialize an empty slice to store the parts
+	parts := []string{}
+
+	// Split the text by dash and trim whitespace
+	for _, part := range strings.Split(text, "-") {
+		trimmed := strings.TrimSpace(part)
+		if trimmed != "" {
+			parts = append(parts, trimmed)
+		}
+	}
+
+	// Return nil if no valid parts are found to avoid empty arrays in JSON
+	if len(parts) == 0 {
+		return nil
+	}
+
+	return parts
+}
+
 func extractFeatures(doc *goquery.Document, colCount int) Features {
 	benefitType := cleanText(doc.Find(fmt.Sprintf("tr.attr-header.attr-productBenefitType.trbox-shadow .cmpr-col.col%d", colCount)).Text())
-	details := cleanText(strings.Join(doc.Find(fmt.Sprintf("tr.attr-header.attr-productBenefitMain.trbox-shadow .cmpr-col.col%d span", colCount)).Map(func(i int, s *goquery.Selection) string {
-		return s.Text()
-	}), "\n- "))
+	detailsText := cleanText(doc.Find(fmt.Sprintf("tr.attr-header.attr-productBenefitMain.trbox-shadow .cmpr-col.col%d span", colCount)).Text())
+
+	details := []string{}
+	for _, part := range strings.Split(detailsText, "-") {
+		trimmed := strings.TrimSpace(part)
+		if trimmed != "" {
+			details = append(details, trimmed)
+		}
+	}
 
 	return Features{
 		BenefitType: benefitType,
-		Details:     []string{details},
+		Details:     details,
 	}
 }
 
@@ -303,14 +328,29 @@ func extractGeneralFees(doc *goquery.Document, colCount int) []GeneralFee {
 		fee := GeneralFee{
 			FeeType: cleanText(doc.Find(fmt.Sprintf("tr.%s .text-center.frst-col", feeType.FeeTypeSelector)).Text()),
 		}
+		conditionsText := cleanText(doc.Find(fmt.Sprintf("tr.%s .text-primary", feeType.FeeTypeSelector)).Text())
+		fee.Conditions = splitAndClean(conditionsText)
 
 		if feeType.IsAmountRange {
-			fee.AmountRange = extractAmountRange(doc, colCount, feeType.AmountSelector)
+			amountRange := extractAmountRange(doc, colCount, feeType.AmountSelector)
+			// Set AmountRange only if it has non-zero values
+			if amountRange.Min > 0 || amountRange.Max > 0 {
+				fee.AmountRange = &amountRange
+			} else {
+				fee.AmountRange = nil
+			}
 		} else {
-			fee.Amount = extractAmount(doc, colCount, feeType.AmountSelector)
+			amount := extractAmount(doc, colCount, feeType.AmountSelector)
+			fee.Amount = amount
+			// Set AmountRange to nil since it's not a range type
+			if amount > 0 {
+				fee.AmountRange = &AmountRange{Min: amount, Max: amount}
+			} else {
+				fee.AmountRange = nil
+			}
 		}
 
-		fee.Conditions = []string{cleanText(doc.Find(fmt.Sprintf("tr.%s .text-primary", feeType.FeeTypeSelector)).Text())}
+		// Append the fee to the list
 		generalFees = append(generalFees, fee)
 	}
 
@@ -319,15 +359,21 @@ func extractGeneralFees(doc *goquery.Document, colCount int) []GeneralFee {
 
 func extractAmount(doc *goquery.Document, colCount int, selector string) int {
 	var amount int
-	amountText := cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d span", selector, colCount)).Text())
-	fmt.Sscanf(amountText, "%d", &amount)
+	amounText := cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d span", selector, colCount)).Text())
+	fmt.Sscanf(amounText, "%d", &amount)
 	return amount
 }
 
 func extractAmountRange(doc *goquery.Document, colCount int, selector string) AmountRange {
 	var min, max int
 	amountText := cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d span", selector, colCount)).Text())
-	fmt.Sscanf(amountText, "%d-%d", &min, &max)
+
+	if strings.Contains(amountText, "-") {
+		fmt.Sscanf(amountText, "%d-%d", &min, &max)
+	} else {
+		fmt.Sscanf(amountText, "%d", &min)
+		max = min
+	}
 	return AmountRange{Min: min, Max: max}
 }
 
@@ -353,9 +399,11 @@ func extractPaymentMethods(doc *goquery.Document, colCount int) []PaymentMethod 
 
 	for _, pt := range paymentTypes {
 		methodType := cleanText(doc.Find(fmt.Sprintf("tr.%s .text-center.frst-col", pt.MethodTypeSelector)).Text())
-		details := cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d span", pt.DetailsSelector, colCount)).Text())
+		detailsText := cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d span", pt.DetailsSelector, colCount)).Text())
 
-		if methodType != "" && details != "" {
+		details := splitAndClean(detailsText)
+
+		if methodType != "" && len(details) > 0 {
 			paymentMethods = append(paymentMethods, PaymentMethod{
 				MethodType: methodType,
 				Details:    details,
@@ -387,8 +435,10 @@ func extractLatePaymentPenalties(doc *goquery.Document, colCount int) []LatePaym
 			AmountPercentage: extractPercentage(doc, colCount, pt.AmountPercentageSelector),
 			MinimumAmount:    extractMinimumAmount(doc, colCount, pt.MinimumAmountSelector),
 			InterestRate:     extractInterestRate(doc, colCount, pt.InterestRateSelector),
-			Conditions:       []string{cleanText(doc.Find(fmt.Sprintf("tr.%s .text-primary", pt.ConditionsSelector)).Text())},
 		}
+
+		conditionsText := cleanText(doc.Find(fmt.Sprintf("tr.%s .text-primary", pt.ConditionsSelector)).Text())
+		penalty.Conditions = splitAndClean(conditionsText)
 		penalties = append(penalties, penalty)
 	}
 

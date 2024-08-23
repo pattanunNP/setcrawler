@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"log"
 	"net/http"
 	"os"
 	"regexp"
@@ -24,19 +23,19 @@ type ProductInfo struct {
 	ProductUsageConditions   ProductUsageConditions   `json:"product_usage_conditions"`
 	Insurance                Insurance                `json:"insurance"`
 	ProductFees              ProductFees              `json:"product_fees"`
-	GeneralFee               GeneralFee               `json:"genera_fee"`
+	GeneralFee               GeneralFee               `json:"general_fee"`
 	AdditionInfo             AdditionInfo             `json:"addition_info"`
 }
 
 type GeneralFee struct {
-	CoinCountingFee                string `json:"coin_counting_fee"`
-	CrossBankDepositWithdrawalFee  string `json:"cross_bank_deposit_withdrawal_fee"`
-	OtherProviderDepositFeeCDMATM  string `json:"other_provider_deposit_fee_cdm_atm"`
-	SameProviderDepositFeeCDMATM   string `json:"same_provider_deposit_fee_cdm_atm"`
-	DepositWithdrawalAgentFee      string `json:"deposit_withdrawal_agent_fee"`
-	AutoTransferFeeSavingsChecking string `json:"auto_transfer_fee_savings_checking"`
-	CrossBankTransferFee           string `json:"cross_bank_transfer_fee"`
-	OtherFees                      string `json:"other_fees"`
+	CoinCountingFee                string   `json:"coin_counting_fee"`
+	CrossBankDepositWithdrawalFee  string   `json:"cross_bank_deposit_withdrawal_fee"`
+	OtherProviderDepositFeeCDMATM  []string `json:"other_provider_deposit_fee_cdm_atm"`
+	SameProviderDepositFeeCDMATM   string   `json:"same_provider_deposit_fee_cdm_atm"`
+	DepositWithdrawalAgentFee      string   `json:"deposit_withdrawal_agent_fee"`
+	AutoTransferFeeSavingsChecking []string `json:"auto_transfer_fee_savings_checking"`
+	CrossBankTransferFee           []string `json:"cross_bank_transfer_fee"`
+	OtherFees                      string   `json:"other_fees"`
 }
 
 type AdditionInfo struct {
@@ -108,28 +107,7 @@ func main() {
 	}
 	defer resp.Body.Close()
 
-	body, err := io.ReadAll(resp.Body)
-	if err != nil {
-		fmt.Println("Error reading response body:", err)
-		return
-	}
-
-	doc, err := goquery.NewDocumentFromReader(bytes.NewReader(body))
-	if err != nil {
-		fmt.Println("Error parsing response body:", err)
-		return
-	}
-
-	totalPages := 1
-	doc.Find("ul.pagination li.MoveLast a").Each(func(i int, s *goquery.Selection) {
-		dataPage, exists := s.Attr("data-page")
-		if exists {
-			totalPages, err = strconv.Atoi(dataPage)
-			if err != nil {
-				log.Fatalf("Error converting data-page to int: %v", err)
-			}
-		}
-	})
+	totalPages := 4
 
 	var allProducts []ProductInfo
 
@@ -168,21 +146,13 @@ func main() {
 			return
 		}
 
-		// var products []ProductInfo
-
 		doc.Find("th.cmpr-col").Each(func(i int, s *goquery.Selection) {
 			provider := s.Find("th.col-s span").Last().Text()
 			product := s.Find("th.font-black.text-center").Text()
 			interestText := doc.Find(fmt.Sprintf("tbody td.cmpr-col.col%d.text-center span.text-bold", i+1)).Text()
 			minRate, maxRate := parseInterestRate(interestText)
 
-			conditionalRate := []string{}
-			doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-intr.trbox-shadow td.cmpr-col.col%d", i+1)).Each(func(j int, condSel *goquery.Selection) {
-				condText := cleanedText(condSel.Text())
-				if condText != "" {
-					conditionalRate = append(conditionalRate, condText)
-				}
-			})
+			conditionalRate := parseConditionalRate(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-intr.trbox-shadow td.cmpr-col.col%d", i+1)).Text())
 
 			interestCalculationMethod := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-intrmthd.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
 			taxFree := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-intrwotax.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
@@ -198,13 +168,7 @@ func main() {
 			otherProductRequirements := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-prodbuy.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
 			minAge, maxAge := parseAgeRange(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-age.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
 
-			specificOpeningConditions := []string{}
-			doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-opencond.trbox-shadow td.cmpr-col.col%d", i+1)).Each(func(j int, condSel *goquery.Selection) {
-				condText := cleanedText(condSel.Text())
-				if condText != "" {
-					specificOpeningConditions = append(specificOpeningConditions, condText)
-				}
-			})
+			specificOpeningConditions := parseSectionedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-opencond.trbox-shadow td.cmpr-col.col%d", i+1)).Text())
 
 			minimumDepositPerTransactionText := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-mindpst.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
 			var minimumDepositPerTransaction *int
@@ -218,13 +182,7 @@ func main() {
 			additionalDepositsAllowed := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-topup.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
 			partialWithdrawalsAllowed := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-wdprtprnc.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
 
-			depositWithdrawTransferConditions := []string{}
-			doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-wdprtxnblnc.trbox-shadow td.cmpr-col.col%d span", i+1)).Each(func(j int, condSel *goquery.Selection) {
-				condText := cleanedText(condSel.Text())
-				if condText != "" {
-					depositWithdrawTransferConditions = append(depositWithdrawTransferConditions, condText)
-				}
-			})
+			depositWithdrawTransferConditions := parseSectionedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-wdprtxnblnc.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
 
 			accountRenewalWhenDue := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-accrenew.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
 
@@ -254,24 +212,24 @@ func main() {
 				}
 			}
 
-			transactionHistoryFee := []string{}
-			doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-accmbranch.trbox-shadow td.cmpr-col.col%d span", i+1)).Each(func(j int, condSel *goquery.Selection) {
-				condText := cleanedText(condSel.Text())
-				if condText != "" {
-					transactionHistoryFee = append(transactionHistoryFee, condText)
-				}
-			})
+			transactionHistoryFee := parseTranSactionHistoryFee(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-accmbranch.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
 
 			accountClosureFee := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-accmclosebk.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
 
 			// General Fee parsing
 			coinCountingFee := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-feecorn.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
 			crossBankDepositWithdrawalFee := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-feedeposit.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
-			otherProviderDepositFeeCDMATM := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-feedepositother trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
-			sameProviderDepositFeeCDMATM := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-feeother1 trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
+
+			// Updated parsing for other_provider_deposit_fee_cdm_atm
+			otherProviderDepositFeeCDMATM := parseSlashSeparatedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-feecdm.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
+
+			sameProviderDepositFeeCDMATM := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-feecdm2.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
 			depositWithdrawalAgentFee := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-feeother2 trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
-			autoTransferFeeSavingsChecking := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-feetranfer.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
-			crossBankTransferFee := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-feetranfer2.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
+
+			autoTransferFeeSavingsChecking := parseAutoTransferFee(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-feetranfer.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
+
+			crossBankTransferFee := parseSlashSeparatedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-feetranfer2.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
+
 			otherFees := cleanedText(doc.Find(fmt.Sprintf("tbody tr.attr-header.attr-feeother1.trbox-shadow td.cmpr-col.col%d span", i+1)).Text())
 
 			// Additional Info parsing
@@ -460,6 +418,118 @@ func parseAgeRange(ageText string) (*int, *int) {
 	return &minAge, &maxAge
 }
 
+func parseSectionedText(text string) []string {
+	sectionPattern := regexp.MustCompile(`(\d+\.)|(-)`)
+	matches := sectionPattern.FindAllStringIndex(text, -1)
+
+	var result []string
+	startIndex := 0
+
+	for _, match := range matches {
+		if match[0] > startIndex {
+			section := strings.TrimSpace(text[startIndex:match[0]])
+			if section != "" {
+				result = append(result, section)
+			}
+		}
+		startIndex = match[0]
+	}
+
+	// Append the last section if any
+	if startIndex < len(text) {
+		section := strings.TrimSpace(text[startIndex:])
+		if section != "" {
+			result = append(result, section)
+		}
+	}
+
+	return result
+}
+
+func parseSlashSeparatedText(text string) []string {
+	// Remove newline characters and unnecessary spaces
+	cleanedText := strings.ReplaceAll(text, "\n", "")
+	cleanedText = strings.Join(strings.Fields(cleanedText), " ")
+
+	sections := strings.Split(cleanedText, "/")
+	var result []string
+
+	for _, section := range sections {
+		cleanSection := strings.TrimSpace(section)
+		if cleanSection != "" {
+			result = append(result, cleanSection)
+		}
+	}
+	return result
+}
+
+func parseTranSactionHistoryFee(text string) []string {
+	sections := []string{}
+	parts := strings.Split(text, "เงื่อนไข:")
+	if len(parts) > 0 {
+		mainPart := strings.TrimSpace(parts[0])
+		sections = append(sections, strings.Split(mainPart, "ขอใบแสดงรายการย้อนหลัง")...)
+	}
+
+	if len(parts) > 1 {
+		conditionPart := strings.TrimSpace(parts[1])
+		conditionSections := strings.Split(conditionPart, "-")
+		for _, section := range conditionSections {
+			cleanedSection := strings.TrimSpace(section)
+			if cleanedSection != "" {
+				sections = append(sections, cleanedSection)
+			}
+		}
+	}
+
+	for i, sec := range sections {
+		sections[i] = strings.TrimSpace(sec)
+		if strings.HasPrefix(sec, "น้อยกว่า") || strings.HasPrefix(sec, "ตั้งแต่") || strings.HasPrefix(sec, "มากกว่า") {
+			sections[i] = "- " + sec
+		} else if sec != "" && !strings.HasPrefix(sec, "-") {
+			sections[i] = "ขอใบแสดงรานการย้อนหลัง" + sec
+		}
+	}
+	return sections
+}
+
+func parseAutoTransferFee(text string) []string {
+	cleanedText := strings.ReplaceAll(text, "\n", "")
+	cleanedText = strings.Join(strings.Fields(cleanedText), " ")
+
+	sections := []string{}
+	parts := strings.Split(cleanedText, "เงื่อนไข")
+	if len(parts) > 0 {
+		mainPart := strings.TrimSpace(parts[0])
+		if mainPart != "" && mainPart != "-" {
+			sections = append(sections, mainPart)
+		}
+	}
+
+	if len(parts) > 1 {
+		conditionsPart := strings.TrimSpace(parts[1])
+		conditionSections := strings.Split(conditionsPart, "-")
+		for _, section := range conditionSections {
+			cleanSection := strings.TrimSpace(section)
+			if cleanSection != "" {
+				sections = append(sections, cleanSection)
+			}
+		}
+	}
+
+	// Remove colon if present
+	for i, sec := range sections {
+		sections[i] = strings.ReplaceAll(sec, ":", "")
+	}
+
+	return sections
+}
+
+func parseConditionalRate(text string) []string {
+	text = cleanedText(text)
+	return strings.Split(text, "เงินฝากส่วนที่เกิน")
+}
+
 func setHeaders(req *http.Request) {
 	req.Header.Set("accept", "text/plain, */*; q=0.01")
 	req.Header.Set("accept-language", "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7")
@@ -477,5 +547,4 @@ func setHeaders(req *http.Request) {
 	req.Header.Set("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36")
 	req.Header.Set("verificationtoken", "bbRZjCUNPATqay7Tj6HdKx1qQ-tcSOFS3_P4itlr8FBNruy-3MAPLQPnO9gdpzapGwEyizGCY5dtcRdp4PECDFTZGEVqkdWGR7QemV7y_RA1,s0LfE_Sesi9xWyLJErtHVN4k5o4DsrW_b1MhwcdDFa6ez66W4GPFb4GRkmVucv7_Q0neSgiGyEhqwv9U0iJqn4gdbIJ_p0jOYlQEUHuX-_U1")
 	req.Header.Set("x-requested-with", "XMLHttpRequest")
-
 }
