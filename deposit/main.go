@@ -107,7 +107,7 @@ func main() {
 	}
 	defer resp.Body.Close()
 
-	totalPages := 4
+	totalPages := 234
 
 	var allProducts []ProductInfo
 

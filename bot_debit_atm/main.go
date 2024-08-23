@@ -163,7 +163,7 @@ func main() {
 	var allProducts []Product
 
 	// Loop through each page
-	totalPages := 10 // Assume at least 1 page
+	totalPages := 1 // Assume at least 1 page
 	for page := 1; page <= totalPages; page++ {
 		payload := fmt.Sprintf(payloadTemplate, page)
 		req, err := http.NewRequest("POST", url, bytes.NewBuffer([]byte(payload)))

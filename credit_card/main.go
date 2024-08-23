@@ -8,6 +8,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strconv"
 	"strings"
 	"time"
 
@@ -119,27 +120,27 @@ func main() {
 		log.Fatalf("Failed to retrieve data: %v", resp.Status)
 	}
 
-	// body, err := io.ReadAll(resp.Body)
-	// if err != nil {
-	// 	log.Fatalf("Error reading response: %v", err)
-	// }
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		log.Fatalf("Error reading response: %v", err)
+	}
 
-	// doc, err := goquery.NewDocumentFromReader(bytes.NewReader(body))
-	// if err != nil {
-	// 	log.Fatalf("Error loading HTML: %v", err)
-	// }
+	doc, err := goquery.NewDocumentFromReader(bytes.NewReader(body))
+	if err != nil {
+		log.Fatalf("Error loading HTML: %v", err)
+	}
 
 	// Extract total number of pages
-	totalPages := 3
-	// doc.Find("ul.pagination li.MoveLast a").Each(func(i int, s *goquery.Selection) {
-	// 	dataPage, exists := s.Attr("data-page")
-	// 	if exists {
-	// 		totalPages, err = strconv.Atoi(dataPage)
-	// 		if err != nil {
-	// 			log.Fatalf("Error converting data-page to int: %v", err)
-	// 		}
-	// 	}
-	// })
+	totalPages := 1
+	doc.Find("ul.pagination li.MoveLast a").Each(func(i int, s *goquery.Selection) {
+		dataPage, exists := s.Attr("data-page")
+		if exists {
+			totalPages, err = strconv.Atoi(dataPage)
+			if err != nil {
+				log.Fatalf("Error converting data-page to int: %v", err)
+			}
+		}
+	})
 
 	var allProducts []ProductDetails
 
