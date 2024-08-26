@@ -1,0 +1,3134 @@
+[
+ {
+  "service_provider": "ออล มันนี่",
+  "product": "สินเชื่อเพื่อซื้อสินค้ายูไนเต็ดฟู้ดส์และพันธมิตร",
+  "productDetails": {
+   "details": [
+    "วงเงินทุนหมุนเวียนในการทำธุรกิจ สำหรับคนค้าขายหรือเจ้าของกิจการ ไม่ต้องมีหลักประกัน โดยใช้สำหรับการซื้อสินค้ากลุ่มยูไนเต็ดฟู้ดส์และพันธมิตรเท่านั้น หากจ่ายเต็มจำนวน ภายในวันครบกำหนด จะไม่คิดดอกเบี้ย"
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน, ลักษณะสินเชื่ออื่น ๆ",
+    "รายละเอียดลักษณะสินเชื่อ",
+    "เบิกถอนเพื่อชำระสินค้า ผ่านพนักงานงานหน่วยรถของบริษัท ออล มาร์เก็ตติ้ง จำกัด เท่านั้น",
+    "สามารถเลือกชำระยอดได้ตามต้องการ แต่ไม่น้อยกว่ายอดขั้นต่ำที่เรียกเก็บในแต่ละเดือน",
+    "หากชําระเต็มจํานวน และตรงเวลา จะได้รับยกเว้นดอกเบี้ย",
+    "วงเงินสินเชื่อกลับคืนหลังจากได้รับชำระเงินต้น"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 70,
+   "applicant_qualifications": [
+    "ร้านค้าประจำของบริษัท ออล มาร์เก็ตติ้ง จำกัด ที่มีศักยภาพ ซื้อสินค้ายูไนเต็ดฟูดส์เกิน 6 เดือนขึ้นไป"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "ภายใต้หลักเกณฑ์การพิจารณาสินเชื่อของทางบริษัท",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ชำระคืนขั้นต่ำ 10% หรือแต่ไม่ต่ำกว่า 500 บาท",
+     "หากชำระคืนเต็มจำนวน และภายในวันครบกำหนด จะได้รับการยกเว้นดอกเบี้ยในรอบบัญชีนั้นๆ"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 15%",
+   "interest_with_servicefee_condition": [
+    "หากชำระคืนเต็มจำนวน และภายในวันครบกำหนด จะได้รับการยกเว้นดอกเบี้ยในรอบบัญชีนั้นๆ",
+    "หากชำระขั้นต่ำขึ้นไป จะถูกคิดดอกเบี้ยที่อัตรา 15% ต่อปี"
+   ],
+   "default_interest_rate": "33% ของเงินต้นคงค้าง",
+   "default_interestrate_condition": [
+    "อัตราดอกเบี้ยปกติ อัตราดอกเบี้ยผิดนัด และค่าธรรมเนียมติดตามทวงถาม รวมกันไม่เกินร้อยละ 33 ต่อปี"
+   ]
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระด้วยคิวอาร์โค้ด หรือบาร์โค้ด ผ่านโมบายแบงก์กิ้ง แอปพลิเคชันของธนาคารที่ลูกค้าใช้บริการ"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ชำระผ่านระบบ Online (Internet / Mobile banking) ได้ทุกธนาคาร ไม่มีค่าธรรมเนียม"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://allmoney.co.th/"
+  }
+ },
+ {
+  "service_provider": "มันนี่ ฮับ เซอร์วิส",
+  "product": "สินเชื่อเพื่อการท่องเที่ยว",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "อนุมัติทราบผลเบื้องต้นภายใน 5 นาที",
+    "ระยะเวลาตรวจสอบเอกสารและอนุมัติ ภายใน 3",
+    "5 วันทำการ"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน",
+    "รายละเอียดลักษณะสินเชื่อ สินเชื่อที่เปิดประสบการณ์ และโลกกว้างให้กับคุณ ไม่ว่าจะท่องเที่ยวที่ไหน ก็อุ่นใจ เพียงแค่มี มันนี่ฮับก็สามารถลุยได้เลย ไม่ต้องมัววางแผนเป็นปี"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 58,
+   "applicant_qualifications": [
+    "สำหรับพนักงานประจำ ข้าราชการ ลูกจ้าง ผู้มีรายได้แน่นอนที่มีฐานเงินเดือนไม่ต่ำกว่า 7,000 บาท"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 25%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "25% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของบริษัท",
+    "แอปพลิเคชันธนาคาร"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ชำระผ่านเคาน์เตอร์ธนาคารกสิกรไทย ค่าธรรมเนียม 10 บาทต่อรายการ",
+   "online_payment_channels": [
+    "ชำระผ่านระบบ Mobile Banking ของธนาคารไม่มีค่าธรรมเนียม"
+   ],
+   "atm_cdm_payment_channels": [
+    "ชำระผ่านเครื่อง ATM",
+    "CDM ค่าธรรมเนียม 10 บาทต่อรายการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.moneyhubservice.com"
+  }
+ },
+ {
+  "service_provider": "มันนี่ ฮับ เซอร์วิส",
+  "product": "สินเชื่อเพื่ออุปโภค บริโภค",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "อนุมัติทราบผลเบื้องต้นภายใน 5 นาที",
+    "ระยะเวลาตรวจสอบเอกสารและอนุมัติ ภายใน 3",
+    "5 วันทำการ"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน",
+    "รายละเอียดลักษณะสินเชื่อ สินเชื่อที่ตอบรับทุกคนที่กำลังมองหาตัวช่วยในการใช้จ่ายในชีวิตประจำวัน ทำให้การใช้ชีวิตของคุณไหลลื่น ไม่มีสะดุด"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 58,
+   "applicant_qualifications": [
+    "สำหรับพนักงานประจำ ข้าราชการ ลูกจ้าง ผู้มีรายได้แน่นอนที่มีฐานเงินเดือนไม่ต่ำกว่า 7,000 บาท"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 25%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "25% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของบริษัท",
+    "แอปพลิเคชันธนาคาร"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ชำระผ่านเคาน์เตอร์ธนาคารกสิกรไทย ค่าธรรมเนียม 10 บาทต่อรายการ",
+   "online_payment_channels": [
+    "ชำระผ่านระบบ Mobile Banking ของธนาคารไม่มีค่าธรรมเนียม"
+   ],
+   "atm_cdm_payment_channels": [
+    "ชำระผ่านเครื่อง ATM",
+    "CDM ค่าธรรมเนียม 10 บาทต่อรายการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.moneyhubservice.com"
+  }
+ },
+ {
+  "service_provider": "ไทยเครดิต",
+  "product": "สินเชื่อนาโนพร้อมใช้",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีบุคคลค้ำประกัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน",
+    "รายละเอียดลักษณะสินเชื่อ สินเชื่อระยะสั้น (Loan) ระยะเวลาสูงสุด 1 ปี ตามแต่ธนาคารจะพิจารณา"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "บุคคลธรรมดาที่ประกอบธุรกิจ สัญชาติไทย",
+    "วัตถุประสงค์เพื่อใช้ในการประกอบอาชีพเท่านั้น",
+    "ไม่เป็นลูกจ้างหรือพนักงานประจำ"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "ไม่มีให้บริการสำหรับลูกค้ารายใหม่",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 28%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "31% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของธนาคารและพนักงานของธนาคารที่รับชำระเงิน"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "กรณีนำเงินสดมาชำระเงินกู้สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ ณ สำนักงานสาขาของบริษัท ไม่เสียค่าธรรมเนียม",
+   "pay_at_other_branch": "มีค่าบริการ เรียกเก็บตามจริงที่ผู้ให้บริการนั้น ๆ เรียกเก็บ",
+   "pay_at_payment_counters": "มีค่าบริการ เรียกเก็บตามจริงที่ผู้ให้บริการนั้น ๆ เรียกเก็บ",
+   "online_payment_channels": [
+    "ไม่มีค่าบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": "https://www.thaicreditbank.com/th/info/180/18/ประกาศอัตราดอกเบี้ย-ค่าบริการต่างๆ-และเบี้ยปรับ-สินเชื่อนาโนพร้อมใช้"
+  }
+ },
+ {
+  "service_provider": "เงินเฮง",
+  "product": "สินเชื่อนาโนไฟแนนซ์",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "อนุมัติทราบผลเบื้องต้นภายใน 5",
+    "7 วัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "สำหรับผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า ผู้ประกอบธุรกิจที่เป็นทะเบียนการค้า หรือเป็นพนักงานประจำที่มีฐานเงินเดือนค่ำกว่า 15,000 บาท ต่อเดือน"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานของบริษัท"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "กรณีนำเงินสดมาชำระเงินกู้สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ ณ สำนักงานของบริษัท ไม่เสียค่าธรรมเนียม",
+   "pay_at_other_branch": "บริษัทเป็นผู้รับภาระค่าธรรมเนียมที่เกิดขึ้นเท่าที่ลูกค้าได้จ่ายจริงตามประเพณีที่ธนาคารเรียกเก็บในอัตราปกติ โดยลูกค้าจะต้องส่งมอบหลักฐาน ใบเสร็จค่าธรรมเนียม (ต้นฉบับ) ให้แก่บริษัทภายใน 3 วันนับจากวันที่ชำระ",
+   "pay_at_payment_counters": "บริษัทเป็นผู้รับภาระค่าธรรมเนียมที่เกิดขึ้นเท่าที่ลูกค้าได้จ่ายจริงตามประเพณีที่ธนาคารเรียกเก็บในอัตราปกติ โดยลูกค้าจะต้องส่งมอบหลักฐาน ใบเสร็จค่าธรรมเนียม (ต้นฉบับ) ให้แก่บริษัทภายใน 3 วันนับจากวันที่ชำระ",
+   "online_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "บริษัทเป็นผู้รับภาระค่าธรรมเนียมที่เกิดขึ้นเท่าที่ลูกค้าได้จ่ายจริงตามประเพณีที่ธนาคารเรียกเก็บในอัตราปกติ โดยลูกค้าจะต้องส่งมอบหลักฐาน ใบเสร็จค่าธรรมเนียม (ต้นฉบับ) ให้แก่บริษัทภายใน 3 วันนับจากวันที่ชำระ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": "https://www….."
+  }
+ },
+ {
+  "service_provider": "เพอร์เพิล เวนเจอร์ส",
+  "product": "“สินเชื่อโรบินฮู้ด” (สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ)",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "อนุมัติทราบผลเบื้องต้นภายใน 1 วัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน, สินเชื่อวงเงินกู้หมุนเวียน",
+    "รายละเอียดลักษณะสินเชื่อ เป็นวงเงินสินเชื่อหมุนเวียน หรือ Revolving Loan ที่มีวัตถุประสงค์เพื่อนำเงินไปประกอบอาชีพหรือต่อยอดกิจการ เป็นวงเงินสินเชื่อหมุนเวียน ยอดที่จ่ายชำระเข้ามาจะกลับเป็นวงเงินที่ลูกค้ากลับมาใช้ได้อีก"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 60,
+   "applicant_qualifications": [
+    "เป็นคนขับรถรับ",
+    "ส่งสินค้า หรือเจ้าของร้านค้า/ร้านอาหาร/กิจการอื่น ๆ กับโรบินฮู้ดมาแล้ว อย่างน้อย 3 เดือน"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ลูกค้าสามารถชำระเท่าไรก็ได้ แต่ต้องไม่ต่ำกว่ายอดชำระขั้นต่ำตามใบแจ้งหนี้ที่บริษัทเรียกเก็บ และต้องไม่ต่ำกว่า 500 บาท ยกเว้นกรณีที่ยอดค้างชำระทั้งหมดตามใบแจ้งหนี้ต่ำกว่า 500 บาท ลูกค้าจึงจะชำระต่ำกว่า 500 บาทได้"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของคิดจากฐานเงินต้นที่ครบกำหนดชำระ โดยเป็นยอดคงค้าง ณ สิ้นวัน (เนื่องจากดอกเบี้ยถูกคิดเป็นรายวันแบบลดต้นลดดอก)",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "QR Code/Barcode จ่ายผ่านแอปพลิเคชัน SCB Easy หรือชำระผ่านแอปพลิเคชันของธนาคารอื่น (Mobile Banking)",
+    "หักชำระสินเชื่ออัตโนมัติรายวันจากรายได้บนแพลตฟอร์มโรบินฮู้ด"
+   ],
+   "deduct_from_provider_account": "หากลูกค้าเลือกหักชำระสินเชื่ออัตโนมัติรายวัน ระบบจะทำการหักตามยอดที่เลือกอัตโนมัติรายวันจากรายได้บนแพลตฟอร์มโรบินฮู้ด",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "แอปพลิเคชัน SCB Easy หรือชำระผ่านแอปพลิเคชันของธนาคารอื่น (Mobile Banking)"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": "https://www.robinhood.co.th/th/"
+  }
+ },
+ {
+  "service_provider": "แรบบิท แคช",
+  "product": "สินเชื่อแรบบิทแคช เงินสดล่วงหน้า",
+  "productDetails": {
+   "details": [
+    "มีวัตถุประสงค์การกู้เพื่อการประกอบอาชีพ",
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "สมัครและรู้ผลอนุมัติผ่านช่องทางเว็บ URL ของแรบบิทแคช",
+    "รับเอกสารสัญญาสินเชื่อ ใบแจ้งยอด และเอกสารต่างๆ ทางช่องทางอิเล็กทรอนิกส์",
+    "วงเงินสูงสุดไม่เกิน 100,000 บาท"
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน",
+    "รายละเอียดลักษณะสินเชื่อ",
+    "วงเงินสินเชื่อหมุนเวียนที่ผู้กู้สามารถเบิกถอนเงินกู้ได้ภายในวงเงินสินเชื่อที่ได้รับอนุมัติ",
+    "เบิกเงินกู้ผ่านช่องทางเว็บ URL ของแรบบิทแคช",
+    "ชำระยอดผ่านการตัดเงินอัตโนมัติจากรายได้ค่าจ้างของบริษัทเคอรี่ เอ็กซ์เพรส หรือชำระได้เองตามต้องการ ผ่านแรบบิทแคช แอปพลิเคชัน",
+    "วงเงินสินเชื่อกลับคืนหลังจากได้รับชำระเงินต้น"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 65,
+   "applicant_qualifications": [
+    "สำหรับพนักงานรับ",
+    "ส่งพัสดุประจำ (ซัพบุคคล) และชั่วคราว (ซัพบุคคล) ของบริษัทเคอรี่ เอ็กซ์เพรส"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "ประเมินจากข้อมูลส่วนตัว ข้อมูลทางการเงิน และข้อมูลการรับงานขนส่งของผู้สมัคร",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ชำระผ่านการตัดเงินอัตโนมัติจากรายได้ค่าจ้างของบริษัทเคอรี่ เอ็กซ์เพรส",
+     "สามารถเลือกชำระเต็มจำนวนของยอดสินเชื่อเงินต้นคงค้างในแต่ละรอบบัญชี"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": [
+    "อัตราดอกเบี้ยปกติ ดอกเบี้ยผิดนัด และค่าธรรมเนียมต่างๆ รวมกันไม่เกินร้อยละ 33 ต่อปี"
+   ],
+   "default_interest_rate": "33% ของยอดเงินต้นค้างชำระ",
+   "default_interestrate_condition": [
+    "อัตราดอกเบี้ยปกติ ดอกเบี้ยผิดนัด และค่าธรรมเนียมต่างๆ รวมกันไม่เกินร้อยละ 33 ต่อปี"
+   ]
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระด้วยคิวอาร์ โค้ด หรือบาร์โค้ด ผ่านโมบายล์ แบงก์กิ้ง แอปพลิเคชันของธนาคารที่ลูกค้าใช้บริการ"
+   ],
+   "deduct_from_provider_account": "ไม่มี",
+   "deduct_from_other_provider_account": "ชำระโดยการหักเงินอัตโนมัติจากรายได้ค่าจ้างของบริษัทเคอรี่ เอ็กซ์เพรส",
+   "pay_at_provider_branch": "ไม่มี",
+   "pay_at_other_branch": "ธนาคารกรุงไทย",
+   "pay_at_payment_counters": "ไม่มี",
+   "online_payment_channels": [
+    "ชำระด้วยคิวอาร์ โค้ด หรือบาร์โค้ด ผ่านโมบายล์ แบงก์กิ้ง แอปพลิเคชันของธนาคารที่ลูกค้าใช้บริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มี"
+   ],
+   "phone_payment_channels": "ไม่มี",
+   "cheque_money_order_channels": "ไม่มี",
+   "other_payment_channels": "ไม่มี"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.rabbitcash.co.th/wp-content/uploads/2022/09/Kerry-Outsource-Loans-Product-Factsheet-2.pdf"
+  }
+ },
+ {
+  "service_provider": "แรบบิท แคช",
+  "product": "สินเชื่อแรบบิทแคช ผ่อนตามใจ",
+  "productDetails": {
+   "details": [
+    "มีวัตถุประสงค์การกู้เพื่อการประกอบอาชีพ",
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "สมัครและรู้ผลอนุมัติผ่านช่องทางแรบบิทแคช แอปพลิเคชัน",
+    "รับเอกสารสัญญาสินเชื่อ ใบแจ้งยอด และเอกสารต่างๆ ทางช่องทางอิเล็กทรอนิกส์",
+    "วงเงินสูงสุดไม่เกิน 100,000 บาท"
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน",
+    "รายละเอียดลักษณะสินเชื่อ",
+    "วงเงินสินเชื่อหมุนเวียนที่ผู้กู้สามารถเบิกถอนเงินกู้ได้ภายในวงเงินสินเชื่อที่ได้รับอนุมัติ",
+    "เบิกเงินกู้ผ่านช่องทางแรบบิทแคช แอปพลิเคชันโดยไม่มีค่าธรรมเนียม",
+    "สามารถเลือกชำระยอดได้ตามต้องการ แต่ไม่น้อยกว่ายอดขั้นต่ำที่เรียกเก็บในแต่ละเดือน",
+    "วงเงินสินเชื่อกลับคืนหลังจากได้รับชำระเงินต้น"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 65,
+   "applicant_qualifications": [
+    "สำหรับเจ้าของกิจการ ผู้ประกอบธุรกิจรายย่อย ผู้ที่ประกอบอาชีพอิสระ หรือพนักงานประจำ ที่มีรายได้ขั้นต่ำ 8,000 บาทขึ้นไป"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "ประเมินจากข้อมูลส่วนตัว ข้อมูลทางการเงิน และข้อมูลทางเลือกของผู้สมัคร",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "สามารถเลือกชำระคืนได้ไม่น้อยกว่ายอดขั้นต่ำที่เรียกเก็บในแต่ละเดือน",
+     "ยอดขั้นต่ำเท่ากับ 2% ของยอดสินเชื่อเงินต้นคงค้าง (หรือขั้นต่ำ 200 บาทแล้วแต่ยอดใดจะสูงกว่า) รวมดอกเบี้ยทั้งหมดที่เกิดขึ้นในแต่ละรอบบัญชี"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": [
+    "อัตราดอกเบี้ยปกติ ดอกเบี้ยผิดนัด และค่าธรรมเนียมต่างๆ รวมกันไม่เกินร้อยละ 33 ต่อปี"
+   ],
+   "default_interest_rate": "33% ของยอดเงินต้นค้างชำระ",
+   "default_interestrate_condition": [
+    "อัตราดอกเบี้ยปกติ ดอกเบี้ยผิดนัด และค่าธรรมเนียมต่างๆ รวมกันไม่เกินร้อยละ 33 ต่อปี"
+   ]
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระด้วยคิวอาร์ โค้ด หรือบาร์โค้ด ผ่านโมบายล์ แบงก์กิ้ง แอปพลิเคชันของธนาคารที่ลูกค้าใช้บริการ"
+   ],
+   "deduct_from_provider_account": "ไม่มี",
+   "deduct_from_other_provider_account": "ไม่มี",
+   "pay_at_provider_branch": "ไม่มี",
+   "pay_at_other_branch": "ธนาคารกรุงไทย",
+   "pay_at_payment_counters": "ไม่มี",
+   "online_payment_channels": [
+    "ชำระด้วยคิวอาร์ โค้ด หรือบาร์โค้ด ผ่านโมบายล์ แบงก์กิ้ง แอปพลิเคชันของธนาคารที่ลูกค้าใช้บริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มี"
+   ],
+   "phone_payment_channels": "ไม่มี",
+   "cheque_money_order_channels": "ไม่มี",
+   "other_payment_channels": "ไม่มี"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.rabbitcash.co.th"
+  }
+ },
+ {
+  "service_provider": "แรบบิท แคช",
+  "product": "สินเชื่อแรบบิทแคช ส่งก่อนผ่อนได้",
+  "productDetails": {
+   "details": [
+    "มีวัตถุประสงค์การกู้เพื่อการประกอบอาชีพ",
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "สมัครและรู้ผลอนุมัติผ่านช่องทางแรบบิทแคช แอปพลิเคชัน",
+    "รับเอกสารสัญญาสินเชื่อ ใบแจ้งยอด และเอกสารต่างๆ ทางช่องทางอิเล็กทรอนิกส์",
+    "วงเงินสูงสุดไม่เกิน 100,000 บาท"
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน",
+    "รายละเอียดลักษณะสินเชื่อ",
+    "วงเงินเพื่อใช้จ่ายค่าส่งของกับเคอรี่ เอ็กซ์เพรส โดยไม่เสียดอกเบี้ยเมื่อชำระคืนยอดเต็มจำนวนภายในระยะเวลาที่กำหนด ผ่านแรบบิทแคช แอปพลิเคชัน ในกรณีที่มีการชำระยอดเพียงบางส่วนหรือชำระล่าช้ากว่าที่กำหนดคิดอัตราดอกเบี้ย 33% ต่อปี แบบลดต้นลดดอก",
+    "วงเงินสินเชื่อกลับคืนหลังจากได้รับชำระเงินต้น"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 65,
+   "applicant_qualifications": [
+    "สำหรับเจ้าของกิจการ ผู้ประกอบธุรกิจรายย่อย ผู้ที่ประกอบอาชีพอิสระ หรือพนักงานประจำเป็นสมาชิกเคอรี่ เอ็กซ์เพรสที่ผ่านเงื่อนไขที่ทางบริษัทกำหนด"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "ประเมินจากข้อมูลส่วนตัว ข้อมูลทางการเงิน และข้อมูลการส่งสินค้ากับเคอรี่ เอ็กซ์เพรส",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ชำระเต็มจำนวนของยอดสินเชื่อเงินต้นคงค้างในแต่ละรอบบัญชี",
+     "สามารถชำระขั้นต่ำอย่างน้อย 30% ของยอดชำระเต็มจำนวนภายในวันครบกำหนดชำระ เพื่อยังคงใช้วงเงินสินเชื่อได้อย่างต่อเนื่อง"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": [
+    "อัตราดอกเบี้ยปกติ ดอกเบี้ยผิดนัด และค่าธรรมเนียมต่างๆ รวมกันไม่เกินร้อยละ 33 ต่อปี"
+   ],
+   "default_interest_rate": "33% ของยอดเงินต้นค้างชำระ",
+   "default_interestrate_condition": [
+    "อัตราดอกเบี้ยปกติ ดอกเบี้ยผิดนัด และค่าธรรมเนียมต่างๆ รวมกันไม่เกินร้อยละ 33 ต่อปี"
+   ]
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระด้วยคิวอาร์ โค้ด หรือบาร์โค้ด ผ่านโมบายล์ แบงก์กิ้ง แอปพลิเคชันของธนาคารที่ลูกค้าใช้บริการ"
+   ],
+   "deduct_from_provider_account": "ไม่มี",
+   "deduct_from_other_provider_account": "ไม่มี",
+   "pay_at_provider_branch": "ไม่มี",
+   "pay_at_other_branch": "ธนาคารกรุงไทย",
+   "pay_at_payment_counters": "ไม่มี",
+   "online_payment_channels": [
+    "ชำระด้วยคิวอาร์ โค้ด หรือบาร์โค้ด ผ่านโมบายล์ แบงก์กิ้ง แอปพลิเคชันของธนาคารที่ลูกค้าใช้บริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มี"
+   ],
+   "phone_payment_channels": "ไม่มี",
+   "cheque_money_order_channels": "ไม่มี",
+   "other_payment_channels": "ไม่มี"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.rabbitcash.co.th/webview-shipping-credit-factsheet/"
+  }
+ },
+ {
+  "service_provider": "ราชธานีลิสซิ่ง",
+  "product": "สินเชื่อนาโนไฟแนนซ์",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 65,
+   "applicant_qualifications": [
+    "สำหรับผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า ผู้ประกอบธุรกิจที่เป็นทะเบียนการค้า หรือเป็นพนักงานประจำที่มีฐานเงินเดือนค่ำกว่า 9,000 บาท ต่อเดือน"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "แอพพลิเคชั่นของธนาคารพาณิชย์"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "5 บาทต่อรายการ หรือตามอัตราที่ธนาคารเรียกเก็บ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่เกิน 30 บาทต่อรายการ หรือตามอัตราที่ธนาคารเรียกเก็บ",
+   "pay_at_payment_counters": "ไม่เกิน 20 บาทต่อรายการ หรือตามอัตราที่ผู้ให้บริการเรียกเก็บ",
+   "online_payment_channels": [
+    "ไม่มีค่าบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": "https://www.ratchthani.com"
+  }
+ },
+ {
+  "service_provider": "อบาคัส",
+  "product": "สินเชื่อตั้งหลัก - รับเงินครั้งเดียว",
+  "productDetails": {
+   "details": [
+    "Term Loan: ไม่ต้องมีหลักประกัน/ ยื่นกู้ออนไลน์รับเงินภายใน 24 ชั่วโมง"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 65,
+   "applicant_qualifications": [
+    "ต้องการเงินทุนเพื่อประกอบอาชีพ เปิดร้าน หมุนเวียนธุรกิจ และอื่นๆ"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด งวดละเท่าๆกัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเป็นเงินของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "แอปพลิเคชันธนาคารและสถาบันการเงินที่รองรับการชำระเงินด้วย QR Promptpay"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://money-thunder.com/nano-loan"
+  }
+ },
+ {
+  "service_provider": "บิ๊ก มันนี่ พลัส",
+  "product": "สินเชื่อนาโนไฟแนนซ์",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "อนุมัติทราบผลเบื้องต้นภายใน 5",
+    "7 วัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน",
+    "รายละเอียดลักษณะสินเชื่อ เป็นสินเชื่อหมุนเวียน เพื่อประกอบธุรกิจ"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 65,
+   "applicant_qualifications": [
+    "สำหรับผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า ผู้ประกอบธุรกิจที่เป็นทะเบียนการค้า หรือเป็นพนักงานประจำที่มีฐานเงินเดือนค่ำกว่า 15,000 บาท ต่อเดือน"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระผ่านช่องทาง Online (Internet banking)"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "กรณีนำเงินสดมาชำระเงินกู้สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ ณ สำนักงานสาขาของบริษัท ไม่เสียค่าธรรมเนียม",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": ""
+  }
+ },
+ {
+  "service_provider": "อบาคัส",
+  "product": "สินเชื่อตั้งหลัก - วงเงินหมุนเวียน",
+  "productDetails": {
+   "details": [
+    "Revolving Loan: ไม่ต้องมีหลักประกัน/ ยื่นกู้ออนไลน์รับเงินภายใน 24 ชั่วโมง"
+   ],
+   "credit_line": [
+    "-"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 65,
+   "applicant_qualifications": [
+    "ต้องการเงินทุนเพื่อประกอบอาชีพ เปิดร้าน หมุนเวียนธุรกิจ และอื่นๆ"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ชำระขั้นต่ำ 2% ของเงินต้นคงค้างของรอบบัญชีที่ผ่านมา รวมกับดอกเบี้ย ?ที่ครบกำหนดชำระและค่าธรรมเนียมที่เรียกเก็บในงวดนั้น (หากมี) และยอดค้างชำระ หรือ 200 บาท (เลือกชำระยอดที่มากกว่า)?"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเป็นเงินของ ที่คำนวนจากจ่ายคืนขั้นต่ำเพียง 2% หรือ 200 บาท",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "แอปพลิเคชันธนาคารและสถาบันการเงินที่รองรับการชำระเงินด้วย QR Promptpay"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://money-thunder.com/nano-loan"
+  }
+ },
+ {
+  "service_provider": "กัปตัน แคช แคปปิตอล",
+  "product": "สินเชื่อกัปตันนาโน",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 60,
+   "applicant_qualifications": [
+    "สำหรับผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า ผู้ประกอบธุรกิจที่เป็นทะเบียนการค้า"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานใหญ่ และสาขาของบริษัท"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "กรณีนำเงินสดมาชำระเงินกู้สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ ณ สำนักงานของบริษัท ไม่เสียค่าธรรมเนียม",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": ""
+  }
+ },
+ {
+  "service_provider": "มั่งมี เอพลัส",
+  "product": "สินเชื่อนาโนไฟแนนซ์",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "อนุมัติทราบผลเบื้องต้นภายใน 5",
+    "7 วัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "สำหรับผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า ผู้ประกอบธุรกิจที่เป็นทะเบียนการค้า หรือเป็นพนักงานประจำที่มีฐานเงินเดือนค่ำกว่า 15,000 บาท ต่อเดือน"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของบริษัท"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "กรณีนำเงินสดมาชำระเงินกู้สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ ณ สำนักงานสาขาของบริษัท ไม่เสียค่าธรรมเนียม",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "บริษัทเป็นผู้รับภาระค่าธรรมเนียมที่เกิดขึ้นเท่าที่ลูกค้าได้จ่ายจริงตามประเพณีที่ธนาคารเรียกเก็บในอัตราปกติ โดยลูกค้าจะต้องส่งมอบหลักฐาน ใบเสร็จค่าธรรมเนียม (ต้นฉบับ) ให้แก่บริษัทภายใน 3 วันนับจากวันที่ชำระ"
+   ],
+   "atm_cdm_payment_channels": [
+    "บริษัทเป็นผู้รับภาระค่าธรรมเนียมที่เกิดขึ้นเท่าที่ลูกค้าได้จ่ายจริงตามประเพณีที่ธนาคารเรียกเก็บในอัตราปกติ โดยลูกค้าจะต้องส่งมอบหลักฐาน ใบเสร็จค่าธรรมเนียม (ต้นฉบับ) ให้แก่บริษัทภายใน 3 วันนับจากวันที่ชำระ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": ""
+  }
+ },
+ {
+  "service_provider": "นิ่มลีสซิ่ง",
+  "product": "สินเชื่อนาโนไฟแนนซ์",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "สำหรับผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "ภายใต้หลักเกณฑ์การพิจารณาสินเชื่อของทางบริษัท",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวดๆ ละเท่าๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของบริษัท"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "http://www.nimleasing.com"
+  }
+ },
+ {
+  "service_provider": "",
+  "product": "สินเชื่อนาโนไฟแนนซ์",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์หรือบุคคลค้ำประกัน",
+    "อนุมัติทราบผลเบื้องต้นภายใน 7 วัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "สำหรับผู้ที่ประกอบอาชีพทุกสาขาอาชีพ ยกเว้นอาชีพลูกจ้างรายวันและผู้รับเหมารายวัน",
+    "มีรายได้เพียงพอสำหรับการชำระหนี้",
+    "มีสเตทเม้นท์แสดงรายได้"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของบริษัท"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "กรณีนำเงินสดมาชำระเงินกู้สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ ณ สำนักงานสาขาของบริษัท ไม่เสียค่าธรรมเนียม",
+   "pay_at_other_branch": "ลูกค้าเป็นผู้รับภาระค่าธรรมเนียมที่เกิดขึ้นเท่าที่ลูกค้าได้จ่ายจริงตามประเพณีที่ธนาคารเรียกเก็บในอัตราปกติ",
+   "pay_at_payment_counters": "โลตัส(lotus's)มีค่าธรรมเนียม10บาท",
+   "online_payment_channels": [
+    "ชำระผ่านแอปมือถือดังรายชื่อต่อไปนี้ ธนาคารกสิกรไทย",
+    "ธนาคารทหารไทยธนชาต",
+    "ธนาคารกรุงเทพ",
+    "ธนาคารไทยพานิชย์",
+    "ธนาคารกรุงไทย",
+    "ธนาคารกรุงศรีอยุธยา",
+    "ธนาคารซีไอเอ็มบีไทย",
+    "ธนาคารยูโอบี",
+    "ธนาคารทิสโก้",
+    "ธนาคารออมสิน",
+    "ธนาคารเกียรตินาคิน",
+    "ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร ไม่เสียค่าธรรมเนียม"
+   ],
+   "atm_cdm_payment_channels": [
+    "ลูกค้าเป็นผู้รับภาระค่าธรรมเนียมที่เกิดขึ้นเท่าที่ลูกค้าได้จ่ายจริงตามประเพณีที่ธนาคารเรียกเก็บในอัตราปกติ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "เคาน์เตอร์เซอร์วิส(Counter Service)-กรุงเทพฯและปริมณฑลมีค่าธรรมเนียม15บาท-ต่างจังหวัดมีค่าธรรมเนียม20บาท"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.percentleasing.com"
+  }
+ },
+ {
+  "service_provider": "แรบบิท แคช",
+  "product": "สินเชื่อแรบบิทแคช เงินก้อนพร้อมใช้",
+  "productDetails": {
+   "details": [
+    "มีวัตถุประสงค์การกู้เพื่อการประกอบอาชีพ",
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "สมัครและรู้ผลอนุมัติผ่านช่องทางแรบบิทแคช แอปพลิเคชัน",
+    "รับเอกสารสัญญาสินเชื่อ ใบแจ้งยอด และเอกสารต่างๆ ทางช่องทางอิเล็กทรอนิกส์",
+    "วงเงินสูงสุดไม่เกิน 100,000 บาท"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน",
+    "รายละเอียดลักษณะสินเชื่อ",
+    "สินเชื่อเงินกู้ยืมซึ่งจะโอนเข้าบัญชีเงินฝากธนาคารของผู้กู้ในครั้งเดียวตอนต้นสัญญา",
+    "ผู้กู้สามารถผ่อนชำระเป็นรายงวดๆ ละเท่าๆ กัน",
+    "ระยะเวลาผ่อนชำระ 6",
+    "36 เดือน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 65,
+   "applicant_qualifications": [
+    "สำหรับเจ้าของกิจการ ผู้ประกอบธุรกิจรายย่อย ผู้ที่ประกอบอาชีพอิสระ หรือพนักงานประจำ ที่มีรายได้ขั้นต่ำ 8,000 บาทขึ้นไป"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "ประเมินจากข้อมูลส่วนตัว ข้อมูลทางการเงิน และข้อมูลทางเลือกของผู้สมัคร",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นรายงวดๆ ละเท่าๆ กัน",
+     "สามารถปิดบัญชีก่อนครบกำหนดได้ โดยไม่มีเสียค่าธรรมเนียมการปิดบัญชีก่อนกำหนด"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": [
+    "อัตราดอกเบี้ยปกติ ดอกเบี้ยผิดนัด และค่าธรรมเนียมต่างๆ รวมกันไม่เกินร้อยละ 33 ต่อปี"
+   ],
+   "default_interest_rate": "33% ของยอดเงินต้นค้างชำระ",
+   "default_interestrate_condition": [
+    "อัตราดอกเบี้ยปกติ ดอกเบี้ยผิดนัด และค่าธรรมเนียมต่างๆ รวมกันไม่เกินร้อยละ 33 ต่อปี"
+   ]
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระด้วยคิวอาร์ โค้ด หรือบาร์โค้ด ผ่านโมบายล์ แบงก์กิ้ง แอปพลิเคชันของธนาคารที่ลูกค้าใช้บริการ"
+   ],
+   "deduct_from_provider_account": "ไม่มี",
+   "deduct_from_other_provider_account": "ไม่มี",
+   "pay_at_provider_branch": "ไม่มี",
+   "pay_at_other_branch": "ธนาคารกรุงไทย",
+   "pay_at_payment_counters": "ไม่มี",
+   "online_payment_channels": [
+    "ชำระด้วยคิวอาร์ โค้ด หรือบาร์โค้ด ผ่านโมบายล์ แบงก์กิ้ง แอปพลิเคชันของธนาคารที่ลูกค้าใช้บริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มี"
+   ],
+   "phone_payment_channels": "ไม่มี",
+   "cheque_money_order_channels": "ไม่มี",
+   "other_payment_channels": "ไม่มี"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.rabbitcash.co.th"
+  }
+ },
+ {
+  "service_provider": "ซีมันนี่ (แคปปิตอล)",
+  "product": "SEasyCash",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "ไม่ต้องยื่นเอกสาร",
+    "ทราบผลอนุมัติออนไลน์"
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "สำหรับผู้ที่เป็นลูกค้าบนแพลตฟอร์มช้อปปี้"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "กระเป๋าเงิน ShopeePay บัญชีธนาคารที่ผูกกับ ShopeePay mBanking และ promptpay QR"
+   ],
+   "deduct_from_provider_account": "ชำระโดยหักบัญชี ShopeePay และบัญชีธนาคารที่ผูกกับ ShopeePay",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ช่องทางเคาน์เตอร์ Big C และ The Mall",
+   "online_payment_channels": [
+    "ชำระผ่าน Mobile Application (ShopeePay) และ Mobile Banking"
+   ],
+   "atm_cdm_payment_channels": [
+    "ชำระผ่านเครื่อง ATM"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ตู้บุญเติม"
+  },
+  "additional_info": {
+   "product_website_link": "https://shopee.co.th/m/what-is-seasy-cash"
+  }
+ },
+ {
+  "service_provider": "ซีมันนี่ (แคปปิตอล)",
+  "product": "SEasyCash for Sellers",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "ไม่ต้องยื่นเอกสาร",
+    "ทราบผลอนุมัติออนไลน์"
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "สำหรับผู้ที่เป็นผู้ขายสินค้าบนแพลตฟอร์มช้อปปี้"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "กระเป๋าเงิน ShopeePay บัญชีธนาคารที่ผูกกับ ShopeePay mBanking และ promptpay QR"
+   ],
+   "deduct_from_provider_account": "ชำระโดยหักบัญชี ShopeePay และบัญชีธนาคารที่ผูกกับ ShopeePay",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ชำระผ่าน Mobile Application (ShopeePay) และ Mobile Banking"
+   ],
+   "atm_cdm_payment_channels": [
+    "ชำระผ่านเครื่อง ATM"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ตู้บุญเติม"
+  },
+  "additional_info": {
+   "product_website_link": "https://shopee.co.th/m/seller-easy-cash-intro"
+  }
+ },
+ {
+  "service_provider": "เป็นต่อ แคปปิตอล",
+  "product": "สินเชื่อ เป็นต่อ นาโน",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "อนุมัติทราบผลเบื้องต้นภายใน 3",
+    "7 วันทำการ"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 21,
+   "max_age": 65,
+   "applicant_qualifications": [
+    "สำหรับผู้ที่ประกอบอาชีพอิสระ หรือ ผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า มีรายได้ไม่ต่ำกว่า 9,000 ต่อเดือน"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด งวดละเท่าๆกัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระผ่านสำนักงานใหญ่ของผู้ให้บริการ",
+    "ชำระผ่าน Online ของธนาคาร",
+    "ตู้ ATM ธนาคารไทยพาณิชย์ จำกัด (มหาชน) ธนาคารกรุงเทพ จำกัด (มหาชน) ธนาคารกรุงไทย จำกัด (มหาชน) ธนาคารกรุงศรีอยุธยา จำกัด (มหาชน) ธนาคารกสิกรไทย จำกัด (มหาชน) ธนาคารซีไอเอ็มบี ไทย จำกัด (มหาชน) ธนาคารทหารไทยธนชาต จำกัด (มหาชน) ธนาคารยูโอบี จำกัด (มหาชน) ธนาคารมิซูโฮ จำกัด สาขากรุงเทพฯ",
+    "เครื่อง CDM ของธนาคารไทยพาณิชย์ จำกัด (มหาชน)"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "- เคาน์เตอร์ธนาคารเกียรตินาคิน จำกัด (มหาชน) ค่าธรรมเนียมไม่เกิน 20 บาทต่อรายการ- เคาน์เตอร์ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร ค่าธรรมเนียมไม่เกิน 20 บาทต่อรายการ- The Mall ค่าธรรมเนียม 10-20 บาทต่อรายการ วงเงินรับชำระสูงสุด 49,000 บาทต่อรายการ ไม่มีค่าธรรมเนียมข้ามเขตข้ามจังหวัด- Lotus ค่าธรรมเนียม 10-20 บาทต่อรายการ วงเงินรับชำระสูงสุด 49,000 บาทต่อรายการ ไม่มีค่าธรรมเนียมข้ามเขตข้ามจังหวัด",
+   "online_payment_channels": [
+    "ชำระผ่านระบบ Online (Internet / Mobile banking) ได้ทุกธนาคาร ไม่มีค่าธรรมเนียม"
+   ],
+   "atm_cdm_payment_channels": [
+    "- ชำระผ่านตู้ ATM ธนาคารไทยพาณิชย์ จำกัด (มหาชน) ธนาคารกรุงเทพ จำกัด (มหาชน) ธนาคารกรุงไทย จำกัด (มหาชน) ธนาคารกรุงศรีอยุธยา จำกัด (มหาชน) ธนาคารกสิกรไทย จำกัด (มหาชน) ธนาคารซีไอเอ็มบี ไทย จำกัด (มหาชน) ธนาคารทหารไทยธนชาต จำกัด (มหาชน) ธนาคารยูโอบี จำกัด (มหาชน) ธนาคารมิซูโฮ จำกัด สาขากรุงเทพฯ- ชำระผ่านเครื่อง CDM ธนาคารไทยพาณิชย์ จำกัด (มหาชน)- วงเงินรับชำระสูงสุด 2,000,000 บาทต่อรายการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.pentorcapital.com/?page_id=26947"
+  }
+ },
+ {
+  "service_provider": "มันนิกซ์",
+  "product": "สินเชื่อนาโนฟินนิกซ์ติดปีก",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน"
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน",
+    "รายละเอียดลักษณะสินเชื่อ เป็นสินเชื่อหมุนเวียนสำหรับรายย่อยเพื่อการประกอบอาชีพ ยอดที่จ่ายชำระเข้ามาจะกลับเป็นวงเงินที่ลูกค้ากลับมาใช้ได้อีก"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 60,
+   "applicant_qualifications": [
+    "มีรายได้ 8,000 บาทต่อเดือนขึ้นไป"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "สามารถเลือกผ่อนชำระ 3, 6 หรือ 12 เดือนได้",
+     "สามารถเลือกวันชำระคืนได้ระหว่างวันที่ 1",
+     "28ของทุกเดือน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": [
+    "ต้องชำระค่างวด ตามจำนวนและระยะเวลาที่ตกลงไว้กับบริษัท โดยบริษัทจะขึ้นข้อมูลค่างวดและวันครบกำหนดชำระหนี้ให้ทราบภายในแอปพลิเคชัน"
+   ],
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในงวดนั้น ๆ",
+   "default_interestrate_condition": [
+    "อัตราดอกเบี้ยกรณีผิดนัดชำระ เมื่อรวมคำนวณกับค่าบริการ และค่าธรรมเนียมใดๆ ของสินเชื่อนาโนฟินนิกซ์ติดปีกแล้ว สูงสุดไม่เกินร้อยละ 33 ต่อปีของเงินต้นคงค้าง"
+   ]
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระผ่านโมบายแอปพลิเคชันของทุกธนาคารยกเว้นธนาคารทหารไทย ธนาคารทหารไทยจะเป็นผู้เรียกเก็บค่าธรรมเนียม 5 บาท/รายการ"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": "https://s3.ap-southeast-1.amazonaws.com/monix-prod-static-resource/file/WEBSITE_PDF/20211008/MONIX_08102120211008-Product-Sales-Sheet-FINNIX-Bewinged.pdf"
+  }
+ },
+ {
+  "service_provider": "เงินเทอร์โบ",
+  "product": "สินเชื่อนาโนไฟแนนซ์",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 70,
+   "applicant_qualifications": [
+    "บุคคลธรรมดาสัญชาติไทย",
+    "มีโทรศัพท์ที่สามารถติดต่อได้"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระที่สาขาของบริษัทฯ"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีค่าธรรมเนียม",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "เขตกรุงเทพฯและปริมณฑล- โลตัส (Lotus’s): 10 บาท/รายการ- เคาน์เตอร์เซอร์วิส (Counter Service): 15 บาท/รายการต่างจังหวัด- โลตัส (Lotus’s): 10 บาท/รายการ- เคาน์เตอร์เซอร์วิส (Counter Service): 20 บาท/รายการ ค่าธรรมเนียมในการชำระผ่านจุดบริการรับชำระเงิน เป็นค่าธรรมเนียมตามอัตราที่ตัวแทนรับชำระเงินเรียกเก็บจากท่าน ณ จุดชำระเงิน ซึ่งอาจมีการเปลี่ยนแปลงได้ ขึ้นอยู่กับตัวแทนรับชำระเงิน",
+   "online_payment_channels": [
+    "ชำระผ่านระบบ Mobile Banking ของธนาคารกสิกรไทย และธนาคารอื่นๆ ที่เข้าร่วมบริการชำระบิลข้ามธนาคาร (Cross Bank) ไม่มีค่าธรรมเนียมค่าธรรมเนียมในการชำระผ่านจุดบริการรับชำระเงิน เป็นค่าธรรมเนียมตามอัตราที่ตัวแทนรับชำระเงินเรียกเก็บจากท่าน ณ จุดชำระเงิน ซึ่งอาจมีการเปลี่ยนแปลงได้ ขึ้นอยู่กับตัวแทนรับชำระเงิน"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.turbo.co.th/services/nanofinance"
+  }
+ },
+ {
+  "service_provider": "ศักดิ์สยามลิสซิ่ง",
+  "product": "ศักดิ์สยาม สินเชื่อเพื่อการประกอบอาชีพ",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์หรือบุคคลค้ำประกัน",
+    "อนุมัติทราบผลภายใน 7 วัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "ประกอบอาชีพที่มีหลักแหล่งแน่นอนและมีรายได้จากการประกอบอาชีพที่ชัดเจน โดยจะมีการตรวจสอบสถานที่ประกอบอาชีพและประเมินรายได้ หรือเอกสารรับรองการทำอาชีพที่ออกให้โดยส่วนงานราชการ"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวดแบบลดต้นลดดอก"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "ไม่มีค่าธรรมเนียม",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระที่สาขาของผู้ให้บริการ",
+    "โอนผ่านบัญชีสาขาของผู้ให้บริการ",
+    "Internet Banking ของธนาคารกรุงเทพ/ ธนาคารกรุงไทย/ ธนาคารไทยพาณิชย์/ ธนาคารกรุงศรีอยุธยา/ ธนาคารออมสิน/ ธนาคารเอ็มเอชซีบี/ ธนาคารทีเอ็มบีธนชาต/ ธนาคารเกียรตินาคิน"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ชำระที่เคาน์เตอร์ธนาคารกรุงไทย/ ธนาคารทีเอ็มบีธนชาต/ ธนาคารเกียรตินาคินค่าธรรมเนียมเป็นไปตามอัตราที่ธนาคารเรียกเก็บ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ไม่มีค่าธรรมเนียม เมื่อชำระผ่าน Internet Banking ของธนาคารกรุงเทพ/ ธนาคารกรุงไทย/ ธนาคารไทยพาณิชย์/ ธนาคารกรุงศรีอยุธยา/ ธนาคารออมสิน/ ธนาคารเอ็มเอชซีบี/ ธนาคารทีเอ็มบีธนชาต/ ธนาคารเกียรตินาคิน"
+   ],
+   "atm_cdm_payment_channels": [
+    "ชำระผ่านเครื่อง ATM ธนาคารกรุงเทพ",
+    "ธนาคารกสิกรไทย",
+    "ธนาคารกรุงไทย",
+    "ธนาคารไทยพาณิชย์",
+    "ธนาคารกรุงศรีอยุธยา",
+    "ธนาคารออมสิน",
+    "ธนาคารทีเอ็มบีธนชาต โดยค่าธรรมเนียมเป็นไปตามอัตราที่ธนาคารเรียกเก็บ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://saksiam.com/file_document/qOCt4fAdiEJzB7ZXoIFh0msRP.pdf"
+  }
+ },
+ {
+  "service_provider": "แฟลช มันนี่",
+  "product": "สินเชื่อโกลด์มันนี่-นาโน",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "อนุมัติทราบผลเบื้องต้นภายใน 5",
+    "7 วัน",
+    "ต้องมีรายการเดินบัญชีธนาคารต่อนึ่องกัน7เดือน",
+    "ต้องมีข้อมูลอาชีพ/ธุรกิจ"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน",
+    "รายละเอียดลักษณะสินเชื่อ เป็นสินเชื่อรายย่อยเพื่อการประกอบอาชีพที่ผ่อนชำระได้1",
+    "12เดือน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "สัญญาชาติไทย",
+    "อายุครบ20ปีบริบูรณ์",
+    "วัตถุประสงค์ในการกู้ยืมเงินเป็นไปตามข้อกำหนดของ Nano Finance",
+    "สำหรับผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า ผู้ประกอบธุรกิจที่เป็นทะเบียนการค้า หรือเป็นพนักงานประจำที่มีฐานเงินเดือนค่ำกว่า 15,000 บาท ต่อเดือน"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "ต้องมีข้อมูลที่เป็นไปตามบริษัทกำหนด เช่นรายการเดินบัญชีธนาคาร/หลักฐานรายได้ข้อมูลสถานที่ประกอบการหรือภาพสินค้า ภาพร้านค้า ข้อมูลสินค้าที่จำหน่าย ข้อมูลอาชีพ และผ่านการตรวจสอบบุคคลที่ถูกกำหนด เป็นต้น",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": [
+    "ดอกเบี้ยรวมค่าธรรมเนียมไม่เกินร้อยละ 33 ต่อปีและผู้ใช้บริการต้องรับผิดชอบค่าอากรแสตมป์ในอัตราร้อยละ 0.05 ของวงเงินสินเชื่อ"
+   ],
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": [
+    "กรณีผิดนัดชำระ บริษัทจะทำการติดตามทวงถามหนี้ โดยกำหนดค่าติดตามทวงถามหนี้ดังนี้",
+    "สำหรับหนี้ค้างชำระหรือหนี้ที่ถึงกำหนดชำระสะสมไม่เกิน 1,000 บาท ไม่มีค่าธรรมเนียม",
+    "ไม่เกิน 50 บาท ต่อรอบการทวงถามหนี้ในกรณีลูกหนี้มีหนี้ค้างชำระหนึ่งงวด",
+    "ไม่เกิน 100 บาท ต่อรอบการทวงถามหนี้ ในกรณีลูกหนี้มีหนี้ค้างชำระมากกว่าหนึ่งงวดหรือตามที่กฎหมายกำหนด",
+    "ผู้ใช้บริการต้องรับผิดชอบค่าอากรแสตมป์ในอัตราร้อยละ 0.05 ของวงเงินสินเชื่อ"
+   ]
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระเงินผ่านการสแกน QR Code",
+    "ชำระเงินโดยโอนเงินเข้าบัญชีที่บริษัทกำหนด"
+   ],
+   "deduct_from_provider_account": "ชำระโดยหักบัญชีธนาคารผ่านการให้บริการของ FlashPay 10 บาท/ครั้ง",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "บริษัทเป็นผู้รับภาระค่าธรรมเนียมที่เกิดขึ้นในการชำระผ่านช่องทางMobile banking/Mobile applicationของผู้ให้บริการ)"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": "https://www.flashmoney.co.th/home"
+  }
+ },
+ {
+  "service_provider": "อยุธยา แคปปิตอล เซอร์วิสเซส",
+  "product": "บัตรกรุงศรีเฟิร์สช้อยส์ บิซ",
+  "productDetails": {
+   "details": [
+    "สินเชื่อกรุงศรีเฟิร์สช้อยส์ บิซเพื่อผู้ประกอบธุรกิจรายย่อย (นาโนไฟแนนซ์)",
+    "บริการสินเชื่อเงินสดทันใจสะดวกพร้อมใช้ได้เงินทันทีตลอด 24 ชม.",
+    "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ ไม่มีค่าธรรมเนียมกรณีชำระคืนก่อนกำหนด ไม่มีค่าธรรมเนียมการชำระเงินทุกช่องทางของธนาคารกรุงศรีอยุธยา และเคาน์เตอร์เซอร์วิส",
+    "ฟินไปกับโปรโมชั่นประจำเดือนเกิดพร้อมรับสิทธิ์พิเศษมากขึ้นเมื่อเป็นสมาชิก \"กรุงศรีเฟิร์สช้อยส์พริวิเลจ\"",
+    "สามารถเช็คเครดิตได้ง่ายๆผ่านแอป UCHOOSE",
+    "ดูแลเครดิตให้ดีอยู่เสมอด้วยบริการแจ้งเตือนเมื่อมีการใช้จ่ายสูง"
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน",
+    "รายละเอียดลักษณะสินเชื่อ สินเชื่อเงินสดแบบชำระขั้นต่ำ"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 55,
+   "applicant_qualifications": [
+    "สำหรับเจ้าของกิจการ ผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า ผู้ประกอบธุรกิจที่จดทะเบียนการค้า มีเงินหมุนเวียนในธนาคารต่อเดือน ขั้นต่ำ 200,000 บาท ทั้งนี้จะต้องเป็นลูกค้าที่ได้รับการเรียนเชิญจากทางเมกาโฮมเท่านั้น"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "สินเชื่อเงินสดเป็นสินเชื่อแบบชำระขั้นต่ำ ชำระคืนขั้นต่ำ 5%"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของฐานยอดเงินผิดนัดชำระของงวดนั้น นับจากวันที่ผิดนัดชำระจนถึงวันที่ชำระยอดผิดนัดเสร็จสิ้น",
+   "default_interestrate_condition": [
+    "การคำนวณดอกเบี้ยและค่าธรรมเนียมการใช้วงเงินกรณีผิดนัดชำระ นับจากวันที่เริ่มค้างชำระจนถึงวันที่ชำระยอดผิดนัดเสร็จสิ้นกรณีที่ท่านได้รับดอกเบี้ยสินเชื่อในอัตราพิเศษกรณีสินเชื่อเงินสด หากชำระล่าช้า ชำระไม่ครบ หรือมีการผิดนัดชำระหนี้งวดใดงวดหนึ่ง บริษัทฯ สงวนสิทธิ์ในการเรียกเก็บดอกเบี้ยผิดนัดเท่ากับอัตราดอกเบี้ยที่ลูกค้าได้รับบวกด้วยอัตราดอกเบี้ยส่วนเพิ่มร้อยละ 3 ต่อปี แต่เมื่อรวมดอกเบี้ย ค่าธรรมเนียมการใช้วงเงิน และดอกเบี้ยผิดนัดแล้วจะต้องไม่เกินอัตราร้อยละ 33 ต่อปี ดังนั้น เพื่อหลีกเลี่ยงการเปลี่ยนแปลงสิทธิประโยชน์ดังกล่าว กรุณาชำระเงินให้ครบถ้วนตรงตามกำหนด โดยเมื่อท่านได้ชำระเงินครบตามกำหนดแล้ว ท่านจะได้รับอัตราดอกเบี้ยพิเศษตามเดิม(โปรดศึกษารายละเอียดเพิ่มเติมจากข้อตกลงและเงื่อนไข)",
+    "เมื่อมียอดค้างชำระ และมีระยะเวลาค้างชำระ ไม่ถึง 2 เดือน นับจากวันครบรอบบัญชี บัตร/วงเงินจะถูกระงับการใช้ชั่วคราวและไม่สามารถใช้งานได้ จนกว่าจะไม่มียอดค้างชำระ",
+    "หากมียอดค้างชำระ และมีระยะเวลาค้างชำระ ตั้งแต่ 2 เดือนขึ้นไป นับจากวันครบรอบบัญชี บัตร/วงเงินจะถูกระงับการใช้อย่างถาวรและถูกยกเลิกโดยอัตโนมัติ"
+   ]
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระคืนโดยหักผ่านบัญชีเงินฝากอัตโนมัติของธนาคารกรุงศรีอยุธยาชำระที่เคาน์เตอร์ธนาคารกรุงศรีอยุธยา ทั่วประเทศชำระที่เครื่องเอทีเอ็ม ธนาคารกรุงศรีอยุธยา ทั่วประเทศชำระผ่าน Krungsri Onilneชำระผ่าน Krungsri Mobile Application (KMA)ชำระคืนที่ เคาน์เตอร์ชำระเงินชำระคืนที่เคาน์เตอร์เซอร์วิส"
+   ],
+   "deduct_from_provider_account": "ชำระคืนโดยหักผ่านบัญชีเงินฝากอัตโนมัติของธนาคารกรุงศรีอยุธยา",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ชำระที่เคาน์เตอร์ธนาคารกรุงศรีอยุธยา ทั่วประเทศ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ชำระคืนที่เคาน์เตอร์เซอร์วิส",
+   "online_payment_channels": [
+    "ชำระผ่าน Krungsri Onilneชำระผ่าน Krungsri Mobile Application (KMA)"
+   ],
+   "atm_cdm_payment_channels": [
+    "ชำระที่เครื่องเอทีเอ็ม ธนาคารกรุงศรีอยุธยา ทั่วประเทศ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "http://www.firstchoice.co.th/th/Products-and-Services/FirstChoice-Biz.html"
+  }
+ },
+ {
+  "service_provider": "อยุธยา แคปปิตอล เซอร์วิสเซส",
+  "product": "บัตรเมกาโฮม เฟิร์สช้อยส์ บิซ",
+  "productDetails": {
+   "details": [
+    "สินเชื่อเมกาโฮม เฟิร์สช้อยส์ บิซเพื่อผู้ประกอบธุรกิจรายย่อย (นาโนไฟแนนซ์)",
+    "แบ่งจ่าย O% ทั้งร้าน (ยกเว้น สินค้าประเภทวัสดุก่อสร้าง) ในเมกาโฮม นานสูงสุด 3 เดือน เมื่อมียอดชำระขั้นต่ำ 1,000บาท/ เซลล์สลิป",
+    "รับส่วนลดทันที 3% สำหรับสินค้ากลุ่มช่าง",
+    "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ ไม่มีค่าธรรมเนียมกรณีชำระคืนก่อนกำหนด ไม่มีค่าธรรมเนียมการชำระเงินทุกช่องทางของธนาคารกรุงศรีอยุธยา และเคาน์เตอร์เซอร์วิส",
+    "ฟินไปกับโปรโมชั่นประจำเดือนเกิดพร้อมรับสิทธิ์พิเศษมากขึ้นเมื่อเป็นสมาชิก \"กรุงศรีเฟิร์สช้อยส์พริวิเลจ\"",
+    "สามารถเช็คเครดิตได้ง่ายๆผ่านแอป UCHOOSE",
+    "ดูแลเครดิตให้ดีอยู่เสมอด้วยบริการแจ้งเตือนเมื่อมีการใช้จ่ายสูง"
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน",
+    "รายละเอียดลักษณะสินเชื่อ สินเชื่อเงินสดแบบชำระขั้นต่ำ และสินเชื่อเพื่อผ่อนชำระสินค้า"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 55,
+   "applicant_qualifications": [
+    "สำหรับเจ้าของกิจการ ผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า ผู้ประกอบธุรกิจที่จดทะเบียนการค้า มีเงินหมุนเวียนในธนาคารต่อเดือน ขั้นต่ำ 200,000 บาท ทั้งนี้จะต้องเป็นลูกค้าที่ได้รับการเรียนเชิญจากทางเมกาโฮมเท่านั้น"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "สินเชื่อเงินสดเป็นสินเชื่อแบบชำระขั้นต่ำ ชำระคืนขั้นต่ำ 5%"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของฐานยอดเงินผิดนัดชำระของงวดนั้น นับจากวันที่ผิดนัดชำระจนถึงวันที่ชำระยอดผิดนัดเสร็จสิ้น",
+   "default_interestrate_condition": [
+    "การคำนวณดอกเบี้ยและค่าธรรมเนียมการใช้วงเงินกรณีผิดนัดชำระ นับจากวันที่เริ่มค้างชำระจนถึงวันที่ชำระยอดผิดนัดเสร็จสิ้นกรณีที่ท่านได้รับดอกเบี้ยสินเชื่อในอัตราพิเศษ(ก) กรณีสินเชื่อเพื่อัตราดอกเบี้ยและค่าธรรมเนียมการใช้วงเงินที่ต่ำกว่าหรือเท่ากับร้อยละ 15 ต่อปี หากชำระล่าช้า ชำระไม่ครบ หรือมีการผิดนัดชำระหนี้งวดใดงวดหนึ่ง บริษัทฯ ขอสงวนสิทธิ์ในการคิดดอกเบี้ย และ/หรือค่าธรรมเนียมการใช้วงเงินในกรณีผิดนัดชำระหนี้ตามอัตราที่ผู้ให้กู้กำหนดจนกว่าเหตุแห่งการผิดสัญญานั้นจะได้ถูกแก้ไขโดยไม่ถือเป็นการเปลี่ยนแปลงอัตราดอกเบี้ยและ/หรือค่าธรรมเนียมการใช้วงเงินที่ผู้ให้กู้ต้องแจ้งให้ผู้กู้ทราบล่วงหน้า ทั้งนี้ ดอกเบี้ย และ/หรือค่าธรรมเนียมการใช้วงเงิน ดังกล่าวต้องไม่เกินอัตราร้อยละ 15 ต่อปี สำหรับลูกค้าที่ได้รับอัตราดอกเบี้ยและค่าธรรมเนียมการใช้วงเงินที่สูงกว่าร้อยละ 15 ต่อปี หากชำระล่าช้า ชำระไม่ครบ หรือมีการผิดนัดชำระหนี้งวดใดงวดหนึ่ง ลูกค้าจะถูกคิดดอกเบี้ยและ/หรือค่าธรรมเนียมอการผ่อนชำระสินค้า ลูกค้าที่ได้รับการใช้วงเงิน รวมแล้วไม่เกินอัตราเดิมที่ลูกค้าได้รับ(ข) กรณีสินเชื่อเงินสด หากชำระล่าช้า ชำระไม่ครบ หรือมีการผิดนัดชำระหนี้งวดใดงวดหนึ่ง บริษัทฯ สงวนสิทธิ์ในการเรียกเก็บดอกเบี้ยผิดนัดเท่ากับอัตราดอกเบี้ยที่ลูกค้าได้รับบวกด้วยอัตราดอกเบี้ยส่วนเพิ่มร้อยละ 3 ต่อปี แต่เมื่อรวมดอกเบี้ย ค่าธรรมเนียมการใช้วงเงิน และดอกเบี้ยผิดนัดแล้วจะต้องไม่เกินอัตราร้อยละ 33 ต่อปี ดังนั้น เพื่อหลีกเลี่ยงการเปลี่ยนแปลงสิทธิประโยชน์ดังกล่าว กรุณาชำระเงินให้ครบถ้วนตรงตามกำหนด โดยเมื่อท่านได้ชำระเงินครบตามกำหนดแล้ว ท่านจะได้รับอัตราดอกเบี้ยพิเศษตามเดิม(โปรดศึกษารายละเอียดเพิ่มเติมจากข้อตกลงและเงื่อนไข)",
+    "เมื่อมียอดค้างชำระ และมีระยะเวลาค้างชำระ ไม่ถึง 2 เดือน นับจากวันครบรอบบัญชี บัตร/วงเงินจะถูกระงับการใช้ชั่วคราวและไม่สามารถใช้งานได้ จนกว่าจะไม่มียอดค้างชำระ",
+    "หากมียอดค้างชำระ และมีระยะเวลาค้างชำระ ตั้งแต่ 2 เดือนขึ้นไป นับจากวันครบรอบบัญชี บัตร/วงเงินจะถูกระงับการใช้อย่างถาวรและถูกยกเลิกโดยอัตโนมัติ"
+   ]
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระคืนโดยหักผ่านบัญชีเงินฝากอัตโนมัติของธนาคารกรุงศรีอยุธยาชำระที่เคาน์เตอร์ธนาคารกรุงศรีอยุธยา ทั่วประเทศชำระที่เครื่องเอทีเอ็ม ธนาคารกรุงศรีอยุธยา ทั่วประเทศชำระผ่าน Krungsri Onilneชำระผ่าน Krungsri Mobile Application (KMA)ชำระคืนที่ เคาน์เตอร์ชำระเงินชำระคืนที่เคาน์เตอร์เซอร์วิส"
+   ],
+   "deduct_from_provider_account": "ชำระคืนโดยหักผ่านบัญชีเงินฝากอัตโนมัติของธนาคารกรุงศรีอยุธยา",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ชำระที่เคาน์เตอร์ธนาคารกรุงศรีอยุธยา ทั่วประเทศ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ชำระคืนที่เคาน์เตอร์เซอร์วิส",
+   "online_payment_channels": [
+    "ชำระผ่าน Krungsri Onilneชำระผ่าน Krungsri Mobile Application (KMA)"
+   ],
+   "atm_cdm_payment_channels": [
+    "ชำระที่เครื่องเอทีเอ็ม ธนาคารกรุงศรีอยุธยา ทั่วประเทศ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "http://www.firstchoice.co.th/th/Products-and-Services/MegaHome-FirstChoice-Biz.html"
+  }
+ },
+ {
+  "service_provider": "ไทยเครดิต",
+  "product": "สินเชื่อนาโนเครดิต เพื่อผู้ประกอบการ OTOP",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องใช้หลักทรัพย์หรือบุคคลค้ำประกัน",
+    "ส่งค้ำประกันบสย."
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน",
+    "รายละเอียดลักษณะสินเชื่อ สนับสนุนวงเงินสินเชื่อหมุนเวียนแก่บุคคลธรรมดาที่เป็น ผู้ผลิต ผู้ประกอบการหนึ่งตำบลหนึ่งผลิตภัณฑ์ (OTOP) ที่ได้รับการอนุมัติจากกรมการพัฒนาชุมชน กระทรวงมหาดไทย เพื่อนำไปใช้ในธุรกิจ โดยไม่มีทรัพย์สินเป็นหลักประกัน คิดอัตราดอกเบี้ยแบบลดต้นลดดอกและ ชำระคืนเงินกู้เป็นรายเดือนยอดเท่ากันทุกเดือน โดยแบ่งจ่ายทุกสัปดาห์ เป็นสินเชื่อที่นำเสนอแก้ผู้ประกอบการที่ประกอบธุรกิจ โดยมีวัตถุประสงค์เพื่อใช้เป็นเงินทุนหมุนเวียนที่ใช้ในกิจการ"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "ผู้กู้ต้องเป็นเจ้าของธุรกิจบุคคลธรรมดา สัญชาติไทยเท่านั้น",
+    "ในกรณีที่เป็น ผู้ผลิตชุมชนเจ้าของรายเดียว ผู้กู้ต้องเป็นบุคคลที่ได้รับการรับรองในเอกสารรับรองการลงทะเบียน ผู้ผลิต ผู้ประกอบการ OTOP",
+    "ในกรณีที่เป็น กลุ่มผู้ผลิตชุมชน ผู้กู้ต้องเป็นบุคคลที่ได้รับการรับรองในเอกสารรับรองการลงทะเบียน ผู้ผลิต ผู้ประกอบการ OTOP และต้องเป็นประธานของกลุ่มที่จดทะเบียนวิสาหกิจชุมชน",
+    "อายุกิจการและระยะเวลาการประกอบธุรกิจปัจจุบันไม่ต่ำกว่า 1 ปี",
+    "ธุรกิจต้องมีสถานที่ของกิจการชัดเจน และสามารถตรวจสอบได้ (ธุรกิจมีจริง ผู้กู้เป็นเจ้าของจริง และวันไปตรวจสอบต้องพบผู้กู้)",
+    "วัตถุประสงค์เพื่อใช้ในการประกอบอาชีพเท่านั้น",
+    "ผู้กู้ต้องมีเอกสารสำคัญจากหน่วยงานราชการ เพื่อใช้ยืนยันว่าเป็นผู้ผลิต ผู้ประกอบการที่ได้รับอนุญาตจริง",
+    "ผู้กู้ต้องมีผลิตภัณฑ์ที่ผ่านการคัดสรรสุดยอดหนึ่งตำบลหนึ่งผลิตภัณฑ์ไทย ระดับ 3",
+    "5 ดาว"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของธนาคารและพนักงานของธนาคารที่รับชำระเงิน",
+    "ลูกค้าชำระด้วยตนเองผ่าน Micro Pay",
+    "ลูกค้าชำระด้วยตนเองแบบ Bill Payment ผ่าน แอป Alpha (Mobile Banking ของธนาคาร)"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "กรณีนำเงินสดมาชำระเงินกู้สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ ณ สำนักงานสาขาของบริษัท ไม่เสียค่าธรรมเนียม",
+   "pay_at_other_branch": "มีค่าบริการ เรียกเก็บตามจริงที่ผู้ให้บริการนั้น ๆ เรียกเก็บ",
+   "pay_at_payment_counters": "มีค่าบริการ เรียกเก็บตามจริงที่ผู้ให้บริการนั้น ๆ เรียกเก็บ",
+   "online_payment_channels": [
+    "ไม่มีค่าบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": "https://www.thaicreditbank.com/th/info/40/63/สินเชื่อนาโนและไมโครเครดิต-เพื่อผู้ประกอบการ-OTOP"
+  }
+ },
+ {
+  "service_provider": "ไทยเครดิต",
+  "product": "สินเชื่อนาโนเครดิตเพื่อธุรกิจรายย่อย",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องใช้หลักทรัพย์หรือบุคคลค้ำประกัน",
+    "ส่งค้ำประกันบสย."
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน",
+    "รายละเอียดลักษณะสินเชื่อ เป็นสินเชื่อหมุนเวียน หรือ Revolving Loan ที่มีวัตถุประสงค์ในการหมุนเวียนทางธุรกิจ ยอดที่จ่ายชำระเข้ามาจะกลับเป็นวงเงินที่ลูกค้ากลับมาใช้ได้อีก"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "บุคคลธรรมดา สัญชาติไทย",
+    "วัตถุประสงค์เพื่อใช้ในการประกอบอาชีพเท่านั้น",
+    "ต้องมีประสบการณ์ในการประกอบอาชีพไม่ต่ำกว่า 1 ปี",
+    "ธุรกิจต้องมีสถานประกอบการชัดเจน และสามารถตรวจสอบได้"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของธนาคารและพนักงานของธนาคารที่รับชำระเงิน",
+    "ลูกค้าชำระด้วยตนเองผ่าน Micro Pay",
+    "ลูกค้าชำระด้วยตนเองแบบ Bill Payment ผ่าน แอป Alpha (Mobile Banking ของธนาคาร)"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "กรณีนำเงินสดมาชำระเงินกู้สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ ณ สำนักงานสาขาของบริษัท ไม่เสียค่าธรรมเนียม",
+   "pay_at_other_branch": "มีค่าบริการ เรียกเก็บตามจริงที่ผู้ให้บริการนั้น ๆ เรียกเก็บ",
+   "pay_at_payment_counters": "มีค่าบริการ เรียกเก็บตามจริงที่ผู้ให้บริการนั้น ๆ เรียกเก็บ",
+   "online_payment_channels": [
+    "ไม่มีค่าบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": "https://www.thaicreditbank.com/th/info/40/18/สินเชื่อนาโนและไมโครเครดิต-เพื่อธุรกิจรายย่อย"
+  }
+ },
+ {
+  "service_provider": "ไทยเครดิต",
+  "product": "สินเชื่อสินเชื่อนาโนเพื่อผู้ค้าออนไลน์",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องใช้หลักทรัพย์หรือบุคคลค้ำประกัน",
+    "ส่งค้ำประกันบสย."
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน",
+    "รายละเอียดลักษณะสินเชื่อ สนับสนุนวงเงินสินเชื่อหมุนเวียนแก่บุคคลธรรมดาที่เป็นผู้ประกอบธุรกิจการขายสินค้าทางออนไลน์ เช่น TikTok, Facebook, Instagram, lnwshop, Shoppee, Lazada, Kaidee เป็นต้น เพื่อนำไปใช้ในธุรกิจ โดยไม่มีทรัพย์สินเป็นหลักประกัน คิดอัตราดอกเบี้ยแบบลดต้นลดดอกและ ชำระคืนเงินกู้เป็นรายเดือนยอดเท่ากันทุกเดือน โดยแบ่งจ่ายทุกสัปดาห์ เป็นสินเชื่อที่นำเสนอแก้ผู้ประกอบการที่ประกอบธุรกิจ โดยมีวัตถุประสงค์เพื่อใช้เป็นเงินทุนหมุนเวียนที่ใช้ในกิจการ"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "บุคคลธรรมดาสัญชาติไทย",
+    "วัตถุประสงค์เพื่อใช้ในการประกอบอาชีพเท่านั้น",
+    "ต้องมีประสบการณ์ในการประกอบอาชีพไม่ต่ำกว่า 2 ปี (อายุกิจการและระยะเวลาการประกอบธุรกิจปัจจุบัน)",
+    "ธุรกิจต้องมีสถานที่ของกิจการชัดเจน และสามารถตรวจสอบได้",
+    "ธุรกิจขายสินค้าทางออนไลน์ ต้องมี Website หรือ Page หรือ หน้าร้านออนไลน์ ที่สามารถตรวจสอบได้",
+    "ธุรกิจต้องไม่เป็นลักษณะ Pre",
+    "order หรือ Drop Shipment",
+    "ธุรกิจต้องมีสต็อคสินค้าที่ร้านให้เห็นชัดเจน",
+    "ธุรกิจต้องมีคำสั่งซื้อและโพสต์การขายสินค้าในช่วง 3 เดือนล่าสุด หรือภาพร้านออนไลน์จากแพลทฟอร์มต่างๆ เช่น หน้าร้าน Shopee / Lazada / Tiktok เป็นต้น",
+    "ผู้กู้ต้องสมัคร Micro Pay ทุกราย"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของธนาคารและพนักงานของธนาคารที่รับชำระเงิน",
+    "ลูกค้าชำระด้วยตนเองผ่าน Micro Pay",
+    "ลูกค้าชำระด้วยตนเองแบบ Bill Payment ผ่าน แอป Alpha (Mobile Banking ของธนาคาร)"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "กรณีนำเงินสดมาชำระเงินกู้สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ ณ สำนักงานสาขาของบริษัท ไม่เสียค่าธรรมเนียม",
+   "pay_at_other_branch": "มีค่าบริการ เรียกเก็บตามจริงที่ผู้ให้บริการนั้น ๆ เรียกเก็บ",
+   "pay_at_payment_counters": "มีค่าบริการ เรียกเก็บตามจริงที่ผู้ให้บริการนั้น ๆ เรียกเก็บ",
+   "online_payment_channels": [
+    "ไม่มีค่าบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": "https://www.thaicreditbank.com/th/info/40/62/สินเชื่อนาโนและไมโคร-เพื่อผู้ค้าออนไลน์"
+  }
+ },
+ {
+  "service_provider": "ไทยเครดิต",
+  "product": "สินเชื่อนาโน เอสเอส",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องใช้หลักทรัพย์หรือบุคคลค้ำประกัน",
+    "ส่งค้ำประกันบสย."
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน",
+    "รายละเอียดลักษณะสินเชื่อ เป็นสินเชื่อหมุนเวียน หรือ Revolving Loan ที่มีวัตถุประสงค์ในการหมุนเวียนทางธุรกิจ ยอดที่จ่ายชำระเข้ามาจะกลับเป็นวงเงินที่ลูกค้ากลับมาใช้ได้อีก"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "บุคคลธรรมดา สัญชาติไทย",
+    "วัตถุประสงค์เพื่อใช้ในการประกอบอาชีพเท่านั้น",
+    "ต้องมีประสบการณ์ในการประกอบอาชีพไม่ต่ำกว่า 1 ปี (อายุกิจการและระยะเวลาการประกอบธุรกิจปัจจุบัน)"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของธนาคารและพนักงานของธนาคารที่รับชำระเงิน",
+    "ลูกค้าชำระด้วยตนเองผ่าน Micro Pay",
+    "ลูกค้าชำระด้วยตนเองแบบ Bill Payment ผ่าน แอป Alpha (Mobile Banking ของธนาคาร)"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "กรณีนำเงินสดมาชำระเงินกู้สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ ณ สำนักงานสาขาของบริษัท ไม่เสียค่าธรรมเนียม",
+   "pay_at_other_branch": "มีค่าบริการ เรียกเก็บตามจริงที่ผู้ให้บริการนั้น ๆ เรียกเก็บ",
+   "pay_at_payment_counters": "มีค่าบริการ เรียกเก็บตามจริงที่ผู้ให้บริการนั้น ๆ เรียกเก็บ",
+   "online_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": "https://www.thaicreditbank.com/th/info/180/20/ประกาศอัตราดอกเบี้ยค่าบริการต่างๆและเบี้ยปรับสินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับสินเชื่อนาโน-เอสเอส"
+  }
+ },
+ {
+  "service_provider": "ทุนแหลมทอง",
+  "product": "สินเชื่อนาโนไฟแนนซ์",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "อนุมัติและทราบผลเบื้องต้นภายใน 7 วัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน",
+    "รายละเอียดลักษณะสินเชื่อ เป็นสินเชื่อไม่มีหลักประกัน กำหนดให้ลูกค้าชำระค่างวดขั้นต่ำรายเดือน ตามที่บริษัทกำหนด (2.75% ของยอดเงินกู้) คิดดอกเบี้ยแบบลดต้นลดดอก เมื่อครบกำหนดสัญญา 1 ปี ให้ลูกค้าชำระคืนเงินต้นทั้งจำนวน หากลูกค้ามีประวัติดี สามารถต่อสัญญาได้"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "สำหรับลูกค้าสินเชื่อจดจำนองที่ดินปัจจุบันของบริษัท ที่มีประวัติการผ่อนชำระดี แล้วมีความต้องการสินเชื่อเพิ่ม (ทั้งนี้สินเชื่อจดจำนองที่ดิน บริษัทเรียกเก็บอัตราดอกเบี้ย และค่าธรรมเนียม ที่พึงคิดได้ เป็นไปตามประมวลกฎหมายแพ่งและพาณิชย์)",
+    "สำหรับผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า เกษตรกร ผู้ประกอบธุรกิจที่เป็นทะเบียนการค้า หรือพนักงานประจำที่มีฐานเงินเดือนต่ำกว่า 15,000 บาทต่อเดือน"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระงวดรายเดือน ไม่ต่ำกว่าค่างวดขั้นต่ำที่ทางบริษัทกำหนดให้ (2.75% ของยอดเงินกู้)"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "ไม่มีค่าธรรมเนียม",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของบริษัท",
+    "โอนเงินเข้าบัญชีธนาคารของบริษัท ผ่าน Mobile Banking Application ของลูกค้า"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "กรณีนำเงินสดมาชำระเงินกู้สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ ณ สำนักงานสาขาของบริษัท ไม่เสียค่าธรรมเนียม",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.ltcap.co.th/%e0%b8%aa%e0%b8%b4%e0%b8%99%e0%b9%80%e0%b8%8a%e0%b8%b7%e0%b9%88%e0%b8%ad%e0%b8%99%e0%b8%b2%e0%b9%82%e0%b8%99/"
+  }
+ },
+ {
+  "service_provider": "มันนี่ ฮับ เซอร์วิส",
+  "product": "สินเชื่อเพื่อการประกอบอาชีพ",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "อนุมัติทราบผลเบื้องต้นภายใน 5 นาที",
+    "ระยะเวลาตรวจสอบเอกสารและอนุมัติ ภายใน 3",
+    "5 วันทำการ"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน",
+    "รายละเอียดลักษณะสินเชื่อ สินเชื่อที่ส่งเสริมการเข้าถึงแหล่งทุนให้แก่ผู้ประกอบการรายย่อยทั่วประเทศ ต่อไปการเริ่มต้นธุรกิจของคุณจะไม่ใช่เรื่องยากอีกต่อไป มันนี่ฮับ พร้อมยืนเคียงข้างในทุกการเติบโตของธุรกิจคุณ เพียงยื่นกู้ ก็สามารถเริ่มธุรกิจในฝันของคุณได้เลย"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 58,
+   "applicant_qualifications": [
+    "สำหรับผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า ผู้ประกอบธุรกิจที่เป็นทะเบียนการค้า หรือเป็นพนักงานประจำที่มีฐานเงินเดือนไม่ต่ำกว่า 15,000 บาท"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของบริษัท",
+    "แอปพลิเคชันธนาคาร"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ชำระผ่านเคาน์เตอร์ธนาคารกสิกรไทย ค่าธรรมเนียม 10 บาทต่อรายการ",
+   "online_payment_channels": [
+    "ชำระผ่านระบบ Mobile Banking ของธนาคารไม่มีค่าธรรมเนียม"
+   ],
+   "atm_cdm_payment_channels": [
+    "ชำระผ่านเครื่อง ATM",
+    "CDM ค่าธรรมเนียม 10 บาทต่อรายการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.moneyhubservice.com"
+  }
+ },
+ {
+  "service_provider": "เฮงลิสซิ่ง แอนด์ แคปปิตอล",
+  "product": "สินเชื่อเฮงนาโนไฟแนนซ์",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์เป็นหลักประกัน",
+    "มีกิจการ/ร้านค้า เป็นของตัวเอง และเปิดสม่ำเสมอ (เปิดมาแล้วอย่างน้อย 6 เดือน)",
+    "ไม่ใช้สลิปเงินเดือน",
+    "ระยะเวลาการผ่อนชำระสูงสุดไม่เกิน 2 ปี"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน",
+    "รายละเอียดลักษณะสินเชื่อ เป็นสินเชื่อสำหรับใช้ประกอบธุรกิจ"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 18,
+   "max_age": 70,
+   "applicant_qualifications": [
+    "สำหรับผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า ผู้ประกอบธุรกิจ"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "สูงสุดสัญญา 20,000 บาทรีไฟแนนซ์สูงสุด 30,000 บาท",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "สูงสุดสัญญา 24 เดือนรีไฟแนนซ์สูงสุด 36 เดือน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่เกิน 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "ไม่มีค่าธรรมเนียม",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของบริษัท",
+    "mobile application ทุกธนาคาร"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "กรณีนำเงินสดมาชำระเงินกู้สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ ณ สำนักงานสาขาของบริษัท ไม่เสียค่าธรรมเนียม",
+   "pay_at_other_branch": "ลูกค้าเป็นผู้จ่ายค่าธรรมเนียมการชำระเงิน",
+   "pay_at_payment_counters": "- ร้านค้าสะดวกซื้อ 7 - ELEVEN ค่าธรรมเนียม 15-20 บาทค่าธรรมเนียมในการชำระผ่านจุดบริการรับชำระเงิน เป็นค่าธรรมเนียมตามอัตราที่ตัวแทนรับชำระเงินเรียกเก็บจากท่าน ณ จุดชำระเงิน ซึ่งอาจมีการเปลี่ยนแปลงได้ ขึ้นอยู่กับตัวแทนรับชำระเงิน",
+   "online_payment_channels": [
+    "ไม่เสียค่าธรรมเนียมการชำระเงิน"
+   ],
+   "atm_cdm_payment_channels": [
+    "ค่าธรรมเนียม 10 -20 บาทค่าธรรมเนียมในการชำระผ่านจุดบริการรับชำระเงิน เป็นค่าธรรมเนียมตามอัตราที่ตัวแทนรับชำระเงินเรียกเก็บจากท่าน ณ จุดชำระเงิน ซึ่งอาจมีการเปลี่ยนแปลงได้ ขึ้นอยู่กับตัวแทนรับชำระเงิน"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.hengleasing.com/%e0%b9%80%e0%b8%ae%e0%b8%87%e0%b8%99%e0%b8%b2%e0%b9%82%e0%b8%99%e0%b9%84%e0%b8%9f%e0%b9%81%e0%b8%99%e0%b8%99%e0%b8%8b%e0%b9%8c/"
+  }
+ },
+ {
+  "service_provider": "เอ็ม เอส ซี ดับเบิลยู",
+  "product": "MS Nano Finance",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "อนุมัติทราบผลเบื้องต้นภายใน 5",
+    "7 วัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "สำหรับเจ้าของธุรกิจและผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า อาชีพบริการอิสระ เช่น ขับแกร็บ"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่มีค่าธรรมเนียม - 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "ไม่มีค่าธรรมเนียม",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของบริษัท, บัญชีธนาคารของบริษัท"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "มี",
+   "pay_at_provider_branch": "กรณีนำเงินสดมาชำระเงินกู้สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ ณ สำนักงานสาขาของบริษัท ไม่เสียค่าธรรมเนียม",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ไม่มี"
+   ],
+   "atm_cdm_payment_channels": [
+    "มี ตามธนาคารเรียกเก็บ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://msmoneyspeed.com/"
+  }
+ },
+ {
+  "service_provider": "เงินติดล้อ",
+  "product": "สินเชื่อนาโนไฟแนนซ์",
+  "productDetails": {
+   "details": [
+    "ขอสินเชื่อเพื่อนำไปประกอบอาชีพ",
+    "เป็นเงินทุนหมุนเวียนธุรกิจ",
+    "หรือเป็นเงินทุนเริ่มธุรกิจใหม่",
+    "มีความสามารถในการชำระหนี้คืนได้ทั้งหมด"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน",
+    "รายละเอียดลักษณะสินเชื่อ เป็นสินเชื่อเพื่อนำไปประกอบอาชีพ"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 21,
+   "max_age": 70,
+   "applicant_qualifications": [
+    "เป็นลูกค้าใหม่และเก่าที่ผ่านเงื่อนไขที่กำหนดต้องอาศัยมาอย่างน้อย 1 ปีอายุงานมากว่า 6 เดือนขึ้นไป(ยกเว้น 3 จังหวัด ยะลา, ปัตตานี,นราธิวาส )ต้องมีเบอร์โทรศัพท์พื้นฐาน/เบอร์มือถือ อย่างน้อย 1 เบอร์"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "1 คน ต่อ 1 สัญญา",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นรายงวด"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "ไม่มีค่าธรรมเนียม - 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "ไม่มีค่าธรรมเนียม",
+   "default_interestrate_condition": [
+    "บริษัทไม่มีการคิดและเรียกเก็บค่าธรรมเนียมและเบี้ยปรับกรณีผิดนัดชำระหนี้เพิ่ม มีเพียงการคิดดอกเบี้ยปกติเท่านั้น"
+   ]
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สาขาเงินติดล้อทั่วประเทศ",
+    "ธนาคารกรุงศรีอยุธยา",
+    "เคาน์เตอร์เซอร์วิส",
+    "จุดบริการชำระเงิน เทสโก้โลตัส"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "สาขาเงินติดล้อทั่วประเทศธนาคารกรุงศรีอยุธยา",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "เคาน์เตอร์เซอร์วิสจุดบริการชำระเงิน เทสโก้โลตัส",
+   "online_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.tidlor.com/th/home.html"
+  }
+ },
+ {
+  "service_provider": "ออโต้ เอกซ์",
+  "product": "สินเชื่อนาโนไฟแนนซ์",
+  "productDetails": {
+   "details": [
+    "สินเชื่อเพื่อให้ลูกค้าไปซื้ออุปกรณ์อิเล็กทรอนิกส์เพื่อใช้ในการประกอบอาชีพต่างๆ"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 65,
+   "applicant_qualifications": [
+    "สำหรับผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า ผู้ประกอบธุรกิจที่เป็นทะเบียนการค้า หรือเป็นพนักงานประจำที่มีฐานเงินเดือนต่ำกว่า 15,000 บาท ต่อเดือน โดยมีวัตถุประสงค์เพื่อนำเงินไปประกอบอาชีพ หรือต่อยอดกิจการ หรือแก้ไขปัญหาหนี้นอกระบบซึ่งสุดท้ายเพื่อนำไปสู่การปลดหนี้ได้ในที่สุด"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวดๆละเท่าๆกัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "20 - 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของบริษัท'",
+    "ธนาคารไทยพาณิชย์ : SCB Easy Application / ผ่านเครื่อง ATM,CDM/หักชำระบัญชีเงินฝากอัตโนมัติ"
+   ],
+   "deduct_from_provider_account": "มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "? ชำระผ่าน เคาน์เตอร์เซอร์วิส / 7-11กรุงเทพมหานครและปริมณฑล 15 บาท/ครั้งต่างจังหวัด 20 บาท/ครั้ง? ชำระผ่าน Lotus's และ Lotus's go fresh ทุกสาขา10 บาท/ครั้ง? ชำระผ่าน เคาน์เตอร์รับชำระ บิ๊กซีและมินิบิ๊กซี ทุกสาขา 10 บาท/ครั้ง? ชำระผ่าน The Mall / M Bill Pay10 บาท/ครั้ง",
+   "online_payment_channels": [
+    "SCB Easy Application"
+   ],
+   "atm_cdm_payment_channels": [
+    "SCB"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": "http://www.chaiyo.co.th"
+  }
+ },
+ {
+  "service_provider": "สตาร์ มันนี่",
+  "product": "สินเชื่อนาโนไฟแนนซ์",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 69,
+   "applicant_qualifications": [
+    "เป็นบุคคลธรรมดา ที่มีรายได้ไม่แน่นอน เช่น ค้าขายทั่วไป พ่อค้าแม่ค้า ต้องพักอาศัยอยู่ในพื้นที่ไม่น้อยกว่า 2ปี (ที่พักอาศัยต้องตรงกับที่อยู่ในทะเบียนบ้าน)"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆกัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "28 - 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "ไม่มีค่าธรรมเนียม",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระที่เคาน์เตอร์ของบริษัท สตาร์ มันนี่ จำกัด",
+    "ชำระผ่านระบบอินเตอร์เน็ท"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีค่าธรรมเนียม",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "จุดบริการรับชำระ Testco Lotus 10 บาทต่อรายการ",
+   "online_payment_channels": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "atm_cdm_payment_channels": [
+    "10-35 บาท ต่อรายการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีค่าธรรมเนียม",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": "http://www.starmoney.co.th"
+  }
+ },
+ {
+  "service_provider": "เมืองไทย แคปปิตอล",
+  "product": "สินเชื่อนาโนไฟแนนซ์",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักประกัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน",
+    "รายละเอียดลักษณะสินเชื่อ เป็นสินเชื่อรายย่อยวัตถุประสงค์เพื่อการประกอบอาชีพ"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "ต้องเป็นลูกค้าสินเชื่อส่วนบุคคลของบริษัท มีประวัติการชำระดีตามเงื่อนไขที่บริษัทกำหนด"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "พิจารณาจากประวัติการผ่อนชำระเงื่อนไขเป็นไปตามที่บริษัทกำหนด",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "28 - 33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระ",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระที่สาขาของผู้ให้บริการ",
+    "ชำระผ่านแอปพลิเคชัน เมืองไทย แคปปิตอล",
+    "ชำระผ่าน mobile banking ของธนาคารกรุงเทพ/ธนาคารกรุงไทย/ ธนาคารกรุงศรีอยุธยา/ธนาคารกสิกรไทย/ ธนาคารเกียรตินาคิน/ธนาคารซีไอเอ็มบีไทย/ ธนาคารธนาคารทหารไทยธนชาต/ธนาคารทิสโก้/ธนาคารไทยพาณิชย์ /ธนาคารยูโอบี /ธนาคารออมสิน/ ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีค่าธรรมเนียม",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "- โลตัส (Lotus) 10 บาท- เคาน์เตอร์เซอร์วิส (Counter Service) - กรุงเทพฯ และปริมณฑล 15 บาท - ต่างจังหวัด 20 บาท",
+   "online_payment_channels": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": "https://www.muangthaicap.com/th/index.php"
+  }
+ },
+ {
+  "service_provider": "",
+  "product": "สินเชื่อนาโนกู๊ดมันนี่",
+  "productDetails": {
+   "details": [
+    "ไม่มีต้องมีหลักทรัพย์ค้ำประกัน",
+    "อนุมัติทราบผลเบื้องต้นภายใน 3",
+    "7 วันทำการ"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน",
+    "รายละเอียดลักษณะสินเชื่อ สินเชื่อส่วนบุคคลที่มีรูปแบบการให้สินเชื่อแบบเป็นเงินก้อนและผ่อนชำระคืนเป็นงวดๆ ด้วยการชำระยอดคืนเดือนละเท่าๆ กัน โดยมีวัตถุประสงค์เพื่อการประกอบอาชีพ สำหรับกลุ่มลูกค้าที่เป็นเจ้าของกิจการ (ผู้ประกอบการรายย่อย/ขนาดเล็ก) และผู้ประกอบอาชีพอิสระ"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "สำหรับกลุ่มลูกค้าที่เป็นเจ้าของกิจการ (ผู้ประกอบการรายย่อย/ขนาดเล็ก) และผู้ประกอบอาชีพอิสระ ที่ไม่ได้จดทะเบียนบริษัท มีรายได้ขั้นต่ำ 8,000 บาท"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระคืนเป็นงวดๆ ด้วยการชำระยอดคืนเดือนละเท่าๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "29 - 33%",
+   "interest_with_servicefee_condition": [
+    "ค่าธรรมเนียมรวมดอกเบี้ยไม่เกิน 33% ต่อปี"
+   ],
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": [
+    "อัตราดอกเบี้ยกรณีผิดนัดชำระไม่เกิน 33% ต่อปี (อัตราดอกเบี้ยปกติสูงสุดตามสัญญา + ส่วนเพิ่มร้อยละ 3%) ของเงินต้นของค่างวดที่ลูกค้าผิดนัดชำระ"
+   ]
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชําระผ่าน Mobile Banking Application ของทุกธนาคาร ไม่มีค่าธรรมเนียม"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": "https://goodmoneybygsb.com/"
+  }
+ },
+ {
+  "service_provider": "ควิก ลิสซิ่ง",
+  "product": "สินเชื่อนาโนไฟแนนซ์",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "อนุมัติทราบผลเบื้องต้นภายใน 1 วัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 65,
+   "applicant_qualifications": [
+    "สำหรับผู้ที่ประกอบอาชีพอิสระ หรือผู้มีรายได้ไม่แน่นอน เช่น พ่อค้า แม่ค้า ผู้ประกอบธุรกิจที่เป็นทะเบียนการค้า หรือเป็นพนักงานประจำ"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวด ๆ ละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "31.716%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "31.716% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "สำนักงานสาขาของบริษัท",
+    "ชำระผ่าน Internet หรือ Mobile Banking"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "มีบริการ",
+   "pay_at_provider_branch": "ไม่มีค่าธรรมเนียม",
+   "pay_at_other_branch": "กรณีชำระแบบ bill payment- ธนาคาร SCB 15 บาท/รายการ- ธนาคาร K Bank 10 บาท/รายการ- ธนาคาร ttb 10 บาท/รายการ- ธนาคาร KTB 12 บาท/รายการ- ธนาคาร BAAC 10 บาท/รายการ",
+   "pay_at_payment_counters": "- บิ๊ก ซี (ยอดชำระไม่เกิน 49,000 บาท/ครั้ง) 15 บาท/รายการ - โลตัส (ยอดชำระไม่เกิน 49,000 บาท/ครั้ง) 10 บาท/รายการเขตกรุงเทพฯและปริมณฑล- เคาน์เตอร์เซอร์วิส (ยอดชำระไม่เกิน 49,000 บาท/ครั้ง) 15 บาท/รายการเขตต่างจังหวัด - เคาน์เตอร์เซอร์วิส (ยอดชำระไม่เกิน 49,000 บาท/ครั้ง) 20 บาท/รายการ",
+   "online_payment_channels": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "atm_cdm_payment_channels": [
+    "กรณีชำระแบบ bill payment- ธนาคาร SCB 15 ไม่มีค่าธรรมเนียม- ธนาคาร K Bank 10 บาท",
+    "รายการ- ธนาคาร ttb 10 บาท",
+    "รายการ- ธนาคาร KTB 12 บาท",
+    "รายการ- ธนาคาร BAAC 10 บาท",
+    "รายการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.quickleasing.co.th"
+  }
+ },
+ {
+  "service_provider": "กสิกร ไลน์",
+  "product": "วงเงินให้ยืมนาโนสำหรับพาร์ทเนอร์ LINE MAN Wongnai (หรือ LINE MAN ให้ยืม)",
+  "productDetails": {
+   "details": [
+    "วงเงินสินเชื่อเพื่อเป็นทุนหมุนเวียนในการทำธุรกิจ สำหรับเจ้าของกิจการร้านค้าที่เป็นพาร์ทเนอร์กับบริษัท ไลน์แมน (ประเทศไทย) จำกัด และบริษัท วงใน มีเดีย จำกัด (LINE MAN Wongnai)",
+    "ไม่ต้องมีหลักทรัพย์หรือบุคคลค้ำประกัน",
+    "ไม่ต้องใช้เอกสารเพิ่ม",
+    "อนุมัติเร็วสุดภายใน 5 นาที",
+    "เบิกถอนเงินได้ง่าย แค่โอนผ่าน LINE BK บนแอปพลิเคชัน LINE"
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน",
+    "รายละเอียดลักษณะสินเชื่อ เป็นสินเชื่อหมุนเวียน หรือ Revolving Loan ที่มีวัตถุประสงค์เพื่อใช้เพื่อใช้เป็นทุนหมุนเวียนในการทำธุรกิจสำหรับคนค้าขาย เจ้าของกิจการที่เป็นพาร์ทเนอร์ร้านค้าของ LINE MAN Wongnai ซึ่งลูกค้าสามารถเลือกใช้วงเงินแบบผ่อนชำระ รับเงินก้อนและทยอยผ่อนเป็นงวดๆ ซึ่งยอดที่จ่ายชำระเข้ามาจะกลับเป็นวงเงินที่ลูกค้าสามารถกลับมาใช้ได้อีก โดยวงเงินสินเชื่อมีอายุ 1 ปี นับจากวันที่ได้รับอนุมัติ"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "สำหรับบุคคลธรรมดาที่มีสัญชาติไทยที่เป็นเจ้าของร้านค้าที่มีบัญชีผู้ใช้งานแอปพลิเคชัน Wongnai Merchant App ที่ใช้บริการตามสัญญาเข้าร่วมโครงการ GP Partnership และได้รับข้อเสนอเพื่อสมัครและใช้บริการผลิตภัณฑ์วงเงินให้ยืมนาโนผ่านแอปพลิเคชัน Wongnai Merchant App โดยผู้สมัครต้องมีบัญชีเงินฝากของธนาคารกสิกรไทยที่ผูกไว้กับ LINE BK บนแอปพลิเคชัน LINE"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "เป็นไปตามนโยบายพิจารณาสินเชื่อของบริษัทซึ่งอ้างอิงจากระดับความเสี่ยงของลูกค้า",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ลูกค้าเลือกใช้ได้เฉพาะวงเงินผ่อนชำระ ซึ่งกำหนดระยะเวลาผ่อนชำระคืนเป็นรายเดือน เดือนละเท่า ๆ กัน โดยมีระยะเวลาผ่อนเท่ากับ 12 เดือน ซึ่งยอดที่จ่ายชำระเข้ามาจะกลับเป็นวงเงินที่ลูกค้าสามารถกลับมาใช้ได้อีก"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "32 - 33%",
+   "interest_with_servicefee_condition": [
+    "ไม่มีค่าธรรมเนียม และค่าใช้จ่ายอื่นๆ เพิ่มเติมจากดอกเบี้ยที่เรียกเก็บ"
+   ],
+   "default_interest_rate": "33% ของกรณีใช้วงเงินผ่อนชำระ จะคิดจากเงินต้นในงวดที่ผิดนัดชำระ",
+   "default_interestrate_condition": [
+    "ดอกเบี้ยผิดนัดนับจากวันที่เริ่มค้างชำระ จนถึงวันที่ชำระยอดคงค้างเสร็จสิ้น"
+   ]
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระออนไลน์ผ่านแอปพลิเคชันของบริษัท",
+    "ชำระอัตโนมัติโดยสะสมเงินผ่านแอปพลิเคชัน Wongnai Merchant App ที่ลูกค้าใช้บริการตามสัญญาเข้าร่วมโครงการ GP Partnership ซึ่งเป็นไปตามข้อตกลงที่ลูกค้าได้ทำกับผู้ให้บริการ แอปพลิเคชัน Wongnai Merchant App"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ไม่มีค่าธรรมเนียม (เฉพาะการใช้ QR Payment ผ่านแอปพลิเคชันของธนาคารอื่น)"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ชำระอัตโนมัติโดยสะสมเงินผ่านแอปพลิเคชัน Wongnai Merchant App ที่ลูกค้าใช้บริการตามสัญญาเข้าร่วมโครงการ GP Partnership ซึ่งเป็นไปตามข้อตกลงที่ลูกค้าได้ทำกับผู้ให้บริการ แอปพลิเคชัน Wongnai Merchant App"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.linebk.com/th/promotions/detail/LMWN-co-lending-merchant/"
+  }
+ },
+ {
+  "service_provider": "จีฟิน เซอร์วิสเซส (ที)",
+  "product": "Grab Nano Loan (GNL)",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "ทราบผลอนุมัติสินเชื่อภายใน 1 วัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 65,
+   "applicant_qualifications": [
+    "เป็นบุคคลธรรมดา สัญชาติไทย และมีธุรกรรมเป็นพาร์ทเนอร์ขับขี่รถกับ Grab ต่อเนื่องไม่น้อยกว่า 4 เดือน"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวดๆ งวดละเท่าๆ กันเป็นรายวัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของยอดเงินต้นของงวดที่ผิดนัดชำระ",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "หักชำระจากบัญชีที่มีกับ Grab"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "หักชำระจากบัญชีที่มีกับ Grab",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://grabdriverth.com/gfs-bay-loan"
+  }
+ },
+ {
+  "service_provider": "กสิกร ไลน์",
+  "product": "วงเงินให้ยืมนาโน",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์หรือบุคคลค้ำประกัน",
+    "อนุมัติเร็วสุดภายใน 5 นาที เมื่อได้รับเอกสารครบถ้วน",
+    "เบิกถอนเงินได้ง่าย แค่โอนผ่าน LINE BK บนแอปพลิเคชัน LINE"
+   ],
+   "credit_line": [
+    "สินเชื่อวงเงินกู้หมุนเวียน",
+    "รายละเอียดลักษณะสินเชื่อ เป็นสินเชื่อหมุนเวียน หรือ Revolving Loan ที่มีวัตถุประสงค์เพื่อใช้เป็นทุนหมุนเวียนในการทำธุรกิจ หรือต่อยอดเพื่อทำธุรกิจใหม่ ยอดที่จ่ายชำระเข้ามาจะกลับเป็นวงเงินที่ลูกค้าสามารถกลับมาใช้ได้อีก โดยวงเงินสินเชื่อมีอายุ 1 ปี นับจากวันที่ได้รับอนุมัติ และลูกค้าสามารถเลือกใช้วงเงินพร้อมใช้หรือวงเงินผ่อนชำระได้ หรือจะเลือกใช้วงเงินทั้งสองประเภทพร้อมกันก็ได้"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "สำหรับบุคคลธรรมดาที่มีสัญชาติไทยที่ประกอบอาชีพอิสระ เป็นคนค้าขาย เจ้าของกิจการ และผู้ที่ต้องการทำอาชีพเสริม โดยมีรายได้ขั้นต่ำ 5,000 บาทต่อเดือน และมีบัญชีเงินฝากของธนาคารกสิกรไทยที่ผูกไว้กับ LINE BK บนแอปพลิเคชัน LINE"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "เป็นไปตามนโยบายพิจารณาสินเชื่อของบริษัทซึ่งอ้างอิงจากระดับความเสี่ยงของลูกค้า",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ลูกค้าสามารถเลือกใช้วงเงินพร้อมใช้หรือวงเงินผ่อนชำระได้ ในกรณีที่ลูกค้าเลือกวงเงินผ่อนชำระ จะกำหนดระยะเวลาผ่อนชำระคืนเท่ากับ 12 เดือน เดือนละเท่าๆ หากเป็นวงเงินพร้อมใช้จะเรียกเก็บขั้นต่ำที่อัตรา 2% ของเงินต้นคงค้างรวมกับดอกเบี้้ยที่่ครบกำหนดชำระ"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "33%",
+   "interest_with_servicefee_condition": [
+    "ไม่มีค่าธรรมเนียม และค่าใช้จ่ายอื่นๆ เพิ่มเติมจากดอกเบี้ยที่เรียกเก็บ"
+   ],
+   "default_interest_rate": "33% ของยอดหนี้คงค้าง กรณีมีการใช้วงเงินผ่อนชำระ จะคิดจากเงินต้นในงวดที่ผิดนัดชำระ",
+   "default_interestrate_condition": [
+    "ดอกเบี้ยผิดนัดนับจากวันที่เริ่มค้างชำระ จนถึงวันที่ชำระยอดคงค้างเสร็จสิ้น"
+   ]
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ชำระออนไลน์ผ่านแอปพลิเคชันของบริษัท"
+   ],
+   "deduct_from_provider_account": "ไม่มีค่าธรรมเนียม",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ไม่มีค่าธรรมเนียม (เฉพาะการใช้ QR Payment ผ่านแอปพลิเคชันของธนาคารอื่น)"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.linebk.com/th/credit-line/"
+  }
+ },
+ {
+  "service_provider": "จีฟิน เซอร์วิสเซส (ที)",
+  "product": "Merchant Cash Advance (MCA)",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์ค้ำประกัน",
+    "ทราบผลอนุมัติสินเชื่อภายใน 1 วัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": 20,
+   "max_age": 65,
+   "applicant_qualifications": [
+    "เป็นบุคคลธรรมดา สัญชาติไทย และมีธุรกรรมเป็นพาร์ทเนอร์ร้านอาหารกับ Grab ต่อเนื่องไม่น้อยกว่า 4 เดือน"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "ผ่อนชำระเป็นงวดๆ งวดละเท่าๆ กันเป็นรายวัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของยอดเงินต้นของงวดที่ผิดนัดชำระ",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "หักชำระจากบัญชีที่มีกับ Grab"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "หักชำระจากบัญชีที่มีกับ Grab",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ผ่าน Mobile Banking ของธนาคารพาณิชย์"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": "https://www.grab.com/th/merchant/finance/hub/products/quick-cash/"
+  }
+ },
+ {
+  "service_provider": "อาคุละคุ เอกซ์",
+  "product": "สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ",
+  "productDetails": {
+   "details": [
+    "ไม่ต้องมีหลักทรัพย์หรือบุคคลค้ำประกัน"
+   ],
+   "credit_line": [
+    "สินเชื่อเงินสดเบิกทั้งจำนวน",
+    "รายละเอียดลักษณะสินเชื่อ สินเชื่อรายย่อยเพื่อการประกอบอาชีพภายใต้การกำกับ ไม่ต้องมีหลักทรัพย์หรือบุคคลค้ำประกัน ที่เป็นสินเชื่อสำหรับรายย่อยที่มีวัตถุประสงค์เพื่อนำไปใช้ในการประกอบอาชีพ ไม่เกิน 50,000 บาท มีระยะเวลาการชำระคืนที่แน่นอน (term loan) คิดดอกเบี้ยแบบลดต้นลดดอก"
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": [
+    "มีความประสงค์จะนำเงินไปใช้เพื่อการประกอบธุรกิจสินเชื่อรายย่อยหรือเพื่อการประกอบอาชีพ",
+    "ผ่านการพิสูจน์และยืนยันตัวตนลูกค้า (KYC)",
+    "ผ่านช่องทางการขอสินเชื่อ ทางแอปพลิเคชั่นของบริษัท และ/หรือ ของพันธมิตร",
+    "เป็นผลิตภัณฑ์ให้บริการเฉพาะช่องทางอิเล็กทรอนิกส์ และจัดทำเอกสารและนำส่งข้อมูลแก่ลูกค้าในรูปแบบอิเล็กทรอนิกส์เท่านั้น"
+   ]
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "เป็นไปตามเกณฑ์ที่บริษัทกำหนด",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": [
+     "กำหนดผ่อนชำระคืนสินเชื่อเป็นรายงวด งวดละเท่า ๆ กัน"
+    ]
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "33%",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "33% ของเงินต้นของค่างวดที่ค้างชำระในแต่ละงวด",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": [
+    "ทุกช่องทาง"
+   ],
+   "deduct_from_provider_account": "ไม่มีบริการ",
+   "deduct_from_other_provider_account": "ไม่มีบริการ",
+   "pay_at_provider_branch": "ไม่มีบริการ",
+   "pay_at_other_branch": "ไม่มีบริการ",
+   "pay_at_payment_counters": "ไม่มีบริการ",
+   "online_payment_channels": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "atm_cdm_payment_channels": [
+    "ไม่มีบริการ"
+   ],
+   "phone_payment_channels": "ไม่มีบริการ",
+   "cheque_money_order_channels": "ไม่มีบริการ",
+   "other_payment_channels": "ไม่มีบริการ"
+  },
+  "additional_info": {
+   "product_website_link": ""
+  }
+ },
+ {
+  "service_provider": "",
+  "product": "",
+  "productDetails": {
+   "details": null,
+   "credit_line": [
+    ""
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": null
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": null
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": null,
+   "deduct_from_provider_account": "",
+   "deduct_from_other_provider_account": "",
+   "pay_at_provider_branch": "",
+   "pay_at_other_branch": "",
+   "pay_at_payment_counters": "",
+   "online_payment_channels": null,
+   "atm_cdm_payment_channels": null,
+   "phone_payment_channels": "",
+   "cheque_money_order_channels": "",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": ""
+  }
+ },
+ {
+  "service_provider": "",
+  "product": "",
+  "productDetails": {
+   "details": null,
+   "credit_line": [
+    ""
+   ]
+  },
+  "applicant_conditions": {
+   "min_age": null,
+   "max_age": null,
+   "applicant_qualifications": null
+  },
+  "credit_approval_conditions": {
+   "loan_amount": null,
+   "approval_conditions": "null",
+   "loan_duration": {
+    "min_loan_month": null,
+    "max_loan_amount": null
+   },
+   "repayment_conditions": {
+    "conditions_repayment": null
+   }
+  },
+  "interest_rate_details": {
+   "interest_with_service": "",
+   "interest_with_servicefee_condition": null,
+   "default_interest_rate": "",
+   "default_interestrate_condition": null
+  },
+  "payment_fees": {
+   "free_payment_channels": null,
+   "deduct_from_provider_account": "",
+   "deduct_from_other_provider_account": "",
+   "pay_at_provider_branch": "",
+   "pay_at_other_branch": "",
+   "pay_at_payment_counters": "",
+   "online_payment_channels": null,
+   "atm_cdm_payment_channels": null,
+   "phone_payment_channels": "",
+   "cheque_money_order_channels": "",
+   "other_payment_channels": ""
+  },
+  "additional_info": {
+   "product_website_link": ""
+  }
+ }
+]
