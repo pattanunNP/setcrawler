@@ -1,0 +1,2705 @@
+[
+ {
+  "provider": "กรุงเทพ บัวหลวง ไอแบงก์กิ้ง (บุคคลธรรมดา)บัวหลวง ไอแบงก์กิ้ง(บุคคลธรรมดา)",
+  "product": "บัวหลวง ไอแบงก์กิ้ง (บุคคลธรรมดา)บัวหลวง ไอแบงก์กิ้ง(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "ทำธุรกรรมทางการเงินที่ต้องการได้ตลอดเวลา ผ่านเว็บบราวเซอร์",
+   "customer_group": [
+    "บุคคลธรรมดา อายุตั้งแต่ 15 ปีบริบูรณ์ขึ้นไป",
+    "มี บัญชีเงินฝากออมทรัพย์ / บัญชีเงินฝากกระแสรายวัน / บัตรเดบิต / บัตรเครดิตของธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม",
+    "75 บาท/รายการ เงื่อนไข: T",
+    "Express (ธนาคารจะดำเนินการและนำเงินเข้าบัญชีของผู้รับโอนทันที) ไม่มีค่าบริการT",
+    "Priority (ธนาคารจะดำเนินการในเวลา 9.00 น. และนำเงินเข้าบัญชีของผู้รับโอนภายในช่วงเย็นของวันเดียวกัน)",
+    "โอนเงินไปยังบัญชีบุคคลอื่น จำนวนเงินไม่เกิน 100,000 บาท คิด 20 บาท ต่อรายการ",
+    "โอนเงินไปยังบัญชีบุคคลอื่น จำนวนเงินเกิน 100,000 บาท",
+    "500,000 บาท คิด 75 บาท ต่อรายการT",
+    "Basic (ธนาคารจะดำเนินการในเวลา 9.00 น. และนำเงินเข้าบัญชีของผู้รับโอนภายในช่วงบ่ายของวันทำการถัดไป)",
+    "โอนเงินไปยังบัญชีบุคคลอื่น จำนวนเงินไม่เกิน 100,000 บาท คิด 12 บาท ต่อรายการ",
+    "โอนเงินไปยังบัญชีบุคคลอื่น จำนวนเงินเกิน 100,000",
+    "500,000 บาท คิด 40 บาท ต่อรายการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "ค่าบริการโอนเงินไปต่างประเทศ กรณีผู้โอนเป็นผู้รับภาระค่าธรรมเนียมในส่วนของธนาคารกรุงเทพ คิด 300 บาท ต่อรายการ กรณีผู้โอนเป็นผู้รับภาระค่าธรรมเนียมในส่วนของธนาคารกรุงเทพและธนาคารในต่างประเทศ หากสกุลเงินปลายทางเป็น สกุลเงิน JPY คิด 2,400 บาท ต่อรายการ, สกุลเงิน HKD คิด 1,350 บาท ต่อรายการ และสกุลเงินอื่น คิอ 1,050 บาทต่อรายการ"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.bangkokbank.com/en/Personal/Digital-Banking/Bualuang-iBanking",
+   "fee_website": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ โมบายแบงก์กิ้งธนาคารกรุงเทพ (บุคคลธรรมดา)โมบายแบงก์กิ้งธนาคารกรุงเทพ(บุคคลธรรมดา)",
+  "product": "โมบายแบงก์กิ้งธนาคารกรุงเทพ (บุคคลธรรมดา)โมบายแบงก์กิ้งธนาคารกรุงเทพ(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "ทำธุรกรรมทางการเงินที่ต้องการได้ตลอดเวลาผ่านมือถือ",
+   "customer_group": [
+    "บุคคลธรรมดา อายุตั้งแต่ 15 ปีบริบูรณ์ขึ้นไป",
+    "มี บัญชีเงินฝากออมทรัพย์ / บัญชีเงินฝากกระแสรายวัน / บัตรเดบิต / บัตรเครดิตของธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "10 บาท/รายการ เงื่อนไข:",
+    "ผ่านตู้เอทีเอ็มธนาคารกรุงเทพ ไม่มีค่าธรรมเนียม",
+    "ผ่านตู้เอทีเอ็มธนาคารกสิกรไทย 10 บาท ต่อรายการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "1) ค่าธรรมเนียมบริการโอนเงินต่างประเทศ ผ่านระบบพร้อมเพย์ (PromptPay International)",
+    "1) การรับเงินโอนจากประเทศสิงค์โปร์ ไม่มีค่าธรรมเนียม",
+    "2) การโอนเงินไปประเทศสิงค์โปร์ คิด 150 บาทต่อรายการ2) ค่าบริการโอนเงินไปต่างประเทศ",
+    "1) กรณีผู้โอนเป็นผู้รับภาระค่าธรรมเนียมในส่วนของธนาคารกรุงเทพ คิด 300 บาท ต่อรายการ",
+    "2) กรณีผู้โอนเป็นผู้รับภาระค่าธรรมเนียมในส่วนของธนาคารกรุงเทพและธนาคารในต่างประเทศ หากสกุลเงินปลายทางเป็น สกุลเงิน JPY คิด 2,400 บาท ต่อรายการ, สกุลเงิน HKD คิด 1,350 บาท ต่อรายการ และสกุลเงินอื่น คิอ 1,050 บาทต่อรายการ"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.bangkokbank.com/en/Personal/Digital-Banking/Bualuang-mBanking",
+   "fee_website": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงไทย Krungthai NEXT (บุคคลธรรมดา)Krungthai NEXT(บุคคลธรรมดา)",
+  "product": "Krungthai NEXT (บุคคลธรรมดา)Krungthai NEXT(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการธนาคารออนไลน์บน Mobile Application ให้บริการลูกค้าทำรายการธุรกรรมทางการเงินด้วยตนเองผ่านเครือข่าย Internet สามารถทำธุรกรรมทางการเงิน ได้ทุกที่ ทุกเวลา ใช้งานง่าย ทั้งเรียกดูบัญชี โอนเงิน ชำระเงิน สำหรับผู้มีบัญชีเงินฝากกับธนาคารกรุงไทยก็เสมือนทำธุรกรรมทางการเงินที่ธนาคารด้วยตนเองตลอด 24 ชม.",
+   "customer_group": [
+    "บุคคลธรรมดาอายุ 15 ปีขึ้นไป",
+    "มีบัญชีประเภทเจ้าของบัญชีลงนามสั่งจ่ายแต่เพียงผู้เดียวกับธนาคารอย่างน้อย 1 บัญชี",
+    "ต้องมีโทรศัพท์มือถือ ที่จดทะเบียนในประเทศไทย (ใช้ได้ทั้งระบบ Pre",
+    "Paid และ Post",
+    "Paid)"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม เงื่อนไข:",
+    "วงเงินโอนสูงสุดไม่เกิน 2,000,000.",
+    "บาท/ครั้ง",
+    "จำนวนเงินโอนสูงสุด/วันขึ้นอยู่กับธนาคารเจ้าของบัญชีผู้โอน"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "10 บาท/รายการ เงื่อนไข: ยกเว้นค่าบริการทุกรายการ ตั้งแต่ 1 พฤษาคม 2566 เป็นต้นไป จนกว่าจะมีการประกาศเปลี่ยนแปลง"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "บริการเงินโอนออกไปต่างประเทศ Krungthai WARP กรณีโอนผ่าน Krungthai NEXT (1) กรณีตัดจากบัญชีเงินบาท/บัญชีเงินตราต่างประเทศ/Inter Wallet",
+    "ยอดเงินโอน ? 100,000 บาท คิดค่าธรรมเนียม",
+    "บาทต่อรายการ",
+    "ยอดเงินโอน \u003e100,000 บาท คิดค่าธรรมเนียม",
+    "บาทต่อรายการเงื่อนไขการให้บริการ",
+    "โอนได้ 4 สกุลเงิน ตรงประเทศปลายทาง ได้แก่ US\u003eUSD, UK\u003eGBP, SG\u003eSGD และ HK\u003eHKD",
+    "กรณีโอนจากบัญชีเงินบาท/บัญชีเงินตราต่างประเทศ เกินกว่า 1,500,",
+    "บาท หรือโอนเป็นเงินสกุลอื่น ๆ หรือโอนสกุลไม่ตรงกับประเทศปลายทาง ระบบจะปรับเป็นการโอนช่องทาง SWIFT ผ่านสาขาและคิดค่าบริการด้านเงินโอนต่างประเทศขาออก (Outward Remittance)",
+    "กรณีโอนออกจาก Inter Wallet ทำรายการสูงสุดได้ไม่เกิน 600,000 บาท (หรือเทียบเท่า) ต่อรายการ และกรณีโอนอออกเป็นเงินสกุลเงินอื่น ๆ หรือโอนสกุลเงินไม่ตรงกับประเทศปลายทาง ระบบจะปรับเป็นการโอนช่องทาง SWIFT ผ่านสาขา คิดค่าบริการด้านเงินโอนต่างประเทศขาออก (Outward Remittance)(2) กรณีตัดจาก Inter Wallet ยอดเงินโอนไม่เกิน 600,000 บาท (หรือเทียบเท่า) ด้วยสกลุเงิน ดังนี้",
+    "DKK คิดค่าธรรมเนียม Charge BEN = 121 DKK , Charge OUR = 301 DKK",
+    "INR คิดค่าธรรมเนียม Charge BEN = 1,450 INR , Charge OUR = 3,620 INR",
+    "KRW คิดค่าธรรมเนียม Charge BEN = 22,600 KRW , Charge OUR = 56,500 KRW",
+    "NOK คิดค่าธรรมเนียม Charge BEN = 183 NOK , Charge OUR = 456 NOK",
+    "RUB คิดค่าธรรมเนียม Charge BEN = 1,340 RUB , Charge OUR = 3,350 RUB",
+    "SEK คิดค่าธรรมเนียม Charge BEN = 181 SEK , Charge OUR = 451 SEK",
+    "TWD คิดค่าธรรมเนียม Charge BEN = 535 TWD , Charge OUR = 1,336 TWDค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยนกรณีผู้โอนชำระเงินให้ธนาคารเป็นสกุลเงินเดียวกับเงินโอนออก คิดค่าธรรมเนียมเพิ่มจากมูลค่าขอเเงินโอนต่อรายการ (ขั้นต่ำ 1,000 บาท) โดยแบ่งตามสกุลเงิน ดังนี้",
+    "สกุลเงิน USD คิดเพิ่ม",
+    "25%",
+    "สกุลเงินบาท คิดเพิ่ม",
+    "25%",
+    "สกุลอื่นๆ คิดเพิ่ม",
+    "50%"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.krungthai.com",
+   "fee_website": "https://www.krungthai.com"
+  }
+ },
+ {
+  "provider": "กรุงไทย KTB netbank (บุคคลธรรมดา)KTB netbank(บุคคลธรรมดา)",
+  "product": "KTB netbank (บุคคลธรรมดา)KTB netbank(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "-สามารถทำธุรกรรม ทางการเงินต่างๆ ได้ทุกที่ ทุกเวลา -ใช้งานง่าย ทั้งเรียกดูบัญชี เปิดบัญชี โอนเงิน ชำระเงิน ผ่าน Website -มี Personalized Menu สามารถจัดรูปแบบการใช้งานส่วนบุคคลด้วยตนเองได้ -มี Bookmark เพื่อบันทึกรายการโอน / ชำระ ที่ใช้งานบ่อยๆ เป็นประจำได้",
+   "customer_group": [
+    "ลูกค้าบุคคลธรรมดา อายุ 15 ปี ขึ้นไป",
+    "ผู้มีบัญชีเงินฝากกับทางธนาคาร และต้องการความสะดวกในการทำธุรกรรมทางการเงิน"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "5 บาท/รายการ เงื่อนไข:",
+    "วงเงินโอนสูงสุดไม่เกิน 699,999.",
+    "บาท/ครั้ง",
+    "จำนวนเงินโอนสูงสุด/วัน ขึ้นอยู่กับธนาคารเจ้าของบัญชีผู้โอน"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.krungthai.com",
+   "fee_website": "https://www.krungthai.com"
+  }
+ },
+ {
+  "provider": "กรุงไทย เป๋าตัง (บุคคลธรรมดา)เป๋าตัง(บุคคลธรรมดา)",
+  "product": "เป๋าตัง (บุคคลธรรมดา)เป๋าตัง(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "-ใช้ “เป๋าตัง” แล้ว ไม่ต้องพกเงินสด -สะดวกแค่สแกน เพื่อจ่าย -ปลอดภัยใช้ Fingerprint ยืนยันการชำระเงิน -บริหารจัดการการเงิน...ได้ด้วยตัวคุณเอง",
+   "customer_group": [
+    "สำหรับผู้มีหมายเลขบัตรเอทีเอ็ม/เดบิต หรือ รหัสผู้ใช้งาน Krungthai netbank/Krungthai NEXT"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.krungthai.com",
+   "fee_website": "https://www.krungthai.com"
+  }
+ },
+ {
+  "provider": "กรุงศรีอยุธยา SMS Banking (บุคคลธรรมดา)SMS Banking(บุคคลธรรมดา)",
+  "product": "SMS Banking (บุคคลธรรมดา)SMS Banking(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการแจ้งยอดเงินเข้า-ออกทุกรายการไม่กำหนดจำนวนเงินขั้นต่ำผ่าน SMS",
+   "customer_group": [
+    "บุคคลธรรมดาที่มีบัญชีเงินฝากออมทรัพย์หรือกระแสรายวัน"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีบริการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "ค่าธรรมเนียมรายเดือน 19 บาท/เดือน/บัญชี"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.krungsri.com/th/personal/digital-banking/krungsri-sms-banking",
+   "fee_website": "https://www.krungsri.com/Krungsri2020/media/Banking-Rate/service-fees/th/electronics-banking-service-fees-15june2021-th.pdf"
+  }
+ },
+ {
+  "provider": "กรุงศรีอยุธยา กดเงินไม่ใช้บัตร (บุคคลธรรมดา)กดเงินไม่ใช้บัตร(บุคคลธรรมดา)",
+  "product": "กดเงินไม่ใช้บัตร (บุคคลธรรมดา)กดเงินไม่ใช้บัตร(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "ถอนเงินสดโดยไม่ต้องใช้บัตรที่ตู้เอทีเอ็มธนาคารกรุงศรีฯ โดยรับรหัสถอนเงินผ่าน mobile banking",
+   "customer_group": [
+    "บุคคลธรรมดาที่มีบัญชีเงินฝากออมทรัพย์หรือกระแสรายวัน"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีบริการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.krungsri.com/th/personal/digital-banking/kma/services/cardless",
+   "fee_website": "https://www.krungsri.com/th/personal/digital-banking/kma/services/cardless"
+  }
+ },
+ {
+  "provider": "กรุงศรีอยุธยา การสอบถามสถานะของบัญชี (บุคคลธรรมดา)การสอบถามสถานะของบัญชี(บุคคลธรรมดา)",
+  "product": "การสอบถามสถานะของบัญชี (บุคคลธรรมดา)การสอบถามสถานะของบัญชี(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "เช็คยอดคงเหลือหรือรายการเดินบัญชี",
+   "customer_group": [
+    "บุคคลธรรมดาที่มีบัญชีเงินฝาก"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีบริการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.krungsri.com/th/personal/digital-banking/internet-banking",
+   "fee_website": "https://www.krungsri.com/Krungsri2020/media/Banking-Rate/service-fees/th/electronics-banking-service-fees-15june2021-th.pdf"
+  }
+ },
+ {
+  "provider": "กรุงศรีอยุธยา การสอบถามสถานะของบัญชี (บุคคลธรรมดา)การสอบถามสถานะของบัญชี(บุคคลธรรมดา)",
+  "product": "การสอบถามสถานะของบัญชี (บุคคลธรรมดา)การสอบถามสถานะของบัญชี(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "เช็คยอดคงเหลือหรือรายการเดินบัญชี",
+   "customer_group": [
+    "บุคคลธรรมดาที่มีบัญชีเงินฝาก"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีบริการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.krungsri.com/th/personal/digital-banking/kma/services/recommend",
+   "fee_website": "https://www.krungsri.com/Krungsri2020/media/Banking-Rate/service-fees/th/electronics-banking-service-fees-15june2021-th.pdf"
+  }
+ },
+ {
+  "provider": "กรุงศรีอยุธยา การโอนเงิน (บุคคลธรรมดา)การโอนเงิน(บุคคลธรรมดา)",
+  "product": "การโอนเงิน (บุคคลธรรมดา)การโอนเงิน(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "โอนเงินภายในธนาคาร, โอนเงินต่างธนาคาร, โอนเงินพร้อมเพย์",
+   "customer_group": [
+    "บุคคลธรรมดาที่มีบัญชีเงินฝากออมทรัพย์หรือกระแสรายวัน"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีบริการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.krungsri.com/th/personal/digital-banking/kma/services/recommend",
+   "fee_website": "https://www.krungsri.com/Krungsri2020/media/Banking-Rate/service-fees/th/electronics-banking-service-fees-15june2021-th.pdf"
+  }
+ },
+ {
+  "provider": "กรุงศรีอยุธยา การโอนเงิน (บุคคลธรรมดา)การโอนเงิน(บุคคลธรรมดา)",
+  "product": "การโอนเงิน (บุคคลธรรมดา)การโอนเงิน(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "โอนเงินภายในธนาคาร, โอนเงินต่างธนาคาร, โอนเงินพร้อมเพย์",
+   "customer_group": [
+    "บุคคลธรรมดาที่มีบัญชีเงินฝากออมทรัพย์หรือกระแสรายวัน"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีบริการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.krungsri.com/th/personal/digital-banking/internet-banking",
+   "fee_website": "https://www.krungsri.com/Krungsri2020/media/Banking-Rate/service-fees/th/electronics-banking-service-fees-15june2021-th.pdf"
+  }
+ },
+ {
+  "provider": "กรุงศรีอยุธยา การโอนเงินต่างประเทศ (บุคคลธรรมดา)การโอนเงินต่างประเทศ(บุคคลธรรมดา)",
+  "product": "การโอนเงินต่างประเทศ (บุคคลธรรมดา)การโอนเงินต่างประเทศ(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "โอนเงินต่างประเทศผ่านช่องทาง mobile banking",
+   "customer_group": [
+    "บุคคลธรรมดาที่มีบัญชีเงินฝากออมทรัพย์หรือกระแสรายวัน"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "350",
+    "1,200 บาท/รายการ เงื่อนไข: กรณี Charge Beneficiary หรือ share คิดค่าธรรมเนียม 350 บาทต่อรายการ กรณีต้องการให้ผู้รับเงินปลายทางได้รับเงินเต็มจำนวน ค่าธรรมเนียมแตกต่างตามสกุลเงิน"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.krungsri.com/th/personal/banking-services/international-remittance/krungsri-online-international-remittance",
+   "fee_website": "https://www.krungsri.com/Krungsri2020/media/Banking-Rate/service-fees/th/international-payment-system-service-09112020-th.pdf"
+  }
+ },
+ {
+  "provider": "กรุงศรีอยุธยา การโอนเงินต่างประเทศ (บุคคลธรรมดา)การโอนเงินต่างประเทศ(บุคคลธรรมดา)",
+  "product": "การโอนเงินต่างประเทศ (บุคคลธรรมดา)การโอนเงินต่างประเทศ(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "โอนเงินต่างประเทศผ่านช่องทาง mobile banking",
+   "customer_group": [
+    "บุคคลธรรมดาที่มีบัญชีเงินฝากออมทรัพย์หรือกระแสรายวัน"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "350",
+    "1,200 บาท/รายการ เงื่อนไข: กรณี Charge Beneficiary หรือ share คิดค่าธรรมเนียม 350 บาทต่อรายการ กรณีต้องการให้ผู้รับเงินปลายทางได้รับเงินเต็มจำนวน ค่าธรรมเนียมแตกต่างตามสกุลเงิน"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.krungsri.com/th/personal/banking-services/international-remittance/krungsri-online-international-remittance",
+   "fee_website": "https://www.krungsri.com/Krungsri2020/media/Banking-Rate/service-fees/th/international-payment-system-service-09112020-th.pdf"
+  }
+ },
+ {
+  "provider": "กสิกรไทย K BIZ (บุคคลธรรมดาและนิติบุคคล)K BIZ(บุคคลธรรมดาและนิติบุคคล)",
+  "product": "K BIZ (บุคคลธรรมดาและนิติบุคคล)K BIZ(บุคคลธรรมดาและนิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "เป็นช่องทางในการทำธุรกรรมทางการเงินผ่านอินเทอร์เน็ต บริหารจัดการด้านการเงินได้สะดวกยิ่งขึ้น บนระบบรักษาความปลอดภัยข้อมูลระดับสูงของธนาคารที่ได้มาตรฐาน????",
+   "customer_group": [
+    "สำหรับนิติบุคคลจดทะเบียนตามกฎหมายไทย"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม",
+    "750 บาท/รายการ เงื่อนไข:",
+    "ทันที (ตลอด 24 ชั่วโมง) ฟรีค่าธรรมเนียม",
+    "BAHTNET (ภายใน 1 วันทำการ)",
+    "ธนาคารกสิกรไทยคิดค่าธรรมเนียมจากผู้โอน รายการละ 120 บาท",
+    "ธนาคารผู้รับโอนคิดค่าธรรมเนียมจากผู้รับโอน",
+    "กรุงเทพฯและปริมณฑล รายการละ 100 บาท",
+    "ต่างจังหวัด รายการละ 100 บาท + พันละ 1 บาท เศษของพันบาทไม่คิดสูงสุด ไม่เกิน 750 บาท ต่อรายการ",
+    "SMART (ภายใน 2 วันทำการ) ค่าธรรมเนียม 12 บาท ต่อรายการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.kasikornbank.com/th/kbiz/pages/index.aspx",
+   "fee_website": null
+  }
+ },
+ {
+  "provider": "กสิกรไทย K PLUS (บุคคลธรรมดา)K PLUS(บุคคลธรรมดา)",
+  "product": "K PLUS (บุคคลธรรมดา)K PLUS(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "K PLUS จัดการชีวิตประจำวันของคุณให้ง่ายขึ้นเติมเงินง่าย โอนเงินไว จ่ายบิลสะดวก ครบทุกความต้องการ",
+   "customer_group": [
+    "บุคคลธรรมดา อายุตั้งแต่ 12 ปีบริบูรณ์ขึ้นไป",
+    "มี บัญชีเงินฝากออมทรัพย์ / บัญชีเงินฝากกระแสรายวัน / บัตรเดบิต / บัตรเครดิต หรือบัตรเงินด่วนของธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ตามอัตราที่กำหนด เงื่อนไข: ถอนเงินที่เครื่องเอทีเอ็มต่างธนาคาร 10",
+    "15 บาท ต่อครั้ง"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.kasikornbank.com/th/personal/digital-banking/kplus/Pages/index.aspx",
+   "fee_website": "https://www.kasikornbank.com/TH/Rate"
+  }
+ },
+ {
+  "provider": "กสิกรไทย K PLUS SME (บุคคลธรรมดาและนิติบุคคล)K PLUS SME(บุคคลธรรมดาและนิติบุคคล)",
+  "product": "K PLUS SME (บุคคลธรรมดาและนิติบุคคล)K PLUS SME(บุคคลธรรมดาและนิติบุคคล)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "ธนาคารบนมือถือสำหรับลูกค้า SME ให้คุณจัดการธุรกิจได้คล่องตัวแบบมืออาชีพบนแอปพลิเคชันเดียว",
+   "customer_group": [
+    "บุคคลธรรมดา อายุตั้งแต่ 15 ปีบริบูรณ์ขึ้นไป หรือ นิติบุคคล",
+    "มีบัญชีเงินฝากออมทรัพย์หรือบัญชีเงินฝากกระแสรายวันของธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.kasikornbank.com/th/business/sme/Digital-banking/Pages/KPLUS_SME.aspx",
+   "fee_website": null
+  }
+ },
+ {
+  "provider": "กสิกรไทย LINE BK (บุคคลธรรมดา)LINE BK(บุคคลธรรมดา)",
+  "product": "LINE BK (บุคคลธรรมดา)LINE BK(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการธนาคารแบบดิจิทัล เปิดบัญชีได้สะดวก ไม่กำหนดเงินฝากขั้นต่ำในบัญชี สามารถทำธุรกรรมโอนเงินได้ง่ายผ่านแชท LINE และดูรายการแจ้งเตือนเงินเข้า-ออกผ่าน LINE นอกจากนี้ ยังมีบริการถอนเงินไม่ต้องใช้บัตร บัตรเดบิต และวงเงินสินเชื่อที่ให้บริการโดยบริษัทกสิกร ไลน์ จำกัด",
+   "customer_group": [
+    "บุคคลธรรมดา สัญชาติไทยมีอายุ 12 ปีบริบูรณ์ขึ้นไป"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.linebk.com/th/",
+   "fee_website": "https://kasikornbank.com/th/rate/fee/Pages/fee.aspx"
+  }
+ },
+ {
+  "provider": "เกียรตินาคินภัทร KKP Mobile (บุคคลธรรมดา)KKP Mobile(บุคคลธรรมดา)",
+  "product": "KKP Mobile (บุคคลธรรมดา)KKP Mobile(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการ KKP Mobile เป็นช่องทางในการทำธุรกรรมทางการเงินผ่านแอปพลิเคชันที่ธนาคารได้พัฒนาขึ้นเพื่อให้ ลูกค้าของธนาคารสามารถบริหารจัดการด้านการเงินได้ด้วยตนเองได้ตลอด 24 ชั่วโมง รองรับการทำธุรกรรมทางการเงินต่างๆเช่น บริการด้านบัญชี,บริการโอนเงิน,บริการชำระเงิน,บริการเตือนเพื่อจ่าย,บริจาคเงินอิเล็กทรอนิกส์ (E-Donation),บริการตรวจสอบเครดิตบูโร(NCB Self Enquiry),บริการด้านกองทุนรวม เป็นต้น ซึ่งรองรับการใช้งานทั้งภาษาไทยและภาษาอังกฤษ บนพื้นฐานของระบบการรักษาความปลอดภัยที่ได้มาตรฐาน",
+   "customer_group": [
+    "เป็นลูกค้าประเภทบุคคลธรรมดา",
+    "มีบัญชีเงินฝากกับธนาคารประเภทออมทรัพย์ บัญชีกระแสรายวัน หรือ บัญชีเงินฝากประจำอย่างน้อย 1 บัญชี (ต้องเป็นบัญชีชื่อเดี่ยวเท่านั้น)",
+    "มีอีเมล (Email Address) และเบอร์โทรศัพท์มือถือ ให้ไว้กับ ธนาคาร",
+    "สมัครใช้บริการผ่านสาขาของธนาคาร ซึ่งจะได้รับอีเมล์ จากธนาคาร แจ้งการสมัครเสร็จสมบูรณ์"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "10 บาท/รายการ เงื่อนไข: ค่าธรรมเนียมการทำรายการ บริการถอนเงินโดยไม่ใช้บัตร ผ่านตู้ ATM/CDM ของธนาคารอื่น ไม่คิดค่าบริการสำหรับ 10 รายการแรกของเดือน รายการที่ 11 เป็นต้นไปคิดค่าบริการครั้งละ 10 บาท"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "บริการ dStatement บริการเรียกขอและรับส่งข้อมูลรายการเคลื่อนไหวบัญชีเงินฝาก ในรูปแบบดิจิทัลระหว่างธนาคาร อัตราค่าบริการ 1 บาท ต่อบัญชี"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://bank.kkpfg.com/th/personal-banking/digital-banking/kkp-mobile",
+   "fee_website": "https://bank.kkpfg.com/th/interest/fee-service"
+  }
+ },
+ {
+  "provider": "เกียรตินาคินภัทร KKP Mobile @PhatraEdge (บุคคลธรรมดา)KKP Mobile @PhatraEdge(บุคคลธรรมดา)",
+  "product": "KKP Mobile @PhatraEdge (บุคคลธรรมดา)KKP Mobile @PhatraEdge(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการKKP Mobile @PhatraEdgeเป็นบริการธนาคารผ่านอินเทอร์เน็ตของธนาคารเกียรตินาคิน (“ธนาคาร”)สำหรับลกู ค้าธนาคารที่มีบัญชีการลงทนุ กับบริษัทหลักทรัพยภัทร จำกัด (มหาชน) (“บล.ภัทร”) ซึ่งเป็นอีกหนึ่งช่องทางในการทำธุรกรรมทางการเงินที่ถูกออกแบบมาเพื่ออำนวยความสะดวกให้กับลูกค้าในการบริหารจัดการด้านการเงินและการลงทุนได้สะดวกและมีประสิทธิภาพมากขึ้น บนระบบรักษาความปลอดภัยข้อมูลที่ได้มาตรฐาน เพื่อการให้บริการที่ครบวงจรของ กลุ่มธุรกิจการเงินเกียรตินาคินภัทร โดยบริการ KKP Mobile @PhatraEdge นี้รองรับการทำธุรกรรมทางการเงินต่างๆเช่นการเรียกดูยอดเงินคงเหลือรายการเดิน บัญชีการทำธุรกรรมโอนเงินการชำระค่าสินค้าและบริการเป็นต้น โดยสามารถใชบิรการไดทั้งช่องทางเว็บไซต์และ Mobile Application",
+   "customer_group": [
+    "เป็นลูกค้าประเภทบุคคลธรรมดามีบัญชีเงินฝากกับธนาคารเกียรตินาคินภัทรประเภทบัญชีออมทรัพย์ บัญชีกระแสรายวัน หรือบัญชีเงินฝากประจำอย่างน้อย 1 บัญชีมีอีเมล (Email Address) และหมายเลขโทรศัพท์มือถือ ให้ไว้กับธนาคารเกียรตินาคินภัทรมีบัญชีการลงทุนกับ บล.ภัทรสมัครใช้บริการการลงทุนผ่านเว็บไซต์ www.phatraedge.com โดยมี รหัสประจำตัว (Username) และ รหัสผ่าน (Password) ที่สามารถใช้งานได้*กรณีบัญชีนิติบุคคล/บัญชีร่วมไม่สามารถสมัครบริการ KKP e",
+    "Banking @KKP Securities ได้"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "10 บาท/รายการ เงื่อนไข: ค่าธรรมเนียมการทำรายการ บริการถอนเงินโดยไม่ใช้บัตร ผ่านตู้ ATM/CDM ของธนาคารอื่น ไม่คิดค่าบริการสำหรับ 10 รายการแรกของเดือน รายการที่ 11 เป็นต้นไปคิดค่าบริการครั้งละ 10 บาท"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "บริการ dStatement บริการเรียกขอและรับส่งข้อมูลรายการเคลื่อนไหวบัญชีเงินฝาก ในรูปแบบดิจิทัลระหว่างธนาคาร อัตราค่าบริการ 1 บาท ต่อบัญชี"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://bank.kkpfg.com/th/kkp-biz-ebanking",
+   "fee_website": "https://bank.kkpfg.com/th/interest/fee-service"
+  }
+ },
+ {
+  "provider": "ซีไอเอ็มบี ไทย CIMB THAI Digital Banking (CIMB TH) (บุคคลธรรมดา)CIMB THAI Digital Banking (CIMB TH)(บุคคลธรรมดา)",
+  "product": "CIMB THAI Digital Banking (CIMB TH) (บุคคลธรรมดา)CIMB THAI Digital Banking (CIMB TH)(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการธนาคารแบบดิจิทัล เพื่อให้ผู้บริการสามารถเข้าถึงบริการต่างๆของธนาคารผ่านแอปบนมือถือ",
+   "customer_group": [
+    "บุคคลธรรมดามีอายุ 15ปีบริบูรณ์ขึ้นไป มีผลิตภัณฑ์บัญชีเงินฝาก หรือผลิตภัณฑ์สินเชื่อกับธนาคารอย่างน้อย 1 บัญชี"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": null,
+   "fee_website": null
+  }
+ },
+ {
+  "provider": "ทหารไทยธนชาต TOUCH (บุคคลธรรมดา)TOUCH(บุคคลธรรมดา)",
+  "product": "TOUCH (บุคคลธรรมดา)TOUCH(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "เป็นการทำธุรกรรมผ่านช่องทางดิจิทัลแบงก์กิ้งผ่านมือถือ",
+   "customer_group": [
+    "บุคคลธรรมดา",
+    "มีบัญชีเงินฝากออมทรัพย์ / บัญชีเงินฝากกระแสรายวัน/บัตรเดบิต ของธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "25",
+    "35 บาท/รายการ เงื่อนไข:",
+    "วงเงินไม่เกิน 20,000 บาท คิดค่าธรรมเนียม 25 บาทต่อรายการ",
+    "วงเงินมากกว่า 20,000 – 500,000 บาท คิดค่าธรรมเนียม 35 บาทต่อรายการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "10 บาท/รายการ เงื่อนไข: ที่ตู้ ATM / ADM ทีทีบี: ไม่มีค่าธรรมเนียมที่ตู้ ATM / ADM ของธนาคารอื่น: ครั้งละ 10 บาทต่อรายการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.tmbbank.com/home",
+   "fee_website": "https://www.tmbbank.com/rates"
+  }
+ },
+ {
+  "provider": "ทิสโก้ TISCO My Wealth (บุคคลธรรมดา)TISCO My Wealth(บุคคลธรรมดา)",
+  "product": "TISCO My Wealth (บุคคลธรรมดา)TISCO My Wealth(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "เป็นบริการที่อำนวยความสะดวกในการทำธุรกรรมทางการเงิน เช่น การตรวจสอบยอดเงิน รายการเคลื่อนไหวทางบัญชี การโอนเงิน การชำระค่าสินค้าและบริการ และสมัครบริการพร้อมเพย์ เป็นต้น ผ่านแอพพลิเคชัน TISCO Mobile Banking ได้อย่างรวดเร็วทันใจ ทุกที่ทุกเวลาโดยผู้ใช้บริการไม่ต้ องติดต่อทำธุรกรรมด้วยตนเองที่สาขาธนาคาร",
+   "customer_group": [
+    "ผู้สมัครใช้บริการต้องเป็นบุคคลธรรมดา (งดให้บริการสำหรับบัญชีร่วม)",
+    "มีบัญชีเงินฝากประเภทออมทรัพย์และ/หรือกระแสรายวัน",
+    "ผู้ใช้บริการซึ่งไม่เคยเป็นลูกค้าของบริษัทในกลุ่มทิสโก้ต้องเปิดบัญชีเงินฝากขั้นต่ำ 20,000 บาท หรือกรณีผู้ใช้บริการเปิดบัญชีเงินฝากและเปิดบัญชีกองทุนในคราวเดียวกันต้องเปิดบัญชีทั้งสองรายการรวมกันขั้นต่ำ 20,000 บาท จึงจะสามารถสมคัรใช้บริการได้ (มีผลตั้งแต่วันที่ 1 สิงหาคม 2563)",
+    "การสมัครใช้บริการทิสโก้โมบายแบงคกิ้ง ต้องติดต่อสาขาของธนาคารเท่านั้น"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.tisco.co.th/th/personal/service/mywealth.html",
+   "fee_website": "https://www.tisco.co.th/content/dam/tiscobank/download/rate/fee/2020-05-01-bank-fee-th.pdf"
+  }
+ },
+ {
+  "provider": "ไทยเครดิต alpha by Thai Credit (บุคคลธรรมดา)alpha by Thai Credit(บุคคลธรรมดา)",
+  "product": "alpha by Thai Credit (บุคคลธรรมดา)alpha by Thai Credit(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการทางการเงินออนไลน์ผ่านโมบายแอปพลิเคชันบนโทรศัพท์มือถือสมาร์ทโฟน (Smartphone) หรือแท็บเล็ต (Tablet) โดยลูกค้าของธนาคารสามารถทำธุรกรรมทางการเงินได้ด้วยตนเอง ดังนี้1.เรียกดูรายละเอียดบัญชีเงินฝาก และรายการเดินบัญชีย้อนหลังของบัญชีเงินฝาก2.โอนเงินไปยังบัญชีตนเอง และบัญชีอื่น3.โอนเงินผ่านบริการพร้อมเพย์4.ชำระค่าสินค้าและบริการผ่านบริการพร้อมเพย์5.ชำระสินเชื่อธนาคารไทยเครดิต6.เติมเงินผ่านบริการพร้อมเพย์7.เติมเงินเข้าไมโครเพย์8.ถอนเงินไม่ใช้บัตรที่เครื่องเอทีเอ็ม SCB 9.ฝาก/ถอนเงินที่เคาน์เตอร์เซอร์วิส10.ค้นหาจุดบริการ11.เปิดบัญชีออมทรัพย์อัลฟา",
+   "customer_group": [
+    "ผู้ขอใช้บริการต้องมีบัญชีเงินฝากของธนาคารอย่างน้อย 1 บัญชี (ประเภทบุคคลธรรมดาเท่านั้น และไม่เป็นบัญชีร่วม) ดังต่อไปนี้",
+    "ออมทรัพย์ (A1)",
+    "ออมทรัพย์เพิ่มค่าพิเศษ (EK, ET)",
+    "ออมทรัพย์ PLUS ACCOUNT ONE (AA)",
+    "ออมทรัพย์ PLUS HI (BQ)",
+    "ออมทรัพย์เต็มกระปุก (CA, NZ)",
+    "ออมทรัพย์อัลฟา (TA, TB)",
+    "ฝากประจำสำหรับบุคคลธรรมดา"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม เงื่อนไข: - วงเงินการโอนเงินพร้อมเพย์: สูงสุด 699,999.99 บาทต่อรายการ และสูงสุด 2,000,000 บาทต่อวัน ยกเว้นกรณีลงทะเบียนใช้งานด้วยพาสปอร์ตวงเงินสูงสุด 49,999 บาทต่อวัน- วงเงินการโอนเงินภายในธนาคาร ต่างธนาคาร พร้อมเพย์ และเติมเงินสูงสุดต่อวัน เป็นวงเงินเดียวกัน และรวมทุกบัญชีบน alpha by Thai Credit",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม เงื่อนไข:",
+    "วงเงินการโอนเงินไปยังบัญชีต่างธนาคาร: สูงสุด 699,999.99 บาทต่อรายการ และสูงสุด 2,000,000 บาทต่อวัน ยกเว้นกรณีลงทะเบียนใช้งานด้วยพาสปอร์ตวงเงินสูงสุด 49,999 บาทต่อวัน",
+    "วงเงินการโอนเงินภายในธนาคาร ต่างธนาคาร พร้อมเพย์ และเติมเงินสูงสุดต่อวัน เป็นวงเงินเดียวกัน และรวมทุกบัญชีบน alpha by Thai Credit"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม เงื่อนไข: - วงเงินการโอนเงินระหว่างบัญชีตนเองในธนาคาร: ไม่จำกัดวงเงินสูงสุดต่อรายการและต่อวัน- วงเงินการโอนเงินบุคคลอื่นในธนาคาร: สูงสุด 699,999.99 บาทต่อรายการ และสูงสุด 2,000,000 บาทต่อวัน- วงเงินการโอนเงินภายในธนาคาร ต่างธนาคาร พร้อมเพย์ และเติมเงินสูงสุดต่อวัน เป็นวงเงินเดียวกัน และรวมทุกบัญชีบน alpha by Thai Credit",
+   "cardless_withdrawal_fee": [
+    "15 บาท/รายการ เงื่อนไข:",
+    "วงเงินการถอนเงินสดไม่ใช้บัตร: สูงสุด 30,000 บาทต่อรายการ และสูงสุด 200,000 บาทต่อวัน ยกเว้นกรณีลงทะเบียนใช้งานด้วยพาสปอร์ตวงเงินสูงสุด 49,999 บาทต่อวัน",
+    "ธนาคารไม่คิดค่าธรรมเนียมการทำรายการ 4ครั้งต่อเดือน (รวมทุกบัญชีบน alpha by Thai Credit) จนถึงวันที่ 31 ธันวาคม 2567"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "วงเงินการฝากเงินที่เคาน์เตอร์เซอร์วิส: สูงสุด 30,000 บาทต่อรายการ และสูงสุด 99,999 บาทต่อวัน ยกเว้นกรณีลงทะเบียนใช้งานด้วยพาสปอร์ตวงเงินสูงสุด 49,999 บาทต่อวัน",
+    "วงเงินการถอนเงินที่เคาน์เตอร์เซอร์วิส: สูงสุด 5,000 บาทต่อรายการ และสูงสุด 20,000 บาทต่อวัน",
+    "ค่าธรรมเนียมฝาก/ถอนเงินที่เคาน์เตอร์เซอร์วิส 15 บาทต่อรายการ โดยผู้ใช้บริการชำระโดยตรงกับเคาน์เตอร์เซอร์วิส"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://alpha.thaicreditbank.com/th",
+   "fee_website": "https://thaicreditbank.com/th/info/180/8/ประกาศค่าธรรมเนียมและค่าบริการอื่นๆ"
+  }
+ },
+ {
+  "provider": "ไทยพาณิชย์ SCB Business Anywhere (บุคคลธรรมดาและนิติบุคคล)SCB Business Anywhere(บุคคลธรรมดาและนิติบุคคล)",
+  "product": "SCB Business Anywhere (บุคคลธรรมดาและนิติบุคคล)SCB Business Anywhere(บุคคลธรรมดาและนิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "พร้อมนำลูกค้าไปสู่เป้าหมายธุรกิจที่ลูกค้าวางไว้ ด้วยประสบการณ์ใหม่ทางการเงินที่คล่องตัวขึ้น เพื่อให้จัดการเรื่องเงินได้ในทุกที่ ทุกเวลา?",
+   "customer_group": [
+    "ผู้สมัครต้องเป็นนิติบุคคลที่จดทะเบียนในประเทศไทย หรือ บุคคลธรรมดาที่มีเลขประจำตัวผู้เสียภาษี 13 หลัก",
+    "มีบัญชีเงินฝากกับธนาคารไทยพาณิชย์",
+    "ผู้ใช้งานระบบต้องมีอีเมลและหมายเลขโทรศัพย์มือถือ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.scb.co.th/th/corporate-banking/digital-banking-services/scb-business-anywhere.html",
+   "fee_website": "https://www.scb.co.th/content/media/personal-banking/rates-fees/others/business-cash-managememt-fees/business-cash-management-fees.pdf?"
+  }
+ },
+ {
+  "provider": "ไทยพาณิชย์ SCB Business Anywhere (บุคคลธรรมดาและนิติบุคคล)SCB Business Anywhere(บุคคลธรรมดาและนิติบุคคล)",
+  "product": "SCB Business Anywhere (บุคคลธรรมดาและนิติบุคคล)SCB Business Anywhere(บุคคลธรรมดาและนิติบุคคล)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "พร้อมนำลูกค้าไปสู่เป้าหมายธุรกิจที่ลูกค้าวางไว้ ด้วยประสบการณ์ใหม่ทางการเงินที่คล่องตัวขึ้น เพื่อให้จัดการเรื่องเงินได้ในทุกที่ ทุกเวลา?",
+   "customer_group": [
+    "ผู้สมัครต้องเป็นนิติบุคคลที่จดทะเบียนในประเทศไทย หรือ บุคคลธรรมดาที่มีเลขประจำตัวผู้เสียภาษี 13 หลัก",
+    "มีบัญชีเงินฝากกับธนาคารไทยพาณิชย์",
+    "ผู้ใช้งานระบบต้องมีอีเมลและหมายเลขโทรศัพย์มือถือ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.scb.co.th/th/corporate-banking/digital-banking-services/scb-business-anywhere.html",
+   "fee_website": "https://www.scb.co.th/content/media/personal-banking/rates-fees/others/business-cash-managememt-fees/business-cash-management-fees.pdf?"
+  }
+ },
+ {
+  "provider": "ไทยพาณิชย์ SCB Business Net (บุคคลธรรมดาและนิติบุคคล)SCB Business Net(บุคคลธรรมดาและนิติบุคคล)",
+  "product": "SCB Business Net (บุคคลธรรมดาและนิติบุคคล)SCB Business Net(บุคคลธรรมดาและนิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "พร้อมนำลูกค้าไปสู่เป้าหมายธุรกิจที่ลูกค้าวางไว้ ด้วยประสบการณ์ใหม่ทางการเงินที่คล่องตัวขึ้น เพื่อให้จัดการเรื่องเงินได้ในทุกที่ ทุกเวลา?",
+   "customer_group": [
+    "ผู้สมัครต้องเป็นนิติบุคคลที่จดทะเบียนในประเทศไทย หรือ บุคคลธรรมดาที่มีเลขประจำตัวผู้เสียภาษี 13 หลัก",
+    "มีบัญชีเงินฝากกับธนาคารไทยพาณิชย์",
+    "ผู้ใช้งานระบบต้องมีอีเมลและหมายเลขโทรศัพย์มือถือ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.scb.co.th/th/corporate-banking/business-cash-management/scb-business-e-channel/scb-business-net",
+   "fee_website": "https://www.scb.co.th/content/media/personal-banking/rates-fees/others/business-cash-managememt-fees/business-cash-management-fees.pdf?"
+  }
+ },
+ {
+  "provider": "ไทยพาณิชย์ แอปพลิเคชัน อีซี่ (บุคคลธรรมดาและนิติบุคคล)แอปพลิเคชัน อีซี่(บุคคลธรรมดาและนิติบุคคล)",
+  "product": "แอปพลิเคชัน อีซี่ (บุคคลธรรมดาและนิติบุคคล)แอปพลิเคชัน อีซี่(บุคคลธรรมดาและนิติบุคคล)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการธนาคารออนไลน์รูปแบบใหม่ สำหรับลูกค้าที่ใช้งานโทรศัพท์สมาร์ทโฟน สะดวกกว่า และง่ายกว่าเดิม ด้วยความสามารถในการทำธุรกรรมที่หลากหลายกว่า SCB Mobile Banking และ SCB EASY App มี Graphics User Interface ที่เข้าใจง่าย พร้อมบริการเสริมอีกมากมาย เช่น สามารถหา ที่ตั้งของสาขาหรือตู้เอทีเอ็ม ธนาคารไทยพาณิชย์ เป็นต้น",
+   "customer_group": [
+    "กลุ่มลูกค้าเป้าหมาย",
+    "ลูกค้าทั่วไป ทั้งบุคคลธรรมดาและนิติบุคคลที่เป็นลูกค้าธนาคาร เพื่อใช้งานตรวจสอบข้อมูลผลิตภัณฑ์ของธนาคาร และ/หรือ ทำธุรรกรรมผ่าน mobile banking application",
+    "ลูกค้าปัจจุบันที่มีบัญชีเงินฝากออมทรัพย์/เดินสะพัด/บัตรเครดิตธนาคารไทยพาณิชย์",
+    "ลูกค้าใหม่ของธนาคารที่ต้องการสมัครใช้งานผลิตภัณฑ์เงินฝาก และ/หรือ ผลิตภัณฑ์ทางการเงินอื่นกับทางธนาคาร",
+    "ลูกค้าที่ใช้อุปกรณ์โทรศัพท์มือถือที่รองรับระบบปฎิบัติการ Android หรือ iOS",
+    "ผู้ใช้บริการจะต้องมีอายุ 15 ปีบริบูรณ์ขึ้นไปคุณสมบัติผู้สมัคร",
+    "ลูกค้าปัจจุบันของ SCB สามารถใช้บริการ SCB EASY App ได้โดย Download และติดตั้งแอปพลิเคชันผ่านGoogle Play store/ Apple App Store โดยจะต้องผ่านการ KYC ตัวตนลูกค้าตามเงื่อนไขของแต่ละประเภทลูกค้า พร้อมทั้งตรวจสอบหมายเลขโทรศัพท์จากสัญญาณอินเทอร์เน็ต พร้อมทั้งยืนยัน SMS OTP และกำหนด PIN 6 หลัก เพื่อเข้าใช้งาน",
+    "สำหรับลูกค้าใหม่ต้องสมัครใช้บริการ ผ่านสาขาหรือทำรายการด้วยตนเอง (โดยจะต้องผ่านการให้ข้อมูลบนหน้าบัตรประชาชนผ่านผู้ให้บริการของธนาคาร) ยืนยันตัวตนด้วยใบหน้า ให้ข้อมูลส่วนตัวที่เกี่ยวข้องกับธนาคาร และกำหนด PIN 6 หลักเพื่อเข้าใช้บริการ",
+    "การใช้งานเป็นไปตามเงื่อนไขความปลอดภัยตามข้อกำหนดของธนาคาร และหน่วยงานที่เกี่ยวข้อง",
+    "เงื่อนไขการทำธุรกรรม ค่าบริการ และค่าธรรมเนียมต่างๆ เป็นไปตามประกาศของธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "บริการโอนเงินระหว่างประเทศ",
+    "รายการละ 199",
+    "399 บาท",
+    "เงื่อนไขบริการ สำหรับบัญชีบุคคลธรรมดาเท่านั้นบริการ Paynow1) โอนเงินจากประเทศไทยไปประเทศสิงคโปร์",
+    "150 บาท ต่อรายการ2) ค่าธรรมเนียมลูกค้าสิงคโปร์ขอคืนเงิน",
+    "300 บาท ต่อรายการ (เรียกเก็บลูกค้าสิงคโปร์โดยหักจากยอดเงินคืน)3) ค่าธรรมเนียมลูกค้า SCB ขอคืนเงิน",
+    "13 ดอลล่าร์สิงคโปร์ ต่อรายการ (เรียกเก็บโดยธนาคารสิงคโปร์โดยหักจากยอดเงินคืน)4) ค่าธรรมเนียมการรับเงินโอนจากประเทศสิงคโปร์",
+    "ไม่คิดค่าบริการ"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.scb.co.th/th/personal-banking/digital-banking/scb-easy.html",
+   "fee_website": "https://www.scb.co.th/th/personal-banking/rates-fees.html"
+  }
+ },
+ {
+  "provider": "ธ.ก.ส. ธ.ก.ส. A-Mobile (บุคคลธรรมดา)ธ.ก.ส. A-Mobile(บุคคลธรรมดา)",
+  "product": "ธ.ก.ส. A-Mobile (บุคคลธรรมดา)ธ.ก.ส. A-Mobile(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "เป็นผลิตภัณฑ์ที่ผู้ใช้บริการสามารถทำธุรกรรมกับธนาคารด้วยตนเอง (Self Service) ได้ทุกที่ ทุกเวลา ตลอด 24 ชั่วโมง และผู้ใช้บริการสามารถทำธุรกรรมได้ทั้งประเภทบริการที่เป็น Financial และ NonFinancial",
+   "customer_group": [
+    "บุคคลธรรมดา อายุตั้งแต่ 15 ปีบริบูรณ์ขึ้นไปทั้งชาวไทยและต่างชาติ",
+    "มีบัญชีเงินฝากออมทรัพย์ / กระแสรายวัน",
+    "มีโทรศัพท์เคลื่อนที่แบบสมาร์ทโฟนที่มีระบบปฏิบัติการ IOS ตั้งแต่เวอร์ชัน",
+    "0 หรือ Android ตั้งแต่เวอร์ชัน",
+    "0 ขึ้นไป",
+    "บัญชีต้องมีสถานะบัญชีปกติ ประเภทเจ้าของคนเดียว (Single) และเงื่อนไขในการสั่งจ่ายแต่เพียงผู้เดียว เท่านั้น"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.baac.or.th/th/content-product.php?content_id=14252\u0026content_group_semi=0004\u0026content_group_sub=8\u0026content_group=4\u0026inside=1",
+   "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+  }
+ },
+ {
+  "provider": "ธอส. GHB ALL (บุคคลธรรมดา)GHB ALL(บุคคลธรรมดา)",
+  "product": "GHB ALL (บุคคลธรรมดา)GHB ALL(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการธนาคารแบบดิจิทัล มีฟังก์ชั่นครบเพื่อให้บริการลูกค้าตามบริการของธนาคาร",
+   "customer_group": [
+    "บุคคลธรรมดา",
+    "มี บัญชีเงินฝากออมทรัพย์ / บัญชีเงินกู้ของธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.ghbank.co.th/electronic-services/application/ghb-all",
+   "fee_website": null
+  }
+ },
+ {
+  "provider": "ยูโอบี Citi Mobile (บุคคลธรรมดา)Citi Mobile(บุคคลธรรมดา)",
+  "product": "Citi Mobile (บุคคลธรรมดา)Citi Mobile(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการธนาคารทางมือถือ ที่ให้ลูกค้าสามารถดำเนินธุรกรรมทางการเงินจากทุกที่ทั่วโลก โดยที่คุณสามารถสอบถามเกี่ยวกับข้อมูลบัญชี, ตรวจสอบยอดบัญชี, โอนเงินภายในบัญชีซิตี้แบงก์ หรือธนาคารอื่นๆ ในประเทศไทย และทั่วโลก รวมไปถึงธุรกรรมอื่นๆอีกมากมาย",
+   "customer_group": [
+    "บุคคลธรรมดา อายุตั้งแต่ 20 ปีบริบูรณ์ขึ้นไป",
+    "มี บัญชีเงินฝากออมทรัพย์ / บัญชีเงินฝากกระแสรายวัน / บัตรเดบิต / บัตรเครดิตของธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.citibank.co.th",
+   "fee_website": "https://www.citibank.co.th/th/banking/deposit-interest-rates-fees.htm?lid=THTHCBGBGMITLInterestRateAndServiceFee"
+  }
+ },
+ {
+  "provider": "ยูโอบี Citibank Online (บุคคลธรรมดา)Citibank Online(บุคคลธรรมดา)",
+  "product": "Citibank Online (บุคคลธรรมดา)Citibank Online(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "บริการธนาคารทางอินเตอร์เน็ต ที่ให้ลูกค้าสามารถดำเนินธุรกรรมทางการเงินจากทุกที่ทั่วโลก โดยที่คุณสามารถสอบถามเกี่ยวกับข้อมูลบัญชี, ตรวจสอบยอดบัญชี, โอนเงินภายในบัญชีซิตี้แบงก์ หรือธนาคารอื่นๆ ในประเทศไทย และทั่วโลก รวมไปถึงธุรกรรมอื่นๆอีกมากมาย",
+   "customer_group": [
+    "บุคคลธรรมดา อายุตั้งแต่ 20 ปีบริบูรณ์ขึ้นไป",
+    "มี บัญชีเงินฝากออมทรัพย์ / บัญชีเงินฝากกระแสรายวัน / บัตรเดบิต / บัตรเครดิตของธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.citibank.co.th",
+   "fee_website": "https://www.citibank.co.th/th/banking/deposit-interest-rates-fees.htm?lid=THTHCBGBGMITLInterestRateAndServiceFee"
+  }
+ },
+ {
+  "provider": "ยูโอบี UOB Personal Internet Banking (บุคคลธรรมดา)UOB Personal Internet Banking(บุคคลธรรมดา)",
+  "product": "UOB Personal Internet Banking (บุคคลธรรมดา)UOB Personal Internet Banking(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "UOB Personal Internet Banking เป็นแอปธนาคารบน Internet Browser ที่ให้บริการกับลูกค้าของธนาคารที่มีบัญชีเงินฝาก บัตรเครดิต และบัญชีอื่นๆ ในการทำรายการ และ ใช้บริการที่มีบน Personal Internet Banking",
+   "customer_group": [
+    "ลูกค้าคนไทย และ ลูกค้าต่างชาติที่มีบัญชี หรือ บัตรเครดิตกับทางธนาคาร สามารถสมัครใช้งานได้"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม เงื่อนไข: จำนวนเงินสูงสุด 2,000,000 บาท /วัน",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม เงื่อนไข: จำนวนเงินสูงสุด 2,000,000 บาท /วัน"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.uob.co.th/th/pib/index.html",
+   "fee_website": null
+  }
+ },
+ {
+  "provider": "ยูโอบี UOB TMRW (บุคคลธรรมดา)UOB TMRW(บุคคลธรรมดา)",
+  "product": "UOB TMRW (บุคคลธรรมดา)UOB TMRW(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "UOB TMRW เป็นแอปธนาคารบนมือถือสำหรับลูกค้าของธนาคารที่ต้องการเปิดบัญชีเงินฝาก/บัตรเครดิต/บัญชีแคชพลัสใหม่ หรือ ลูกค้าที่มีบัญชีเงินฝาก บัตรเครดิต บัญชีแคชพลัส และบัญชีอื่นๆ อยู่แล้วสามารถใช้บริการได้ทุกที่ทุกเวลา พร้อมเข้าใจพฤติกรรมการใช้จ่ายของคุณ เพื่อให้เราใช้ชีวิตแบบ New Normal ไปด้วยกัน สำหรับบริการต่างๆ สามารถศึกษาได้จาก Weblink ที่ระบุ",
+   "customer_group": [
+    "1) ลูกค้าคนไทย และ ลูกค้าต่างชาติที่มีบัญชี หรือ บัตรเครดิตกับทางธนาคาร สามารถสมัครใช้งานได้2) สำหรับการเปิดบัญชีใหม่บน UOB TMRW app นั้น เฉพาะลูกค้าคนไทย อายุตั้งแต่ 20 ปีขึ้นไป"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม เงื่อนไข: จำนวนเงินสูงสุด 2,000,000 บาท /วัน",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม เงื่อนไข: จำนวนเงินสูงสุด 2,000,000 บาท /วัน"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.uob.co.th/personal/ebank/tmrw/overview.html",
+   "fee_website": null
+  }
+ },
+ {
+  "provider": "แลนด์ แอนด์ เฮ้าส์ Profita (บุคคลธรรมดา)Profita(บุคคลธรรมดา)",
+  "product": "Profita (บุคคลธรรมดา)Profita(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "แอปลิเคชันเพื่อซื้อ-ขาย-สับเปลี่ยนกองทุน ดูพอร์ตโฟลิโอและบัญชีเงินฝากออมทรัพย์ บริการโอนเงิน",
+   "customer_group": [
+    "บุคคลธรรมดา ที่มีอายุ 20 ปีบริบูรณ์ขึ้นไป"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "ค่าธรรมเนียมการซื้อ",
+    "ขาย",
+    "สับเปลี่ยนกองทุน : เป็นไปตามเงื่อนไขของแต่ละกองทุน"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.lhbank.co.th/",
+   "fee_website": "https://www.lhbank.co.th/"
+  }
+ },
+ {
+  "provider": "แลนด์ แอนด์ เฮ้าส์ กดเงินไม่ใช้บัตร (บุคคลธรรมดา)กดเงินไม่ใช้บัตร(บุคคลธรรมดา)",
+  "product": "กดเงินไม่ใช้บัตร (บุคคลธรรมดา)กดเงินไม่ใช้บัตร(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "สามารถทำธุรกรรมถอนเงินโดยไม่ใช้บัตรเดบิตรผ่านตู้ ATM ต่างธนาคาร (ตู้ ATM ของ ธนาคารไทยพาณิชย์) ได้",
+   "customer_group": [
+    "ลูกค้า LH Bank M Choice"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "15 บาท/รายการ เงื่อนไข: วงเงินการถอนเงิน 100",
+    "20,000 บาท/ครั้ง"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.lhbank.co.th/Person/Lists/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3-%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3_LH_Bank_M_Choice_(%E0%B9%82%E0%B8%A1%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%9A%E0%B8%87%E0%B8%81%E0%B9%8C%E0%B8%81%E0%B8%B4%E0%B9%89%E0%B8%87)/2/11",
+   "fee_website": "https://www.lhbank.co.th/Rate/Depositfee"
+  }
+ },
+ {
+  "provider": "แลนด์ แอนด์ เฮ้าส์ การฝากเงินและถอนเงินที่ Banking Agent (บุคคลธรรมดา)การฝากเงินและถอนเงินที่ Banking Agent(บุคคลธรรมดา)",
+  "product": "การฝากเงินและถอนเงินที่ Banking Agent (บุคคลธรรมดา)การฝากเงินและถอนเงินที่ Banking Agent(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "สามารถทำธุรกรรมฝากเงินและถอนเงิน ด้วย QR Code ผ่านตัวแทนธนาคาร (Banking Agent) บริษัทเคาน์เตอร์เซอร์วิส จำกัด",
+   "customer_group": [
+    "ลูกค้า LH Bank M Choice"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "ค่าธรรมเนียม การฝากเงินและถอนเงิน ที่ลูกค้าต้องจ่ายตรงกับเคาน์เตอร์เซอร์วิส 15 บาทต่อรายการ (รวมภาษีมูลค่าเพิ่ม)"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.lhbank.co.th/Person/Lists/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3-%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3_LH_Bank_M_Choice_(%E0%B9%82%E0%B8%A1%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%9A%E0%B8%87%E0%B8%81%E0%B9%8C%E0%B8%81%E0%B8%B4%E0%B9%89%E0%B8%87)/2/11",
+   "fee_website": "https://www.lhbank.co.th/Rate/Depositfee"
+  }
+ },
+ {
+  "provider": "แลนด์ แอนด์ เฮ้าส์ การโอนเงิน (สาหรับบัญชีที่ลงทะเบียนไว้) |1. โอนเงินระหว่างบัญชีตนเองใน LH Bank |2. โอนเงินไปยังบัญชีบุคคลที่ 3 ภายใน LH Bank |3. โอนเงินไปยังบัญชีต่างธนาคาร |4. โอนเงินไปยังบัญชีพร้อมเพย์ (บุคคลธรรมดา)การโอนเงิน (สาหรับบัญชีที่ลงทะเบียนไว้) |1. โอนเงินระหว่างบัญชีตนเองใน LH Bank |2. โอนเงินไปยังบัญชีบุคคลที่ 3 ภายใน LH Bank |3. โอนเงินไปยังบัญชีต่างธนาคาร |4. โอนเงินไปยังบัญชีพร้อมเพย์(บุคคลธรรมดา)",
+  "product": "การโอนเงิน (สาหรับบัญชีที่ลงทะเบียนไว้) |1. โอนเงินระหว่างบัญชีตนเองใน LH Bank |2. โอนเงินไปยังบัญชีบุคคลที่ 3 ภายใน LH Bank |3. โอนเงินไปยังบัญชีต่างธนาคาร |4. โอนเงินไปยังบัญชีพร้อมเพย์ (บุคคลธรรมดา)การโอนเงิน (สาหรับบัญชีที่ลงทะเบียนไว้) |1. โอนเงินระหว่างบัญชีตนเองใน LH Bank |2. โอนเงินไปยังบัญชีบุคคลที่ 3 ภายใน LH Bank |3. โอนเงินไปยังบัญชีต่างธนาคาร |4. โอนเงินไปยังบัญชีพร้อมเพย์(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการทางการเงินผ่านทางโทรศัพท์มือถือ",
+   "customer_group": [
+    "ลูกค้า LH Bank M Choice"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.lhbank.co.th/Person/Lists/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3-%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3_LH_Bank_M_Choice_(%E0%B9%82%E0%B8%A1%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%9A%E0%B8%87%E0%B8%81%E0%B9%8C%E0%B8%81%E0%B8%B4%E0%B9%89%E0%B8%87)/2/11",
+   "fee_website": "https://www.lhbank.co.th/Rate/Depositfee"
+  }
+ },
+ {
+  "provider": "แลนด์ แอนด์ เฮ้าส์ ขอรายการเคลื่อนไหวทางบัญชี (บุคคลธรรมดา)ขอรายการเคลื่อนไหวทางบัญชี(บุคคลธรรมดา)",
+  "product": "ขอรายการเคลื่อนไหวทางบัญชี (บุคคลธรรมดา)ขอรายการเคลื่อนไหวทางบัญชี(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการทางการเงินผ่านทางโทรศัพท์มือถือ",
+   "customer_group": [
+    "ลูกค้า LH Bank M Choice"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.lhbank.co.th/Person/Lists/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3-%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3_LH_Bank_M_Choice_(%E0%B9%82%E0%B8%A1%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%9A%E0%B8%87%E0%B8%81%E0%B9%8C%E0%B8%81%E0%B8%B4%E0%B9%89%E0%B8%87)/2/11",
+   "fee_website": "https://www.lhbank.co.th/Rate/Depositfee"
+  }
+ },
+ {
+  "provider": "แลนด์ แอนด์ เฮ้าส์ ชำระค่าสินค้าและบริการ |1. ชำระสินเชื่อของ LH Bank |2. ชาระค่าสินค้าและบริการของบริษัทต่างๆ (บุคคลธรรมดา)ชำระค่าสินค้าและบริการ |1. ชำระสินเชื่อของ LH Bank |2. ชาระค่าสินค้าและบริการของบริษัทต่างๆ(บุคคลธรรมดา)",
+  "product": "ชำระค่าสินค้าและบริการ |1. ชำระสินเชื่อของ LH Bank |2. ชาระค่าสินค้าและบริการของบริษัทต่างๆ (บุคคลธรรมดา)ชำระค่าสินค้าและบริการ |1. ชำระสินเชื่อของ LH Bank |2. ชาระค่าสินค้าและบริการของบริษัทต่างๆ(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการทางการเงินผ่านทางโทรศัพท์มือถือ",
+   "customer_group": [
+    "ลูกค้า LH Bank M Choice"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.lhbank.co.th/Person/Lists/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3-%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3_LH_Bank_M_Choice_(%E0%B9%82%E0%B8%A1%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%9A%E0%B8%87%E0%B8%81%E0%B9%8C%E0%B8%81%E0%B8%B4%E0%B9%89%E0%B8%87)/2/11",
+   "fee_website": "https://www.lhbank.co.th/Rate/Depositfee"
+  }
+ },
+ {
+  "provider": "แลนด์ แอนด์ เฮ้าส์ ลงทะเบียนใช้บริการ (บุคคลธรรมดา)ลงทะเบียนใช้บริการ(บุคคลธรรมดา)",
+  "product": "ลงทะเบียนใช้บริการ (บุคคลธรรมดา)ลงทะเบียนใช้บริการ(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "เป็นบริการทางการเงินผ่านทางโทรศัพท์มือถือ อาทิเช่น การทำธุรกรรมการเงิน เช็คยอดเงิน ดูรายการเดินบัญชี ทำรายการโอนเงิน ทั้งธนาคารเดียวกันและต่างธนาคาร รับโอนเงิน บริการพร้อมเพย์ ชำระค่าน้ำค่าไฟ ค่าสินค้าและบริการ",
+   "customer_group": [
+    "บุคคลธรรมดา อายุตั้งแต่ 15 ปีบริบูรณ์ขึ้นไป",
+    "มีบัญชีเงินฝากออมทรัพย์ หรือ บัญชีเงินฝากกระแสรายวัน"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.lhbank.co.th/Person/Lists/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3-%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3_LH_Bank_M_Choice_(%E0%B9%82%E0%B8%A1%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%9A%E0%B8%87%E0%B8%81%E0%B9%8C%E0%B8%81%E0%B8%B4%E0%B9%89%E0%B8%87)/2/11",
+   "fee_website": "https://www.lhbank.co.th/Rate/Depositfee"
+  }
+ },
+ {
+  "provider": "แลนด์ แอนด์ เฮ้าส์ สอบถามยอดเงินคงเหลือ (บุคคลธรรมดา)สอบถามยอดเงินคงเหลือ(บุคคลธรรมดา)",
+  "product": "สอบถามยอดเงินคงเหลือ (บุคคลธรรมดา)สอบถามยอดเงินคงเหลือ(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการทางการเงินผ่านทางโทรศัพท์มือถือ",
+   "customer_group": [
+    "ลูกค้า LH Bank M Choice"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.lhbank.co.th/Person/Lists/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3-%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3_LH_Bank_M_Choice_(%E0%B9%82%E0%B8%A1%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%9A%E0%B8%87%E0%B8%81%E0%B9%8C%E0%B8%81%E0%B8%B4%E0%B9%89%E0%B8%87)/2/11",
+   "fee_website": "https://www.lhbank.co.th/Rate/Depositfee"
+  }
+ },
+ {
+  "provider": "ออมสิน GSB Internet Banking (บุคคลธรรมดา)GSB Internet Banking(บุคคลธรรมดา)",
+  "product": "GSB Internet Banking (บุคคลธรรมดา)GSB Internet Banking(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "บริการธนาคารทางอิเล็กทรอนิกส์ ของธนาคารออมสิน สำหรับกลุ่มลูกค้าบุคคล",
+   "customer_group": [
+    "บุคคลธรรมดา สัญชาติไทย อายุไม่ต่ำกว่า 15 ปีบริบูรณ์",
+    "เป็นเจ้าของบัญชีเงินฝากประเภทเผื่อเรียก หรือ บัญชีเงินฝากประเภทกระแสรายวันพิเศษ สำหรับบุคคลธรรมดา ในชื่อของตนเอง",
+    "มี e",
+    "mail address",
+    "มีหมายเลขโทรศัพท์เคลื่อนที่"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "ยกเลิกบริการ GSB Internet Banking มีผลตั้งแต่วันที่ 1 ก.ค. 2567 เป็นต้นไป"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.gsb.or.th/news/prclsib/",
+   "fee_website": null
+  }
+ },
+ {
+  "provider": "ออมสิน MyMo by GSB (บุคคลธรรมดา)MyMo by GSB(บุคคลธรรมดา)",
+  "product": "MyMo by GSB (บุคคลธรรมดา)MyMo by GSB(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการธนาคารทางอุปกรณ์อิเล็กทรอนิกส์พกพา (Mobile Banking) ของธนาคารออมสิน ซึ่งลูกค้าสามารถทำธุรกรรมได้ครบทุกบัญชีในแอพเดียว ได้ตลอด 24 ชั่วโมง",
+   "customer_group": [
+    "บุคคลธรรมดา อายุไม่ต่ำกว่า 15 ปีบริบูรณ์",
+    "เป็นเจ้าของบัญชีเงินฝากประเภทเผื่อเรียก หรือบัญชีเงินฝากประเภทกระแสรายวันพิเศษ สำหรับบุคคลธรรมดา ในชื่อของตนเอง",
+    "มีหมายเลขโทรศัพท์เคลื่อนที่ และโทรศัพท์เคลื่อนที่แบบ Smartphone ซึ่งมีระบบปฏิบัติการที่รองรับ Mobile Banking (MyMo) Application เช่น ระบบปฏิบัติการ iOS หรือ Android",
+    "มี e",
+    "mail address (ถ้ามี)"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "ค่าธรรมเนียมบริการขอตรวจเครดิตบูโร– รายงานข้อมูลเครดิต 150 บาทต่อรายการ– รายงานข้อมูลเครดิตและคะแนนเครดิต 200 บาทต่อรายการค่าธรรมเนียมบริการ dStatement (บริการรับส่งข้อมูลรายการธุรกรรม บัญชีเงินฝากธนาคาร)",
+    "75 บาทบัญชีบริการอื่นๆ",
+    "บริการ MypromptQR การชำระค่าสินค้าและบริการระหว่างร้านค้าและผู้ใช้บริการผ่าน QR Code แบบร้านค้าเป็นผู้สแกน (Business Scan Consumer",
+    "B Scan C) : ยกเว้นค่าธรรมเนียม",
+    "การชำระสินเชื่อ : ยกเว้นค่าธรรมเนียม",
+    "การให้บริการแจ้งเตือนอัตโนมัติ (Message Alert) : ยกเว้นค่าธรรมเนียม",
+    "การรับชำระเงินฝากประเภทสงเคราะห์ชีวิตและครอบครัว : ยกเว้นค่าธรรมเนียม",
+    "การให้บริการถอนเงินสด MyMo MyCash : ยกเว้นค่าธรรมเนียม",
+    "การให้บริการหน่วยลงทุน MyMo MyFund : ยกเว้นค่าธรรมเนียมการให้บริการซื้อประกันภัยและประกันชีวิต(Insurance) : ยกเว้นค่าธรรมเนียม"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.gsb.or.th/online/mymo-2/",
+   "fee_website": "https://www.gsb.or.th/service/%e0%b8%84%e0%b9%88%e0%b8%b2%e0%b8%98%e0%b8%a3%e0%b8%a3%e0%b8%a1%e0%b9%80%e0%b8%99%e0%b8%b5%e0%b8%a2%e0%b8%a1%e0%b8%9a%e0%b8%a3%e0%b8%b4%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84/"
+  }
+ },
+ {
+  "provider": "อินเดียนโอเวอร์ซีส์ IOB THAILAND MOBILE BANKING AP (บุคคลธรรมดา)IOB THAILAND MOBILE BANKING AP(บุคคลธรรมดา)",
+  "product": "IOB THAILAND MOBILE BANKING AP (บุคคลธรรมดา)IOB THAILAND MOBILE BANKING AP(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการธนาคารแบบดิจิทัล เราช่วยทำให้ดิจิทัลเจเนอเรชันได้เข้าถึงธนาคารอย่างเต็มรูปแบบผ่านแอปบนมือถือ",
+   "customer_group": [
+    "บุคคลธรรมดา อายุตั้งแต่ 18 ปีบริบูรณ์ขึ้นไป",
+    "มี บัญชีเงินฝากออมทรัพย์"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.iob.co.th/Article?id=127",
+   "fee_website": "https://www.iob.co.th/Files/Service%20charges%2001012023.pdf"
+  }
+ },
+ {
+  "provider": "ไอซีบีซี (ไทย) Personal Internet Banking (บุคคลธรรมดา)Personal Internet Banking(บุคคลธรรมดา)",
+  "product": "Personal Internet Banking (บุคคลธรรมดา)Personal Internet Banking(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "บริการธนาคารแบบดิจิทัล สามารถเข้าใช้งานได้ทั้งผ่านคอมพิวเตอร์ หรือผ่านแอปบนมือถือ",
+   "customer_group": [
+    "บุคคลธรรมดา อายุตั้งแต่ 15 ปีบริบูรณ์ขึ้นไป",
+    "มี บัญชีเงินฝากออมทรัพย์ / บัญชีเงินฝากกระแสรายวัน / บัตรเดบิต / บัตรเครดิตของธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม",
+    "150 บาท/รายการ เงื่อนไข:",
+    "โอนแบบเข้าบัญชีทันที ไม่มีค่าธรรมเนียม",
+    "โอนแบบ Smart Nextday 12 บาท/รายการโอนแบบ Smart Sameday 20 บาท/รายการโอนแบบ Bahtnet 150 บาท/รายการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "http://www.icbc.com.cn/ICBC/海外分行/工银泰国网站/th/电子银行服务/个人网上银行手机银行/服务详情",
+   "fee_website": "http://www.icbc.com.cn/ICBC/海外分行/工银泰国网站/th/个人金融服务/其他/服务费/网上银行服务费"
+  }
+ },
+ {
+  "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น Cash Concentration - Cross-border (นิติบุคคล)Cash Concentration - Cross-border(นิติบุคคล)",
+  "product": "Cash Concentration - Cross-border (นิติบุคคล)Cash Concentration - Cross-border(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "Liquidity management product",
+   "customer_group": [
+    "ลูกค้านิติบุคคลที่ตามเงื่อนไขของธนาคาร ฯ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "5,400 THB per month per sub",
+    "account (Excl VAT)"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.hsbc.co.th/",
+   "fee_website": "https://www.hsbc.co.th/"
+  }
+ },
+ {
+  "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น Cash Concentration - Domestic (นิติบุคคล)Cash Concentration - Domestic(นิติบุคคล)",
+  "product": "Cash Concentration - Domestic (นิติบุคคล)Cash Concentration - Domestic(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "Liquidity management product",
+   "customer_group": [
+    "ลูกค้านิติบุคคลที่ตามเงื่อนไขของธนาคาร ฯ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "3,900 THB per month per sub",
+    "account (Excl. VAT)"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.hsbc.co.th/",
+   "fee_website": "https://www.hsbc.co.th/"
+  }
+ },
+ {
+  "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น Cash Flow Forecast (นิติบุคคล)Cash Flow Forecast(นิติบุคคล)",
+  "product": "Cash Flow Forecast (นิติบุคคล)Cash Flow Forecast(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "Liquidity management product",
+   "customer_group": [
+    "ลูกค้านิติบุคคลที่ตามเงื่อนไขของธนาคาร ฯ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "75,500 บาท เงื่อนไข: One-time implementation for maximum 10 sessions",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "Monthly service fees @ maximum of THB 36,300 (Excl.VAT)",
+    "Additional implementation session (Maximum 5 sessions) @ THB 30,200 THB (Excl. VAT)"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.hsbc.co.th/",
+   "fee_website": "https://www.hsbc.co.th/"
+  }
+ },
+ {
+  "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น Enriched Bank Statement file transmission via HSBCnet, H2H and SWIFT FIN/File ACT (นิติบุคคล)Enriched Bank Statement file transmission via HSBCnet, H2H and SWIFT FIN/File ACT(นิติบุคคล)",
+  "product": "Enriched Bank Statement file transmission via HSBCnet, H2H and SWIFT FIN/File ACT (นิติบุคคล)Enriched Bank Statement file transmission via HSBCnet, H2H and SWIFT FIN/File ACT(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "Bank statement delivery",
+   "customer_group": [
+    "ลูกค้านิติบุคคลที่ตามเงื่อนไขของธนาคาร ฯ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "10,000 บาท เงื่อนไข: Two types of one time setup fees:1.1-10 accounts for Non-complex customers =\u003e 5,000 THB (Excl. VAT)2.11+ accounts for Complex customers =\u003e 10,000 THB (Excl. VAT)",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "Two types of monthly fees:",
+    "Monthly fee per account : EOD statement (MT940, BAI or XML) =\u003e THB 1,",
+    "/account/recipient/month (Excl. VAT)",
+    "Monthly fee per account : Intraday statement (MT942, BAI Intraday, XML Intraday) =\u003e THB 1,",
+    "/account/recipient/month (Excl. VAT)"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.hsbc.co.th/",
+   "fee_website": "https://www.hsbc.co.th/"
+  }
+ },
+ {
+  "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น Inter-Company Solution (นิติบุคคล)Inter-Company Solution(นิติบุคคล)",
+  "product": "Inter-Company Solution (นิติบุคคล)Inter-Company Solution(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "Liquidity management product",
+   "customer_group": [
+    "ลูกค้านิติบุคคลที่ตามเงื่อนไขของธนาคาร ฯ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "1,600 THB per month per sub",
+    "account (Excl. VAT)"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.hsbc.co.th/",
+   "fee_website": "https://www.hsbc.co.th/"
+  }
+ },
+ {
+  "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น Interest Enhancement (IE) - Domestic \u0026 Cross-border (นิติบุคคล)Interest Enhancement (IE) - Domestic \u0026 Cross-border(นิติบุคคล)",
+  "product": "Interest Enhancement (IE) - Domestic \u0026 Cross-border (นิติบุคคล)Interest Enhancement (IE) - Domestic \u0026 Cross-border(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "Liquidity management product",
+   "customer_group": [
+    "ลูกค้านิติบุคคลที่ตามเงื่อนไขของธนาคาร ฯ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "4,600 THB per month per participant account (Exc.VAT)"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.hsbc.co.th/",
+   "fee_website": "https://www.hsbc.co.th/"
+  }
+ },
+ {
+  "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น Multi-bank Cash Concentration (นิติบุคคล)Multi-bank Cash Concentration(นิติบุคคล)",
+  "product": "Multi-bank Cash Concentration (นิติบุคคล)Multi-bank Cash Concentration(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "Liquidity management product",
+   "customer_group": [
+    "ลูกค้านิติบุคคลที่ตามเงื่อนไขของธนาคาร ฯ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "4,600 THB per month per participant account (Exc.VAT)"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.hsbc.co.th/",
+   "fee_website": "https://www.hsbc.co.th/"
+  }
+ },
+ {
+  "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น Standard Bank Statement file transmission via HSBCnet, H2H (นิติบุคคล)Standard Bank Statement file transmission via HSBCnet, H2H(นิติบุคคล)",
+  "product": "Standard Bank Statement file transmission via HSBCnet, H2H (นิติบุคคล)Standard Bank Statement file transmission via HSBCnet, H2H(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "Bank statement delivery",
+   "customer_group": [
+    "ลูกค้านิติบุคคลที่ตามเงื่อนไขของธนาคาร ฯ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "10,000 บาท เงื่อนไข: Two types of one time setup fees:1.1-10 accounts for Non-complex customers =\u003e 5,000 THB (Excl. VAT)2.11+ accounts for Complex customers =\u003e 10,000 THB (Excl. VAT)",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "Two types of monthly fees:",
+    "Monthly fee per account : EOD statement (MT940) =\u003e THB 1,",
+    "/account/recipient/month (Excl. VAT)",
+    "Monthly fee per account : Intraday statement (MT942) =\u003e THB 1,",
+    "/account/recipient/month (Excl. VAT)"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.hsbc.co.th/",
+   "fee_website": "https://www.hsbc.co.th/"
+  }
+ },
+ {
+  "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น System Maintenance Fee (นิติบุคคล)System Maintenance Fee(นิติบุคคล)",
+  "product": "System Maintenance Fee (นิติบุคคล)System Maintenance Fee(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "Consultancy Services",
+   "customer_group": [
+    "ลูกค้านิติบุคคลที่ตามเงื่อนไขของธนาคาร ฯ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "THB50,",
+    "per map (Excl. VAT)"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.hsbc.co.th/",
+   "fee_website": "https://www.hsbc.co.th/"
+  }
+ },
+ {
+  "provider": "กสิกรไทย MAKE by KBank (บุคคลธรรมดา)MAKE by KBank(บุคคลธรรมดา)",
+  "product": "MAKE by KBank (บุคคลธรรมดา)MAKE by KBank(บุคคลธรรมดา)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการธนาคารแบบดิจิทัล เราช่วยทำให้ดิจิทัลเจเนอเรชันได้เข้าถึงธนาคารอย่างเต็มรูปแบบผ่านแอปบนมือถือ โดยมุ่งเน้นกลุ่มอายุต่ำกว่า 30 ปี และเน้นในเรื่องของการจัดการเงินให้ดียิ่งขึ้น",
+   "customer_group": [
+    "บุคคลธรรมดา อายุตั้งแต่ 12 ปีบริบูรณ์ขึ้นไป",
+    "มี บัญชีเงินฝากออมทรัพย์ (ต้องเปิดผ่านแอปพลิเคชัน)"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ขั้นต่ำ ไม่มีค่าธรรมเนียม",
+   "interbank_transfer_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.kbtg.tech/makebank/index.html",
+   "fee_website": null
+  }
+ },
+ {
+  "provider": "ซูมิโตโม มิตซุย แบงกิ้ง คอร์ปอเรชั่น SMAR\u0026TS (นิติบุคคล)SMAR\u0026TS(นิติบุคคล)",
+  "product": "SMAR\u0026TS (นิติบุคคล)SMAR\u0026TS(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "บริการธนาคารแบบดิจิทัล เราช่วยทำให้ดิจิทัลเจเนอเรชันได้เข้าถึงธนาคารอย่างเต็มรูปแบบผ่านอินเตอร์เนต",
+   "customer_group": [
+    "นิติบุคคล",
+    "มี บัญชีเงินฝากออมทรัพย์ / บัญชีเงินฝากกระแสรายวันของธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "10 บาท/รายการ",
+   "interbank_transfer_fee": [
+    "12",
+    "200 บาท/รายการ เงื่อนไข:",
+    "DC3 โอนได้ไม่เกิน 2,000,000 บาท 12 บาท/รายการ",
+    "DC2 ไม่เกิน 100,000 บาท 20 บาท/รายการ",
+    "DC2 ไม่เกิน 100,000",
+    "500,000 บาท 75 บาท/รายการ",
+    "DC 2 ไม่เกิน 500,00",
+    "2,000,000 บาท 200 บาท/รายการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "2,000 บาท",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": null,
+   "fee_website": "https://www.smbc.co.jp/global/bangkok/"
+  }
+ },
+ {
+  "provider": "กรุงเทพ บิซ ไอแบงก์กิ้ง (บุคคลธรรมดาและนิติบุคคล)บิซ ไอแบงก์กิ้ง(บุคคลธรรมดาและนิติบุคคล)",
+  "product": "บิซ ไอแบงก์กิ้ง (บุคคลธรรมดาและนิติบุคคล)บิซ ไอแบงก์กิ้ง(บุคคลธรรมดาและนิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "เป็นบริการธนาคารทางอินเทอร์เน็ตสำหรับ ผู้ประกอบการธุรกิจขนาดกลางและขนาดย่อม ด้วยการใช้งานที่รวดเร็ว ปลอดภัยระดับสากล ทุกธุรกรรมจึงเป็นเรื่องง่าย",
+   "customer_group": [
+    "บุคคลธรรมดาที่ประกอบธุรกิจ",
+    "นิติบุคคลขนาดกลางและขนาดย่อม"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "10 - 15 บาท/รายการ เงื่อนไข: -โอนเงินพร้อมเพย์แบบชุดข้อมูล(รับเงินในวันทำการถัดไป PromptPay -Credit Next Day) เงินโอน \u003c= 100,000 = 10 บาทมากกว่า 100,000 ถึง 2,000,000 บาท = 15 บาท",
+   "interbank_transfer_fee": [
+    "12",
+    "200 บาท/รายการ เงื่อนไข:",
+    "โอนเงินไปยังบัญชีบุคคลอื่นต่างธนาคาร(นำเงินเข้าบัญชีในวันทำการเดียวกัน ผ่านระบบ BAHTNET) 150 บาท (ธนาคารผู้รับเงินจะคิดค่าธรรมเนียมแก่ผู้รับเงินด้วย)",
+    "โอนเงินไปยังบัญชีบุคคลอื่นต่างธนาคาร(นำเงินเข้าบัญชีในวันทำการเดียวกันผ่านระบบ SMART",
+    "Credit Same Day) เงินโอน\u003c= 100,000 =20 บาท100,000 \u003c เงินโอน \u003c= 500,000 =75 บาท500,000 \u003c เงินโอน \u003c= 2,000,000 = 200 บาท",
+    "โอนเงินไปยังบัญชีบุคคลอื่นต่างธนาคาร(นำเงินเข้าบัญชีในวันทำการถัดไปผ่านระบบ SMART",
+    "Credit Next Day) เงินโอน\u003c= 2,000,000 = 12 บาท"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม - 1,000 บาท/รายการ เงื่อนไข: -โอนเงินระหว่างบัญชีบริษัท ภายในเขตเดียวกัน ฟรี-โอนเงินไปยังบัญชีบุคคลอื่นของธนาคารกรุงเทพภายในเขตเดียวกัน 10 บาท-โอนเงินข้ามเขต(ระหว่างบัญชีบริษัท และไปยังบัญชีบุคคลอื่น) 20 บาท + 10,000 ละ 10 บาท(สูงสุดไม่เกิน 1,000 บาท)-จ่ายเงินเดือนพนักงาน ภายในเขตเดียวกัน 10 บาท ข้ามเขต 30 บาท-โอนเงินแบบชุดข้อมูล ภายในเขตเดียวกัน 10 บาท ข้ามเขต 30 บาท",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "ค่าบริการรักษาความปลอดภัยในการพิสูจน์ตัวตนผู้ใช้ระบบ ฟรี 1 เครื่อง (1,000 บาท ต่อเครื่อง)",
+    "การชำระค่าสินค้าและบริการ ตามเงื่อนไขที่บริษัทผู้รับชำระเงินตกลงกับธนาคาร",
+    "การขอใบแสดงรายการบัญชี ค่าจัดส่ง 15 บาท",
+    "การอายัดเช็ค,การตรวจสอบรายการเช็คคืน,การอายัดสมุดคู่ฝาก ฟรี",
+    "การขอตรวจสอบการทำรายการย้อนหลัง 100 บาท ต่อรายการ (สูงสุดไม่เกิน 1,000 บาทต่อครั้ง)(กรณีลูกค้าให้ธนาคารตรวจสอบหลังจากวันที่เกิดรายการเกินกว่า 45 วัน และผลการตรวจสอบปรากฏว่ามิได้เป็นความผิดของธนาคาร)"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.bangkokbank.com/th-TH/Business-Banking/Manage-My-Business/Digital-Banking/BIZ-iBanking",
+   "fee_website": "https://www.bangkokbank.com/th-TH/Business-Banking/Manage-My-Business/Digital-Banking/BIZ-iBanking/~/link.aspx?_id=E287E5E81AA0497CBE4632530D032FDF\u0026_z=z"
+  }
+ },
+ {
+  "provider": "กสิกรไทย K-Cash Connect Plus (นิติบุคคล)K-Cash Connect Plus(นิติบุคคล)",
+  "product": "K-Cash Connect Plus (นิติบุคคล)K-Cash Connect Plus(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "เข้าถึงทุกข้อมูลทางการเงินของบริษัทได้ผ่านระบบออนไลน์ทำธุรกรรมทางการเงินได้แบบ Real Timeทำธุรกรรมแบบส่งคำส่งล่วงหน้าได้มั่นใจได้ ด้วยความปลอดภัย มาตรฐานสากลมาพร้อม 3 ฟีเจอร์ใหม่SMART INFOข้อมูลสถานะทางการเงินที่ครบถ้วน เรียกดูสะดวก บริหารเงินได้อย่างรวดเร็วSmart Transactionทำรายการและอนุมัติได้ง่าย มี SMS และ e-mail แจ้งเตือนการโอนSmart Report \u0026 Summaryสรุปรายการได้สะดวก รวดเร็ว เลือกรูปแบบรายงานข้อมูลทางการเงินได้หลากหลาย",
+   "customer_group": [
+    "ลักษณะกลุ่มลูกค้าบริษัทและกลุ่มบริษัทที่ต้องการทำธุรกรรมทางการเงินแบบ Online และ ทำรายการชำระเงิน รวมถึงการเรียกดูข้อมูลทางการเงินประเภทต่าง ๆ ได้สะดวก รวดเร็ว ยิ่งขึ้นคุณสมบัติ",
+    "นิติบุคคล",
+    "มี บัญชีเงินฝากกระแสรายวัน หรือ บัญชีเงินฝากออมทรัพย์ ของธนาคารกสิกรไทย"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "10 - 15 บาท/รายการ เงื่อนไข: - ไม่เกิน 100,000 บาท : 10 บาทต่อรายการ- มากกว่า 100,000 บาท : 15 บาทต่อรายการ",
+   "interbank_transfer_fee": [
+    "12",
+    "900 บาท/รายการ เงื่อนไข: SMART Credit Next Day : 12 บาทต่อรายการSMART Credit Same Day",
+    "ไม่เกิน 100,000 บาท : 20 บาทต่อรายการ",
+    "มากกว่า 100,000 บาท แต่ไม่เกิน 500,000 บาท : 75 บาทต่อรายการ",
+    "มากกว่า 500,000 บาท แต่ไม่เกิน 2,000,000 บาท : 200 บาทต่อรายการORFT",
+    "ไม่เกิน 10,000 บาท : 25 บาทต่อรายการ",
+    "มากกว่า 10,000 บาท : 35 บาทต่อรายการBAHTNET",
+    "กทม. / ปริมณฑล ไป กทม. / ปริมณฑล : ผู้สั่งโอน 150.00 บาทต่อรายการ , ผู้รับโอน 100.00 บาทต่อรายการ",
+    "กทม. / ปริมณฑล ไป ภูมิภาค : ผู้สั่งโอน 150.00 บาทต่อรายการ, ผู้รับโอน 100.00 บาทต่อรายการ",
+    "ภูมิภาค ไป กทม. / ปริมณฑล : ผู้สั่งโอน 150.00 บาทต่อรายการ, ผู้รับโอน 100.00 บาทต่อรายการ",
+    "ภูมิภาค ไป ภูมิภาค : ผู้สั่งโอน 150.00 บาทต่อรายการ, ผู้รับโอน 100.00 บาทต่อรายการ",
+    "โอนเงินข้ามเขต : ผู้สั่งโอน หมื่นล่ะ 10 บาท สูงสุดไม่เกิน 750 บาทต่อรายการ, ผู้รับโอน ร้อยล่ะ 0.10 สูงสุดไม่เกิน 750 บาทต่อรายการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม - 1,000 บาท/รายการ เงื่อนไข: Direct Credit- ในเขตสำนักหักบัญชี 15 บาทต่อรายการ- นอกเขตสำนักหักบัญชี 25 บาทต่อรายการInter Account Transfer- ในเขตสำนักหักบัญชี ไม่คิดค่าธรรมเนียม- นอกเขตสำนักหักบัญชี หมื่นล่ะ 10 บาท ขั้นต่ำ 15 บาท สูงสุด 1,000 บาทต่อรายการThird party Transfer- ในเขตสำนักหักบัญชี 15 บาทต่อรายการ- นอกเขตสำนักหักบัญชี หมื่นล่ะ 10 บาท ขั้นต่ำ 15 บาท สูงสุด 1,000 บาทต่อรายการ",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "3,000 บาท เงื่อนไข: จ่ายเพียงครั้งเดียว",
+   "annual_fee": "2,000 บาท/ปี",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": null,
+   "fee_website": "https://www.kasikornbank.com/th/rate/fee/ChargesDoc/FinancialManagement_th.pdf"
+  }
+ },
+ {
+  "provider": "มิซูโฮ สาขากรุงเทพฯ Mizuho Global e-Banking (MGeB) (นิติบุคคล)Mizuho Global e-Banking (MGeB)(นิติบุคคล)",
+  "product": "Mizuho Global e-Banking (MGeB) (นิติบุคคล)Mizuho Global e-Banking (MGeB)(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "บริการธนาคารผ่านทาง electronic channel บน internet banking",
+   "customer_group": [
+    "นิติบุคคลที่มีบัญชีเงินฝากออมทรัพย์ หรือ กระแสรายวันกับทางมิซูโฮ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "10 - 15 บาท/รายการ เงื่อนไข: ไม่เกิน 100,000.00 บาท 10.00 บาท/รายการมากกว่า 100,000.00 บาท 15.00 บาท/รายการ",
+   "interbank_transfer_fee": [
+    "10",
+    "15 บาท/รายการ เงื่อนไข: ไม่เกิน 100,000.00 บาท 10.00 บาท/รายการมากกว่า 100,000.00 บาท 15.00 บาท/รายการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "7,000 บาท เงื่อนไข: ต่อครั้ง",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": null,
+   "fee_website": "https://www.mizuhogroup.com/asia-pacific/thailand/service"
+  }
+ },
+ {
+  "provider": "แลนด์ แอนด์ เฮ้าส์ Internet banking |LH Bank Speedy|(นิติบุคคล) (นิติบุคคล)Internet banking |LH Bank Speedy|(นิติบุคคล)(นิติบุคคล)",
+  "product": "Internet banking |LH Bank Speedy|(นิติบุคคล) (นิติบุคคล)Internet banking |LH Bank Speedy|(นิติบุคคล)(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "บริการธนาคารแบบดิจิทัล ที่ช่วยทำให้ลูกค้าได้เข้าถึงธนาคารอย่างเต็มรูปแบบผ่านอินเทอร์เน็ต",
+   "customer_group": [
+    "กลุ่มลูกค้านิติบุคคลที่เปิดบัญชีกับธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "10 - 15 บาท/รายการ เงื่อนไข: -โอนเงินพร้อมเพย์ไม่เกิน 100,000 บาท คิดค่าธรรมเนียม 10 บาท/รายการมากกว่า 1000,000 ถึง 2,000,000 บาท คิดค่าธรรมเนียม 15 บาท/รายการ",
+   "interbank_transfer_fee": [
+    "12",
+    "75 บาท/รายการ เงื่อนไข:",
+    "โอนเงินไปยังบัญชีบุคคลอื่นต่างธนาคาร (ORFT)โอนเงินน้อยกว่าหรือเท่ากับ 20,000 บาท คิดค่าธรรมเนียม 25 บาท/รายการโอนเงินมากกว่า 20,000 บาท แต่ไม่เกิน 699,999 บาท คิดค่าธรรมเนียม 35 บาท/รายการ",
+    "โอนเงินไปยังบัญชีบุคคลอื่นต่างธนาคาร ระบบ BAHTNETนำเงินเข้าบัญชีในวันทำการเดียวกัน ในกทม./ปริมณฑล คิดค่าธรรมเนียม 150 บาทต่อรายการ (ธนาคารผู้รับเงินจะคิดค่าธรรมเนียมแก่ผู้รับเงินด้วย)โอนเงินต่างจังหวัดคิดค่าธรรมเนียม 10 บาท ต่อยอดโอน 10,000 บาท สูงสุดไม่เกิน 750 บาทต่อรายการ",
+    "โอนเงินไปยังบัญชีบุคคลอื่นต่างธนาคาร ระบบ Bulk Paymentโอนเงิน Bulk Payment (Credit Same Day)ไม่เกิน 100,000 บาท/รายการ คิดค่าธรรมเนียม 20 บาทมากกว่า 100,000 บาท แต่ไม่เกิน 500,000 บาท/รายการ คิดค่าธรรมเนียม 75 บาทมากกว่า 500,000 บาท แต่ไม่เกิน 2,000,000 บาท/รายการ คิดค่าธรรมเนียม 200 บาทโอนเงิน Bulk Payment (Credit Next Day)ไม่เกิน 2,000,000 บาท/รายการ คิดค่าธรรมเนียม 12 บาท"
+   ],
+   "intrabank_transfer_fee": "10 - 25 บาท/รายการ เงื่อนไข: -โอนเงินระหว่างบัญชีตนเอง ภายในเขตเดียวกัน ฟรี -โอนเงินระหว่างบัญชีตนเอง ข้ามเขต คิดค่าธรรมเนียม 10 บาท/รายการ -โอนเงินไปยังบัญชีบุคคลที่ 3 ภายใน LH Bank ภายในเขตเดี่ยวกัน ฟรี -โอนเงินไปยังบัญชีบุคคลที่ 3 ภายใน LH Bank ข้ามเขต คิดค่าธรรมเนียม 10 บาท/รายการ -จ่ายเงินเดือนพนักงานในเขตสำนักหักบัญชีเดียวกัน คิดค่าธรรมเนียม 15 บาท/รายการข้ามเขตสำนักหักบัญชี คิดค่าธรรมินียม 25 บาท/รายการ",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "2,000 บาท/ปี เงื่อนไข: 2,000 บาทต่อปี",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.lhbank.co.th/Corporate/th/digital_banking_speedy.html",
+   "fee_website": "https://www.lhbank.co.th/Rate/Depositfee/Other"
+  }
+ },
+ {
+  "provider": "ออมสิน บริการ GSB Corporate Internet Banking (นิติบุคคล)บริการ GSB Corporate Internet Banking(นิติบุคคล)",
+  "product": "บริการ GSB Corporate Internet Banking (นิติบุคคล)บริการ GSB Corporate Internet Banking(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "บริการทางอินเตอร์เน็ตสำหรับลูกค้าองค์กรเพื่อบริหารจัดการการเงินขององค์กรได้สะดวก รวดเร็ว สามารถแบ่งหน้าที่ความรับผิดชอบและจำกัดสิทธิของผู้ทำรายการแต่ละระดับได้ โดยองค์กรสามารถทำธุรกรรมทางการเงินต่างๆ ได้ด้วยตนเอง",
+   "customer_group": [
+    "เป็นลูกค้าของธนาคารประเภทนิติบุคคล",
+    "เป็นเจ้าของบัญชีเงินฝากประเภทเผื่อเรียก หรือบัญชีเงินฝากกระแสรายวัน"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "10 - 15 บาท/รายการ เงื่อนไข: -ไม่เกิน 100,000 รายการละ 10 บาท- เกินกว่า 100,000 แต่ไม่เกิน 2,000,000 บาท รายการละ 15 บาท",
+   "interbank_transfer_fee": [
+    "12",
+    "200 บาท/รายการ เงื่อนไข: บริการโอนเงินต่างธนาคาร (ORFT Service)",
+    "ไม่เกิน 20,000 บาท รายการละ 25 บาท",
+    "ตั้งแต่20,001 แต่ไม่เกิน 2,000,000 บาท รายการละ 35 บาท บริการโอนเงินเพื่อบุคคลที่สามผ่านระบบ Bathnet",
+    "ธนาคารผู้สั่งโอน 150 บาท",
+    "ธนาคารผู้รับโอน 100 บาท บริการโอนเงินทางอิเล็กทรอนิกส์ต่างธนาคารอัตโนมัติ ระบบ Bulk Payment ภายในวันทำการเดียวกัน (SMART Credit Same Day)",
+    "ไม่เกิน 100,000 บาท รายการละ 20 บาท",
+    "ตั้งแต่ 100,001 บาทแต่ไม่เกิน 500,000 บาท รายการละ 75 บาท",
+    "ตั้งแต่ 500,001 บาทแต่ไม่เกิน 2,000,000 บาท รายการละ 200 บาทบริการโอนเงินทางอิเล็กทรอนิกส์ต่างธนาคารอัตโนมัติ ระบบ Bulk Payment ภายในวันทำการเดียวกัน (SMART Credit Next Day)",
+    "ไม่เกิน 2,000,000 บาท รายการละ 12 บาท"
+   ],
+   "intrabank_transfer_fee": "5 - 20 บาท/รายการ เงื่อนไข: -ในเขตสำนักหักบัญชี ยกเว้นให้ -ข้ามเขตสำนักหักบัญชี ครั้งที่ 1-5 ของเดือนยกเว้นให้ครั้งต่อไปรายการละ 10 บาทบริการ Bulk Payment - บริการโอนเงินเดือนเข้าบัญชีอัตโนมัติ (Payroll) ส่วนราชการ รายการละ 5 บาท- บริการโอนเงินเดือนเข้าบัญชีอัตโนมัติ (Payroll) ผู้ฝากทั่วไป องค์การของรัฐ และรัฐวิสาหกิจ รายการละ 10 บาท- บริการโอนเงินอื่นใดเข้าบัญชีธนาคารออมสิน (Direct Credit) ส่วนราชการ รายการละ 5-10 บาท ทั้งนี้ การคิดค่าธรรมเนียมจะแตกต่างกันขึ้นอยู่กับข้อตกลงของแต่ละผู้ใช้บริการ- บริการโอนเงินอื่นใดเข้าบัญชีธนาคารออมสิน (Direct Credit) ผู้ฝากทั่วไป องค์การของรัฐ และรัฐวิสาหกิจเอกชน รายการละ 10-20 บาท ทั้งนี้ การคิดค่าธรรมเนียม จะแตกต่างกัน ขึ้นอยู่กับบันทึกข้อตกลงของแต่ละผู้ใช้บริการ",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "1,000 บาท เงื่อนไข:",
+   "annual_fee": "2,000 บาท/ปี",
+   "other_fees": [
+    "ค่าธรรมเนียมการส่ง SMS การแจ้งการทำรายการ ครั้งละ 3 บาท",
+    "ค่าจัดส่งสลากออมสินพิเศษตามที่อยู่ของผู้ใช้บริการ ครั้งละ 40 บาทต่อฉบับ (ทั่วประเทศ)บริการอื่นๆ",
+    "การนำส่งภาษีหัก ณ ที่จ่ายอิเล็กทรอนิกส์ รายการละ 10 บาท"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.gsb.or.th/service/%e0%b8%9a%e0%b8%a3%e0%b8%b4%e0%b8%81%e0%b8%b2%e0%b8%a3-gsb-corporate-internet-banking/",
+   "fee_website": "https://www.gsb.or.th/service/%e0%b8%84%e0%b9%88%e0%b8%b2%e0%b8%98%e0%b8%a3%e0%b8%a3%e0%b8%a1%e0%b9%80%e0%b8%99%e0%b8%b5%e0%b8%a2%e0%b8%a1%e0%b8%9a%e0%b8%a3%e0%b8%b4%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84/"
+  }
+ },
+ {
+  "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น HSBCnet (นิติบุคคล)HSBCnet(นิติบุคคล)",
+  "product": "HSBCnet (นิติบุคคล)HSBCnet(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "Channel Management",
+   "customer_group": [
+    "ลูกค้านิติบุคคลที่ตามเงื่อนไขของธนาคาร ฯ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "10 - 15 บาท/รายการ เงื่อนไข: - ยอดเงิน \u003c= 100,000 บาท 10.-บาท- ยอดเงิน \u003e 100,000 บาท 15.-บาท",
+   "interbank_transfer_fee": [
+    "ตามอัตราที่กำหนด เงื่อนไข: อ้างอิงถึงค่าบริการอื่นๆได้แก่ BAHTNET, BULK PAYMENT, และ PromptPay"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ],
+   "entrance_fee": "2,500 บาท เงื่อนไข: Excluded VAT",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "Monthly Fees =\u003e 1,000 THB per month (Excl. VAT)Training and support consists of",
+    "Refresh training at HSBC @ 2,000 THB per session (Excl. VAT)",
+    "Refresh training at customer's site within Bangkok",
+    "\u003e 3,000 THB per session (Excl. VAT)",
+    "Refresh training at customer's site outside Bangkok",
+    "\u003e 3,000 THB per session plus transportation and accomodation expenses to training location (Excl. VAT)"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.hsbc.co.th/",
+   "fee_website": "https://www.hsbc.co.th/"
+  }
+ },
+ {
+  "provider": "ซิตี้แบงก์ CitiDirect B.E. (นิติบุคคล)CitiDirect B.E.(นิติบุคคล)",
+  "product": "CitiDirect B.E. (นิติบุคคล)CitiDirect B.E.(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "single platform for client to make transaction both cash management and trade",
+   "customer_group": [
+    "ลูกค้านิติบุคคลหรือสถาบันการเงินรวมทั้งองค์กรที่มีบัญชีกับธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "10 - 25 บาท/รายการ เงื่อนไข: - PromptPay Instant Payment Proxy ID ราคา 15 บาท- promptPay Instant Payment Account number ราคา 25 บาท- PromptPay Bulk ราคา 10 บาท",
+   "interbank_transfer_fee": [
+    "ตามอัตราที่กำหนด เงื่อนไข: คิดค่าธรรมเนียมตามการใช้บริการของผลิตภัณฑ์นั่นๆ สามารถดูเงื่อนไขได้ที่ Website ค่าธรรมเนียม (Link)"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ตามอัตราที่กำหนด เงื่อนไข: Package Pricing- Basic (CDBE limited features) - Free- Standard (CDBE Basic + add-on features) - Baht 3,000 per month per instance- Premium (CDBE+CCF) - Baht 4,500 per month per instance- Premium (CDBE+CCF+CCS) - Baht 7,500 per month per instance- MT 9XXX (940 / 942 /950/900/910) to a client BIC - Baht 1,500 per account per month",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.citidirect.com/login/",
+   "fee_website": "https://www.citibank.co.th/en/cts.htm"
+  }
+ },
+ {
+  "provider": "สแตนดาร์ดชาร์เตอร์ด (ไทย) Straight2Bank Web (นิติบุคคล)Straight2Bank Web(นิติบุคคล)",
+  "product": "Straight2Bank Web (นิติบุคคล)Straight2Bank Web(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "Straight2Bank เป็นช่องทางการให้บริการทางอิเล็กทรอนิกส์ ซึ่งลูกค้าสามารถเรียกใช้ผลิตภัณฑ์ในด้านต่างๆ ไม่ว่าจะเป็นบริการด้านธุรกรรมการเงิน, บริการด้านการค้าต่างประเทศ, บริการด้านอัตราแลกเปลี่ยน และบริการด้านการรับฝากหลักทรัพย์ โดยลูกค้ายังสามารถเลือกการเชื่อมต่อกับธนาคารได้ใน 2 รูปแบบคือ ผ่าน Web และ H2H",
+   "customer_group": [
+    "ลูกค้านิติบุคคลหรือสถาบันการเงินรวมทั้งองค์กรที่มีบัญชีกับธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "10 - 35 บาท/รายการ เงื่อนไข: การโอนเงินครั้งละหลายรายการแบบ Batch- การโอนเงินภายในวันทำการถัดไป (Next Day) 10 บาท/รายการ สำหรับการโอนตั้งแต่ 0-2,000,000 บาท โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน- การโอนเงินภายในวันทำการเดียวกัน (Same Day) 15 บาท/รายการ สำหรับการโอนตั้งแต่ 0-2,000,000 บาท โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอนการโอนเงินครั้งละหนึ่งรายการแบบ Online (Real-time)- การโอนเงินไปยังปลายทางพร้อมเพย์ (หมายเลขประจำตัวผู้เสียภาษีหรือหมายเลขโทรศัพท์) 15 บาท/รายการ สำหรับการโอนตั้งแต่ 0-2,000,000 บาท โอนได้ไม่เกิน 2,000,000 บาทต่อรายการ โดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน- การโอนเงินไปยังปลายทางหมายเลขบัญชี 25 บาท/รายการ สำหรับการโอนตั้งแต่ 0-20,000 บาท โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน, 35 บาท/รายการ สำหรับการโอนตั้งแต่ 20,001-2,000,000 บาท โอนได้ไม่เกิน 2,000,000 บาทต่อรายการ โดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน",
+   "interbank_transfer_fee": [
+    "ตามอัตราที่กำหนด เงื่อนไข: คิดค่าธรรมเนียมตามการใช้บริการของผลิตภัณฑ์นั่นๆ สามารถดูเงื่อนไขได้ที่ Website ค่าธรรมเนียม (Link) https://www.sc.com/th/interest",
+    "rates/"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "5,000 บาท เงื่อนไข: - ค่าธรรมเนียมในการติดตั้งระบบ Straight2Bank 1,500 บาท/ครั้ง- กรณีที่เป็นการติดตั้งแบบ Host-2-Host 5,000 บาท/ครั้ง- ค่าอุปกรณ์ Vasco สำหรับการอนุมัติรายการ 2,500 บาท/ชิ้น- ค่าธรรมเนียมการฝึกสอนใช้ระบบ 2,500 บาท/ครั้ง- ค่าธรรมเนียมในการติดตั้ง API 150,000 บาท/ครั้ง- ค่าธรรมเนียมการใช้ API แบบคิดเป็นราย call 3.5 บาทหรือ USD 0.1/call- ค่าธรรมเนียมการใช้ API แบบรายเดือน USD 1,000-7,000/เดือน",
+   "annual_fee": "ตามอัตราที่กำหนด เงื่อนไข: - ค่าธรรมเนียมการใช้ระบบ Straight2Bank เพื่อเรียกดูรายงานเท่านั้น 500 บาท/เดือน- ค่าธรรมเนียมการใช้ระบบ Straight2Bank เพื่อการทำธุรกรรม และรายการอื่นๆ 500 บาท/เดือน- ค่าธรรมเนียมการใช้งานระบบ Infomanager 500 บาท/เดือนการบริการผลิตภัณฑ์ Straight2Bank Pay- ค่าธรรมเนียมรายเดือนสำหรับผู้ใช้งาน (User) ลำดับที่ 1-5 6,500 บาท/เดือน- ค่าธรรมเนียมรายเดือนสำหรับผู้ใช้งาน (User) ลำดับที่ 6-15 1,500 บาท/เดือน- ค่าธรรมเนียมรายธุรกรรม 15 บาท/รายการ",
+   "other_fees": [
+    "ค่าธรรมเนียมสำหรับการยกเลิกคำสั่งโอนเงินผ่านระบบพร้อมเพย์ สำหรับการโอนเงินครั้งละหลายรายการแบบ Batch 200 บาท/รายการ"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.sc.com/th/",
+   "fee_website": "https://www.sc.com/th/"
+  }
+ },
+ {
+  "provider": "ดอยซ์แบงก์ DB-CASH MANAGER (บุคคลธรรมดาและนิติบุคคล)DB-CASH MANAGER(บุคคลธรรมดาและนิติบุคคล)",
+  "product": "DB-CASH MANAGER (บุคคลธรรมดาและนิติบุคคล)DB-CASH MANAGER(บุคคลธรรมดาและนิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "บริการธนาคารแบบดิจิทัล เป็นการอำนวยความสะดวก ให้กับลูกค้าองค์กรใช้บริการทางอิเล็กทรอนิกส์ได้ง่ายขึ้น",
+   "customer_group": [
+    "บุคคลธรรมดา อายุตั้งแต่ 12 ปีบริบูรณ์ขึ้นไป",
+    "มี บัญชีเงินฝากออมทรัพย์ / บัญชีเงินฝากกระแสรายวัน"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "15 บาท/รายการ เงื่อนไข: ชำระบิลต่างธนาคาร",
+   "interbank_transfer_fee": [
+    "ไม่มีบริการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.db.com/thailand",
+   "fee_website": "https://www.db.com/thailand"
+  }
+ },
+ {
+  "provider": "กรุงไทย Krungthai Business (บุคคลธรรมดาและนิติบุคคล)Krungthai Business(บุคคลธรรมดาและนิติบุคคล)",
+  "product": "Krungthai Business (บุคคลธรรมดาและนิติบุคคล)Krungthai Business(บุคคลธรรมดาและนิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "Digital Banking สำหรับลูกค้าบุคคลธรรมดาที่ประกอบธุรกิจ และลูกค้านิติบุคคล ดำเนินธุรกิจได้ทุกที่ ทุกเวลา ไม่มีสะดุด ผ่านช่องทาง Web Based Corporate Portal และ Mobile Application ซึ่งเป็นการเชื่อมโยงบริการต่าง ๆ ของธนาคารไว้ในที่เดียวแบบ Seamless",
+   "customer_group": [
+    "กลุ่มลูกค้านิติบุคคล บุคคลธรรมดาที่ประกอบธุรกิจ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ตามอัตราที่กำหนด - 15 บาท/รายการ เงื่อนไข: (1) กลุ่มลูกค้า G2C (ผ่านช่องทาง Corporate Banking)- จํานวนเงินไม่เกิน 5,000 บาท ไม่คิดค่าบริการ- จํานวนเงินเกิน 5,000 – 30,000 บาท คิด 2.- บาท / รายการ- จํานวนเงินเกิน 30,000 – 100,000 บาท คิด 5.- บาท / รายการ- จํานวนเงินเกิน 100,000 บาท – วงเงินสูงสุดที่ธนาคารกําหนด คิด 10.- บาท / รายการ(2) สําหรับกลุ่มลูกค้านิติบุคคล B2C, B2B, B2G, G2B (ผ่านช่องทาง Corporate Banking) - จํานวนเงินไม่เกิน 100,000 บาท คิด 10.- บาท / รายการ- จํานวนเงินเกิน 100,000 บาท - วงเงินสูงสุดที่ธนาคารกําหนด คิด 15.- บาท / รายการ*G2C:โอนเงินสวัสดิการภาครัฐให้กับประชาชน*B2C:โอนเงินนิติบุคคลกับประชาชนทั่วไป*B2B:โอนเงินนิติบุคคลกับนิติบุคคล*B2G:โอนเงินนิติบุคคลกับหน่วยงานรัฐ*G2B:โอนเงินหน่วยงานรัฐกับนิติบุคคล- วงเงินที่ทําธุรกรรมสูงสุด 2,000,000 บาท/รายการ",
+   "interbank_transfer_fee": [
+    "12",
+    "200 บาท/รายการ เงื่อนไข: (1) โอนเงินผ่านบริการ Online Retail Funds Transfer (ORFT)",
+    "ไม่เกิน 20,000.",
+    "บาท คิด 25.",
+    "บาท/รายการ",
+    "เกิน 20,000.",
+    "บาท ขึ้นไป แต่ไม่เกิน 2,000,000.",
+    "บาท คิด 35.",
+    "บาท/รายการ (2) การโอนเงินรายย่อย (Bulk Payment System : BPS)(2.1) Credit Same Day",
+    "ไม่เกิน 100,000.",
+    "บาท คิด 20.",
+    "บาท / รายการ",
+    "มากกว่า 100,000.",
+    "บาท แต่ไม่เกิน 500,000.",
+    "บาท คิด 75.",
+    "บาท / รายการ",
+    "มากกว่า 500,000.",
+    "บาท แต่ไม่เกิน 2,000,000.",
+    "บาท คิด 200.",
+    "บาท / รายการ",
+    "กรณีขอยกเลิกแฟ้มข้อมูล คิด 100.",
+    "บาท/แฟ้มข้อมูล(2.2) Credit Next Day",
+    "ไม่เกิน 2,000,000.",
+    "บาท คิด 12.",
+    "บาท / รายการ",
+    "กรณีขอยกเลิกแฟ้มข้อมูล คิด 100.",
+    "บาท/แฟ้มข้อมูล(3) โอนเงินผ่าน BAHTNET(3.1) ธนาคารผู้โอนอยู่ในกทม./ปริมณฑล",
+    "โอนให้ธนาคารอื่น คิด 150.",
+    "บาท / รายการ(3.2) ธนาคารผู้โอนอยู่ต่างจังหวัด",
+    "โอนให้ธนาคารอื่นที่อยู่ใน กทม./ปริมณฑล คิด 150.",
+    "บาท / รายการ + ค่าบริการโอนเงินต่างจังหวัด",
+    "โอนให้ธนาคารอื่นที่อยู่ในต่างจังหวัด คิด 150.",
+    "บาท / รายการกรณีรายการไม่สำเร็จ ธนาคารคิดค่าธรรมเนียมเท่าเดิม"
+   ],
+   "intrabank_transfer_fee": "ตามอัตราที่กำหนด - 800 บาท/รายการ เงื่อนไข: 1. ในเขต -ไม่คิดค่าบริการ2. ข้ามเขต - หมื่นละ 8.-บาท ส่วนเกิน คิดในอัตราร้อยละ 0.08- ค่าบริการขั้นต่ำ 8.- บาท/รายการ- ค่าบริการสูงสุด 800.- บาท/รายการ- กรณีรายการไม่สำเร็จ ธนาคารคิดค่าบริการเท่าเดิม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "ค่าบริการเครื่องสร้างรหัส (Token) คิด 1,",
+    "บาท/เครื่อง",
+    "ค่าบริการแจ้งเตือนผู้รับเงิน (Notification) คิด",
+    "บาท / ข้อความ",
+    "ค่าบริการรับรายงาน รายการขารับชำระ(1) กรณีลูกค้าทั่วไป คิด 4,",
+    "บาท/เดือน/Product Code (2) กรณีลูกค้าสถาบันการเงิน คิด 15,",
+    "บาท/เดือน/Product Code",
+    "กรณีลูกค้าใช้บริการ Bulk Payment (1) กรณีลูกค้าทั่วไป คิด 4,",
+    "บาท/เดือน/Company ID(2) กรณีลูกค้าสถาบันการเงิน คิด 15,",
+    "บาท/เดือน/Company ID",
+    "รายการโอนเงินอัตโนมัติ(1) Direct credit/Payroll คิด",
+    "บาท/รายการ(2) Payroll หายห่วง",
+    "แผน 1 คิด",
+    "บาท/รายการ",
+    "แผน 2 คิด",
+    "บาท/รายการ",
+    "แผน 3 คิด",
+    "บาท/รายการ",
+    "แผน 4 คิด",
+    "บาท/รายการ",
+    "บริการ Pre",
+    "registered(1) ตรวจสอบชื่อบัญชีผู้รับเงิน คิด",
+    "บาท / รายการ(2) ตรวจสอบข้อมูลอื่น ๆ คิด",
+    "บาท / รายการ",
+    "ค่าบริการชำระค่าสินค้า/บริการ คิด",
+    "บาท / รายการ",
+    "การรับ",
+    "ส่งข้อมูลธุรกรรมทางการเงินต่างๆ ผ่านช่องทางพิเศษ คิด 5,",
+    "บาท/เดือน/Service/ รายลูกค้า",
+    "การขอ Inquiry Transaction ย้อนหลังบริการ Cash Management",
+    "ย้อนหลัง ภายใน 30 วัน คิด 1,",
+    "บาท/บัญชี/ครั้ง",
+    "ย้อนหลัง ภายใน 60 วัน คิด 3,",
+    "บาท/บัญชี/ครั้ง",
+    "ย้อนหลัง ภายใน 90 วัน คิด 5,",
+    "บาท/บัญชี/ครั้ง",
+    "ย้อนหลังเกินกว่า 90 วัน คิด 10,",
+    "บาท/บัญชี/ครั้ง",
+    "บริการหักบัญชีอัตโนมัติ (Direct Debit)(1) บริการหักบัญชีอัตโนมัติแบบมาตรฐาน (หักเต็มจำนวน,หักบางส่วน)",
+    "ในเขต คิด",
+    "บาท/รายการ",
+    "ข้ามเขต คิด",
+    "บาท/รายการ(2) บริการหักบัญชีอัตโนมัติแบบ Hold ตามคำสั่งของผู้ขอใช้บริการ (หักเต็มจำนวน,หักบางส่วน)",
+    "ในเขต คิด",
+    "บาท/รายการ",
+    "ข้ามเขต คิด",
+    "บาท/รายการ"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://business.krungthai.com",
+   "fee_website": "https://krungthai.com/Download/rateFee/RateFeeDownload_4537RateFeeDownload_4527641131_T.pdf"
+  }
+ },
+ {
+  "provider": "กรุงไทย Krungthai Business (บุคคลธรรมดาและนิติบุคคล)Krungthai Business(บุคคลธรรมดาและนิติบุคคล)",
+  "product": "Krungthai Business (บุคคลธรรมดาและนิติบุคคล)Krungthai Business(บุคคลธรรมดาและนิติบุคคล)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "Digital Banking สำหรับลูกค้าบุคคลธรรมดาที่ประกอบธุรกิจ และลูกค้านิติบุคคล ดำเนินธุรกิจได้ทุกที่ ทุกเวลา ไม่มีสะดุด ผ่านช่องทาง Web Based Corporate Portal และ Mobile Application ซึ่งเป็นการเชื่อมโยงบริการต่าง ๆ ของธนาคารไว้ในที่เดียวแบบ Seamless",
+   "customer_group": [
+    "กลุ่มลูกค้านิติบุคคล บุคคลธรรมดาที่ประกอบธุรกิจ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ตามอัตราที่กำหนด - 15 บาท/รายการ เงื่อนไข: (1) กลุ่มลูกค้า G2C (ผ่านช่องทาง Corporate Banking)- จํานวนเงินไม่เกิน 5,000 บาท ไม่คิดค่าบริการ- จํานวนเงินเกิน 5,000 – 30,000 บาท คิด 2.- บาท / รายการ- จํานวนเงินเกิน 30,000 – 100,000 บาท คิด 5.- บาท / รายการ- จํานวนเงินเกิน 100,000 บาท – วงเงินสูงสุดที่ธนาคารกําหนด คิด 10.- บาท / รายการ(2) สําหรับกลุ่มลูกค้านิติบุคคล B2C, B2B, B2G, G2B (ผ่านช่องทาง Corporate Banking) - จํานวนเงินไม่เกิน 100,000 บาท คิด 10.- บาท / รายการ- จํานวนเงินเกิน 100,000 บาท - วงเงินสูงสุดที่ธนาคารกําหนด คิด 15.- บาท / รายการ*G2C:โอนเงินสวัสดิการภาครัฐให้กับประชาชน*B2C:โอนเงินนิติบุคคลกับประชาชนทั่วไป*B2B:โอนเงินนิติบุคคลกับนิติบุคคล*B2G:โอนเงินนิติบุคคลกับหน่วยงานรัฐ*G2B:โอนเงินหน่วยงานรัฐกับนิติบุคคล- วงเงินที่ทําธุรกรรมสูงสุด 2,000,000 บาท/รายการ",
+   "interbank_transfer_fee": [
+    "12",
+    "200 บาท/รายการ เงื่อนไข: (1) โอนเงินผ่านบริการ Online Retail Funds Transfer (ORFT)",
+    "ไม่เกิน 20,000.",
+    "บาท คิด 25.",
+    "บาท/รายการ",
+    "เกิน 20,000.",
+    "บาท ขึ้นไป แต่ไม่เกิน 2,000,000.",
+    "บาท คิด 35.",
+    "บาท/รายการ (2) การโอนเงินรายย่อย (Bulk Payment System : BPS)(2.1) Credit Same Day",
+    "ไม่เกิน 100,000.",
+    "บาท คิด 20.",
+    "บาท / รายการ",
+    "มากกว่า 100,000.",
+    "บาท แต่ไม่เกิน 500,000.",
+    "บาท คิด 75.",
+    "บาท / รายการ",
+    "มากกว่า 500,000.",
+    "บาท แต่ไม่เกิน 2,000,000.",
+    "บาท คิด 200.",
+    "บาท / รายการ",
+    "กรณีขอยกเลิกแฟ้มข้อมูล คิด 100.",
+    "บาท/แฟ้มข้อมูล(2.2) Credit Next Day",
+    "ไม่เกิน 2,000,000.",
+    "บาท คิด 12.",
+    "บาท / รายการ",
+    "กรณีขอยกเลิกแฟ้มข้อมูล คิด 100.",
+    "บาท/แฟ้มข้อมูล(3) โอนเงินผ่าน BAHTNET(3.1) ธนาคารผู้โอนอยู่ในกทม./ปริมณฑล",
+    "โอนให้ธนาคารอื่น คิด 150.",
+    "บาท / รายการ(3.2) ธนาคารผู้โอนอยู่ต่างจังหวัด",
+    "โอนให้ธนาคารอื่นที่อยู่ใน กทม./ปริมณฑล คิด 150.",
+    "บาท / รายการ + ค่าบริการโอนเงินต่างจังหวัด",
+    "โอนให้ธนาคารอื่นที่อยู่ในต่างจังหวัด คิด 150.",
+    "บาท / รายการกรณีรายการไม่สำเร็จ ธนาคารคิดค่าธรรมเนียมเท่าเดิม"
+   ],
+   "intrabank_transfer_fee": "ตามอัตราที่กำหนด - 800 บาท/รายการ เงื่อนไข: 1. ในเขต -ไม่คิดค่าบริการ2. ข้ามเขต - หมื่นละ 8.-บาท ส่วนเกิน คิดในอัตราร้อยละ 0.08- ค่าบริการขั้นต่ำ 8.- บาท/รายการ- ค่าบริการสูงสุด 800.- บาท/รายการ- กรณีรายการไม่สำเร็จ ธนาคารคิดค่าบริการเท่าเดิม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "ค่าบริการเครื่องสร้างรหัส (Token) คิด 1,",
+    "บาท/เครื่อง",
+    "ค่าบริการแจ้งเตือนผู้รับเงิน (Notification) คิด",
+    "บาท / ข้อความ",
+    "ค่าบริการรับรายงาน รายการขารับชำระ(1) กรณีลูกค้าทั่วไป คิด 4,",
+    "บาท/เดือน/Product Code (2) กรณีลูกค้าสถาบันการเงิน คิด 15,",
+    "บาท/เดือน/Product Code",
+    "กรณีลูกค้าใช้บริการ Bulk Payment (1) กรณีลูกค้าทั่วไป คิด 4,",
+    "บาท/เดือน/Company ID(2) กรณีลูกค้าสถาบันการเงิน คิด 15,",
+    "บาท/เดือน/Company ID",
+    "รายการโอนเงินอัตโนมัติ(1) Direct credit/Payroll คิด",
+    "บาท/รายการ(2) Payroll หายห่วง",
+    "แผน 1 คิด",
+    "บาท/รายการ",
+    "แผน 2 คิด",
+    "บาท/รายการ",
+    "แผน 3 คิด",
+    "บาท/รายการ",
+    "แผน 4 คิด",
+    "บาท/รายการ",
+    "บริการ Pre",
+    "registered(1) ตรวจสอบชื่อบัญชีผู้รับเงิน คิด",
+    "บาท / รายการ(2) ตรวจสอบข้อมูลอื่น ๆ คิด",
+    "บาท / รายการ",
+    "ค่าบริการชำระค่าสินค้า/บริการ คิด",
+    "บาท / รายการ",
+    "การรับ",
+    "ส่งข้อมูลธุรกรรมทางการเงินต่างๆ ผ่านช่องทางพิเศษ คิด 5,",
+    "บาท/เดือน/Service/ รายลูกค้า",
+    "การขอ Inquiry Transaction ย้อนหลังบริการ Cash Management",
+    "ย้อนหลัง ภายใน 30 วัน คิด 1,",
+    "บาท/บัญชี/ครั้ง",
+    "ย้อนหลัง ภายใน 60 วัน คิด 3,",
+    "บาท/บัญชี/ครั้ง",
+    "ย้อนหลัง ภายใน 90 วัน คิด 5,",
+    "บาท/บัญชี/ครั้ง",
+    "ย้อนหลังเกินกว่า 90 วัน คิด 10,",
+    "บาท/บัญชี/ครั้ง",
+    "บริการหักบัญชีอัตโนมัติ (Direct Debit)(1) บริการหักบัญชีอัตโนมัติแบบมาตรฐาน (หักเต็มจำนวน,หักบางส่วน)",
+    "ในเขต คิด",
+    "บาท/รายการ",
+    "ข้ามเขต คิด",
+    "บาท/รายการ(2) บริการหักบัญชีอัตโนมัติแบบ Hold ตามคำสั่งของผู้ขอใช้บริการ (หักเต็มจำนวน,หักบางส่วน)",
+    "ในเขต คิด",
+    "บาท/รายการ",
+    "ข้ามเขต คิด",
+    "บาท/รายการ"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://business.krungthai.com",
+   "fee_website": "https://krungthai.com/Download/rateFee/RateFeeDownload_4537RateFeeDownload_4527641131_T.pdf"
+  }
+ },
+ {
+  "provider": "กรุงไทย Krungthai Corporate Online (บุคคลธรรมดาและนิติบุคคล)Krungthai Corporate Online(บุคคลธรรมดาและนิติบุคคล)",
+  "product": "Krungthai Corporate Online (บุคคลธรรมดาและนิติบุคคล)Krungthai Corporate Online(บุคคลธรรมดาและนิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "บริการที่ธนาคารอำนวยความสะดวกให้ลูกค้าบุคคลธรรมดาที่ประกอบธุรกิจ และลูกค้านิติบุคคล รวมทั้งหน่วยงานภาครัฐ สามารถจัดการธุรกรรมทางการเงินด้วยตนเองแบบครบวงจร ผ่านช่องทาง Websiteเพิ่มประสิทธิภาพให้ธุรกิจไม่มีสะดุด ตลอด 24 ชั่วโมง",
+   "customer_group": [
+    "กลุ่มลูกค้านิติบุคคล บุคคลธรรมดาที่ประกอบธุรกิจ และหน่วยงานภาครัฐ"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ตามอัตราที่กำหนด - 15 บาท/รายการ เงื่อนไข: (1) กลุ่มลูกค้า G2C (ผ่านช่องทาง Corporate Banking)- จํานวนเงินไม่เกิน 5,000 บาท ไม่คิดค่าบริการ- จํานวนเงินเกิน 5,000 - 30,000 บาท คิด 2.- บาท / รายการ- จํานวนเงินเกิน 30,000 - 100,000 บาท คิด 5.- บาท / รายการ- จํานวนเงินเกิน 100,000 บาท - วงเงินสูงสุดที่ธนาคารกําหนด คิด 10.- บาท / รายการ(2) สําหรับกลุ่มลูกค้านิติบุคคล B2C, B2B, B2G, G2B (ผ่านช่องทาง Corporate Banking) - จํานวนเงินไม่เกิน 100,000 บาท คิด 10.- บาท / รายการ- จํานวนเงินเกิน 100,000 บาท - วงเงินสูงสุดที่ธนาคารกําหนด คิด 15.- บาท / รายการ*G2C:โอนเงินสวัสดิการภาครัฐให้กับประชาชน*B2C:โอนเงินนิติบุคคลกับประชาชนทั่วไป*B2B:โอนเงินนิติบุคคลกับนิติบุคคล*B2G:โอนเงินนิติบุคคลกับหน่วยงานรัฐ*G2B:โอนเงินหน่วยงานรัฐกับนิติบุคคล- วงเงินที่ทําธุรกรรมสูงสุด 2,000,000 บาท/รายการ",
+   "interbank_transfer_fee": [
+    "12",
+    "200 บาท/รายการ เงื่อนไข: (1) โอนเงินผ่านบริการ Online Retail Funds Transfer (ORFT)",
+    "ไม่เกิน 20,000.",
+    "บาท คิด 25.",
+    "บาท/รายการ",
+    "เกิน 20,000.",
+    "บาท ขึ้นไป แต่ไม่เกิน 2,000,000.",
+    "บาท คิด 35.",
+    "บาท/รายการ (2) การโอนเงินรายย่อย (Bulk Payment System : BPS)(2.1) Credit Same Day",
+    "ไม่เกิน 100,000.",
+    "บาท คิด 20.",
+    "บาท / รายการ",
+    "มากกว่า 100,000.",
+    "บาท แต่ไม่เกิน 500,000.",
+    "บาท คิด 75.",
+    "บาท / รายการ",
+    "มากกว่า 500,000.",
+    "บาท แต่ไม่เกิน 2,000,000.",
+    "บาท คิด 200.",
+    "บาท / รายการ",
+    "กรณีขอยกเลิกแฟ้มข้อมูล คิด 100.",
+    "บาท/แฟ้มข้อมูล(2.2) Credit Next Day",
+    "ไม่เกิน 2,000,000.",
+    "บาท คิด 12.",
+    "บาท / รายการ",
+    "กรณีขอยกเลิกแฟ้มข้อมูล คิด 100.",
+    "บาท/แฟ้มข้อมูล(3) โอนเงินผ่าน BAHTNET(3.1) ธนาคารผู้โอนอยู่ในกทม./ปริมณฑล",
+    "โอนให้ธนาคารอื่น คิด 150.",
+    "บาท / รายการ(3.2) ธนาคารผู้โอนอยู่ต่างจังหวัด",
+    "โอนให้ธนาคารอื่นที่อยู่ใน กทม./ปริมณฑล คิด 150.",
+    "บาท / รายการ + ค่าบริการโอนเงินต่างจังหวัด",
+    "โอนให้ธนาคารอื่นที่อยู่ในต่างจังหวัด คิด 150.",
+    "บาท / รายการกรณีรายการไม่สำเร็จ ธนาคารคิดค่าธรรมเนียมเท่าเดิม"
+   ],
+   "intrabank_transfer_fee": "ตามอัตราที่กำหนด - 800 บาท/รายการ เงื่อนไข: 1. ในเขต -ไม่คิดค่าบริการ2. ข้ามเขต - หมื่นละ 8.-บาท ส่วนเกิน คิดในอัตราร้อยละ 0.08- ค่าบริการขั้นต่ำ 8.- บาท/รายการ- ค่าบริการสูงสุด 800.- บาท/รายการ- กรณีรายการไม่สำเร็จ ธนาคารคิดค่าบริการเท่าเดิม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "ค่าบริการเครื่องสร้างรหัส (Token) คิด 1,",
+    "บาท/เครื่อง",
+    "ค่าบริการรับรายงาน รายการขารับชำระ(1) กรณีลูกค้าทั่วไป คิด 4,",
+    "บาท/เดือน/Product Code (2) กรณีลูกค้าสถาบันการเงิน คิด 15,",
+    "บาท/เดือน/Product Code",
+    "กรณีลูกค้าใช้บริการ Bulk Payment (1) กรณีลูกค้าทั่วไป คิด 4,",
+    "บาท/เดือน/Company ID(2) กรณีลูกค้าสถาบันการเงิน คิด 15,",
+    "บาท/เดือน/Company ID",
+    "รายการโอนเงินอัตโนมัติ(1) Direct credit/Payroll คิด",
+    "บาท/รายการ(2) Payroll หายห่วง",
+    "แผน 1 คิด",
+    "บาท/รายการ",
+    "แผน 2 คิด",
+    "บาท/รายการ",
+    "บริการ Pre",
+    "registered(1) ตรวจสอบชื่อบัญชีผู้รับเงิน คิด",
+    "บาท / รายการ(2) ตรวจสอบข้อมูลอื่น ๆ คิด",
+    "บาท / รายการ",
+    "ค่าบริการชำระค่าสินค้า/บริการ คิด",
+    "บาท / รายการ",
+    "การรับ",
+    "ส่งข้อมูลธุรกรรมทางการเงินต่างๆ ผ่านช่องทางพิเศษ คิด 5,",
+    "บาท/เดือน/Service/ รายลูกค้า",
+    "การขอ Inquiry Transaction ย้อนหลังบริการ Cash Management",
+    "ย้อนหลัง ภายใน 30 วัน คิด 1,",
+    "บาท/บัญชี/ครั้ง",
+    "ย้อนหลัง ภายใน 60 วัน คิด 3,",
+    "บาท/บัญชี/ครั้ง",
+    "ย้อนหลัง ภายใน 90 วัน คิด 5,",
+    "บาท/บัญชี/ครั้ง",
+    "ย้อนหลังเกินกว่า 90 วัน คิด 10,",
+    "บาท/บัญชี/ครั้ง"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.bizgrowing.ktb.co.th/corporate/",
+   "fee_website": "https://krungthai.com/Download/rateFee/RateFeeDownload_4537RateFeeDownload_4527641131_T.pdf"
+  }
+ },
+ {
+  "provider": "เกียรตินาคินภัทร KKP Biz e-Banking (บุคคลธรรมดาและนิติบุคคล)KKP Biz e-Banking(บุคคลธรรมดาและนิติบุคคล)",
+  "product": "KKP Biz e-Banking (บุคคลธรรมดาและนิติบุคคล)KKP Biz e-Banking(บุคคลธรรมดาและนิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "บริการ KKP Biz e-Bankingธนาคารออนไลน์สำหรับองค์กรธุรกิจ ให้บริการทุกวันตลอด 24 ชั่วโมง เคียงข้างคุณ ให้คุณต่อยอดการทำธุรกรรมทางการเงินได้อย่างมีประสิทธิภาพ สะดวก รวดเร็ว สามารถทำธุรกรรมได้หลากหลาย ตามความต้องการ โดยมั่นใจได้ในระบบความปลอดภัย มาตรฐานระดับสากล สำหรับการทำทุกธุรกรรมทางการเงินของคุณ อีกทั้ง บริการ KKP Biz e-Banking ยังรองรับการใช้งานทั้งภาษาไทย และภาษาอังกฤษบริการเรียกเก็บเงิน (Collection)บริการชำระเงิน (Payment)บริการเรียกดูข้อมูลบัญชีเงินฝากบริการเรียกดูข้อมูลบัญชีสินเชื่อบริการสำหรับลูกค้าสินเชื่อรถยนต์",
+   "customer_group": [
+    "เป็นลูกค้าประเภทบุคคลธรรมดาและนิติบุคคลคุณสมบัติผู้ขอใช้บริการสมัครได้ทั้งลูกค้าบุคคลธรรมดาและนิติบุคคลมีบัญชีเงินฝากออมทรัพย์หรือบัญชีฝากกระแสรายวัน กับธนาคารสำหรับนิติบุคคลในกรณีที่ผู้มีอำนาจลงนามนิติบุคคลเป็นผู้ลงนามด้วยตนเองสำเนาหนังสือรับรองการจดทะเบียนนิติบุคคล ออกโดยสำนักงานทะเบียนหุ้นส่วนบริษัท อายุไม่เกิน 1 เดือน (เฉพาะหน้าที่มีรายชื่อกรรมการ หรือหุ้นส่วนผู้จัดการ) พร้อมทั้งประทับตราของนิติบุคคล (ถ้ามี) และลงนามรับรองสำเนาถูกต้องโดยผู้มีอำนาจลงนามสำเนารายงานการประชุมคณะกรรมการบริษัทหรือผู้ถือหุ้น ของนิติบุคคลซึ่งมีมติอนุมัติให้บริษัท/นิติบุคคลใช้บริการ KKP Biz e",
+    "Banking กับธนาคารได้สำเนาบัตรประจำตัวประชาชนหรือหนังสือเดินทาง ของผู้มีอำนาจลงนามตามหนังสือรับรองการจดทะเบียนนิติบุคคลพร้อมลงนามรับรองสำเนาถูกต้องสำเนาสมุดบัญชีเงินฝากหรือสมุดเช็คที่แสดงเลขที่บัญชีเงินฝากที่มีอยู่กับธนาคาร พร้อมทั้งลงนามรับรองสำเนาถูกต้อง (กรณีมีการโอนเงิน) (สำหรับบริการทางการเงินทั่วไป:CIB)สำเนาข้อบังคับของบริษัท พร้อมทั้งประทับตราของนิติบุคคล (ถ้ามี) และลงนามรับรองสำเนาถูกต้องโดยผู้มีอำนาจลงนามในกรณีที่ผู้มีอำนาจลงนามนิติบุคคลมอบอำนาจให้ผู้อื่นมาลงนามแทน เอกสารประกอบเพิ่มเติม ดังนี้เอกสารประกอบ",
+    "หนังสือมอบอำนาจที่แสดงว่า ผู้รับมอบอำนาจมีอำนาจลงนามในเอกสารต่างๆ เพื่อขอใช้บริการ KKP Biz e",
+    "Banking (ตามเงื่อนไขที่คณะกรรมการหรือผู้ถือหุ้นกำหนด) ในนามของนิติบุคคลนั้นกับธนาคารได้สำเนาบัตรประจำตัวประชาชนหรือหนังสือเดินทาง ของผู้มอบอำนาจและผู้รับมอบอำนาจ พร้อมทั้งลง นามรับรองสำเนาถูกต้องโดยบุคคลดังกล่าวสำหรับบุคคลธรรมดาที่เป็นเจ้าของธุรกิจสำเนาบัตรประจำตัวประชาชนหรือหนังสือเดินทาง พร้อมทั้งลงนามรับรองสำเนาถูกต้องสำเนาทะเบียนการค้า พร้อมทั้งลงนามรับรองสำเนาถูกต้องสำเนาสมุดบัญชีเงินฝากหรือสมุดเช็คที่แสดงเลขที่บัญชีเงินฝากที่มีอยู่กับธนาคาร พร้อมทั้งลงนามรับรองสำเนาถูกต้อง (กรณีมีการโอนเงิน) (สำหรับบริการทางการเงินทั่วไป:CIB)"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีบริการ",
+   "interbank_transfer_fee": [
+    "12",
+    "200 บาท/รายการ เงื่อนไข: โอนเงินจากบัญชีออมทรัพย์ ไปยังบัญชีต่างธนาคาร(เงินเข้าบัญชีภายใน 1 วันทำการ)",
+    "วงเงินไม่เกิน 100,000 บาทต่อรายการ รายการละ 20 บาท",
+    "วงเงินเกินกว่า 100,000 ถึง 500,000 บาทต่อรายการ รายการละ 75 บาท",
+    "วงเงินเกินกว่า 500,000 ถึง 2,000,000 บาทต่อรายการ รายการละ 200 บาทโอนเงินจากบัญชีออมทรัพย์ ไปยังบัญชีต่างธนาคาร(เงินเข้าบัญชีภายใน 2 วันทำการ)",
+    "วงเงินไม่เกิน 2,000,000 บาทต่อรายการ รายการละ 12 บาท"
+   ],
+   "intrabank_transfer_fee": "15 บาท/รายการ",
+   "cardless_withdrawal_fee": [
+    "10 บาท/รายการ เงื่อนไข: ค่าธรรมเนียมการทำรายการ บริการถอนเงินโดยไม่ใช้บัตร ผ่านตู้ ATM/CDM ของธนาคารไทยพาณิชย์ , ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร,ธนาคารออมสิน ไม่คิดค่าบริการสำหรับ 10 รายการแรกของเดือน รายการที่ 11 เป็นต้นไปคิดค่าบริการครั้งละ 10 บาท"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม เงื่อนไข: ค่าธรรมเนียมเชื่อมต่อระบบ ตามที่กำหนดในข้อตกลงเฉพาะราย เก็บเฉพาะครั้งแรก",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "บริการ dStatement บริการเรียกขอและรับส่งข้อมูลรายการเคลื่อนไหวบัญชีเงินฝาก ในรูปแบบดิจิทัลระหว่างธนาคาร อัตราค่าบริการ 1 บาท ต่อบัญชีค่าบริการหักและนำส่งภาษีหัก ณ ที่จ่าย อิเล็กทรอนิกส์ (e",
+    "Withholding Tax) 3 บาทต่อรายการ หรือ 1,000 บาท ต่อเดือน ค่าบริการจัดทำและยื่นขอเสียภาษีอากรอิเล็กทรอนิกส์ (E",
+    "Stamp) อัตราค่าบริการ ตามที่ตกลงเฉพาะราย *คิดเพิ่มจากรายการโอนเงิน *อัตรานี้ยังไม่รวมภาษีมูลค่าเพิ่ม"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://bank.kkpfg.com/th/personal-banking/digital-banking/kkp-e-banking-kkp-securities",
+   "fee_website": "https://bank.kkpfg.com/th/interest/fee-service"
+  }
+ },
+ {
+  "provider": "เจพีมอร์แกน เชส Internet banking (นิติบุคคล)Internet banking(นิติบุคคล)",
+  "product": "Internet banking (นิติบุคคล)Internet banking(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "NA",
+   "customer_group": [
+    "กลุ่มลูกค้านิติบุคคล",
+    "มี บัญชีเงินฝากออมทรัพย์ / บัญชีเงินฝากกระแสรายวัน"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีบริการ",
+   "interbank_transfer_fee": [
+    "ตามอัตราที่กำหนด เงื่อนไข: ราคาตามค่าธรรมเนียมการโอนปกติของ BAHTNET, SMART และ Bulk PromptPay"
+   ],
+   "intrabank_transfer_fee": "25 บาท/รายการ",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": null,
+   "fee_website": "https://www.jpmorgan.com/TH/en/disclosures/table3c"
+  }
+ },
+ {
+  "provider": "เจพีมอร์แกน เชส Mobile banking (นิติบุคคล)Mobile banking(นิติบุคคล)",
+  "product": "Mobile banking (นิติบุคคล)Mobile banking(นิติบุคคล)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "NA",
+   "customer_group": [
+    "กลุ่มลูกค้านิติบุคคล",
+    "มี บัญชีเงินฝากออมทรัพย์ / บัญชีเงินฝากกระแสรายวัน"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีบริการ",
+   "interbank_transfer_fee": [
+    "ไม่มีบริการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีบริการ",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": null,
+   "fee_website": "https://www.jpmorgan.com/TH/en/disclosures/table3c"
+  }
+ },
+ {
+  "provider": "ธนาคารแห่งอเมริกาเนชั่นแนลแอสโซซิเอชั่น CashPro Online (นิติบุคคล)CashPro Online(นิติบุคคล)",
+  "product": "CashPro Online (นิติบุคคล)CashPro Online(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "Internet banking สำหรับนิติบุคคล, ช่องทางพื้นฐานในการตรวจสอบยอดเงินคงเหลือและทำธุรกรรมทางการเงิน electronic",
+   "customer_group": [
+    "กลุ่มลูกค้าที่จดทะเบียนเป็นนิติบุคคลในประเทศไทยและสามารถสำแดงที่อยู่ได้"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีบริการ",
+   "interbank_transfer_fee": [
+    "12",
+    "1,600 บาท/รายการ เงื่อนไข: THB 240: STP",
+    "รายการอัตโนมัติTHB 800: Repair",
+    "แก้ใขรายการTHB 1,200: Manual",
+    "รายการไม่อัตโนมัติ THB 400: Payment Amendment",
+    "ปรับปรุงรายการ"
+   ],
+   "intrabank_transfer_fee": "104 บาท/รายการ",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "32,600 บาท",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.bofaml.com/content/dam/boamlimages/countrypages/C3_059/schedule_of_charges_Announcement_1_July_effective_1_August_2019.pdf",
+   "fee_website": "https://www.bofaml.com/content/dam/boamlimages/countrypages/C3_059/schedule_of_charges_Announcement_1_July_effective_1_August_2019.pdf"
+  }
+ },
+ {
+  "provider": "ธสน. ระบบ EXIM TBP (MY EXIM) (นิติบุคคล)ระบบ EXIM TBP (MY EXIM)(นิติบุคคล)",
+  "product": "ระบบ EXIM TBP (MY EXIM) (นิติบุคคล)ระบบ EXIM TBP (MY EXIM)(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "บริการธนาคารเพื่อส่งคำขอทำธุรกรรมทางดิจิทัล และสอบถามข้อมูลด้วยตนเอง",
+   "customer_group": [
+    "เป็นลูกค้านิติบุคคลของธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีบริการ",
+   "interbank_transfer_fee": [
+    "ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บตามประเภทของการโอนเงิน",
+    "บาทเน็ท ภายในเขตสำนักหักบัญชี 250 บาท, ต่างเขต เพิ่มค่าธรรมเนียม10บาทต่อจำนวนเงินโอน 10,000 บาท รวมไม่เกิน 1,000 บาท",
+    "Direct Credit 50 บาทต่อรายการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "3,000 บาท",
+   "annual_fee": "2,000 บาท/ปี",
+   "other_fees": [
+    "ค่าบริการรักษาความปลอดภัยในการพิสูจน์ตัวตนผู้ใช้ระบบ 1,000 ต่อ 2 usernameแรก ชำระครั้งเดียว"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://myexim.exim.go.th/",
+   "fee_website": "https://www.exim.go.th/getattachment/34d2797b-70d6-4588-9d09-8a4b2f0b0bfa/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%98%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%AD%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%87%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%99%E0%B8%B3%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B9%80%E0%B8%A3%E0%B8%AD%E0%B8%87-%E0%B8%AD%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B9%80%E0%B8%99%E0%B8%A2%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B8%9A%E0%B8%A3%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A-EXIM-TBP-(MY-EXIM).aspx"
+  }
+ },
+ {
+  "provider": "ธสน. ระบบ EXIM TBP (MY EXIM) (นิติบุคคล)ระบบ EXIM TBP (MY EXIM)(นิติบุคคล)",
+  "product": "ระบบ EXIM TBP (MY EXIM) (นิติบุคคล)ระบบ EXIM TBP (MY EXIM)(นิติบุคคล)",
+  "service": {
+   "service_type": "Mobile banking",
+   "main_feature": "บริการธนาคารเพื่อส่งคำขอทำธุรกรรมทางดิจิทัล และสอบถามข้อมูลด้วยตนเอง",
+   "customer_group": [
+    "เป็นลูกค้านิติบุคคลของธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีบริการ",
+   "interbank_transfer_fee": [
+    "ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บตามประเภทของการโอนเงิน",
+    "บาทเน็ท ภายในเขตสำนักหักบัญชี 250 บาท, ต่างเขต เพิ่มค่าธรรมเนียม10บาทต่อจำนวนเงินโอน 10,000 บาท รวมไม่เกิน 1,000 บาท",
+    "Direct Credit 50 บาทต่อรายการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "3,000 บาท",
+   "annual_fee": "2,000 บาท/ปี",
+   "other_fees": [
+    "ค่าบริการรักษาความปลอดภัยในการพิสูจน์ตัวตนผู้ใช้ระบบ 1,000 ต่อ 2 usernameแรก ชำระครั้งเดียว"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://myexim.exim.go.th/",
+   "fee_website": "https://www.exim.go.th/getattachment/34d2797b-70d6-4588-9d09-8a4b2f0b0bfa/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%98%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%AD%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%87%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%99%E0%B8%B3%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B9%80%E0%B8%A3%E0%B8%AD%E0%B8%87-%E0%B8%AD%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B9%80%E0%B8%99%E0%B8%A2%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B8%9A%E0%B8%A3%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A-EXIM-TBP-(MY-EXIM).aspx"
+  }
+ },
+ {
+  "provider": "ธสน. สินเชื่อเครือข่ายธุรกิจครบวงจร (EXIM Supply Chain Financing Solution) (นิติบุคคล)สินเชื่อเครือข่ายธุรกิจครบวงจร (EXIM Supply Chain Financing Solution)(นิติบุคคล)",
+  "product": "สินเชื่อเครือข่ายธุรกิจครบวงจร (EXIM Supply Chain Financing Solution) (นิติบุคคล)สินเชื่อเครือข่ายธุรกิจครบวงจร (EXIM Supply Chain Financing Solution)(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "สินเชื่อหมุนเวียนหลังการส่งมอบสินค้าของผู้ประกอบการ (Supplier) และเป็นบริการเพื่อใช้ในการชำระค่าสินค้า เรียกเก็บค่าสินค้ากับผู้ค้ารายใหญ่ (Sponsor) ผ่านทางระบบ SCF Platform",
+   "customer_group": [
+    "เป็นลูกค้านิติบุคคลของธนาคาร"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีบริการ",
+   "interbank_transfer_fee": [
+    "ไม่มีบริการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีบริการ",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "2,000 บาท",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "ค่าธรรมเนียมรายเดือน 3,000 บาท/เดือน",
+    "ค่าธรรมเนียมต่อคำขอ (Application) 30 บาท/รายการ"
+   ]
+  },
+  "additional_information": {
+   "service_website": "https://www.exim.go.th/th/Products_Services/SpecialPromotion/%E0%B8%95%E0%B8%AD%E0%B8%A2%E0%B8%AD%E0%B8%94%E0%B8%98%E0%B8%A3%E0%B8%81%E0%B8%88/%E0%B8%AA%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%AD%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%AD%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%81%E0%B8%88%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3-(EXIM-Supply-Chain-Financi.aspx",
+   "fee_website": "https://www.exim.go.th/getattachment/9a6d900d-101b-41b3-bcca-4049700fb87c/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8-%E0%B8%84%E0%B8%B2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B9%80%E0%B8%99%E0%B8%A2%E0%B8%A1%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%AD%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%AD%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%81%E0%B8%88%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3-(SCF).aspx"
+  }
+ },
+ {
+  "provider": "บีเอ็นพี พารีบาส์ Connexis Cash (นิติบุคคล)Connexis Cash(นิติบุคคล)",
+  "product": "Connexis Cash (นิติบุคคล)Connexis Cash(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "บริการธนาคารอิเล็คทรอนิกส์ ที่นิติบุคคลสามารถทำรายการโอนเงินต่างๆได้ทุกประเภท ทั้งการโอนเงินในประเทศและต่างประเทศ และสามารถเรียกดูรายงานเงินฝากถอนในบัญชีและรายงานที่เกี่ยวเนื่องกับบริการโอนเงินต่างๆได้",
+   "customer_group": [
+    "นิติบุคคล",
+    "มีบัญชีออมทรัพย์และบัญชีกระแสรายวัน"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีบริการ",
+   "interbank_transfer_fee": [
+    "12 บาท/รายการ เงื่อนไข: ไม่เกิน 2 ล้านบาทต่อรายการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "2,500 บาท",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": "https://www.bnpparibas.co.th/en/corporates-institutions/offers-services/",
+   "fee_website": "https://www.bnpparibas.co.th/en/news/ratecharge/"
+  }
+ },
+ {
+  "provider": "ไอซีบีซี (ไทย) Corporate Internet Banking (นิติบุคคล)Corporate Internet Banking(นิติบุคคล)",
+  "product": "Corporate Internet Banking (นิติบุคคล)Corporate Internet Banking(นิติบุคคล)",
+  "service": {
+   "service_type": "Internet banking",
+   "main_feature": "บริการธนาคารแบบดิจิทัล สามารถเข้าใช้งานได้ทั้งผ่านคอมพิวเตอร์ หรือผ่านแอปบนมือถือ",
+   "customer_group": [
+    "นิติบุคคล",
+    "มี บัญชีเงินฝากออมทรัพย์ / บัญชีเงินฝากกระแสรายวัน"
+   ]
+  },
+  "fees": {
+   "promptpay_transfer_fee": "ไม่มีบริการ",
+   "interbank_transfer_fee": [
+    "10",
+    "150 บาท/รายการ เงื่อนไข:",
+    "โอนแบบเข้าบัญชีทันที ไม่เกิน 100,000 10 บาท/รายการ มากกว่า 100,000",
+    "2,000,000 15 บาท/รายการ",
+    "โอนแบบ Smart Nextday 12 บาท/รายการโอนแบบ Smart Sameday 20 บาท/รายการโอนแบบ Bahtnet 150 บาท/รายการ"
+   ],
+   "intrabank_transfer_fee": "ไม่มีค่าธรรมเนียม",
+   "cardless_withdrawal_fee": [
+    "ไม่มีบริการ"
+   ],
+   "entrance_fee": "ไม่มีค่าธรรมเนียม",
+   "annual_fee": "ไม่มีค่าธรรมเนียม",
+   "other_fees": [
+    "ค่าธรรมเนียมการชำระค่าภาษี 5 บาท/รายการ"
+   ]
+  },
+  "additional_information": {
+   "service_website": "http://www.icbc.com.cn/ICBC/海外分行/工银泰国网站/th/电子银行服务/企业网上银行/服务详情",
+   "fee_website": "http://www.icbc.com.cn/ICBC/海外分行/工银泰国网站/th/个人金融服务/其他/服务费/网上银行服务费"
+  }
+ },
+ {
+  "provider": "",
+  "product": "",
+  "service": {
+   "service_type": "",
+   "main_feature": "",
+   "customer_group": null
+  },
+  "fees": {
+   "promptpay_transfer_fee": "",
+   "interbank_transfer_fee": null,
+   "intrabank_transfer_fee": "",
+   "cardless_withdrawal_fee": null,
+   "entrance_fee": "",
+   "annual_fee": "",
+   "other_fees": null
+  },
+  "additional_information": {
+   "service_website": null,
+   "fee_website": null
+  }
+ }
+]
