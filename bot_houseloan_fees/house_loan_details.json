@@ -1,0 +1,4684 @@
+[
+ {
+  "provider": "ธอส.",
+  "product": "สินเชื่อที่อยู่อาศัยสำหรับผู้สูงอายุ (Reverse Mortgage)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียมเงื่อนไข:ไม่มีการคิดหนี้ค้างและอัตราดอกเบี้ยผิดนัดชำระหนี้ในระหว่างการรับเงินกู้ตามเงื่อนไขของโครงการนี้"
+    ]
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:2800บาท/ครั้งผู้ประเมินภายใน:ผู้ประเมินภายนอก:เงื่อนไข:ผู้ประเมินภายนอก",
+      "คิดค่าประเมินราคาหลักประกันแห่งละ2800บาทหมายเหตุ:ธนาคารเป็นผู้รับภาระค่าใช้จ่ายโดยลูกค้าจะสำรองจ่ายค่าประเมินราคาหลักประกันให้บริษัทประเมินไปก่อนและธนาคารจะจ่ายคืนหลังจากที่ลูกค้าทำนิติกรรมกับทางธนาคารแล้วเสร็จ"
+     ],
+     "numeric": 2800
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:ธนาคารรับภาระค่าธรรมเนียมแทนผู้กู้"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:ร้อยละ0.20ของจำนวนเงินตามหน้าเช็คแต่ไม่ต่ำกว่าฉบับละ200บาทสูงสุดไม่เกิน1000บาทเฉพาะคืนด้วยเหตุผล“เงินในบัญชีไม่พอจ่าย”"
+    ],
+    "numeric": 0.2
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "100บาท/งวดเงื่อนไข:",
+      "ตามประกาศคณะกรรมการกำกับการทวงถามหนี้เรื่องการกำหนดอัตราค่าธรรมเนียมหรือค่าใช้จ่ายใดๆในการทวงถามหนี้ที่ลงในราชกิจจานุเบกษา",
+      "ธนาคารคิดค่าธรรมเนียมบอกกล่าวขอให้ชำระหนี้ไถ่ถอนจำนองครั้งละ100บาท"
+     ],
+     "numeric": 100
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียมเงื่อนไข:ให้ชำระในวันที่ยื่นคำขอ"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปีเงื่อนไข:กรณีชำระหนี้ปิดบัญชีและขอไถ่ถอนจำนองเพื่อไปใช้บริการกับสถาบันการเงินอื่น(Refinance)ก่อนครบกำหนดระยะเวลาการกู้3ปีนับจากวันทำสัญญากู้เงินและบันทึกต่อท้ายสัญญากู้เงินธนาคารจะคิดค่าเบี้ยปรับปิดบัญชีในอัตราร้อยละ3ของเงินต้นคงเหลือตามสัญญา"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ชำระโดยหักบัญชีเงินฝากอัตโนมัติเขตกรุงเทพฯและปริมณฑล",
+      "ธนาคารกรุงเทพ10บาท/รายการ",
+      "ธนาคารกรุงไทย10บาท/รายการ",
+      "ธนาคารไทยพาณิชย์10บาท/รายการเขตต่างจังหวัด",
+      "ธนาคารกรุงเทพ20บาท/รายการ",
+      "ธนาคารกรุงไทย20บาท/รายการ",
+      "ธนาคารไทยพาณิชย์20บาท/รายการ"
+     ],
+     "numeric": 10
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ธนาคารเพื่อการเกษตรและสหกรณ์10บาท/รายการในเขตกรุงเทพฯและปริมณฑล15บาท/รายการในต่างจังหวัด"
+    ],
+    "numeric": 10
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "",
+      "ชำระที่เคาน์เตอร์ทำการไปรษณีย์ทุกแห่งทั่วประเทศ10บาท/รายการ",
+      "เอ็มเปย์สเตชั่นทุกสาขาทั่วประเทศ12บาท/รายการ",
+      "เคาน์เตอร์เซอร์วิส(ร้านเซเว่นอีเลฟเว่น)ทั่วประเทศ15บาท/รายการ",
+      "TescoLotusทั่วประเทศ10บาท/รายการ",
+      "ทรูมันนี่ทั่วประเทศ10บาท/รายการ"
+     ],
+     "numeric": 10
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "",
+      "ชำระผ่านInternetหรือMobileBankingของธนาคารผู้ให้บริการไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ชำระผ่านเครื่องCDM/ATMของธนาคารผู้ให้บริการไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.ghbank.co.th/information/interest-rate/fee/"
+  }
+ },
+ {
+  "provider": "บค. แคปปิตอล ลิ้งค์",
+  "product": "ธุรกรรมขายฝากอสังหาริมทรัพย์เพื่อที่อยู่อาศัย",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีบริการผู้ประเมินภายนอก:ตามที่บริษัทภายนอกกำหนดผู้ประเมินภายใน:ผู้ประเมินภายนอก:เงื่อนไข:ผู้ประเมินภายนอกตามที่บริษัทประเมินภายนอกกำหนด"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อเงื่อนไข:สูงสุดไม่เกิน10000บาท"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมินเงื่อนไข:2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     ""
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.capitallink.co.th/clc#publication"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวง Refinance โครงการ Non-Prime 0.100-0.499 ลบ (ทางเลือก 1-ไม่สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวง Refinance โครงการ Non-Prime 0.100-0.499 ลบ (ทางเลือก 1-สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ปรับอัตราดอกเบี้ยขึ้น0.5%ต่อปีเงื่อนไข:ธนาคารขอสงวนสิทธิ์ในการเรียกคืนส่วนลดดอกเบี้ยส่วนต่างที่เกิดขึ้น0.50%ในปีแรกนับจากวันที่ธนาคารได้รับแจ้งจากลูกค้าหรือได้รับแจ้งจากบริษัทประกัน"
+    ],
+    "numeric": 0.5
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวง Refinance โครงการ Non-Prime 0.50-0.999 ลบ (ทางเลือก 1-ไม่สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวง Refinance โครงการ Non-Prime 0.50-0.999 ลบ (ทางเลือก 1-สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ปรับอัตราดอกเบี้ยขึ้น0.5%ต่อปีเงื่อนไข:ธนาคารขอสงวนสิทธิ์ในการเรียกคืนส่วนลดดอกเบี้ยส่วนต่างที่เกิดขึ้น0.50%ในปีแรกนับจากวันที่ธนาคารได้รับแจ้งจากลูกค้าหรือได้รับแจ้งจากบริษัทประกัน"
+    ],
+    "numeric": 0.5
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวง Refinance โครงการ Non-Prime 1-2.999 ลบ (ทางเลือก 1-ไม่สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวง Refinance โครงการ Non-Prime 1-2.999 ลบ (ทางเลือก 1-สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ปรับอัตราดอกเบี้ยขึ้น0.5%ต่อปีเงื่อนไข:ธนาคารขอสงวนสิทธิ์ในการเรียกคืนส่วนลดดอกเบี้ยส่วนต่างที่เกิดขึ้น0.50%ในปีแรกนับจากวันที่ธนาคารได้รับแจ้งจากลูกค้าหรือได้รับแจ้งจากบริษัทประกัน"
+    ],
+    "numeric": 0.5
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวง Refinance โครงการ Non-Prime 1-2.999 ลบ (ทางเลือก 2-ไม่สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวง Refinance โครงการ Non-Prime 1-2.999 ลบ (ทางเลือก 2-สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ปรับอัตราดอกเบี้ยขึ้น0.5%ต่อปีเงื่อนไข:ธนาคารขอสงวนสิทธิ์ในการเรียกคืนส่วนลดดอกเบี้ยส่วนต่างที่เกิดขึ้น0.50%ในปีแรกนับจากวันที่ธนาคารได้รับแจ้งจากลูกค้าหรือได้รับแจ้งจากบริษัทประกัน"
+    ],
+    "numeric": 0.5
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวง Refinance โครงการ Non-Prime ตั้งแต่ 3-4.99 ลบ (ทางเลือก 1-สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ปรับอัตราดอกเบี้ยขึ้น0.5%ต่อปีเงื่อนไข:ธนาคารขอสงวนสิทธิ์ในการเรียกคืนส่วนลดดอกเบี้ยส่วนต่างที่เกิดขึ้น0.50%ในปีแรกนับจากวันที่ธนาคารได้รับแจ้งจากลูกค้าหรือได้รับแจ้งจากบริษัทประกัน"
+    ],
+    "numeric": 0.5
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวง Refinance โครงการ Non-Prime ตั้งแต่ 3-4.99 ลบ (ทางเลือก 2-ไม่สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวง Refinance โครงการ Non-Prime ตั้งแต่ 3-4.99 ลบ (ทางเลือก 2-สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ปรับอัตราดอกเบี้ยขึ้น0.5%ต่อปีเงื่อนไข:ธนาคารขอสงวนสิทธิ์ในการเรียกคืนส่วนลดดอกเบี้ยส่วนต่างที่เกิดขึ้น0.50%ในปีแรกนับจากวันที่ธนาคารได้รับแจ้งจากลูกค้าหรือได้รับแจ้งจากบริษัทประกัน"
+    ],
+    "numeric": 0.5
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวง Refinance โครงการ Non-Prime ตั้งแต่ 3-4.99 ลบ (ทางเลือก 3-ไม่สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวง Refinance โครงการ Non-Prime ตั้งแต่ 3-4.99 ลบ (ทางเลือก 3-สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ปรับอัตราดอกเบี้ยขึ้น0.5%ต่อปีเงื่อนไข:ธนาคารขอสงวนสิทธิ์ในการเรียกคืนส่วนลดดอกเบี้ยส่วนต่างที่เกิดขึ้น0.50%ในปีแรกนับจากวันที่ธนาคารได้รับแจ้งจากลูกค้าหรือได้รับแจ้งจากบริษัทประกัน"
+    ],
+    "numeric": 0.5
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวงสำหรับกลุ่มวิชาชีพพิเศษ (ทางเลือก 3-ไม่สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวงสำหรับกลุ่มวิชาชีพพิเศษ (ทางเลือก 3-สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ปรับอัตราดอกเบี้ยขึ้น0.5%ต่อปีเงื่อนไข:ธนาคารขอสงวนสิทธิ์ในการเรียกคืนส่วนลดดอกเบี้ยส่วนต่างที่เกิดขึ้น0.50%ในปีแรกนับจากวันที่ธนาคารได้รับแจ้งจากลูกค้าหรือได้รับแจ้งจากบริษัทประกัน"
+    ],
+    "numeric": 0.5
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวงสำหรับกลุ่มวิชาชีพพิเศษ (ทางเลือก 4-ไม่สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวงสำหรับกลุ่มวิชาชีพพิเศษ (ทางเลือก 4-สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ปรับอัตราดอกเบี้ยขึ้น0.5%ต่อปีเงื่อนไข:ธนาคารขอสงวนสิทธิ์ในการเรียกคืนส่วนลดดอกเบี้ยส่วนต่างที่เกิดขึ้น0.50%ในปีแรกนับจากวันที่ธนาคารได้รับแจ้งจากลูกค้าหรือได้รับแจ้งจากบริษัทประกัน"
+    ],
+    "numeric": 0.5
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวงสำหรับลูกค้า Bualuang Exclusive ตั้งแต่ 5 ลบขึ้นไป (ทางเลือก 1-ไม่สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวงสำหรับลูกค้า Bualuang Exclusive ตั้งแต่ 5 ลบขึ้นไป (ทางเลือก 1-สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ปรับอัตราดอกเบี้ยขึ้น0.5%ต่อปีเงื่อนไข:ธนาคารขอสงวนสิทธิ์ในการเรียกคืนส่วนลดดอกเบี้ยส่วนต่างที่เกิดขึ้น0.50%ในปีแรกนับจากวันที่ธนาคารได้รับแจ้งจากลูกค้าหรือได้รับแจ้งจากบริษัทประกัน"
+    ],
+    "numeric": 0.5
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวงสำหรับลูกค้า Bualuang Exclusive ตั้งแต่ 5 ลบขึ้นไป (ทางเลือก 2-ไม่สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวงสำหรับลูกค้า Bualuang Exclusive ตั้งแต่ 5 ลบขึ้นไป (ทางเลือก 2-สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ปรับอัตราดอกเบี้ยขึ้น0.5%ต่อปีเงื่อนไข:ธนาคารขอสงวนสิทธิ์ในการเรียกคืนส่วนลดดอกเบี้ยส่วนต่างที่เกิดขึ้น0.50%ในปีแรกนับจากวันที่ธนาคารได้รับแจ้งจากลูกค้าหรือได้รับแจ้งจากบริษัทประกัน"
+    ],
+    "numeric": 0.5
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวงสำหรับลูกค้า Bualuang Exclusive ไม่เกิน 5 ลบ (ทางเลือก 1-ไม่สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวงสำหรับลูกค้า Bualuang Exclusive ไม่เกิน 5 ลบ (ทางเลือก 1-สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ปรับอัตราดอกเบี้ยขึ้น0.5%ต่อปีเงื่อนไข:ธนาคารขอสงวนสิทธิ์ในการเรียกคืนส่วนลดดอกเบี้ยส่วนต่างที่เกิดขึ้น0.50%ในปีแรกนับจากวันที่ธนาคารได้รับแจ้งจากลูกค้าหรือได้รับแจ้งจากบริษัทประกัน"
+    ],
+    "numeric": 0.5
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวงสำหรับลูกค้า Bualuang Exclusive ไม่เกิน 5 ลบ (ทางเลือก 2-ไม่สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "กรุงเทพ",
+  "product": "สินเชื่อบ้านบัวหลวงสำหรับลูกค้า Bualuang Exclusive ไม่เกิน 5 ลบ (ทางเลือก 2-สมัคร MRTA)",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของเงินต้นของค่างวดเงื่อนไข:เมื่อมีการค้างชำระเกินกว่า30วันธนาคารจะเรียกเก็บอัตราดอกเบี้ยเพิ่มขึ้น3%ต่อปีจากอัตราดอกเบี้ยสูงสุดตามสัญญาที่ท่านทำไว้กับธนาคารโดยคำนวณจากฐานเงินต้นของค่างวดที่ท่านค้างชำระในแต่ละงวด"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:ไม่มีค่าธรรมเนียมผู้ประเมินภายนอก:ไม่มีค่าธรรมเนียมผู้ประเมินภายใน:ผู้ประเมินภายนอก:"
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ปรับอัตราดอกเบี้ยขึ้น0.5%ต่อปีเงื่อนไข:ธนาคารขอสงวนสิทธิ์ในการเรียกคืนส่วนลดดอกเบี้ยส่วนต่างที่เกิดขึ้น0.50%ในปีแรกนับจากวันที่ธนาคารได้รับแจ้งจากลูกค้าหรือได้รับแจ้งจากบริษัทประกัน"
+    ],
+    "numeric": 0.5
+   },
+   "stamp_duty": {
+    "original_text": [
+     "0.05%ของวงเงินสินเชื่อ"
+    ],
+    "numeric": 0.05
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนองเงื่อนไข:สูงสุดไม่เกิน200000บาท"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "2%ของราคาประเมิน"
+    ],
+    "numeric": 2
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:5บาท/12บาททั้งนี้ธนาคารชำระค่าธรรมเนียมแทน"
+    ],
+    "numeric": 5
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "ไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปี"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "ไม่มีบริการ"
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "มีบริการ"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+  }
+ },
+ {
+  "provider": "ธอส.",
+  "product": "โครงการเงินกู้ที่อยู่อาศัยเพื่อช่วยเหลือผู้ประสบภัยพิบัติทางธรรมชาติ จังหวัดอุตรดิตถ์ ปี 2567",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     "3%ของ(อัตราดอกเบี้ยปกติสูงสุดตามสัญญากู้เงินบวกเพิ่มร้อยละ3ต่อปี)จากเงินต้นของค่างวดที่ลูกหนี้ค้างชำระในแต่ละงวดไปจนถึงวันที่ศาลรับฟ้องเงื่อนไข:หากมีจำนวนวันค้างชำระตั้งแต่45วันขึ้นไปธนาคารจะคิดอัตราดอกเบี้ยผิดนัดชำระหนี้เพิ่มขึ้นจากอัตราดอกเบี้ยปกติสูงสุดตามสัญญากู้เงินบวกเพิ่มร้อยละ3ต่อปีและจะมีหนังสือบอกกล่าวไถ่ถอนจำนองต่อไปโดยธนาคารจะคิดดอกเบี้ยผิดนัดชำระหนี้จากฐานเงินต้นของค่างวดที่ลูกหนี้ค้างชำระในแต่ละงวดไปจนถึงวันที่ศาลรับฟ้อง"
+    ],
+    "numeric": 3
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      "ผู้ประเมินภายใน:500บาท/ครั้งผู้ประเมินภายนอก:1000บาท/ครั้งผู้ประเมินภายใน:ผู้ประเมินภายนอก:เงื่อนไข:ผู้ประเมินภายในกรณีการขอทบทวนราคาประเมินรับเป็นหลักประกันโดยผู้กู้ขออุทธรณ์ราคาประเมินและทบทวนราคาประเมินรับเป็นหลักประกันโดยธนาคารเป็นผู้ประเมินราคาแห่งละ500บาทโดยผู้กู้จะชำระให้สาขา/ส่วนงานที่รับเรื่องยื่นกู้ผู้ประเมินภายนอกค่าใช้จ่ายจากการตรวจสอบหลักประกันที่ได้รับความเสียหายจากผู้กู้รายละ1000บาทหมายเหตุ:ธนาคารเป็นผู้รับภาระค่าใช้จ่ายโดยให้เป็นค่าใช้จ่ายของฝ่าย/ภาค/สาขาเจ้าของบัญชีเงินกู้"
+     ],
+     "numeric": 500
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "mortgage_fee": {
+    "original_text": [
+     "1%ของวงเงินจำนอง"
+    ],
+    "numeric": 1
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     "ตามที่บริษัทภายนอกกำหนด"
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     "ตามอัตราที่กำหนดเงื่อนไข:ร้อยละ0.20ของจำนวนเงินตามหน้าเช็คแต่ไม่ต่ำกว่าฉบับละ200บาทสูงสุดไม่เกิน1000บาทเฉพาะคืนด้วยเหตุผล“เงินในบัญชีไม่พอจ่าย”"
+    ],
+    "numeric": 0.2
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      "100บาท/งวดเงื่อนไข:",
+      "ตามประกาศคณะกรรมการกำกับการทวงถามหนี้เรื่องการกำหนดอัตราค่าธรรมเนียมหรือค่าใช้จ่ายใดๆในการทวงถามหนี้ที่ลงในราชกิจจานุเบกษา",
+      "ธนาคารคิดค่าธรรมเนียมบอกกล่าวขอให้ชำระหนี้ไถ่ถอนจำนองครั้งละ100บาท"
+     ],
+     "numeric": 100
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียมเงื่อนไข:ให้ชำระในวันที่ยื่นคำขอ"
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     "3%ของยอดเงินคงค้างจำนวนปีขั้นต่ำที่เมื่อไถ่ถอนจำนองไปใช้บริการกับผู้ให้บริการอื่นแล้วจะไม่มีค่าธรรมเนียม:3ปีเงื่อนไข:กรณีชำระหนี้ปิดบัญชีและขอไถ่ถอนจำนองเพื่อไปใช้บริการกับสถาบันการเงินอื่น(Refinance)ก่อนครบกำหนดระยะเวลาการกู้3ปีนับจากวันทำสัญญากู้เงินและบันทึกต่อท้ายสัญญากู้เงินธนาคารจะคิดค่าเบี้ยปรับปิดบัญชีในอัตราร้อยละ3ของเงินต้นคงเหลือตามสัญญา"
+    ],
+    "numeric": 3
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      "ชำระโดยหักบัญชีเงินฝากอัตโนมัติเขตกรุงเทพฯและปริมณฑล",
+      "ธนาคารกรุงเทพ10บาท/รายการ",
+      "ธนาคารกรุงไทย10บาท/รายการ",
+      "ธนาคารไทยพาณิชย์10บาท/รายการเขตต่างจังหวัด",
+      "ธนาคารกรุงเทพ20บาท/รายการ",
+      "ธนาคารกรุงไทย20บาท/รายการ",
+      "ธนาคารไทยพาณิชย์20บาท/รายการ"
+     ],
+     "numeric": 10
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     "ไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     "ธนาคารเพื่อการเกษตรและสหกรณ์10บาท/รายการในเขตกรุงเทพฯและปริมณฑล15บาท/รายการในต่างจังหวัด"
+    ],
+    "numeric": 10
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      "",
+      "ชำระที่เคาน์เตอร์ทำการไปรษณีย์ทุกแห่งทั่วประเทศ10บาท/รายการ",
+      "เอ็มเปย์สเตชั่นทุกสาขาทั่วประเทศ12บาท/รายการ",
+      "เคาน์เตอร์เซอร์วิส(ร้านเซเว่นอีเลฟเว่น)ทั่วประเทศ15บาท/รายการ",
+      "TescoLotusทั่วประเทศ10บาท/รายการ",
+      "ทรูมันนี่ทั่วประเทศ10บาท/รายการ"
+     ],
+     "numeric": 10
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      "",
+      "ชำระผ่านInternetหรือMobileBankingของธนาคารผู้ให้บริการไม่มีค่าธรรมเนียม"
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     "ชำระผ่านเครื่องCDM/ATMของธนาคารผู้ให้บริการไม่มีค่าธรรมเนียม"
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     "ไม่มีบริการ"
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": "https://www.ghbank.co.th/information/interest-rate/fee/"
+  }
+ },
+ {
+  "provider": "",
+  "product": "",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     ""
+    ]
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      ""
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     ""
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     ""
+    ]
+   },
+   "mortgage_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     ""
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      ""
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     ""
+    ]
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     ""
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      ""
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     ""
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     ""
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      ""
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      ""
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     ""
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     ""
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     ""
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     ""
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": ""
+  }
+ },
+ {
+  "provider": "",
+  "product": "",
+  "interest_rates": {
+   "default_interest_rate": {
+    "original_text": [
+     ""
+    ]
+   },
+   "survey_and_appraisal_fee": [
+    {
+     "original_text": [
+      ""
+     ]
+    }
+   ],
+   "mrta": {
+    "original_text": [
+     ""
+    ]
+   },
+   "stamp_duty": {
+    "original_text": [
+     ""
+    ]
+   },
+   "mortgage_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "transfer_ownership_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "credit_bureau_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "fire_insurance_premium": {
+    "original_text": [
+     ""
+    ]
+   },
+   "other_cheque_returned_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "insufficient_direct_debit_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "copy_statement_reissuing_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "cheque_returned_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "debt_collection_fee": [
+    {
+     "original_text": [
+      ""
+     ]
+    }
+   ],
+   "changing_interest_rate_fee": {
+    "original_text": [
+     ""
+    ]
+   },
+   "refinance_fee": {
+    "original_text": [
+     ""
+    ]
+   }
+  },
+  "payments_fees": {
+   "direct_debit_from_provider": {
+    "original_text": [
+     ""
+    ]
+   },
+   "direct_debit_from_other_provider": [
+    {
+     "original_text": [
+      ""
+     ]
+    }
+   ],
+   "at_provider_branch": {
+    "original_text": [
+     ""
+    ]
+   },
+   "at_other_provider_branch": {
+    "original_text": [
+     ""
+    ]
+   },
+   "at_payment_service_point": [
+    {
+     "original_text": [
+      ""
+     ]
+    }
+   ],
+   "online_payment": [
+    {
+     "original_text": [
+      ""
+     ]
+    }
+   ],
+   "cdm_or_atm": {
+    "original_text": [
+     ""
+    ]
+   },
+   "phone_payment": {
+    "original_text": [
+     ""
+    ]
+   },
+   "cheque_or_money_order_payment": {
+    "original_text": [
+     ""
+    ]
+   },
+   "other_payment_channels": {
+    "original_text": [
+     ""
+    ]
+   }
+  },
+  "other_fees": {
+   "other_fees": null
+  },
+  "additional_info": {
+   "fee_website_link": ""
+  }
+ }
+]
