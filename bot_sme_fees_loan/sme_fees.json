@@ -1,0 +1,1408 @@
+{
+ "smeLoanFeeDetails": [
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19) (เฉพาะกลุ่มลูกค้า)มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19)(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อ Krungthai SME for Siam Global House (เฉพาะกลุ่มลูกค้า)สินเชื่อ Krungthai SME for Siam Global House(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 0,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": "https://krungthai.com/th/rates"
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 0,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": "https://krungthai.com/th/rates"
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อกรุงไทยคุ้มครองธุรกิจ (เฉพาะกลุ่มลูกค้า)สินเชื่อกรุงไทยคุ้มครองธุรกิจ(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+     "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "150 บาท/ครั้ง",
+     "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 150,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+    "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "150 บาท/ครั้ง",
+    "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 150,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19) (เฉพาะกลุ่มลูกค้า)มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19)(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อ Krungthai SME for Siam Global House (เฉพาะกลุ่มลูกค้า)สินเชื่อ Krungthai SME for Siam Global House(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 0,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": "https://krungthai.com/th/rates"
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 0,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": "https://krungthai.com/th/rates"
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อกรุงไทยคุ้มครองธุรกิจ (เฉพาะกลุ่มลูกค้า)สินเชื่อกรุงไทยคุ้มครองธุรกิจ(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+     "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "150 บาท/ครั้ง",
+     "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 150,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+    "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "150 บาท/ครั้ง",
+    "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 150,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19) (เฉพาะกลุ่มลูกค้า)มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19)(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อ Krungthai SME for Siam Global House (เฉพาะกลุ่มลูกค้า)สินเชื่อ Krungthai SME for Siam Global House(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 0,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": "https://krungthai.com/th/rates"
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 0,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": "https://krungthai.com/th/rates"
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อกรุงไทยคุ้มครองธุรกิจ (เฉพาะกลุ่มลูกค้า)สินเชื่อกรุงไทยคุ้มครองธุรกิจ(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+     "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "150 บาท/ครั้ง",
+     "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 150,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+    "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "150 บาท/ครั้ง",
+    "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 150,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19) (เฉพาะกลุ่มลูกค้า)มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19)(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อ Krungthai SME for Siam Global House (เฉพาะกลุ่มลูกค้า)สินเชื่อ Krungthai SME for Siam Global House(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 0,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": "https://krungthai.com/th/rates"
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 0,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": "https://krungthai.com/th/rates"
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อกรุงไทยคุ้มครองธุรกิจ (เฉพาะกลุ่มลูกค้า)สินเชื่อกรุงไทยคุ้มครองธุรกิจ(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+     "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "150 บาท/ครั้ง",
+     "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 150,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+    "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "150 บาท/ครั้ง",
+    "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 150,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19) (เฉพาะกลุ่มลูกค้า)มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19)(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อ Krungthai SME for Siam Global House (เฉพาะกลุ่มลูกค้า)สินเชื่อ Krungthai SME for Siam Global House(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 0,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": "https://krungthai.com/th/rates"
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 0,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": "https://krungthai.com/th/rates"
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อกรุงไทยคุ้มครองธุรกิจ (เฉพาะกลุ่มลูกค้า)สินเชื่อกรุงไทยคุ้มครองธุรกิจ(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+     "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "150 บาท/ครั้ง",
+     "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 150,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+    "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "150 บาท/ครั้ง",
+    "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 150,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19) (เฉพาะกลุ่มลูกค้า)มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19)(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อ Krungthai SME for Siam Global House (เฉพาะกลุ่มลูกค้า)สินเชื่อ Krungthai SME for Siam Global House(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 0,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": "https://krungthai.com/th/rates"
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 0,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": "https://krungthai.com/th/rates"
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อกรุงไทยคุ้มครองธุรกิจ (เฉพาะกลุ่มลูกค้า)สินเชื่อกรุงไทยคุ้มครองธุรกิจ(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+     "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "150 บาท/ครั้ง",
+     "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 150,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+    "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "150 บาท/ครั้ง",
+    "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 150,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19) (เฉพาะกลุ่มลูกค้า)มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19)(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อ Krungthai SME for Siam Global House (เฉพาะกลุ่มลูกค้า)สินเชื่อ Krungthai SME for Siam Global House(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 0,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": "https://krungthai.com/th/rates"
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 0,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": "https://krungthai.com/th/rates"
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อกรุงไทยคุ้มครองธุรกิจ (เฉพาะกลุ่มลูกค้า)สินเชื่อกรุงไทยคุ้มครองธุรกิจ(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+     "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "150 บาท/ครั้ง",
+     "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 150,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+    "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "150 บาท/ครั้ง",
+    "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 150,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19) (เฉพาะกลุ่มลูกค้า)มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19)(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อ Krungthai SME for Siam Global House (เฉพาะกลุ่มลูกค้า)สินเชื่อ Krungthai SME for Siam Global House(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 0,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": "https://krungthai.com/th/rates"
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 0,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": "https://krungthai.com/th/rates"
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อกรุงไทยคุ้มครองธุรกิจ (เฉพาะกลุ่มลูกค้า)สินเชื่อกรุงไทยคุ้มครองธุรกิจ(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+     "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "150 บาท/ครั้ง",
+     "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 150,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+    "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "150 บาท/ครั้ง",
+    "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 150,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19) (เฉพาะกลุ่มลูกค้า)มาตรการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบการวิสาหกิจ ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 (Soft Loan BOT: COVID-19)(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อ Krungthai SME for Siam Global House (เฉพาะกลุ่มลูกค้า)สินเชื่อ Krungthai SME for Siam Global House(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ไม่มีค่าธรรมเนียม",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+     "extensionFee": "ไม่มีค่าธรรมเนียม",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+     "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+     "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+     "debtCollectionFeeAmount": 0,
+     "creditCheckFeeAmount": 0,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": "https://krungthai.com/th/rates"
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ไม่มีค่าธรรมเนียม",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "ไม่มีค่าธรรมเนียม",
+    "extensionFee": "ไม่มีค่าธรรมเนียม",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeExternal": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFee": "ไม่มีค่าธรรมเนียม",
+    "creditCheckFee": "ไม่มีค่าธรรมเนียม",
+    "statementReIssuingFee": "ไม่มีค่าธรรมเนียม",
+    "debtCollectionFeeAmount": 0,
+    "creditCheckFeeAmount": 0,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": "https://krungthai.com/th/rates"
+   }
+  },
+  {
+   "serviceProvider": "กรุงไทย",
+   "product": "สินเชื่อกรุงไทยคุ้มครองธุรกิจ (เฉพาะกลุ่มลูกค้า)สินเชื่อกรุงไทยคุ้มครองธุรกิจ(เฉพาะกลุ่มลูกค้า)",
+   "fee_details": {
+    "loanFees": {
+     "frontEndFee": "ไม่มีค่าธรรมเนียม",
+     "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+     "commitmentFee": "ไม่มีค่าธรรมเนียม",
+     "cancellationFee": "ไม่มีค่าธรรมเนียม",
+     "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+     "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+     "annualFee": "ไม่มีค่าธรรมเนียม",
+     "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+     "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+     "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+     "creditCheckFee": "150 บาท/ครั้ง",
+     "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+     "debtCollectionFeeAmount": 135,
+     "creditCheckFeeAmount": 150,
+     "statementReIssuingFeeAmount": 0
+    },
+    "otherFees": {
+     "otherFees": null
+    },
+    "additionalInfo": {
+     "feeWebsiteLink": null
+    }
+   },
+   "loan_fees": {
+    "frontEndFee": "ไม่มีค่าธรรมเนียม",
+    "managementFee": "ตามอัตราที่กำหนด เงื่อนไข: ยกเว้น Management Fee หากเรียกเก็บได้ให้พิจารณาเป็นรายๆไป",
+    "commitmentFee": "ไม่มีค่าธรรมเนียม",
+    "cancellationFee": "ไม่มีค่าธรรมเนียม",
+    "prepaymentFee": "3% ของต้นเงินคงเหลือวงเงิน T/Lขั้นต่ำ ตามอัตราที่กำหนดสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บ 3% ของต้นเงินคงเหลือวงเงิน T/L โดยเรียกเก็บทุกกรณีที่ลูกค้ามีการชำระคืนเงินกู้ก่อนกำหนด",
+    "extensionFee": "0.25 - 2% ของยอดหนี้ที่ค้างชำระขั้นต่ำ 1000 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข: เรียกเก็บไม่เกิน 2% จากยอดหนี้ที่ค้างชำระทั้งหมด",
+    "annualFee": "ไม่มีค่าธรรมเนียม",
+    "appraisalFeeInternal": "3500 - 15000 บาท/ครั้ง เงื่อนไข: ขึ้นอยู่กับแต่ละประเภทของทรัพย์สิน (รวมภาษีมูลค่าเพิ่มแล้ว)",
+    "appraisalFeeExternal": "ตามที่บริษัทภายนอกกำหนด",
+    "debtCollectionFee": "135 บาท/งวด เงื่อนไข: - ค่าติดตามทวงถามหนี้ 135 บาท/บัญชี/ทุกรอบของการผิดนัดชำระหนี้- ยกเว้น การเรียกเก็บกรณีสินเชื่อเงินกู้เบิกเกินบัญชี บัญชีตั๋วกู้ยืมเงินระยะสั้น สินเชื่อเพื่อการเกษตร สินเชื่อ Microfinance สินเชื่อบัตรฟลีทการ์ด (Fleet Card) และบัญชี Sub Account ที่เกิดจากการปรับปรุงโครงสร้างหนี้",
+    "creditCheckFee": "150 บาท/ครั้ง",
+    "statementReIssuingFee": "ตามอัตราที่กำหนด เงื่อนไข: ร้อยละ 0.25 ของวงเงินสินเชื่อที่ลูกค้าขอกู้ แต่ไม่เกิน 12000 บาท ขั้นต่ำ 2000 บาท",
+    "debtCollectionFeeAmount": 135,
+    "creditCheckFeeAmount": 150,
+    "statementReIssuingFeeAmount": 0
+   },
+   "other_fees": {
+    "otherFees": null
+   },
+   "additional_info": {
+    "feeWebsiteLink": null
+   }
+  }
+ ]
+}

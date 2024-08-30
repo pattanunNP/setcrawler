@@ -1,0 +1,1132 @@
+[
+  {
+    "service_provider": "กรุงเทพ",
+    "product": "สินเชื่อข้าราชการบำนาญ (สินเชื่อข้าราชการบำนาญ / สินเชื่อที่ใช้สิทธิในบำเหน็จตกทอดเป็นหลักประกัน)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "stamp_duty": {
+        "original_text": "0.05% ของวงเงินสินเชื่อ เงื่อนไข: สูงสุดไม่เกิน 10000 บาท",
+        "percentage": 0.05,
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "credit_check": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: 5 บาท / 12 บาททั้งนี้ ธนาคารชำระค่าธรรมเนียมแทน",
+        "fee_amount": 12
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ],
+      "debt_collection_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_service_point": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_other_channels": {
+        "original_text": "ไม่มีบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "service_provider": "กรุงเทพ",
+    "product": "สินเชื่อบุคคลที่มีบัญชีเงินฝากเป็นหลักประกัน (ประเภทสินเชื่ออื่น ๆ)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "stamp_duty": {
+        "original_text": "0.05% ของวงเงินสินเชื่อ เงื่อนไข: สูงสุดไม่เกิน 10000 บาท",
+        "percentage": 0.05,
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "credit_check": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: 5 บาท / 12 บาททั้งนี้ ธนาคารชำระค่าธรรมเนียมแทน",
+        "fee_amount": 12
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ],
+      "debt_collection_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_service_point": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_other_channels": {
+        "original_text": "ไม่มีบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "service_provider": "ทิสโก้",
+    "product": "สินเชื่อเพิ่มวงเงิน (ประเภทสินเชื่ออื่น ๆ)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "stamp_duty": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: เงินกู้ 2000 บาท ต่อค่าอากร 1 บาท เศษของ 2000 บาท คิด 1 บาท สูงสุดไม่เกิน 10000 บาท",
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "credit_check": {
+        "original_text": "25 บาท/ครั้ง เงื่อนไข: ตามที่บริษัทภายนอกกำหนด",
+        "fee_amount": 25
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ตามอัตราที่กำหนด เงื่อนไข:",
+        "ขอสำเนาใบเสร็จรับเงินข้อมูลปัจจุบันและข้อมูลย้อนหลังไม่เกิน 6 เดือน นับจากเดือนปัจจุบัน 100 บาทต่อฉบับ",
+        "ขอสำเนาใบเสร็จรับเงินข้อมูล ข้อมูลย้อนหลังเกินกว่า 6 เดือน นับจากเดือนปัจจุบัน 200 บาทต่อฉบับ"
+      ],
+      "debt_collection_fee": [
+        "100 บาท/งวด เงื่อนไข: บุคคลธรรมดา หรือนิติบุคคลที่เป็นผู้ประกอบธุรกิจขนาดย่อย",
+        "กรณีค้างชำระ 1 งวด ไม่เกิน 50 บาท/รอบการทวงถาม (ไม่รวม VAT) กรณีค้างชำระมากกว่า 1 งวด ไม่เกิน 100 บาท/รอบการทวงถาม (ไม่รวม VAT) นิติบุคคล",
+        "ไม่เกิน 100 บาท/รอบการทวงถาม (ไม่รวม VAT) ลูกค้านิติบุคคลที่ประกอบธุรกิจขนาดกลางและขนาดใหญ่ (เริ่มมีผลวันที่ 11 ส.ค. 65)",
+        "300 บาท/รอบการทวงถาม (ไม่รวม VAT)"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_at_service_point": {
+        "original_text": "อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ค่าธรรมเนียมเป็นไปตามอัตราที่ธนาคารเรียกเก็บ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_via_other_channels": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : ตู้รับชำระเงิน หน้าสาขาของบริษัทในกลุ่มธนาคาร ไม่มีค่าบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.tisco.co.th/content/dam/tiscobank/download/rate/lending/2022-07-12-lending-fee-th.pdf"
+    }
+  },
+  {
+    "service_provider": "กรุงเทพ",
+    "product": "สินเชื่อข้าราชการบำนาญ (สินเชื่อข้าราชการบำนาญ / สินเชื่อที่ใช้สิทธิในบำเหน็จตกทอดเป็นหลักประกัน)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "stamp_duty": {
+        "original_text": "0.05% ของวงเงินสินเชื่อ เงื่อนไข: สูงสุดไม่เกิน 10000 บาท",
+        "percentage": 0.05,
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "credit_check": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: 5 บาท / 12 บาททั้งนี้ ธนาคารชำระค่าธรรมเนียมแทน",
+        "fee_amount": 12
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ],
+      "debt_collection_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_service_point": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_other_channels": {
+        "original_text": "ไม่มีบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "service_provider": "กรุงเทพ",
+    "product": "สินเชื่อบุคคลที่มีบัญชีเงินฝากเป็นหลักประกัน (ประเภทสินเชื่ออื่น ๆ)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "stamp_duty": {
+        "original_text": "0.05% ของวงเงินสินเชื่อ เงื่อนไข: สูงสุดไม่เกิน 10000 บาท",
+        "percentage": 0.05,
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "credit_check": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: 5 บาท / 12 บาททั้งนี้ ธนาคารชำระค่าธรรมเนียมแทน",
+        "fee_amount": 12
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ],
+      "debt_collection_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_service_point": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_other_channels": {
+        "original_text": "ไม่มีบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "service_provider": "ทิสโก้",
+    "product": "สินเชื่อเพิ่มวงเงิน (ประเภทสินเชื่ออื่น ๆ)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "stamp_duty": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: เงินกู้ 2000 บาท ต่อค่าอากร 1 บาท เศษของ 2000 บาท คิด 1 บาท สูงสุดไม่เกิน 10000 บาท",
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "credit_check": {
+        "original_text": "25 บาท/ครั้ง เงื่อนไข: ตามที่บริษัทภายนอกกำหนด",
+        "fee_amount": 25
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ตามอัตราที่กำหนด เงื่อนไข:",
+        "ขอสำเนาใบเสร็จรับเงินข้อมูลปัจจุบันและข้อมูลย้อนหลังไม่เกิน 6 เดือน นับจากเดือนปัจจุบัน 100 บาทต่อฉบับ",
+        "ขอสำเนาใบเสร็จรับเงินข้อมูล ข้อมูลย้อนหลังเกินกว่า 6 เดือน นับจากเดือนปัจจุบัน 200 บาทต่อฉบับ"
+      ],
+      "debt_collection_fee": [
+        "100 บาท/งวด เงื่อนไข: บุคคลธรรมดา หรือนิติบุคคลที่เป็นผู้ประกอบธุรกิจขนาดย่อย",
+        "กรณีค้างชำระ 1 งวด ไม่เกิน 50 บาท/รอบการทวงถาม (ไม่รวม VAT) กรณีค้างชำระมากกว่า 1 งวด ไม่เกิน 100 บาท/รอบการทวงถาม (ไม่รวม VAT) นิติบุคคล",
+        "ไม่เกิน 100 บาท/รอบการทวงถาม (ไม่รวม VAT) ลูกค้านิติบุคคลที่ประกอบธุรกิจขนาดกลางและขนาดใหญ่ (เริ่มมีผลวันที่ 11 ส.ค. 65)",
+        "300 บาท/รอบการทวงถาม (ไม่รวม VAT)"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_at_service_point": {
+        "original_text": "อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ค่าธรรมเนียมเป็นไปตามอัตราที่ธนาคารเรียกเก็บ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_via_other_channels": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : ตู้รับชำระเงิน หน้าสาขาของบริษัทในกลุ่มธนาคาร ไม่มีค่าบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.tisco.co.th/content/dam/tiscobank/download/rate/lending/2022-07-12-lending-fee-th.pdf"
+    }
+  },
+  {
+    "service_provider": "กรุงเทพ",
+    "product": "สินเชื่อข้าราชการบำนาญ (สินเชื่อข้าราชการบำนาญ / สินเชื่อที่ใช้สิทธิในบำเหน็จตกทอดเป็นหลักประกัน)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "stamp_duty": {
+        "original_text": "0.05% ของวงเงินสินเชื่อ เงื่อนไข: สูงสุดไม่เกิน 10000 บาท",
+        "percentage": 0.05,
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "credit_check": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: 5 บาท / 12 บาททั้งนี้ ธนาคารชำระค่าธรรมเนียมแทน",
+        "fee_amount": 12
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ],
+      "debt_collection_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_service_point": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_other_channels": {
+        "original_text": "ไม่มีบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "service_provider": "กรุงเทพ",
+    "product": "สินเชื่อบุคคลที่มีบัญชีเงินฝากเป็นหลักประกัน (ประเภทสินเชื่ออื่น ๆ)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "stamp_duty": {
+        "original_text": "0.05% ของวงเงินสินเชื่อ เงื่อนไข: สูงสุดไม่เกิน 10000 บาท",
+        "percentage": 0.05,
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "credit_check": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: 5 บาท / 12 บาททั้งนี้ ธนาคารชำระค่าธรรมเนียมแทน",
+        "fee_amount": 12
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ],
+      "debt_collection_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_service_point": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_other_channels": {
+        "original_text": "ไม่มีบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "service_provider": "ทิสโก้",
+    "product": "สินเชื่อเพิ่มวงเงิน (ประเภทสินเชื่ออื่น ๆ)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "stamp_duty": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: เงินกู้ 2000 บาท ต่อค่าอากร 1 บาท เศษของ 2000 บาท คิด 1 บาท สูงสุดไม่เกิน 10000 บาท",
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "credit_check": {
+        "original_text": "25 บาท/ครั้ง เงื่อนไข: ตามที่บริษัทภายนอกกำหนด",
+        "fee_amount": 25
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ตามอัตราที่กำหนด เงื่อนไข:",
+        "ขอสำเนาใบเสร็จรับเงินข้อมูลปัจจุบันและข้อมูลย้อนหลังไม่เกิน 6 เดือน นับจากเดือนปัจจุบัน 100 บาทต่อฉบับ",
+        "ขอสำเนาใบเสร็จรับเงินข้อมูล ข้อมูลย้อนหลังเกินกว่า 6 เดือน นับจากเดือนปัจจุบัน 200 บาทต่อฉบับ"
+      ],
+      "debt_collection_fee": [
+        "100 บาท/งวด เงื่อนไข: บุคคลธรรมดา หรือนิติบุคคลที่เป็นผู้ประกอบธุรกิจขนาดย่อย",
+        "กรณีค้างชำระ 1 งวด ไม่เกิน 50 บาท/รอบการทวงถาม (ไม่รวม VAT) กรณีค้างชำระมากกว่า 1 งวด ไม่เกิน 100 บาท/รอบการทวงถาม (ไม่รวม VAT) นิติบุคคล",
+        "ไม่เกิน 100 บาท/รอบการทวงถาม (ไม่รวม VAT) ลูกค้านิติบุคคลที่ประกอบธุรกิจขนาดกลางและขนาดใหญ่ (เริ่มมีผลวันที่ 11 ส.ค. 65)",
+        "300 บาท/รอบการทวงถาม (ไม่รวม VAT)"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_at_service_point": {
+        "original_text": "อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ค่าธรรมเนียมเป็นไปตามอัตราที่ธนาคารเรียกเก็บ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_via_other_channels": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : ตู้รับชำระเงิน หน้าสาขาของบริษัทในกลุ่มธนาคาร ไม่มีค่าบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.tisco.co.th/content/dam/tiscobank/download/rate/lending/2022-07-12-lending-fee-th.pdf"
+    }
+  },
+  {
+    "service_provider": "กรุงเทพ",
+    "product": "สินเชื่อข้าราชการบำนาญ (สินเชื่อข้าราชการบำนาญ / สินเชื่อที่ใช้สิทธิในบำเหน็จตกทอดเป็นหลักประกัน)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "stamp_duty": {
+        "original_text": "0.05% ของวงเงินสินเชื่อ เงื่อนไข: สูงสุดไม่เกิน 10000 บาท",
+        "percentage": 0.05,
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "credit_check": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: 5 บาท / 12 บาททั้งนี้ ธนาคารชำระค่าธรรมเนียมแทน",
+        "fee_amount": 12
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ],
+      "debt_collection_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_service_point": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_other_channels": {
+        "original_text": "ไม่มีบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "service_provider": "กรุงเทพ",
+    "product": "สินเชื่อบุคคลที่มีบัญชีเงินฝากเป็นหลักประกัน (ประเภทสินเชื่ออื่น ๆ)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "stamp_duty": {
+        "original_text": "0.05% ของวงเงินสินเชื่อ เงื่อนไข: สูงสุดไม่เกิน 10000 บาท",
+        "percentage": 0.05,
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "credit_check": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: 5 บาท / 12 บาททั้งนี้ ธนาคารชำระค่าธรรมเนียมแทน",
+        "fee_amount": 12
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ],
+      "debt_collection_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_service_point": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_other_channels": {
+        "original_text": "ไม่มีบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "service_provider": "ทิสโก้",
+    "product": "สินเชื่อเพิ่มวงเงิน (ประเภทสินเชื่ออื่น ๆ)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "stamp_duty": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: เงินกู้ 2000 บาท ต่อค่าอากร 1 บาท เศษของ 2000 บาท คิด 1 บาท สูงสุดไม่เกิน 10000 บาท",
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "credit_check": {
+        "original_text": "25 บาท/ครั้ง เงื่อนไข: ตามที่บริษัทภายนอกกำหนด",
+        "fee_amount": 25
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ตามอัตราที่กำหนด เงื่อนไข:",
+        "ขอสำเนาใบเสร็จรับเงินข้อมูลปัจจุบันและข้อมูลย้อนหลังไม่เกิน 6 เดือน นับจากเดือนปัจจุบัน 100 บาทต่อฉบับ",
+        "ขอสำเนาใบเสร็จรับเงินข้อมูล ข้อมูลย้อนหลังเกินกว่า 6 เดือน นับจากเดือนปัจจุบัน 200 บาทต่อฉบับ"
+      ],
+      "debt_collection_fee": [
+        "100 บาท/งวด เงื่อนไข: บุคคลธรรมดา หรือนิติบุคคลที่เป็นผู้ประกอบธุรกิจขนาดย่อย",
+        "กรณีค้างชำระ 1 งวด ไม่เกิน 50 บาท/รอบการทวงถาม (ไม่รวม VAT) กรณีค้างชำระมากกว่า 1 งวด ไม่เกิน 100 บาท/รอบการทวงถาม (ไม่รวม VAT) นิติบุคคล",
+        "ไม่เกิน 100 บาท/รอบการทวงถาม (ไม่รวม VAT) ลูกค้านิติบุคคลที่ประกอบธุรกิจขนาดกลางและขนาดใหญ่ (เริ่มมีผลวันที่ 11 ส.ค. 65)",
+        "300 บาท/รอบการทวงถาม (ไม่รวม VAT)"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_at_service_point": {
+        "original_text": "อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ค่าธรรมเนียมเป็นไปตามอัตราที่ธนาคารเรียกเก็บ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_via_other_channels": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : ตู้รับชำระเงิน หน้าสาขาของบริษัทในกลุ่มธนาคาร ไม่มีค่าบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.tisco.co.th/content/dam/tiscobank/download/rate/lending/2022-07-12-lending-fee-th.pdf"
+    }
+  },
+  {
+    "service_provider": "กรุงเทพ",
+    "product": "สินเชื่อข้าราชการบำนาญ (สินเชื่อข้าราชการบำนาญ / สินเชื่อที่ใช้สิทธิในบำเหน็จตกทอดเป็นหลักประกัน)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "stamp_duty": {
+        "original_text": "0.05% ของวงเงินสินเชื่อ เงื่อนไข: สูงสุดไม่เกิน 10000 บาท",
+        "percentage": 0.05,
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "credit_check": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: 5 บาท / 12 บาททั้งนี้ ธนาคารชำระค่าธรรมเนียมแทน",
+        "fee_amount": 12
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ],
+      "debt_collection_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_service_point": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_other_channels": {
+        "original_text": "ไม่มีบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "service_provider": "กรุงเทพ",
+    "product": "สินเชื่อบุคคลที่มีบัญชีเงินฝากเป็นหลักประกัน (ประเภทสินเชื่ออื่น ๆ)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "stamp_duty": {
+        "original_text": "0.05% ของวงเงินสินเชื่อ เงื่อนไข: สูงสุดไม่เกิน 10000 บาท",
+        "percentage": 0.05,
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "credit_check": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: 5 บาท / 12 บาททั้งนี้ ธนาคารชำระค่าธรรมเนียมแทน",
+        "fee_amount": 12
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ],
+      "debt_collection_fee": [
+        "ไม่มีค่าธรรมเนียม"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_at_service_point": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_other_channels": {
+        "original_text": "ไม่มีบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "service_provider": "ทิสโก้",
+    "product": "สินเชื่อเพิ่มวงเงิน (ประเภทสินเชื่ออื่น ๆ)",
+    "general_fees": {
+      "internal_evaluation": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "external_evaluation": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "stamp_duty": {
+        "original_text": "ตามอัตราที่กำหนด เงื่อนไข: เงินกู้ 2000 บาท ต่อค่าอากร 1 บาท เศษของ 2000 บาท คิด 1 บาท สูงสุดไม่เกิน 10000 บาท",
+        "fee_amount": 10000
+      },
+      "mortgage_fee": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "credit_check": {
+        "original_text": "25 บาท/ครั้ง เงื่อนไข: ตามที่บริษัทภายนอกกำหนด",
+        "fee_amount": 25
+      },
+      "returned_cheque_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "insufficient_funds_fee": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "statement_reissuing_fee": [
+        "ตามอัตราที่กำหนด เงื่อนไข:",
+        "ขอสำเนาใบเสร็จรับเงินข้อมูลปัจจุบันและข้อมูลย้อนหลังไม่เกิน 6 เดือน นับจากเดือนปัจจุบัน 100 บาทต่อฉบับ",
+        "ขอสำเนาใบเสร็จรับเงินข้อมูล ข้อมูลย้อนหลังเกินกว่า 6 เดือน นับจากเดือนปัจจุบัน 200 บาทต่อฉบับ"
+      ],
+      "debt_collection_fee": [
+        "100 บาท/งวด เงื่อนไข: บุคคลธรรมดา หรือนิติบุคคลที่เป็นผู้ประกอบธุรกิจขนาดย่อย",
+        "กรณีค้างชำระ 1 งวด ไม่เกิน 50 บาท/รอบการทวงถาม (ไม่รวม VAT) กรณีค้างชำระมากกว่า 1 งวด ไม่เกิน 100 บาท/รอบการทวงถาม (ไม่รวม VAT) นิติบุคคล",
+        "ไม่เกิน 100 บาท/รอบการทวงถาม (ไม่รวม VAT) ลูกค้านิติบุคคลที่ประกอบธุรกิจขนาดกลางและขนาดใหญ่ (เริ่มมีผลวันที่ 11 ส.ค. 65)",
+        "300 บาท/รอบการทวงถาม (ไม่รวม VAT)"
+      ]
+    },
+    "payment_fees": {
+      "debit_from_account": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : ไม่มีค่าธรรมเนียม"
+      },
+      "debit_from_other_account": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_at_provider_branch": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_at_other_branch": {
+        "original_text": "อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_at_service_point": {
+        "original_text": "อัตราตามที่ตัวแทนประกาศ"
+      },
+      "pay_online": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_via_cdm_atm": {
+        "original_text": "ค่าธรรมเนียมเป็นไปตามอัตราที่ธนาคารเรียกเก็บ"
+      },
+      "pay_via_phone": {
+        "original_text": "ไม่มีบริการ"
+      },
+      "pay_via_cheque_or_money_order": {
+        "original_text": "ไม่มีค่าธรรมเนียม"
+      },
+      "pay_via_other_channels": {
+        "original_text": "สินเชื่อสวัสดิการสำหรับสมาชิกกองทุนสำรองเลี้ยงชีพ : ไม่มีบริการสินเชื่อเพิ่มวงเงิน สินเชื่อเพิ่มวงเงินประเภทวงเงินหมุนเวียน และสินเชื่อเพื่อข้าราชการบำนาญ : ตู้รับชำระเงิน หน้าสาขาของบริษัทในกลุ่มธนาคาร ไม่มีค่าบริการ"
+      }
+    },
+    "other_fees": {
+      "other_fee": ""
+    },
+    "additional_info": {
+      "fee_website": "https://www.tisco.co.th/content/dam/tiscobank/download/rate/lending/2022-07-12-lending-fee-th.pdf"
+    }
+  }
+]

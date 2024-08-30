@@ -1,0 +1,294 @@
+[
+ {
+  "provider": "ดอยซ์แบงก์",
+  "fees": [
+   {
+    "min": 0.01,
+    "max": 0.17,
+    "original_text": "0.01 - 0.17% ของมูลค่าสินทรัพย์สุทธิ"
+   },
+   {
+    "min": 2,
+    "max": 30,
+    "original_text": "เงื่อนไข: Rate varied by asset size and investing market as well as value added service required. In addition securities settlement charge will apply and varied by market where rate is ranging between USD 2 - USD 30"
+   }
+  ],
+  "other_fees": {
+   "description": null
+  },
+  "additional_info": {
+   "website": null
+  }
+ },
+ {
+  "provider": "ซีไอเอ็มบี ไทย",
+  "fees": [
+   {
+    "min": 0.07,
+    "max": 0.07,
+    "original_text": "0.07% ของมูลค่าสินทรัพย์สุทธิ"
+   },
+   {
+    "min": 0.07,
+    "max": 0.07,
+    "original_text": "เงื่อนไข: -ค่าธรรมเนียมการดูแลและเก็บรักษาหลักทรัพย์ไม่เกินร้อยละ 0.07 /มูลค่าสินทรัพย์สุทธิ-ค่าธรรมเนียมการดูแลและเก็บรักษาหลักทรัพย์สำหรับลูกค้าของตัวแทนการลงทุน (Investment Agent Business)กรณีรับฝากทรัพย์สินของมูลค่าทรัพย์สินสุทธิ (ต่อปี) ไม่เกินร้อยละ 0.07 ต่อมูลค่าทรัพย์สินสุทธิขั้นต่ำไม่เกิน 1000 บาท/เดือน"
+   },
+   {
+    "min": 1000,
+    "max": 1000,
+    "original_text": "กรณีซื้อขายหลักทรัพย์ต่อรายการไม่เกิน 1000 บาท/รายการ"
+   }
+  ],
+  "other_fees": {
+   "description": "กรณีซื้อขายหลักทรัพย์ต่อรายการไม่เกิน 1000 บาท/รายการ"
+  },
+  "additional_info": {
+   "website": "http://www.cimbthai.com"
+  }
+ },
+ {
+  "provider": "สแตนดาร์ดชาร์เตอร์ด (ไทย)",
+  "fees": [
+   {
+    "min": 0.06,
+    "max": 0.06,
+    "original_text": "ตามอัตราที่กำหนด - 0.06% ของมูลค่าสินทรัพย์สุทธิ"
+   },
+   {
+    "min": 4000,
+    "max": 4000,
+    "original_text": "เงื่อนไข: ค่าธรรมเนียมขึ้นต่ำ USD 4000 หรือเทียบเท่า ต่อบัญชีรับฝากทรัพย์สินต่อเดือน โดยค่าธรรมเนียมขั้นต่ำจะคิดเมื่อค่าธรรมเนียมการรับฝากทรัพย์สินในเดือนนั้นๆ น้อยกว่าค่าธรรมเนียมขั้นต่ำ"
+   },
+   {
+    "min": 27,
+    "max": 27,
+    "original_text": "ค่าธรรมเนียมการทำรายการ USD 27 หรือเทียบเท่าต่อรายการ"
+   }
+  ],
+  "other_fees": {
+   "description": "ค่าธรรมเนียมการทำรายการ USD 27 หรือเทียบเท่าต่อรายการ"
+  },
+  "additional_info": {
+   "website": "https://www.sc.com/th/interest-rates/"
+  }
+ },
+ {
+  "provider": "ดอยซ์แบงก์",
+  "fees": [
+   {
+    "min": 0.01,
+    "max": 0.17,
+    "original_text": "0.01 - 0.17% ของมูลค่าสินทรัพย์สุทธิ"
+   },
+   {
+    "min": 2,
+    "max": 30,
+    "original_text": "เงื่อนไข: Rate varied by asset size and investing market as well as value added service required. In addition securities settlement charge will apply and varied by market where rate is ranging between USD 2 - USD 30"
+   }
+  ],
+  "other_fees": {
+   "description": null
+  },
+  "additional_info": {
+   "website": null
+  }
+ },
+ {
+  "provider": "ซีไอเอ็มบี ไทย",
+  "fees": [
+   {
+    "min": 0.07,
+    "max": 0.07,
+    "original_text": "0.07% ของมูลค่าสินทรัพย์สุทธิ"
+   },
+   {
+    "min": 0.07,
+    "max": 0.07,
+    "original_text": "เงื่อนไข: -ค่าธรรมเนียมการดูแลและเก็บรักษาหลักทรัพย์ไม่เกินร้อยละ 0.07 /มูลค่าสินทรัพย์สุทธิ-ค่าธรรมเนียมการดูแลและเก็บรักษาหลักทรัพย์สำหรับลูกค้าของตัวแทนการลงทุน (Investment Agent Business)กรณีรับฝากทรัพย์สินของมูลค่าทรัพย์สินสุทธิ (ต่อปี) ไม่เกินร้อยละ 0.07 ต่อมูลค่าทรัพย์สินสุทธิขั้นต่ำไม่เกิน 1000 บาท/เดือน"
+   },
+   {
+    "min": 1000,
+    "max": 1000,
+    "original_text": "กรณีซื้อขายหลักทรัพย์ต่อรายการไม่เกิน 1000 บาท/รายการ"
+   }
+  ],
+  "other_fees": {
+   "description": "กรณีซื้อขายหลักทรัพย์ต่อรายการไม่เกิน 1000 บาท/รายการ"
+  },
+  "additional_info": {
+   "website": "http://www.cimbthai.com"
+  }
+ },
+ {
+  "provider": "สแตนดาร์ดชาร์เตอร์ด (ไทย)",
+  "fees": [
+   {
+    "min": 0.06,
+    "max": 0.06,
+    "original_text": "ตามอัตราที่กำหนด - 0.06% ของมูลค่าสินทรัพย์สุทธิ"
+   },
+   {
+    "min": 4000,
+    "max": 4000,
+    "original_text": "เงื่อนไข: ค่าธรรมเนียมขึ้นต่ำ USD 4000 หรือเทียบเท่า ต่อบัญชีรับฝากทรัพย์สินต่อเดือน โดยค่าธรรมเนียมขั้นต่ำจะคิดเมื่อค่าธรรมเนียมการรับฝากทรัพย์สินในเดือนนั้นๆ น้อยกว่าค่าธรรมเนียมขั้นต่ำ"
+   },
+   {
+    "min": 27,
+    "max": 27,
+    "original_text": "ค่าธรรมเนียมการทำรายการ USD 27 หรือเทียบเท่าต่อรายการ"
+   }
+  ],
+  "other_fees": {
+   "description": "ค่าธรรมเนียมการทำรายการ USD 27 หรือเทียบเท่าต่อรายการ"
+  },
+  "additional_info": {
+   "website": "https://www.sc.com/th/interest-rates/"
+  }
+ },
+ {
+  "provider": "ดอยซ์แบงก์",
+  "fees": [
+   {
+    "min": 0.01,
+    "max": 0.17,
+    "original_text": "0.01 - 0.17% ของมูลค่าสินทรัพย์สุทธิ"
+   },
+   {
+    "min": 2,
+    "max": 30,
+    "original_text": "เงื่อนไข: Rate varied by asset size and investing market as well as value added service required. In addition securities settlement charge will apply and varied by market where rate is ranging between USD 2 - USD 30"
+   }
+  ],
+  "other_fees": {
+   "description": null
+  },
+  "additional_info": {
+   "website": null
+  }
+ },
+ {
+  "provider": "ซีไอเอ็มบี ไทย",
+  "fees": [
+   {
+    "min": 0.07,
+    "max": 0.07,
+    "original_text": "0.07% ของมูลค่าสินทรัพย์สุทธิ"
+   },
+   {
+    "min": 0.07,
+    "max": 0.07,
+    "original_text": "เงื่อนไข: -ค่าธรรมเนียมการดูแลและเก็บรักษาหลักทรัพย์ไม่เกินร้อยละ 0.07 /มูลค่าสินทรัพย์สุทธิ-ค่าธรรมเนียมการดูแลและเก็บรักษาหลักทรัพย์สำหรับลูกค้าของตัวแทนการลงทุน (Investment Agent Business)กรณีรับฝากทรัพย์สินของมูลค่าทรัพย์สินสุทธิ (ต่อปี) ไม่เกินร้อยละ 0.07 ต่อมูลค่าทรัพย์สินสุทธิขั้นต่ำไม่เกิน 1000 บาท/เดือน"
+   },
+   {
+    "min": 1000,
+    "max": 1000,
+    "original_text": "กรณีซื้อขายหลักทรัพย์ต่อรายการไม่เกิน 1000 บาท/รายการ"
+   }
+  ],
+  "other_fees": {
+   "description": "กรณีซื้อขายหลักทรัพย์ต่อรายการไม่เกิน 1000 บาท/รายการ"
+  },
+  "additional_info": {
+   "website": "http://www.cimbthai.com"
+  }
+ },
+ {
+  "provider": "สแตนดาร์ดชาร์เตอร์ด (ไทย)",
+  "fees": [
+   {
+    "min": 0.06,
+    "max": 0.06,
+    "original_text": "ตามอัตราที่กำหนด - 0.06% ของมูลค่าสินทรัพย์สุทธิ"
+   },
+   {
+    "min": 4000,
+    "max": 4000,
+    "original_text": "เงื่อนไข: ค่าธรรมเนียมขึ้นต่ำ USD 4000 หรือเทียบเท่า ต่อบัญชีรับฝากทรัพย์สินต่อเดือน โดยค่าธรรมเนียมขั้นต่ำจะคิดเมื่อค่าธรรมเนียมการรับฝากทรัพย์สินในเดือนนั้นๆ น้อยกว่าค่าธรรมเนียมขั้นต่ำ"
+   },
+   {
+    "min": 27,
+    "max": 27,
+    "original_text": "ค่าธรรมเนียมการทำรายการ USD 27 หรือเทียบเท่าต่อรายการ"
+   }
+  ],
+  "other_fees": {
+   "description": "ค่าธรรมเนียมการทำรายการ USD 27 หรือเทียบเท่าต่อรายการ"
+  },
+  "additional_info": {
+   "website": "https://www.sc.com/th/interest-rates/"
+  }
+ },
+ {
+  "provider": "ดอยซ์แบงก์",
+  "fees": [
+   {
+    "min": 0.01,
+    "max": 0.17,
+    "original_text": "0.01 - 0.17% ของมูลค่าสินทรัพย์สุทธิ"
+   },
+   {
+    "min": 2,
+    "max": 30,
+    "original_text": "เงื่อนไข: Rate varied by asset size and investing market as well as value added service required. In addition securities settlement charge will apply and varied by market where rate is ranging between USD 2 - USD 30"
+   }
+  ],
+  "other_fees": {
+   "description": null
+  },
+  "additional_info": {
+   "website": null
+  }
+ },
+ {
+  "provider": "ซีไอเอ็มบี ไทย",
+  "fees": [
+   {
+    "min": 0.07,
+    "max": 0.07,
+    "original_text": "0.07% ของมูลค่าสินทรัพย์สุทธิ"
+   },
+   {
+    "min": 0.07,
+    "max": 0.07,
+    "original_text": "เงื่อนไข: -ค่าธรรมเนียมการดูแลและเก็บรักษาหลักทรัพย์ไม่เกินร้อยละ 0.07 /มูลค่าสินทรัพย์สุทธิ-ค่าธรรมเนียมการดูแลและเก็บรักษาหลักทรัพย์สำหรับลูกค้าของตัวแทนการลงทุน (Investment Agent Business)กรณีรับฝากทรัพย์สินของมูลค่าทรัพย์สินสุทธิ (ต่อปี) ไม่เกินร้อยละ 0.07 ต่อมูลค่าทรัพย์สินสุทธิขั้นต่ำไม่เกิน 1000 บาท/เดือน"
+   },
+   {
+    "min": 1000,
+    "max": 1000,
+    "original_text": "กรณีซื้อขายหลักทรัพย์ต่อรายการไม่เกิน 1000 บาท/รายการ"
+   }
+  ],
+  "other_fees": {
+   "description": "กรณีซื้อขายหลักทรัพย์ต่อรายการไม่เกิน 1000 บาท/รายการ"
+  },
+  "additional_info": {
+   "website": "http://www.cimbthai.com"
+  }
+ },
+ {
+  "provider": "สแตนดาร์ดชาร์เตอร์ด (ไทย)",
+  "fees": [
+   {
+    "min": 0.06,
+    "max": 0.06,
+    "original_text": "ตามอัตราที่กำหนด - 0.06% ของมูลค่าสินทรัพย์สุทธิ"
+   },
+   {
+    "min": 4000,
+    "max": 4000,
+    "original_text": "เงื่อนไข: ค่าธรรมเนียมขึ้นต่ำ USD 4000 หรือเทียบเท่า ต่อบัญชีรับฝากทรัพย์สินต่อเดือน โดยค่าธรรมเนียมขั้นต่ำจะคิดเมื่อค่าธรรมเนียมการรับฝากทรัพย์สินในเดือนนั้นๆ น้อยกว่าค่าธรรมเนียมขั้นต่ำ"
+   },
+   {
+    "min": 27,
+    "max": 27,
+    "original_text": "ค่าธรรมเนียมการทำรายการ USD 27 หรือเทียบเท่าต่อรายการ"
+   }
+  ],
+  "other_fees": {
+   "description": "ค่าธรรมเนียมการทำรายการ USD 27 หรือเทียบเท่าต่อรายการ"
+  },
+  "additional_info": {
+   "website": "https://www.sc.com/th/interest-rates/"
+  }
+ }
+]

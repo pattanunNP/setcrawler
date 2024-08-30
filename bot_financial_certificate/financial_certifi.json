@@ -1,0 +1,2512 @@
+[
+  {
+    "provider": "กรุงเทพ",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "ไม่มีค่าธรรมเนียม",
+        "value": 0
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "016% ของวงเงินที่รับรอง",
+          "value": 16
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "ลูกค้าทั่วไป 1/64% ของวงเงินอัตราขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 50000 บาท",
+          "value": 1
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 2000 ล้านบาท ฉบับละ 20000 บาท",
+          "value": 2000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 3000 ล้านบาท ฉบับละ 30000 บาท",
+          "value": 3000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 4000 ล้านบาท ฉบับละ 40000 บาท",
+          "value": 4000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 5000 ล้านบาท ฉบับละ 50000 บาท",
+          "value": 5000
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "05% ของวงเงินรับรอง ขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 100000 บาท",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "provider": "กรุงไทย",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ เงื่อนไข: สำเนาคู่ฉบับ คิดค่าธรรมเนียมฉบับละ 50 บาท",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://krungthai.com/Download/rateFee/RateFeeDownload_4517master_th_640777.pdf"
+    }
+  },
+  {
+    "provider": "กรุงศรีอยุธยา",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงิน",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมาหรือขึ้นทะเบียน/ต่ออายุเป็นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "เพื่อประมูลงาน กรณีมีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 50 บาท/วงเงิน 100000 บาท ขั้นต่ำ 500 บาท/ฉบับ สูงสุดไม่เกิน 30000 บาท/ฉบับ",
+          "value": 50
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "ไม่เกิน 2% ของวงเงินที่รับรอง เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงินเพื่อประมูลงาน",
+          "value": 2
+        },
+        {
+          "original_text": "กรณีไม่มีีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือไม่มีข้อความ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 2% ของวงเงินที่ให้รับรองสูงสุดไม่เกิน 200000 บาท/ฉบับ",
+          "value": 2
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.krungsri.com/th/rates/fees/service"
+    }
+  },
+  {
+    "provider": "กรุงเทพ",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "ไม่มีค่าธรรมเนียม",
+        "value": 0
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "016% ของวงเงินที่รับรอง",
+          "value": 16
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "ลูกค้าทั่วไป 1/64% ของวงเงินอัตราขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 50000 บาท",
+          "value": 1
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 2000 ล้านบาท ฉบับละ 20000 บาท",
+          "value": 2000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 3000 ล้านบาท ฉบับละ 30000 บาท",
+          "value": 3000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 4000 ล้านบาท ฉบับละ 40000 บาท",
+          "value": 4000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 5000 ล้านบาท ฉบับละ 50000 บาท",
+          "value": 5000
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "05% ของวงเงินรับรอง ขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 100000 บาท",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "provider": "กรุงไทย",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ เงื่อนไข: สำเนาคู่ฉบับ คิดค่าธรรมเนียมฉบับละ 50 บาท",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://krungthai.com/Download/rateFee/RateFeeDownload_4517master_th_640777.pdf"
+    }
+  },
+  {
+    "provider": "กรุงศรีอยุธยา",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงิน",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมาหรือขึ้นทะเบียน/ต่ออายุเป็นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "เพื่อประมูลงาน กรณีมีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 50 บาท/วงเงิน 100000 บาท ขั้นต่ำ 500 บาท/ฉบับ สูงสุดไม่เกิน 30000 บาท/ฉบับ",
+          "value": 50
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "ไม่เกิน 2% ของวงเงินที่รับรอง เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงินเพื่อประมูลงาน",
+          "value": 2
+        },
+        {
+          "original_text": "กรณีไม่มีีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือไม่มีข้อความ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 2% ของวงเงินที่ให้รับรองสูงสุดไม่เกิน 200000 บาท/ฉบับ",
+          "value": 2
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.krungsri.com/th/rates/fees/service"
+    }
+  },
+  {
+    "provider": "กรุงเทพ",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "ไม่มีค่าธรรมเนียม",
+        "value": 0
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "016% ของวงเงินที่รับรอง",
+          "value": 16
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "ลูกค้าทั่วไป 1/64% ของวงเงินอัตราขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 50000 บาท",
+          "value": 1
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 2000 ล้านบาท ฉบับละ 20000 บาท",
+          "value": 2000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 3000 ล้านบาท ฉบับละ 30000 บาท",
+          "value": 3000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 4000 ล้านบาท ฉบับละ 40000 บาท",
+          "value": 4000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 5000 ล้านบาท ฉบับละ 50000 บาท",
+          "value": 5000
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "05% ของวงเงินรับรอง ขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 100000 บาท",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "provider": "กรุงไทย",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ เงื่อนไข: สำเนาคู่ฉบับ คิดค่าธรรมเนียมฉบับละ 50 บาท",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://krungthai.com/Download/rateFee/RateFeeDownload_4517master_th_640777.pdf"
+    }
+  },
+  {
+    "provider": "กรุงศรีอยุธยา",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงิน",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมาหรือขึ้นทะเบียน/ต่ออายุเป็นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "เพื่อประมูลงาน กรณีมีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 50 บาท/วงเงิน 100000 บาท ขั้นต่ำ 500 บาท/ฉบับ สูงสุดไม่เกิน 30000 บาท/ฉบับ",
+          "value": 50
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "ไม่เกิน 2% ของวงเงินที่รับรอง เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงินเพื่อประมูลงาน",
+          "value": 2
+        },
+        {
+          "original_text": "กรณีไม่มีีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือไม่มีข้อความ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 2% ของวงเงินที่ให้รับรองสูงสุดไม่เกิน 200000 บาท/ฉบับ",
+          "value": 2
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.krungsri.com/th/rates/fees/service"
+    }
+  },
+  {
+    "provider": "กรุงเทพ",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "ไม่มีค่าธรรมเนียม",
+        "value": 0
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "016% ของวงเงินที่รับรอง",
+          "value": 16
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "ลูกค้าทั่วไป 1/64% ของวงเงินอัตราขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 50000 บาท",
+          "value": 1
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 2000 ล้านบาท ฉบับละ 20000 บาท",
+          "value": 2000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 3000 ล้านบาท ฉบับละ 30000 บาท",
+          "value": 3000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 4000 ล้านบาท ฉบับละ 40000 บาท",
+          "value": 4000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 5000 ล้านบาท ฉบับละ 50000 บาท",
+          "value": 5000
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "05% ของวงเงินรับรอง ขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 100000 บาท",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "provider": "กรุงไทย",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ เงื่อนไข: สำเนาคู่ฉบับ คิดค่าธรรมเนียมฉบับละ 50 บาท",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://krungthai.com/Download/rateFee/RateFeeDownload_4517master_th_640777.pdf"
+    }
+  },
+  {
+    "provider": "กรุงศรีอยุธยา",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงิน",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมาหรือขึ้นทะเบียน/ต่ออายุเป็นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "เพื่อประมูลงาน กรณีมีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 50 บาท/วงเงิน 100000 บาท ขั้นต่ำ 500 บาท/ฉบับ สูงสุดไม่เกิน 30000 บาท/ฉบับ",
+          "value": 50
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "ไม่เกิน 2% ของวงเงินที่รับรอง เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงินเพื่อประมูลงาน",
+          "value": 2
+        },
+        {
+          "original_text": "กรณีไม่มีีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือไม่มีข้อความ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 2% ของวงเงินที่ให้รับรองสูงสุดไม่เกิน 200000 บาท/ฉบับ",
+          "value": 2
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.krungsri.com/th/rates/fees/service"
+    }
+  },
+  {
+    "provider": "กรุงเทพ",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "ไม่มีค่าธรรมเนียม",
+        "value": 0
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "016% ของวงเงินที่รับรอง",
+          "value": 16
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "ลูกค้าทั่วไป 1/64% ของวงเงินอัตราขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 50000 บาท",
+          "value": 1
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 2000 ล้านบาท ฉบับละ 20000 บาท",
+          "value": 2000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 3000 ล้านบาท ฉบับละ 30000 บาท",
+          "value": 3000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 4000 ล้านบาท ฉบับละ 40000 บาท",
+          "value": 4000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 5000 ล้านบาท ฉบับละ 50000 บาท",
+          "value": 5000
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "05% ของวงเงินรับรอง ขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 100000 บาท",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "provider": "กรุงไทย",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ เงื่อนไข: สำเนาคู่ฉบับ คิดค่าธรรมเนียมฉบับละ 50 บาท",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://krungthai.com/Download/rateFee/RateFeeDownload_4517master_th_640777.pdf"
+    }
+  },
+  {
+    "provider": "กรุงศรีอยุธยา",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงิน",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมาหรือขึ้นทะเบียน/ต่ออายุเป็นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "เพื่อประมูลงาน กรณีมีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 50 บาท/วงเงิน 100000 บาท ขั้นต่ำ 500 บาท/ฉบับ สูงสุดไม่เกิน 30000 บาท/ฉบับ",
+          "value": 50
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "ไม่เกิน 2% ของวงเงินที่รับรอง เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงินเพื่อประมูลงาน",
+          "value": 2
+        },
+        {
+          "original_text": "กรณีไม่มีีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือไม่มีข้อความ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 2% ของวงเงินที่ให้รับรองสูงสุดไม่เกิน 200000 บาท/ฉบับ",
+          "value": 2
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.krungsri.com/th/rates/fees/service"
+    }
+  },
+  {
+    "provider": "กรุงเทพ",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "ไม่มีค่าธรรมเนียม",
+        "value": 0
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "016% ของวงเงินที่รับรอง",
+          "value": 16
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "ลูกค้าทั่วไป 1/64% ของวงเงินอัตราขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 50000 บาท",
+          "value": 1
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 2000 ล้านบาท ฉบับละ 20000 บาท",
+          "value": 2000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 3000 ล้านบาท ฉบับละ 30000 บาท",
+          "value": 3000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 4000 ล้านบาท ฉบับละ 40000 บาท",
+          "value": 4000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 5000 ล้านบาท ฉบับละ 50000 บาท",
+          "value": 5000
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "05% ของวงเงินรับรอง ขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 100000 บาท",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "provider": "กรุงไทย",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ เงื่อนไข: สำเนาคู่ฉบับ คิดค่าธรรมเนียมฉบับละ 50 บาท",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://krungthai.com/Download/rateFee/RateFeeDownload_4517master_th_640777.pdf"
+    }
+  },
+  {
+    "provider": "กรุงศรีอยุธยา",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงิน",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมาหรือขึ้นทะเบียน/ต่ออายุเป็นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "เพื่อประมูลงาน กรณีมีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 50 บาท/วงเงิน 100000 บาท ขั้นต่ำ 500 บาท/ฉบับ สูงสุดไม่เกิน 30000 บาท/ฉบับ",
+          "value": 50
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "ไม่เกิน 2% ของวงเงินที่รับรอง เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงินเพื่อประมูลงาน",
+          "value": 2
+        },
+        {
+          "original_text": "กรณีไม่มีีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือไม่มีข้อความ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 2% ของวงเงินที่ให้รับรองสูงสุดไม่เกิน 200000 บาท/ฉบับ",
+          "value": 2
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.krungsri.com/th/rates/fees/service"
+    }
+  },
+  {
+    "provider": "กรุงเทพ",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "ไม่มีค่าธรรมเนียม",
+        "value": 0
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "016% ของวงเงินที่รับรอง",
+          "value": 16
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "ลูกค้าทั่วไป 1/64% ของวงเงินอัตราขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 50000 บาท",
+          "value": 1
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 2000 ล้านบาท ฉบับละ 20000 บาท",
+          "value": 2000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 3000 ล้านบาท ฉบับละ 30000 บาท",
+          "value": 3000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 4000 ล้านบาท ฉบับละ 40000 บาท",
+          "value": 4000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 5000 ล้านบาท ฉบับละ 50000 บาท",
+          "value": 5000
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "05% ของวงเงินรับรอง ขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 100000 บาท",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "provider": "กรุงไทย",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ เงื่อนไข: สำเนาคู่ฉบับ คิดค่าธรรมเนียมฉบับละ 50 บาท",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://krungthai.com/Download/rateFee/RateFeeDownload_4517master_th_640777.pdf"
+    }
+  },
+  {
+    "provider": "กรุงศรีอยุธยา",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงิน",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมาหรือขึ้นทะเบียน/ต่ออายุเป็นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "เพื่อประมูลงาน กรณีมีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 50 บาท/วงเงิน 100000 บาท ขั้นต่ำ 500 บาท/ฉบับ สูงสุดไม่เกิน 30000 บาท/ฉบับ",
+          "value": 50
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "ไม่เกิน 2% ของวงเงินที่รับรอง เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงินเพื่อประมูลงาน",
+          "value": 2
+        },
+        {
+          "original_text": "กรณีไม่มีีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือไม่มีข้อความ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 2% ของวงเงินที่ให้รับรองสูงสุดไม่เกิน 200000 บาท/ฉบับ",
+          "value": 2
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.krungsri.com/th/rates/fees/service"
+    }
+  },
+  {
+    "provider": "กรุงเทพ",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "ไม่มีค่าธรรมเนียม",
+        "value": 0
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "016% ของวงเงินที่รับรอง",
+          "value": 16
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "ลูกค้าทั่วไป 1/64% ของวงเงินอัตราขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 50000 บาท",
+          "value": 1
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 2000 ล้านบาท ฉบับละ 20000 บาท",
+          "value": 2000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 3000 ล้านบาท ฉบับละ 30000 บาท",
+          "value": 3000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 4000 ล้านบาท ฉบับละ 40000 บาท",
+          "value": 4000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 5000 ล้านบาท ฉบับละ 50000 บาท",
+          "value": 5000
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "05% ของวงเงินรับรอง ขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 100000 บาท",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "provider": "กรุงไทย",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ เงื่อนไข: สำเนาคู่ฉบับ คิดค่าธรรมเนียมฉบับละ 50 บาท",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://krungthai.com/Download/rateFee/RateFeeDownload_4517master_th_640777.pdf"
+    }
+  },
+  {
+    "provider": "กรุงศรีอยุธยา",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงิน",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมาหรือขึ้นทะเบียน/ต่ออายุเป็นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "เพื่อประมูลงาน กรณีมีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 50 บาท/วงเงิน 100000 บาท ขั้นต่ำ 500 บาท/ฉบับ สูงสุดไม่เกิน 30000 บาท/ฉบับ",
+          "value": 50
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "ไม่เกิน 2% ของวงเงินที่รับรอง เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงินเพื่อประมูลงาน",
+          "value": 2
+        },
+        {
+          "original_text": "กรณีไม่มีีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือไม่มีข้อความ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 2% ของวงเงินที่ให้รับรองสูงสุดไม่เกิน 200000 บาท/ฉบับ",
+          "value": 2
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.krungsri.com/th/rates/fees/service"
+    }
+  },
+  {
+    "provider": "กรุงเทพ",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "ไม่มีค่าธรรมเนียม",
+        "value": 0
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "016% ของวงเงินที่รับรอง",
+          "value": 16
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "ลูกค้าทั่วไป 1/64% ของวงเงินอัตราขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 50000 บาท",
+          "value": 1
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 2000 ล้านบาท ฉบับละ 20000 บาท",
+          "value": 2000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 3000 ล้านบาท ฉบับละ 30000 บาท",
+          "value": 3000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 4000 ล้านบาท ฉบับละ 40000 บาท",
+          "value": 4000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 5000 ล้านบาท ฉบับละ 50000 บาท",
+          "value": 5000
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "05% ของวงเงินรับรอง ขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 100000 บาท",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "provider": "กรุงไทย",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ เงื่อนไข: สำเนาคู่ฉบับ คิดค่าธรรมเนียมฉบับละ 50 บาท",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://krungthai.com/Download/rateFee/RateFeeDownload_4517master_th_640777.pdf"
+    }
+  },
+  {
+    "provider": "กรุงศรีอยุธยา",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงิน",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมาหรือขึ้นทะเบียน/ต่ออายุเป็นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "เพื่อประมูลงาน กรณีมีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 50 บาท/วงเงิน 100000 บาท ขั้นต่ำ 500 บาท/ฉบับ สูงสุดไม่เกิน 30000 บาท/ฉบับ",
+          "value": 50
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "ไม่เกิน 2% ของวงเงินที่รับรอง เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงินเพื่อประมูลงาน",
+          "value": 2
+        },
+        {
+          "original_text": "กรณีไม่มีีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือไม่มีข้อความ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 2% ของวงเงินที่ให้รับรองสูงสุดไม่เกิน 200000 บาท/ฉบับ",
+          "value": 2
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.krungsri.com/th/rates/fees/service"
+    }
+  },
+  {
+    "provider": "กรุงเทพ",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "ไม่มีค่าธรรมเนียม",
+        "value": 0
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "016% ของวงเงินที่รับรอง",
+          "value": 16
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "ลูกค้าทั่วไป 1/64% ของวงเงินอัตราขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 50000 บาท",
+          "value": 1
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 2000 ล้านบาท ฉบับละ 20000 บาท",
+          "value": 2000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 3000 ล้านบาท ฉบับละ 30000 บาท",
+          "value": 3000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 4000 ล้านบาท ฉบับละ 40000 บาท",
+          "value": 4000
+        },
+        {
+          "original_text": "ลูกค้า prime ภายในวงเงิน 5000 ล้านบาท ฉบับละ 50000 บาท",
+          "value": 5000
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "ตามอัตราที่กำหนด ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+          "value": 500
+        },
+        {
+          "original_text": "05% ของวงเงินรับรอง ขั้นต่ำฉบับละ 500 บาท สูงสุดไม่เกินฉบับละ 100000 บาท",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.bangkokbank.com/th-TH/Personal/Other-Services/View-Rates/Fees-Charges-and-Penalty-Related-to-Deposit-and-Lending-and-Other-Fees"
+    }
+  },
+  {
+    "provider": "กรุงไทย",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ เงื่อนไข: สำเนาคู่ฉบับ คิดค่าธรรมเนียมฉบับละ 50 บาท",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "025",
+          "value": 25
+        },
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 2000 บาท/ฉบับ เงื่อนไข:",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "1 รับรองภายในวงเงินสินเชื่อที่มีอยู่กับธนาคาร",
+          "value": 1
+        },
+        {
+          "original_text": "1 กรณีมีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 1
+        },
+        {
+          "original_text": "025 ของวงเงินที่รับรอง",
+          "value": 25
+        },
+        {
+          "original_text": "2 กรณีไม่มีข้อความ\"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\" คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "2 รับรองเกินวงเงินสินเชื่อที่มีอยู่กับธนาคาร คิดค่าธรรมเนียม",
+          "value": 2
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อประมูลงาน คิดค่าธรรมเนียม",
+          "value": 0
+        },
+        {
+          "original_text": "05 ของวงเงินที่รับรอง",
+          "value": 5
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://krungthai.com/Download/rateFee/RateFeeDownload_4517master_th_640777.pdf"
+    }
+  },
+  {
+    "provider": "กรุงศรีอยุธยา",
+    "financial_status": {
+      "financial_certification_for_visa": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_government": {
+        "original_text": "100 บาท/ฉบับ",
+        "value": 100
+      },
+      "financial_certification_for_audit": {
+        "original_text": "200 บาท/ฉบับ",
+        "value": 200
+      }
+    },
+    "credit_certification": {
+      "conditional_credit_certification": [
+        {
+          "original_text": "05% ของวงเงินที่รับรอง ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงิน",
+          "value": 5
+        },
+        {
+          "original_text": "เพื่อจัดชั้นผู้รับเหมาหรือขึ้นทะเบียน/ต่ออายุเป็นผู้รับเหมา",
+          "value": 0
+        },
+        {
+          "original_text": "เพื่อประมูลงาน กรณีมีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 50 บาท/วงเงิน 100000 บาท ขั้นต่ำ 500 บาท/ฉบับ สูงสุดไม่เกิน 30000 บาท/ฉบับ",
+          "value": 50
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ],
+      "unconditional_credit_certification": [
+        {
+          "original_text": "ไม่เกิน 2% ของวงเงินที่รับรอง เงื่อนไข: การออกหนังสือรับรองเครดิตหรือหนังสือให้การสนับสนุนทางด้านการเงินเพื่อประมูลงาน",
+          "value": 2
+        },
+        {
+          "original_text": "กรณีไม่มีีข้อความ\"ภายใต้ระเบียบและเงื่อนไขของธนาคาร\" หรือไม่มีข้อความ \"ภายใต้ระเบียบและวิธีปฏิบัติของธนาคาร\"อัตราค่าบริการ 2% ของวงเงินที่ให้รับรองสูงสุดไม่เกิน 200000 บาท/ฉบับ",
+          "value": 2
+        },
+        {
+          "original_text": "ธนาคารออกหนังสือรับรองฯ แล้วลูกค้าแจ้งยกเลิก จำนวนเงินที่รับรองฯ ต่ำกว่าหนึ่งร้อยล้านบาท อัตราค่าบริการ 500 บาท/ฉบับ จำนวนเงินรับรองฯ ตั้งแต่หนึ่งร้อยล้านบาทขึ้นไป อัตราค่าบริการ 1000 บาท/ฉบับหมายเหตุ ธนาคารไม่คืนค่าธรรมเนียม กรณีลูกค้าได้รับหนังสือรับรองไปจากธนาคารแล้ว",
+          "value": 500
+        }
+      ]
+    },
+    "other_fees": {
+      "other_fees_details": null
+    },
+    "additional_information": {
+      "website_fee_link": "https://www.krungsri.com/th/rates/fees/service"
+    }
+  }
+]

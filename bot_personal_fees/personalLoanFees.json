@@ -1,0 +1,4934 @@
+[
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากทวีโชค)เงินกู้ฉบับ35(เงินฝากทวีโชค)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/file-upload-manual/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%AF%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%20153-2563.pdf"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากทวีโชค)เงินกู้ฉบับ35(เงินฝากทวีโชค)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/file-upload-manual/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%AF%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%20153-2563.pdf"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากทวีโชค)เงินกู้ฉบับ35(เงินฝากทวีโชค)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/file-upload-manual/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%AF%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%20153-2563.pdf"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากทวีโชค)เงินกู้ฉบับ35(เงินฝากทวีโชค)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/file-upload-manual/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%AF%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%20153-2563.pdf"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากทวีโชค)เงินกู้ฉบับ35(เงินฝากทวีโชค)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/file-upload-manual/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%AF%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%20153-2563.pdf"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากทวีโชค)เงินกู้ฉบับ35(เงินฝากทวีโชค)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/file-upload-manual/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%AF%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%20153-2563.pdf"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากทวีโชค)เงินกู้ฉบับ35(เงินฝากทวีโชค)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/file-upload-manual/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%AF%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%20153-2563.pdf"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากทวีโชค)เงินกู้ฉบับ35(เงินฝากทวีโชค)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/file-upload-manual/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%AF%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%20153-2563.pdf"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากทวีโชค)เงินกู้ฉบับ35(เงินฝากทวีโชค)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/file-upload-manual/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%AF%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%20153-2563.pdf"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากทวีโชค)เงินกู้ฉบับ35(เงินฝากทวีโชค)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/file-upload-manual/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%AF%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%20153-2563.pdf"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากทวีโชค)เงินกู้ฉบับ35(เงินฝากทวีโชค)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/file-upload-manual/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%AF%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%20153-2563.pdf"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากทวีโชค)เงินกู้ฉบับ35(เงินฝากทวีโชค)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)เงินกู้ฉบับ35(เงินฝากประจำที่ใช้เป็นประกัน)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/content-rate.php?content_group=19\u0026content_group_sub=19"
+    }
+  },
+  {
+    "service_provider": "ธ.ก.ส.",
+    "product": "สินเชื่อเงินสดเบิกทั้งจำนวน เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)เงินกู้ฉบับ35(บุคคลทั่วไปปกติ)",
+    "general_fees": {
+      "default_interest": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debt_collection": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "prepayment": {
+        "text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มี",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "credit_bureau_check": {
+        "text": "12 บาท/ครั้ง เงื่อนไข: กรณีไม่พบข้อมูลเครดิต 12 บาท/ครั้ง",
+        "fee": 12,
+        "conditions": ""
+      },
+      "stamp_duty": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "cheque_return": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "insufficient_funds": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "statement_reissue": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "transaction_inquiry": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      }
+    },
+    "revolving_fees": {
+      "card_fee": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "card_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "pin_replacement": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      },
+      "currency_risk": {
+        "text": "-",
+        "fee": null,
+        "conditions": "Error"
+      }
+    },
+    "payment_fees": {
+      "free_payment_methods": [
+        "ชำระโดยหักบัญชีของธนาคารผู้ให้บริการ",
+        "ชำระที่สาขาของผู้ให้บริการ"
+      ],
+      "debit_from_provider": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "debit_from_others": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "bank_branch": {
+        "text": "ไม่มีค่าธรรมเนียม",
+        "fee": 0,
+        "conditions": "None"
+      },
+      "other_branch": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "counter_service": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "online_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "atm_cdm": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "phone_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "cheque_payment": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      },
+      "other_methods": {
+        "text": "ไม่มีบริการ",
+        "fee": null,
+        "conditions": "No service"
+      }
+    },
+    "other_fees": {
+      "other_fee_details": [
+        "ค่าธรรมเนียมการออกหนังสือรับรองยอดเงินกู้คงเป็นหนี้ ออกที่สาขาต้นสังกัด 20 บาท/ต่างสาขา 100 บาท/ออกหนังสือรับรองภาษาอังกฤษ 100 บาท 2.ค่าธรรมเนียมการออกststementเงินกู้ 20 บาท"
+      ]
+    },
+    "additional_info": {
+      "fee_website": "https://www.baac.or.th/th/file-upload-manual/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%AF%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%20153-2563.pdf"
+    }
+  }
+]

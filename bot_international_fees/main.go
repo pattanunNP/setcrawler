@@ -5,68 +5,146 @@ import (
 	"encoding/json"
 	"fmt"
 	"internationla_fees/models"
-	"io"
+	"internationla_fees/utils"
 	"log"
 	"net/http"
 	"os"
-	"regexp"
 	"strconv"
-	"strings"
+	"time"
 
 	"github.com/PuerkitoBio/goquery"
 )
 
 func main() {
 	url := "https://app.bot.or.th/1213/MCPD/FeeApp/InternationalTransactionFee/CompareProductList"
-	payload := []byte(`{"ProductIdList":"122,107,108,97,81,116,13,34,39,37,99,72,20,30,38,118,12,4,52,24,19,85,50,91,104,73,15,109,100,21,66,65,51","Page":1,"Limit":3}`)
+	payloadTemplate := `{"ProductIdList":"122,107,108,97,81,116,13,34,39,37,99,72,20,30,38,118,12,4,52,24,19,85,50,91,104,73,15,109,100,21,66,65,51","Page":%d,"Limit":3}`
 
-	req, err := http.NewRequest("POST", url, bytes.NewBuffer(payload))
+	// Initialize first request to determine total pages
+	initialPayload := fmt.Sprintf(payloadTemplate, 1)
+	req, err := http.NewRequest("POST", url, bytes.NewBuffer([]byte(initialPayload)))
 	if err != nil {
 		log.Fatalf("Failed to create request: %v", err)
 	}
 
-	// Set headers
-	req.Header.Set("accept", "text/plain, */*; q=0.01")
-	req.Header.Set("accept-language", "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7")
-	req.Header.Set("content-type", "application/json; charset=UTF-8")
-	req.Header.Set("origin", "https://app.bot.or.th")
-	req.Header.Set("referer", "https://app.bot.or.th/1213/MCPD/FeeApp/InternationalTransactionFee/CompareProduct")
-	req.Header.Set("sec-ch-ua", `"Chromium";v="128", "Not;A=Brand";v="24", "Google Chrome";v="128"`)
-	req.Header.Set("sec-ch-ua-mobile", "?0")
-	req.Header.Set("sec-ch-ua-platform", `"macOS"`)
-	req.Header.Set("sec-fetch-dest", "empty")
-	req.Header.Set("sec-fetch-mode", "cors")
-	req.Header.Set("sec-fetch-site", "same-origin")
-	req.Header.Set("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
-	req.Header.Set("verificationtoken", "rFmM9hbbKpIhSDbHqnSdAEA7EXfxf6BPeusXcaOViG0yZo2bwKfQixWh9515bv11bgOXFI1qVp9pWHu9_lCQjyEF0Bj8dKpqB1ZQ_tdPQrU1,EB_9YBtb5lIDuCmC2AC3vws0nx1WUuVrlfLy0RNs3A0BEw81UrwGMPrKl6NegQP39MfC7HrjOce9dPwWdh719gdhaTjdOjRPCdZyudqINko1")
-	req.Header.Set("x-requested-with", "XMLHttpRequest")
+	utils.AddHeader(req)
 
 	client := &http.Client{}
 	resp, err := client.Do(req)
 	if err != nil {
-		log.Fatalf("Failed to make request: %v", err)
+		log.Fatalf("Failed to send request: %v", err)
 	}
 	defer resp.Body.Close()
 
-	body, err := io.ReadAll(resp.Body)
-	if err != nil {
-		log.Fatalf("Failed to read response body: %v", err)
+	// Check if response status is OK
+	if resp.StatusCode != http.StatusOK {
+		log.Fatalf("Unexpected status code: %d", resp.StatusCode)
 	}
 
-	doc, err := goquery.NewDocumentFromReader(bytes.NewReader(body))
+	// Parse the response HTML
+	doc, err := goquery.NewDocumentFromReader(resp.Body)
 	if err != nil {
-		log.Fatalf("Failed to parse HTML: %v", err)
+		log.Fatalf("Failed to parse response: %v", err)
+	}
+
+	totalPages := utils.DetermineTotalPage(doc)
+	if totalPages == 0 {
+		log.Fatal("Could not determine the total number of pages")
 	}
 
 	var international_fees []models.Fees
 
-	for i := 1; i <= 3; i++ {
-		col := "col" + strconv.Itoa(i)
-		provider := doc.Find(fmt.Sprintf("th.%s span", col)).Text()
-		provider = CleanText(provider)
+	for page := 1; page <= totalPages; page++ {
+		fmt.Printf("Processing page: %d/%d\n", page, totalPages)
+		payload := fmt.Sprintf(payloadTemplate, page)
 
-		international_fees = append(international_fees, models.Fees{Provider: provider})
+		req, err := http.NewRequest("POST", url, bytes.NewBuffer([]byte(payload)))
+		if err != nil {
+			log.Printf("Error creating request for page %d: %v", page, err)
+			continue
+		}
 
+		utils.AddHeader(req)
+
+		resp, err := client.Do(req)
+		if err != nil {
+			log.Printf("Error making request for page %d: %v", page, err)
+			continue
+		}
+		defer resp.Body.Close()
+
+		if resp.StatusCode != http.StatusOK {
+			fmt.Printf("Request for page %d failed with status: %d\n", page, resp.StatusCode)
+			continue
+		}
+
+		doc, err := goquery.NewDocumentFromReader(resp.Body)
+		if err != nil {
+			log.Printf("Error parsing HTML for page %d: %v", page, err)
+			continue
+		}
+
+		for i := 1; i <= 3; i++ {
+			col := "col" + strconv.Itoa(i)
+
+			var feeDetails models.Fees
+
+			feeDetails.Provider = utils.CleanText(doc.Find(fmt.Sprintf("th.%s span", col)).Text())
+
+			// Extract and populate InternationalTransferFees
+			inwardRemittanceText := utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-InwardRemittanceFee td.%s", col))
+			outwardRemittanceText := utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-OutwardRemittanceFee td.%s", col))
+
+			feeDetails.InternationalTransferFees.InwardRemittance = models.InwardRemittance{
+				Fee:                     utils.ExtractFee(inwardRemittanceText),
+				ExchangeCompensationFee: utils.ExtractCompensationFee(inwardRemittanceText),
+			}
+
+			feeDetails.InternationalTransferFees.OutwardRemittance = models.OutwardRemittance{
+				FeeType:                 utils.ExtractFeeType(outwardRemittanceText),
+				Conditions:              utils.ProcessTextWithPattern(outwardRemittanceText),
+				ExchangeCompensationFee: utils.ExtractCompensationFee(outwardRemittanceText),
+			}
+
+			// Extract and populate CheckAndDraftFees
+			feeDetails.CheckAndDraftFees.TravelerChequeBuyingFee = utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-TravelerChequeBuyingFee td.%s", col))
+			feeDetails.CheckAndDraftFees.TravelerChequeSellingFee = utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-TravelerChequeSellingFee td.%s", col))
+			feeDetails.CheckAndDraftFees.DraftBuyingFee = utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-DraftBuyingFee td.%s", col))
+			feeDetails.CheckAndDraftFees.DraftSellingFee = utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-DraftSellingFee td.%s", col))
+			feeDetails.CheckAndDraftFees.ForeignBillBuyingFee = utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-ForeignBillBuyingFee td.%s", col))
+			feeDetails.CheckAndDraftFees.ForeignBillSellingFee = utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-ForeignBillSellingFee td.%s", col))
+			feeDetails.CheckAndDraftFees.ExchangeCompensationFee = utils.ExtractCompensationFeeFromTd(doc, fmt.Sprintf(".attr-ExchangeCompensationFee td.%s", col))
+
+			// Extract and populate LetterOfCreditFees
+			feeDetails.LetterOfCreditFees.ForeignLC = utils.CleanText(utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-ForeignLetterOfCreditFee td.%s", col)))
+			feeDetails.LetterOfCreditFees.DomesticLC = utils.CleanText(utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-DomesticLetterOfCreditFee td.%s", col)))
+
+			// Extract and populate BillCollectionFees
+			feeDetails.BillCollectionFees.InwardBillFee = utils.CleanText(utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-InwardBillFee td.%s", col)))
+			feeDetails.BillCollectionFees.OutwardBillFeeExporter = utils.CleanText(utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-OutwardBillFeeFromExporter td.%s", col)))
+			feeDetails.BillCollectionFees.OutwardBillFeeImporter = utils.CleanText(utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-OutwardBillFeeFromImporter td.%s", col)))
+			feeDetails.BillCollectionFees.ImportBillFee = utils.CleanText(utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-ImportBillFee td.%s", col)))
+			feeDetails.BillCollectionFees.ExportBillFeeSeller = models.InvoiceFees{
+				FirstInvoice:       utils.CleanText(utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-FirstInvoice td.%s", col))),
+				SubsequentInvoices: utils.CleanText(utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-SubsequentInvoices td.%s", col))),
+			}
+			feeDetails.BillCollectionFees.ExportBillFeeBuyer = utils.CleanText(utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-ExportBillFeeFromBuyer td.%s", col)))
+
+			// Extract and populate OtherFees
+			otherFeeText := utils.CleanText(utils.ExtractTextInsideElement(doc, fmt.Sprintf(".attr-OtherFees td.%s", col)))
+			if otherFeeText != "" {
+				otherFeesArray := utils.SplitAndCleanText(otherFeeText, "-")
+				feeDetails.OtherFees.OtherFee = otherFeesArray
+			}
+
+			// Extract and populate AdditionalInformation (only one URL field)
+			feeURL := doc.Find(fmt.Sprintf(".attr-FeeURL td.%s a.prod-url", col)).AttrOr("href", "")
+			if feeURL != "" {
+				feeDetails.AdditionalInformation.FeeURL = &feeURL
+			}
+
+			international_fees = append(international_fees, feeDetails)
+		}
+		time.Sleep(2 * time.Second)
 	}
 
 	file, err := json.MarshalIndent(international_fees, "", " ")
@@ -80,9 +158,4 @@ func main() {
 	}
 
 	fmt.Println("Data successfully saved to international_fee.json")
-}
-
-func CleanText(text string) string {
-	re := regexp.MustCompile(`\s+`)
-	return strings.TrimSpace(re.ReplaceAllString(text, " "))
 }
