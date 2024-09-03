@@ -435,13 +435,23 @@ func getLitigationLawyerFee(doc *goquery.Document, index int) []string {
 	return []string{CleanText(htmlContent)}
 }
 
-func getOtherFeesDetails(doc *goquery.Document, index int) *string {
+func getOtherFeesDetails(doc *goquery.Document, index int) []string {
 	selector := fmt.Sprintf("tr.attr-OtherFee td.cmpr-col.col%d span", index)
 	text := CleanText(doc.Find(selector).Text())
 	if text == "" {
-		return nil
+		return []string{}
 	}
-	return &text
+
+	// Adjusted regex to match "number. description" without using lookahead
+	re := regexp.MustCompile(`\d+\..*?`)
+	matches := re.FindAllString(text, -1)
+
+	// Trim spaces and add to the result
+	var result []string
+	for _, match := range matches {
+		result = append(result, strings.TrimSpace(match))
+	}
+	return result
 }
 
 func getAdditionInfo(doc *goquery.Document, index int) *AdditionalInfo {

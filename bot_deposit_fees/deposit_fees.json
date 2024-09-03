@@ -3,29 +3,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ เงินฝากประจำ 10 เดือนเงินฝากประจำ 10 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -38,29 +95,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ เงินฝากประจำ 12 เดือนเงินฝากประจำ 12 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -73,29 +187,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ เงินฝากประจำ 14 เดือนเงินฝากประจำ 14 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -108,29 +279,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ เงินฝากประจำ 24 เดือนเงินฝากประจำ 24 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -143,29 +371,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ เงินฝากประจำ 3 เดือนเงินฝากประจำ 3 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -178,29 +463,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ เงินฝากประจำ 36 เดือนเงินฝากประจำ 36 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -213,29 +555,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ เงินฝากประจำ 6 เดือนเงินฝากประจำ 6 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -248,29 +647,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ เงินฝากประจำ 7 เดือนเงินฝากประจำ 7 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -283,29 +739,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ เงินฝากประจำขวัญบัวหลวง ระยะเวลาการฝาก 12 เดือนเงินฝากประจำขวัญบัวหลวง ระยะเวลาการฝาก 12 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -318,29 +831,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ เงินฝากประจำขวัญบัวหลวง ระยะเวลาการฝาก 3 เดือนเงินฝากประจำขวัญบัวหลวง ระยะเวลาการฝาก 3 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -353,29 +923,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ เงินฝากประจำขวัญบัวหลวง ระยะเวลาการฝาก 6 เดือนเงินฝากประจำขวัญบัวหลวง ระยะเวลาการฝาก 6 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -388,29 +1015,106 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากออมทรัพย์ บัญชีเงินฝากพื้นฐานบัญชีเงินฝากพื้นฐาน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "15 บาท/บัญชี เงื่อนไข: - Standard SMS แพ๊กเกจรายเดือน 15 บาทต่อบัญชี- Standard SMS แพ๊กเกจรายปี 149 บาทต่อบัญชี เงื่อนไข Standard SMS - เฉพาะบัญชีเงินฝากสะสมทรัพย์ และกระแสรายวัน ประเภทบุคคลธรรมดาเท่านั้น- หมายเลขโทรศัพท์มือถือ 1 หมายเลข สามารถใช้ลงทะเบียนโดยลูกค้า 1 คนเท่านั้น- บัญชีเงินฝาก 1 บัญชีสามารถสมัครใช้บริการ โดยใช้หมายเลขโทรศัพท์ 1 หมายเลขเท่านัั้น- ลูกค้าจะได้รับ SMS แจ้งเตือนทันที เมื่อ มีรายการเงินเข้า-ออกจากบัญชีตั้งแต่ 500 บาทขึ้นไป - Super SMS แพ๊กเกจรายเดือน 30 บาทต่อหมายเลขโทรศัพท์มือถือต่อบัญชี- Super SMS แพ๊กเกจรายปี 299 บาท ต่อหมายเลขโทรศัพท์มือถือต่อบัญชี เงื่อนไข Super SMS- เฉพาะบัญชีเงินฝากสะสมทรัพย์ และกระแสรายวัน ประเภทบุคคลธรรมดา (บัญชีเดี่ยว และบัญชีร่วม) และนิติบุคคล - หมายเลขโทรศัพท์มือถือ 1 หมายเลข สามารถใช้ลงทะเบียนโดยลูกค้า 1 คนเท่านั้น- บัญชีเงินฝาก 1 บัญชี สามารถสมัครใช้บริการโดยใช้หมายเลขโทรศัพท์ได้สูงสุด 3 หมายเลข (คิดค่าธรรมเนียมการใช้บริการตามจำนวนหมายเลขโทรศัพท์มือถือ)- ลูกค้าจะได้รับ SMS แจ้งเตือนทันที เมื่อ มีรายการเงินเข้า-ออกจากบัญชีทุกรายการ- Standard SMS และ Super SMS ลูกค้าสามารถขอเปลี่ยนแปลงหมายเลขโทรศัพท์ในการรับ SMS ผ่านทางสาขาของธนาคาร ในกรณีที่ไม่ได้ทำการเปลี่ยนแปลงหมายเลขโทรศัพท์ ธนาคารไม่สามารถรับผิดชอบในความเสียหาย หากข้อความถูกส่งไปยังผู้รับท่านอื่น",
-   "short_message_service_annual_fee": "299 บาท/บัญชี เงื่อนไข: - Standard SMS แพ๊กเกจรายเดือน 15 บาทต่อบัญชี- Standard SMS แพ๊กเกจรายปี 149 บาทต่อบัญชี เงื่อนไข Standard SMS - เฉพาะบัญชีเงินฝากสะสมทรัพย์ และกระแสรายวัน ประเภทบุคคลธรรมดาเท่านั้น- หมายเลขโทรศัพท์มือถือ 1 หมายเลข สามารถใช้ลงทะเบียนโดยลูกค้า 1 คนเท่านั้น- บัญชีเงินฝาก 1 บัญชีสามารถสมัครใช้บริการ โดยใช้หมายเลขโทรศัพท์ 1 หมายเลขเท่านัั้น- ลูกค้าจะได้รับ SMS แจ้งเตือนทันที เมื่อ มีรายการเงินเข้า-ออกจากบัญชีตั้งแต่ 500 บาทขึ้นไป - Super SMS แพ๊กเกจรายเดือน 30 บาทต่อหมายเลขโทรศัพท์มือถือต่อบัญชี- Super SMS แพ๊กเกจรายปี 299 บาท ต่อหมายเลขโทรศัพท์มือถือต่อบัญชี เงื่อนไข Super SMS- เฉพาะบัญชีเงินฝากสะสมทรัพย์ และกระแสรายวัน ประเภทบุคคลธรรมดา (บัญชีเดี่ยว และบัญชีร่วม) และนิติบุคคล - หมายเลขโทรศัพท์มือถือ 1 หมายเลข สามารถใช้ลงทะเบียนโดยลูกค้า 1 คนเท่านั้น- บัญชีเงินฝาก 1 บัญชี สามารถสมัครใช้บริการโดยใช้หมายเลขโทรศัพท์ได้สูงสุด 3 หมายเลข (คิดค่าธรรมเนียมการใช้บริการตามจำนวนหมายเลขโทรศัพท์มือถือ)- ลูกค้าจะได้รับ SMS แจ้งเตือนทันที เมื่อ มีรายการเงินเข้า-ออกจากบัญชีทุกรายการ- Standard SMS และ Super SMS ลูกค้าสามารถขอเปลี่ยนแปลงหมายเลขโทรศัพท์ในการรับ SMS ผ่านทางสาขาของธนาคาร ในกรณีที่ไม่ได้ทำการเปลี่ยนแปลงหมายเลขโทรศัพท์ ธนาคารไม่สามารถรับผิดชอบในความเสียหาย หากข้อความถูกส่งไปยังผู้รับท่านอื่น",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "15 บาท/บัญชี เงื่อนไข:",
+    "Standard SMS แพ๊กเกจรายเดือน 15 บาทต่อบัญชี",
+    "Standard SMS แพ๊กเกจรายปี 149 บาทต่อบัญชี เงื่อนไข Standard SMS",
+    "เฉพาะบัญชีเงินฝากสะสมทรัพย์ และกระแสรายวัน ประเภทบุคคลธรรมดาเท่านั้น",
+    "หมายเลขโทรศัพท์มือถือ 1 หมายเลข สามารถใช้ลงทะเบียนโดยลูกค้า 1 คนเท่านั้น",
+    "บัญชีเงินฝาก 1 บัญชีสามารถสมัครใช้บริการ โดยใช้หมายเลขโทรศัพท์ 1 หมายเลขเท่านัั้น",
+    "ลูกค้าจะได้รับ SMS แจ้งเตือนทันที เมื่อ มีรายการเงินเข้า",
+    "ออกจากบัญชีตั้งแต่ 500 บาทขึ้นไป",
+    "Super SMS แพ๊กเกจรายเดือน 30 บาทต่อหมายเลขโทรศัพท์มือถือต่อบัญชี",
+    "Super SMS แพ๊กเกจรายปี 299 บาท ต่อหมายเลขโทรศัพท์มือถือต่อบัญชี เงื่อนไข Super SMS",
+    "เฉพาะบัญชีเงินฝากสะสมทรัพย์ และกระแสรายวัน ประเภทบุคคลธรรมดา (บัญชีเดี่ยว และบัญชีร่วม) และนิติบุคคล",
+    "หมายเลขโทรศัพท์มือถือ 1 หมายเลข สามารถใช้ลงทะเบียนโดยลูกค้า 1 คนเท่านั้น",
+    "บัญชีเงินฝาก 1 บัญชี สามารถสมัครใช้บริการโดยใช้หมายเลขโทรศัพท์ได้สูงสุด 3 หมายเลข (คิดค่าธรรมเนียมการใช้บริการตามจำนวนหมายเลขโทรศัพท์มือถือ)",
+    "ลูกค้าจะได้รับ SMS แจ้งเตือนทันที เมื่อ มีรายการเงินเข้า",
+    "ออกจากบัญชีทุกรายการ",
+    "Standard SMS และ Super SMS ลูกค้าสามารถขอเปลี่ยนแปลงหมายเลขโทรศัพท์ในการรับ SMS ผ่านทางสาขาของธนาคาร ในกรณีที่ไม่ได้ทำการเปลี่ยนแปลงหมายเลขโทรศัพท์ ธนาคารไม่สามารถรับผิดชอบในความเสียหาย หากข้อความถูกส่งไปยังผู้รับท่านอื่น"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": 15,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "ตามอัตราที่กำหนด30 - 1,020 บาท/รายการ เงื่อนไข: ค่าธรรมเนียมหมื่นละ 10 บาท (ขั้นต่ำ 10 บาท สูงสุดไม่เกิน 1,000 บาท) บวกค่าบริการ 20 บาทต่อรายการบัญชีเงินฝากประจำไม่สามารถถอนเงินข้ามเขตได้",
-   "kiosk_other_fee": "50 - 120 บาท/รายการ วงเงินไม่เกิน 10,000 บาท: 50 บาท/รายการวงเงิน 10,001 – 20,000 บาท: 60 บาท/รายการ วงเงิน 20,001 – 30,000 บาท: 70 บาท/รายการ วงเงิน 30,001 – 40,000 บาท: 80 บาท/รายการวงเงิน 40,001 – 50,000 บาท: 90 บาท/รายการ วงเงิน 50,001 – 65,000 บาท: 100 บาท/รายการ วงเงิน 65,001 – 80,000 บาท: 110 บาท/รายการวงเงิน 80,001 – 100,000 บาท: 120 บาท/รายการ",
-   "kiosk_fee": "ตามอัตราที่กำหนด20 - 1,010 บาท/รายการ เงื่อนไข: ขั้นต่ำ 10 บาท แต่ไม่เกิน 1,000 บาทบวกค่าบริการ 10 บาท ต่อรายการ",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "ตามอัตราที่กำหนด30",
+    "1,020 บาท/รายการ เงื่อนไข: ค่าธรรมเนียมหมื่นละ 10 บาท (ขั้นต่ำ 10 บาท สูงสุดไม่เกิน 1,000 บาท) บวกค่าบริการ 20 บาทต่อรายการบัญชีเงินฝากประจำไม่สามารถถอนเงินข้ามเขตได้"
+   ],
+   "kiosk_other_fee": [
+    "50",
+    "120 บาท/รายการ วงเงินไม่เกิน 10,000 บาท: 50 บาท/รายการวงเงิน 10,001 – 20,000 บาท: 60 บาท/รายการ วงเงิน 20,001 – 30,000 บาท: 70 บาท/รายการ วงเงิน 30,001 – 40,000 บาท: 80 บาท/รายการวงเงิน 40,001 – 50,000 บาท: 90 บาท/รายการ วงเงิน 50,001 – 65,000 บาท: 100 บาท/รายการ วงเงิน 65,001 – 80,000 บาท: 110 บาท/รายการวงเงิน 80,001 – 100,000 บาท: 120 บาท/รายการ"
+   ],
+   "kiosk_fee": [
+    "ตามอัตราที่กำหนด20",
+    "1,010 บาท/รายการ เงื่อนไข: ขั้นต่ำ 10 บาท แต่ไม่เกิน 1,000 บาทบวกค่าบริการ 10 บาท ต่อรายการ"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "15 - 20 บาท/รายการ เงื่อนไข: เป็นไปตามเงื่อนไขของแต่ละตัวแทนธนาคาร",
-   "post_agent_fee": "ไม่มีบริการ",
-   "topup_agent_fee": "ไม่มีบริการ",
-   "other_agent_fee": "ไม่มีบริการ",
-   "transfer_between_saving_current_account_fee": "30 บาท/วัน เงื่อนไข: เฉพาะวันที่มีรายการ",
-   "transfer_between_banking_fee": "50 - 120 บาท/รายการ วงเงินไม่เกิน 10,000 บาท: 50 บาท/รายการวงเงิน 10,001 – 20,000 บาท: 60 บาท/รายการ วงเงิน 20,001 – 30,000 บาท: 70 บาท/รายการ วงเงิน 30,001 – 40,000 บาท: 80 บาท/รายการวงเงิน 40,001 – 50,000 บาท: 90 บาท/รายการ วงเงิน 50,001 – 65,000 บาท: 100 บาท/รายการ วงเงิน 65,001 – 80,000 บาท: 110 บาท/รายการวงเงิน 80,001 – 100,000 บาท: 120 บาท/รายการ"
+   "shop_agent_fee": [
+    "15",
+    "20 บาท/รายการ เงื่อนไข: เป็นไปตามเงื่อนไขของแต่ละตัวแทนธนาคาร"
+   ],
+   "post_agent_fee": [
+    "ไม่มีบริการ"
+   ],
+   "topup_agent_fee": [
+    "ไม่มีบริการ"
+   ],
+   "other_agent_fee": [
+    "ไม่มีบริการ"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "30 บาท/วัน เงื่อนไข: เฉพาะวันที่มีรายการ"
+   ],
+   "transfer_between_banking_fee": [
+    "50",
+    "120 บาท/รายการ วงเงินไม่เกิน 10,000 บาท: 50 บาท/รายการวงเงิน 10,001 – 20,000 บาท: 60 บาท/รายการ วงเงิน 20,001 – 30,000 บาท: 70 บาท/รายการ วงเงิน 30,001 – 40,000 บาท: 80 บาท/รายการวงเงิน 40,001 – 50,000 บาท: 90 บาท/รายการ วงเงิน 50,001 – 65,000 บาท: 100 บาท/รายการ วงเงิน 65,001 – 80,000 บาท: 110 บาท/รายการวงเงิน 80,001 – 100,000 บาท: 120 บาท/รายการ"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": 30,
+   "kiosk_other_fee": 50,
+   "kiosk_fee": 20,
+   "agent_fee": null,
+   "shop_agent_fee": 15,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": 30,
+   "transfer_between_banking_fee": 50
   },
   "other_fees": {
    "other_fee": null
@@ -423,29 +1127,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ สินมัธยะทรัพย์ทวี 24 เดือนสินมัธยะทรัพย์ทวี 24 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -458,29 +1219,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ สินมัธยะทรัพย์ทวี 36 เดือนสินมัธยะทรัพย์ทวี 36 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -493,29 +1311,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ สินมัธยะทรัพย์ทวี 48 เดือนสินมัธยะทรัพย์ทวี 48 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -528,29 +1403,86 @@
   "provider": "กรุงเทพ",
   "product": "เงินฝากประจำ สินมัธยะทรัพย์ทวี 60 เดือนสินมัธยะทรัพย์ทวี 60 เดือน",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": [
+    "ไม่มีการเรียกเก็บค่ารักษาบัญชี"
+   ],
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "100 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": [
+    "100 บาท/ฉบับ/บัญชี"
+   ],
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": [
+    "500 บาท/ฉบับ/บัญชี"
+   ],
+   "short_message_service": null,
+   "short_message_service_fee_monthly": [
+    "ไม่มีบริการ"
+   ],
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": [
+    "100 บาท/เล่ม"
+   ],
+   "account_close_fee": [
+    "ไม่มีค่าธรรมเนียม"
+   ]
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": 100,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": 500,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": 100,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": [
+    "1% ของมูลค่าเหรียญทั้งหมด เงื่อนไข: ฝากในคราวเดียวกัน หรือในหนึ่งวันรวมกันเกินกว่า 2,000 บาทขึ้นไป คิดในอัตรา 1% จากมูลค่าเหรียญกษาปณ์"
+   ],
+   "branch_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_other_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "kiosk_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "post_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "topup_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "other_agent_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_saving_current_account_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ],
+   "transfer_between_banking_fee": [
+    "เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   ]
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": 1,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
    "other_fee": null
@@ -560,350 +1492,60 @@
   }
  },
  {
-  "provider": "กรุงไทย",
-  "product": "เงินฝากประจำ เงินฝาก Krungthai Zero Tax Max 24 เดือนเงินฝาก Krungthai Zero Tax Max 24 เดือน",
+  "provider": "",
+  "product": "",
   "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
+   "account_maintenance_fee": null,
    "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "50 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
+   "statement_require_six_month": null,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": null,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": null,
+   "account_close_fee": null
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": null,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": null,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": null,
+   "account_close_fee": null
   },
   "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญที่เกิน เงื่อนไข: หน่วยงานราชการ : ยกเว้นรัฐวิสาหกิจ และบุคคลทั่วไป - ไม่เกิน 2,000 บาท ยกเว้นค่าบริการ - ส่วนที่เกิน 2,000 บาท ร้อยละ 1 บาทของยอดเงินฝากส่วนที่เกิน 2,000 บาท",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
+   "coin_collect_fee": null,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
    "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": null,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
   },
   "other_fees": {
-   "other_fee": "การออกใบแสดงรายการบัญชีเงินฝาก (Bank Account Statement) ในรูปแบบการจัดส่งทางอีเมล(e-mail)-ย้อนหลังน้อยกว่า 6 เดือน คิดค่าธรรมเนียม 100.-บาท/ครั้ง/บัญชี -ย้อนหลังตั้งแต่ 6 เดือน - 2 ปี คิดค่าธรรมเนียม 200.-บาท/ครั้ง/บัญชี-ย้อนหลังมากกว่า 2 ปี คิดค่าธรรมเนียม 500.-บาท/ครั้ง/บัญชี"
-  },
-  "additional_info": {
-   "fee_url": null
-  }
- },
- {
-  "provider": "กรุงไทย",
-  "product": "เงินฝากประจำ เงินฝาก Krungthai Zero Tax Max 36 เดือนเงินฝาก Krungthai Zero Tax Max 36 เดือน",
-  "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
-   "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "50 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
-  },
-  "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญที่เกิน เงื่อนไข: หน่วยงานราชการ : ยกเว้นรัฐวิสาหกิจ และบุคคลทั่วไป - ไม่เกิน 2,000 บาท ยกเว้นค่าบริการ - ส่วนที่เกิน 2,000 บาท ร้อยละ 1 บาทของยอดเงินฝากส่วนที่เกิน 2,000 บาท",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
-  },
-  "other_fees": {
-   "other_fee": "การออกใบแสดงรายการบัญชีเงินฝาก (Bank Account Statement) ในรูปแบบการจัดส่งทางอีเมล(e-mail)-ย้อนหลังน้อยกว่า 6 เดือน คิดค่าธรรมเนียม 100.-บาท/ครั้ง/บัญชี -ย้อนหลังตั้งแต่ 6 เดือน - 2 ปี คิดค่าธรรมเนียม 200.-บาท/ครั้ง/บัญชี-ย้อนหลังมากกว่า 2 ปี คิดค่าธรรมเนียม 500.-บาท/ครั้ง/บัญชี"
-  },
-  "additional_info": {
-   "fee_url": null
-  }
- },
- {
-  "provider": "กรุงไทย",
-  "product": "เงินฝากประจำ เงินฝาก Krungthai Zero Tax Max 48 เดือนเงินฝาก Krungthai Zero Tax Max 48 เดือน",
-  "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
-   "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "50 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
-  },
-  "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญที่เกิน เงื่อนไข: หน่วยงานราชการ : ยกเว้นรัฐวิสาหกิจ และบุคคลทั่วไป - ไม่เกิน 2,000 บาท ยกเว้นค่าบริการ - ส่วนที่เกิน 2,000 บาท ร้อยละ 1 บาทของยอดเงินฝากส่วนที่เกิน 2,000 บาท",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
-  },
-  "other_fees": {
-   "other_fee": "การออกใบแสดงรายการบัญชีเงินฝาก (Bank Account Statement) ในรูปแบบการจัดส่งทางอีเมล(e-mail)-ย้อนหลังน้อยกว่า 6 เดือน คิดค่าธรรมเนียม 100.-บาท/ครั้ง/บัญชี -ย้อนหลังตั้งแต่ 6 เดือน - 2 ปี คิดค่าธรรมเนียม 200.-บาท/ครั้ง/บัญชี-ย้อนหลังมากกว่า 2 ปี คิดค่าธรรมเนียม 500.-บาท/ครั้ง/บัญชี"
-  },
-  "additional_info": {
-   "fee_url": null
-  }
- },
- {
-  "provider": "กรุงไทย",
-  "product": "เงินฝากประจำ เงินฝากประจำ 12 เดือนเงินฝากประจำ 12 เดือน",
-  "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
-   "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "50 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
-  },
-  "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญที่เกิน เงื่อนไข: หน่วยงานราชการ : ยกเว้นรัฐวิสาหกิจ และบุคคลทั่วไป - ไม่เกิน 2,000 บาท ยกเว้นค่าบริการ - ส่วนที่เกิน 2,000 บาท ร้อยละ 1 บาทของยอดเงินฝากส่วนที่เกิน 2,000 บาท",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
-  },
-  "other_fees": {
-   "other_fee": "การออกใบแสดงรายการบัญชีเงินฝาก (Bank Account Statement) ในรูปแบบการจัดส่งทางอีเมล(e-mail)-ย้อนหลังน้อยกว่า 6 เดือน คิดค่าธรรมเนียม 100.-บาท/ครั้ง/บัญชี -ย้อนหลังตั้งแต่ 6 เดือน - 2 ปี คิดค่าธรรมเนียม 200.-บาท/ครั้ง/บัญชี-ย้อนหลังมากกว่า 2 ปี คิดค่าธรรมเนียม 500.-บาท/ครั้ง/บัญชี"
-  },
-  "additional_info": {
-   "fee_url": null
-  }
- },
- {
-  "provider": "กรุงไทย",
-  "product": "ใบรับเงินฝากประจำ เงินฝากประจำ 12 เดือนเงินฝากประจำ 12 เดือน",
-  "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
-   "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "ไม่มีบริการ",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
-  },
-  "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญที่เกิน เงื่อนไข: หน่วยงานราชการ : ยกเว้นรัฐวิสาหกิจ และบุคคลทั่วไป - ไม่เกิน 2,000 บาท ยกเว้นค่าบริการ - ส่วนที่เกิน 2,000 บาท ร้อยละ 1 บาทของยอดเงินฝากส่วนที่เกิน 2,000 บาท",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
-  },
-  "other_fees": {
-   "other_fee": "การออกใบแสดงรายการบัญชีเงินฝาก (Bank Account Statement) ในรูปแบบการจัดส่งทางอีเมล(e-mail)-ย้อนหลังน้อยกว่า 6 เดือน คิดค่าธรรมเนียม 100.-บาท/ครั้ง/บัญชี -ย้อนหลังตั้งแต่ 6 เดือน - 2 ปี คิดค่าธรรมเนียม 200.-บาท/ครั้ง/บัญชี-ย้อนหลังมากกว่า 2 ปี คิดค่าธรรมเนียม 500.-บาท/ครั้ง/บัญชี"
-  },
-  "additional_info": {
-   "fee_url": null
-  }
- },
- {
-  "provider": "กรุงไทย",
-  "product": "ใบรับเงินฝากประจำ เงินฝากประจำ 24 เดือนเงินฝากประจำ 24 เดือน",
-  "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
-   "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "ไม่มีบริการ",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
-  },
-  "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญที่เกิน เงื่อนไข: หน่วยงานราชการ : ยกเว้นรัฐวิสาหกิจ และบุคคลทั่วไป - ไม่เกิน 2,000 บาท ยกเว้นค่าบริการ - ส่วนที่เกิน 2,000 บาท ร้อยละ 1 บาทของยอดเงินฝากส่วนที่เกิน 2,000 บาท",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
-  },
-  "other_fees": {
-   "other_fee": "การออกใบแสดงรายการบัญชีเงินฝาก (Bank Account Statement) ในรูปแบบการจัดส่งทางอีเมล(e-mail)-ย้อนหลังน้อยกว่า 6 เดือน คิดค่าธรรมเนียม 100.-บาท/ครั้ง/บัญชี -ย้อนหลังตั้งแต่ 6 เดือน - 2 ปี คิดค่าธรรมเนียม 200.-บาท/ครั้ง/บัญชี-ย้อนหลังมากกว่า 2 ปี คิดค่าธรรมเนียม 500.-บาท/ครั้ง/บัญชี"
-  },
-  "additional_info": {
-   "fee_url": null
-  }
- },
- {
-  "provider": "กรุงไทย",
-  "product": "เงินฝากประจำ เงินฝากประจำ 24 เดือนเงินฝากประจำ 24 เดือน",
-  "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
-   "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "50 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
-  },
-  "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญที่เกิน เงื่อนไข: หน่วยงานราชการ : ยกเว้นรัฐวิสาหกิจ และบุคคลทั่วไป - ไม่เกิน 2,000 บาท ยกเว้นค่าบริการ - ส่วนที่เกิน 2,000 บาท ร้อยละ 1 บาทของยอดเงินฝากส่วนที่เกิน 2,000 บาท",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
-  },
-  "other_fees": {
-   "other_fee": "การออกใบแสดงรายการบัญชีเงินฝาก (Bank Account Statement) ในรูปแบบการจัดส่งทางอีเมล(e-mail)-ย้อนหลังน้อยกว่า 6 เดือน คิดค่าธรรมเนียม 100.-บาท/ครั้ง/บัญชี -ย้อนหลังตั้งแต่ 6 เดือน - 2 ปี คิดค่าธรรมเนียม 200.-บาท/ครั้ง/บัญชี-ย้อนหลังมากกว่า 2 ปี คิดค่าธรรมเนียม 500.-บาท/ครั้ง/บัญชี"
-  },
-  "additional_info": {
-   "fee_url": null
-  }
- },
- {
-  "provider": "กรุงไทย",
-  "product": "เงินฝากประจำ เงินฝากประจำ 3 เดือนเงินฝากประจำ 3 เดือน",
-  "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
-   "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "50 บาท/เล่ม",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
-  },
-  "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญที่เกิน เงื่อนไข: หน่วยงานราชการ : ยกเว้นรัฐวิสาหกิจ และบุคคลทั่วไป - ไม่เกิน 2,000 บาท ยกเว้นค่าบริการ - ส่วนที่เกิน 2,000 บาท ร้อยละ 1 บาทของยอดเงินฝากส่วนที่เกิน 2,000 บาท",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
-  },
-  "other_fees": {
-   "other_fee": "การออกใบแสดงรายการบัญชีเงินฝาก (Bank Account Statement) ในรูปแบบการจัดส่งทางอีเมล(e-mail)-ย้อนหลังน้อยกว่า 6 เดือน คิดค่าธรรมเนียม 100.-บาท/ครั้ง/บัญชี -ย้อนหลังตั้งแต่ 6 เดือน - 2 ปี คิดค่าธรรมเนียม 200.-บาท/ครั้ง/บัญชี-ย้อนหลังมากกว่า 2 ปี คิดค่าธรรมเนียม 500.-บาท/ครั้ง/บัญชี"
-  },
-  "additional_info": {
-   "fee_url": null
-  }
- },
- {
-  "provider": "กรุงไทย",
-  "product": "ใบรับเงินฝากประจำ เงินฝากประจำ 3 เดือนเงินฝากประจำ 3 เดือน",
-  "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
-   "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "ไม่มีบริการ",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
-  },
-  "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญที่เกิน เงื่อนไข: หน่วยงานราชการ : ยกเว้นรัฐวิสาหกิจ และบุคคลทั่วไป - ไม่เกิน 2,000 บาท ยกเว้นค่าบริการ - ส่วนที่เกิน 2,000 บาท ร้อยละ 1 บาทของยอดเงินฝากส่วนที่เกิน 2,000 บาท",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
-  },
-  "other_fees": {
-   "other_fee": "การออกใบแสดงรายการบัญชีเงินฝาก (Bank Account Statement) ในรูปแบบการจัดส่งทางอีเมล(e-mail)-ย้อนหลังน้อยกว่า 6 เดือน คิดค่าธรรมเนียม 100.-บาท/ครั้ง/บัญชี -ย้อนหลังตั้งแต่ 6 เดือน - 2 ปี คิดค่าธรรมเนียม 200.-บาท/ครั้ง/บัญชี-ย้อนหลังมากกว่า 2 ปี คิดค่าธรรมเนียม 500.-บาท/ครั้ง/บัญชี"
-  },
-  "additional_info": {
-   "fee_url": null
-  }
- },
- {
-  "provider": "กรุงไทย",
-  "product": "ใบรับเงินฝากประจำ เงินฝากประจำ 36 เดือนเงินฝากประจำ 36 เดือน",
-  "product_fees": {
-   "account_maintenance_fee": "ไม่มีการเรียกเก็บค่ารักษาบัญชี",
-   "statement_require_fee": null,
-   "statement_require_six_month": "100 บาท/ฉบับ/บัญชี",
-   "statement_require_six_month_to_two_year": "200 บาท/ฉบับ/บัญชี",
-   "statement_require_two_year": "500 บาท/ฉบับ/บัญชี",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "ไม่มีบริการ",
-   "short_message_service_annual_fee": "ไม่มีบริการ",
-   "lost_passbook_fee": "ไม่มีบริการ",
-   "account_close_fee": "ไม่มีค่าธรรมเนียม"
-  },
-  "general_fees": {
-   "coin_collect_fee": "1% ของมูลค่าเหรียญที่เกิน เงื่อนไข: หน่วยงานราชการ : ยกเว้นรัฐวิสาหกิจ และบุคคลทั่วไป - ไม่เกิน 2,000 บาท ยกเว้นค่าบริการ - ส่วนที่เกิน 2,000 บาท ร้อยละ 1 บาทของยอดเงินฝากส่วนที่เกิน 2,000 บาท",
-   "brance_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_other_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "kiosk_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "agent_fee": null,
-   "shop_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "post_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "topup_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "other_agent_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_saving_current_account_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้",
-   "transfer_between_banking_fee": "- เงื่อนไข: เนื่องจากข้อจำกัดของผลิตภัณฑ์ ค่าธรรมเนียมข้างต้นจึงไม่นำมาใช้กับผลิตภัณฑ์นี้"
-  },
-  "other_fees": {
-   "other_fee": "การออกใบแสดงรายการบัญชีเงินฝาก (Bank Account Statement) ในรูปแบบการจัดส่งทางอีเมล(e-mail)-ย้อนหลังน้อยกว่า 6 เดือน คิดค่าธรรมเนียม 100.-บาท/ครั้ง/บัญชี -ย้อนหลังตั้งแต่ 6 เดือน - 2 ปี คิดค่าธรรมเนียม 200.-บาท/ครั้ง/บัญชี-ย้อนหลังมากกว่า 2 ปี คิดค่าธรรมเนียม 500.-บาท/ครั้ง/บัญชี"
+   "other_fee": null
   },
   "additional_info": {
    "fee_url": null
@@ -913,20 +1555,45 @@
   "provider": "",
   "product": "",
   "product_fees": {
-   "account_maintenance_fee": "",
+   "account_maintenance_fee": null,
    "statement_require_fee": null,
-   "statement_require_six_month": "",
-   "statement_require_six_month_to_two_year": "",
-   "statement_require_two_year": "",
-   "short_message_service": "",
-   "short_message_service_fee_monthly": "",
-   "short_message_service_annual_fee": "",
-   "lost_passbook_fee": "",
-   "account_close_fee": ""
+   "statement_require_six_month": null,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": null,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": null,
+   "account_close_fee": null
+  },
+  "numeric_product_fees": {
+   "account_maintenance_fee": null,
+   "statement_require_fee": null,
+   "statement_require_six_month": null,
+   "statement_require_six_month_to_two_year": null,
+   "statement_require_two_year": null,
+   "short_message_service": null,
+   "short_message_service_fee_monthly": null,
+   "short_message_service_annual_fee": null,
+   "lost_passbook_fee": null,
+   "account_close_fee": null
   },
   "general_fees": {
    "coin_collect_fee": null,
-   "brance_fee": null,
+   "branch_fee": null,
+   "kiosk_other_fee": null,
+   "kiosk_fee": null,
+   "agent_fee": null,
+   "shop_agent_fee": null,
+   "post_agent_fee": null,
+   "topup_agent_fee": null,
+   "other_agent_fee": null,
+   "transfer_between_saving_current_account_fee": null,
+   "transfer_between_banking_fee": null
+  },
+  "numeric_general_fees": {
+   "coin_collect_fee": null,
+   "branch_fee": null,
    "kiosk_other_fee": null,
    "kiosk_fee": null,
    "agent_fee": null,

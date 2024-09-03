@@ -5,6 +5,8 @@ type ProductCondition struct {
 	Collateral            []string `json:"collateral"`
 	ProductConditions     []string `json:"product_conditions"`
 	BorrowerAge           string   `json:"borrower_age"`
+	MinAge                int      `json:"min_age"`
+	MaxAge                int      `json:"max_age"`
 	ApplicationConditions []string `json:"application_conditions"`
 }
 
@@ -12,6 +14,7 @@ type CreditAndLoanTerms struct {
 	CreditLimit               string      `json:"credit_limit"`
 	CreditLimitConditions     []string    `json:"credit_limit_conditions"`
 	BorrowingPeriod           []string    `json:"borrowing_period"`
+	MaxBorrowingPeriodYears   int         `json:"max_borrowing_period_years"`
 	BorrowingPeriodConditions interface{} `json:"borrowing_period_conditions"`
 }
 

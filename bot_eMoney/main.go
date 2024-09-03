@@ -21,7 +21,7 @@ type Product struct {
 	FeaturesAndConditions *FeaturesAndConditions `json:"features_and_conditions"`
 	TopUp                 *TopUp                 `json:"top_up"`
 	Fees                  *Fees                  `json:"fees"`
-	SpendingFees          *SpendingFees          `json:"speding_fees"`
+	SpendingFees          *SpendingFees          `json:"spending_fees"`
 	CancellationFees      *CancellationFees      `json:"cancellation_fees"`
 	AdditionalInfo        *AdditionalInfo        `json:"additional_info"`
 }
@@ -43,35 +43,43 @@ type UsageConditions struct {
 }
 
 type TopUp struct {
-	TopUpFrequency      *string  `json:"top_up_frequency"`
-	FirstTopUpValue     *string  `json:"first_top_up_value"`
-	FirstTopUpCondition *string  `json:"first_top_up_condition"`
-	NextTopUpValue      *string  `json:"next_top_up_value"`
-	NextTopUpCondition  *string  `json:"next_top_up_condition"`
-	MaxBalance          *int     `json:"max_balance"`
-	MaxBalanceCondition *string  `json:"max_balance_condition"`
-	FreeTopUpChannels   []string `json:"free_top_up_channels"`
-	FeeTopUpChannels    []string `json:"fee_top_up_channels"`
+	TopUpFrequency          *string  `json:"top_up_frequency"`
+	FirstTopUpValue         *string  `json:"first_top_up_value"`
+	FirstTopUpCondition     *string  `json:"first_top_up_condition"`
+	NextTopUpValue          *string  `json:"next_top_up_value"`
+	NextTopUpCondition      *string  `json:"next_top_up_condition"`
+	MaxBalance              *int     `json:"max_balance"`
+	MaxBalanceCondition     *string  `json:"max_balance_condition"`
+	FreeTopUpChannels       []string `json:"free_top_up_channels"`
+	FeeTopUpChannels        []string `json:"fee_top_up_channels"`
+	FeeTopUpChannelsNumeric []int    `json:"fee_top_up_channels_numeric"`
 }
 
 type Fees struct {
-	InitialFee     *string `json:"initial_fee"`
-	AnnualFee      *string `json:"annual_fee"`
-	CardReissueFee *string `json:"card_reissue_fee"`
-	MaintenanceFee *string `json:"maintenance_fee"`
-	OtherFees      *string `json:"other_fees"`
+	InitialFee            *string `json:"initial_fee"`
+	InitialFeeNumeric     *int    `json:"initial_fee_numeric"`
+	AnnualFee             *string `json:"annual_fee"`
+	AnnualFeeNumeric      *int    `json:"annual_fee_numeric"`
+	CardReissueFee        *string `json:"card_reissue_fee"`
+	CardReissueFeeNumeric *int    `json:"card_reissue_fee_numeric"`
+	MaintenanceFee        *string `json:"maintenance_fee"`
+	MaintenanceFeeNumeric *int    `json:"maintenance_fee_numeric"`
+	OtherFees             *string `json:"other_fees"`
 }
 
 type SpendingFees struct {
-	SpendingFee                *int    `json:"spending_fee"`
-	SpendingNotificationFee    *string `json:"spending_notification_fee"`
-	InternationalWithdrawalFee *string `json:"international_withdrawal_fee"`
-	CurrencyConversionFee      *string `json:"currency_conversion_fee"`
+	SpendingFee                    *int    `json:"spending_fee"`
+	SpendingNotificationFee        *string `json:"spending_notification_fee"`
+	SpendingNotificationFeeNumeric *int    `json:"spending_notification_fee_numeric"`
+	InternationalWithdrawalFee     *string `json:"international_withdrawal_fee"`
+	CurrencyConversionFee          *string `json:"currency_conversion_fee"`
 }
 
 type CancellationFees struct {
-	CashRedemptionFee   *string `json:"cash_redemption_fee"`
-	EarlyTerminationFee *string `json:"early_termination_fee"`
+	CashRedemptionFee             *string `json:"cash_redemption_fee"`
+	CashRedemptionFeeNumeric      *int    `json:"cash_redemption_fee_numeric"`
+	EarlyTerminationFee           *string `json:"early_termination_fee"`
+	EarlyTerminationFeePercentage *int    `json:"early_termination_fee_percentage"`
 }
 
 type AdditionalInfo struct {
@@ -238,11 +246,23 @@ func extractProductsFromPage(doc *goquery.Document) []Product {
 		freeTopUpChannels := splitAndTrim(doc.Find(fmt.Sprintf("tr.attr-TopUpChannelsWithoutFee td.%s span", colClass)).Text(), "-")
 		feeTopUpChannels := splitAndTrim(doc.Find(fmt.Sprintf("tr.attr-TopUpChannelsWithFee td.%s span", colClass)).Text(), "-")
 
+		// Extract numeric values for fee top-up channels
+		var feeTopUpChannelsNumeric []int
+		for _, channel := range feeTopUpChannels {
+			if fee := extractNumericFee(channel); fee != nil {
+				feeTopUpChannelsNumeric = append(feeTopUpChannelsNumeric, *fee)
+			}
+		}
+
 		// Extract Fees information
 		initialFee := getStringOrNil(cleanText(doc.Find(fmt.Sprintf("tr.attr-EntranceFeeAmount td.%s span", colClass)).Text()))
+		initialFeeNumeric := extractNumericFee(cleanText(doc.Find(fmt.Sprintf("tr.attr-EntranceFeeAmount td.%s span", colClass)).Text()))
 		annualFee := getStringOrNil(cleanText(doc.Find(fmt.Sprintf("tr.attr-AnnualFee td.%s span", colClass)).Text()))
+		annualFeeNumeric := extractNumericFee(cleanText(doc.Find(fmt.Sprintf("tr.attr-AnnualFee td.%s span", colClass)).Text()))
 		cardReissueFee := getStringOrNil(cleanText(doc.Find(fmt.Sprintf("tr.attr-CardReplacementFee td.%s span", colClass)).Text()))
+		cardReissueFeeNumeric := extractNumericFee(cleanText(doc.Find(fmt.Sprintf("tr.attr-CardReplacementFee td.%s span", colClass)).Text()))
 		maintenanceFee := getStringOrNil(cleanText(doc.Find(fmt.Sprintf("tr.attr-ProductMaintenanceFee td.%s span", colClass)).Text()))
+		maintenanceFeeNumeric := extractNumericFee(cleanText(doc.Find(fmt.Sprintf("tr.attr-ProductMaintenanceFee td.%s span", colClass)).Text()))
 		otherFees := getStringOrNil(cleanText(doc.Find(fmt.Sprintf("tr.attr-OtherFees td.%s span", colClass)).Text()))
 
 		// Extract Spending Fees information
@@ -254,12 +274,15 @@ func extractProductsFromPage(doc *goquery.Document) []Product {
 			}
 		}
 		spendingNotificationFee := getStringOrNil(cleanText(doc.Find(fmt.Sprintf("tr.attr-SpendingAlertFee td.%s span", colClass)).Text()))
+		spendingNotificationFeeNumeric := extractNumericFee(cleanText(doc.Find(fmt.Sprintf("tr.attr-SpendingAlertFee td.%s span", colClass)).Text()))
 		internationalWithdrawalFee := getStringOrNil(cleanText(doc.Find(fmt.Sprintf("tr.attr-OverseasCashWithdrawalFee td.%s span", colClass)).Text()))
 		currencyConversionFee := getStringOrNil(cleanText(doc.Find(fmt.Sprintf("tr.attr-CurrencyConversionRiskFeeRate td.%s span", colClass)).Text()))
 
 		// Extract Cancellation Fees information
 		cashRedemptionFee := getStringOrNil(cleanText(doc.Find(fmt.Sprintf("tr.attr-CashRefundFee td.%s span", colClass)).Text()))
+		cashRedemptionFeeNumeric := extractNumericFee(cleanText(doc.Find(fmt.Sprintf("tr.attr-CashRefundFee td.%s span", colClass)).Text()))
 		earlyTerminationFee := getStringOrNil(cleanText(doc.Find(fmt.Sprintf("tr.attr-TerminationFee td.%s span", colClass)).Text()))
+		earlyTerminationFeePercentage := extractPercentage(cleanText(doc.Find(fmt.Sprintf("tr.attr-TerminationFee td.%s span", colClass)).Text()))
 
 		// Extract Additional Information
 		productWebsite := cleanText(doc.Find(fmt.Sprintf("tr.attr-URL td.%s a.prod-url", colClass)).AttrOr("href", ""))
@@ -286,32 +309,40 @@ func extractProductsFromPage(doc *goquery.Document) []Product {
 				},
 			},
 			TopUp: &TopUp{
-				TopUpFrequency:      topUpFrequency,
-				FirstTopUpValue:     firstTopUpValue,
-				FirstTopUpCondition: firstTopUpCondition,
-				NextTopUpValue:      nextTopUpValue,
-				NextTopUpCondition:  nextTopUpCondition,
-				MaxBalance:          maxBalance,
-				MaxBalanceCondition: maxBalanceCondition,
-				FreeTopUpChannels:   freeTopUpChannels,
-				FeeTopUpChannels:    feeTopUpChannels,
+				TopUpFrequency:          topUpFrequency,
+				FirstTopUpValue:         firstTopUpValue,
+				FirstTopUpCondition:     firstTopUpCondition,
+				NextTopUpValue:          nextTopUpValue,
+				NextTopUpCondition:      nextTopUpCondition,
+				MaxBalance:              maxBalance,
+				MaxBalanceCondition:     maxBalanceCondition,
+				FreeTopUpChannels:       freeTopUpChannels,
+				FeeTopUpChannels:        feeTopUpChannels,
+				FeeTopUpChannelsNumeric: feeTopUpChannelsNumeric,
 			},
 			Fees: &Fees{
-				InitialFee:     initialFee,
-				AnnualFee:      annualFee,
-				CardReissueFee: cardReissueFee,
-				MaintenanceFee: maintenanceFee,
-				OtherFees:      otherFees,
+				InitialFee:            initialFee,
+				InitialFeeNumeric:     initialFeeNumeric,
+				AnnualFee:             annualFee,
+				AnnualFeeNumeric:      annualFeeNumeric,
+				CardReissueFee:        cardReissueFee,
+				CardReissueFeeNumeric: cardReissueFeeNumeric,
+				MaintenanceFee:        maintenanceFee,
+				MaintenanceFeeNumeric: maintenanceFeeNumeric,
+				OtherFees:             otherFees,
 			},
 			SpendingFees: &SpendingFees{
-				SpendingFee:                spendingFee,
-				SpendingNotificationFee:    spendingNotificationFee,
-				InternationalWithdrawalFee: internationalWithdrawalFee,
-				CurrencyConversionFee:      currencyConversionFee,
+				SpendingFee:                    spendingFee,
+				SpendingNotificationFee:        spendingNotificationFee,
+				SpendingNotificationFeeNumeric: spendingNotificationFeeNumeric,
+				InternationalWithdrawalFee:     internationalWithdrawalFee,
+				CurrencyConversionFee:          currencyConversionFee,
 			},
 			CancellationFees: &CancellationFees{
-				CashRedemptionFee:   cashRedemptionFee,
-				EarlyTerminationFee: earlyTerminationFee,
+				CashRedemptionFee:             cashRedemptionFee,
+				CashRedemptionFeeNumeric:      cashRedemptionFeeNumeric,
+				EarlyTerminationFee:           earlyTerminationFee,
+				EarlyTerminationFeePercentage: earlyTerminationFeePercentage,
 			},
 			AdditionalInfo: &AdditionalInfo{
 				ProductWebsite: getStringOrNil(productWebsite),
@@ -345,4 +376,31 @@ func getStringOrNil(s string) *string {
 	}
 
 	return &s
+}
+
+func extractNumericFee(text string) *int {
+	// Extract numeric value from text, assuming the text has the format like "ค่าธรรมเนียมเริ่มต้น 5 บาท"
+	parts := strings.Fields(text)
+	for _, part := range parts {
+		if num, err := strconv.Atoi(strings.ReplaceAll(part, ",", "")); err == nil {
+			return &num
+		}
+	}
+	return nil
+}
+
+func extractPercentage(text string) *int {
+	// Extract percentage from text, assuming the text contains a format like "4% ของยอดเงินที่เอาออกจากกระเป๋า"
+	if strings.Contains(text, "%") {
+		parts := strings.Fields(text)
+		for _, part := range parts {
+			if strings.Contains(part, "%") {
+				part = strings.TrimSuffix(part, "%")
+				if num, err := strconv.Atoi(part); err == nil {
+					return &num
+				}
+			}
+		}
+	}
+	return nil
 }

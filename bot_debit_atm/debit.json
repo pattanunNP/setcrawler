@@ -1,7 +1,7 @@
 [
  {
   "provider": "กรุงศรีอยุธยา",
-  "product": "บัตรเดบิตกรุงศรีไพรเวทแบงก์กิ้ง/กรุงศรีเอ็กซ์คลูซีฟ(เฉพาะกลุ่มลูกค้า)",
+  "product": "บัตรเดบิต กรุงศรี ไพรเวท แบงก์กิ้ง/กรุงศรี เอ็กซ์คลูซีฟ (เฉพาะกลุ่มลูกค้า)",
   "features_and_conditions": {
    "product_type": "บัตรเดบิตแบบไม่มีประกัน",
    "network": "VISA",
@@ -21,7 +21,7 @@
     "สะดวกในการชำระค่าสินค้าและบริการ ณ ร้านค้าที่มีสัญลักษณ์ visa ได้ทั่วโลก / ชำระผ่านออนไลน์ (Verified by VISA) ด้วยวงเงินใช้จ่ายสูงสุด 100,000 บาท/บัตร/วัน (รวมทั้งการเบิกถอนเงินสดผ่านเครื่อง EDC ณ เคาน์เตอร์สาขาธนาคาร และธนาคารสมาชิกทั้งในประเทศและต่างประเทศที่มีเครื่องหมาย visa)",
     "วงเงินการชำระค่าสินค้าและบริการ (Bill Payment) 200,000 บาทต่อวัน ไม่จำกัดจำนวนครั้ง"
    ],
-   "supplemntary_card": {
+   "supplementary_card": {
     "available": [
      "มีบริการ"
     ],
@@ -31,13 +31,42 @@
    }
   },
   "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "pin_replacement_fee": "ไม่มีบริการ",
-   "statement_copy_fee": "ไม่มีบริการ",
-   "slip_copy_fee": 100,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
+   "entrance_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "annual_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "card_replacement_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "pin_replacement_fee": {
+    "original_text": "ไม่มีบริการ",
+    "amount": 0
+   },
+   "statement_copy_fee": {
+    "original_text": "ไม่มีบริการ",
+    "amount": 0
+   },
+   "slip_copy_fee": {
+    "original_text": [
+     "100 บาท เงื่อนไข:",
+     "Sale Slip ในประเทศ 80 บาท ต่อฉบับ",
+     "Sale Slip ต่างประเทศ 100 บาท ต่อฉบับ"
+    ],
+    "amount": [
+     100,
+     80,
+     100
+    ]
+   },
+   "transaction_investigation_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
    "other_fees": null
   },
   "transaction_fees_domestic": {
@@ -47,21 +76,57 @@
     "โอนเงินไปยังบัญชีบุคคลอื่นภายในธนาคารผ่านเครื่องกรุงศรี ATM ได้สูงสุด 500,000 บาท/บัตร/วัน (ไม่จำกัดจำนวนครั้ง)",
     "โอนเงินไปยังบัญชีใดๆ ระหว่างธนาคาร (ORFT) ผ่านเครื่องกรุงศรี ATM และเครื่อง ATM ธนาคารอื่น ที่รองรับชิปการ์ด VISA และ PLUS ครั้งละไม่เกิน 50,000 บาท ไม่จำกัดจำนวนครั้งสูงสุด 100,000 บาท/บัตร/วัน"
    ],
-   "in_service_area_balance_inquiry_fee": 10,
-   "out_service_area_balance_inquiry_fee": 10,
-   "in_service_area_cash_withdrawal_fee": 10,
-   "out_service_area_cash_withdrawal_fee": 20,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
+   "in_service_area_balance_inquiry_fee": {
+    "original_text": "10 บาท/รายการ",
+    "amount": 10
+   },
+   "out_service_area_balance_inquiry_fee": {
+    "original_text": "10 บาท/รายการ",
+    "amount": 10
+   },
+   "in_service_area_cash_withdrawal_fee": {
+    "original_text": "10 บาท/รายการ",
+    "amount": 10
+   },
+   "out_service_area_cash_withdrawal_fee": {
+    "original_text": "20 บาท/รายการ",
+    "amount": 20
+   },
+   "in_service_area_transfer_fee": {
+    "original_text": "ไม่มีบริการ",
+    "amount": 0
+   },
+   "out_service_area_transfer_fee": {
+    "original_text": "ไม่มีบริการ",
+    "amount": 0
+   },
+   "transfer_between_providers_fee": {
+    "original_text": "",
+    "amount": 0
+   },
+   "under_10000_fee": {
+    "original_text": "25 บาท/รายการ",
+    "amount": 25
+   },
+   "between_10001_and_50000_fee": {
+    "original_text": "35 บาท/รายการ",
+    "amount": 35
+   },
+   "additional_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
    "other_conditions": ""
   },
   "transaction_fees_international": {
-   "withdrawal_fee": 100,
-   "balance_inquiry_fee": 15,
+   "withdrawal_fee": {
+    "original_text": "100 บาท/รายการ",
+    "amount": 100
+   },
+   "balance_inquiry_fee": {
+    "original_text": "15 บาท/รายการ",
+    "amount": 15
+   },
    "currency_conversion_fee": 2.5
   },
   "insurance": {
@@ -86,10 +151,10 @@
  },
  {
   "provider": "ยูโอบี",
-  "product": "CitibankCitiPriorityDebitCardบัตรซิตี้แบงก์เดบิตซิตี้ไพออริตี้",
+  "product": "Citibank Citi Priority Debit Cardบัตรซิตี้แบงก์เดบิต ซิตี้ไพออริตี้",
   "features_and_conditions": {
    "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "PromptCard-Mastercard",
+   "network": "PromptCard - Mastercard",
    "highlights": [
     "ยกเว้นค่าธรรมเนียมถอนเงินสด/สอบถามยอดผ่านตู้เอทีเอ็มทุกตู้ที่มีสัญลักษณ์ ATM Pool ทั่วประเทศไทย"
    ],
@@ -115,7 +180,7 @@
     "สามารถขอปรับเปลี่ยนวงเงินชำระค่าสินค้าผ่านบัตรเดบิตชั่วคราวได้ที่ Call Center ของธนาคาร โทร 0 2285 1555",
     "วงเงินการทำธุรกรรมต่างๆ ต้องไม่เกินยอดเงินคงเหลือในบัญชี"
    ],
-   "supplemntary_card": {
+   "supplementary_card": {
     "available": [
      "จำนวนบัตรเสริมสูงสุดที่ทำได้ต่อ 1 บัตรหลักคือ 3 ใบ",
      "อายุผู้สมัครบัตรเสริม 15 ปีขึ้นไป",
@@ -129,13 +194,46 @@
    }
   },
   "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียมเงื่อนไข:ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "ไม่มีค่าธรรมเนียมเงื่อนไข:ไม่มีค่าธรรมเนียม",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "100- 500 บาท/ครั้ง",
-   "slip_copy_fee": 200,
-   "transaction_investigation_fee": "200 บาท/ครั้ง",
+   "entrance_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "annual_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "card_replacement_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "pin_replacement_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "statement_copy_fee": {
+    "original_text": "100- 500 บาท/ครั้ง",
+    "amount": 100
+   },
+   "slip_copy_fee": {
+    "original_text": [
+     "200 บาท เงื่อนไข:",
+     "ย้อนหลังไม่เกิน 1 ปี",
+     "ฉบับละ 200 บาท",
+     "ย้อนหลังเกินกว่า 1 ปี",
+     "ฉบับละ 500 บาท"
+    ],
+    "amount": [
+     200,
+     1,
+     200,
+     1,
+     500
+    ]
+   },
+   "transaction_investigation_fee": {
+    "original_text": "200 บาท/ครั้ง",
+    "amount": 200
+   },
    "other_fees": [
     "การขอใช้บัญชีเสริมกับบัตร 100 บาทต่อบัญชี",
     "การขอเปลี่ยนแปลงบัญชีที่ผูกกับบัตร 100 บาทต่อบัญชี"
@@ -157,21 +255,57 @@
     "โอนเงินสูงสุดไม่เกิน 300,000 บาท/บัตร/วัน",
     "โอนเงินสูงสุดครั้งละไม่เกิน 50,000 บาท ไม่จำกัดจำนวนครั้ง"
    ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 0,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 0,
-   "between_10001_and_50000_fee": 0,
-   "additional_fee": 0,
+   "in_service_area_balance_inquiry_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "out_service_area_balance_inquiry_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "in_service_area_cash_withdrawal_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "out_service_area_cash_withdrawal_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "in_service_area_transfer_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "out_service_area_transfer_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "transfer_between_providers_fee": {
+    "original_text": "",
+    "amount": 0
+   },
+   "under_10000_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "between_10001_and_50000_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "additional_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
    "other_conditions": ""
   },
   "transaction_fees_international": {
-   "withdrawal_fee": 100,
-   "balance_inquiry_fee": 100,
+   "withdrawal_fee": {
+    "original_text": "100 บาท/รายการ\n                                    เงื่อนไข: \n                                    - ยกเว้นค่าธรรมเนียมเบิกถอนเงินสด / สอบถามยอดเงินฝากจากตู้เอทีเอ็มธนาคารยูโอบี ที่อยู่ในประเทศสิงคโปร์ มาเลเซีย และอินโดนีเซีย",
+    "amount": 100
+   },
+   "balance_inquiry_fee": {
+    "original_text": "100 บาท/รายการ\n                                    เงื่อนไข: \n                                    - ยกเว้นค่าธรรมเนียมเบิกถอนเงินสด / สอบถามยอดเงินฝากจากตู้เอทีเอ็มธนาคารยูโอบี ที่อยู่ในประเทศสิงคโปร์ มาเลเซีย และอินโดนีเซีย",
+    "amount": 100
+   },
    "currency_conversion_fee": 2.5
   },
   "insurance": {
@@ -196,10 +330,10 @@
  },
  {
   "provider": "ยูโอบี",
-  "product": "CitibankCitigoldDebitCardบัตรซิตี้แบงก์เดบิตซิตี้โกลด์",
+  "product": "Citibank Citigold Debit Cardบัตรซิตี้แบงก์เดบิต ซิตี้โกลด์",
   "features_and_conditions": {
    "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "PromptCard-Mastercard",
+   "network": "PromptCard - Mastercard",
    "highlights": [
     "ยกเว้นค่าธรรมเนียมถอนเงินสด/สอบถามยอดผ่านตู้เอทีเอ็มทุกตู้ที่มีสัญลักษณ์ ATM Pool ทั่วประเทศไทย"
    ],
@@ -225,7 +359,7 @@
     "สามารถขอปรับเปลี่ยนวงเงินชำระค่าสินค้าผ่านบัตรเดบิตชั่วคราวได้ที่ Call Center ของธนาคาร โทร 0 2285 1555",
     "วงเงินการทำธุรกรรมต่างๆ ต้องไม่เกินยอดเงินคงเหลือในบัญชี"
    ],
-   "supplemntary_card": {
+   "supplementary_card": {
     "available": [
      "จำนวนบัตรเสริมสูงสุดที่ทำได้ต่อ 1 บัตรหลักคือ 3 ใบ",
      "อายุผู้สมัครบัตรเสริม 15 ปีขึ้นไป",
@@ -239,13 +373,46 @@
    }
   },
   "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียมเงื่อนไข:ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "ไม่มีค่าธรรมเนียมเงื่อนไข:ไม่มีค่าธรรมเนียม",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "100- 500 บาท/ครั้ง",
-   "slip_copy_fee": 200,
-   "transaction_investigation_fee": "200 บาท/ครั้ง",
+   "entrance_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "annual_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "card_replacement_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม เงื่อนไข: ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "pin_replacement_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "statement_copy_fee": {
+    "original_text": "100- 500 บาท/ครั้ง",
+    "amount": 100
+   },
+   "slip_copy_fee": {
+    "original_text": [
+     "200 บาท เงื่อนไข:",
+     "ย้อนหลังไม่เกิน 1 ปี",
+     "ฉบับละ 200 บาท",
+     "ย้อนหลังเกินกว่า 1 ปี",
+     "ฉบับละ 500 บาท"
+    ],
+    "amount": [
+     200,
+     1,
+     200,
+     1,
+     500
+    ]
+   },
+   "transaction_investigation_fee": {
+    "original_text": "200 บาท/ครั้ง",
+    "amount": 200
+   },
    "other_fees": [
     "การขอใช้บัญชีเสริมกับบัตร 100 บาทต่อบัญชี",
     "การขอเปลี่ยนแปลงบัญชีที่ผูกกับบัตร 100 บาทต่อบัญชี"
@@ -267,21 +434,57 @@
     "โอนเงินสูงสุดไม่เกิน 300,000 บาท/บัตร/วัน",
     "โอนเงินสูงสุดครั้งละไม่เกิน 50,000 บาท ไม่จำกัดจำนวนครั้ง"
    ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 0,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 0,
-   "between_10001_and_50000_fee": 0,
-   "additional_fee": 0,
+   "in_service_area_balance_inquiry_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "out_service_area_balance_inquiry_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "in_service_area_cash_withdrawal_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "out_service_area_cash_withdrawal_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "in_service_area_transfer_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "out_service_area_transfer_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "transfer_between_providers_fee": {
+    "original_text": "",
+    "amount": 0
+   },
+   "under_10000_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "between_10001_and_50000_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
+   "additional_fee": {
+    "original_text": "ไม่มีค่าธรรมเนียม",
+    "amount": 0
+   },
    "other_conditions": ""
   },
   "transaction_fees_international": {
-   "withdrawal_fee": 100,
-   "balance_inquiry_fee": 100,
+   "withdrawal_fee": {
+    "original_text": "100 บาท/รายการ\n                                    เงื่อนไข: \n                                    - ยกเว้นค่าธรรมเนียมเบิกถอนเงินสด / สอบถามยอดเงินฝากจากตู้เอทีเอ็มธนาคารยูโอบี ที่อยู่ในประเทศสิงคโปร์ มาเลเซีย และอินโดนีเซีย",
+    "amount": 100
+   },
+   "balance_inquiry_fee": {
+    "original_text": "100 บาท/รายการ\n                                    เงื่อนไข: \n                                    - ยกเว้นค่าธรรมเนียมเบิกถอนเงินสด / สอบถามยอดเงินฝากจากตู้เอทีเอ็มธนาคารยูโอบี ที่อยู่ในประเทศสิงคโปร์ มาเลเซีย และอินโดนีเซีย",
+    "amount": 100
+   },
    "currency_conversion_fee": 2.5
   },
   "insurance": {
@@ -301,2473 +504,6 @@
   },
   "additional_info": {
    "product_website": "https://www.uob.co.th/personal/deposits/debit-cards/privilege-banking.page?utm_medium=website\u0026utm_source=website\u0026utm_campaign=DBPVT1\u0026s_cid=PFS:th:own:soc:website:generic:DBPVT1:NA-NA:vid:uob",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "กรุงไทย",
-  "product": "KRUNGTHAIFUNDebitCard",
-  "features_and_conditions": {
-   "product_type": "บัตรประเภทอื่น",
-   "network": "Mastercard",
-   "highlights": [
-    "-บัตรเดบิต KRUNGTHAI FUN เป็นบัตรเดบิตเสมือนจริง สมัครและใช้บริการบน Applicatiton KRUNGTHAI NEXT-สมัครบัตรผ่าน Krungthai NEXT ก็พร้อมช้อปออนไลน์ได้ทันที ไม่มีค่าธรรมเนียมออกบัตรและรายปี-สามารถใช้บัตรฯในการชําระค่าสินค้าและบริการ e-Commerce แทนเงินสดกับร้านค้า Online ที่รับบัตร Mastercard ได้ทั่วโลก ตลอด 24 ชั่วโมง-สามารถปรับเพิ่มวงเงินสูงสุดในการชําระค่าสินค้าและบริการ e-Commerce ได้สูงสุดไม่เกิน 500,000 บาท/บัตร/วัน  ผ่าน Application KRUNGTHAI NEXT-สามารถกำหนดวันปิดบัตรด้วยตนเอง โดยฟังก์ชัน ตั้งวันปิดบัตรล่วงหน้า ผ่าน Application KRUNGTHAI NEXT โดยต้องกำหนดวันปิดบัตรล่วงหน้าอย่างน้อย 1 วัน-สามารถระงับบัตร ยกเลิกระงับบัตรชั่วคราว บน Application KRUNGTHAI NEXT ได้-บัตรเดบิต KRUNGTHAI FUN ไม่มีรหัสคู่บัตร-บัตรเดบิต KRUNGTHAI FUN ไม่มีการผลิตบัตรพลาสติก"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "เปิดใช้บริการ Krungthai NEXT",
-    "มีบัญชีเงินฝากออมทรัพย์ และ/หรือ บัญชีกระแสรายวัน และ/หรือ บัญชี Krungthai NEXT Saving",
-    "ผู้ขอใช้บริการต้องมีอายุ 15 ปี บริบูรณ์ขึ้นไป",
-    "บัญชีร่วม หรือบัญชีที่มีผู้ร่วมเปิดมากกว่า 1 คนไม่สามารถสมัครได้"
-   ],
-   "usage_conditions": [
-    "ผู้ถือบัตร 1 ท่านสามารถถือบัตรเดบิต KRUNGTHAI FUN ได้สูงสุดไม่เกิน 10 ใบ"
-   ],
-   "card_expiry": "บัตรมีอายุ 5 ปี โดยวันหมดอายุระบุบนหน้าบัตรสามารถติดต่อธนาคารได้ทุกสาขา เพื่อต่ออายุบัตร",
-   "payment_options": [
-    "สามารถปรับเพิ่มวงเงินสูงสุดในการชําระค่าสินค้าและบริการ e",
-    "Commerce ได้สูงสุดไม่เกิน 500,000 บาท/บัตร/วัน  ผ่าน Application KRUNGTHAI NEXT"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": [
-     "สามารถเลือกลายหน้าบัตรได้"
-    ]
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "ไม่มีค่าธรรมเนียม",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 500,
-   "cash_withdrawal": [
-    "ไม่มีค่าธรรมเนียมวงเงินการใช้จ่าย e",
-    "Commerce สูงสุด 500,000 บาท / วัน"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 0,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 0,
-   "between_10001_and_50000_fee": 0,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 0,
-   "balance_inquiry_fee": 0,
-   "currency_conversion_fee": 0
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://krungthai.com/th/personal/cards/debit-card/462",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ยูโอบี",
-  "product": "UOBPromptCardMasterCardDebitBasicBankingยูโอบีพร้อมการ์ดมาสเตอร์การ์ดเบสิคแบงก์กิ้ง(เฉพาะกลุ่มลูกค้า)",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "PromptCard-Mastercard",
-   "highlights": [
-    "ยกเว้นค่าธรรมเนียมออกบัตรและค่าธรรมเนียมรายปีตลอดอายุ เมื่อผูกบัตรกับบัญชีเงินฝากพื้นฐาน (Basic Banking Account)"
-   ],
-   "age_requirement": 0,
-   "applicant_qualificaitons": [
-    "ต้องมีบัญชีเงินฝากพื้นฐาน (Basic Banking Account) ตามเงื่อนไขการเปิดบัญชี โดยสามารถผูกกับบัตรเดบิตนี้ เท่านั้น"
-   ],
-   "usage_conditions": [
-    "1 บัตรต่อ 1 ท่าน",
-    "1 บัตร ผูกได้สูงสุดไม่เกิน 2 บัญชี โดยบัญชีหลักต้องเป็นบัญชีออมทรัพย์เท่านั้น",
-    "ลูกค้าบัตรเดบิตประเภทนี้ ไม่สามารถขอมีบัตรเสริมได้",
-    "การทำรายการที่ตู้ ATM ต่างธนาคาร จะสามารถทำได้เฉพาะรายการภายใต้บัญชีหลักเท่านั้น",
-    "สามารถชำระค่าสินค้า/บริการผ่านร้านค้า online ได้",
-    "สามารถชำระค่าสินค้า/บริการแบบไร้สัมผัส (Contactless Payment) ได้"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร",
-   "payment_options": [
-    "ชำระค่าสินค้าและบริการต่างๆ (Bill Payment) ของบริษัทต่างๆ ที่ธนาคารให้บริการรับชำระเงิน ผ่านตู้ ATM ธนาคารสูงสุด 500,000 บาท/บิล/บัตร/วัน  จำกัดสูงสุดไม่เกิน 10 บิลต่อวัน",
-    "ชำระค่าสินค้าและบริการ ณ ร้านค้าที่มีสัญลักษณ์ PromptCard ในประเทศ และที่มีสัญลักษณ์ MasterCard ได้ทั่วโลก ด้วยวงเงินใช้จ่ายสูงสุด 100,000 บาท/บัตร/วัน",
-    "สามารถขอปรับเปลี่ยนวงเงินชำระค่าสินค้าผ่านบัตรเดบิตชั่วคราวได้ที่ Call Center ของธนาคาร โทร 0 2285 1555",
-    "วงเงินการทำธุรกรรมต่างๆ ต้องไม่เกินยอดเงินคงเหลือในบัญชี"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "100บาท",
-   "pin_replacement_fee": "100 บาท",
-   "statement_copy_fee": "100- 500 บาท/ครั้ง\n                                    เงื่อนไข: \n                                    - เดือนปัจจุบัน ถึงย้อนหลัง 5 เดือน - 100 บาท/ครั้ง/บัญชี- ย้อนหลังตั้งแต่ 6 เดือน ถึง 24 เดือน - 200 บาท/ครั้ง/บัญชี- ย้อนหลังมากกว่า 24 เดือนขึ้นไป - 500 บาท/ครั้ง/บัญชี",
-   "slip_copy_fee": 200,
-   "transaction_investigation_fee": "200 บาท/ครั้ง",
-   "other_fees": [
-    "การขอใช้บัญชีเสริมกับบัตร 100 บาทต่อบัญชี",
-    "การขอเปลี่ยนแปลงบัญชีที่ผูกกับบัตร 100 บาทต่อบัญชี"
-   ]
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 1,
-   "cash_withdrawal": [
-    "1",
-    "4 ครั้ง/เดือนถอนเงิน",
-    "ถอนเงินสูงสุด 100,000 บาท/บัตร/วัน",
-    "30,000 บาท/ครั้ง ที่ ATM ธนาคาร",
-    "20,000 บาท/ครั้ง ที่ ATM ธนาคารอื่น",
-    "ถอนเงิน สูงสุด 5 ครั้งต่อวันถามยอด",
-    "ถามยอด สูงสุด 2 ครั้งต่อวันโอนเงินโอนเงินระหว่างบัญชีภายในบัตรเดียวกัน",
-    "โอนเงินได้ ไม่จำกัดวงเงิน",
-    "โอนเงินได้สูงสุดไม่เกิน 10 ครั้งต่อวัน (นับรวมกับการโอนเงินไปยังบัญชีเงินฝากของบุคคลที่สามภายในธนาคาร)โอนเงินไปบัญชีเงินฝากของบุคคลที่สามภายในธนาคาร",
-    "โอนเงินได้สูงสุดไม่เกิน 300,000 บาท/บัตร/วัน",
-    "โอนเงินได้สูงสุดไม่เกิน 10 ครั้งต่อวัน (นับรวมกับการโอนเงินระหว่างบัญชีภายในบัตรเดียวกัน)โอนเงินรายย่อยระหว่างธนาคาร (ORFT)",
-    "โอนเงินสูงสุดไม่เกิน 300,000 บาท/บัตร/วัน",
-    "โอนเงินสูงสุดครั้งละไม่เกิน 50,000 บาท ไม่จำกัดจำนวนครั้ง"
-   ],
-   "in_service_area_balance_inquiry_fee": 10,
-   "out_service_area_balance_inquiry_fee": 20,
-   "in_service_area_cash_withdrawal_fee": 10,
-   "out_service_area_cash_withdrawal_fee": 20,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 100,
-   "balance_inquiry_fee": 100,
-   "currency_conversion_fee": 2.5
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.uob.co.th/personal/cards/debit/mastercard-promptcard.page",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ยูโอบี",
-  "product": "UOBPromptCardMasterCardPrivilegeBankingDebitบัตรยูโอบีพร้อมการ์ดมาสเตอร์การ์ดพริวิเลจแบงก์กิ้งเดบิต",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "PromptCard-Mastercard",
-   "highlights": [
-    "ยกเว้นค่าธรรมเนียมถอนเงินสด/สอบถามยอดผ่านตู้เอทีเอ็มทุกตู้ที่มีสัญลักษณ์ ATM Pool ทั่วประเทศไทย"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องมีสถานะเป็นสมาชิกยูโอบี พริวิเลจ แบงก์กิ้ง ที่มียอดเงินฝาก เงินลงทุน และ/หรือ กองทุนรวม กับธนาคารยูโอบี ตามที่ธนาคารกำหนด",
-    "ต้องมีบัญชีเงินฝากออมทรัพย์ เพื่อผูกกับบัตรเดบิต",
-    "บัญชีหลักที่ผูกกับบัตรเดบิต ต้องเป็นบัญชีออมทรัพย์เท่านั้น",
-    "บัญชีเสริมที่ผูกกับบัตรเดบิต สามารถเป็นบัญชีออมทรัพย์หรือบัญชีกระแสรายวัน"
-   ],
-   "usage_conditions": [
-    "1 บัตรต่อ 1 ท่าน",
-    "1 บัตร ผูกได้สูงสุดไม่เกิน 2 บัญชี โดยบัญชีหลักต้องเป็นบัญชีออมทรัพย์เท่านั้น",
-    "บัตรหลัก 1 ใบ สามารถขอมีบัตรเสริมได้ไม่เกิน 3 บัตร",
-    "การทำรายการที่ตู้ ATM ต่างธนาคาร จะสามารถทำได้เฉพาะรายการภายใต้บัญชีหลักเท่านั้น",
-    "สามารถชำระค่าสินค้า/บริการผ่านร้านค้า online ได้",
-    "สามารถชำระค่าสินค้า/บริการแบบไร้สัมผัส (Contactless Payment) ได้"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร",
-   "payment_options": [
-    "ชำระค่าสินค้าและบริการต่างๆ (Bill Payment) ของบริษัทต่างๆ ที่ธนาคารให้บริการรับชำระเงิน ผ่านตู้ ATM ธนาคารสูงสุด 500,000 บาท/บิล/บัตร/วัน  จำกัดสูงสุดไม่เกิน 10 บิลต่อวัน",
-    "ชำระค่าสินค้าและบริการ ณ ร้านค้าที่มีสัญลักษณ์ PromptCard ในประเทศ และที่มีสัญลักษณ์ MasterCard ได้ทั่วโลก ด้วยวงเงินใช้จ่ายสูงสุด 100,000 บาท/บัตร/วัน",
-    "สามารถขอปรับเปลี่ยนวงเงินชำระค่าสินค้าผ่านบัตรเดบิตชั่วคราวได้ที่ Call Center ของธนาคาร โทร 0 2285 1555",
-    "วงเงินการทำธุรกรรมต่างๆ ต้องไม่เกินยอดเงินคงเหลือในบัญชี"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "จำนวนบัตรเสริมสูงสุดที่ทำได้ต่อ 1 บัตรหลักคือ 3 ใบ",
-     "อายุผู้สมัครบัตรเสริม 15 ปีขึ้นไป",
-     "ค่าธรรมเนียมแรกเข้า 0 บาท",
-     "ค่าธรรมเนียมรายปี 0 บาท ต่อปี"
-    ],
-    "conditions": [
-     "ยกเว้นค่าธรรมเนียมถอนเงินสด/สอบถามยอดผ่านตู้เอทีเอ็มทุกตู้ที่มีสัญลักษณ์ PromptCard",
-     "รายการอื่น ๆ นอกเหนือจากการถอนเงินสด/สอบถามยอดเงินผ่านตู้เอทีเอ็ม  คิดค่าธรรมเนียมตามปกติตามประกาศค่าธรรมเนียมธนาคาร ณ ขณะนี้"
-    ]
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียมเงื่อนไข:ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "ไม่มีค่าธรรมเนียมเงื่อนไข:ไม่มีค่าธรรมเนียม",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "100- 500 บาท/ครั้ง",
-   "slip_copy_fee": 200,
-   "transaction_investigation_fee": "200 บาท/ครั้ง",
-   "other_fees": [
-    "การขอใช้บัญชีเสริมกับบัตร 100 บาทต่อบัญชี",
-    "การขอเปลี่ยนแปลงบัญชีที่ผูกกับบัตร 100 บาทต่อบัญชี"
-   ]
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 100,
-   "cash_withdrawal": [
-    "ไม่มีค่าธรรมเนียมถอนเงิน",
-    "ถอนเงินสูงสุด 100,000 บาท/บัตร/วัน",
-    "30,000 บาท/ครั้ง ที่ ATM ธนาคาร",
-    "20,000 บาท/ครั้ง ที่ ATM ธนาคารอื่น",
-    "ถอนเงิน สูงสุด 5 ครั้งต่อวันถามยอด",
-    "ถามยอด สูงสุด 2 ครั้งต่อวันโอนเงินโอนเงินระหว่างบัญชีภายในบัตรเดียวกัน",
-    "โอนเงินได้ ไม่จำกัดวงเงิน",
-    "โอนเงินได้สูงสุดไม่เกิน 10 ครั้งต่อวัน (นับรวมกับการโอนเงินไปยังบัญชีเงินฝากของบุคคลที่สามภายในธนาคาร)โอนเงินไปบัญชีเงินฝากของบุคคลที่สามภายในธนาคาร",
-    "โอนเงินได้สูงสุดไม่เกิน 300,000 บาท/บัตร/วัน",
-    "โอนเงินได้สูงสุดไม่เกิน 10 ครั้งต่อวัน (นับรวมกับการโอนเงินระหว่างบัญชีภายในบัตรเดียวกัน)โอนเงินรายย่อยระหว่างธนาคาร (ORFT)",
-    "โอนเงินสูงสุดไม่เกิน 300,000 บาท/บัตร/วัน",
-    "โอนเงินสูงสุดครั้งละไม่เกิน 50,000 บาท ไม่จำกัดจำนวนครั้ง"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 0,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 0,
-   "between_10001_and_50000_fee": 0,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 100,
-   "balance_inquiry_fee": 100,
-   "currency_conversion_fee": 2.5
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.uob.co.th/personal/deposits/debit-cards/privilege-banking.page?utm_medium=website\u0026utm_source=website\u0026utm_campaign=DBPVT1\u0026s_cid=PFS:th:own:soc:website:generic:DBPVT1:NA-NA:vid:uob",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ยูโอบี",
-  "product": "UOBPromptCardMasterCardWealthBankingDebitบัตรยูโอบีพร้อมการ์ดมาสเตอร์การ์ดเวลท์แบงก์กิ้งเดบิต",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "PromptCard-Mastercard",
-   "highlights": [
-    "ยกเว้นค่าธรรมเนียมถอนเงินสด/สอบถามยอดผ่านตู้เอทีเอ็มทุกตู้ที่มีสัญลักษณ์ ATM Pool ทั่วประเทศไทย"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องมีสถานะเป็นสมาชิกยูโอบี เวลท์ แบงก์กิ้ง ที่มียอดเงินฝาก เงินลงทุน และ/หรือ กองทุนรวม กับธนาคารยูโอบี ตามที่ธนาคารกำหนด",
-    "ต้องมีบัญชีเงินฝากออมทรัพย์ เพื่อผูกกับบัตรเดบิต",
-    "บัญชีหลักที่ผูกกับบัตรเดบิต ต้องเป็นบัญชีออมทรัพย์เท่านั้น",
-    "บัญชีเสริมที่ผูกกับบัตรเดบิต สามารถเป็นบัญชีออมทรัพย์หรือบัญชีกระแสรายวัน"
-   ],
-   "usage_conditions": [
-    "1 บัตรต่อ 1 ท่าน",
-    "1 บัตร ผูกได้สูงสุดไม่เกิน 2 บัญชี โดยบัญชีหลักต้องเป็นบัญชีออมทรัพย์เท่านั้น",
-    "บัตรหลัก 1 ใบ สามารถขอมีบัตรเสริมได้ไม่เกิน 3 บัตร",
-    "การทำรายการที่ตู้ ATM ต่างธนาคาร จะสามารถทำได้เฉพาะรายการภายใต้บัญชีหลักเท่านั้น",
-    "สามารถชำระค่าสินค้า/บริการผ่านร้านค้า online ได้",
-    "สามารถชำระค่าสินค้า/บริการแบบไร้สัมผัส (Contactless Payment) ได้"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร",
-   "payment_options": [
-    "ชำระค่าสินค้าและบริการต่างๆ (Bill Payment) ของบริษัทต่างๆ ที่ธนาคารให้บริการรับชำระเงิน ผ่านตู้ ATM ธนาคารสูงสุด 500,000 บาท/บิล/บัตร/วัน  จำกัดสูงสุดไม่เกิน 10 บิลต่อวัน",
-    "ชำระค่าสินค้าและบริการ ณ ร้านค้าที่มีสัญลักษณ์ PromptCard ในประเทศ และที่มีสัญลักษณ์ MasterCard ได้ทั่วโลก ด้วยวงเงินใช้จ่ายสูงสุด 100,000 บาท/บัตร/วัน",
-    "สามารถขอปรับเปลี่ยนวงเงินชำระค่าสินค้าผ่านบัตรเดบิตชั่วคราวได้ที่ Call Center ของธนาคาร โทร 0 2285 1555",
-    "วงเงินการทำธุรกรรมต่างๆ ต้องไม่เกินยอดเงินคงเหลือในบัญชี"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "จำนวนบัตรเสริมสูงสุดที่ทำได้ต่อ 1 บัตรหลักคือ 3 ใบ",
-     "อายุผู้สมัครบัตรเสริม 15 ปีขึ้นไป",
-     "ค่าธรรมเนียมแรกเข้า 0 บาท",
-     "ค่าธรรมเนียมรายปี 0 บาท ต่อปี"
-    ],
-    "conditions": [
-     "ยกเว้นค่าธรรมเนียมถอนเงินสด/สอบถามยอดผ่านตู้เอทีเอ็มทุกตู้ที่มีสัญลักษณ์ PromptCard",
-     "รายการอื่น ๆ นอกเหนือจากการถอนเงินสด/สอบถามยอดเงินผ่านตู้เอทีเอ็ม  คิดค่าธรรมเนียมตามปกติตามประกาศค่าธรรมเนียมธนาคาร ณ ขณะนี้"
-    ]
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียมเงื่อนไข:ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "ไม่มีค่าธรรมเนียมเงื่อนไข:ไม่มีค่าธรรมเนียม",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "100- 500 บาท/ครั้ง",
-   "slip_copy_fee": 200,
-   "transaction_investigation_fee": "200 บาท/ครั้ง",
-   "other_fees": [
-    "การขอใช้บัญชีเสริมกับบัตร 100 บาทต่อบัญชี",
-    "การขอเปลี่ยนแปลงบัญชีที่ผูกกับบัตร 100 บาทต่อบัญชี"
-   ]
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 100,
-   "cash_withdrawal": [
-    "ไม่มีค่าธรรมเนียมถอนเงิน",
-    "ถอนเงินสูงสุด 100,000 บาท/บัตร/วัน",
-    "30,000 บาท/ครั้ง ที่ ATM ธนาคาร",
-    "20,000 บาท/ครั้ง ที่ ATM ธนาคารอื่น",
-    "ถอนเงิน สูงสุด 5 ครั้งต่อวันถามยอด",
-    "ถามยอด สูงสุด 2 ครั้งต่อวันโอนเงินโอนเงินระหว่างบัญชีภายในบัตรเดียวกัน",
-    "โอนเงินได้ ไม่จำกัดวงเงิน",
-    "โอนเงินได้สูงสุดไม่เกิน 10 ครั้งต่อวัน (นับรวมกับการโอนเงินไปยังบัญชีเงินฝากของบุคคลที่สามภายในธนาคาร)โอนเงินไปบัญชีเงินฝากของบุคคลที่สามภายในธนาคาร",
-    "โอนเงินได้สูงสุดไม่เกิน 300,000 บาท/บัตร/วัน",
-    "โอนเงินได้สูงสุดไม่เกิน 10 ครั้งต่อวัน (นับรวมกับการโอนเงินระหว่างบัญชีภายในบัตรเดียวกัน)โอนเงินรายย่อยระหว่างธนาคาร (ORFT)",
-    "โอนเงินสูงสุดไม่เกิน 300,000 บาท/บัตร/วัน",
-    "โอนเงินสูงสุดครั้งละไม่เกิน 50,000 บาท ไม่จำกัดจำนวนครั้ง"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 0,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 0,
-   "between_10001_and_50000_fee": 0,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 100,
-   "balance_inquiry_fee": 100,
-   "currency_conversion_fee": 2.5
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.uob.co.th/personal/deposits/debit-cards/wealth-banking.page?utm_medium=qrcode\u0026utm_source=qr\u0026utm_campaign=DWTQR1\u0026s_cid=PFS:th:own:soc:qr:qr:DWTQR1:NA-NA:vid:uob",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ไทยพาณิชย์",
-  "product": "การให้บริการถอนเงินสดที่ตู้ATMของSCBด้วยบัตรNon-Bankของบริษัทเงินติดล้อจำกัดชื่อบัตรติดล้อ(TIDORcard)(เฉพาะกลุ่มลูกค้า)",
-  "features_and_conditions": {
-   "product_type": "บัตรประเภทอื่น",
-   "network": "เครือข่ายอื่น",
-   "highlights": [
-    "บัตรสินเชื่อเงินสด ของ บริษัท เงินติดล้อ จำกัด สามารถทำรายการถอนเงินที่เครื่อง ATM ของ SCB และ ธนาคารอื่นผู้ร่วมให้บริการ"
-   ],
-   "age_requirement": 0,
-   "applicant_qualificaitons": [
-    "ขึ้นอยู่กับเงื่อนไขของบริษัทผู้ออกบัตร"
-   ],
-   "usage_conditions": [
-    "ขึ้นอยู่กับเงื่อนไขของบริษัทผู้ออกบัตร"
-   ],
-   "card_expiry": "ขึ้นอยู่กับเงื่อนไขของบริษัทผู้ออกบัตร",
-   "payment_options": [
-    "ไม่มีบริการ"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": [
-     "ไม่มีบริการ"
-    ]
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "ไม่มีบริการ",
-   "pin_replacement_fee": "ไม่มีบริการ",
-   "statement_copy_fee": "ไม่มีบริการ",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีบริการ",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0 ครั้ง/เดือนบัตรสามารถทำได้เฉพาะ รายการถอนเงิน เท่านั้นโดยสามารถทำรายการได้ที่เครื่อง ATM ของ SCB และ ธนาคารอื่นผู้ร่วมให้บริการ",
-    "ถอนเงินสดได้ที่ตู้ ATM / CDM ของ SCB",
-    "ถอนเงินขั้นต่ำ 500",
-    "30,000 บาท/รายการ",
-    "จำนวนครั้ง และ วงเงินในการถอนต่อวัน ขึ้นอยู่กับเงื่อนไขของบริษัทผู้ออกบัตร"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 13,
-   "out_service_area_cash_withdrawal_fee": 13,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 0,
-   "between_10001_and_50000_fee": 0,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 0,
-   "balance_inquiry_fee": 0,
-   "currency_conversion_fee": 0
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.ngerntidlor.com/th/ntlapp.html#moneycabinet",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ธ.ก.ส.",
-  "product": "บัตรSmartCardอสม.(เฉพาะกลุ่มลูกค้า)",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "PromptCard",
-   "highlights": [
-    "- ใช้เป็นบัตรประจำตัว อสม. (อาสาสมัครสาธารณสุขประจำหมู่บ้าน)- เปิดบัญชีเงินฝากเป็น ศูนย์ (0) บาท ได้- ยกเว้นค่าธรรมเนียมการจัดทำ บัตรหรือค่าธรรมเนียมรายปีสำหรับบัตรใบแรกที่ออกให้แก่สมาชิก อสม. เท่านั้น"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ผู้ใช้บริการต้องเป็นสมาชิก อสม และมีบัญชีเงินฝากกับ ธ.ก.ส. เท่านั้น",
-    "เจ้าของบัญชีเงินฝากออมทรัพย์เงื่อนไขการสั่งจ่ายแต่เพียงผู้เดียว (Single)"
-   ],
-   "usage_conditions": [
-    "เปิดบัญชีเงินฝากออมทรัพย์เงื่อนไขการสั่งจ่ายแต่เพียงผู้เดียว (Single) และ เปิดบัญชีเงินฝากเป็น ศูนย์ (0) บาท ได้",
-    "ใช้สำหรับการถอนเงินที่เครื่อง ATM/CDM และชำระค่าสินค้าหรือบริการผ่านเครื่อง EDC/mPOS ได้ทุกร้านภายในประเทศที่มีสัญลักษณ์ Thai Standard"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร ท่านสามารถติดต่อธนาคารได้ทุกสาขาเพื่อต่ออายุบัตร",
-   "payment_options": [
-    "ชำระค่าสินค้าและบริการของบริษัทหน่วยงานต่าง ๆ ที่ธนาคารเปิดให้บริการที่เครื่อง ATM ธ.ก.ส. เช่น AIS 3G Citibank  เป็นต้น สูงสุดไม่เกินวงเงินของบัตรต่อวัน",
-    "ชำระค่าสินค้าหรือบริการแทนเงินสดผ่านเครื่อง EDC/mPOS ณ จุดขายกับร้านค้าที่มีสัญลักษณ์ Thai Standard สูงสุดไม่เกินวงเงิน 60,000 บาทต่อวัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "100บาทเงื่อนไข:ออกบัตรประเภทเดิม",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "100- 500 บาท/ครั้ง\n                                    เงื่อนไข: \n                                    ไม่เกิน 6 เดือน   100 บาท/ครั้ง/บัญชีเกินกว่า 6 เดือน - 2 ปี  200 บาท/ครั้ง/บัญชีเกินกว่า 2 ปี 500 บาท/ครั้ง/บัญชี",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "4 ครั้ง/เดือน",
-    "เบิกถอนเงินได้ไม่จำกัดจำนวนครั้งต่อวัน ครั้งละไม่เกิน 20,000 บาท และสูงสุด ไม่เกิน 60,000 บาทต่อวัน",
-    "ชำระค่าสินค้าหรือบริการแทนเงินสดผ่านเครื่อง EDC/mPOS ณ จุดขายกับร้านค้ามีสัญลักษณ์ Thai Standard สูงสุดไม่เกินวงเงิน 60,000 บาทต่อวัน",
-    "ฝากเงินสดที่เครื่องรับฝากเงิน (CDM) เพื่อเข้าบัญชีที่ผูกกับบัตร ATM ได้ สูงสุด ไม่เกิน 100 ฉบับ/ครั้ง",
-    "โอนเงินรายย่อยระหว่างธนาคาร (ORFT) ผ่านเครื่อง ATM ธ.ก.ส. หรือธนาคาร อื่น ๆ ที่เปิดให้บริการโอนเงิน ได้ไม่เกิน 50,000 บาท/ครั้ง และสูงสุดไม่เกิน 60,000 บาท ต่อวัน",
-    "โอนเงินภายในธนาคาร (ภายในบัตร/โอนไปบัญชีอื่น) สูงสุดไม่เกินวงเงินของบัตร ต่อวัน",
-    "ชำระค่าสินค้าและบริการ ของบริษัทหน่วยงานต่าง ๆ ที่ธนาคารเปิดให้บริการที่ เครื่อง ATM ธ.ก.ส. เช่น AIS 3G Citibank เป็นต้น สูงสุดไม่เกิน 60,000 บาทต่อวัน",
-    "รับสิทธิลดหย่อนค่าธรรมเนียมในการชำระค่าสินค้า และ/หรือบริการ (Bill Payment) ผ่าน เคาน์เตอร์ธนาคาร ให้แก่สมาชิก อสม. 50% ของค่าธรรมเนียมที่ เรียกเก็บจากลูกค้า มีผลตั้งแต่บัดนี้จนถึง 31 ธ.ค.2566 โดย    1) สมาชิก อสม. ต้องแสดงบัตร Smart Card อสม. ของตนเองทุกครั้ง ที่ติดต่อขอชำระค่าสินค้าและบริการ (Bill Payment) ด้วยระบบ Payment ที่สาขา    2) ชื่อผู้ใช้บริการในใบแจ้งหนี้หรือใบแจ้งค่าใช้บริการต้องตรงกับชื่อบน Smart Card อสม. เท่านั้น"
-   ],
-   "in_service_area_balance_inquiry_fee": 10,
-   "out_service_area_balance_inquiry_fee": 30,
-   "in_service_area_cash_withdrawal_fee": 10,
-   "out_service_area_cash_withdrawal_fee": 30,
-   "in_service_area_transfer_fee": 10,
-   "out_service_area_transfer_fee": 10,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 0,
-   "balance_inquiry_fee": 0,
-   "currency_conversion_fee": 0
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.baac.or.th/th/content-product.php?content_id=15270\u0026content_group_semi=0003\u0026content_group_sub=12\u0026content_group=4\u0026inside=1",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ธ.ก.ส.",
-  "product": "บัตรSmartCardอสส.(เฉพาะกลุ่มลูกค้า)",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "PromptCard",
-   "highlights": [
-    "- ใช้เป็นบัตรประจำตัว อสส.(อาสาสมัครสาธารณสุขกรุงเทพมหานคร)- เปิดบัญชีเงินฝากเป็น ศูนย์ (0) บาท ได้- ยกเว้นค่าธรรมเนียมการจัดทำ บัตรหรือค่าธรรมเนียมรายปีสำหรับบัตรใบแรกที่ออกให้แก่สมาชิก อสส. เท่านั้น"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ผู้ใช้บริการต้องเป็นสมาชิก อสส และมีบัญชีเงินฝากกับ ธ.ก.ส. เท่านั้น",
-    "เจ้าของบัญชีเงินฝากออมทรัพย์เงื่อนไขการสั่งจ่ายแต่เพียงผู้เดียว (Single)"
-   ],
-   "usage_conditions": [
-    "เปิดบัญชีเงินฝากออมทรัพย์เงื่อนไขการสั่งจ่ายแต่เพียงผู้เดียว (Single) และ เปิดบัญชีเงินฝากเป็น ศูนย์ (0) บาท ได้",
-    "ใช้สำหรับการถอนเงินที่เครื่อง ATM/CDM และชำระค่าสินค้าหรือบริการผ่านเครื่อง EDC/mPOS ได้ทุกร้านภายในประเทศที่มีสัญลักษณ์ Thai Standard"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร ท่านสามารถติดต่อธนาคารได้ทุกสาขาเพื่อต่ออายุบัตร",
-   "payment_options": [
-    "ชำระค่าสินค้าและบริการของบริษัทหน่วยงานต่าง ๆ ที่ธนาคารเปิดให้บริการที่เครื่อง ATM ธ.ก.ส. เช่น AIS 3G Citibank  เป็นต้น สูงสุดไม่เกินวงเงินของบัตรต่อวัน",
-    "ชำระค่าสินค้าหรือบริการแทนเงินสดผ่านเครื่อง EDC/mPOS ณ จุดขายกับร้านค้าที่มีสัญลักษณ์ Thai Standard สูงสุดไม่เกินวงเงิน 60,000 บาทต่อวัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "100บาทเงื่อนไข:ออกบัตรประเภทเดิม",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "100- 500 บาท/ครั้ง\n                                    เงื่อนไข: \n                                    ไม่เกิน 6 เดือน   100 บาท/ครั้ง/บัญชีเกินกว่า 6 เดือน - 2 ปี  200 บาท/ครั้ง/บัญชีเกินกว่า 2 ปี 500 บาท/ครั้ง/บัญชี",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "4 ครั้ง/เดือน",
-    "เบิกถอนเงินได้ไม่จำกัดจำนวนครั้งต่อวัน ครั้งละไม่เกิน 20,000 บาท และสูงสุด ไม่เกิน 60,000 บาทต่อวัน",
-    "ชำระค่าสินค้าหรือบริการแทนเงินสดผ่านเครื่อง EDC/mPOS ณ จุดขายกับร้านค้ามีสัญลักษณ์ Thai Standard สูงสุดไม่เกินวงเงิน 60,000 บาทต่อวัน",
-    "ฝากเงินสดที่เครื่องรับฝากเงิน (CDM) เพื่อเข้าบัญชีที่ผูกกับบัตร ATM ได้ สูงสุด ไม่เกิน 100 ฉบับ/ครั้ง",
-    "โอนเงินรายย่อยระหว่างธนาคาร (ORFT) ผ่านเครื่อง ATM ธ.ก.ส. หรือธนาคาร อื่น ๆ ที่เปิดให้บริการโอนเงิน ได้ไม่เกิน 50,000 บาท/ครั้ง และสูงสุดไม่เกิน 60,000 บาท ต่อวัน",
-    "โอนเงินภายในธนาคาร (ภายในบัตร/โอนไปบัญชีอื่น) สูงสุดไม่เกินวงเงินของบัตร ต่อวัน",
-    "ชำระค่าสินค้าและบริการ ของบริษัทหน่วยงานต่าง ๆ ที่ธนาคารเปิดให้บริการที่ เครื่อง ATM ธ.ก.ส. เช่น AIS 3G Citibank เป็นต้น สูงสุดไม่เกิน 60,000 บาทต่อวัน",
-    "รับสิทธิลดหย่อนค่าธรรมเนียมในการชำระค่าสินค้า และ/หรือบริการ (Bill Payment) ผ่าน เคาน์เตอร์ธนาคาร ให้แก่สมาชิก อสส. 50% ของค่าธรรมเนียมที่ เรียกเก็บจากลูกค้า มีผลตั้งแต่บัดนี้จนถึง 31 ธ.ค.2566 โดย    1) สมาชิก อสส. ต้องแสดงบัตร Smart Card อสม. ของตนเองทุกครั้ง ที่ติดต่อขอชำระค่าสินค้าและบริการ (Bill Payment) ด้วยระบบ Payment ที่สาขา    2) ชื่อผู้ใช้บริการในใบแจ้งหนี้หรือใบแจ้งค่าใช้บริการต้องตรงกับชื่อบน Smart Card อสส. เท่านั้น"
-   ],
-   "in_service_area_balance_inquiry_fee": 10,
-   "out_service_area_balance_inquiry_fee": 30,
-   "in_service_area_cash_withdrawal_fee": 10,
-   "out_service_area_cash_withdrawal_fee": 30,
-   "in_service_area_transfer_fee": 10,
-   "out_service_area_transfer_fee": 10,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 0,
-   "balance_inquiry_fee": 0,
-   "currency_conversion_fee": 0
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.baac.or.th/th/content-product.php?content_id=15269\u0026content_group_semi=0003\u0026content_group_sub=12\u0026content_group=4\u0026inside=1",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ซีไอเอ็มบีไทย",
-  "product": "บัตรเดบิตBizPayroll",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "VISA",
-   "highlights": [
-    "- กดฟรี ทุกตู้ ทุกธนาคารที่เครื่อง ATM Pool ไม่จำกัดจำนวนครั้งต่อเดือน - รู้ความเคลื่อนไหวของบัญชีผ่าน e-statement ทุกเดือน- ใช้รูดซื้อสินค้าและบริการ รวมถึงซื้อสินค้าออนไลน์โดยไม่ต้องพกเงินสด- SMS Alert แจ้งเตือนรายการใช้จ่ายผ่านบัตรเดบิต- สะดวกเพียงแตะบัตร ณ ร้านค้าที่มีสัญลักษณ์ VISA PAYWAVE เมื่อชำระค่าสินค้าและบริการโดยผู้ถือบัตรไม่ต้องเซ็นต์ในเซลล์สลิป สำหรับยอดการซื้อไม่เกิน 1,500 บาท"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องผูกกับบัญชีเงินฝากออมทรัพย์ดิจิทัล Biz payroll เท่านั้น และชื่อต้องตรงกับชื่อบัญชีเท่านั้น"
-   ],
-   "usage_conditions": [
-    "1 บัตรต่อ 1 บัญชี"
-   ],
-   "card_expiry": "ตรวจสอบวันหมดอายุที่หน้าบัตร",
-   "payment_options": [
-    "ชำระค่าสินค้าและบริการ ได้สูงสุด 40,000 บาท/วัน",
-    "ปรับเปลี่ยนวงเงินผ่าน CIMB Thai Care Center ได้ตั้งแต่ 0",
-    "100,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "100บาท",
-   "pin_replacement_fee": "ไม่มีบริการ",
-   "statement_copy_fee": "ไม่มีบริการ",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "999 ครั้ง/เดือนถอนเงิน",
-    "ถอนเงินสดได้สูงสุด 30,000 บาท/ครั้ง",
-    "ถอนเงิน สูงสุด 8 ครั้ง/วัน",
-    "สามารถกำหนดหรือปรับเปลี่ยนวงเงินถอนเงิน ได้ตั้งแต่ 0 – 100,000 บาท/บัตร/วัน สอบถามยอด",
-    "ไม่จำกัดจำนวนครั้งค่าธรรมเนียม",
-    "ฟรี! ค่าธรรมเนียมการถอนเงินสดและสอบถามที่ตู้ ATM ทุกธนาคาร"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 0,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 100,
-   "balance_inquiry_fee": 100,
-   "currency_conversion_fee": 0
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ซีไอเอ็มบีไทย",
-  "product": "บัตรเดบิตคู่กับบัญชีเงินฝากพื้นฐาน(เฉพาะกลุ่มลูกค้า)",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "VISA",
-   "highlights": [
-    "- กดฟรี ทุกตู้ ทุกธนาคารที่เครื่อง ATM Pool ไม่จำกัดจำนวนครั้งต่อเดือน- ใช้รูดซื้อสินค้าและบริการ รวมถึงซื้อสินค้าออนไลน์โดยไม่ต้องพกเงินสด- SMS Alert แจ้งเตือนรายการใช้จ่ายผ่านบัตรเดบิต- ปลอดภัยด้วย EMV Chip และ PIN 6 หลัก- สะดวกเพียงแตะบัตร ณ ร้านค้าที่มีสัญลักษณ์ VISA PAYWAVE เมื่อชำระค่าสินค้าและบริการโดยผู้ถือบัตรไม่ต้องเซ็นต์ในเซลล์สลิป สำหรับยอดการซื้อไม่เกิน 1,500 บาท"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องผูกกับบัญชีเงินฝากพื้นฐานเท่านั้น"
-   ],
-   "usage_conditions": [
-    "1 บัตรต่อ 1 บัญชี"
-   ],
-   "card_expiry": "ตรวจสอบวันหมดอายุที่หน้าบัตร",
-   "payment_options": [
-    "ชำระค่าสินค้าและบริการ ได้สูงสุด 40,000 บาท/วัน",
-    "ปรับเปลี่ยนวงเงินผ่าน CIMB Thai Care Center ได้ตั้งแต่ 0",
-    "100,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "100บาท",
-   "pin_replacement_fee": "ไม่มีบริการ",
-   "statement_copy_fee": "ไม่มีบริการ",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "999 ครั้ง/เดือนถอนเงิน",
-    "ถอนเงินสดได้สูงสุด 30,000 บาท/ครั้ง",
-    "ถอนเงิน สูงสุด 8 ครั้ง/วัน",
-    "สามารถกำหนดหรือปรับเปลี่ยนวงเงินถอนเงิน ได้ตั้งแต่ 0 – 100,000 บาท/บัตร/วัน สอบถามยอด",
-    "ไม่จำกัดจำนวนครั้งค่าธรรมเนียม",
-    "ฟรี! ค่าธรรมเนียมการถอนเงินสดและสอบถามที่ตู้ ATM ทุกธนาคาร"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 0,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 100,
-   "balance_inquiry_fee": 100,
-   "currency_conversion_fee": 0
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.cimbthai.com/th/personal/products/cards/cimb-thai-debit-card-thai-standard-format/debit-card-linked-to-basic-banking-account-thai-standard-format.html",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ซีไอเอ็มบีไทย",
-  "product": "บัตรเดบิตคู่กับบัญชีไม่มีสมุดคู่ฝาก(E-Saving)",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "VISA",
-   "highlights": [
-    "- กดฟรี ทุกตู้ ทุกธนาคารที่เครื่อง ATM Pool ไม่จำกัดจำนวนครั้งต่อเดือน - รู้ความเคลื่อนไหวของบัญชีผ่าน e-statement ทุกเดือน- ใช้รูดซื้อสินค้าและบริการ รวมถึงซื้อสินค้าออนไลน์โดยไม่ต้องพกเงินสด- SMS Alert แจ้งเตือนรายการใช้จ่ายผ่านบัตรเดบิต- สะดวกเพียงแตะบัตร ณ ร้านค้าที่มีสัญลักษณ์ VISA PAYWAVE เมื่อชำระค่าสินค้าและบริการโดยผู้ถือบัตรไม่ต้องเซ็นต์ในเซลล์สลิป สำหรับยอดการซื้อไม่เกิน 1,500 บาท"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องผูกกับบัญชีออมทรัพย์ (e",
-    "saving) และชื่อต้องตรงกับชื่อบัญชีเท่านั้น"
-   ],
-   "usage_conditions": [
-    "1 บัตรต่อ 1 บัญชี"
-   ],
-   "card_expiry": "ตรวจสอบวันหมดอายุที่หน้าบัตร",
-   "payment_options": [
-    "ชำระค่าสินค้าและบริการ ได้สูงสุด 40,000 บาท/วัน",
-    "ปรับเปลี่ยนวงเงินผ่าน CIMB Thai Care Center ได้ตั้งแต่ 0",
-    "100,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "100บาท",
-   "pin_replacement_fee": "ไม่มีบริการ",
-   "statement_copy_fee": "ไม่มีบริการ",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "999 ครั้ง/เดือนถอนเงิน",
-    "ถอนเงินสดได้สูงสุด 30,000 บาท/ครั้ง",
-    "ถอนเงิน สูงสุด 8 ครั้ง/วัน",
-    "สามารถกำหนดหรือปรับเปลี่ยนวงเงินถอนเงิน ได้ตั้งแต่ 0 – 100,000 บาท/บัตร/วัน สอบถามยอด",
-    "ไม่จำกัดจำนวนครั้งค่าธรรมเนียม",
-    "ฟรี! ค่าธรรมเนียมการถอนเงินสดและสอบถามที่ตู้ ATM ทุกธนาคาร"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 0,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 100,
-   "balance_inquiry_fee": 100,
-   "currency_conversion_fee": 0
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.cimbthai.com/th/personal/products/cards/cimb-thai-debit-card-thai-standard-format/cimb-thai-debit-e-saving-thai-standard-format.html",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ซีไอเอ็มบีไทย",
-  "product": "บัตรเดบิตชิลดี",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "VISA",
-   "highlights": [
-    "- กดฟรี ทุกตู้ ทุกธนาคารที่เครื่อง ATM Pool ไม่จำกัดจำนวนครั้งต่อเดือน - รู้ความเคลื่อนไหวของบัญชีผ่าน e-statement ทุกเดือน- ใช้รูดซื้อสินค้าและบริการ รวมถึงซื้อสินค้าออนไลน์โดยไม่ต้องพกเงินสด- SMS Alert แจ้งเตือนรายการใช้จ่ายผ่านบัตรเดบิต- สะดวกเพียงแตะบัตร ณ ร้านค้าที่มีสัญลักษณ์ VISA PAYWAVE เมื่อชำระค่าสินค้าและบริการโดยผู้ถือบัตรไม่ต้องเซ็นต์ในเซลล์สลิป สำหรับยอดการซื้อไม่เกิน 1,500 บาท"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องผูกกับบัญชีเงินฝากออมทรัพย์ชิลดี ซีไอเอ็มบี ไทย เท่านั้น และชื่อต้องตรงกับชื่อบัญชีเท่านั้น"
-   ],
-   "usage_conditions": [
-    "1 บัตรต่อ 1 บัญชี"
-   ],
-   "card_expiry": "ตรวจสอบวันหมดอายุที่หน้าบัตร",
-   "payment_options": [
-    "ชำระค่าสินค้าและบริการ ได้สูงสุด 40,000 บาท/วัน",
-    "ปรับเปลี่ยนวงเงินผ่าน CIMB Thai Care Center ได้ตั้งแต่ 0",
-    "100,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "100บาท",
-   "pin_replacement_fee": "ไม่มีบริการ",
-   "statement_copy_fee": "ไม่มีบริการ",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "999 ครั้ง/เดือนถอนเงิน",
-    "ถอนเงินสดได้สูงสุด 30,000 บาท/ครั้ง",
-    "ถอนเงิน สูงสุด 8 ครั้ง/วัน",
-    "สามารถกำหนดหรือปรับเปลี่ยนวงเงินถอนเงิน ได้ตั้งแต่ 0 – 100,000 บาท/บัตร/วัน สอบถามยอด",
-    "ไม่จำกัดจำนวนครั้งค่าธรรมเนียม",
-    "ฟรี! ค่าธรรมเนียมการถอนเงินสดและสอบถามที่ตู้ ATM ทุกธนาคาร"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 0,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 100,
-   "balance_inquiry_fee": 100,
-   "currency_conversion_fee": 0
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.cimbthai.com/th/personal/products/cards/cimb-thai-debit-card-thai-standard-format/chill-d-debit-card.html",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ทหารไทยธนชาต",
-  "product": "บัตรเดบิตทีทีบีออลล์ฟรีดิจิทัล(เฉพาะกลุ่มลูกค้า)",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "VISA",
-   "highlights": [
-    "- ซื้อสินค้าผ่าน Online (Verify by VISA/Local Switching Secure) ณ ร้านค้า ทั้งในและต่างประเทศ สูงสุด 500,000 บาท/บัตร/วัน"
-   ],
-   "age_requirement": 0,
-   "applicant_qualificaitons": [
-    "ต้องมีบัญชี ทีทีบี ออลล์ ฟรี เพื่อผูกบัญชี โดยลูกค้า 1 ราย สามารถเปิดบัญชีได้สูงสุด 4 บัญชี (ทุกช่องทางรวมกัน)"
-   ],
-   "usage_conditions": [
-    "จำกัด 1 ท่าน เปิดไม่เกิน 1 บัตรต่อบัญชี ทีทีบี ออลล์ ฟรี",
-    "1 บัตร ผูกได้ 1 บัญชี",
-    "ขอออกบัตรใหม่ ได้ไม่เกิน 3 บัตรต่อบัญชี ภายใน 1 ปี ปฏิทิน"
-   ],
-   "card_expiry": "2 ปี โดยวันหมดอายุระบุบนแอป ทีทีบี ทัช",
-   "payment_options": [
-    "รูดซื้อสินค้าผ่าน Online (Verify by VISA/Local Switching Secure) ณ ร้านค้า ทั้งในและต่างประเทศ สูงสุด 500,000 บาท/บัตร/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มี"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "pin_replacement_fee": "ไม่มีบริการ",
-   "statement_copy_fee": "ไม่มีบริการ",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีบริการ",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 500,
-   "cash_withdrawal": [
-    "ไม่มีค่าธรรมเนียมซื้อสินค้าผ่าน Online (Verify by VISA/Local Switching Secure) ณ ร้านค้า ทั้งในและต่างประเทศ สูงสุด 500,000 บาท/บัตร/วัน"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 0,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 0,
-   "between_10001_and_50000_fee": 0,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 2,
-   "balance_inquiry_fee": 2,
-   "currency_conversion_fee": 2.5
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.ttbbank.com/th/personal/deposits/transactional-account/ttb-all-free",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ทหารไทยธนชาต",
-  "product": "บัตรเดบิตวีซ่าออลล์ฟรีโอลิมปีกปารีส2024(เฉพาะกลุ่มลูกค้า)",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "VISA",
-   "highlights": [
-    "รูดซื้อสินค้าผ่านเครื่องรูดบัตร EDC / VISA Paywave / Online (Verify by VISA/Local Switching Secure) ณ จุดบริการสินค้าที่มีสัญลักษณ์ VISA ทั้งในและต่างประเทศสูงสุด 2,000,000 บาท/บัตร/วัน"
-   ],
-   "age_requirement": 0,
-   "applicant_qualificaitons": [
-    "'",
-    "ต้องมีบัญชี ทีทีบี ออลล์ ฟรี เพื่อผูกบัญชีร่วมกับบัตร"
-   ],
-   "usage_conditions": [
-    "1 บัตร ผูกได้ 1 บัญชี",
-    "บัตรนี้ไม่สามารถทำธุรกรรมใด ๆ ผ่านตู้ ATM และ CDM",
-    "ออกบัตรได้ทาง แอป ทีทีบี ทัช เท่านั้น"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร",
-   "payment_options": [
-    "'รูดซื้อสินค้าผ่านเครื่องรูดบัตร EDC / VISA Paywave / Online (Verify by VISA/Local Switching Secure) ณ จุดบริการสินค้าที่มีสัญลักษณ์ VISA ทั้งในและต่างประเทศสูงสุด 2,000,000 บาท/บัตร/วัน เฉพาะรายการ VISA Paywave ไม่เกิน 1,500 บาท/รายการ"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มี"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "pin_replacement_fee": "ไม่มีบริการ",
-   "statement_copy_fee": "ไม่มีบริการ",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีบริการ",
-   "other_fees": [
-    "ค่าธรรมเนียมการจัดส่งบัตร",
-    "กรณีการออกบัตรใหม่ (ใบแร) 50 บาท/ต่อบัตร/ครั้ง",
-    "กรณีการออกบัตรใหม่ เพื่อทดแทนบัตรใบเดิม ทุกกรณี (บัตรสูญหาย / บัตรชารุด / บัตรหมดอายุ)  50 บาท/ต่อบัตร/ครั้ง"
-   ]
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "ไม่มีค่าธรรมเนียม"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 0,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 0,
-   "between_10001_and_50000_fee": 0,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 2,
-   "balance_inquiry_fee": 2,
-   "currency_conversion_fee": 2.5
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ออมสิน",
-  "product": "บัตรเดบิตออมสินเบสิค",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "Mastercard",
-   "highlights": [
-    "บัตรเดบิตสำหรับผู้มีบัญชีเงินฝากพื้นฐาน ธนาคารออมสินยกเว้นค่าธรรมเนียมแรกเข้าและรายปีให้กับผู้สมัคร"
-   ],
-   "age_requirement": 0,
-   "applicant_qualificaitons": [
-    "เป็นผู้ถือบัตรสวัสดิการแห่งรัฐ (ยังไม่หมดอายุ) หรือผู้ที่มีสัญชาติไทยอายุ 65 ปี ขึ้นไป",
-    "เป็นเจ้าของบัญชีเงินฝากพื้นฐาน ซึ่งไม่เป็นบัญชีร่วม บัญชีเพื่อประโยชน์ของผู้เยาว์ บัญชีเงินฝากที่เบิกถอน โดยการพิมพ์ลายนิ้วมือแทนการลงลายมือชื่อ บัญชีทอดทิ้ง บัญชีที่ถูกปิด หรือบัญชีที่ไม่พบข้อมูล",
-    "บัตรเดบิต ออมสิน เบสิค (GSB DEBIT BASIC CARD) ให้บริการสำหรับบัญชีเงินฝากพื้นฐาน  และบัญชีเงินฝากพื้นฐาน 1 บัญชี สามารถผูกบัตรออมสิน เดบิต เบสิค ได้ 1 บัตรเท่านั้น"
-   ],
-   "usage_conditions": [
-    "ใช้ได้กับบัญชีพื้นฐานเท่านั้น",
-    "สมัครได้ 1 บัตร ต่อ 1 บัญชีเท่านั้น",
-    "จำกัดจำนวนสมัคร 1 บัตรต่อคน เท่านั้น"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร ท่านสามารถติดต่อธนาคารได้ทุกสาขา เพื่อต่ออายุบัตร",
-   "payment_options": [
-    "ชำระค่าสินค้าและบริการที่เครื่องเอทีเอ็มของธนาคาร สูงสุด 100,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "100บาท",
-   "pin_replacement_fee": "ไม่มีบริการ",
-   "statement_copy_fee": "ไม่มีบริการ",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": [
-    "การออกบัตรใหม่ กรณีลูกค้าลืมรหัส 50 บาท"
-   ]
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "4 ครั้ง/เดือนถอนเงิน",
-    "ถอนเงินสดได้สูงสุด 200,000 บาท/บัตร/วัน ที่ตู้ ATM ทุกเครื่องในประเทศไทยที่มีเครื่องหมาย ATM POOL",
-    "ถอนเงินได้ครั้งละสูงสุด 20,000 บาทต่อครั้ง",
-    "ถอนเงิน สูงสุด 10 ครั้งต่อวันสอบถามยอด",
-    "สูงสุด 10 ครั้งต่อวันโอนเงินระหว่างบัญชีภายในบัตรเดียวกัน",
-    "สูงสุดไม่เกิน 200,000 บาทต่อวัน",
-    "สูงสุดไม่เกิน 10 ครั้งต่อวัน",
-    "กรณีโอนเงินระหว่างบัญชีภายในบัตรเดียวกันที่เครื่อง ATM ต่างธนาคาร จำนวนครั้งจะนับรวมกับการถอนและการสอบถามด้วยโอนเงินไปบัญชีเงินฝากภายในธนาคาร",
-    "สูงสุดไม่เกิน 100,000 บาทต่อวัน",
-    "ไม่จำกัดจำนวนครั้งโอนเงินรายย่อยระหว่างธนาคาร (ORFT)",
-    "สูงสุดไม่เกิน 100,000 บาทต่อวัน",
-    "สูงสุดครั้งละไม่เกิน 50,000 บาท",
-    "ไม่จำกัดจำนวนครั้ง"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 20,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 100,
-   "balance_inquiry_fee": 15,
-   "currency_conversion_fee": 2.5
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.gsb.or.th/personals/gsb-debit-basic/",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ออมสิน",
-  "product": "บัตรเดบิตออมสินเบสิค",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "VISA",
-   "highlights": [
-    "บัตรเดบิตสำหรับผู้มีบัญชีเงินฝากพื้นฐาน ธนาคารออมสินยกเว้นค่าธรรมเนียมแรกเข้าและรายปีให้กับผู้สมัคร"
-   ],
-   "age_requirement": 0,
-   "applicant_qualificaitons": [
-    "เป็นผู้ถือบัตรสวัสดิการแห่งรัฐ (ยังไม่หมดอายุ) หรือผู้ที่มีสัญชาติไทยอายุ 65 ปี ขึ้นไป",
-    "เป็นเจ้าของบัญชีเงินฝากพื้นฐาน ซึ่งไม่เป็นบัญชีร่วม บัญชีเพื่อประโยชน์ของผู้เยาว์ บัญชีเงินฝากที่เบิกถอน โดยการพิมพ์ลายนิ้วมือแทนการลงลายมือชื่อ บัญชีทอดทิ้ง บัญชีที่ถูกปิด หรือบัญชีที่ไม่พบข้อมูล",
-    "บัตรเดบิต ออมสิน เบสิค (GSB DEBIT BASIC CARD) ให้บริการสำหรับบัญชีเงินฝากพื้นฐาน  และบัญชีเงินฝากพื้นฐาน 1 บัญชี สามารถผูกบัตรออมสิน เดบิต เบสิค ได้ 1 บัตรเท่านั้น"
-   ],
-   "usage_conditions": [
-    "ใช้ได้กับบัญชีพื้นฐานเท่านั้น",
-    "สมัครได้ 1 บัตร ต่อ 1 บัญชีเท่านั้น",
-    "จำกัดจำนวนสมัคร 1 บัตรต่อคน เท่านั้น"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร ท่านสามารถติดต่อธนาคารได้ทุกสาขา เพื่อต่ออายุบัตร",
-   "payment_options": [
-    "ชำระค่าสินค้าและบริการที่เครื่องเอทีเอ็มของธนาคาร สูงสุด 100,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "100บาท",
-   "pin_replacement_fee": "ไม่มีบริการ",
-   "statement_copy_fee": "ไม่มีบริการ",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": [
-    "การออกบัตรใหม่ กรณีลูกค้าลืมรหัส 50 บาท"
-   ]
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "4 ครั้ง/เดือนถอนเงิน",
-    "ถอนเงินสดได้สูงสุด 200,000 บาท/บัตร/วัน ที่ตู้ ATM ทุกเครื่องในประเทศไทยที่มีเครื่องหมาย ATM POOL",
-    "ถอนเงินได้ครั้งละสูงสุด 20,000 บาทต่อครั้ง",
-    "ถอนเงิน สูงสุด 10 ครั้งต่อวันสอบถามยอด",
-    "สูงสุด 10 ครั้งต่อวันโอนเงินระหว่างบัญชีภายในบัตรเดียวกัน",
-    "สูงสุดไม่เกิน 200,000 บาทต่อวัน",
-    "สูงสุดไม่เกิน 10 ครั้งต่อวัน",
-    "กรณีโอนเงินระหว่างบัญชีภายในบัตรเดียวกันที่เครื่อง ATM ต่างธนาคาร จำนวนครั้งจะนับรวมกับการถอนและการสอบถามด้วยโอนเงินไปบัญชีเงินฝากภายในธนาคาร",
-    "สูงสุดไม่เกิน 100,000 บาทต่อวัน",
-    "ไม่จำกัดจำนวนครั้งโอนเงินรายย่อยระหว่างธนาคาร (ORFT)",
-    "สูงสุดไม่เกิน 100,000 บาทต่อวัน",
-    "สูงสุดครั้งละไม่เกิน 50,000 บาท",
-    "ไม่จำกัดจำนวนครั้ง"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 20,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 100,
-   "balance_inquiry_fee": 15,
-   "currency_conversion_fee": 2
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.gsb.or.th/personals/gsb-debit-basic/",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "กสิกรไทย",
-  "product": "บัตรเดบิตพื้นฐาน(KBASICDebitCard)(เฉพาะกลุ่มลูกค้า)",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "VISA",
-   "highlights": [
-    "- เบิกถอนเงินสดได้ทั่วโลก ณ เครื่องเอทีเอ็มที่มีเครื่องหมาย VISA- ใช้ซื้อสินค้าและบริการ รวมถึงซื้อสินค้าออนไลน์โดยไม่ต้องพกเงินสด - SMS Alert แจ้งเตือนรายการใช้จ่ายผ่านบัตรเดบิต- ปลอดภัย ด้วย EMV Chip และ PIN 6 หลัก- ให้บริการกับลูกค้าที่มีบัญชีเงินฝากพื้นฐานเท่านั้น"
-   ],
-   "age_requirement": 0,
-   "applicant_qualificaitons": [
-    "ต้องสมัครบัตรกับบัญชีเงินฝากพื้นฐานเท่านั้น",
-    "เป็นบุคคลธรรมดา สัญชาติไทย อายุไม่ต่ำกว่า 65 ปี หรือกรณีบุคคลธรรมดาอายุต่ำกว่า 65 ปี จะต้องมีบัตรสวัสดิการแห่งรัฐที่ยังไม่หมดอายุ"
-   ],
-   "usage_conditions": [
-    "บัตรเดบิตพื้นฐานผูกกับบัญชีเงินฝากพื้นฐานได้ 1 บัตรเท่านั้น และบัญชีเงินฝากพื้นฐานสามารถผูกบัตรเดบิตประเภทอื่นๆ ได้อีก 4 บัตร (1 บัญชีผูกบัตรไม่เกิน 5 บัตร)",
-    "สามารถใช้บัตรสมัครบริการและทำรายการต่างๆ ของธนาคารผ่านตู้ ATM  ได้ เช่น เปลี่ยนรหัสประจำบัตร (PIN), สมัครบริการซื้อสินค้า Internet Shopping เป็นต้น"
-   ],
-   "card_expiry": "7 ปี โดยวันหมดอายุระบุบนหน้าบัตร ท่านสามารถติดต่อธนาคารได้ทุกสาขาเพื่อสมัครบัตรใหม่",
-   "payment_options": [
-    "วงเงินซื้อสินค้าและบริการ สูงสุดวันละ 500,000 บาท เบื้องต้นกำหนดวงเงินซื้อสินค้าและบริการ 20,000 บาท  (ลูกค้าสามารถปรับวงเงินผ่าน KPlus ตั้งแต่ 0",
-    "500,000 บาท)"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": [
-     "ระบบหักชำระค่าสินค้าและบริการจากบัญชี เงินฝากที่ผูกกับบัตร",
-     "การทำธุรกรรม ถอน โอน ซื้อสินค้า ขึ้นกับ วงเงินที่ลูกค้ากำหนดโดยกำหนดไม่เกินวงเงินสูงสุดของการถอน โอน ซื้อสินค้า และการทำธุรกรรมต่างๆต้องไม่เกินยอดเงินคงเหลือในบัญชี"
-    ]
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียมเงื่อนไข:กรณีบัญชีเงินฝากพื้นฐานที่ผูกกับบัตรถูกเปลี่ยนแปลงรูปแบบเป็นบัญชีเงินฝากออมทรัพย์ตามข้อกำหนดและเงื่อนไขการเปิดบัญชีและใช้บัญชีเงินฝากพื้นฐานระบบหักค่าธรรมเนียมรายปีจากบัญชีเงินฝากที่ผูกกับบัตรเดบิตพื้นฐานตามประกาศอัตราค่าธรรมเนียมสำหรับบัตรเดบิตกสิกรไทยเมื่อครบรอบปีการเป็นสมาชิกบัตรเดบิตพื้นฐานกรณีระบบไม่สามารถหักค่าธรรมเนียมรายปีได้บัตรจะไม่สามารถใช้บริการได้จนกว่าลูกค้าจะชำระค่าธรรมเนียมที่เครื่องเอทีเอ็มกสิกรไทย",
-   "card_replacement_fee": "ไม่มีค่าธรรมเนียมเงื่อนไข:ไม่มีบริการ",
-   "pin_replacement_fee": "ไม่มีบริการ",
-   "statement_copy_fee": "ไม่มีบริการ",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีบริการ",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 1,
-   "cash_withdrawal": [
-    "1",
-    "4 ครั้ง/เดือนถอนเงิน",
-    "ถอนเงินสดได้สูงสุด 200,000 บาท/บัตร/วัน ที่ตู้ ATM",
-    "ถอนเงิน สูงสุด 15 ครั้งต่อวัน",
-    "สามารถกำหนดหรือปรับเปลี่ยนวงเงินถอนเงินผ่านบัตร ได้ตั้งแต่ 0 – 200,000 บาท/บัตร/วัน  ที่  KPlusสอบถามยอด",
-    "สูงสุด 10 ครั้งต่อวันโอนเงินระหว่างบัญชีภายในบัตรเดียวกัน",
-    "ไม่จำกัดวงเงิน",
-    "สูงสุดไม่เกิน 10 ครั้งต่อวัน (นับรวมกับการโอนเงินไปยังบัญชีเงินฝากของบุคคลที่สามภายในธนาคารและต่างธนาคาร)โอนเงินไปบัญชีเงินฝากของบุคคลที่สามภายในธนาคารและต่างธนาคาร",
-    "สูงสุดไม่เกิน 1,000,000 บาท/บัตร/วัน",
-    "สูงสุดไม่เกิน 10 ครั้งต่อวัน (นับรวมกับการโอนเงินระหว่างบัญชีภายในบัตรเดียวกันและต่างธนาคาร)โอนเงินรายย่อยต่างธนาคาร",
-    "สูงสุดไม่เกิน 500,000 บาท/บัตร/วัน",
-    "สูงสุดครั้งละไม่เกิน 50,000 บาท * สามารถกำหนดหรือปรับเปลี่ยนวงเงินโอนผ่านบัตรได้ตั้งแต่ 0 – 1,000,000 บาท/บัตร/วัน ที่  KPlus"
-   ],
-   "in_service_area_balance_inquiry_fee": 10,
-   "out_service_area_balance_inquiry_fee": 10,
-   "in_service_area_cash_withdrawal_fee": 10,
-   "out_service_area_cash_withdrawal_fee": 20,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 10,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 100,
-   "balance_inquiry_fee": 0,
-   "currency_conversion_fee": 2.5
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.kasikornbank.com/th/personal/Debit-Card",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ไอซีบีซี(ไทย)",
-  "product": "บัตรเดบิตยูเนียนเพย์-ดิจิทัล",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "TPNUnionPay",
-   "highlights": [
-    "- บัตรเดบิตสองสกุลเงิน ฝากได้ทั้งเงินหยวนและเงินบาท- มีบัตรเสมือนจริงในโมบายแบงค์กิ้ง- ใช้สอบถามยอด ถอนเงิน โอนเงิน ทั้งภายในธนาคารและต่างธนาคารที่ตู้เอทีเอ็มทุกธนาคาร ทั่วประเทศ - ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็มต่างธนาคารในประเทศไทย ในเขตบริการเดียวกัน ฟรี 4 รายการแรกต่อเดือน- ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็ม ธนาคารไอซีบีซีในประเทศจีน- ใช้จ่าย ณ ร้านค้า หรือ ถอนเงินสดได้ที่ตู้เอทีเอ็มที่มีสัญลักษณ์ยูเนี่ยนเพย์ทั่วโลก-ใช้รูดซื้อสินค้าและบริการ โดยไม่ต้องพกเงินสด- SMS Alert แจ้งเตือนรายการใช้จ่ายผ่านบัตรเดบิต- ปลอดภัยด้วย EMV Chip และ PIN 6 หลัก"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องมีบัญชีเงินฝากกระแสรายวันหรือออมทรัพย์เพื่อผูกบัญชี"
-   ],
-   "usage_conditions": [
-    "เปิดบัญชีขั้นต่ำ 0 บาท",
-    "1 บัตร ผูกได้ 1 บัญชี"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร ท่านสามารถติดต่อธนาคารได้ทุกสาขาเพื่อต่ออายุบัตร",
-   "payment_options": [
-    "วงเงินชำระค่าสินค้าและบริการ 300,000 บาท/รายการ และ 1,000,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "100บาทเงื่อนไข:ธนาคารยกเว้นค่าธรรมเนียมในการทำบัตรใหม่ดังนี้1.กรณีที่ลูกค้าใช้บริการที่ตู้ATMและตู้ATMยึดบัตรเดบิตแบบไม่ใช่ความผิดของลูกค้า2.กรณีออกบัตรใหม่ทดแทนบัตรที่หมดอายุ(แต่จะต้องนำบัตรใบเดิมมาด้วย)",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "ไม่มีค่าธรรมเนียม",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "10 ครั้ง/เดือนการถอนเงิน",
-    "วงเงินถอนเงินสดสูงสุด 100,000 บาท/วัน (ขยายวงเงินได้สูงสุด 160,000 บาท/วัน)",
-    "ถอนเงินที่ตู้ ATM ของธนาคารฟรี",
-    "ถอนเงินที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 20 บาทสอบถามยอด",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ของธนาคารฟรี",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต คิดค่าบริการรายการละ 10 บาทโอนเงิน",
-    "โอนเงินระหว่างบัญชีธนาคารไอซีบีซี (ไทย) ผ่านตู้ ATM ธนาคารไอซีบีซี (ไทย) ฟรีค่าธรรมเนียม  ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "โอนเงินรายย่อยระหว่างธนาคาร (ORFT) สูงสุดไม่เกินครั้งละ 50,000 บาท ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "จำนวนเงินไม่เกิน 10,000 บาท ค่าธรรมเนียมรายการละ 25 บาท",
-    "จำนวนเงิน 10,001 บาท ถึง 50,000 บาท ค่าธรรมเนียมรายการละ 35 บาท"
-   ],
-   "in_service_area_balance_inquiry_fee": 10,
-   "out_service_area_balance_inquiry_fee": 10,
-   "in_service_area_cash_withdrawal_fee": 10,
-   "out_service_area_cash_withdrawal_fee": 20,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 62,
-   "balance_inquiry_fee": 20,
-   "currency_conversion_fee": 12
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "http://www.icbcthai.com/ICBC/海外分行/工银泰国网站/th/个人金融服务/银行卡/借记卡/工银泰国借记卡/工银泰国借记卡.htm",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ไอซีบีซี(ไทย)",
-  "product": "บัตรเดบิตยูเนียนเพย์-นักเรียน(เฉพาะกลุ่มลูกค้า)",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "TPNUnionPay",
-   "highlights": [
-    "- บัตรเดบิตสองสกุลเงิน ฝากได้ทั้งเงินหยวนและเงินบาท- ใช้สอบถามยอด ถอนเงิน โอนเงิน ทั้งภายในธนาคารและต่างธนาคารที่ตู้เอทีเอ็มทุกธนาคาร ทั่วประเทศ - ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็มต่างธนาคารในประเทศไทย ในเขตบริการเดียวกัน ฟรี 4 รายการแรกต่อเดือน- ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็ม ธนาคารไอซีบีซีในประเทศจีน- ใช้จ่าย ณ ร้านค้า หรือ ถอนเงินสดได้ที่ตู้เอทีเอ็มที่มีสัญลักษณ์ยูเนี่ยนเพย์ทั่วโลก-ใช้รูดซื้อสินค้าและบริการ โดยไม่ต้องพกเงินสด- SMS Alert แจ้งเตือนรายการใช้จ่ายผ่านบัตรเดบิต- ปลอดภัยด้วย EMV Chip และ PIN 6 หลัก"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องมีบัญชีเงินฝากกระแสรายวันหรือออมทรัพย์เพื่อผูกบัญชี"
-   ],
-   "usage_conditions": [
-    "เปิดบัญชีขั้นต่ำ 0 บาท",
-    "1 บัตร ผูกได้ 1 บัญชี"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร ท่านสามารถติดต่อธนาคารได้ทุกสาขาเพื่อต่ออายุบัตร",
-   "payment_options": [
-    "วงเงินชำระค่าสินค้าและบริการ 300,000 บาท/รายการ และ 1,000,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "100บาทเงื่อนไข:ธนาคารยกเว้นค่าธรรมเนียมในการทำบัตรใหม่ดังนี้1.กรณีที่ลูกค้าใช้บริการที่ตู้ATMและตู้ATMยึดบัตรเดบิตแบบไม่ใช่ความผิดของลูกค้า2.กรณีออกบัตรใหม่ทดแทนบัตรที่หมดอายุ(แต่จะต้องนำบัตรใบเดิมมาด้วย)",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "ไม่มีค่าธรรมเนียม",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "4 ครั้ง/เดือนการถอนเงิน",
-    "วงเงินถอนเงินสดสูงสุด 100,000 บาท/วัน (ขยายวงเงินได้สูงสุด 160,000 บาท/วัน)",
-    "ถอนเงินที่ตู้ ATM ของธนาคารฟรี",
-    "ถอนเงินที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 20 บาทสอบถามยอด",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ของธนาคารฟรี",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต คิดค่าบริการรายการละ 10 บาทโอนเงิน",
-    "โอนเงินระหว่างบัญชีธนาคารไอซีบีซี (ไทย) ผ่านตู้ ATM ธนาคารไอซีบีซี (ไทย) ฟรีค่าธรรมเนียม  ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "โอนเงินรายย่อยระหว่างธนาคาร (ORFT) สูงสุดไม่เกินครั้งละ 50,000 บาท ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "จำนวนเงินไม่เกิน 10,000 บาท ค่าธรรมเนียมรายการละ 25 บาท",
-    "จำนวนเงิน 10,001 บาท ถึง 50,000 บาท ค่าธรรมเนียมรายการละ 35 บาท"
-   ],
-   "in_service_area_balance_inquiry_fee": 10,
-   "out_service_area_balance_inquiry_fee": 10,
-   "in_service_area_cash_withdrawal_fee": 10,
-   "out_service_area_cash_withdrawal_fee": 20,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 62,
-   "balance_inquiry_fee": 20,
-   "currency_conversion_fee": 12
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "http://www.icbcthai.com/ICBC/海外分行/工银泰国网站/th/个人金融服务/银行卡/借记卡/工银泰国借记卡/工银泰国借记卡.htm",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ไอซีบีซี(ไทย)",
-  "product": "บัตรเดบิตร่วมไอซีบีซี(ไทย)-คอมพาส",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "TPNUnionPay",
-   "highlights": [
-    "- บัตรเดบิตสองสกุลเงิน ฝากได้ทั้งเงินหยวนและเงินบาท- ใช้สอบถามยอด ถอนเงิน โอนเงิน ทั้งภายในธนาคารและต่างธนาคารที่ตู้เอทีเอ็มทุกธนาคาร ทั่วประเทศ - ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็มต่างธนาคารในประเทศไทย ในเขตบริการเดียวกัน ฟรี 4 รายการแรกต่อเดือน- ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็ม ธนาคารไอซีบีซีในประเทศจีน- ใช้จ่าย ณ ร้านค้า หรือ ถอนเงินสดได้ที่ตู้เอทีเอ็มที่มีสัญลักษณ์ยูเนี่ยนเพย์ทั่วโลก-ใช้รูดซื้อสินค้าและบริการ โดยไม่ต้องพกเงินสด- SMS Alert แจ้งเตือนรายการใช้จ่ายผ่านบัตรเดบิต- ปลอดภัยด้วย EMV Chip และ PIN 6 หลัก"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องมีบัญชีเงินฝากกระแสรายวันหรือออมทรัพย์เพื่อผูกบัญชี"
-   ],
-   "usage_conditions": [
-    "เปิดบัญชีขั้นต่ำ 0 บาท",
-    "1 บัตร ผูกได้ 1 บัญชี"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร ท่านสามารถติดต่อธนาคารได้ทุกสาขาเพื่อต่ออายุบัตร",
-   "payment_options": [
-    "วงเงินชำระค่าสินค้าและบริการ 300,000 บาท/รายการ และ 1,000,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "100บาทเงื่อนไข:ธนาคารยกเว้นค่าธรรมเนียมในการทำบัตรใหม่ดังนี้1.กรณีที่ลูกค้าใช้บริการที่ตู้ATMและตู้ATMยึดบัตรเดบิตแบบไม่ใช่ความผิดของลูกค้า2.กรณีออกบัตรใหม่ทดแทนบัตรที่หมดอายุ(แต่จะต้องนำบัตรใบเดิมมาด้วย)",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "ไม่มีค่าธรรมเนียม",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "4 ครั้ง/เดือนการถอนเงิน",
-    "วงเงินถอนเงินสดสูงสุด 100,000 บาท/วัน (ขยายวงเงินได้สูงสุด 160,000 บาท/วัน)",
-    "ถอนเงินที่ตู้ ATM ของธนาคารฟรี",
-    "ถอนเงินที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 20 บาทสอบถามยอด",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ของธนาคารฟรี",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต คิดค่าบริการรายการละ 10 บาทโอนเงิน",
-    "โอนเงินระหว่างบัญชีธนาคารไอซีบีซี (ไทย) ผ่านตู้ ATM ธนาคารไอซีบีซี (ไทย) ฟรีค่าธรรมเนียม  ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "โอนเงินรายย่อยระหว่างธนาคาร (ORFT) สูงสุดไม่เกินครั้งละ 50,000 บาท ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "จำนวนเงินไม่เกิน 10,000 บาท ค่าธรรมเนียมรายการละ 25 บาท",
-    "จำนวนเงิน 10,001 บาท ถึง 50,000 บาท ค่าธรรมเนียมรายการละ 35 บาท"
-   ],
-   "in_service_area_balance_inquiry_fee": 10,
-   "out_service_area_balance_inquiry_fee": 10,
-   "in_service_area_cash_withdrawal_fee": 10,
-   "out_service_area_cash_withdrawal_fee": 20,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 62,
-   "balance_inquiry_fee": 20,
-   "currency_conversion_fee": 12
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "http://www.icbcthai.com/ICBC/海外分行/工银泰国网站/th/个人金融服务/银行卡/借记卡/工银泰国康帕斯联名借记卡/工银泰国康帕斯联名借记卡.htm",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "กสิกรไทย",
-  "product": "บัตรเดบิตออนไลน์LINEBK",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "VISA",
-   "highlights": [
-    "- เป็นบัตรเดบิตเสมือนจริง (Virtual Card) ใช้ซื้อสินค้าออนไลน์โดยไม่ต้องพกเงินสด- รับเงินคืน 0.5% เมื่อใช้จ่ายผ่านช่องทางออนไลน์"
-   ],
-   "age_requirement": 0,
-   "applicant_qualificaitons": [
-    "ต้องมีบัญชีเงินฝากออมทรัพย์ LINE BK เพื่อผูกบัญชีกับบัตร",
-    "สามารถสมัครผ่านช่องทาง LINE BK เท่านั้น"
-   ],
-   "usage_conditions": [
-    "1 บัญชีผูกบัตรได้สูงสุด 1 บัตร/บัญชี",
-    "สามารถใช้บัตรสมัครบริการและทำรายการต่างๆ ของธนาคารผ่าน LINE BK"
-   ],
-   "card_expiry": "7 ปี โดยวันหมดอายุระบุบน LINE BK",
-   "payment_options": [
-    "วงเงินซื้อสินค้าและบริการ สูงสุดวันละ 100,000 บาท เบื้องต้นกำหนดวงเงินซื้อสินค้าและบริการ 20,000 บาท  (ลูกค้าสามารถปรับวงเงินผ่าน LINE BK ตั้งแต่ 0",
-    "100,000 บาท)"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": [
-     "ระบบหักชำระค่าสินค้าและบริการจากบัญชีเงินฝากที่ผูกกับบัตร",
-     "การทำธุรกรรม ซื้อสินค้า ขึ้นกับ วงเงินที่ลูกค้ากำหนดโดยกำหนดไม่เกินวงเงิน  สูงสุดของการซื้อสินค้า และการทำธุรกรรมต่างๆต้องไม่เกินยอดเงินคงเหลือในบัญชี"
-    ]
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม",
-   "card_replacement_fee": "ไม่มีค่าธรรมเนียมเงื่อนไข:ไม่มีบริการ",
-   "pin_replacement_fee": "ไม่มีบริการ",
-   "statement_copy_fee": "ไม่มีบริการ",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีบริการ",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "ไม่มีค่าธรรมเนียมใช้บัตรซื้อสินค้าบนอินเตอร์เน็ตเท่านั้น ไม่สามารถทำรายการถอนเงิน/สอบถามยอด/โอนเงิน"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 0,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 0,
-   "between_10001_and_50000_fee": 0,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 0,
-   "balance_inquiry_fee": 0,
-   "currency_conversion_fee": 2.5
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.linebk.com/th/card",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ไอซีบีซี(ไทย)",
-  "product": "บัตรเดบิตยูเนียนเพย์-กิเลน(เฉพาะกลุ่มลูกค้า)",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "TPNUnionPay",
-   "highlights": [
-    "- บัตรเดบิตสองสกุลเงิน ฝากได้ทั้งเงินหยวนและเงินบาท- ใช้สอบถามยอด ถอนเงิน โอนเงิน ทั้งภายในธนาคารและต่างธนาคารที่ตู้เอทีเอ็มทุกธนาคาร ทั่วประเทศ - ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็มต่างธนาคารในประเทศไทย ในเขตบริการเดียวกันและนอกเขต ฟรี 10 รายการแรกต่อเดือน - ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็ม ธนาคารไอซีบีซีในประเทศจีน- ใช้จ่าย ณ ร้านค้า หรือ ถอนเงินสดได้ที่ตู้เอทีเอ็มที่มีสัญลักษณ์ยูเนี่ยนเพย์ทั่วโลก-ใช้รูดซื้อสินค้าและบริการ โดยไม่ต้องพกเงินสด- SMS Alert แจ้งเตือนรายการใช้จ่ายผ่านบัตรเดบิต- ปลอดภัยด้วย EMV Chip และ PIN 6 หลัก"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องมีบัญชีเงินฝากกระแสรายวันหรือออมทรัพย์เพื่อผูกบัญชี"
-   ],
-   "usage_conditions": [
-    "เปิดบัญชีขั้นต่ำ 1,000 บาท",
-    "1 บัตร ผูกได้ 1 บัญชี"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร ท่านสามารถติดต่อธนาคารได้ทุกสาขาเพื่อต่ออายุบัตร",
-   "payment_options": [
-    "วงเงินชำระค่าสินค้าและบริการ 300,000 บาท/รายการ และ 1,000,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "ไม่มีค่าธรรมเนียม-200บาท/ปี",
-   "card_replacement_fee": "100บาทเงื่อนไข:ธนาคารยกเว้นค่าธรรมเนียมในการทำบัตรใหม่ดังนี้1.กรณีที่ลูกค้าใช้บริการที่ตู้ATMและตู้ATMยึดบัตรเดบิตแบบไม่ใช่ความผิดของลูกค้า2.กรณีออกบัตรใหม่ทดแทนบัตรที่หมดอายุ(แต่จะต้องนำบัตรใบเดิมมาด้วย)",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "ไม่มีค่าธรรมเนียม",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "10 ครั้ง/เดือนการถอนเงิน",
-    "วงเงินถอนเงินสดสูงสุด 100,000 บาท/วัน (ขยายวงเงินได้สูงสุด 160,000 บาท/วัน)",
-    "ถอนเงินที่ตู้ ATM ของธนาคารฟรี",
-    "ถอนเงินที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 10 รายการแรก/เดือน รายการที่ 11 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต ฟรี 10 รายการแรก/เดือน รายการที่ 11 เป็นต้นไป คิดค่าบริการรายการละ 20 บาทสอบถามยอด",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ของธนาคารฟรี",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 10 รายการแรก/เดือน รายการที่ 11 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต ฟรี 10 รายการแรก/เดือน รายการที่ 11 เป็นต้นไป คิดค่าบริการรายการละ 10 บาทโอนเงิน",
-    "โอนเงินระหว่างบัญชีธนาคารไอซีบีซี (ไทย) ผ่านตู้ ATM ธนาคารไอซีบีซี (ไทย) ฟรีค่าธรรมเนียม  ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "โอนเงินรายย่อยระหว่างธนาคาร (ORFT) สูงสุดไม่เกินครั้งละ 50,000 บาท ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "จำนวนเงินไม่เกิน 10,000 บาท ค่าธรรมเนียมรายการละ 25 บาท",
-    "จำนวนเงิน 10,001 บาท ถึง 50,000 บาท ค่าธรรมเนียมรายการละ 35 บาท"
-   ],
-   "in_service_area_balance_inquiry_fee": 10,
-   "out_service_area_balance_inquiry_fee": 10,
-   "in_service_area_cash_withdrawal_fee": 10,
-   "out_service_area_cash_withdrawal_fee": 20,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 62,
-   "balance_inquiry_fee": 20,
-   "currency_conversion_fee": 12
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "http://www.icbcthai.com/ICBC/海外分行/工银泰国网站/th/个人金融服务/银行卡/借记卡/工银泰国借记卡/工银泰国借记卡.htm",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ธอส.",
-  "product": "VimarnCard",
-  "features_and_conditions": {
-   "product_type": "บัตรเอทีเอ็มแบบไม่มีประกัน",
-   "network": "ATMPool",
-   "highlights": [
-    "ฟรีค่าธรรมเนียมฝาก / ถอน / โอน ทุกตู้ในเครือข่าย ATM POOL ไม่จำกัดจำนวนครั้ง"
-   ],
-   "age_requirement": 0,
-   "applicant_qualificaitons": [
-    "มีบัญชีเงินฝากออมทรัพย์ที่ธนาคารกำหนดให้มีบัตร ATM ได้"
-   ],
-   "usage_conditions": [
-    "1 บัตรต่อ 1 ท่าน",
-    "1 บัตร ผูกได้สูงสุด 3 บัญชีแบ่งเป็นกระแสรายวัน 1 บัญชี / ออมทรัพย์ 1 บัญชี / บัญชีเงินกู้ 1 บัญชี",
-    "การทำรายการที่ตู้ ATM ต่างธนาคาร จะสามารถทำได้เฉพาะรายการภายใต้บัญชีหลักและบัญชีกระแสรายวัน เท่านั้น",
-    "สามารถใช้บัตรสมัครบริการและทำรายการต่างๆ ของธนาคารผ่านตู้ ATM ได้ เช่น เปลี่ยนรหัสประจำบัตร (PIN), สมัครและทำรายการ PromptPay  เป็นต้น"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร ท่านสามารถติดต่อธนาคารได้ทุกสาขา เพื่อต่ออายุบัตร",
-   "payment_options": [
-    "สามารถชำระหนี้เงินกู้ของธอส.ที่เครื่องของธอส.เอง"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": [
-     "ไม่มี"
-    ]
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "100บาท/ปีเงื่อนไข:ฟรีค่าธรรมเนียมรายปีปีแรก",
-   "card_replacement_fee": "50บาทเงื่อนไข:กรณีบัตรหายหรือชำรุดจากการกระทำของลูกค้าเอง",
-   "pin_replacement_fee": "ไม่มีบริการ",
-   "statement_copy_fee": "ไม่มีบริการ",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีบริการ",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 100,
-   "cash_withdrawal": [
-    "ไม่มีค่าธรรมเนียมถอนเงิน",
-    "ถอนเงินสดได้สูงสุด 100,000 บาท/บัตร/วัน ที่ตู้ ATM",
-    "ถอนเงิน สูงสุด 10 ครั้ง/วันสอบถามยอด",
-    "สูงสุด 3 ครั้ง/วันโอนเงินระหว่างบัญชีภายในบัตรเดียวกัน",
-    "วันละ 900,000 บาท",
-    "สูงสุดไม่เกิน 3 ครั้ง/วัน (นับรวมกับการโอนเงินไปยังบัญชีเงินฝากของบุคคลที่สามภายในธนาคาร)โอนเงินไปบัญชีเงินฝากของบุคคลที่สามภายในธนาคาร",
-    "รวมกับยอดโอนภายในธนาคารในบัตรเดียวกัน",
-    "สูงสุดไม่เกิน 3 ครั้ง/วัน (นับรวมกับการโอนเงินระหว่างบัญชีภายในบัตรเดียวกัน)โอนเงินรายย่อยระหว่างธนาคาร (ORFT)",
-    "สูงสุดไม่เกิน 200,000 บาท/บัตร/วัน",
-    "สูงสุดครั้งละไม่เกิน 50,000 บาท สูงสุดไม่เกิน 3ครั้ง/วัน"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 0,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 0,
-   "between_10001_and_50000_fee": 0,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 0,
-   "balance_inquiry_fee": 0,
-   "currency_conversion_fee": 0
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ซีไอเอ็มบีไทย",
-  "product": "บัตรCIMBPreferredVisaDebit(เฉพาะกลุ่มลูกค้า)",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "VISA",
-   "highlights": [
-    "- บัตรเฉพาะสมาชิกรายบุคคลที่มีสินทรัพย์กับธนาคาร 1 ล้านบาทขึ้นไป- กดฟรี ทุกตู้ ทุกธนาคารที่เครื่อง ATM Pool ไม่จำกัดจำนวนครั้งต่อเดือน- เบิก/ถอนเงินสดได้ทั่วโลก ณ เครื่องเอทีเอ็มที่มีเครืองหมาย VISA- ใช้รูดซื้อสินค้าและบริการ รวมถึงซื้อสินค้าออนไลน์โดยไม่ต้องพกเงินสด- SMS Alert แจ้งเตือนรายการใช้จ่ายผ่านบัตรเดบิต- รับสิทธิพิเศษสำหรับลูกค้า Preferred- สะดวกเพียงแตะบัตร ณ ร้านค้าที่มีสัญลักษณ์ VISA PAYWAVE เมื่อชำระค่าสินค้าและบริการโดยผู้ถือบัตรไม่ต้องเซ็นต์ในเซลล์สลิป"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องผูกกับบัญชีออมทรัพย์ และชื่อต้องตรงกับชื่อบัญชีเท่านั้น",
-    "สำหรับลูกค้าที่มีผลิตภัณฑ์เงินฝากตั้งแต่ 1ล้านบาทขึ้นไป"
-   ],
-   "usage_conditions": [
-    "1 บัตรต่อ 1 บัญชี"
-   ],
-   "card_expiry": "ตรวจสอบวันหมดอายุที่หน้าบัตร",
-   "payment_options": [
-    "ชำระค่าสินค้าและบริการ ได้สูงสุด 40,000 บาท/วัน",
-    "ปรับเปลี่ยนวงเงินผ่าน CIMB Thai Care Center ได้ตั้งแต่ 0",
-    "100,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "100บาท/ปี",
-   "card_replacement_fee": "100บาท",
-   "pin_replacement_fee": "ไม่มีบริการ",
-   "statement_copy_fee": "ไม่มีบริการ",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "999 ครั้ง/เดือนถอนเงิน",
-    "ถอนเงินสดได้สูงสุด 30,000 บาท/ครั้ง",
-    "ถอนเงิน สูงสุด 14 ครั้ง/วัน",
-    "สามารถกำหนดหรือปรับเปลี่ยนวงเงินถอนเงิน ได้ตั้งแต่ 0 – 400,000 บาท/บัตร/วัน สอบถามยอด",
-    "ไม่จำกัดจำนวนครั้งค่าธรรมเนียม",
-    "ฟรี! ค่าธรรมเนียมการถอนเงินสดและสอบถามที่ตู้ ATM ทุกธนาคาร"
-   ],
-   "in_service_area_balance_inquiry_fee": 0,
-   "out_service_area_balance_inquiry_fee": 0,
-   "in_service_area_cash_withdrawal_fee": 0,
-   "out_service_area_cash_withdrawal_fee": 0,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 100,
-   "balance_inquiry_fee": 100,
-   "currency_conversion_fee": 0
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "https://www.cimbthai.com/th/preferred/wealth-solutions/wealth-solution-products/cimb-preferred-visa-debit-card.html",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ไอซีบีซี(ไทย)",
-  "product": "บัตรเดบิตวีซ่าโกลด์",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "VISA",
-   "highlights": [
-    "- ใช้สอบถามยอด ถอนเงิน โอนเงิน ทั้งภายในธนาคารและต่างธนาคารที่ตู้เอทีเอ็มทุกธนาคาร ทั่วประเทศ - ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็มต่างธนาคารในประเทศไทย ในเขตบริการเดียวกัน ฟรี 4 รายการแรกต่อเดือน- ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็ม ธนาคารไอซีบีซีในประเทศจีน- ใช้จ่าย ณ ร้านค้า หรือ ถอนเงินสดได้ที่ตู้เอทีเอ็มที่มีสัญลักษณ์วีซ่าทั่วโลก -ใช้รูดซื้อสินค้าและบริการ โดยไม่ต้องพกเงินสด- SMS Alert แจ้งเตือนรายการใช้จ่ายผ่านบัตรเดบิต- ปลอดภัยด้วย EMV Chip และ PIN 6 หลัก"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องมีบัญชีเงินฝากกระแสรายวันหรือออมทรัพย์เพื่อผูกบัญชี"
-   ],
-   "usage_conditions": [
-    "เปิดบัญชีขั้นต่ำ 1,000 บาท",
-    "1 บัตร ผูกได้ 1 บัญชี"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร ท่านสามารถติดต่อธนาคารได้ทุกสาขาเพื่อต่ออายุบัตร",
-   "payment_options": [
-    "วงเงินชำระค่าสินค้าและบริการ 500,000 บาท/รายการ และ 2,000,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "100บาท/ปีเงื่อนไข:เก็บค่าธรรมเนียมแบบpost-paid",
-   "card_replacement_fee": "100บาทเงื่อนไข:ธนาคารยกเว้นค่าธรรมเนียมในการทำบัตรใหม่ดังนี้1.กรณีที่ลูกค้าใช้บริการที่ตู้ATMและตู้ATMยึดบัตรเดบิตแบบไม่ใช่ความผิดของลูกค้า2.กรณีออกบัตรใหม่ทดแทนบัตรที่หมดอายุ(แต่จะต้องนำบัตรใบเดิมมาด้วย)",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "ไม่มีค่าธรรมเนียม",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "4 ครั้ง/เดือนการถอนเงิน",
-    "วงเงินถอนเงินสดสูงสุด 100,000 บาท/วัน (ขยายวงเงินได้สูงสุด 160,000 บาท/วัน)",
-    "ถอนเงินที่ตู้ ATM ของธนาคารฟรี",
-    "ถอนเงินที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต คิดค่าบริการรายการละ 20 บาทสอบถามยอด",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ของธนาคารฟรี",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต คิดค่าบริการรายการละ 10 บาทโอนเงิน",
-    "โอนเงินระหว่างบัญชีธนาคารไอซีบีซี (ไทย) ผ่านตู้ ATM ธนาคารไอซีบีซี (ไทย) ฟรีค่าธรรมเนียม  ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "โอนเงินรายย่อยระหว่างธนาคาร (ORFT) สูงสุดไม่เกินครั้งละ 50,000 บาท ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "จำนวนเงินไม่เกิน 10,000 บาท ค่าธรรมเนียมรายการละ 25 บาท",
-    "จำนวนเงิน 10,001 บาท ถึง 50,000 บาท ค่าธรรมเนียมรายการละ 35 บาท"
-   ],
-   "in_service_area_balance_inquiry_fee": 10,
-   "out_service_area_balance_inquiry_fee": 10,
-   "in_service_area_cash_withdrawal_fee": 10,
-   "out_service_area_cash_withdrawal_fee": 20,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 60,
-   "balance_inquiry_fee": 60,
-   "currency_conversion_fee": 60
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "http://www.icbcthai.com/ICBC/海外分行/工银泰国网站/th/个人金融服务/银行卡/借记卡/工银泰国借记卡/工银泰国借记卡.htm",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ไอซีบีซี(ไทย)",
-  "product": "บัตรเดบิตวีซ่าคลาสสิก",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "VISA",
-   "highlights": [
-    "- ใช้สอบถามยอด ถอนเงิน โอนเงิน ทั้งภายในธนาคารและต่างธนาคารที่ตู้เอทีเอ็มทุกธนาคาร ทั่วประเทศ - ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็มต่างธนาคารในประเทศไทย ในเขตบริการเดียวกัน ฟรี 4 รายการแรกต่อเดือน- ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็ม ธนาคารไอซีบีซีในประเทศจีน- ใช้จ่าย ณ ร้านค้า หรือ ถอนเงินสดได้ที่ตู้เอทีเอ็มที่มีสัญลักษณ์วีซ่าทั่วโลก -ใช้รูดซื้อสินค้าและบริการ โดยไม่ต้องพกเงินสด- SMS Alert แจ้งเตือนรายการใช้จ่ายผ่านบัตรเดบิต- ปลอดภัยด้วย EMV Chip และ PIN 6 หลัก"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องมีบัญชีเงินฝากกระแสรายวันหรือออมทรัพย์เพื่อผูกบัญชี"
-   ],
-   "usage_conditions": [
-    "เปิดบัญชีขั้นต่ำ 1,000 บาท",
-    "1 บัตร ผูกได้ 1 บัญชี"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร ท่านสามารถติดต่อธนาคารได้ทุกสาขาเพื่อต่ออายุบัตร",
-   "payment_options": [
-    "วงเงินชำระค่าสินค้าและบริการ 300,000 บาท/รายการ และ 1,000,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "100บาท/ปีเงื่อนไข:เก็บค่าธรรมเนียมแบบpost-paid",
-   "card_replacement_fee": "100บาทเงื่อนไข:ธนาคารยกเว้นค่าธรรมเนียมในการทำบัตรใหม่ดังนี้1.กรณีที่ลูกค้าใช้บริการที่ตู้ATMและตู้ATMยึดบัตรเดบิตแบบไม่ใช่ความผิดของลูกค้า2.กรณีออกบัตรใหม่ทดแทนบัตรที่หมดอายุ(แต่จะต้องนำบัตรใบเดิมมาด้วย)",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "ไม่มีค่าธรรมเนียม",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "4 ครั้ง/เดือนการถอนเงิน",
-    "วงเงินถอนเงินสดสูงสุด 100,000 บาท/วัน (ขยายวงเงินได้สูงสุด 160,000 บาท/วัน)",
-    "ถอนเงินที่ตู้ ATM ของธนาคารฟรี",
-    "ถอนเงินที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต คิดค่าบริการรายการละ 20 บาทสอบถามยอด",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ของธนาคารฟรี",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต คิดค่าบริการรายการละ 10 บาทโอนเงิน",
-    "โอนเงินระหว่างบัญชีธนาคารไอซีบีซี (ไทย) ผ่านตู้ ATM ธนาคารไอซีบีซี (ไทย) ฟรีค่าธรรมเนียม  ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "โอนเงินรายย่อยระหว่างธนาคาร (ORFT) สูงสุดไม่เกินครั้งละ 50,000 บาท ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "จำนวนเงินไม่เกิน 10,000 บาท ค่าธรรมเนียมรายการละ 25 บาท",
-    "จำนวนเงิน 10,001 บาท ถึง 50,000 บาท ค่าธรรมเนียมรายการละ 35 บาท"
-   ],
-   "in_service_area_balance_inquiry_fee": 10,
-   "out_service_area_balance_inquiry_fee": 10,
-   "in_service_area_cash_withdrawal_fee": 10,
-   "out_service_area_cash_withdrawal_fee": 20,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 60,
-   "balance_inquiry_fee": 60,
-   "currency_conversion_fee": 60
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "http://www.icbcthai.com/ICBC/海外分行/工银泰国网站/th/个人金融服务/银行卡/借记卡/工银泰国借记卡/工银泰国借记卡.htm",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ไอซีบีซี(ไทย)",
-  "product": "บัตรเดบิตสองสกุลเงินยูเนี่ยนเพย์-โกลบอลโกลด์",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "TPNUnionPay",
-   "highlights": [
-    "- บัตรเดบิตสองสกุลเงิน ฝากได้ทั้งเงินหยวนและเงินบาท- ใช้สอบถามยอด ถอนเงิน โอนเงิน ทั้งภายในธนาคารและต่างธนาคารที่ตู้เอทีเอ็มทุกธนาคาร ทั่วประเทศ - ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็มต่างธนาคารในประเทศไทย ในเขตบริการเดียวกัน ฟรี 4 รายการแรกต่อเดือน- ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็ม ธนาคารไอซีบีซีในประเทศจีน- ใช้จ่าย ณ ร้านค้า หรือ ถอนเงินสดได้ที่ตู้เอทีเอ็มที่มีสัญลักษณ์ยูเนี่ยนเพย์ทั่วโลก-ใช้รูดซื้อสินค้าและบริการ โดยไม่ต้องพกเงินสด- SMS Alert แจ้งเตือนรายการใช้จ่ายผ่านบัตรเดบิต- ปลอดภัยด้วย EMV Chip และ PIN 6 หลัก"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องมีบัญชีเงินฝากกระแสรายวันหรือออมทรัพย์เพื่อผูกบัญชี"
-   ],
-   "usage_conditions": [
-    "เปิดบัญชีขั้นต่ำ 1,000 บาท",
-    "1 บัตร ผูกได้ 1 บัญชี"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร ท่านสามารถติดต่อธนาคารได้ทุกสาขาเพื่อต่ออายุบัตร",
-   "payment_options": [
-    "วงเงินชำระค่าสินค้าและบริการ 500,000 บาท/รายการ และ 2,000,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "100บาท/ปีเงื่อนไข:เก็บค่าธรรมเนียมแบบpost-paid",
-   "card_replacement_fee": "100บาทเงื่อนไข:ธนาคารยกเว้นค่าธรรมเนียมในการทำบัตรใหม่ดังนี้1.กรณีที่ลูกค้าใช้บริการที่ตู้ATMและตู้ATMยึดบัตรเดบิตแบบไม่ใช่ความผิดของลูกค้า2.กรณีออกบัตรใหม่ทดแทนบัตรที่หมดอายุ(แต่จะต้องนำบัตรใบเดิมมาด้วย)",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "ไม่มีค่าธรรมเนียม",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "4 ครั้ง/เดือนการถอนเงิน",
-    "วงเงินถอนเงินสดสูงสุด 100,000 บาท/วัน (ขยายวงเงินได้สูงสุด 160,000 บาท/วัน)",
-    "ถอนเงินที่ตู้ ATM ของธนาคารฟรี",
-    "ถอนเงินที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต คิดค่าบริการรายการละ 20 บาทสอบถามยอด",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ของธนาคารฟรี",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต คิดค่าบริการรายการละ 10 บาทโอนเงิน",
-    "โอนเงินระหว่างบัญชีธนาคารไอซีบีซี (ไทย) ผ่านตู้ ATM ธนาคารไอซีบีซี (ไทย) ฟรีค่าธรรมเนียม  ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "โอนเงินรายย่อยระหว่างธนาคาร (ORFT) สูงสุดไม่เกินครั้งละ 50,000 บาท ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "จำนวนเงินไม่เกิน 10,000 บาท ค่าธรรมเนียมรายการละ 25 บาท",
-    "จำนวนเงิน 10,001 บาท ถึง 50,000 บาท ค่าธรรมเนียมรายการละ 35 บาท"
-   ],
-   "in_service_area_balance_inquiry_fee": 10,
-   "out_service_area_balance_inquiry_fee": 10,
-   "in_service_area_cash_withdrawal_fee": 10,
-   "out_service_area_cash_withdrawal_fee": 20,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 62,
-   "balance_inquiry_fee": 20,
-   "currency_conversion_fee": 12
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "http://www.icbcthai.com/ICBC/海外分行/工银泰国网站/th/个人金融服务/银行卡/借记卡/工银泰国借记卡/工银泰国借记卡.htm",
-   "fee_website": ""
-  }
- },
- {
-  "provider": "ไอซีบีซี(ไทย)",
-  "product": "บัตรเดบิตสองสกุลเงินยูเนี่ยนเพย์-โกลบอลคลาสสิก",
-  "features_and_conditions": {
-   "product_type": "บัตรเดบิตแบบไม่มีประกัน",
-   "network": "TPNUnionPay",
-   "highlights": [
-    "- บัตรเดบิตสองสกุลเงิน ฝากได้ทั้งเงินหยวนและเงินบาท- ใช้สอบถามยอด ถอนเงิน โอนเงิน ทั้งภายในธนาคารและต่างธนาคารที่ตู้เอทีเอ็มทุกธนาคาร ทั่วประเทศ - ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็มต่างธนาคารในประเทศไทย ในเขตบริการเดียวกัน ฟรี 4 รายการแรกต่อเดือน- ฟรีค่าธรรมเนียมกดเงินสดจากตู้เอทีเอ็ม ธนาคารไอซีบีซีในประเทศจีน- ใช้จ่าย ณ ร้านค้า หรือ ถอนเงินสดได้ที่ตู้เอทีเอ็มที่มีสัญลักษณ์ยูเนี่ยนเพย์ทั่วโลก-ใช้รูดซื้อสินค้าและบริการ โดยไม่ต้องพกเงินสด- SMS Alert แจ้งเตือนรายการใช้จ่ายผ่านบัตรเดบิต- ปลอดภัยด้วย EMV Chip และ PIN 6 หลัก"
-   ],
-   "age_requirement": 15,
-   "applicant_qualificaitons": [
-    "ต้องมีบัญชีเงินฝากกระแสรายวันหรือออมทรัพย์เพื่อผูกบัญชี"
-   ],
-   "usage_conditions": [
-    "เปิดบัญชีขั้นต่ำ 1,000 บาท",
-    "1 บัตร ผูกได้ 1 บัญชี"
-   ],
-   "card_expiry": "5 ปี โดยวันหมดอายุระบุบนหน้าบัตร ท่านสามารถติดต่อธนาคารได้ทุกสาขาเพื่อต่ออายุบัตร",
-   "payment_options": [
-    "วงเงินชำระค่าสินค้าและบริการ 300,000 บาท/รายการ และ 1,000,000 บาท/วัน"
-   ],
-   "supplemntary_card": {
-    "available": [
-     "ไม่มีบริการ"
-    ],
-    "conditions": null
-   }
-  },
-  "general_fees": {
-   "entrance_fee": "ไม่มีค่าธรรมเนียม",
-   "annual_fee": "100บาท/ปีเงื่อนไข:เก็บค่าธรรมเนียมแบบpost-paid",
-   "card_replacement_fee": "100บาทเงื่อนไข:ธนาคารยกเว้นค่าธรรมเนียมในการทำบัตรใหม่ดังนี้1.กรณีที่ลูกค้าใช้บริการที่ตู้ATMและตู้ATMยึดบัตรเดบิตแบบไม่ใช่ความผิดของลูกค้า2.กรณีออกบัตรใหม่ทดแทนบัตรที่หมดอายุ(แต่จะต้องนำบัตรใบเดิมมาด้วย)",
-   "pin_replacement_fee": "ไม่มีค่าธรรมเนียม",
-   "statement_copy_fee": "ไม่มีค่าธรรมเนียม",
-   "slip_copy_fee": 0,
-   "transaction_investigation_fee": "ไม่มีค่าธรรมเนียม",
-   "other_fees": null
-  },
-  "transaction_fees_domestic": {
-   "free_transactions_per_month": 0,
-   "cash_withdrawal": [
-    "0",
-    "4 ครั้ง/เดือนการถอนเงิน",
-    "วงเงินถอนเงินสดสูงสุด 100,000 บาท/วัน (ขยายวงเงินได้สูงสุด 160,000 บาท/วัน)",
-    "ถอนเงินที่ตู้ ATM ของธนาคารฟรี",
-    "ถอนเงินที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต คิดค่าบริการรายการละ 20 บาทสอบถามยอด",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ของธนาคารฟรี",
-    "สอบถามยอดเงินคงเหลือที่ตู้ ATM ต่างธนาคาร ในเขตเดียวกัน ฟรี 4 รายการแรก/เดือน รายการที่ 5 เป็นต้นไป คิดค่าบริการรายการละ 10 บาท ข้ามเขต คิดค่าบริการรายการละ 10 บาทโอนเงิน",
-    "โอนเงินระหว่างบัญชีธนาคารไอซีบีซี (ไทย) ผ่านตู้ ATM ธนาคารไอซีบีซี (ไทย) ฟรีค่าธรรมเนียม  ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "โอนเงินรายย่อยระหว่างธนาคาร (ORFT) สูงสุดไม่เกินครั้งละ 50,000 บาท ไม่จำกัดวงเงินการโอนต่อวันและไม่จำกัดจำนวนครั้ง",
-    "จำนวนเงินไม่เกิน 10,000 บาท ค่าธรรมเนียมรายการละ 25 บาท",
-    "จำนวนเงิน 10,001 บาท ถึง 50,000 บาท ค่าธรรมเนียมรายการละ 35 บาท"
-   ],
-   "in_service_area_balance_inquiry_fee": 10,
-   "out_service_area_balance_inquiry_fee": 10,
-   "in_service_area_cash_withdrawal_fee": 10,
-   "out_service_area_cash_withdrawal_fee": 20,
-   "in_service_area_transfer_fee": 0,
-   "out_service_area_transfer_fee": 0,
-   "transfer_between_providers_fee": 0,
-   "under_10000_fee": 25,
-   "between_10001_and_50000_fee": 35,
-   "additional_fee": 0,
-   "other_conditions": ""
-  },
-  "transaction_fees_international": {
-   "withdrawal_fee": 62,
-   "balance_inquiry_fee": 20,
-   "currency_conversion_fee": 12
-  },
-  "insurance": {
-   "insurance_type": "",
-   "insurance_company": "",
-   "max_coverage_amount": 0,
-   "coverage_details": "",
-   "death_disability_coverage": 0,
-   "medical_expenses_coverage": 0,
-   "hospital_income_coverage": 0,
-   "other_benefits": "",
-   "coverage_conditions": "",
-   "coverage_period": "",
-   "exclusions": "",
-   "claim_procedure": "",
-   "contact_insurance_company": ""
-  },
-  "additional_info": {
-   "product_website": "http://www.icbcthai.com/ICBC/海外分行/工银泰国网站/th/个人金融服务/银行卡/借记卡/工银泰国借记卡/工银泰国借记卡.htm",
    "fee_website": ""
   }
  }

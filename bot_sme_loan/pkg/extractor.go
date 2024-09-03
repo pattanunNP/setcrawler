@@ -67,11 +67,13 @@ func ExtractProducts(doc *goquery.Document, count int) []Product {
 		collateral := extractList(doc.Find(".attr-Collateral ."+col+" span").Text(), "/")
 		productConditions := extractList(doc.Find(".attr-ProductCondition ."+col+" span").Text(), "1.")
 		borrowerAge := cleanString(doc.Find(".attr-BorrowerAge ." + col + " span").Text())
+		minAge, maxAge := extractAgeRange(borrowerAge)
 		applicationConditions := extractList(doc.Find(".attr-ApplicationCondition ."+col+" span").Text(), "-")
 
 		creditLimit := cleanString(doc.Find(".attr-CreditLimit ." + col + " span").Text())
 		creditLimitConditions := extractList(doc.Find(".attr-CreditLimitCondition ."+col+" span").Text(), "-")
 		borrowingPeriod := extractList(doc.Find(".attr-BorrowingPeriod ."+col+" span").Text(), "-")
+		maxBorrowingPeriodYears := extractMaxBorrowingPeriod(borrowingPeriod)
 		borrowingPeriodConditions := cleanString(doc.Find(".attr-ConditionOfBorrowingPeriod ." + col + " span").Text())
 
 		var borrowingPeriodConditionsInterface interface{}
@@ -93,12 +95,15 @@ func ExtractProducts(doc *goquery.Document, count int) []Product {
 				Collateral:            collateral,
 				ProductConditions:     productConditions,
 				BorrowerAge:           borrowerAge,
+				MinAge:                minAge,
+				MaxAge:                maxAge,
 				ApplicationConditions: applicationConditions,
 			},
 			CreditTerms: CreditAndLoanTerms{
 				CreditLimit:               creditLimit,
 				CreditLimitConditions:     creditLimitConditions,
 				BorrowingPeriod:           borrowingPeriod,
+				MaxBorrowingPeriodYears:   maxBorrowingPeriodYears,
 				BorrowingPeriodConditions: borrowingPeriodConditionsInterface,
 			},
 			Fees:           extractFees(doc, col),
@@ -136,6 +141,35 @@ func extractList(text string, delimiter string) []string {
 		}
 	}
 	return cleanedParts
+}
+
+func extractAgeRange(ageStr string) (int, int) {
+	// Extract minimum and maximum age from the string
+	// Example input: "20-70 ปี"
+	re := regexp.MustCompile(`(\d+)-(\d+)`)
+	matches := re.FindStringSubmatch(ageStr)
+	if len(matches) == 3 {
+		minAge, _ := strconv.Atoi(matches[1])
+		maxAge, _ := strconv.Atoi(matches[2])
+		return minAge, maxAge
+	}
+	return 0, 0 // default if no match found
+}
+
+func extractMaxBorrowingPeriod(borrowingPeriods []string) int {
+	// Example input: ["สูงสุด 10 ปี", "สูงสุด 20 ปี"]
+	maxYears := 0
+	for _, period := range borrowingPeriods {
+		re := regexp.MustCompile(`(\d+) ปี`)
+		matches := re.FindStringSubmatch(period)
+		if len(matches) == 2 {
+			years, _ := strconv.Atoi(matches[1])
+			if years > maxYears {
+				maxYears = years
+			}
+		}
+	}
+	return maxYears
 }
 
 func extractFees(doc *goquery.Document, col string) Fees {
@@ -228,7 +262,6 @@ func DetermineTotalPage(body []byte) int {
 	doc.Find("ul.pagination li a").Each(func(i int, s *goquery.Selection) {
 		pageNum, exists := s.Attr("data-page")
 		if exists {
-			fmt.Printf("Found page link: %s\n", pageNum)
 			page, err := strconv.Atoi(pageNum)
 			if err == nil && page > totalPages {
 				totalPages = page

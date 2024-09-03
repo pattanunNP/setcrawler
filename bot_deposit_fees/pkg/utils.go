@@ -2,6 +2,7 @@ package pkg
 
 import (
 	"fmt"
+	"regexp"
 	"strconv"
 	"strings"
 
@@ -17,17 +18,33 @@ func CleanString(text string) string {
 	return strings.Join(words, " ")
 }
 
-func ExtractFee(doc *goquery.Document, classNamce string, col string) string {
-	fee := doc.Find(fmt.Sprintf("tr.%s td.%s span", classNamce, col)).Text()
-	return CleanString(fee)
-}
-
-func ExtractFeePtr(doc *goquery.Document, classNamce string, col string) *string {
-	fee := CleanString(doc.Find(fmt.Sprintf("tr.%s td.%s span", classNamce, col)).Text())
+func ExtractFeeArray(doc *goquery.Document, className string, col string) []string {
+	fee := CleanString(doc.Find(fmt.Sprintf("tr.%s td.%s span", className, col)).Text())
 	if fee == "" {
 		return nil
 	}
-	return &fee
+	return splitAndStore(fee)
+}
+
+func ExtractFeeArrayPtr(doc *goquery.Document, className string, col string) []string {
+	fee := CleanString(doc.Find(fmt.Sprintf("tr.%s td.%s span", className, col)).Text())
+	if fee == "" {
+		return nil
+	}
+	return splitAndStore(fee)
+}
+
+func ExtractNumericValue(text string) *float64 {
+	re := regexp.MustCompile(`\d+(\.\d+)?`)
+	match := re.FindString(text)
+	if match == "" {
+		return nil
+	}
+	value, err := strconv.ParseFloat(match, 64)
+	if err != nil {
+		return nil
+	}
+	return &value
 }
 
 func ExtractURL(doc *goquery.Document, className string, col string) *string {
@@ -51,4 +68,19 @@ func DetermineTotalPage(doc *goquery.Document) int {
 		}
 	})
 	return totalPages
+}
+
+func splitAndStore(text string) []string {
+	if text == "" {
+		return nil
+	}
+	parts := strings.Split(text, "-")
+	var result []string
+	for _, part := range parts {
+		trimmed := strings.TrimSpace(part)
+		if trimmed != "" {
+			result = append(result, trimmed)
+		}
+	}
+	return result
 }

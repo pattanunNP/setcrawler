@@ -28,19 +28,22 @@ type BankAccount struct {
 }
 
 type ValueWithText struct {
-	OriginalText string  `json:"OriginalText"`
-	Value        *string `json:"Value,omitempty"`
+	OriginalText string   `json:"OriginalText"`
+	Value        *string  `json:"Value,omitempty"`
+	NumericValue *float64 `json:"NumericValue,omitempty"`
 }
 
 type TermWithText struct {
 	OriginalText string `json:"OriginalText"`
 	Months       *int   `json:"Months,omitempty"`
+	NumericValue *int   `json:"NumericValue,omitempty"`
 }
 
 type CurrencyWithText struct {
-	OriginalText string  `json:"OriginalText"`
-	Value        *string `json:"Value,omitempty"`
-	Currency     *string `json:"Currency,omitempty"`
+	OriginalText string   `json:"OriginalText"`
+	Value        *string  `json:"Value,omitempty"`
+	Currency     *string  `json:"Currency,omitempty"`
+	NumericValue *float64 `json:"NumericValue,omitempty"`
 }
 
 func main() {
@@ -80,7 +83,8 @@ func main() {
 	if totalPages == 0 {
 		log.Fatal("Could not determine the total number of pages")
 	}
-	// totalPages := 3
+
+	// totalPages := 5
 
 	var bankAccounts []BankAccount
 
@@ -124,31 +128,36 @@ func main() {
 			bank := strings.TrimSpace(item.Find(".prod-bank").Text())
 			accountCurrency := strings.TrimSpace(item.Find("td").Eq(2).Text())
 
-			// Validate essential fields to avoid including empty entries
 			if bank == "" || accountCurrency == "" {
-				return // Skip empty or invalid entries
+				return
 			}
 
 			minDepositText := strings.TrimSpace(item.Find("td").Eq(3).Contents().First().Text())
 			minDepositValue := removeCommas(minDepositText)
+			minDepositNumeric := parseFloat(minDepositValue)
 
 			annualInterestRateText := strings.TrimSpace(item.Find("td").Eq(5).Text())
 			annualInterestRateValue := removeCommas(annualInterestRateText)
+			annualInterestRateNumeric := parseFloat(annualInterestRateValue)
 
 			depositTermText := strings.TrimSpace(item.Find("td").Eq(6).Text())
 			months := extractMonths(depositTermText)
 
 			minAvgBalanceText := strings.TrimSpace(item.Find("td").Eq(7).Text())
 			minAvgBalanceValue := removeCommas(minAvgBalanceText)
+			minAvgBalanceNumeric := parseFloat(minAvgBalanceValue)
 
 			feeBelowMinText := strings.TrimSpace(item.Find("td").Eq(8).Text())
 			feeBelowMinValue := removeCommas(feeBelowMinText)
+			feeBelowMinNumeric := parseFloat(feeBelowMinValue)
 
 			feeInactiveText := strings.TrimSpace(item.Find("td").Eq(9).Text())
 			feeInactiveValue, feeInactiveCurrency := splitCurrency(feeInactiveText)
+			feeInactiveNumeric := parseFloat(feeInactiveValue)
 
 			individualText := strings.TrimSpace(item.Find("td").Eq(10).Text())
 			individualValue, individualCurrency := splitCurrency(individualText)
+			individualNumeric := parseFloat(individualValue)
 
 			corporateText := "" // Assuming you do not have a corporate column
 			corporateValue := ""
@@ -159,37 +168,45 @@ func main() {
 				MinimumDepositForAccountOpening: ValueWithText{
 					OriginalText: minDepositText,
 					Value:        &minDepositValue,
+					NumericValue: minDepositNumeric,
 				},
 				AnnualInterestRate: ValueWithText{
 					OriginalText: annualInterestRateText,
 					Value:        &annualInterestRateValue,
+					NumericValue: annualInterestRateNumeric,
 				},
 				DepositTerm: TermWithText{
 					OriginalText: depositTermText,
 					Months:       months,
+					NumericValue: months,
 				},
 				MinimumAverageBalance: ValueWithText{
 					OriginalText: minAvgBalanceText,
 					Value:        &minAvgBalanceValue,
+					NumericValue: minAvgBalanceNumeric,
 				},
 				FeeIfBalanceBelowMinimum: ValueWithText{
 					OriginalText: feeBelowMinText,
 					Value:        &feeBelowMinValue,
+					NumericValue: feeBelowMinNumeric,
 				},
 				FeeIfAccountInactive: CurrencyWithText{
 					OriginalText: feeInactiveText,
 					Value:        &feeInactiveValue,
 					Currency:     &feeInactiveCurrency,
+					NumericValue: feeInactiveNumeric,
 				},
 				Individual: CurrencyWithText{
 					OriginalText: individualText,
 					Value:        &individualValue,
 					Currency:     &individualCurrency,
+					NumericValue: individualNumeric,
 				},
 				Corporate: CurrencyWithText{
 					OriginalText: corporateText,
 					Value:        &corporateValue,
 					Currency:     nil,
+					NumericValue: nil,
 				},
 			}
 
@@ -265,4 +282,14 @@ func splitCurrency(value string) (string, string) {
 		return parts[0], parts[1]
 	}
 	return value, ""
+}
+
+func parseFloat(value string) *float64 {
+	if value == "" || value == "ไม่กำหนด" {
+		return nil
+	}
+	if f, err := strconv.ParseFloat(value, 64); err == nil {
+		return &f
+	}
+	return nil
 }

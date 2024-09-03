@@ -15,6 +15,7 @@ import (
 	"github.com/PuerkitoBio/goquery"
 )
 
+// Define structs with additional fields for extracted numeric values
 type Product struct {
 	Provider                     string                       `json:"provider"`
 	Product                      string                       `json:"product"`
@@ -35,7 +36,7 @@ type FeaturesAndConditions struct {
 	UsageConditions         []string          `json:"usage_conditions"`
 	CardExpiry              string            `json:"card_expiry"`
 	PaymentOptions          []string          `json:"payment_options"`
-	SupplementaryCard       SupplementaryCard `json:"supplemntary_card"`
+	SupplementaryCard       SupplementaryCard `json:"supplementary_card"`
 }
 
 type SupplementaryCard struct {
@@ -44,36 +45,46 @@ type SupplementaryCard struct {
 }
 
 type GeneralFees struct {
-	EntranceFee                 string   `json:"entrance_fee"`
-	AnnualFee                   string   `json:"annual_fee"`
-	CardReplacementFee          string   `json:"card_replacement_fee"`
-	PinReplacementFee           string   `json:"pin_replacement_fee"`
-	StatementCopyFee            string   `json:"statement_copy_fee"`
-	SlipCopyFee                 int      `json:"slip_copy_fee"`
-	TransactionInvestigationFee string   `json:"transaction_investigation_fee"`
-	OtherFees                   []string `json:"other_fees"`
+	EntranceFee                 FeeDetail               `json:"entrance_fee"`
+	AnnualFee                   FeeDetail               `json:"annual_fee"`
+	CardReplacementFee          FeeDetail               `json:"card_replacement_fee"`
+	PinReplacementFee           FeeDetail               `json:"pin_replacement_fee"`
+	StatementCopyFee            FeeDetail               `json:"statement_copy_fee"`
+	SlipCopyFee                 FeeDetailWithConditions `json:"slip_copy_fee"`
+	TransactionInvestigationFee FeeDetail               `json:"transaction_investigation_fee"`
+	OtherFees                   []string                `json:"other_fees"`
+}
+
+type FeeDetailWithConditions struct {
+	OriginalText []string `json:"original_text"`
+	Amount       []int    `json:"amount"`
+}
+
+type FeeDetail struct {
+	OriginalText string `json:"original_text"`
+	Amount       int    `json:"amount"`
 }
 
 type TransactionFeesDomestic struct {
-	FreeTransactionsPerMonth        int      `json:"free_transactions_per_month"`
-	CashWithdrawal                  []string `json:"cash_withdrawal"`
-	InServiceAreaBalanceInquiryFee  int      `json:"in_service_area_balance_inquiry_fee"`
-	OutServiceAreaBalanceInquiryFee int      `json:"out_service_area_balance_inquiry_fee"`
-	InServiceAreaCashWithdrawalFee  int      `json:"in_service_area_cash_withdrawal_fee"`
-	OutServiceAreaCashWithdrawalFee int      `json:"out_service_area_cash_withdrawal_fee"`
-	InServiceAreaTransferFee        int      `json:"in_service_area_transfer_fee"`
-	OutServiceAreaTransferFee       int      `json:"out_service_area_transfer_fee"`
-	TransferBetweenProvidersFee     int      `json:"transfer_between_providers_fee"`
-	Under10000Fee                   int      `json:"under_10000_fee"`
-	Between10001And50000Fee         int      `json:"between_10001_and_50000_fee"`
-	AdditionalFee                   int      `json:"additional_fee"`
-	OtherConditions                 string   `json:"other_conditions"`
+	FreeTransactionsPerMonth        int       `json:"free_transactions_per_month"`
+	CashWithdrawal                  []string  `json:"cash_withdrawal"`
+	InServiceAreaBalanceInquiryFee  FeeDetail `json:"in_service_area_balance_inquiry_fee"`
+	OutServiceAreaBalanceInquiryFee FeeDetail `json:"out_service_area_balance_inquiry_fee"`
+	InServiceAreaCashWithdrawalFee  FeeDetail `json:"in_service_area_cash_withdrawal_fee"`
+	OutServiceAreaCashWithdrawalFee FeeDetail `json:"out_service_area_cash_withdrawal_fee"`
+	InServiceAreaTransferFee        FeeDetail `json:"in_service_area_transfer_fee"`
+	OutServiceAreaTransferFee       FeeDetail `json:"out_service_area_transfer_fee"`
+	TransferBetweenProvidersFee     FeeDetail `json:"transfer_between_providers_fee"`
+	Under10000Fee                   FeeDetail `json:"under_10000_fee"`
+	Between10001And50000Fee         FeeDetail `json:"between_10001_and_50000_fee"`
+	AdditionalFee                   FeeDetail `json:"additional_fee"`
+	OtherConditions                 string    `json:"other_conditions"`
 }
 
 type TransactionFeesInternational struct {
-	WithdrawalFee         int     `json:"withdrawal_fee"`
-	BalanceInquiryFee     int     `json:"balance_inquiry_fee"`
-	CurrencyConversionFee float64 `json:"currency_conversion_fee"`
+	WithdrawalFee         FeeDetail `json:"withdrawal_fee"`
+	BalanceInquiryFee     FeeDetail `json:"balance_inquiry_fee"`
+	CurrencyConversionFee float64   `json:"currency_conversion_fee"`
 }
 
 type Insurance struct {
@@ -108,6 +119,22 @@ func extractIntFromString(input string) int {
 		return 0
 	}
 	return value
+}
+
+func extractAmounts(conditions []string) []int {
+	var amounts []int
+	for _, condition := range conditions {
+		// Use regex to find all numbers in the string
+		re := regexp.MustCompile(`\d+`)
+		matches := re.FindAllString(condition, -1)
+		for _, match := range matches {
+			amount, err := strconv.Atoi(match)
+			if err == nil {
+				amounts = append(amounts, amount)
+			}
+		}
+	}
+	return amounts
 }
 
 func extractFloatFromString(input string) float64 {
@@ -145,24 +172,45 @@ func filterEmptyStrings(arr []string) []string {
 }
 
 func splitByHyphen(input string) []string {
+	// Split the text by "-" and remove newline and extra spaces
 	parts := strings.Split(input, "-")
-	var result []string
+	var cleanedParts []string
 	for _, part := range parts {
-		part = strings.TrimSpace(part)
-		if part != "" {
-			result = append(result, part)
+		cleaned := strings.TrimSpace(part)
+		cleaned = strings.ReplaceAll(cleaned, "\n", "")
+		cleaned = strings.ReplaceAll(cleaned, "เงื่อนไข:", "") // Remove unnecessary parts
+		if cleaned != "" {
+			cleanedParts = append(cleanedParts, cleaned)
 		}
 	}
-	return result
+	return cleanedParts
+}
+
+func splitAndCleanText(input string) []string {
+	// Replace multiple spaces with a single space and remove newline characters
+	cleaned := strings.ReplaceAll(input, "\n", "")
+	cleaned = strings.Join(strings.Fields(cleaned), " ")
+
+	// Split the cleaned text by hyphen
+	parts := strings.Split(cleaned, "-")
+
+	var cleanedParts []string
+	for _, part := range parts {
+		cleanedPart := strings.TrimSpace(part)
+		if cleanedPart != "" {
+			cleanedParts = append(cleanedParts, cleanedPart)
+		}
+	}
+	return cleanedParts
 }
 
 func main() {
 	url := "https://app.bot.or.th/1213/MCPD/ProductApp/Debit/CompareProductList"
 	payloadTemplate := `{"ProductIdList":"1234,1459,1466,1606,1460,1468,1463,976,13,14,1378,1379,1380,1381,1365,1366,733,731,1492,721,722,723,1502,720,67,1377,719,718,726,727,725,724,1256,1382,1474,954,950,961,1467,1237,1634,1490,246,1642,1618,16,1499,138,11,1587,682,472,1585,1239,1236,1593,1504,1,946,958,730,732,960,1473,1476,1475,12,15,1457,1462,1469,1456,474,744,1627,1461,1458,17,1503,1478,1477,1482,1481,1484,1480,1483,473,1235,1491,1496,1240,1494,752,749,1641,1488,1485,1487,477,972,750,746,1592,2,1501,1472,1464,748,751,1594,475,964,1465,1612,962,1471,1470,1649,139,1500,1497,1493,1498,1601,1489,1369,1367,1238,1479,1486,728,729,1495","Page":%d,"Limit":3}`
+	// payloadTemplate := `{"ProductIdList":"1234,1459,1466,1606,1460,1468,1463,976,13,14,1378,1379,1380,1381,1365,1366,733,731,1492,721,722,723,1502,720","Page":%d,"Limit":3}`
 
 	var allProducts []Product
 
-	// Loop through each page
 	totalPages := 1 // Assume at least 1 page
 	for page := 1; page <= totalPages; page++ {
 		payload := fmt.Sprintf(payloadTemplate, page)
@@ -250,14 +298,22 @@ func main() {
 			})
 			supplementaryConditionsArray = splitByHyphen(conditionsText)
 
-			entranceFee := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-cardHolderEntranceFeeDisplay .col%d span", i+1)).Text())
-			annualFee := cleanedText(doc.Find(fmt.Sprintf(".attr-annualFeeDisplay .col%d span", i+1)).Text())
-			cardReplacementFee := cleanedText(doc.Find(fmt.Sprintf(".attr-replacementCardFee .col%d span", i+1)).Text())
-			pinReplacementFee := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-replacementOfCardPINFee .col%d span", i+1)).Text())
-			statementCopyFee := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-copyofStatementFee .col%d span", i+1)).Text())
-			slipCopyFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-copyOfSalesSlipFee .col%d span", i+1)).Text())
-			slipCopyFee := extractIntFromString(slipCopyFeeStr)
-			transactionInvestigationFee := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-transactionverificationFee .col%d span", i+1)).Text())
+			entranceFeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-cardHolderEntranceFeeDisplay .col%d span", i+1)).Text())
+			entranceFeeAmount := extractIntFromString(entranceFeeText)
+			annualFeeText := cleanedText(doc.Find(fmt.Sprintf(".attr-annualFeeDisplay .col%d span", i+1)).Text())
+			annualFeeAmount := extractIntFromString(annualFeeText)
+			cardReplacementFeeText := cleanedText(doc.Find(fmt.Sprintf(".attr-replacementCardFee .col%d span", i+1)).Text())
+			cardReplacementFeeAmount := extractIntFromString(cardReplacementFeeText)
+			pinReplacementFeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-replacementOfCardPINFee .col%d span", i+1)).Text())
+			pinReplacementFeeAmount := extractIntFromString(pinReplacementFeeText)
+			statementCopyFeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-copyofStatementFee .col%d span", i+1)).Text())
+			statementCopyFeeAmount := extractIntFromString(statementCopyFeeText)
+			slipCopyFeeText := doc.Find(fmt.Sprintf(".attr-copyOfSalesSlipFee .col%d span", i+1)).Text()
+			slipCopyFeeOriginalText := splitAndCleanText(slipCopyFeeText)     // Clean and split the text
+			slipCopyFeeConditions := splitAndCleanConditions(slipCopyFeeText) // Further split conditions
+			slipCopyFeeAmounts := extractAmounts(slipCopyFeeConditions)
+			transactionInvestigationFeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-transactionverificationFee .col%d span", i+1)).Text())
+			transactionInvestigationFeeAmount := extractIntFromString(transactionInvestigationFeeText)
 			otherFees := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-otherFee .col%d span", i+1)).Text())
 			otherFeesArray := splitByHyphen(otherFees)
 
@@ -267,43 +323,43 @@ func main() {
 			cashWithdrawal := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-11 .col%d span", i+1)).Text())
 			cashWithdrawalArray := splitByHyphenOrNumber(cashWithdrawal)
 
-			inServiceAreaBalanceInquiryFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-31 .col%d span", i+1)).Text())
-			inServiceAreaBalanceInquiryFee := extractIntFromString(inServiceAreaBalanceInquiryFeeStr)
+			inServiceAreaBalanceInquiryFeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-31 .col%d span", i+1)).Text())
+			inServiceAreaBalanceInquiryFeeAmount := extractIntFromString(inServiceAreaBalanceInquiryFeeText)
 
-			outServiceAreaBalanceInquiryFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-32 .col%d span", i+1)).Text())
-			outServiceAreaBalanceInquiryFee := extractIntFromString(outServiceAreaBalanceInquiryFeeStr)
+			outServiceAreaBalanceInquiryFeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-32 .col%d span", i+1)).Text())
+			outServiceAreaBalanceInquiryFeeAmount := extractIntFromString(outServiceAreaBalanceInquiryFeeText)
 
-			inServiceAreaCashWithdrawalFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-33 .col%d span", i+1)).Text())
-			inServiceAreaCashWithdrawalFee := extractIntFromString(inServiceAreaCashWithdrawalFeeStr)
+			inServiceAreaCashWithdrawalFeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-33 .col%d span", i+1)).Text())
+			inServiceAreaCashWithdrawalFeeAmount := extractIntFromString(inServiceAreaCashWithdrawalFeeText)
 
-			outServiceAreaCashWithdrawalFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-34 .col%d span", i+1)).Text())
-			outServiceAreaCashWithdrawalFee := extractIntFromString(outServiceAreaCashWithdrawalFeeStr)
+			outServiceAreaCashWithdrawalFeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-34 .col%d span", i+1)).Text())
+			outServiceAreaCashWithdrawalFeeAmount := extractIntFromString(outServiceAreaCashWithdrawalFeeText)
 
-			inServiceAreaTransferFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-35 .col%d span", i+1)).Text())
-			inServiceAreaTransferFee := extractIntFromString(inServiceAreaTransferFeeStr)
+			inServiceAreaTransferFeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-35 .col%d span", i+1)).Text())
+			inServiceAreaTransferFeeAmount := extractIntFromString(inServiceAreaTransferFeeText)
 
-			outServiceAreaTransferFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-36 .col%d span", i+1)).Text())
-			outServiceAreaTransferFee := extractIntFromString(outServiceAreaTransferFeeStr)
+			outServiceAreaTransferFeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-36 .col%d span", i+1)).Text())
+			outServiceAreaTransferFeeAmount := extractIntFromString(outServiceAreaTransferFeeText)
 
-			transferBetweenProvidersFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-FeeTranferDiffProvider .col%d span", i+1)).Text())
-			transferBetweenProvidersFee := extractIntFromString(transferBetweenProvidersFeeStr)
+			transferBetweenProvidersFeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-FeeTranferDiffProvider .col%d span", i+1)).Text())
+			transferBetweenProvidersFeeAmount := extractIntFromString(transferBetweenProvidersFeeText)
 
-			under10000FeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-41 .col%d span", i+1)).Text())
-			under10000Fee := extractIntFromString(under10000FeeStr)
+			under10000FeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-41 .col%d span", i+1)).Text())
+			under10000FeeAmount := extractIntFromString(under10000FeeText)
 
-			between10001And50000FeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-42 .col%d span", i+1)).Text())
-			between10001And50000Fee := extractIntFromString(between10001And50000FeeStr)
+			between10001And50000FeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-42 .col%d span", i+1)).Text())
+			between10001And50000FeeAmount := extractIntFromString(between10001And50000FeeText)
 
-			additionalFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-FeeAdditional .col%d span", i+1)).Text())
-			additionalFee := extractIntFromString(additionalFeeStr)
+			additionalFeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-FeeAdditional .col%d span", i+1)).Text())
+			additionalFeeAmount := extractIntFromString(additionalFeeText)
 
 			otherConditions := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-FeeOtherCondition .col%d span", i+1)).Text())
 
-			withdrawalFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-51 .col%d span", i+1)).Text())
-			withdrawalFee := extractIntFromString(withdrawalFeeStr)
+			withdrawalFeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-51 .col%d span", i+1)).Text())
+			withdrawalFeeAmount := extractIntFromString(withdrawalFeeText)
 
-			balanceInquiryFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-52 .col%d span", i+1)).Text())
-			balanceInquiryFee := extractIntFromString(balanceInquiryFeeStr)
+			balanceInquiryFeeText := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-52 .col%d span", i+1)).Text())
+			balanceInquiryFeeAmount := extractIntFromString(balanceInquiryFeeText)
 
 			currencyConversionFeeStr := strings.TrimSpace(doc.Find(fmt.Sprintf(".attr-53 .col%d span", i+1)).Text())
 			currencyConversionFee := extractFloatFromString(currencyConversionFeeStr)
@@ -354,33 +410,90 @@ func main() {
 					},
 				},
 				GeneralFees: GeneralFees{
-					EntranceFee:                 entranceFee,
-					AnnualFee:                   annualFee,
-					CardReplacementFee:          cardReplacementFee,
-					PinReplacementFee:           pinReplacementFee,
-					StatementCopyFee:            statementCopyFee,
-					SlipCopyFee:                 slipCopyFee,
-					TransactionInvestigationFee: transactionInvestigationFee,
-					OtherFees:                   otherFeesArray,
+					EntranceFee: FeeDetail{
+						OriginalText: entranceFeeText,
+						Amount:       entranceFeeAmount,
+					},
+					AnnualFee: FeeDetail{
+						OriginalText: annualFeeText,
+						Amount:       annualFeeAmount,
+					},
+					CardReplacementFee: FeeDetail{
+						OriginalText: cardReplacementFeeText,
+						Amount:       cardReplacementFeeAmount,
+					},
+					PinReplacementFee: FeeDetail{
+						OriginalText: pinReplacementFeeText,
+						Amount:       pinReplacementFeeAmount,
+					},
+					StatementCopyFee: FeeDetail{
+						OriginalText: statementCopyFeeText,
+						Amount:       statementCopyFeeAmount,
+					},
+					SlipCopyFee: FeeDetailWithConditions{
+						OriginalText: slipCopyFeeOriginalText,
+						Amount:       slipCopyFeeAmounts,
+					},
+					TransactionInvestigationFee: FeeDetail{
+						OriginalText: transactionInvestigationFeeText,
+						Amount:       transactionInvestigationFeeAmount,
+					},
+					OtherFees: otherFeesArray,
 				},
 				TransactionFeesDomestic: TransactionFeesDomestic{
-					FreeTransactionsPerMonth:        freeTransactionsPerMonth,
-					CashWithdrawal:                  cashWithdrawalArray,
-					InServiceAreaBalanceInquiryFee:  inServiceAreaBalanceInquiryFee,
-					OutServiceAreaBalanceInquiryFee: outServiceAreaBalanceInquiryFee,
-					InServiceAreaCashWithdrawalFee:  inServiceAreaCashWithdrawalFee,
-					OutServiceAreaCashWithdrawalFee: outServiceAreaCashWithdrawalFee,
-					InServiceAreaTransferFee:        inServiceAreaTransferFee,
-					OutServiceAreaTransferFee:       outServiceAreaTransferFee,
-					TransferBetweenProvidersFee:     transferBetweenProvidersFee,
-					Under10000Fee:                   under10000Fee,
-					Between10001And50000Fee:         between10001And50000Fee,
-					AdditionalFee:                   additionalFee,
-					OtherConditions:                 otherConditions,
+					FreeTransactionsPerMonth: freeTransactionsPerMonth,
+					CashWithdrawal:           cashWithdrawalArray,
+					InServiceAreaBalanceInquiryFee: FeeDetail{
+						OriginalText: inServiceAreaBalanceInquiryFeeText,
+						Amount:       inServiceAreaBalanceInquiryFeeAmount,
+					},
+					OutServiceAreaBalanceInquiryFee: FeeDetail{
+						OriginalText: outServiceAreaBalanceInquiryFeeText,
+						Amount:       outServiceAreaBalanceInquiryFeeAmount,
+					},
+					InServiceAreaCashWithdrawalFee: FeeDetail{
+						OriginalText: inServiceAreaCashWithdrawalFeeText,
+						Amount:       inServiceAreaCashWithdrawalFeeAmount,
+					},
+					OutServiceAreaCashWithdrawalFee: FeeDetail{
+						OriginalText: outServiceAreaCashWithdrawalFeeText,
+						Amount:       outServiceAreaCashWithdrawalFeeAmount,
+					},
+					InServiceAreaTransferFee: FeeDetail{
+						OriginalText: inServiceAreaTransferFeeText,
+						Amount:       inServiceAreaTransferFeeAmount,
+					},
+					OutServiceAreaTransferFee: FeeDetail{
+						OriginalText: outServiceAreaTransferFeeText,
+						Amount:       outServiceAreaTransferFeeAmount,
+					},
+					TransferBetweenProvidersFee: FeeDetail{
+						OriginalText: transferBetweenProvidersFeeText,
+						Amount:       transferBetweenProvidersFeeAmount,
+					},
+					Under10000Fee: FeeDetail{
+						OriginalText: under10000FeeText,
+						Amount:       under10000FeeAmount,
+					},
+					Between10001And50000Fee: FeeDetail{
+						OriginalText: between10001And50000FeeText,
+						Amount:       between10001And50000FeeAmount,
+					},
+					AdditionalFee: FeeDetail{
+						OriginalText: additionalFeeText,
+						Amount:       additionalFeeAmount,
+					},
+					OtherConditions: otherConditions,
 				},
 				TransactionFeesInternational: TransactionFeesInternational{
-					WithdrawalFee:         withdrawalFee,
-					BalanceInquiryFee:     balanceInquiryFee,
+					WithdrawalFee: FeeDetail{
+						OriginalText: withdrawalFeeText,
+						Amount:       withdrawalFeeAmount,
+					},
+					BalanceInquiryFee: FeeDetail{
+						OriginalText: balanceInquiryFeeText,
+						Amount:       balanceInquiryFeeAmount,
+					},
 					CurrencyConversionFee: currencyConversionFee,
 				},
 				Insurance: Insurance{
@@ -439,7 +552,7 @@ func cleanedText(input string) string {
 	cleaned = strings.ReplaceAll(cleaned, "\t", "")
 	cleaned = strings.TrimSpace(cleaned)
 	spaceRegex := regexp.MustCompile(`\s+`)
-	cleaned = spaceRegex.ReplaceAllString(cleaned, "")
+	cleaned = spaceRegex.ReplaceAllString(cleaned, " ")
 
 	return cleaned
 }
@@ -461,4 +574,18 @@ func setHeaders(req *http.Request) {
 	req.Header.Set("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36")
 	req.Header.Set("verificationtoken", `ToQWsd6JpdywXWWiHC8F7T8eQZkBkBxMij7tw9cmR-ustXzjzA5kmlRIalkuj-0WblKIrki2wYe-iFBJdeGpAsL5UDE7ix8yTesristz_WY1,9R2bjBfVukm3UcFSumGCpsGpB097wGQ0InKyeYA45PZanVekI2TPT-Jc9AOGVGhWT16oGo44ZKOAzFhfM1Y8uDiDI3hm5n6jnKVf5IlbPL01`)
 	req.Header.Set("x-requested-with", "XMLHttpRequest")
+}
+
+func splitAndCleanConditions(input string) []string {
+	// Split the text by "-" and remove newline and extra spaces
+	parts := strings.Split(input, "-")
+	var cleanedParts []string
+	for _, part := range parts {
+		cleaned := strings.TrimSpace(part)
+		cleaned = strings.ReplaceAll(cleaned, "\n", "")
+		if cleaned != "" {
+			cleanedParts = append(cleanedParts, cleaned)
+		}
+	}
+	return cleanedParts
 }

@@ -32,24 +32,34 @@
       ],
       "fee_top_up_channels": [
         "เติมเงินที่ Counter ให้บริการ ค่าธรรมเนียมเริ่มต้น 5 บาท"
+      ],
+      "fee_top_up_channels_numeric": [
+        5
       ]
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "300 บาท/ปี",
+      "annual_fee_numeric": 300,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "300 บาท/เดือน",
+      "maintenance_fee_numeric": 300,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีค่าธรรมเนียม",
-      "early_termination_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        4% ของยอดเงินที่เอาออกจากกระเป๋า"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        4% ของยอดเงินที่เอาออกจากกระเป๋า",
+      "early_termination_fee_percentage": 4
     },
     "additional_info": {
       "product_website": "https://www.cathayinter.com/",
@@ -88,24 +98,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีการเติมเงินช่องทางอื่น"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "ในส่วนของค่าธรรมเนียมจะไม่มีการเก็บ แต่จะเก็บเป็นค่าบริการ โดยเก็บกับร้านค้า จากส่วนของที่ร้านค้าได้ค่าอาหารจากลูกค้าต่อการสั่งครั้งนั้น (เก็บไม่เกิน 30%)"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีค่าธรรมเนียม",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.facebook.com/manawalletthailand/?ref=pages_you_manageยังอยู่ในการเตรียมประชาสัมพันธ์",
@@ -144,24 +162,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีการเติมเงินช่องทางอื่น"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "ในส่วนของค่าธรรมเนียม mana จะเก็บกับเจ้าของหอ จากส่วนที่ผู้เช่าทำการจ่ายเงินค่าห้อง 15 บาทต่อครั้ง"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีค่าธรรมเนียม",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.facebook.com/manawalletthailand/?ref=pages_you_manageยังอยู่ในการเตรียมประชาสัมพันธ์",
@@ -235,24 +261,57 @@
         "กรณีเติมเงินสินเชื่ออื่นๆ คิดค่าธรรมเนียม 0",
         "100 บาท/รายการ",
         "กรณีเติมเงินด้วยบัตรเงินสดทรูมันนี่ คิดค่าธรรมเนียม 25% ของจำนวนเงินที่เติมจากบัตรเงินสดทรูมันนี่(การปรับค่าธรรมเนียมมีผลบังคับใช้ตั้งแต่วันที่ 1 พฤษภาคม 2566 เป็นต้นไป จากเดิมเก็บค่าธรรมเนียม รายการที่ 31 เป็นต้นไป)"
+      ],
+      "fee_top_up_channels_numeric": [
+        2,
+        20,
+        2,
+        100,
+        1,
+        20,
+        2,
+        30,
+        1,
+        100,
+        0,
+        100,
+        1,
+        3000,
+        3100,
+        6000,
+        6100,
+        300,
+        21,
+        5,
+        30,
+        0,
+        100,
+        1
       ]
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "20 บาท/เดือน                                    เงื่อนไข:                                                                        - กรณีไม่มีรายการเคลื่อนไหวบัญชี ติดต่อกันเกินกว่า 6 เดือน- กรณียกเลิกบัญชีแล้วแต่มีเงินคงค้างอยู่ จนกว่าเงินในบัญชีของผู้ใช้บริการไม่เพียงพอให้บริษัทหักค่าธรรมเนียมตามจำนวนที่บริษัทเรียกเก็บ",
+      "maintenance_fee_numeric": 20,
       "other_fees": "บริการโอนเงินกรณีเป็นผู้โอนเงิน- โอนเงินไปยังบัญชีธนาคาร คิดค่าธรรมเนียม 20 บาท/รายการ- โอนเงินไปยังบัญชีทรูมันนี่วอลเล็ท คิดค่าธรรมเนียม 0 บาท/รายการกรณีเป็นผู้รับเงินโอน- รับเงินโอนจากบัญชีทรูมันนี่วอลเล็ท คิดค่าธรรมเนียม 2.3% ของจำนวนรับเงินโอน ไม่เกิน 10 บาท / รายการ (ฟรีค่าธรรมเนียม สำหรับรายการรับเงินโอนครั้งที่ 1-100 ของเดือน)(มีผลบังคับใช้ตั้งแต่วันที่ 15 เมษายน 2566 เป็นต้นไป จากเดิม 1.9%)"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "50 บาท                                    เงื่อนไข:                                                                        ผู้ใช้บริการที่ประสงค์ที่จะถอนยอดเงินคงเหลือจากการปิดบัญชีทรูมันนี่ วอลเล็ท ไปบัญชีธนาคาร สามารถติดต่อขอรับยอดเงินคงเหลือผ่านช่องทาง TrueMoney Customer Care หรือ ทรูช็อป เท่านั้น"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "50 บาท                                    เงื่อนไข:                                                                        ผู้ใช้บริการที่ประสงค์ที่จะถอนยอดเงินคงเหลือจากการปิดบัญชีทรูมันนี่ วอลเล็ท ไปบัญชีธนาคาร สามารถติดต่อขอรับยอดเงินคงเหลือผ่านช่องทาง TrueMoney Customer Care หรือ ทรูช็อป เท่านั้น",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.truemoney.com/",
@@ -339,24 +398,69 @@
         "กรณีเติมเงินสินเชื่ออื่นๆ คิดค่าธรรมเนียม 0",
         "100 บาท/รายการ",
         "กรณีเติมเงินด้วยบัตรเงินสดทรูมันนี่ คิดค่าธรรมเนียม 25% ของจำนวนเงินที่เติมจากบัตรเงินสดทรูมันนี่(การปรับค่าธรรมเนียมมีผลบังคับใช้ตั้งแต่วันที่ 1 พฤษภาคม 2566 เป็นต้นไป จากเดิมเก็บค่าธรรมเนียม รายการที่ 31 เป็นต้นไป)"
+      ],
+      "fee_top_up_channels_numeric": [
+        2,
+        20,
+        2,
+        100,
+        1,
+        20,
+        2,
+        30,
+        1,
+        100,
+        10,
+        20,
+        50,
+        90,
+        180,
+        300,
+        1,
+        100,
+        0,
+        100,
+        3000,
+        3100,
+        6100,
+        10000,
+        10100,
+        20000,
+        20100,
+        30000,
+        30000,
+        300,
+        21,
+        5,
+        30,
+        0,
+        100,
+        1
       ]
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "20 บาท/เดือน                                    เงื่อนไข:                                                                        - กรณีไม่มีรายการเคลื่อนไหวบัญชี ติดต่อกันเกินกว่า 6 เดือน- กรณียกเลิกบัญชีแล้วแต่มีเงินคงค้างอยู่ จนกว่าเงินในบัญชีของผู้ใช้บริการไม่เพียงพอให้บริษัทหักค่าธรรมเนียมตามจำนวนที่บริษัทเรียกเก็บ",
+      "maintenance_fee_numeric": 20,
       "other_fees": "บริการโอนเงินกรณีเป็นผู้โอนเงิน- โอนเงินไปยังบัญชีธนาคาร คิดค่าธรรมเนียม 20 บาท/รายการ- โอนเงินไปยังบัญชีทรูมันนี่ คิดค่าธรรมเนียม 0 บาท/รายการ- โอนเงินไปบัญชีธนาคารบุคคลธรรมดา ผ่านการสแกน QR คิดค่าธรรมเนียม 25 บาท /รายการ เมื่อทำรายการโอนเงินผ่านการสแกน QR เกิน 30ครั้งในแต่ละเดือนกรณีเป็นผู้รับเงินโอน- รับเงินโอนจากบัญชีทรูมันนี่วอลเล็ท คิดค่าธรรมเนียม 2.9% ของจำนวนรับเงินโอน ไม่เกิน 10 บาท / รายการ (ฟรีค่าธรรมเนียม สำหรับรายการรับเงินโอนครั้งที่ 1-100 ของเดือน)(มีผลบังคับใช้ตั้งแต่วันที่ 15 กุมภาพันธ์ 2567 เป็นต้นไป จากเดิม 2.3%)"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "50 บาท                                    เงื่อนไข:                                                                        ผู้ใช้บริการที่ประสงค์ที่จะถอนยอดเงินคงเหลือจากการปิดบัญชีทรูมันนี่ วอลเล็ท ไปบัญชีธนาคาร สามารถติดต่อขอรับยอดเงินคงเหลือผ่านช่องทาง TrueMoney Customer Care หรือ ทรูช็อป เท่านั้น"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "50 บาท                                    เงื่อนไข:                                                                        ผู้ใช้บริการที่ประสงค์ที่จะถอนยอดเงินคงเหลือจากการปิดบัญชีทรูมันนี่ วอลเล็ท ไปบัญชีธนาคาร สามารถติดต่อขอรับยอดเงินคงเหลือผ่านช่องทาง TrueMoney Customer Care หรือ ทรูช็อป เท่านั้น",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.truemoney.com/",
@@ -395,24 +499,32 @@
       ],
       "fee_top_up_channels": [
         "เติมเงินที่เคาน์เตอร์บริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "150 บาท/บัตร                                    เงื่อนไข:                                                                        การขอออกบัตรใหม่ หรือ กรณีบัตรหาย ชำรุด หรือหมดอายุ กรณีเป็นบัตรแข็ง (Physical Card) มีค่าธรรมเนียม 150 บาท รวมค่าจัดส่ง",
+      "card_reissue_fee_numeric": 150,
       "maintenance_fee": "20 บาท/เดือน                                    เงื่อนไข:                                                                        ไม่ได้ใช้งานติดต่อกันเ 6 เดือน นับจากวันใช้งานครั้งสุดท้าย เก็บค่าธรรมเนียมเดือนละ 20 บาทไม่ได้ใช้งานติดต่อกันเกินกว่า 12 เดือนและมียอดคงเหลือมากกว่า 2,000 บาท เก็บค่าธรรมเนียมเดือนละ 100 บาทไม่ได้ใช้งานเกินกว่า 12 เดือนและมียอดคงเหลือน้อยกว่า 2,000 บาท เก็บค่าธรรมเนียมเดือนละ 200 บาท",
+      "maintenance_fee_numeric": 20,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "0.035% ของจำนวนเงินที่ทำรายการ                                    เงื่อนไข:                                                                        คิดเพิ่มจากมูลค่าการใช้จ่าย ไม่เกินร้อยละ 3.5%"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "15 บาท/รายการ                                    เงื่อนไข:                                                                        กรณียืนยันตัวตนตามผลิตภัณฑ์สูงบรรเทา สามารถขอคืนเงินเข้าบัญชีธนาคารชื่อเดียวกันเท่านั้นกรณียืนยันตัวตนตามผลิตภัณฑ์สูง สามารถขอคืนเงินเข้าบัญชีธนาคารชื่อเดียวกันและโอนให้บุคคลอื่นได้",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": 15,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.atdeeppocket.com",
@@ -451,24 +563,32 @@
       ],
       "fee_top_up_channels": [
         "เติมเงินที่เคาน์เตอร์บริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "200 บาท/บัตร                                    เงื่อนไข:                                                                        การขอออกบัตรใหม่ หรือ กรณีบัตรหาย ชำรุด หรือหมดอายุ กรณีเป็นบัตรแข็ง (Physical Card) มีค่าธรรมเนียมไม่เกิน 200 บาท รวมค่าจัดส่ง",
+      "card_reissue_fee_numeric": 200,
       "maintenance_fee": "20 บาท/เดือน                                    เงื่อนไข:                                                                        ไม่ได้ใช้งานติดต่อกันเ 6 เดือน นับจากวันใช้งานครั้งสุดท้าย เก็บค่าธรรมเนียมเดือนละ 20 บาทไม่ได้ใช้งานติดต่อกันเกินกว่า 12 เดือนและมียอดคงเหลือมากกว่า 2,000 บาท เก็บค่าธรรมเนียมเดือนละ 100 บาทไม่ได้ใช้งานเกินกว่า 12 เดือนและมียอดคงเหลือน้อยกว่า 2,000 บาท เก็บค่าธรรมเนียมเดือนละ 200 บาท",
+      "maintenance_fee_numeric": 20,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "0.035% ของจำนวนเงินที่ทำรายการ                                    เงื่อนไข:                                                                        คิดเพิ่มจากมูลค่าการใช้จ่าย ไม่เกินร้อยละ 3.5%"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "15 บาท/รายการ                                    เงื่อนไข:                                                                        กรณียืนยันตัวตนตามผลิตภัณฑ์สูงบรรเทา สามารถขอคืนเงินเข้าบัญชีธนาคารชื่อเดียวกันเท่านั้นกรณียืนยันตัวตนตามผลิตภัณฑ์สูง สามารถขอคืนเงินเข้าบัญชีธนาคารชื่อเดียวกันและโอนให้บุคคลอื่นได้",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": 15,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.jaymart.co.th/en/home",
@@ -507,24 +627,32 @@
       ],
       "fee_top_up_channels": [
         "เติมเงินที่เคาน์เตอร์บริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "20 บาท/เดือน                                    เงื่อนไข:                                                                        ไม่ได้ใช้งานติดต่อกันเ 6 เดือน นับจากวันใช้งานครั้งสุดท้าย เก็บค่าธรรมเนียมเดือนละ 20 บาทไม่ได้ใช้งานติดต่อกันเกินกว่า 12 เดือนและมียอดคงเหลือมากกว่า 2,000 บาท เก็บค่าธรรมเนียมเดือนละ 100 บาทไม่ได้ใช้งานเกินกว่า 12 เดือนและมียอดคงเหลือน้อยกว่า 2,000 บาท เก็บค่าธรรมเนียมเดือนละ 200 บาท",
+      "maintenance_fee_numeric": 20,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "0.035% ของจำนวนเงินที่ทำรายการ                                    เงื่อนไข:                                                                        คิดเพิ่มจากมูลค่าการใช้จ่าย ไม่เกินร้อยละ 3.5%"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://play.google.com/store/apps/details?id=com.t2pco.scg",
@@ -563,24 +691,32 @@
       ],
       "fee_top_up_channels": [
         "เติมเงินที่เคาน์เตอร์บริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "20 บาท/เดือน                                    เงื่อนไข:                                                                        ไม่ได้ใช้งานติดต่อกันเ 6 เดือน นับจากวันใช้งานครั้งสุดท้าย เก็บค่าธรรมเนียมเดือนละ 20 บาทไม่ได้ใช้งานติดต่อกันเกินกว่า 12 เดือนและมียอดคงเหลือมากกว่า 2,000 บาท เก็บค่าธรรมเนียมเดือนละ 100 บาทไม่ได้ใช้งานเกินกว่า 12 เดือนและมียอดคงเหลือน้อยกว่า 2,000 บาท เก็บค่าธรรมเนียมเดือนละ 200 บาท",
+      "maintenance_fee_numeric": 20,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีค่าธรรมเนียม"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://play.google.com/store/apps/details?id=com.t2pco.scg",
@@ -618,83 +754,36 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีการเรียกเก็บค่าธรรมเนียม"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        ไม่มี",
+      "initial_fee_numeric": null,
       "annual_fee": "50 บาท/ปี                                เงื่อนไข:                                                                เรียกเก็บค่าบริการรักษาบัญชีเฉพาะกรณีที่ลูกค้าไม่มีการเคลื่อนไหวทางการเงินภายในระยะเวลา 1 ปี",
+      "annual_fee_numeric": 50,
       "card_reissue_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มีบริการ",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        ไม่มี",
+      "maintenance_fee_numeric": null,
       "other_fees": "ไม่กำหนด"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        ไม่กำหนด",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มีบริการ"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://pay.line.me/portal/th/main",
       "fee_website": "https://www.facebook.com/RabbitLINEPay/photos/a.820089541799071/1349544285520258"
-    }
-  },
-  {
-    "provider": "กสิกรไทยForeign Currency Wallet",
-    "product": "Foreign Currency Wallet",
-    "features_and_conditions": {
-      "highlight_features": "Foreign Currency Wallet คือ บริการกระเป๋าเงินอิเล็กทรอนิกส์สกุลเงินตราต่างประเทศ ที่ลูกค้าสามารถแลกเปลี่ยนสกุลเงิน เพื่อนาไปลงทุน โดยลูกค้าสามารถใช้บริการดังกล่าวสาหรับการซื้อขายทองคำ เพื่อเป็นสินทรัพย์ทางเลือกที่หลากหลาย และตอบโจทย์กับสถานการณ์ในปัจจุบัน อีกทั้งยังช่วยให้นักลงทุนสามารถกระจายความเสี่ยงตามการลงทุนแบบ Asset Allocation รวมถึงสามารถบริหารความเสี่ยงด้านอัตราแลกเปลี่ยนได้ด้วยตัวเอง ลูกค้าสามารถเปิดบริการและทาธุรกรรมแลกเปลี่ยนสกุลเงินตราต่างประเทศ ซื้อขายทองคำด้วยเงินสกุลตราต่างประเทศ และตรวจสอบรายการธุรกรรมต่างๆ ผ่าน K PLUS Application",
-      "age_requirement": "บุคคลธรรมดาอายุตั้งแต่ 20 ปีขึ้นไป",
-      "applicant_qualification": [
-        "สำหรับบุคคลธรรมดา สัญชาติไทยเท่านั้น"
-      ],
-      "usage_conditions": {
-        "usage_method": "สามารถแลกเปลี่ยนเงินตราต่างประเทศ ผ่านแอพพลิเคชัน เพื่อนำไปซื้อขายทองคำ และลงทุนต่างๆ",
-        "lifetime": "ไม่มีกำหนดระยะเวลา",
-        "payment_method": "ไม่มีค่าธรรมเนียม",
-        "supported_merchants": "ร้านค้า บริษัท เอ็มทีเอส โกลด์ จำกัด",
-        "website_list": null,
-        "international_service": "ไม่มีบริการ"
-      }
-    },
-    "top_up": {
-      "top_up_frequency": "หลายครั้ง",
-      "first_top_up_value": "ไม่เกิน 30,000,000 บาท",
-      "first_top_up_condition": "- จำนวนเงินใน Foreign Currency Wallet รวมกันสูงสุด ไม่เกิน 30,000,000 บาท",
-      "next_top_up_value": "ไม่เกิน 30,000,000 บาท",
-      "next_top_up_condition": "- จำนวนเงินใน Foreign Currency Wallet รวมกันสูงสุด ไม่เกิน 30,000,000 บาท",
-      "max_balance": null,
-      "max_balance_condition": "- จำนวนเงินใน Foreign Currency Wallet รวมกันสูงสุด ไม่เกิน 30,000,000 บาท",
-      "free_top_up_channels": [
-        "เติมเงินผ่าน K PLUS"
-      ],
-      "fee_top_up_channels": [
-        "ไม่มีบริการ"
-      ]
-    },
-    "fees": {
-      "initial_fee": "ไม่มีค่าธรรมเนียม",
-      "annual_fee": "ไม่มีค่าธรรมเนียม",
-      "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
-      "maintenance_fee": "ไม่มีค่าธรรมเนียม",
-      "other_fees": null
-    },
-    "speding_fees": {
-      "spending_fee": null,
-      "spending_notification_fee": "ไม่มีบริการ",
-      "international_withdrawal_fee": "ไม่มีบริการ",
-      "currency_conversion_fee": "ไม่มีค่าธรรมเนียม"
-    },
-    "cancellation_fees": {
-      "cash_redemption_fee": "ไม่มีค่าธรรมเนียม",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
-    },
-    "additional_info": {
-      "product_website": "https://www.kasikornbank.com/th/personal/Digital-banking/Pages/foreign-currency-wallet.aspx",
-      "fee_website": null
     }
   },
   {
@@ -730,24 +819,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีบริการ",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://krungthai.com",
@@ -785,24 +882,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "1.ค่าธรรมเนียมการถอนเงินสดสกุลต่างประเทศที่สาขาของธนาคาร คิด 100 บาท/รายการ รองรับ14 สกุลเงิน ดังนี้AUD,CAD,CHF,DKK,EUR,GBP,HKD,JPY,NZD,NOK,RUB,SEK,SGD,USD-วงเงินการทำรายการ คำนวณเป็นเงินบาท ไม่เกิน25,000/รายการ จำกัดไม่เกิน 2 รายการ/วัน2.บริการเงินโอนออกไปต่างประเทศ Krungthai WARP กรณีโอนผ่านช่องทางสาขาของธนาคารและตัดจากบัตร Travel Card -ยอดเงินโอนไม่เกิน 100,000 บาท(EQUIVALENT) คิดค่าธรรมเนียม 499.-บาท(EQUIVALENT) ต่อรายการ-โอนได้ 7 สกุลเงิน ตรงประเทศปลายทาง ได้แก่ US\u003eUSD , UK\u003eGBP , SG\u003eSGD , HK\u003eHKD , EU\u003eEUR , AU\u003eAUD และ CA\u003eCAD-ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยนกรณีผู้โอนชำระเงินให้ธนาคารเป็นสกุลเงินเดียวกับเงินโอนออก คิดค่าธรรมเนียมเพิ่มจากมูลค่าขอเเงินโอนต่อรายการ (ขั้นต่ำ 1,000 บาท) โดยแบ่งตามสกุลเงิน ดังนี้-สกุลเงิน USD คิดเพิ่ม 0.25% -สกุลเงินบาท คิดเพิ่ม 0.25%-สกุลอื่นๆ คิดเพิ่ม 0.50%"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ค่าธรรมเนียมที่ผู้ให้บริการปลายทางเรียกเก็บ(ต่อรายการ) ขึ้นอยู่กับนโยบายของผู้ให้บริการ",
       "currency_conversion_fee": "ไม่มีค่าธรรมเนียม"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีค่าธรรมเนียม",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://krungthai.com/th/content/personal/cards/krungthai-travel-card",
@@ -840,24 +945,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "1.ค่าธรรมเนียมการถอนเงินสดสกุลต่างประเทศที่สาขาของธนาคาร คิด 100 บาท/รายการ รองรับ14 สกุลเงิน ดังนี้AUD,CAD,CHF,DKK,EUR,GBP,HKD,JPY,NZD,NOK,RUB,SEK,SGD,USD-วงเงินการทำรายการ คำนวณเป็นเงินบาท ไม่เกิน25,000/รายการ จำกัดไม่เกิน 2 รายการ/วัน2.บริการเงินโอนออกไปต่างประเทศ Krungthai WARP กรณีโอนผ่านช่องทางสาขาของธนาคารและตัดจากบัตร Travel Card -ยอดเงินโอนไม่เกิน 100,000 บาท(EQUIVALENT) คิดค่าธรรมเนียม 499.-บาท(EQUIVALENT) ต่อรายการ-โอนได้ 7 สกุลเงิน ตรงประเทศปลายทาง ได้แก่ US\u003eUSD , UK\u003eGBP , SG\u003eSGD , HK\u003eHKD , EU\u003eEUR , AU\u003eAUD และ CA\u003eCAD-ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยนกรณีผู้โอนชำระเงินให้ธนาคารเป็นสกุลเงินเดียวกับเงินโอนออก คิดค่าธรรมเนียมเพิ่มจากมูลค่าขอเเงินโอนต่อรายการ (ขั้นต่ำ 1,000 บาท) โดยแบ่งตามสกุลเงิน ดังนี้-สกุลเงิน USD คิดเพิ่ม 0.25% -สกุลเงินบาท คิดเพิ่ม 0.25%-สกุลอื่นๆ คิดเพิ่ม 0.50%"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ค่าธรรมเนียมที่ผู้ให้บริการปลายทางเรียกเก็บ(ต่อรายการ) ขึ้นอยู่กับนโยบายของผู้ให้บริการ",
       "currency_conversion_fee": "ไม่มีค่าธรรมเนียม"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีค่าธรรมเนียม",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://krungthai.com/th/content/personal/cards/krungthai-travel-card",
@@ -895,24 +1008,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "1.ค่าธรรมเนียมการถอนเงินสดสกุลต่างประเทศที่สาขาของธนาคาร คิด 100 บาท/รายการ รองรับ14 สกุลเงิน ดังนี้AUD,CAD,CHF,DKK,EUR,GBP,HKD,JPY,NZD,NOK,RUB,SEK,SGD,USD-วงเงินการทำรายการ คำนวณเป็นเงินบาท ไม่เกิน25,000/รายการ จำกัดไม่เกิน 2 รายการ/วัน2.บริการเงินโอนออกไปต่างประเทศ Krungthai WARP กรณีโอนผ่านช่องทางสาขาของธนาคารและตัดจากบัตร Travel Card -ยอดเงินโอนไม่เกิน 100,000 บาท(EQUIVALENT) คิดค่าธรรมเนียม 499.-บาท(EQUIVALENT) ต่อรายการ-โอนได้ 7 สกุลเงิน ตรงประเทศปลายทาง ได้แก่ US\u003eUSD , UK\u003eGBP , SG\u003eSGD , HK\u003eHKD , EU\u003eEUR , AU\u003eAUD และ CA\u003eCAD-ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยนกรณีผู้โอนชำระเงินให้ธนาคารเป็นสกุลเงินเดียวกับเงินโอนออก คิดค่าธรรมเนียมเพิ่มจากมูลค่าขอเเงินโอนต่อรายการ (ขั้นต่ำ 1,000 บาท) โดยแบ่งตามสกุลเงิน ดังนี้-สกุลเงิน USD คิดเพิ่ม 0.25% -สกุลเงินบาท คิดเพิ่ม 0.25%-สกุลอื่นๆ คิดเพิ่ม 0.50%"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ค่าธรรมเนียมที่ผู้ให้บริการปลายทางเรียกเก็บ(ต่อรายการ) ขึ้นอยู่กับนโยบายของผู้ให้บริการ",
       "currency_conversion_fee": "ไม่มีค่าธรรมเนียม"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีค่าธรรมเนียม",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://krungthai.com/th/content/personal/cards/krungthai-travel-card",
@@ -952,193 +1073,36 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        ตั้งแต่  1 มีนาคม 2566 ธนาคารยกเลิกการให้บริการออกบัตรเงินอิเล็กทรอนิกส์ ประเภท ATM e-Money กรุงไทยพร้อมจ่าย โดยลูกค้า ผู้ถือบัตรในปัจจุบันสามารถทำธุรกรรมได้ตามปกติจนกว่าบัตรหมดอายุ",
+      "card_reissue_fee_numeric": 1,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://krungthai.com/th/personal/cards/cash-card-top-up-card/308",
       "fee_website": "https://krungthai.com/th/rates/viewdetail/27"
-    }
-  },
-  {
-    "provider": "กสิกรไทยบัตรเงินสดบางจาก แคชคาร์ด (Bangchak Cash Card) (เฉพาะกลุ่มลูกค้า)",
-    "product": "บัตรเงินสดบางจาก แคชคาร์ด (Bangchak Cash Card) (เฉพาะกลุ่มลูกค้า)",
-    "features_and_conditions": {
-      "highlight_features": "บัตรเงินสด เพื่อเพิ่มความสะดวกในการชำระสินค้า ตามที่ธนาคารและพันธมิตรกำหนด ธนาคารจะออกบัตรให้กับบริษัทที่สั่งซื้อบัตรเงินสด ในฐานะผู้ขออกบัตรเงินสดแคชคาร์ด",
-      "age_requirement": "ไม่มี",
-      "applicant_qualification": [
-        "ไม่มี"
-      ],
-      "usage_conditions": {
-        "usage_method": "ใช้งานผ่านบัตรในการซื้อสินค้าและบริการ โดยใช้เฉพาะชำระค่าบริการน้ำมันและผลิตภัณฑ์อื่นๆที่กำหนด ณ สถานีบริการน้ำมันที่เข้าร่วมโครงการ",
-        "lifetime": "1 ปี นับจากเดือนที่ออกบัตร",
-        "payment_method": "ใช้เฉพาะชำระค่าบริการน้ำมันและผลิตภัณฑ์ตามที่กำหนด ณ สถานีบริการน้ำมันของ บมจ.บางจาก",
-        "supported_merchants": "สถานีบริการน้ำมันของ บมจ.บางจาก ที่มีเครื่องรับบัตรอิเล็กทรอนิกส์เฉพาะของ บมจ.กสิกรไทย",
-        "website_list": null,
-        "international_service": "ไม่มีบริการ"
-      }
-    },
-    "top_up": {
-      "top_up_frequency": "ครั้งเดียว",
-      "first_top_up_value": "ไม่เกิน 50,000 บาท",
-      "first_top_up_condition": "ตามใบสั่งซื้อที่พันธมิตรแจ้ง",
-      "next_top_up_value": "ไม่มีบริการ",
-      "next_top_up_condition": null,
-      "max_balance": null,
-      "max_balance_condition": null,
-      "free_top_up_channels": [
-        "ไม่มีบริการ"
-      ],
-      "fee_top_up_channels": [
-        "ไม่มีบริการ"
-      ]
-    },
-    "fees": {
-      "initial_fee": "ไม่มีค่าธรรมเนียม",
-      "annual_fee": "ไม่มีค่าธรรมเนียม",
-      "card_reissue_fee": "15 บาท/บัตร                                    เงื่อนไข:                                                                        อัตราค่าธรรมเนียมการออกบัตรต่อบัตร ขึ้นอยู่กับการตกลงร่วมกันกับพันธมิตรในการออกบัตร",
-      "maintenance_fee": "ไม่มีค่าธรรมเนียม",
-      "other_fees": "ค่าธรรมเนียมการผลิตบัตร"
-    },
-    "speding_fees": {
-      "spending_fee": null,
-      "spending_notification_fee": "ไม่มีบริการ",
-      "international_withdrawal_fee": "ไม่มีบริการ",
-      "currency_conversion_fee": "ไม่มีบริการ"
-    },
-    "cancellation_fees": {
-      "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ"
-    },
-    "additional_info": {
-      "product_website": "https://www.kasikornbank.com/th/promotion/Pages/cash-card.aspx",
-      "fee_website": "https://b2b.bangchakmarketplace.com/th/Cards/cash"
-    }
-  },
-  {
-    "provider": "กสิกรไทยบัตรเงินสดพีทีที พริวิเลจ คาร์ด (PTT Cash Card) (เฉพาะกลุ่มลูกค้า)",
-    "product": "บัตรเงินสดพีทีที พริวิเลจ คาร์ด (PTT Cash Card) (เฉพาะกลุ่มลูกค้า)",
-    "features_and_conditions": {
-      "highlight_features": "บัตรเงินสด เพื่อเพิ่มความสะดวกในการชำระสินค้า ตามที่ธนาคารและพันธมิตรกำหนด ธนาคารจะออกบัตรให้กับบริษัทที่สั่งซื้อบัตรเงินสด ในฐานะผู้ขออกบัตรเงินสดแคชคาร์ด",
-      "age_requirement": "ไม่มี",
-      "applicant_qualification": [
-        "ไม่มี"
-      ],
-      "usage_conditions": {
-        "usage_method": "ใช้งานผ่านบัตรในการซื้อสินค้าและบริการ โดยใช้เฉพาะชำระค่าบริการน้ำมันและผลิตภัณฑ์อื่นๆที่กำหนด ณ สถานีบริการน้ำมันที่เข้าร่วมโครงการ",
-        "lifetime": "1 ปี นับจากเดือนที่ออกบัตร",
-        "payment_method": "ใช้เฉพาะชำระค่าบริการน้ำมันและผลิตภัณฑ์ตามที่กำหนด ณ สถานีบริการน้ำมันของ บมจ.ปตท.",
-        "supported_merchants": "สถานีบริการน้ำมันของ บมจ.ปตท. น้ำมันและร้านค้าที่กำหนด ที่มีเครื่องรับบัตรอิเล็กทรอนิกส์เฉพาะของ บมจ.กสิกรไทย",
-        "website_list": null,
-        "international_service": "ไม่มีบริการ"
-      }
-    },
-    "top_up": {
-      "top_up_frequency": "ครั้งเดียว",
-      "first_top_up_value": "ไม่เกิน 50,000 บาท",
-      "first_top_up_condition": "ตามใบสั่งซื้อที่พันธมิตรแจ้ง",
-      "next_top_up_value": "ไม่มีบริการ",
-      "next_top_up_condition": null,
-      "max_balance": null,
-      "max_balance_condition": null,
-      "free_top_up_channels": [
-        "ไม่มีบริการ"
-      ],
-      "fee_top_up_channels": [
-        "ไม่มีบริการ"
-      ]
-    },
-    "fees": {
-      "initial_fee": "ไม่มีค่าธรรมเนียม",
-      "annual_fee": "ไม่มีค่าธรรมเนียม",
-      "card_reissue_fee": "15 บาท/บัตร                                    เงื่อนไข:                                                                        อัตราค่าธรรมเนียมการออกบัตรต่อบัตร ขึ้นอยู่กับการตกลงร่วมกันกับพันธมิตรในการออกบัตร",
-      "maintenance_fee": "ไม่มีค่าธรรมเนียม",
-      "other_fees": "ค่าธรรมเนียมการผลิตบัตร"
-    },
-    "speding_fees": {
-      "spending_fee": null,
-      "spending_notification_fee": "ไม่มีบริการ",
-      "international_withdrawal_fee": "ไม่มีบริการ",
-      "currency_conversion_fee": "ไม่มีบริการ"
-    },
-    "cancellation_fees": {
-      "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ"
-    },
-    "additional_info": {
-      "product_website": "https://www.kasikornbank.com/th/promotion/Pages/cash-card.aspx",
-      "fee_website": "https://www.pttor.com/th/product/commercial/PTT-Privilege-Card"
-    }
-  },
-  {
-    "provider": "กสิกรไทยบัตรเงินสดพีทีที โออาร์ กิฟซ์ คาร์ด (PTT OR Gift Card) (เฉพาะกลุ่มลูกค้า)",
-    "product": "บัตรเงินสดพีทีที โออาร์ กิฟซ์ คาร์ด (PTT OR Gift Card) (เฉพาะกลุ่มลูกค้า)",
-    "features_and_conditions": {
-      "highlight_features": "บัตรเงินสด เพื่อเพิ่มความสะดวกในการชำระสินค้า ตามที่ธนาคารและพันธมิตรกำหนด ธนาคารจะออกบัตรให้กับบริษัทที่สั่งซื้อบัตรเงินสด ในฐานะผู้ขออกบัตรเงินสดแคชคาร์ด",
-      "age_requirement": "ไม่มี",
-      "applicant_qualification": [
-        "ไม่มี"
-      ],
-      "usage_conditions": {
-        "usage_method": "ใช้งานผ่านบัตรในการซื้อสินค้าและบริการ โดยใช้เฉพาะชำระค่าบริการน้ำมันและผลิตภัณฑ์อื่นๆที่กำหนด ณ สถานีบริการน้ำมันที่เข้าร่วมโครงการ",
-        "lifetime": "1 ปี นับจากเดือนที่ออกบัตร",
-        "payment_method": "ใช้เฉพาะชำระค่าบริการน้ำมันและผลิตภัณฑ์ตามที่กำหนด ณ สถานีบริการน้ำมันของ บมจ.ปตท.",
-        "supported_merchants": "สถานีบริการน้ำมันของ บมจ.ปตท. น้ำมันและร้านค้าที่กำหนด ที่มีเครื่องรับบัตรอิเล็กทรอนิกส์เฉพาะของ บมจ.กสิกรไทย",
-        "website_list": null,
-        "international_service": "ไม่มีบริการ"
-      }
-    },
-    "top_up": {
-      "top_up_frequency": "ครั้งเดียว",
-      "first_top_up_value": "ไม่เกิน 50,000 บาท",
-      "first_top_up_condition": "ตามใบสั่งซื้อที่พันธมิตรแจ้ง",
-      "next_top_up_value": "ไม่มีบริการ",
-      "next_top_up_condition": null,
-      "max_balance": null,
-      "max_balance_condition": null,
-      "free_top_up_channels": [
-        "ไม่มีบริการ"
-      ],
-      "fee_top_up_channels": [
-        "ไม่มีบริการ"
-      ]
-    },
-    "fees": {
-      "initial_fee": "ไม่มีค่าธรรมเนียม",
-      "annual_fee": "ไม่มีค่าธรรมเนียม",
-      "card_reissue_fee": "15 บาท/บัตร                                    เงื่อนไข:                                                                        อัตราค่าธรรมเนียมการออกบัตรต่อบัตร ขึ้นอยู่กับการตกลงร่วมกันกับพันธมิตรในการออกบัตร",
-      "maintenance_fee": "ไม่มีค่าธรรมเนียม",
-      "other_fees": "ค่าธรรมเนียมการผลิตบัตร"
-    },
-    "speding_fees": {
-      "spending_fee": null,
-      "spending_notification_fee": "ไม่มีบริการ",
-      "international_withdrawal_fee": "ไม่มีบริการ",
-      "currency_conversion_fee": "ไม่มีบริการ"
-    },
-    "cancellation_fees": {
-      "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ"
-    },
-    "additional_info": {
-      "product_website": "https://www.kasikornbank.com/th/promotion/Pages/cash-card.aspx",
-      "fee_website": "https://www.pttor.com/th/product/commercial/PTT-Privilege-Card"
     }
   },
   {
@@ -1172,83 +1136,35 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.ttbbank.com/th/corporate/corp-account-and-domestic-transaction/corp-payment-service/ttb-pre-paid-fleet-card",
-      "fee_website": null
-    }
-  },
-  {
-    "provider": "กสิกรไทยxplORe wallet Powered by KBank",
-    "product": "xplORe wallet Powered by KBank",
-    "features_and_conditions": {
-      "highlight_features": "eWallet ร่วมกับพันธมิตร ปตท.โออาร์ เพื่อใช้จ่ายในเครือโออาร์ และนอกเครือโออาร์",
-      "age_requirement": "15ปีขึ้นไป",
-      "applicant_qualification": [
-        "สำหรับบุคคลธรรมดา สัญชาติไทยเท่านั้น"
-      ],
-      "usage_conditions": {
-        "usage_method": "สามารถเติมเงินเข้า wallet หรือผูกบัตรเครดิตกับ wallet และไปใช้จ่าย โดยวิธีการสแกน QR เพื่อชำระเงิน",
-        "lifetime": "ไม่มีกำหนดระยะเวลา",
-        "payment_method": "ไม่มีค่าธรรมเนียม",
-        "supported_merchants": "ร้านค้าในเครือปตท.โออาร์ และนอกเครือปตท.โออาร์",
-        "website_list": null,
-        "international_service": "ยังไม่เปิดให้บริการ"
-      }
-    },
-    "top_up": {
-      "top_up_frequency": "หลายครั้ง",
-      "first_top_up_value": "ไม่เกิน 30,000 บาท",
-      "first_top_up_condition": "- เติมเงินสูงสุด 30,000 บาทต่อครั้ง- Wallet balance 30,000 บาท",
-      "next_top_up_value": "ไม่เกิน 30,000 บาท",
-      "next_top_up_condition": "- เติมเงินสูงสุด 30,000 บาทต่อครั้ง- เติมเงินสูงสุด 60,000 บาทต่อวัน และต่อเดือน (ต้องมีการใช้จ่ายออกไป ถึงสามารถเติมเงินเพิ่มได้)- Wallet balance 30,000 บาท",
-      "max_balance": null,
-      "max_balance_condition": "ไม่กำหนด",
-      "free_top_up_channels": [
-        "เติมเงินผ่าน K PLUS , KBank Channel",
-        "เติมเงินผ่าน Promptpay ewallet id"
-      ],
-      "fee_top_up_channels": [
-        "ไม่มี"
-      ]
-    },
-    "fees": {
-      "initial_fee": "ไม่มีค่าธรรมเนียม",
-      "annual_fee": "ไม่มีค่าธรรมเนียม",
-      "card_reissue_fee": "ไม่มีบริการ",
-      "maintenance_fee": "ไม่มีค่าธรรมเนียม",
-      "other_fees": null
-    },
-    "speding_fees": {
-      "spending_fee": null,
-      "spending_notification_fee": "ไม่มีบริการ",
-      "international_withdrawal_fee": "ไม่มีบริการ",
-      "currency_conversion_fee": "ไม่มีบริการ"
-    },
-    "cancellation_fees": {
-      "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มีวันหมดอายุ"
-    },
-    "additional_info": {
-      "product_website": "https://www.xplore.in.th/th/wallet",
       "fee_website": null
     }
   },
@@ -1287,24 +1203,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีบริการ",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "20 บาท/เดือน                                    เงื่อนไข:                                                                        กรณีไม่ใช้งาน 1 ปี จะเรียกเก็บค่าธรรมเนียมรักษาบัญชี (ปัจจุบันยังไม่มีการเรียกเก็บจริง)",
+      "maintenance_fee_numeric": 20,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "80 บาท/รายการ                                    เงื่อนไข:                                                                        - ถอนเงินเข้าบัญชีธนาคารตั้งแต่ 500 - 4,999 บาทค่าธรรมเนียม 80 บาท- ถอนเงินเข้าบัญชีธนาคารตั้งแต่ 5,000 - 10,000 บาทค่าธรรมเนียม 80 บาท",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": 80,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": null,
@@ -1342,24 +1266,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มี"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ตามที่บริษัทกำหนด เป็นรายกรณี",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "ตามที่บริษัทกำหนดเป็นรายกรณี"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "50 บาท/รายการ                                    เงื่อนไข:                                                                        ค่าธรรมเนียมรวมภาษีมูลค่าพิ่มแล้ว",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": 50,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.rabbit.co.th/",
@@ -1397,24 +1329,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มี"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ตามที่บริษัทกำหนด เป็นรายกรณี",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "ตามที่บริษัทกำหนดเป็นรายกรณี"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "50 บาท/รายการ                                    เงื่อนไข:                                                                        ค่าธรรมเนียมรวมภาษีมูลค่าพิ่มแล้ว",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": 50,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.rabbit.co.th/",
@@ -1452,24 +1392,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มี"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ตามที่บริษัทกำหนด เป็นรายกรณี",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "ตามที่บริษัทกำหนดเป็นรายกรณี"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "50 บาท/รายการ                                    เงื่อนไข:                                                                        ค่าธรรมเนียมรวมภาษีมูลค่าพิ่มแล้ว",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": 50,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.rabbit.co.th/",
@@ -1507,24 +1455,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีค่าธรรมเนียม",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.grab.com/th/en/pay/",
@@ -1568,24 +1524,37 @@
         "บัตรเครดิต/เดบิตมีค่าธรรมเนียม 4% ของมูลค่าการเติมเงินต่อครั้ง",
         "Shopee เคาน์เตอร์  ค่าธรรมเนียมเริ่มต้น 10 บาท สำหรับมูลค่าเติมเงินต่ำกว่า 3,000 บาท",
         "เติมเงินที่ตู้เติมเงินที่ให้บริการ (ตู้บุญเติม ตู้กะปุก ตู้เอเจ ตู้เติมสบายพลัส ตู้เติมดี) ค่าธรรมเนียมเริ่มต้น 2 บาท"
+      ],
+      "fee_top_up_channels_numeric": [
+        5,
+        5,
+        10,
+        2
       ]
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "20 บาท/เดือน                                    เงื่อนไข:                                                                        กรณีที่บัญชีไม่มีความเคลื่อนไหวติดต่อกัน 12 เดือน นโยบายมีผล วันที่ 1 สิงหาคม 2566 เริ่มเก็บค่าธรรมเนียม 1 สิงหาคม 2567",
+      "maintenance_fee_numeric": 20,
       "other_fees": "ตั้งแต่ 1 มีนาคม 2567 จะมีการเปลี่ยนนโยบายของบริการถอนเงินออกจาก ShopeePay ไปยังบัญชีธนาคารตามนี้ลูกค้าสามารถทำธุรกรรมได้ฟรี 1 ครั้งต่อเดือน แต่หลังจากนั้นลูกค้าจะถูกเก็บค่าธรรมเนียมที่ 20 บาทต่อครั้งสำหรับร้านค้าของ ShopeePay จะสามารถทำธุรกรรมได้ฟรี 5 ครั้งต่อเดือน แต่หลังจากนั้นจะถูกเก็บค่าธรรมเนียมที่ 20 บาทต่อครั้ง"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://shopeepay.co.th/",
@@ -1624,24 +1593,32 @@
       ],
       "fee_top_up_channels": [
         "Barcode หลังบัตร กรณีเติมเงิน ผ่านช่องทางของต่างธนาคาร"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "30 บาท/บัตร                                    เงื่อนไข:                                                                        - กรณีบัตรหาย ชำรุด หรือหมดอายุ - กรณีซื้อบัตรครั้งแรกแล้วใช้ไม่ได้ จะเปลี่ยนให้ลูกค้าแบบไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": 30,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://krungthai.com",
@@ -1688,24 +1665,38 @@
         "เติมเงิน Wallet ผ่านตู้เติมสบาย พลัสSBM Wallet / White Label Wallet 20 บาท ค่าธรรมเนียม ไม่เกิน 2 บาท 50 บาท ค่าธรรมเนียม ไม่เกิน 2 บาท 100 บาท ค่าธรรมเนียม ไม่เกิน 3 บาท 200 บาท ค่าธรรมเนียม ไม่เกิน 5 บาท 300 บาท ค่าธรรมเนียม ไม่เกิน 5 บาท 500 บาท ค่าธรรมเนียม ไม่เกิน 10 บาท",
         "เติมเงิน Wallet ผ่านตู้บุญเติม20 บาท ค่าธรรมเนียม ไม่เกิน 2 บาท 50 บาท ค่าธรรมเนียม ไม่เกิน 5 บาท100 บาท ค่าธรรมเนียม ไม่เกิน 10 บาท200 บาท ค่าธรรมเนียม ไม่เกิน 20 บาท300 บาท ค่าธรรมเนียม ไม่เกิน 30 บาท500 บาท ค่าธรรมเนียม ไม่เกิน 50 บาท",
         "เติมเงิน Wallet ผ่าน Sabuy CounterSBM Wallet / White Label Wallet 20 บาท ค่าธรรมเนียม ไม่เกิน 2 บาท 50 บาท ค่าธรรมเนียม ไม่เกิน 2 บาท 100 บาท ค่าธรรมเนียม ไม่เกิน 3 บาท 200 บาท ค่าธรรมเนียม ไม่เกิน 5 บาท 300 บาท ค่าธรรมเนียม ไม่เกิน 5 บาท 500 บาท ค่าธรรมเนียม ไม่เกิน 10 บาท*เงื่อนไขเป็นไปตามที่บริษัทกำหนด หากมีการเปลี่ยนแปลงบริษัทจะแจ้งให้ทราบล่วงหน้า*ประกาศ ณ วันที่ 1 กรกฎาคม 2565"
+      ],
+      "fee_top_up_channels_numeric": [
+        100,
+        50000,
+        20,
+        2,
+        20
       ]
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีบริการ",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "- บริการพร้อมเพย์โอนเงิน Wallet ผ่านช่องทางพร้อมเพย์ 1-50,000 บาท ค่าธรรมเนียม ไม่เกิน 15 บาท 50,0001-100,000 บาท ค่าธรรมเนียม ไม่เกิน 20 บาท 100,001-200,000 บาท ค่าธรรมเนียม ไม่เกิน 25 บาท 200,001-300,000 บาท ค่าธรรมเนียม ไม่เกิน 30 บาท 300,001-1,000,000 บาท ค่าธรรมเนียม ไม่เกิน 35 บาท  - บริการโอนเงิน Walletโอนเงินระหว่าง Sabuy Money Wallet, White Label Wallet, บัญชีธนาคาร 1-50,000 บาท ค่าธรรมเนียม ไม่เกิน 15 บาท50,001-100,000 บาท ค่าธรรมเนียม ไม่เกิน 20 บาท100,001-200,000 บาท ค่าธรรมเนียม ไม่เกิน 25 บาท200,001-300,000 บาท ค่าธรรมเนียม ไม่เกิน 30 บาท300,001-1,000,000 บาท ค่าธรรมเนียม ไม่เกิน 35 บาท - บริการพร้อมเพย์ชำระค่าสินค้าและบริการผ่านช่องทางพร้อมเพย์จำนวนเงิน 1 - 50,000 บาทค่าธรรมเนียม ไม่เกิน 5 บาท -  Bill Payment (จ่ายบิลอื่นๆ)ชำระบิล AISชำระบิล TRUEชำระบิล DTACไม่จำกัดจำนวนเงิน\tค่าธรรมเนียม ไม่เกิน 15 บาท -  ชำระค่าสาธารณูปโภคการไฟฟ้านครหลวงการไฟฟ้าส่วนภูมิภาคการประปานครหลวงการประปาส่วนภูมิภาคไม่จำกัดจำนวนเงินค่าธรรมเนียม ไม่เกิน 10 บาท*เงื่อนไขเป็นไปตามที่บริษัทกำหนด หากมีการเปลี่ยนแปลงบริษัทจะแจ้งให้ทราบล่วงหน้า*ประกาศ ณ วันที่ 1 กรกฎาคม 2565"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.sabuymoney.com/",
@@ -1753,84 +1744,46 @@
         "500 บาทค่าธรรมเนียม  ไม่เกิน 15 บาท",
         "เติมเงินมือถือAISDTACTRUEจำนวนเงิน 10",
         "1,000 บาทค่าธรรมเนียม ไม่เกิน 100 บาท*เงื่อนไขเป็นไปตามที่บริษัทกำหนด หากมีการเปลี่ยนแปลงบริษัทจะแจ้งให้ทราบล่วงหน้า*\t หมายเหตุ: การให้บริการดังกล่าวอยู่ภายใต้การได้รับใบอนุญาตของบริษัท สบาย มันนี่ จำกัด\tประกาศ ณ วันที่ 1 กรกฎาคม 2565"
+      ],
+      "fee_top_up_channels_numeric": [
+        100,
+        50000,
+        10,
+        1,
+        50000,
+        20,
+        500,
+        10,
+        1000
       ]
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีบริการ",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "- บริการพร้อมเพย์โอนเงิน Wallet ผ่านช่องทางพร้อมเพย์จำนวนเงิน 1 - 50,000 บาทค่าธรรมเนียม ไม่เกิน 15 บาท - บริการโอนเงิน Walletโอนเงินระหว้าง Kerry Walletโอนเงินระหว่าง Sabuy Money Walletโอนเงินระหว้าง Kerry Wallet - Sabuy Moneyโอนเงินไปยังบัญชีธนาคารจำนวนเงิน 1 - 50,000 บาทค่าธรรมเนียม ไม่เกิน 15 บาท - บริการพร้อมเพย์ชำระค่าสินค้าและบริการผ่านช่องทางพร้อมเพย์จำนวนเงิน 1 - 50,000 บาทค่าธรรมเนียม ไม่เกิน 15 บาท - Bill Payment (จ่ายบิลอื่นๆ)ชำระบิล AISชำระบิล TRUEชำระบิล DTACไม่จำกัดจำนวนเงิน\tค่าธรรมเนียม ไม่เกิน 20 บาท\t - ชำระค่าสาธารณูปโภคการไฟฟ้านครหลวงการไฟฟ้าส่วนภูมิภาคการประปานครหลวงการประปาส่วนภูมิภาคไม่จำกัดจำนวนเงิน\tค่าธรรมเนียม ไม่เกิน 10 บาท*เงื่อนไขเป็นไปตามที่บริษัทกำหนด หากมีการเปลี่ยนแปลงบริษัทจะแจ้งให้ทราบล่วงหน้า*\t หมายเหตุ: การให้บริการดังกล่าวอยู่ภายใต้การได้รับใบอนุญาตของบริษัท สบาย มันนี่ จำกัด\tประกาศ ณ วันที่ 1 กรกฎาคม 2565"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://th.kerryexpress.com/th/home",
       "fee_website": null
-    }
-  },
-  {
-    "provider": "กสิกรไทยQ-money (เฉพาะกลุ่มลูกค้า)",
-    "product": "Q-money (เฉพาะกลุ่มลูกค้า)",
-    "features_and_conditions": {
-      "highlight_features": "ผลิตภัณฑ์ Q-money (บริการเงินอิเล็กทรอนิกส์ด้วยระบบ Blockchain) ที่มีการนำ Blockchain Technology เป็น underlying infrastructure เพื่อให้การ update ledger และข้อมูลการใช้งานต่างๆได้อย่างมีประสิทธิภาพมากขึ้น โดยเป็นนวัตกรรมทางการเงินรูปแบบใหม่ที่จะเสริมสร้างโลกธุรกิจทางการเงินแห่งอนาคต ซึ่งลูกค้าสามารถใช้งาน Q-money ผ่าน Application เพื่อเติมเงินจากบัญชีเงินฝากออมทรัพย์ของธนาคารกสิกรไทย โดยการให้บริการอยู่ภายใต้หลักเกณฑ์การประกอบธุรกิจบริการเงินอิเล็กทรอนิกส์ที่ธนาคารแห่งประเทศไทยกาหนด และอยู่ระหว่างให้บริการภายใต้ Regulatory Sandbox ของ ธปท.",
-      "age_requirement": "บุคคลธรรมดาอายุตั้งแต่ 20 ปีขึ้นไป และนิติบุคคล",
-      "applicant_qualification": [
-        "สำหรับบุคคลธรรมดา สัญชาติไทย และนิติบุคคล ที่จดทะเบียนในประเทศไทยเท่านั้น"
-      ],
-      "usage_conditions": {
-        "usage_method": "นำไปใช้โอนเงินระหว่างกัน (Money Transfer) และชำระค่าสินค้า (Payment) ที่ร้านค้า/บริษัทที่รับชำระเงินด้วย Q-money",
-        "lifetime": "ไม่มีกำหนดระยะเวลา",
-        "payment_method": "ไม่มีค่าธรรมเนียม",
-        "supported_merchants": "ใช้ได้กับร้านค้าที่รับชำระค่าสินค้าด้วย Q-money ในช่วง Regulatory Sandbox และ ร้านค้าบน Blockchain (จะแจ้งให้ทราบอีกครั้ง)",
-        "website_list": null,
-        "international_service": "ไม่มีบริการ"
-      }
-    },
-    "top_up": {
-      "top_up_frequency": "หลายครั้ง",
-      "first_top_up_value": "50 บาท - ตามที่กำหนด",
-      "first_top_up_condition": "เติมเงินจากบัญชีเงินฝากธนาคารกสิกรไทย ไม่เกิน 50,000 บาท / เดือนจำนวนเงินในบัญชี Q-money มีได้ไม่เกิน -50,000 บาท สำหรับนิติบุคคล-5,000 บาท สำหรับบุคคลธรรมดา",
-      "next_top_up_value": "50 บาท - ตามที่กำหนด",
-      "next_top_up_condition": "เติมเงินจากบัญชีเงินฝากธนาคารกสิกรไทย ไม่เกิน 50,000 บาท / เดือนจำนวนเงินในบัญชี Q-money มีได้ไม่เกิน -50,000 บาท สำหรับนิติบุคคล-5,000 บาท สำหรับบุคคลธรรมดา",
-      "max_balance": null,
-      "max_balance_condition": "จำนวนเงินในบัญชี Q-money มีได้ไม่เกิน -50,000 บาท สำหรับนิติบุคคล-5,000 บาท สำหรับบุคคลธรรมดา",
-      "free_top_up_channels": [
-        "เติมเงินผ่าน K PLUS สำหรับลูกค้าบุคคลธรรมดา",
-        "เติมเงินผ่าน K Cash Connect Plus หรือ KBIZ"
-      ],
-      "fee_top_up_channels": [
-        "ไม่มีบริการ"
-      ]
-    },
-    "fees": {
-      "initial_fee": "ไม่มีค่าธรรมเนียม",
-      "annual_fee": "ไม่มีค่าธรรมเนียม",
-      "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
-      "maintenance_fee": "ไม่มีค่าธรรมเนียม",
-      "other_fees": null
-    },
-    "speding_fees": {
-      "spending_fee": null,
-      "spending_notification_fee": "ไม่มีบริการ",
-      "international_withdrawal_fee": "ไม่มีบริการ",
-      "currency_conversion_fee": "ไม่มีบริการ"
-    },
-    "cancellation_fees": {
-      "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ"
-    },
-    "additional_info": {
-      "product_website": "https://www.kasikornbank.com/th/personal/digital-banking/e-wallet/pages/q-money.aspx",
-      "fee_website": "https://www.kasikornbank.com/th/personal/digital-banking/e-wallet/pages/q-money.aspx"
     }
   },
   {
@@ -1864,24 +1817,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        เนื่องจากการออกบัตรใหม่นั้น ต้องมีการซื้อบัตรใหม่ ซึ่งราคาบัตรขึ้นอยูกับผู้ให้บริการคู่ค้า Co-Branded เป็นผู้กำหนดราคาค่าบัตร",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "50 บาท/เดือน                                    เงื่อนไข:                                                                        เก็บเฉพาะกรณีบัตรหมดอายุ โดยเริ่มเก็บเมื่อครบ 60 วัน นับจากวันที่บัตรหมดอายุ",
+      "maintenance_fee_numeric": 50,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "100 บาท/รายการ",
+      "spending_notification_fee_numeric": 100,
       "international_withdrawal_fee": "ไม่มีค่าธรรมเนียม",
       "currency_conversion_fee": "ไม่มีค่าธรรมเนียม"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "50 บาท/รายการ                                    เงื่อนไข:                                                                        กรณีบัตรชำรุดโดยผู้ถือบัตรและไม่ประสงค์จะซื้อบัตรใหม่ หรือกรณียกเลิกบัตร หรือกรณีบัตรหมดอายุ โดยส่งบัตรและเอกสารมายังบริษัท",
-      "early_termination_fee": "50 บาท"
+      "cash_redemption_fee_numeric": 50,
+      "early_termination_fee": "50 บาท",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.thaismartcard.co.th/index.php?app=index\u0026fnc=smartpurse",
@@ -1932,24 +1893,43 @@
         "80 บาท/ครั้ง",
         "ตู้อื่นๆ คิดค่าธรรมเนียม 1",
         "100 บาท/ครั้ง"
+      ],
+      "fee_top_up_channels_numeric": [
+        4,
+        24,
+        4,
+        24,
+        4,
+        4,
+        4,
+        80,
+        1,
+        100
       ]
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "- กรณีเติมเงินเข้า TrueMoney wallet ด้วยบัตรเงินสดทรูมันนี่ คิดค่าธรรมเนียม 25% ของจำนวนเงิน"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.truemoney.com/",
@@ -2000,24 +1980,43 @@
         "80 บาท/ครั้ง",
         "ตู้อื่นๆ คิดค่าธรรมเนียม 1",
         "100 บาท/ครั้ง"
+      ],
+      "fee_top_up_channels_numeric": [
+        4,
+        24,
+        4,
+        24,
+        4,
+        4,
+        4,
+        80,
+        1,
+        100
       ]
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "- กรณีเติมเงินเข้า TrueMoney wallet ด้วยบัตรเงินสดทรูมันนี่ คิดค่าธรรมเนียม 25% ของจำนวนเงิน"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.truemoney.com/",
@@ -2055,24 +2054,32 @@
       ],
       "fee_top_up_channels": [
         "ช่วงไม่มีโปรโมชั่นเติมเงินผ่านแอปพลิเคชันของธนาคาร บัญชีธนาคาร และตัวแทนเติมเงินของบริษัท"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีบริการ",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "20 บาท/เดือน                                    เงื่อนไข:                                                                        กรณีบัญชีไม่มีการเคลื่อนไหวติดต่อกันเกิน 12 เดือน นับแต่วันที่มีการเคลื่อนไหวครั้งล่าสุด",
+      "maintenance_fee_numeric": 20,
       "other_fees": "2.5% ขั้นต่ำ 5 บาท สูงสุด 15 บาท สำหรับการรับเงินด้วย QR พร้อมเพย์"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "20 บาท/รายการ                                    เงื่อนไข:                                                                        บริษัทจะเรียกเก็บค่าธรรมเนียมทุกรายการที่โอนเงินเข้าบัญชีธนาคาร หากจำนวนเงินในบัญชี Wi Wallet ไม่เพียงพอ เจ้าของบัญชีต้องเติมเงินเข้าบัญชีให้เพียงพอกับค่าธรรมเนียม",
-      "early_termination_fee": "20 บาท                                    เงื่อนไข:                                                                        หากจำนวนเงินในบัญชี Wi Wallet ไม่เพียงพอ เจ้าของบัญชีต้องเติมเงินเข้าบัญชีให้เพียงพอกับค่าธรรมเนียมก่อนยกเลิก/ปิดบัญชี Wi Wallet"
+      "cash_redemption_fee_numeric": 20,
+      "early_termination_fee": "20 บาท                                    เงื่อนไข:                                                                        หากจำนวนเงินในบัญชี Wi Wallet ไม่เพียงพอ เจ้าของบัญชีต้องเติมเงินเข้าบัญชีให้เพียงพอกับค่าธรรมเนียมก่อนยกเลิก/ปิดบัญชี Wi Wallet",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://wallet.wipay.co.th/",
@@ -2110,24 +2117,32 @@
       ],
       "fee_top_up_channels": [
         "ช่วงไม่มีโปรโมชั่นเติมเงินผ่านแอปพลิเคชันของธนาคาร บัญชีธนาคาร และตัวแทนเติมเงินของบริษัท"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีบริการ",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "100 บาท/เดือน                                    เงื่อนไข:                                                                        กรณีบัญชีไม่มีการเคลื่อนไหวติดต่อกันเกิน 12 เดือน นับแต่วันที่มีการเคลื่อนไหวครั้งล่าสุด",
+      "maintenance_fee_numeric": 100,
       "other_fees": "15 บาท สำหรับการรับเงินด้วย QR พร้อมเพย์"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "20 บาท/รายการ                                    เงื่อนไข:                                                                        บริษัทจะเรียกเก็บค่าธรรมเนียมทุกรายการที่โอนเงินเข้าบัญชีธนาคาร หากจำนวนเงินในบัญชี Wi Wallet ไม่เพียงพอ เจ้าของบัญชีต้องเติมเงินเข้าบัญชีให้เพียงพอกับค่าธรรมเนียม",
-      "early_termination_fee": "20 บาท                                    เงื่อนไข:                                                                        หากจำนวนเงินในบัญชี Wi Wallet ไม่เพียงพอ เจ้าของบัญชีต้องเติมเงินเข้าบัญชีให้เพียงพอกับค่าธรรมเนียมก่อนยกเลิก/ปิดบัญชี Wi Wallet"
+      "cash_redemption_fee_numeric": 20,
+      "early_termination_fee": "20 บาท                                    เงื่อนไข:                                                                        หากจำนวนเงินในบัญชี Wi Wallet ไม่เพียงพอ เจ้าของบัญชีต้องเติมเงินเข้าบัญชีให้เพียงพอกับค่าธรรมเนียมก่อนยกเลิก/ปิดบัญชี Wi Wallet",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://wallet.wipay.co.th/",
@@ -2169,24 +2184,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "100 บาท/บัตร                                    เงื่อนไข:                                                                        ยกเว้นกรณีบัตรถูกยึดโดยเครื่อง ATM/ADM ของธนาคาร",
+      "card_reissue_fee_numeric": 100,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "100 บาท/รายการ                                    เงื่อนไข:                                                                        อาจมีค่าธรรมเนียมใดๆ ที่ผู้ให้บริการในต่างประเทศเรียกเก็บ",
       "currency_conversion_fee": "2.5% ของจำนวนเงินที่ทำรายการ                                    เงื่อนไข:                                                                        อ้างอิงอัตราแลกเปลี่ยนกลางของ VISA"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "50 บาท                                    เงื่อนไข:                                                                        ค่าธรรมเนียมขอเงินคงเหลือคืนในบัตร"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "50 บาท                                    เงื่อนไข:                                                                        ค่าธรรมเนียมขอเงินคงเหลือคืนในบัตร",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://krungthai.com/th/personal/cards/cash-card-top-up-card/13",
@@ -2227,24 +2250,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "100 บาท/ปี                                เงื่อนไข:                                                                คิดเฉพาะลูกค้าที่มีข้อตกลงการใช้บริการอื่นๆ เพิ่มเติมในบัตรกับธนาคาร เท่านั้น",
+      "annual_fee_numeric": 100,
       "card_reissue_fee": "ไม่มีบริการ",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "100 บาท/รายการ                                    เงื่อนไข:                                                                        อาจมีค่าธรรมเนียมใดๆ ที่ผู้ให้บริการในต่างประเทศเรียกเก็บ",
       "currency_conversion_fee": "2.5% ของจำนวนเงินที่ทำรายการ                                    เงื่อนไข:                                                                        อ้างอิงอัตราแลกเปลี่ยนกลางของ VISA"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "50 บาท                                    เงื่อนไข:                                                                        ค่าธรรมเนียมขอเงินคงเหลือคืนในบัตร"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "50 บาท                                    เงื่อนไข:                                                                        ค่าธรรมเนียมขอเงินคงเหลือคืนในบัตร",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://krungthai.com/th/personal/cards/cash-card-top-up-card/46",
@@ -2282,24 +2313,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "20 บาท/เดือน                                    เงื่อนไข:                                                                        กรณีไม่มีรายการเคลื่อนไหว ติดต่อกันนานเกินกว่า 24 เดือน",
+      "maintenance_fee_numeric": 20,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://corporate.bigc.co.th/bigcgiftcard",
@@ -2337,24 +2376,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มี"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        ไม่มี",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม                                เงื่อนไข:                                                                ไม่มี",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีบริการ",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "15 บาท/รายการ                                    เงื่อนไข:                                                                        จำนวนเงินขั้นต่ำต้องมากกว่าหรือเท่ากับ 300 บาท",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": 15,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "http://www.paypay.asia",
@@ -2392,24 +2439,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มี"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "150 บาท/บัตร                                    เงื่อนไข:                                                                        1. สำหรับการขอมีบัตร Physical Card ครั้งแรก2. สำหรับกรณีลูกค้าทำบัตรหาย หรือชำรุดด้วยตนเอง3. ไม่คิดค่าบริการหากบัตร Physical Card เสียหาย หรือชำรุดจากการผลิตบัตร",
+      "card_reissue_fee_numeric": 150,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "100 บาท/รายการ                                    เงื่อนไข:                                                                        100 บาทต่อรายการถอนเงินสด",
       "currency_conversion_fee": "ไม่มีค่าธรรมเนียม"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://bigpayme.com/pages/th/",
@@ -2457,24 +2512,32 @@
         "ทางพิเศษฉลองรัช",
         "ทางพิเศษบูรพาวิถี",
         "ทางพิเศษกาญจนาภิเษก"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "330 บาท/บัตร                                    เงื่อนไข:                                                                        เฉพาะกรณี ชำรุดหรือหาย- บัตรอัตโนมัติ (OBU) 300 บาท- บัตร Smart Card 30 บาท",
+      "card_reissue_fee_numeric": 330,
       "maintenance_fee": "25 บาท/เดือน                                    เงื่อนไข:                                                                        เฉพาะบัตรที่ไม่มีการเคลื่อนไหวต่อเนื่องเกิน 1 ปี นับจากวันที่ใช้บัตรผ่านทางหรือเติมเงินครั้งสุดท้าย มีผลตั้งแต่ 1 ตุลาคม 2565",
+      "maintenance_fee_numeric": 25,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.thaieasypass.com/",
@@ -2514,24 +2577,32 @@
         "ลูกค้าทั่วไป",
         "เติมเงินเข้าบัญชี e",
         "Wallet ผ่านบัญชีธนาคารที่ลูกค้าได้ทำการลงทะเบียนผูกไว้ลูกค้านิติบุคคล1. ทางนิติบุคคลโอนเงินที่ต้องการซื้อกองทุนเข้ามาที่บัญชี AMC โดยกำหนดให้โอนเข้ามาที่บัญชีธนาคารกสิกรไทย จากนั้นนิติบุคคลทำการส่งหลักฐานการโอนเงินไปที่ทีม operation@robowealth.co.th (กรณีที่เป็นเช็ค Robowealth ต้องออกใบรับเช็ค)2. ทีม Operation ส่งหลักฐานการโอนเงินทาง email ให้กับ AMC โดยส่งมาที่ทีม mPAY Settlement 3. AMC ตรวจสอบยอดเงินดังกล่าวช่วงเวลา 14.00 น. ของวันทำการ จากนั้นทำการแจ้งกลับไปยังระบบ AMC ผ่าน Tool ที่ได้เตรียมไว้ และส่งอีเมลแจ้งผลกลับมายัง Operation ของ RBW 4. ทีม Operation ตรวจสอบยอดเงินดังกล่าวผ่านระบบหลังบ้าน และส่งหลักฐานไปยังลูกค้า และแจ้งผลไปยัง RM  5. RM นำยอดเงินของลูกค้าไปคำนวณรายการซื้อกองทุน"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        ไม่มีการเรียกเก็บค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม                                เงื่อนไข:                                                                ไม่มีการเรียกเก็บค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มีการเรียกเก็บค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        ไม่มีการเรียกเก็บค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มี",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มี",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มี"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มี",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": null,
@@ -2570,24 +2641,32 @@
       "fee_top_up_channels": [
         "เติมเงินเข้าบัญชี e",
         "Wallet ผ่านบัญชีธนาคารที่ลูกค้าได้ทำการลงทะเบียนผูกไว้"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        ไม่มีการเรียกเก็บค่าธรรมเนียม",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม                                เงื่อนไข:                                                                ไม่มีการเรียกเก็บค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มีการเรียกเก็บค่าธรรมเนียม",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        ไม่มีการเรียกเก็บค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        ไม่มี",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มี",
       "currency_conversion_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        ไม่มี"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มี",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        ไม่มี"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        ไม่มี",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": null,
@@ -2625,24 +2704,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "16.05 บาท",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "50 บาท/บัตร",
+      "card_reissue_fee_numeric": 50,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.ttbbank.com/th/corporate/corp-account-and-domestic-transaction/corp-payment-service/ttb-pre-paid-fleet-card",
@@ -2683,24 +2770,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "30 บาท",
+      "initial_fee_numeric": 30,
       "annual_fee": "ไม่มีค่าธรรมเนียม                                เงื่อนไข:                                                                คิดเฉพาะลูกค้าที่มีข้อตกลงการใช้บริการอื่นๆ เพิ่มเติมในบัตรกับธนาคาร เท่านั้น",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "30 บาท/บัตร",
+      "card_reissue_fee_numeric": 30,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://krungthai.com/th/personal/cards/cash-card-top-up-card/518",
@@ -2738,24 +2833,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่สามารถเติมมูลค่าในบัตรได้"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "30 บาท                                    เงื่อนไข:                                                                        บัตรที่มีมูลค่าตั้งแต่ 1,000 บาท ไม่เรียกเก็บค่าธรรมเนียมการออกบัตร",
+      "initial_fee_numeric": 30,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "30 บาท/บัตร                                    เงื่อนไข:                                                                        ค่าธรรมเนียมบัตรทดแทน 30 บาท ธนาคารจะหักค่าธรรมเนียมบัตรทดแทนจากมูลค่าเงินคงเหลือในบัตรเดิมหรือเรียกเก็บเพิ่มจากผู้สั่งซื้อบัตร ก่อนโอนมูลค่าเงินคงเหลือในบัตรเดิมไปยังยังบัตรใหม่",
+      "card_reissue_fee_numeric": 30,
       "maintenance_fee": "50 บาท/เดือน                                    เงื่อนไข:                                                                        ค่ารักษาบัญชีบัตรเมี่อบัตรหมดอายุ 50 บาท ต่อเดือน ธนาคารจะหักค่ารักษาบัญชีบัตรตั้งแต่เดือนถัดจากเดือนที่บัตรหมดอายุโดยการหักเงินจากมูลค่าเงินคงเหลือในบัตรที่หมดอายุก่อนโอนมูลค่าที่เหลือไปยังบัตรใหม่ หรือรับคืนเป็นเงินสด/เข้าบัญชีธนาคารกรุงเทพ",
+      "maintenance_fee_numeric": 50,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "30 บาท/รายการ                                    เงื่อนไข:                                                                        ธนาคารจะหักค่าธรรมเนียมการขอคืนมูลค่าคงเหลือในบัตร ก่อนโอนมูลค่าที่เหลือไปยังบัตรใหม่ หรือรับคืนเป็นเงินสด/เข้าบัญชีธนาคารกรุงเทพ",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": 30,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.bangkokbank.com/th-TH/Personal/Cards/Caltex-Prepaid-Card",
@@ -2793,24 +2896,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "50 บาท",
+      "initial_fee_numeric": 50,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "50 บาท/บัตร",
+      "card_reissue_fee_numeric": 50,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "-ค่าบริการจัดส่งบัตรตามที่อยู่ 42 บาท/บัตร/รายการ-ค่าบริการสอบถามยอดเงินคงเหลือในบัญชีที่เครื่อง ATM/ADM คิด 15.-/รายการ"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "2.5% ของจำนวนเงินที่ทำรายการ                                    เงื่อนไข:                                                                        อ้างอิงอัตราแลกเปลี่ยนกลางของ VISA"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": null,
@@ -2851,24 +2962,34 @@
       ],
       "fee_top_up_channels": [
         "เติมเงินผ่านจุดบริการ MAAI Prepaid (MAAI Prepaid Booth) รายการที่ 31 เป็นต้นไป ต่อเดือน คิดค่าธรรมเนียม 5 บาท / รายการ"
+      ],
+      "fee_top_up_channels_numeric": [
+        31
       ]
     },
     "fees": {
       "initial_fee": "50 บาท",
+      "initial_fee_numeric": 50,
       "annual_fee": "50 บาท/ปี",
+      "annual_fee_numeric": 50,
       "card_reissue_fee": "50 บาท/บัตร",
+      "card_reissue_fee_numeric": 50,
       "maintenance_fee": "50 บาท/เดือน                                    เงื่อนไข:                                                                        หากไม่มีการใช้งานบัตรเกินกว่า 12 เดือน",
+      "maintenance_fee_numeric": 50,
       "other_fees": "ค่าธรรมเนียมการโอนเงิน ระหว่างบัตรบุคคลอื่น รายการละ 10 บาทต่อรายการ"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        e-statement",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "10 บาท/รายการ                                    เงื่อนไข:                                                                        -ผ่านจุดบริการ MAAI Prepaid ( MAAI Prepaid Booth)เท่านั้น-ยอดเงินสูงสุดในการถอนไม่เกิน 100,000 บาทต่อวัน",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": 10,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": null,
@@ -2909,24 +3030,34 @@
       ],
       "fee_top_up_channels": [
         "เติมเงินผ่านจุดบริการ MAAI Prepaid (MAAI Prepaid Booth) รายการที่ 31 เป็นต้นไป ต่อเดือน คิดค่าธรรมเนียม 5 บาท / รายการ"
+      ],
+      "fee_top_up_channels_numeric": [
+        31
       ]
     },
     "fees": {
       "initial_fee": "50 บาท",
+      "initial_fee_numeric": 50,
       "annual_fee": "50 บาท/ปี",
+      "annual_fee_numeric": 50,
       "card_reissue_fee": "50 บาท/บัตร",
+      "card_reissue_fee_numeric": 50,
       "maintenance_fee": "50 บาท/เดือน                                    เงื่อนไข:                                                                        หากไม่มีการใช้งานบัตรเกินกว่า 12 เดือน",
+      "maintenance_fee_numeric": 50,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        e-statement",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": null,
@@ -2966,24 +3097,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "50 บาท                                    เงื่อนไข:                                                                        1. Prepaid Fleet Card (ประเภทเติมเงิน) : 50 บาท ต่อบัตร2. Cash Fleet Card : 15 บาท ต่อบัตร",
+      "initial_fee_numeric": 50,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "50 บาท/บัตร                                    เงื่อนไข:                                                                        1. Prepaid Fleet Card (ประเภทเติมเงิน) : 50 บาท ต่อบัตร2. Cash Fleet Card : 15 บาท ต่อบัตร",
+      "card_reissue_fee_numeric": 50,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีค่าธรรมเนียม",
-      "early_termination_fee": "50 บาท                                    เงื่อนไข:                                                                        หักชำระค่าธรรมเนียมจากมูลค่าเงินคงเหลือในบัตรออกก่อนที่จะคืนมูลค่าเงินคงเหลือให้กับผู้สั่งซื้อ"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "50 บาท                                    เงื่อนไข:                                                                        หักชำระค่าธรรมเนียมจากมูลค่าเงินคงเหลือในบัตรออกก่อนที่จะคืนมูลค่าเงินคงเหลือให้กับผู้สั่งซื้อ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://krungthai.com/th/corporate/financial-transaction/card/311",
@@ -3021,24 +3160,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "58.85 บาท",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "50 บาท/บัตร",
+      "card_reissue_fee_numeric": 50,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.ttbbank.com/th/corporate/corp-account-and-domestic-transaction/corp-payment-service/ttb-pre-paid-fleet-card",
@@ -3079,24 +3226,32 @@
       ],
       "fee_top_up_channels": [
         "เป็นไปตามช่องทางการเติมเงินของ TrueMoney Wallet Application"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "69 บาท                                    เงื่อนไข:                                                                        เฉพาะบัตรประเภทที่จัดจำหน่าย เช่น True White Card เป็นต้น",
+      "initial_fee_numeric": 69,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "69 บาท/บัตร",
+      "card_reissue_fee_numeric": 69,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "กรณีลูกค้าปฏิเสธค่าใช้จ่ายผ่านบัตร WeCard / True Card (Dispute ซึ่งต้องการส่งเรื่องตรวจสอบรายการ) คิดค่าธรรมเนียม 0 บาท / รายการ"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "3.5% ของจำนวนเงินที่ทำรายการ                                    เงื่อนไข:                                                                        มีค่าธรรมเนียมค่าความเสี่ยงจากการแปลงสกุลเงิน โดยคิดเป็น 3.5% ของยอดชำระ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.truemoney.com/",
@@ -3137,24 +3292,32 @@
       ],
       "fee_top_up_channels": [
         "เป็นไปตามช่องทางการเติมเงินของ TrueMoney Wallet Application"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "69 บาท                                    เงื่อนไข:                                                                        เฉพาะบัตรประเภทที่จัดจำหน่าย เช่น True White Card เป็นต้น",
+      "initial_fee_numeric": 69,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "69 บาท/บัตร",
+      "card_reissue_fee_numeric": 69,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "กรณีลูกค้าปฏิเสธค่าใช้จ่ายผ่านบัตร WeCard / True Card (Dispute ซึ่งต้องการส่งเรื่องตรวจสอบรายการ) คิดค่าธรรมเนียม 0 บาท / รายการ"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "3.5% ของจำนวนเงินที่ทำรายการ                                    เงื่อนไข:                                                                        มีค่าธรรมเนียมค่าความเสี่ยงจากการแปลงสกุลเงิน โดยคิดเป็น 3.5% ของยอดชำระ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.truemoney.com/",
@@ -3192,24 +3355,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "100 บาท                                    เงื่อนไข:                                                                        ยกเว้นค่าธรรมเนียมแรกเข้า 100.00 บาทตั้งแต่ 11ธันวาคม 2566 เป็นต้นไป จนกว่าจะมีการเปลี่ยนแปลง",
+      "initial_fee_numeric": 100,
       "annual_fee": "1,200 บาท/ปี                                เงื่อนไข:                                                                ยกเว้นค่าธรรมเนียมรายปี 1,200.00 บาทตั้งแต่ 11ธันวาคม 2566 เป็นต้นไป จนกว่าจะมีการเปลี่ยนแปลง",
+      "annual_fee_numeric": 1200,
       "card_reissue_fee": "ไม่มีบริการ",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        สามารถขอรับคืนเงินสดที่อยู่ในกระเป๋าเงินอิเล็กทรอนิกส์โดยดำเนินการได้ที่ Counter ให้บริการของบริษัท ซุปเปอร์ริชดิจิทัล จำกัด เท่านั้น",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": null,
@@ -3247,24 +3418,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มี"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "100 บาท                                    เงื่อนไข:                                                                        ค่าธรรมเนียมทุกรายการรวมภาษีมูลค่าเพิ่มแล้ว",
+      "initial_fee_numeric": 100,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "200 บาท/บัตร                                    เงื่อนไข:                                                                        ค่าธรรมเนียมทุกรายการรวมภาษีมูลค่าเพิ่มแล้วเว้นแต่เป็นการเปลี่ยนแรบบิทตามเงื่อนไขในข้อ 5.2 จะไม่คิดค่าธรรมเนียม",
+      "card_reissue_fee_numeric": 200,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "ตามที่บริษัทกำหนดเป็นรายกรณี"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "50 บาท/รายการ                                    เงื่อนไข:                                                                        ค่าธรรมเนียมรวมภาษีมูลค่าพิ่มแล้ว",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": 50,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.rabbit.co.th/",
@@ -3305,24 +3484,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "150 บาท",
+      "initial_fee_numeric": 150,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "150 บาท/บัตร",
+      "card_reissue_fee_numeric": 150,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "100 บาท/รายการ                                    เงื่อนไข:                                                                        ค่าธรรมเนียมการถอนเงินสดที่ตู้ ATM ในต่างประเทศ คิดเป็นแต่ละสกุลเงิน ซึ่งมูลค่า เที่ยบเท่า ประมาณ 100 บาท  และอาจมีค่าธรรมเนียมการให้บริการ จากธนาคารผู้ให้บริการตู้ ATM เพิ่มเติม",
       "currency_conversion_fee": "ไม่มีค่าธรรมเนียม"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "100 บาท/รายการ                                    เงื่อนไข:                                                                        การขายคืนสกุลเงินต่างประเทศ จะเริ่มคิดค่าธรรมเนียมตั้งแต่รายการที่ 4 ของเดือนเป็นต้นไป ซึ่งมูลค่า เที่ยบเท่า ประมาณ 100 บาท",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": 100,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.krungsri.com/th/personal/card/krungsri-boarding-card",
@@ -3360,24 +3547,32 @@
       ],
       "fee_top_up_channels": [
         "ช่วงไม่มีโปรโมชั่นเติมเงินผ่านแอปพลิเคชันของธนาคาร บัญชีธนาคาร และตัวแทนเติมเงินของบริษัท  (ข้อมูลผูกกับบัญชี User Wi Wallet)"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "150 บาท                                    เงื่อนไข:                                                                        สำหรับบัตรแข็งผู้ใช้บริการต้องมีจำนวนเงินในกระเป๋าเงินไว วอลเล็ทไม่ต่ำกว่า 150 บาท สำหรับบัตรเวอร์ชวลไม่มีค่าบริการในการสมัครขอออกบัตร",
+      "initial_fee_numeric": 150,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "150 บาท/บัตร                                    เงื่อนไข:                                                                        สำหรับบัตรแข็งผู้ใช้บริการต้องมีจำนวนเงินในกระเป๋าเงินไว วอลเล็ทไม่ต่ำกว่า 150 บาท สำหรับบัตรเวอร์ชวลไม่มีค่าบริการในการสมัครขอออกบัตรใหม่",
+      "card_reissue_fee_numeric": 150,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "3.5% ของจำนวนเงินที่ทำรายการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://wipay.co.th/service?p=wi-wallet-card",
@@ -3415,83 +3610,36 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "150 บาท",
+      "initial_fee_numeric": 150,
       "annual_fee": "450 บาท/ปี",
+      "annual_fee_numeric": 450,
       "card_reissue_fee": "150 บาท/บัตร",
+      "card_reissue_fee_numeric": 150,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "1.ค่าธรรมเนียมการถอนเงินสดสกุลต่างประเทศที่สาขาของธนาคาร คิด 100 บาท/รายการ รองรับ14 สกุลเงิน ดังนี้AUD,CAD,CHF,DKK,EUR,GBP,HKD,JPY,NZD,NOK,RUB,SEK,SGD,USD-วงเงินการทำรายการ คำนวณเป็นเงินบาท ไม่เกิน25,000/รายการ จำกัดไม่เกิน 2 รายการ/วัน2.บริการเงินโอนออกไปต่างประเทศ Krungthai WARP กรณีโอนผ่านช่องทางสาขาของธนาคารและตัดจากบัตร Travel Card -ยอดเงินโอนไม่เกิน 100,000 บาท(EQUIVALENT) คิดค่าธรรมเนียม 499.-บาท(EQUIVALENT) ต่อรายการ-โอนได้ 7 สกุลเงิน ตรงประเทศปลายทาง ได้แก่ US\u003eUSD , UK\u003eGBP , SG\u003eSGD , HK\u003eHKD , EU\u003eEUR , AU\u003eAUD และ CA\u003eCAD-ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยนกรณีผู้โอนชำระเงินให้ธนาคารเป็นสกุลเงินเดียวกับเงินโอนออก คิดค่าธรรมเนียมเพิ่มจากมูลค่าขอเเงินโอนต่อรายการ (ขั้นต่ำ 1,000 บาท) โดยแบ่งตามสกุลเงิน ดังนี้-สกุลเงิน USD คิดเพิ่ม 0.25% -สกุลเงินบาท คิดเพิ่ม 0.25%-สกุลอื่นๆ คิดเพิ่ม 0.50%"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "100 บาท/รายการ                                    เงื่อนไข:                                                                        1.ค่าธรรมเนียมการถอนเงินสดที่ตู้ ATM ในต่างประเทศ คิดแยกตามสกุลเงิน ประมาณ 100.-บาท2.ค่าธรรมเนียมที่ผู้ให้บริการปลายทางเรียกเก็บ(ต่อรายการ) ขึ้นอยู่กับนโยบายของผู้ให้บริการ3.อัตราค่าธรรมเนียมการถอนเงินแยกตามสกุลเงิน-4 AUD/รายการ-4 CAD/รายการ-2.5 EUR/รายการ-2.5 GBP/รายการ-25 HKD/รายการ-350 JPY/รายการ-4.5 NZD/รายการ-4 SGD/รายการ-3 USD/รายการ-3 CHF/รายการ-200 RUB/รายการ-30 SEK/รายการ-30 NOK/รายการ-20 DKK/รายการ-3,800 KRW/รายการ-105 TWD/รายการ-210 INR/รายการ-14 MYR/รายการ",
       "currency_conversion_fee": "ไม่มีค่าธรรมเนียม"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีค่าธรรมเนียม",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://krungthai.com/th/content/personal/cards/krungthai-travel-card",
       "fee_website": "https://krungthai.com/th/rates/viewdetail/27"
-    }
-  },
-  {
-    "provider": "กสิกรไทยYouTrip Powered by KBank",
-    "product": "YouTrip Powered by KBank",
-    "features_and_conditions": {
-      "highlight_features": "กระเป๋าเงินดิจิทัลรองรับหลายสกุลเพื่อการเดินทาง (Multi-Currency Travel Wallet) ที่มาพร้อมกับบัตรเติมเงินแบบคอนแทคเลส Mastercard",
-      "age_requirement": "15ปีขึ้นไป",
-      "applicant_qualification": [
-        "สำหรับบุคคลธรรมดา สัญชาติไทยเท่านั้น"
-      ],
-      "usage_conditions": {
-        "usage_method": "สามารถแลกเปลี่ยนเงินต่างประเทศล่วงหน้าได้ถึง 10 สกุลเงิน (สกุลต่างประเทศ 9 สกุลและสกุลบาท 1 สกุล) ผ่านแอปพลิเคชัน โดยสามารถนำไปใช้จ่ายได้กว่า 150 สกุลเงินทั่วโลก ผ่านการ รูด แตะ จ่าย ค่าสินค้า รวมถึง กดเงินสดที่ตู้ ATM ต่างประเทศ หรือ ช้อปปิ้งออนไลน์ (ไม่สามารถกดตู้ ATM ในประเทศไทยได้)",
-        "lifetime": "5 ปี",
-        "payment_method": "ใช้ได้ทั่วโลก ภายใต้สัญลักษณ์ MasterCard ทั้งออฟไลน์และออนไลน์",
-        "supported_merchants": "ใช้ได้ทั่วโลก ภายใต้สัญลักษณ์ MasterCard ทั้งออฟไลน์และออนไลน์",
-        "website_list": null,
-        "international_service": "ใช้ได้ทั่วโลก ภายใต้สัญลักษณ์ MasterCard ทั้งออฟไลน์และออนไลน์"
-      }
-    },
-    "top_up": {
-      "top_up_frequency": "หลายครั้ง",
-      "first_top_up_value": "ไม่เกิน 500,000 บาท",
-      "first_top_up_condition": "- เติมเงินจากบัญชี K Plus ไม่เกิน 500,000 บาท/วัน- วงเงินรวมทุกสกุลเงินในบัตรไม่เกิน 500,000 บาท/วัน",
-      "next_top_up_value": "ไม่เกิน 500,000 บาท",
-      "next_top_up_condition": "- เติมเงินจากบัญชี K Plus ไม่เกิน 500,000 บาท/วัน- วงเงินรวมทุกสกุลเงินในบัตรไม่เกิน 500,000 บาท/วัน",
-      "max_balance": null,
-      "max_balance_condition": "ไม่กำหนด",
-      "free_top_up_channels": [
-        "เติมเงินผ่าน K PLUS"
-      ],
-      "fee_top_up_channels": [
-        "ไม่มีบริการ"
-      ]
-    },
-    "fees": {
-      "initial_fee": "150 บาท                                    เงื่อนไข:                                                                        พิเศษ สาหรับลูกค้าที่ สมัครบัตรระหว่าง 5 พ.ย. 2562 ถึง 31 ธ.ค.2567 ฟรีค่าธรรมเนียมแรกเข้า",
-      "annual_fee": "200 บาท/ปี                                เงื่อนไข:                                                                พิเศษ สาหรับลูกค้าที่ สมัครบัตรระหว่าง 5 พ.ย. 2562 ถึง 31 ธ.ค.2567 ฟรีค่าธรรมเนียมรายปีตลอดอายุบัตร",
-      "card_reissue_fee": "150 บาท/บัตร",
-      "maintenance_fee": "ไม่มีค่าธรรมเนียม",
-      "other_fees": null
-    },
-    "speding_fees": {
-      "spending_fee": null,
-      "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
-      "international_withdrawal_fee": "100 บาท/รายการ                                    เงื่อนไข:                                                                        ฟรีค่าธรรมเนียมกดเครื่อง ATM ต่างประเทศ ตั้งแต่ 5 พ.ย. 2562 ถึง 30 ก.ย. 2567",
-      "currency_conversion_fee": "ไม่มีค่าธรรมเนียม"
-    },
-    "cancellation_fees": {
-      "cash_redemption_fee": "ไม่มีค่าธรรมเนียม",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
-    },
-    "additional_info": {
-      "product_website": "https://kasikornbank.com/th/personal/Digital-banking/Pages/youtrip.aspx",
-      "fee_website": "https://kasikornbank.com/th/rate/fee"
     }
   },
   {
@@ -3525,83 +3673,36 @@
       ],
       "fee_top_up_channels": [
         "ไม่มี"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "150 บาท                                    เงื่อนไข:                                                                        ค่าธรรมเนียมทุกรายการรวมภาษีมูลค่าเพิ่มแล้ว",
+      "initial_fee_numeric": 150,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "200 บาท/บัตร                                    เงื่อนไข:                                                                        ค่าธรรมเนียมทุกรายการรวมภาษีมูลค่าเพิ่มแล้วเว้นแต่เป็นการเปลี่ยนแรบบิทตามเงื่อนไขในข้อ 5.2 จะไม่คิดค่าธรรมเนียม",
+      "card_reissue_fee_numeric": 200,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": "ตามที่บริษัทกำหนดเป็นรายกรณี"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "50 บาท/รายการ                                    เงื่อนไข:                                                                        ค่าธรรมเนียมรวมภาษีมูลค่าพิ่มแล้ว",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": 50,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.rabbit.co.th/",
       "fee_website": "https://rabbit.co.th/condition-of-issue/"
-    }
-  },
-  {
-    "provider": "กสิกรไทยPay\u0026Tour Powered by KBank",
-    "product": "Pay\u0026Tour Powered by KBank",
-    "features_and_conditions": {
-      "highlight_features": "กระเป๋าเงินดิจิทัลเพื่อการเดินทางภายในประเทศ (Prepaid Wallet) ที่มาพร้อมกับบัตรเติมเงินแบบคอนแทคเลส VISA",
-      "age_requirement": "อายุ 20 ปี ขึ้นไป",
-      "applicant_qualification": [
-        "ชาวต่างชาติเท่านั้น (ไม่ใช่สัญชาติไทย) และเป็นไปตามเงื่อนไขของธนาคาร (KCC ให้ข้อมูลแค่เบื้องต้น)"
-      ],
-      "usage_conditions": {
-        "usage_method": "เป็น Prepaid wallet \u0026 Card สามารถ Top up ได้ที่ FX Booth โดยการใช้งานสามารถถอนเงินด้วยบัตรที่ K-ATM การใช้จ่ายสามารถใช้ QR Payment จ่ายได้ทุกธนาคารในประเทศไทย และจ่ายผ่านเครื่อง EDC ทุกร้านค้าในประเทศไทยที่รับบัตร VISA",
-        "lifetime": "1 ปี",
-        "payment_method": "การใช้จ่ายสามารถใช้ QR Payment จ่ายได้ทุกธนาคารในประเทศไทย และจ่ายผ่านเครื่อง EDCทุกร้านค้าในประเทศไทยที่รับบัตร VISA",
-        "supported_merchants": "การใช้จ่ายสามารถใช้ QR Payment จ่ายได้ทุกธนาคารในประเทศไทย และจ่ายผ่านเครื่อง EDCทุกร้านค้าในประเทศไทยที่รับบัตร VISA",
-        "website_list": null,
-        "international_service": "ไม่มีบริการ"
-      }
-    },
-    "top_up": {
-      "top_up_frequency": "หลายครั้ง",
-      "first_top_up_value": "1 - 100,000 บาท",
-      "first_top_up_condition": "- เติมเงิน ได้ที่ FX Booth ไม่เกิน 100,000 บาทต่อครั้ง",
-      "next_top_up_value": "1 - 100,000 บาท",
-      "next_top_up_condition": "- เติมเงิน ได้ที่ FX Booth ไม่เกิน 100,000 บาทต่อครั้ง",
-      "max_balance": null,
-      "max_balance_condition": "ไม่กำหนด",
-      "free_top_up_channels": [
-        "เติมเงิน ได้ที่ FX Booth"
-      ],
-      "fee_top_up_channels": [
-        "ไม่มีบริการ"
-      ]
-    },
-    "fees": {
-      "initial_fee": "150 บาท                                    เงื่อนไข:                                                                        พิเศษ สาหรับลูกค้าที่ สมัครบัตรระหว่าง 24 พ.ค. 2567 ถึง 31 ธ.ค.2568 ฟรีค่าธรรมเนียมแรกเข้า",
-      "annual_fee": "ไม่มีค่าธรรมเนียม",
-      "card_reissue_fee": "150 บาท/บัตร                                    เงื่อนไข:                                                                        พิเศษ สาหรับลูกค้าที่ สมัครบัตรระหว่าง 24 พ.ค. 2567 ถึง 31 ธ.ค.2568 ฟรีค่าธรรมเนียมแรกเข้า",
-      "maintenance_fee": "50 บาท/เดือน                                    เงื่อนไข:                                                                        กรณีไม่มีรายการเคลื่อนไหวเกิน 1 ปีแล้วยังมียอดเงินคงเหลือในบัญชี ทางธนาคารจะระงับการใช้งาน wallet โดยมีค่ารักษาบัญชีเดือนละ 50 บาท หากลูกค้าต้องการกลับมาใช้งาน wallet เดิมจะต้องติดต่อ FX Booth ของธนาคาร เพื่อยืนยันตัวตนใหม่อีกครั้ง (ซึ่งธนาคารจะ Extend อายุการใช้งานออกไปอีก 1 ปี)",
-      "other_fees": null
-    },
-    "speding_fees": {
-      "spending_fee": null,
-      "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
-      "international_withdrawal_fee": "ไม่มีบริการ",
-      "currency_conversion_fee": "ไม่มีบริการ"
-    },
-    "cancellation_fees": {
-      "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
-    },
-    "additional_info": {
-      "product_website": "https://www.kasikornbank.com/en/personal/digital-banking/pages/pay\u0026tour.aspx",
-      "fee_website": "https://kasikornbank.com/th/rate/fee"
     }
   },
   {
@@ -3638,24 +3739,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "180 บาท                                    เงื่อนไข:                                                                        - มูลค่าการออกบัตรพร้อมเติมมูลค่าการเดินทาง 180 บาท (มูลค่าการเดินทาง 100 บาท ค่ามัดจำบัตร 50 บาท และค่าธรรมเนียมการออกบัตร 30 บาท)",
+      "initial_fee_numeric": 180,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "180 บาท/บัตร                                    เงื่อนไข:                                                                        กรณีบัตรหาย ชำรุด หรือ หมดอายุ ผู้โดยสารสามารถติดต่อขอคืนมูลค่าในบัตร ตามช่องทางและเงื่อนไขที่ บริษัทฯ กำหนด โดยมีมูลค่าการออกบัตรใหม่พร้อมเติมมูลค่าการเดินทาง 180 บาท (มูลค่าการเดินทาง 100 บาท ค่ามัดจำบัตร 50 บาท และค่าธรรมเนียมการออกบัตร 30 บาท)",
+      "card_reissue_fee_numeric": 180,
       "maintenance_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        กรณีบัตรที่ไม่มีการใช้งานต่อเนื่องเกินระยะเวลาหยุดใช้งาน 2 ปี มีอัตราค่าธรรมเนียม 50 บาท ต่อปี นับจาก 2 ปี หลังใช้งานบัตรครั้งสุดท้าย สูงสุดไม่เกินมูลค่าคงเหลือรวมค่ามัดจำบัตร (เศษของปีให้นับเป็นหนึ่งปี)",
+      "maintenance_fee_numeric": 2,
       "other_fees": "- ค่าธรรมเนียม บัตรสูญหายในพื้นที่ชำระเงินแล้ว เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางไม่ถูกต้องตามลำดับการใช้ เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางหรือให้ผู้อื่นใช้บัตรเดินทาง ผิดกฎหมายหรือผิดเงื่อนไขการใช้งาน มีผลให้ชำระค่าโดยสารไม่เต็มจำนวน ไม่เกิน 30 เท่าของอัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางในระบบโดยไม่ใช้บัตรในการเดินทาง มีผลให้ไม่ได้ชำระค่าโดยสาร ไม่เกิน 30 เท่าของอัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม กรณีผู้โดยสารอยู่ในพื้นที่ชำระเงินแล้วเกินระยะเวลาที่กำหนด เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        - มูลค่าคงเหลือน้อยกว่า 300 บาท สามารถรับคืนเป็นเงินสดได้ที่สถานี- มูลค่าคงเหลือมากกว่าหรือเท่ากับ 300 บาท คืนเงินโดยโอนเข้าบัญชีธนาคารในประเทศของผู้โดยสาร ภายใน 14 วัน- กรณีบัตรชำรุดเสียหาย (บัตรหัก/งอ เป็นรอย บิ่น ฉีก ขาด แตก เจาะรู มีรอยขีด/เขียน เป็นต้น)  มีค่าธรรมเนียม 50 บาท- กรณีบัตรที่ลงทะเบียนผู้ถือบัตรโดยสารแล้ว และสูญหาย มีค่าธรรมเนียมการตรวจสอบมูลค่าบัตร 100 บาท",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": 300,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://metro.bemplc.co.th/Ticket-Token?ty=3",
@@ -3695,24 +3804,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "180 บาท                                    เงื่อนไข:                                                                        - มูลค่าการออกบัตรพร้อมเติมมูลค่าการเดินทาง 180 บาท (มูลค่าการเดินทาง 100 บาท ค่ามัดจำบัตร 50 บาท และค่าธรรมเนียมการออกบัตร 30 บาท)",
+      "initial_fee_numeric": 180,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "180 บาท/บัตร                                    เงื่อนไข:                                                                        กรณีบัตรหาย ชำรุด หรือ หมดอายุ ผู้โดยสารสามารถติดต่อขอคืนมูลค่าในบัตร ตามช่องทางและเงื่อนไขที่ บริษัทฯ กำหนด โดยมีมูลค่าการออกบัตรใหม่พร้อมเติมมูลค่าการเดินทาง 180 บาท (มูลค่าการเดินทาง 100 บาท ค่ามัดจำบัตร 50 บาท และค่าธรรมเนียมการออกบัตร 30 บาท)",
+      "card_reissue_fee_numeric": 180,
       "maintenance_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        กรณีบัตรที่ไม่มีการใช้งานต่อเนื่องเกินระยะเวลาหยุดใช้งาน 2 ปี มีอัตราค่าธรรมเนียม 50 บาท ต่อปี นับจาก 2 ปี หลังใช้งานบัตรครั้งสุดท้าย สูงสุดไม่เกินมูลค่าคงเหลือรวมค่ามัดจำบัตร (เศษของปีให้นับเป็นหนึ่งปี)",
+      "maintenance_fee_numeric": 2,
       "other_fees": "- ค่าธรรมเนียม บัตรสูญหายในพื้นที่ชำระเงินแล้ว เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางไม่ถูกต้องตามลำดับการใช้ เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางหรือให้ผู้อื่นใช้บัตรเดินทาง ผิดกฎหมายหรือผิดเงื่อนไขการใช้งาน มีผลให้ชำระค่าโดยสารไม่เต็มจำนวน ไม่เกิน 30 เท่าของอัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางในระบบโดยไม่ใช้บัตรในการเดินทาง มีผลให้ไม่ได้ชำระค่าโดยสาร ไม่เกิน 30 เท่าของอัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม กรณีผู้โดยสารอยู่ในพื้นที่ชำระเงินแล้วเกินระยะเวลาที่กำหนด เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        - มูลค่าคงเหลือน้อยกว่า 300 บาท สามารถรับคืนเป็นเงินสดได้ที่สถานี- มูลค่าคงเหลือมากกว่าหรือเท่ากับ 300 บาท คืนเงินโดยโอนเข้าบัญชีธนาคารในประเทศของผู้โดยสาร ภายใน 14 วัน- กรณีบัตรชำรุดเสียหาย (บัตรหัก/งอ เป็นรอย บิ่น ฉีก ขาด แตก เจาะรู มีรอยขีด/เขียน เป็นต้น)  มีค่าธรรมเนียม 50 บาท- กรณีบัตรที่ลงทะเบียนผู้ถือบัตรโดยสารแล้ว และสูญหาย มีค่าธรรมเนียมการตรวจสอบมูลค่าบัตร 100 บาท",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": 300,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://metro.bemplc.co.th/Ticket-Token?ty=3",
@@ -3752,24 +3869,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "180 บาท                                    เงื่อนไข:                                                                        - มูลค่าการออกบัตรพร้อมเติมมูลค่าการเดินทาง 180 บาท (มูลค่าการเดินทาง 100 บาท ค่ามัดจำบัตร 50 บาท และค่าธรรมเนียมการออกบัตร 30 บาท)- มูลค่าการออกบัตรพร้อมเที่ยวโดยสาร สำหรับบุคคลทั่วไป (มูลค่าเที่ยวโดยสารตามราคาที่กำหนด ค่ามัดจำบัตร 50 บาท และค่าธรรมเนียมการออกบัตร 30 บาท)",
+      "initial_fee_numeric": 180,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "180 บาท/บัตร                                    เงื่อนไข:                                                                        กรณีบัตรหาย ชำรุด หรือ หมดอายุ ผู้โดยสารสามารถติดต่อขอคืนมูลค่าในบัตร ตามช่องทางและเงื่อนไขที่ บริษัทฯ กำหนด โดยมีมูลค่าการออกบัตรใหม่พร้อมเติมมูลค่าการเดินทาง 180 บาท (มูลค่าการเดินทาง 100 บาท ค่ามัดจำบัตร 50 บาท และค่าธรรมเนียมการออกบัตร 30 บาท)และมูลค่าการออกบัตรพร้อมเที่ยวโดยสาร สำหรับบุคคลทั่วไป (มูลค่าเที่ยวโดยสารตามราคาที่กำหนด ค่ามัดจำบัตร 50 บาท และค่าธรรมเนียมการออกบัตร 30 บาท)",
+      "card_reissue_fee_numeric": 180,
       "maintenance_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        กรณีบัตรที่ไม่มีการใช้งานต่อเนื่องเกินระยะเวลาหยุดใช้งาน 2 ปี มีอัตราค่าธรรมเนียม 50 บาท ต่อปี นับจาก 2 ปี หลังใช้งานบัตรครั้งสุดท้าย สูงสุดไม่เกินมูลค่าคงเหลือรวมค่ามัดจำบัตร (เศษของปีให้นับเป็นหนึ่งปี)",
+      "maintenance_fee_numeric": 2,
       "other_fees": "- ค่าธรรมเนียม บัตรสูญหายในพื้นที่ชำระเงินแล้ว เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางไม่ถูกต้องตามลำดับการใช้ เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางหรือให้ผู้อื่นใช้บัตรเดินทาง ผิดกฎหมายหรือผิดเงื่อนไขการใช้งาน มีผลให้ชำระค่าโดยสารไม่เต็มจำนวน ไม่เกิน 30 เท่าของอัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางในระบบโดยไม่ใช้บัตรในการเดินทาง มีผลให้ไม่ได้ชำระค่าโดยสาร ไม่เกิน 30 เท่าของอัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม กรณีผู้โดยสารอยู่ในพื้นที่ชำระเงินแล้วเกินระยะเวลาที่กำหนด เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        - มูลค่าคงเหลือน้อยกว่า 300 บาท สามารถรับคืนเป็นเงินสดได้ที่สถานี- มูลค่าคงเหลือมากกว่าหรือเท่ากับ 300 บาท คืนเงินโดยโอนเข้าบัญชีธนาคารในประเทศของผู้โดยสาร ภายใน 14 วัน- กรณีบัตรชำรุดเสียหาย (บัตรหัก/งอ เป็นรอย บิ่น ฉีก ขาด แตก เจาะรู มีรอยขีด/เขียน เป็นต้น)  มีค่าธรรมเนียม 50 บาท- กรณีบัตรที่ลงทะเบียนผู้ถือบัตรโดยสารแล้ว และสูญหาย มีค่าธรรมเนียมการตรวจสอบมูลค่าบัตร 100 บาท",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": 300,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://metro.bemplc.co.th/Ticket-Token?ty=3",
@@ -3809,24 +3934,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "180 บาท                                    เงื่อนไข:                                                                        - มูลค่าการออกบัตรพร้อมเติมมูลค่าการเดินทาง 180 บาท (มูลค่าการเดินทาง 100 บาท ค่ามัดจำบัตร 50 บาท และค่าธรรมเนียมการออกบัตร 30 บาท)",
+      "initial_fee_numeric": 180,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "180 บาท/บัตร                                    เงื่อนไข:                                                                        กรณีบัตรหาย ชำรุด หรือ หมดอายุ ผู้โดยสารสามารถติดต่อขอคืนมูลค่าในบัตร ตามช่องทางและเงื่อนไขที่ บริษัทฯ กำหนด โดยมีมูลค่าการออกบัตรใหม่พร้อมเติมมูลค่าการเดินทาง 180 บาท (มูลค่าการเดินทาง 100 บาท ค่ามัดจำบัตร 50 บาท และค่าธรรมเนียมการออกบัตร 30 บาท)",
+      "card_reissue_fee_numeric": 180,
       "maintenance_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        กรณีบัตรที่ไม่มีการใช้งานต่อเนื่องเกินระยะเวลาหยุดใช้งาน 2 ปี มีอัตราค่าธรรมเนียม 50 บาท ต่อปี นับจาก 2 ปี หลังใช้งานบัตรครั้งสุดท้าย สูงสุดไม่เกินมูลค่าคงเหลือรวมค่ามัดจำบัตร (เศษของปีให้นับเป็นหนึ่งปี)",
+      "maintenance_fee_numeric": 2,
       "other_fees": "- ค่าธรรมเนียม บัตรสูญหายในพื้นที่ชำระเงินแล้ว เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางไม่ถูกต้องตามลำดับการใช้ เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางหรือให้ผู้อื่นใช้บัตรเดินทาง ผิดกฎหมายหรือผิดเงื่อนไขการใช้งาน มีผลให้ชำระค่าโดยสารไม่เต็มจำนวน ไม่เกิน 30 เท่าของอัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางในระบบโดยไม่ใช้บัตรในการเดินทาง มีผลให้ไม่ได้ชำระค่าโดยสาร ไม่เกิน 30 เท่าของอัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม กรณีผู้โดยสารอยู่ในพื้นที่ชำระเงินแล้วเกินระยะเวลาที่กำหนด เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีค่าธรรมเนียม                                    เงื่อนไข:                                                                        - มูลค่าคงเหลือน้อยกว่า 300 บาท สามารถรับคืนเป็นเงินสดได้ที่สถานี- มูลค่าคงเหลือมากกว่าหรือเท่ากับ 300 บาท คืนเงินโดยโอนเข้าบัญชีธนาคารในประเทศของผู้โดยสาร ภายใน 14 วัน- กรณีบัตรชำรุดเสียหาย (บัตรหัก/งอ เป็นรอย บิ่น ฉีก ขาด แตก เจาะรู มีรอยขีด/เขียน เป็นต้น)  มีค่าธรรมเนียม 50 บาท- กรณีบัตรที่ลงทะเบียนผู้ถือบัตรโดยสารแล้ว และสูญหาย มีค่าธรรมเนียมการตรวจสอบมูลค่าบัตร 100 บาท",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": 300,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://metro.bemplc.co.th/Ticket-Token?ty=3",
@@ -3864,24 +3997,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่สามารถเติมเงินได้ ใช้ได้เพียงรับชำระค่าสินค้าหรือบริการเท่านั้น"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "1,000 บาท                                    เงื่อนไข:                                                                        ขึ้นอยู่กับการตกลงกับหน่วยงานจัดหาร้านค้า",
+      "initial_fee_numeric": 1000,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ไม่มีบริการ",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ไม่มีค่าธรรมเนียม",
+      "maintenance_fee_numeric": null,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีค่าธรรมเนียม",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ไม่มีบริการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://merchant.wipay.tech/corp-login",
@@ -3919,24 +4060,32 @@
       ],
       "fee_top_up_channels": [
         "ผ่านช่องทางธนาคาร"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "1,000 บาท                                    เงื่อนไข:                                                                        ไม่เกิน 1,000 บาท",
+      "initial_fee_numeric": 1000,
       "annual_fee": "2,000 บาท/ปี                                เงื่อนไข:                                                                ไม่เกิน 2,000 บาท",
+      "annual_fee_numeric": 2000,
       "card_reissue_fee": "ไม่มีบริการ                                    เงื่อนไข:                                                                        ไม่มีบริการ",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "100 บาท/เดือน                                    เงื่อนไข:                                                                        กรณีบัญชีไม่มีการเคลื่อนไหวเกินระยะเวลา 1 ปี",
+      "maintenance_fee_numeric": 100,
       "other_fees": null
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "100 บาท/รายการ                                    เงื่อนไข:                                                                        ลูกค้าสมาชิกทำคำสั่งโอนเงินจากกระเป๋าเงินเข้าบัญชีธนาคาร ค่าธรรมเนียมไม่เกิน 100 บาทต่อรายการ",
-      "early_termination_fee": "ไม่มีค่าธรรมเนียม"
+      "cash_redemption_fee_numeric": 100,
+      "early_termination_fee": "ไม่มีค่าธรรมเนียม",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "http://www.ipps.co.th",
@@ -3976,24 +4125,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ตามที่องค์กรผู้ออกบัตรกำหนด",
+      "initial_fee_numeric": null,
       "annual_fee": "ไม่มีค่าธรรมเนียม",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ตามที่องค์กรผู้ออกบัตรกำหนด",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        กรณีบัตรที่ไม่มีการใช้งานต่อเนื่องเกินระยะเวลาหยุดใช้งาน 2 ปี มีอัตราค่าธรรมเนียม 50 บาท ต่อปี นับจาก 2 ปี หลังใช้งานบัตรครั้งสุดท้าย สูงสุดไม่เกินมูลค่าคงเหลือรวมค่ามัดจำบัตร (เศษของปีให้นับเป็นหนึ่งปี)",
+      "maintenance_fee_numeric": 2,
       "other_fees": "- ค่าธรรมเนียม บัตรสูญหายในพื้นที่ชำระเงินแล้ว เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางไม่ถูกต้องตามลำดับการใช้ เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางหรือให้ผู้อื่นใช้บัตรเดินทาง ผิดกฎหมายหรือผิดเงื่อนไขการใช้งาน มีผลให้ชำระค่าโดยสารไม่เต็มจำนวน ไม่เกิน 30 เท่าของอัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางในระบบโดยไม่ใช้บัตรในการเดินทาง มีผลให้ไม่ได้ชำระค่าโดยสาร ไม่เกิน 30 เท่าของอัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม กรณีผู้โดยสารอยู่ในพื้นที่ชำระเงินแล้วเกินระยะเวลาที่กำหนด เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ไม่รับคืนมูลค่าบัตรทุกกรณี ยกเว้นกรณีบัตรมีการลงทะเบียนผู้ถือบัตรโดยสารไว้แล้ว และสูญหาย โดยมีค่าธรรมเนียมการตรวจสอบมูลค่าบัตร 100 บาท",
-      "early_termination_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ไม่รับคืนมูลค่าบัตรทุกกรณี ยกเว้นกรณีบัตรมีการลงทะเบียนผู้ถือบัตรโดยสารไว้แล้ว และสูญหาย โดยมีค่าธรรมเนียมการตรวจสอบมูลค่าบัตร 100 บาท"
+      "cash_redemption_fee_numeric": 100,
+      "early_termination_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ไม่รับคืนมูลค่าบัตรทุกกรณี ยกเว้นกรณีบัตรมีการลงทะเบียนผู้ถือบัตรโดยสารไว้แล้ว และสูญหาย โดยมีค่าธรรมเนียมการตรวจสอบมูลค่าบัตร 100 บาท",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://metro.bemplc.co.th/Ticket-Token?ty=4",
@@ -4033,24 +4190,32 @@
       ],
       "fee_top_up_channels": [
         "ไม่มีบริการ"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ตามที่องค์กรผู้ออกบัตรกำหนด",
+      "initial_fee_numeric": null,
       "annual_fee": "ตามอัตราที่กำหนด                                เงื่อนไข:                                                                ตามที่องค์กรผู้ออกบัตรกำหนด",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ตามที่องค์กรผู้ออกบัตรกำหนด",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ตามที่ บริษัทฯ และ/หรือ องค์กรผู้ออกบัตรกำหนด",
+      "maintenance_fee_numeric": null,
       "other_fees": "- ค่าธรรมเนียม บัตรสูญหายในพื้นที่ชำระเงินแล้ว เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางไม่ถูกต้องตามลำดับการใช้ เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางหรือให้ผู้อื่นใช้บัตรเดินทาง ผิดกฎหมายหรือผิดเงื่อนไขการใช้งาน มีผลให้ชำระค่าโดยสารไม่เต็มจำนวน ไม่เกิน 30 เท่าของอัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม เดินทางในระบบโดยไม่ใช้บัตรในการเดินทาง มีผลให้ไม่ได้ชำระค่าโดยสาร ไม่เกิน 30 เท่าของอัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น- ค่าธรรมเนียม กรณีผู้โดยสารอยู่ในพื้นที่ชำระเงินแล้วเกินระยะเวลาที่กำหนด เท่ากับ อัตราค่าโดยสารร่วมสูงสุดที่ บริษัทฯ เรียกเก็บ ณ ขณะนั้น"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ตามที่ผู้ออกบัตรกำหนด (ติดต่อขอคืนมูลค่าบัตรผ่านผู้ออกบัตร โดยไม่รับคืนมูลค่าบัตรที่สถานีรถไฟฟ้า MRT)",
-      "early_termination_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ตามที่ผู้ออกบัตรกำหนด"
+      "cash_redemption_fee_numeric": null,
+      "early_termination_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ตามที่ผู้ออกบัตรกำหนด",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": null,
@@ -4088,77 +4253,36 @@
       ],
       "fee_top_up_channels": [
         "ไม่มี"
-      ]
+      ],
+      "fee_top_up_channels_numeric": null
     },
     "fees": {
       "initial_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ตามที่ผู้ออกแรบบิทแต่ละรายกำหนด",
+      "initial_fee_numeric": null,
       "annual_fee": "ตามอัตราที่กำหนด                                เงื่อนไข:                                                                ตามที่ผู้ออกแรบบิทแต่ละรายกำหนด",
+      "annual_fee_numeric": null,
       "card_reissue_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ตามที่ผู้ออกแรบบิทแต่ละรายกำหนด",
+      "card_reissue_fee_numeric": null,
       "maintenance_fee": "ตามอัตราที่กำหนด                                    เงื่อนไข:                                                                        ตามที่ผู้ออกแรบบิทแต่ละรายกำหนด",
+      "maintenance_fee_numeric": null,
       "other_fees": "ตามที่บริษัทกำหนดเป็นรายกรณี"
     },
-    "speding_fees": {
+    "spending_fees": {
       "spending_fee": null,
       "spending_notification_fee": "ไม่มีบริการ",
+      "spending_notification_fee_numeric": null,
       "international_withdrawal_fee": "ไม่มีบริการ",
       "currency_conversion_fee": "ไม่มีบริการ"
     },
     "cancellation_fees": {
       "cash_redemption_fee": "50 บาท/รายการ                                    เงื่อนไข:                                                                        ค่าธรรมเนียมรวมภาษีมูลค่าพิ่มแล้ว",
-      "early_termination_fee": "ไม่มีบริการ"
+      "cash_redemption_fee_numeric": 50,
+      "early_termination_fee": "ไม่มีบริการ",
+      "early_termination_fee_percentage": null
     },
     "additional_info": {
       "product_website": "https://www.rabbit.co.th/",
       "fee_website": "https://rabbit.co.th/condition-of-issue/"
-    }
-  },
-  {
-    "provider": null,
-    "product": null,
-    "features_and_conditions": {
-      "highlight_features": null,
-      "age_requirement": null,
-      "applicant_qualification": null,
-      "usage_conditions": {
-        "usage_method": null,
-        "lifetime": null,
-        "payment_method": null,
-        "supported_merchants": null,
-        "website_list": null,
-        "international_service": null
-      }
-    },
-    "top_up": {
-      "top_up_frequency": null,
-      "first_top_up_value": null,
-      "first_top_up_condition": null,
-      "next_top_up_value": null,
-      "next_top_up_condition": null,
-      "max_balance": null,
-      "max_balance_condition": null,
-      "free_top_up_channels": null,
-      "fee_top_up_channels": null
-    },
-    "fees": {
-      "initial_fee": null,
-      "annual_fee": null,
-      "card_reissue_fee": null,
-      "maintenance_fee": null,
-      "other_fees": null
-    },
-    "speding_fees": {
-      "spending_fee": null,
-      "spending_notification_fee": null,
-      "international_withdrawal_fee": null,
-      "currency_conversion_fee": null
-    },
-    "cancellation_fees": {
-      "cash_redemption_fee": null,
-      "early_termination_fee": null
-    },
-    "additional_info": {
-      "product_website": null,
-      "fee_website": null
     }
   }
 ]

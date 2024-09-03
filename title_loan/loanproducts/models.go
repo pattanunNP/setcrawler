@@ -80,7 +80,7 @@ type PaymentFees struct {
 
 type OtherFees struct {
 	LitigationLawyerFee []string `json:"litigationLawyerFee"`
-	OtherFeesDetails    *string  `json:"otherFeesDetails,omitempty"`
+	OtherFeesDetails    []string `json:"otherFeesDetails,omitempty"`
 }
 
 type AdditionalInfo struct {

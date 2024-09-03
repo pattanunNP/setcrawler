@@ -81,11 +81,9 @@ func ParsePersonalLoanDetails(body []byte) ([]models.PersonalLoan, error) {
 
 	var loans []models.PersonalLoan
 
-	// Correct the loop condition
 	for i := 1; i <= 3; i++ {
 		col := fmt.Sprintf("col%d", i)
 
-		// Use the correct selectors with the col variable
 		serviceProvider := utils.CleanString(doc.Find(fmt.Sprintf("th.col-s.col-s-%d span", i)).Last().Text())
 		product := utils.CleanString(doc.Find(fmt.Sprintf("th.font-black.text-center.prod-%s span", col)).Text())
 
@@ -94,13 +92,9 @@ func ParsePersonalLoanDetails(body []byte) ([]models.PersonalLoan, error) {
 
 		creditCharacter := utils.CleanString(doc.Find(fmt.Sprintf(".attr-CharacterOfCredit .%s span", col)).Text())
 
-		// Split the collateral text by "-" to create an array and filter out empty strings
 		collateralText := utils.CleanString(doc.Find(fmt.Sprintf(".attr-Collateral .%s span", col)).Text())
-		collateral := strings.Split(collateralText, "-")
-		collateral = utils.FilterEmptyStrings(collateral) // Filter out empty strings
-		for i := range collateral {
-			collateral[i] = strings.TrimSpace(collateral[i]) // Trim whitespace from each item
-		}
+		collateral := utils.ParseTextIntoArray(collateralText, "-")
+		collateral = utils.FilterEmptyStrings(collateral)
 
 		creditLineType := utils.CleanString(doc.Find(fmt.Sprintf(".attr-CreditLineType .%s span", col)).Text())
 		lifeInsurance := utils.CleanString(doc.Find(fmt.Sprintf(".attr-MortgageReducingTermAssurance .%s span", col)).Text())
@@ -109,6 +103,9 @@ func ParsePersonalLoanDetails(body []byte) ([]models.PersonalLoan, error) {
 		interestRateCondition := utils.CleanString(doc.Find(fmt.Sprintf(".attr-InterestRateCondition .%s span", col)).Text())
 		defaultInterestRate := utils.CleanString(doc.Find(fmt.Sprintf(".attr-DefaultInterestRate .%s span", col)).Text())
 
+		baseMRR := utils.ParseBaseMRR(interestRateCondition)
+		defaultInterestRatePercentage := utils.ParseDefaultInterestRate(defaultInterestRate)
+
 		creditLimit := utils.CleanString(doc.Find(fmt.Sprintf(".attr-CreditLimit .%s span", col)).Text())
 		creditLimitConditionText := utils.CleanString(doc.Find(fmt.Sprintf(".attr-CreditLimitCondition .%s span", col)).Text())
 		creditLimitCondition := utils.ParseTextIntoArray(creditLimitConditionText, "-")
@@ -116,13 +113,6 @@ func ParsePersonalLoanDetails(body []byte) ([]models.PersonalLoan, error) {
 		installmentPeriod := utils.CleanString(doc.Find(fmt.Sprintf(".attr-InstallmentPeriod .%s span", col)).Text())
 		installmentPeriodCondition := utils.CleanString(doc.Find(fmt.Sprintf(".attr-InstallmentPeriodCondition .%s span", col)).Text())
 		installmentPlanDetail := utils.CleanString(doc.Find(fmt.Sprintf(".attr-InstallmentPlanDetail .%s span", col)).Text())
-
-		if installmentPeriodCondition == "" {
-			installmentPeriodCondition = ""
-		}
-		if installmentPlanDetail == "" {
-			installmentPlanDetail = ""
-		}
 
 		ageText := utils.CleanString(doc.Find(fmt.Sprintf(".attr-BorrowerAge .%s span", col)).Text())
 		minAge, maxAge := utils.ParseAgeRange(ageText)
@@ -134,19 +124,23 @@ func ParsePersonalLoanDetails(body []byte) ([]models.PersonalLoan, error) {
 		externalAppraisalFee := utils.CleanString(doc.Find(fmt.Sprintf(".attr-SurveyAndAppraisalFeeByExternal .%s span", col)).Text())
 		stampDutyFeeText := utils.CleanString(doc.Find(fmt.Sprintf(".attr-StampDutyFee .%s span", col)).Text())
 		stampDutyFee := utils.ParseTextIntoArray(stampDutyFeeText, "-")
+		stampDutyPercentage, stampDutyMax := utils.ParseStampDuty(stampDutyFeeText)
 
 		mortgageFee := utils.CleanString(doc.Find(fmt.Sprintf(".attr-MortgageFee .%s span", col)).Text())
 		creditCheckFeeText := utils.CleanString(doc.Find(fmt.Sprintf(".attr-CreditBureau .%s span", col)).Text())
 		creditCheckFee := utils.ParseTextIntoArray(creditCheckFeeText, "-")
+		creditCheckIndividual, creditCheckCorporate := utils.ParseCreditCheckFees(creditCheckFeeText)
 
 		returnedChequeFee := utils.CleanString(doc.Find(fmt.Sprintf(".attr-ReturnedCheque .%s span", col)).Text())
 		insufficientFundsFee := utils.CleanString(doc.Find(fmt.Sprintf(".attr-InsufficientDirectDebitCharge .%s span", col)).Text())
 		statementReIssueFee := utils.CleanString(doc.Find(fmt.Sprintf(".attr-StatementReIssuingFee .%s span", col)).Text())
 		debtCollectionFeeText := utils.CleanString(doc.Find(fmt.Sprintf(".attr-DebtCollectionFee .%s span", col)).Text())
 		debtCollectionFee := utils.ParseTextIntoArray(debtCollectionFeeText, "-")
+		extractedDebtCollectionFees := utils.ParseDebtCollectionFees(debtCollectionFeeText)
 
 		otherFeesText := utils.CleanString(doc.Find(fmt.Sprintf(".attr-OtherFee .%s span", col)).Text())
 		otherFees := utils.ParseTextIntoArray(otherFeesText, "-")
+		extractedOtherFees := utils.ParseOtherFees(otherFeesText)
 
 		// Parse payment fees
 		directDebitProvider := utils.CleanString(doc.Find(fmt.Sprintf(".attr-DirectDebitFromAccountFee .%s span", col)).Text())
@@ -156,6 +150,7 @@ func ParsePersonalLoanDetails(body []byte) ([]models.PersonalLoan, error) {
 
 		counterServiceFeeText := utils.CleanString(doc.Find(fmt.Sprintf(".attr-CounterServiceFeeOther .%s span", col)).Text())
 		counterServiceFee := utils.ParseTextIntoArray(counterServiceFeeText, "-")
+		extractedCounterServiceFee := utils.ParseCounterServiceFee(counterServiceFeeText)
 
 		onlinePaymentFee := utils.CleanString(doc.Find(fmt.Sprintf(".attr-paymentOnlineFee .%s span", col)).Text())
 		cdmATMPaymentFee := utils.CleanString(doc.Find(fmt.Sprintf(".attr-paymentCDMATMFee .%s span", col)).Text())
@@ -169,7 +164,7 @@ func ParsePersonalLoanDetails(body []byte) ([]models.PersonalLoan, error) {
 		feeWebsite := utils.CleanString(doc.Find(fmt.Sprintf(".attr-FeeURL .%s a", col)).AttrOr("href", ""))
 
 		websitePtr := utils.NullIfEmpty(website)
-		FeeWebsitePtr := utils.NullIfEmpty(feeWebsite)
+		feeWebsitePtr := utils.NullIfEmpty(feeWebsite)
 
 		personalLoan := models.PersonalLoan{
 			ServiceProvider: serviceProvider,
@@ -185,6 +180,10 @@ func ParsePersonalLoanDetails(body []byte) ([]models.PersonalLoan, error) {
 				InterestRatePerYear:    interestRatePerYear,
 				InterestRateConditions: interestRateCondition,
 				DefaultInterestRate:    defaultInterestRate,
+				ExtractedValues: models.ExtractedInterestRateValues{
+					BaseMRR:                       baseMRR,
+					DefaultInterestRatePercentage: defaultInterestRatePercentage,
+				},
 			},
 			LoanDetails: models.LoanDetails{
 				CreditLimit:                creditLimit,
@@ -209,27 +208,32 @@ func ParsePersonalLoanDetails(body []byte) ([]models.PersonalLoan, error) {
 				StatementReIssueFee:  statementReIssueFee,
 				DebtCollectionFee:    debtCollectionFee,
 				OtherFees:            otherFees,
+				ExtractedFees: models.ExtractedFeesContainer{
+					StampDutyFeeExtracted:      []models.ExtractedStampDutyFee{{PercentageOfLoan: stampDutyPercentage, MaximumAmount: stampDutyMax}},
+					CreditCheckFeeExtracted:    []models.ExtractedCreditCheckFee{{Type: "individual", Fee: creditCheckIndividual}, {Type: "corporate", Fee: creditCheckCorporate}},
+					OtherFeesExtracted:         extractedOtherFees,
+					DebtCollectionFeeExtracted: extractedDebtCollectionFees,
+				},
 			},
 			PaymentFees: models.PaymentFees{
-				DirectDebitProvider:      directDebitProvider,
-				DirectDebitOtherProvider: directDebitOtherProvider,
-				BankCounterService:       bankCounterService,
-				BankCounterOtherService:  bankCounterOtherService,
-				CounterServiceFee:        counterServiceFee,
-				OnlinePaymentFee:         onlinePaymentFee,
-				CDMATMPaymentFee:         cdmATMPaymentFee,
-				PhonePaymentFee:          phonePaymentFee,
-				ChequePaymentFee:         chequePaymentFee,
-				OtherPaymentChannels:     otherPaymentChannels,
+				DirectDebitProvider:        directDebitProvider,
+				DirectDebitOtherProvider:   directDebitOtherProvider,
+				BankCounterService:         bankCounterService,
+				BankCounterOtherService:    bankCounterOtherService,
+				CounterServiceFee:          counterServiceFee,
+				OnlinePaymentFee:           onlinePaymentFee,
+				CDMATMPaymentFee:           cdmATMPaymentFee,
+				PhonePaymentFee:            phonePaymentFee,
+				ChequePaymentFee:           chequePaymentFee,
+				OtherPaymentChannels:       otherPaymentChannels,
+				CounterServiceFeeExtracted: extractedCounterServiceFee,
 			},
 			AdditionalInfo: models.AdditionalInfo{
 				Website:    websitePtr,
-				FeeWebsite: FeeWebsitePtr,
+				FeeWebsite: feeWebsitePtr,
 			},
 		}
 		loans = append(loans, personalLoan)
-
 	}
 	return loans, nil
-
 }
