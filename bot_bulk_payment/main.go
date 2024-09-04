@@ -8,17 +8,26 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"regexp"
 	"strconv"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
 )
 
+// Fee struct with additional fields for numerical values and currency
 type Fee struct {
-	Description *string  `json:"description"`
-	Conditions  []string `json:"conditions,omitempty"`
+	Description                 *string  `json:"description"`
+	Amount                      *float64 `json:"amount,omitempty"`
+	MinAmount                   *float64 `json:"min_amount,omitempty"`
+	MaxAmount                   *float64 `json:"max_amount,omitempty"`
+	Currency                    *string  `json:"currency,omitempty"`
+	Conditions                  []string `json:"conditions,omitempty"`
+	MaxAmountPerTransaction     *float64 `json:"max_amount_per_transaction,omitempty"`
+	UnlimitedTransactionsPerDay *bool    `json:"unlimited_transactions_per_day,omitempty"`
 }
 
+// Fees struct
 type Fees struct {
 	TransferNextDay           Fee `json:"transfer_next_day"`
 	TransferSameDay100K       Fee `json:"transfer_same_day_100k"`
@@ -33,10 +42,12 @@ type Fees struct {
 	Other                     Fee `json:"other_fees"`
 }
 
+// AdditionalInfo struct
 type AdditionalInfo struct {
 	FeeWebsite *string `json:"fee_website"`
 }
 
+// BulkPayment struct
 type BulkPayment struct {
 	Provider       string         `json:"provider"`
 	Fees           Fees           `json:"Fees"`
@@ -200,6 +211,9 @@ func extractFee(doc *goquery.Document, rowSelector, col string) Fee {
 		description := strings.TrimSpace(s.Find("span").First().Text())
 		if description != "" {
 			fee.Description = &description
+
+			// Parse numerical values from the description
+			parseFeeDescription(&fee, description)
 		}
 
 		conditionText := s.Find("div.collapse span.text-primary").Text()
@@ -221,4 +235,30 @@ func extractFee(doc *goquery.Document, rowSelector, col string) Fee {
 		}
 	})
 	return fee
+}
+
+// parseFeeDescription extracts numerical values and sets them into the Fee struct
+func parseFeeDescription(fee *Fee, description string) {
+	// Extract currency (assuming it's always THB for this context)
+	currency := "THB"
+	fee.Currency = &currency
+
+	// Regular expression to match numbers
+	re := regexp.MustCompile(`(\d+(?:\.\d+)?)`)
+	matches := re.FindAllString(description, -1)
+
+	if len(matches) == 1 {
+		// If there's only one number, it's the amount
+		if amount, err := strconv.ParseFloat(matches[0], 64); err == nil {
+			fee.Amount = &amount
+		}
+	} else if len(matches) == 2 {
+		// If there are two numbers, assume min and max range
+		if minAmount, err := strconv.ParseFloat(matches[0], 64); err == nil {
+			fee.MinAmount = &minAmount
+		}
+		if maxAmount, err := strconv.ParseFloat(matches[1], 64); err == nil {
+			fee.MaxAmount = &maxAmount
+		}
+	}
 }

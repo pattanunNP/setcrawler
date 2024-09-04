@@ -3,7 +3,10 @@
   "international_fees": "ซุปเปอร์ริช เคอเรนซี่ เอ็กซ์เชนจ์ (1965)",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ไม่มีค่าธรรมเนียม",
+    "fee": [
+     "ไม่มีค่าธรรมเนียม"
+    ],
+    "fee_numeric": null,
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -13,21 +16,47 @@
      "* ประเทศในยุโรป ได้แก่ ออสเตรีย เบลเยี่ยม เดนมาร์ก ฟินแลนด์ ฝรั่งเศส เยอรมนี ไอร์แลนด์ อิตาลี เนเธอร์แลนด์ นอร์เวย์ โปรตุเกส สเปน",
      "** ประเทศในอาเซียน ได้แก่ ไทย อินโดนีเซีย ฟิลิปปินส์ เวียดนาม กัมพูชา ลาว มาเลเซีย สิงคโปร์ อินเดีย ฮ่องกง เนปาล บังคลาเทศ ศรีลังกาค่าธรรมเนียมการยกเลิกและขอคืนเงินเรียกเก็บ 200 บาท/รายการผลิตภัณฑ์ของ MoneyGramลูกค้าบุคคล:รายการส่งเสริมการขายตั้งแต่วันที่ 18 สิงหาคม 2567 ถึงวันที่ 31 ธันวาคม 2567โดยเข้าร่วมทุกประเทศที่มีให้บริการในระบบโอนเงิน MoneyGramตั้งแต่ 300-300000 บาท ค่าธรรมเนียม 75 บาททุกรายการค่าธรรมเนียมการยกเลิกและขอคืนเงินเรียกเก็บ 200 บาท/รายการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
     ],
+    "conditions_numeric": {
+     "fee_per_transaction": 10,
+     "transaction_range": [
+      200,
+      18
+     ],
+     "cancellation_fee": 200
+    },
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "ไม่มีบริการ",
-   "domestic_lc": "ไม่มีบริการ"
+   "foreign_lc_numeric": {},
+   "domestic_lc": "ไม่มีบริการ",
+   "domestic_lc_numeric": {}
   },
   "bill_collection_fees": {
    "inward_bill_fee": "ไม่มีบริการ",
@@ -51,7 +80,10 @@
   "international_fees": "ซุปเปอร์ริช ดิจิทัล",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ไม่มีค่าธรรมเนียม",
+    "fee": [
+     "ไม่มีค่าธรรมเนียม"
+    ],
+    "fee_numeric": null,
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -61,21 +93,47 @@
      "* ประเทศในยุโรป ได้แก่ ออสเตรีย เบลเยี่ยม เดนมาร์ก ฟินแลนด์ ฝรั่งเศส เยอรมนี ไอร์แลนด์ อิตาลี เนเธอร์แลนด์ นอร์เวย์ โปรตุเกส สเปน",
      "** ประเทศในอาเซียน ได้แก่ ไทย อินโดนีเซีย ฟิลิปปินส์ เวียดนาม กัมพูชา ลาว มาเลเซีย สิงคโปร์ อินเดีย ฮ่องกง เนปาล บังคลาเทศ ศรีลังกาค่าธรรมเนียมการยกเลิกและขอคืนเงินเรียกเก็บ200 บาท ต่อรายการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
     ],
+    "conditions_numeric": {
+     "fee_per_transaction": 10,
+     "transaction_range": [
+      10,
+      2566
+     ],
+     "cancellation_fee": 200
+    },
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "ไม่มีบริการ",
-   "domestic_lc": "ไม่มีบริการ"
+   "foreign_lc_numeric": {},
+   "domestic_lc": "ไม่มีบริการ",
+   "domestic_lc_numeric": {}
   },
   "bill_collection_fees": {
    "inward_bill_fee": "ไม่มีบริการ",
@@ -99,7 +157,10 @@
   "international_fees": "อินเตอร์เซนด์ มันนี่",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ไม่มีค่าธรรมเนียม",
+    "fee": [
+     "ไม่มีค่าธรรมเนียม"
+    ],
+    "fee_numeric": null,
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -107,21 +168,40 @@
     "conditions": [
      "ไม่มีค่าธรรมเนียม ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "ไม่มีบริการ",
-   "domestic_lc": "ไม่มีบริการ"
+   "foreign_lc_numeric": {},
+   "domestic_lc": "ไม่มีบริการ",
+   "domestic_lc_numeric": {}
   },
   "bill_collection_fees": {
    "inward_bill_fee": "ไม่มีบริการ",
@@ -145,7 +225,27 @@
   "international_fees": "กรุงไทย",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:\n                                        \n                                        - รับเป็นเงินบาท- 0.25% ของยอดโอนเข้า ขั้นต่ำ 200 บาทสูงสุด 500 บาท- เข้าบัญชีสาขานอกเขตเคลียร์ริ่งคิดค่าบริการและคู่สาย ON-LINEบวก : ค่าใช้จ่ายอื่นๆ- 50.00 บาท ต่อรายการ- ค่าธรรมเนียมติดตาม/แก้ไข/ตรวจสอบ เงินโอนเข้า 500 บาทต่อรายการ - ค่าธรรมเนียมยกเลิกคำสั่งโอนเงิน USD 30 ต่อรายการ",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:",
+     "รับเป็นเงินบาท",
+     "0.25% ของยอดโอนเข้า ขั้นต่ำ 200 บาทสูงสุด 500 บาท",
+     "เข้าบัญชีสาขานอกเขตเคลียร์ริ่งคิดค่าบริการและคู่สาย ON",
+     "LINEบวก : ค่าใช้จ่ายอื่นๆ",
+     "50.00 บาท ต่อรายการ",
+     "ค่าธรรมเนียมติดตาม/แก้ไข/ตรวจสอบ เงินโอนเข้า 500 บาทต่อรายการ",
+     "ค่าธรรมเนียมยกเลิกคำสั่งโอนเงิน USD 30 ต่อรายการ"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500,
+     0.25,
+     200,
+     500,
+     50,
+     500,
+     30
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -162,21 +262,77 @@
      "25%- สกุลอื่นๆ คิดเพิ่ม",
      "50%"
     ],
+    "conditions_numeric": {
+     "cancellation_fee": 5
+    },
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "153 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        150 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาท ต่อฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "403 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        - ค่าธรรมเนียมรับซื้อตั๋วเงินต่างประเทศ 400 บาทต่อฉบับ บวกอากรแสตมป์ 3 บาท  บวกเพิ่มค่า Foreign Bank Charge (ถ้ามี) - ค่าธรรมเนียมกรณีเช็คคืน (ถูกปฏิเสธการจ่ายเงิน) 250 บาทต่อฉบับ - ค่าธรรมเนียมรับซื้อคืนที่ธนาคารเป็นผู้สั่งจ่าย 200 บาทต่อฉบับ- ค่าธรรมเนียมรับซื้อตั๋วเงินเพื่อส่งเรียกเก็บ 600 บาทต่อฉบับ บวกอากรแสตมป์ 3 บาท บวกเพิ่มค่า Foreign Bank harge (ถ้ามี) - ค่าธรรมเนียมกรณีเช็คคืน (ถูกปฏิเสธการจ่ายเงิน) 400 บาทต่อฉบับ บวกเพิ่มค่า Foreign Bank Charge (ถ้ามี) - ค่าธรรมเนียมกรณีลูกค้าต้องการให้ Stop Payment 300 บาทต่อฉบับ บวกเพิ่มค่า Foreign Bank harge (ถ้ามี) ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "draft_selling_fee": "603 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        - ค่าธรรมเนียมขายดราฟต์ต่างประเทศ600 บาทต่อฉบับ บวกอากรสแตมป์ 3 บาทต่อฉบับ บวกเพิ่มค่า Foreign Bank Charge (ถ้ามี) ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "foreign_bill_buying_fee": "403 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        - ค่าธรรมเนียมรับซื้อตั๋วเงินต่างประเทศ400 บาทต่อฉบับ บวกอากรแสตมป์ 3 บาท บวกเพิ่มค่า Foreign Bank Charge (ถ้ามี) - ค่าธรรมเนียมกรณีเช็คคืน (ถูกปฏิเสธการจ่ายเงิน) 250 บาทต่อฉบับ  - ค่าธรรมเนียมรับซื้อคืนที่ธนาคารเป็นผู้สั่งจ่าย 200 บาทต่อฉบับ - ค่าธรรมเนียมรับซื้อตั๋วเงินเพื่อส่งเรียกเก็บ600 บาทต่อฉบับ บวกอากรแสตมป์ 3 บาทบวกเพิ่มค่า Foreign Bank harge (ถ้ามี) - ค่าธรรมเนียมกรณีเช็คคืน (ถูกปฏิเสธการจ่ายเงิน) 400 บาทต่อฉบับ บวกเพิ่มค่า Foreign Bank Charge (ถ้ามี) - ค่าธรรมเนียมกรณีลูกค้าต้องการให้ Stop Payment 300 บาทต่อฉบับ บวกเพิ่มค่า Foreign Bank harge (ถ้ามี) ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "153 บาท/ฉบับ เงื่อนไข: 150 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาท ต่อฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "traveler_cheque_buying_fee_numeric": {
+    "base_fee": 153,
+    "stamp_duty": 150
+   },
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "403 บาท/ฉบับ เงื่อนไข:",
+    "ค่าธรรมเนียมรับซื้อตั๋วเงินต่างประเทศ 400 บาทต่อฉบับ บวกอากรแสตมป์ 3 บาท บวกเพิ่มค่า Foreign Bank Charge (ถ้ามี)",
+    "ค่าธรรมเนียมกรณีเช็คคืน (ถูกปฏิเสธการจ่ายเงิน) 250 บาทต่อฉบับ",
+    "ค่าธรรมเนียมรับซื้อคืนที่ธนาคารเป็นผู้สั่งจ่าย 200 บาทต่อฉบับ",
+    "ค่าธรรมเนียมรับซื้อตั๋วเงินเพื่อส่งเรียกเก็บ 600 บาทต่อฉบับ บวกอากรแสตมป์ 3 บาท บวกเพิ่มค่า Foreign Bank harge (ถ้ามี)",
+    "ค่าธรรมเนียมกรณีเช็คคืน (ถูกปฏิเสธการจ่ายเงิน) 400 บาทต่อฉบับ บวกเพิ่มค่า Foreign Bank Charge (ถ้ามี)",
+    "ค่าธรรมเนียมกรณีลูกค้าต้องการให้ Stop Payment 300 บาทต่อฉบับ บวกเพิ่มค่า Foreign Bank harge (ถ้ามี) ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "draft_buying_fee_numeric": {
+    "base_fee": 300,
+    "stamp_duty": 3,
+    "return_fee": 400,
+    "stop_payment_fee": 300
+   },
+   "draft_selling_fee": [
+    "603 บาท/ฉบับ เงื่อนไข:",
+    "ค่าธรรมเนียมขายดราฟต์ต่างประเทศ600 บาทต่อฉบับ บวกอากรสแตมป์ 3 บาทต่อฉบับ บวกเพิ่มค่า Foreign Bank Charge (ถ้ามี) ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "draft_selling_fee_numeric": {
+    "base_fee": 600,
+    "stamp_duty": 3
+   },
+   "foreign_bill_buying_fee": [
+    "403 บาท/ฉบับ เงื่อนไข:",
+    "ค่าธรรมเนียมรับซื้อตั๋วเงินต่างประเทศ400 บาทต่อฉบับ บวกอากรแสตมป์ 3 บาท บวกเพิ่มค่า Foreign Bank Charge (ถ้ามี)",
+    "ค่าธรรมเนียมกรณีเช็คคืน (ถูกปฏิเสธการจ่ายเงิน) 250 บาทต่อฉบับ",
+    "ค่าธรรมเนียมรับซื้อคืนที่ธนาคารเป็นผู้สั่งจ่าย 200 บาทต่อฉบับ",
+    "ค่าธรรมเนียมรับซื้อตั๋วเงินเพื่อส่งเรียกเก็บ600 บาทต่อฉบับ บวกอากรแสตมป์ 3 บาทบวกเพิ่มค่า Foreign Bank harge (ถ้ามี)",
+    "ค่าธรรมเนียมกรณีเช็คคืน (ถูกปฏิเสธการจ่ายเงิน) 400 บาทต่อฉบับ บวกเพิ่มค่า Foreign Bank Charge (ถ้ามี)",
+    "ค่าธรรมเนียมกรณีลูกค้าต้องการให้ Stop Payment 300 บาทต่อฉบับ บวกเพิ่มค่า Foreign Bank harge (ถ้ามี) ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "foreign_bill_buying_fee_numeric": {
+    "base_fee": 300,
+    "stamp_duty": 3,
+    "return_fee": 400,
+    "stop_payment_fee": 300
+   },
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท เงื่อนไข: - เศษของหนึ่งระยะเวลา ให้ถือเป็นอีกหนึ่งระยะเวลา- ค่าธรรมเนียมในการแก้ไข Foreign L/C ในกรณีที่เพิ่มจำนวนเงิน และ/หรือต่ออายุ คิดร้อยละ 0.25 ของจำนวนเงินที่เพิ่ม และ/หรือระยะเวลาที่ต่ออายุต่อหนึ่งระยะเวลา เศษของหนึ่งระยะเวลา ให้ถือเป็นอีกหนึ่งระยะเวลา ในกรณีอื่นๆ คิด 500.00 บาทต่อฉบับ",
-   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: - เศษของ 1 เดือน คิดเป็น 1 เดือน- ค่าธรรมเนียมในการแก้ไข Domestic L/C กรณีที่เพิ่มจำนวนเงินและ/หรือต่ออายุ (Increase of Amount/ Extension of Validity) คิดร้อยละ 2.5 ต่อปีของจำนวนเงิน เศษของเดือน คิดเป็น 1 เดือน ขั้นต่ำ 1,000 บาท กรณีอื่นๆ คิด 500.00 บาท/ฉบับ"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 500
+   },
+   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: - เศษของ 1 เดือน คิดเป็น 1 เดือน- ค่าธรรมเนียมในการแก้ไข Domestic L/C กรณีที่เพิ่มจำนวนเงินและ/หรือต่ออายุ (Increase of Amount/ Extension of Validity) คิดร้อยละ 2.5 ต่อปีของจำนวนเงิน เศษของเดือน คิดเป็น 1 เดือน ขั้นต่ำ 1,000 บาท กรณีอื่นๆ คิด 500.00 บาท/ฉบับ",
+   "domestic_lc_numeric": {
+    "percent_fee": 2.5,
+    "min_fee": 500
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "2.5% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท",
@@ -242,7 +398,25 @@
   "international_fees": "กรุงศรีอยุธยา",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:\n                                        \n                                        - การโอนเงินเข้า โดย SWIFT กรณีเข้าบัญชีบาท หรือ บัญชี FCD - กรณีโอนเงินระหว่างไทย - สาขา สปป.ลาว โอนเงินเข้า (โอนจากสาขาใน สปป.ลาว มาประเทศไทย) ช่องทาง Blockchain เพื่อเข้าบัญชีลูกค้าที่ธนาคารกรุงศรีอยุธยา จำกัด (มหาชน) เท่านั้น- ค่าธรรมเนียมในการติดตามแก้ไข/ตรวจสอบเงินโอนเข้า (Investigation) คิดอัตรา 500 บาท ต่อฉบับ รวมค่า SWIFT แล้ว- ค่าธรรมเนียมในการยกเลิกคำสั่งโอนเงิน(Cancellation Charge) เก็บจากผู้โอนคิดอัตราUSD30 ต่อฉบับ รวมค่า SWIFT แล้ว- ค่าใช้จ่ายอื่น ๆ ได้แก่  ค่า SWIFT คิดอัตรา 500 บาท หรือ USD 30 ต่อฉบับ- การโอนเงินต่างประเทศผ่าน Krungsri International PromptPay  การโอนเงินเข้า ในกรณีรับเงินโอนจากประเทศสิงค์โปร์มายังประเทศไทย ไม่คิดค่าธรรมเนียม",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:",
+     "การโอนเงินเข้า โดย SWIFT กรณีเข้าบัญชีบาท หรือ บัญชี FCD",
+     "กรณีโอนเงินระหว่างไทย",
+     "สาขา สปป.ลาว โอนเงินเข้า (โอนจากสาขาใน สปป.ลาว มาประเทศไทย) ช่องทาง Blockchain เพื่อเข้าบัญชีลูกค้าที่ธนาคารกรุงศรีอยุธยา จำกัด (มหาชน) เท่านั้น",
+     "ค่าธรรมเนียมในการติดตามแก้ไข/ตรวจสอบเงินโอนเข้า (Investigation) คิดอัตรา 500 บาท ต่อฉบับ รวมค่า SWIFT แล้ว",
+     "ค่าธรรมเนียมในการยกเลิกคำสั่งโอนเงิน(Cancellation Charge) เก็บจากผู้โอนคิดอัตราUSD30 ต่อฉบับ รวมค่า SWIFT แล้ว",
+     "ค่าใช้จ่ายอื่น ๆ ได้แก่ ค่า SWIFT คิดอัตรา 500 บาท หรือ USD 30 ต่อฉบับ",
+     "การโอนเงินต่างประเทศผ่าน Krungsri International PromptPay การโอนเงินเข้า ในกรณีรับเงินโอนจากประเทศสิงค์โปร์มายังประเทศไทย ไม่คิดค่าธรรมเนียม"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500,
+     500,
+     30,
+     500,
+     30
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -265,21 +439,71 @@
      "25% ของจำนวนเงิน - การโอนเงินสกุล USD โอนจากธ.กรุงศรีอยุธยา จำกัด (มหาชน) สาขาในประเทศไทยไป ธ.กรุงศรีอยุธยา จำกัด (มหาชน) สาขาใน สปป.ลาว ในกรณีลูกค้า ชำระ USD ด้วยปัจจัย Withdrawal from FCD Account คิดอัตรา",
      "25% ของจำนวนเงินขั้นต่ำ 500 บาท"
     ],
+    "conditions_numeric": {
+     "transaction_range": [
+      30001,
+      400000
+     ],
+     "cancellation_fee": 5
+    },
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "153 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        150 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "203 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        -การรับซื้อเพื่อเรียกเก็บ (Cash Letter Basis) สำหรับตราสารอื่นๆ 200 บาท/ฉบับ +อากรแสตมป์ 3 บาท/ฉบับ-การรับฝากเพื่อเรียกเก็บ (Collection Letter Basis) USD 10+อากรแสตมป์ 3 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "draft_selling_fee": "203 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        200 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับ ดูอัตราค่าธรรมเนียมได้ที่ https://www.krungsri.com/Krungsri2020/media/Banking-Rate/deposits-withdrawals-fcd/th/fee-deposit-withdrawals-fcd-01122020-th.pdf ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "153 บาท/ฉบับ เงื่อนไข: 150 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "traveler_cheque_buying_fee_numeric": {
+    "base_fee": 153,
+    "stamp_duty": 150
+   },
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "203 บาท/ฉบับ เงื่อนไข:",
+    "การรับซื้อเพื่อเรียกเก็บ (Cash Letter Basis) สำหรับตราสารอื่นๆ 200 บาท/ฉบับ +อากรแสตมป์ 3 บาท/ฉบับ",
+    "การรับฝากเพื่อเรียกเก็บ (Collection Letter Basis) USD 10+อากรแสตมป์ 3 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "draft_buying_fee_numeric": {
+    "base_fee": 10,
+    "stamp_duty": 3
+   },
+   "draft_selling_fee": [
+    "203 บาท/ฉบับ เงื่อนไข: 200 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับ ดูอัตราค่าธรรมเนียมได้ที่ https://www.krungsri.com/Krungsri2020/media/Banking",
+    "Rate/deposits",
+    "withdrawals",
+    "fcd/th/fee",
+    "deposit",
+    "withdrawals",
+    "fcd",
+    "01122020",
+    "th.pdf ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "draft_selling_fee_numeric": {
+    "base_fee": 203,
+    "stamp_duty": 200
+   },
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท เงื่อนไข: อัตรา0.25% ของจำนวนเงินต่อหนึ่งระยะเวลา 3 เดือน เศษของระยะเวลา 3 เดือน ให้ถือเป็นอีกหนึ่งระยะเวลา",
-   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 365 วันขั้นต่ำ 1,000 บาท เงื่อนไข: อัตรา2.5% ต่อปี ของจำนวนเงิน เศษของเดือนคิดเป็น 1 เดือน"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 0
+   },
+   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 365 วันขั้นต่ำ 1,000 บาท เงื่อนไข: อัตรา2.5% ต่อปี ของจำนวนเงิน เศษของเดือนคิดเป็น 1 เดือน",
+   "domestic_lc_numeric": {
+    "percent_fee": 2.5,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท เงื่อนไข: - ในกรณีธนาคารเป็นผู้เรียกเก็บคิดอัตรา0.125% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 1,000 บาท- ในกรณีโอนไปยังธนาคารอื่นให้เรียกเก็บจากผู้จ่ายเงิน คิดอัตรา0.0625% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 500 บาท- ค่าธรรมเนียมในการรับรองการชำระเงิน สำหรับตั๋วเรียกเก็บแบบ D/P Term(Engagement Fee) คิดอัตรา2.5 % ต่อปีของจำนวนเงินตามตั๋วเรียกเก็บเมื่อขอรับเอกสาร ขั้นต่ำ 1,000 บาท",
@@ -303,7 +527,46 @@
   "international_fees": "กสิกรไทย",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:\n                                        \n                                        -1/4% ขั้นต่ำ 200 บาท แต่ไม่เกิน 500 บาท/ รายการ -1/4% ขั้นต่ำ USD10.00 แต่ไม่เกิน USD25.00/ รายการ- ในกรณีโอนเงินเข้าบัญชีลูกค้าต่างจังหวัดบวกเพิ่มค่าโอน EFT คิดหมื่นละ 10 บาท ขั้นต่ำ 10 บาท สูงสุด 750 บาท, ค่าคู่สาย (Lease Line) 20 บาท/ฉบับ- ค่าธรรมเนียมในการติดตาม/แก้ไข/ตรวจสอบเงินโอนเข้า (Investigate) 500 บาทต่อฉบับหรือ USD25.00 ต่อฉบับหรือGBP 25.00 ต่อฉบับหรือ EUR 25.00 ต่อฉบับหรือ CHF 25.00 ต่อฉบับหรือ SGD 30.00 ต่อฉบับหรือ AUD 30.00 ต่อฉบับหรือ CAD 30.00 ต่อฉบับหรือ MYR 100.00 ต่อฉบับหรือ CNY150 ต่อฉบับหรือ HKD150ต่อฉบับหรือ JPY2,500ต่อฉบับหรือ สกุลอื่นๆ เทียบเท่า USD25.00ต่อฉบับ- ค่าธรรมเนียมบริการรับเงินจากการขายสินค้าบนแพลตฟอร์มซื้อขายสินค้าออนไลน์ต่างประเทศ 1.2% ของจำนวนเงินที่โอน",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:",
+     "1/4% ขั้นต่ำ 200 บาท แต่ไม่เกิน 500 บาท/ รายการ",
+     "1/4% ขั้นต่ำ USD10.00 แต่ไม่เกิน USD25.00/ รายการ",
+     "ในกรณีโอนเงินเข้าบัญชีลูกค้าต่างจังหวัดบวกเพิ่มค่าโอน EFT คิดหมื่นละ 10 บาท ขั้นต่ำ 10 บาท สูงสุด 750 บาท, ค่าคู่สาย (Lease Line) 20 บาท/ฉบับ",
+     "ค่าธรรมเนียมในการติดตาม/แก้ไข/ตรวจสอบเงินโอนเข้า (Investigate) 500 บาทต่อฉบับหรือ USD25.00 ต่อฉบับหรือGBP 25.00 ต่อฉบับหรือ EUR 25.00 ต่อฉบับหรือ CHF 25.00 ต่อฉบับหรือ SGD 30.00 ต่อฉบับหรือ AUD 30.00 ต่อฉบับหรือ CAD 30.00 ต่อฉบับหรือ MYR 100.00 ต่อฉบับหรือ CNY150 ต่อฉบับหรือ HKD150ต่อฉบับหรือ JPY2,500ต่อฉบับหรือ สกุลอื่นๆ เทียบเท่า USD25.00ต่อฉบับ",
+     "ค่าธรรมเนียมบริการรับเงินจากการขายสินค้าบนแพลตฟอร์มซื้อขายสินค้าออนไลน์ต่างประเทศ 1.2% ของจำนวนเงินที่โอน"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500,
+     1,
+     4,
+     200,
+     500,
+     1,
+     4,
+     10,
+     25,
+     10,
+     10,
+     750,
+     20,
+     500,
+     25,
+     25,
+     25,
+     25,
+     30,
+     30,
+     30,
+     100,
+     150,
+     150,
+     2,
+     500,
+     25,
+     1.2
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -388,21 +651,48 @@
      "50% สำหรับสกุลเงินอื่นๆ ขั้นต่ำเทียบเท่า USD",
      "00"
     ],
+    "conditions_numeric": {
+     "cancellation_fee": 0
+    },
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท เงื่อนไข: คิด 0.25% ของจำนวนเงินที่เปิด ต่อ 1 ระยะเวลา เศษของ 90 วัน คิดเป็น หนึ่งระยะเวลา ขั้นต่ำ THB1,000บวกเพิ่ม ค่าแสตมป์ เรียกเก็บ 30 บาทต่อฉบับบวกเพิ่ม ค่า SWIFT กรณีเปิด Foreign L/C เรียกเก็บ 1,000บาทต่อฉบับ- กรณีมี Attach sheet เพิ่มข้อความเกิน 10 บรรทัด คิดเพิ่ม 400 บาท ต่อ 1 Attach- กรณีลูกค้ายกเลิกฉบับร่าง คิดค่าธรรเนียมในการออกฉบับร่าง THB1,000- ค่าธรรมเนียมการแก้ไข Foreign L/Cกรณีเพิ่มจำนวนเงิน คิด 0.25% ของจำนวนเงินที่เพิ่ม ต่อ 1 ระยะเวลา เศษของ 90 วัน คิดเป็น หนึ่งระยะเวลาขั้นต่ำ THB1,000 บวกเพิ่ม ค่าแสตมป์ เรียกเก็บ 30 บาทต่อฉบับ- ค่าธรรมเนียมการแก้ไข Foreign L/C กรณีเพิ่มระยะเวลา คิด 0.25% ของจำนวนเงินที่เปิดหรือยอดคงเหลือ ต่อ 1 ระยะเวลา เศษของ 90 วัน คิดเป็น หนึ่งระยะเวลาขั้นต่ำ THB1,000- ค่าธรรมเนียมการแก้ไข Foreign L/C กรณีอื่นๆคิดTHB500",
-   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: คิด 0.2% ของจำนวนเงินที่เปิด ต่อ 1 ระยะเวลาเศษของ 30 วัน คิดเป็น หนึ่งระยะเวลา ขั้นต่ำ THB1,000บวกเพิ่ม ค่าแสตมป์ 30 บาทต่อฉบับ- กรณ๊ที่ Advising Bank ไม่ใช่ KBank คิดค่า SWIFT ในการเปิด DLC THB1,000- กรณีลูกค้ายกเลิกฉบับร่าง คิดค่าธรรเนียมในการออกฉบับร่าง THB1,000- ค่าธรรมเนียมการแก้ไข Domestic L/Cกรณีเพิ่มจำนวนเงินคิด 0.2% ของจำนวนเงินที่เพิ่ม ต่อ 1 ระยะเวลา เศษของ 30 วัน คิดเป็น หนึ่งระยะเวลา)ขั้นต่ำ THB1,000 บวกเพิ่ม ค่าแสตมป์ 30 บาทต่อฉบับ- ค่าธรรมเนียมการแก้ไข Domestic L/C กรณีเพิ่มระยะเวลาคิด 0.2% ของจำนวนเงินที่ที่เปิดหรือยอดคงเหลือ ต่อ 1 ระยะเวลาเศษของ 30 วัน คิดเป็น หนึ่งระยะเวลา ขั้นต่ำ THB1,000- ค่าธรรมเนียมการแก้ไข Domestic L/C กรณี อื่นๆTHB500-กรณีผู้ขอเปิดแจ้งขอยกเลิกเปิด DLC ไปยัง AdvisingBank ที่ไม่ใช่ Kbank ค่าธรรมเนียมยกเลิกเปิด DLC คิด ค่าธรรมเนียมTHB 500 บวก SWIFT THB400"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 30
+   },
+   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: คิด 0.2% ของจำนวนเงินที่เปิด ต่อ 1 ระยะเวลาเศษของ 30 วัน คิดเป็น หนึ่งระยะเวลา ขั้นต่ำ THB1,000บวกเพิ่ม ค่าแสตมป์ 30 บาทต่อฉบับ- กรณ๊ที่ Advising Bank ไม่ใช่ KBank คิดค่า SWIFT ในการเปิด DLC THB1,000- กรณีลูกค้ายกเลิกฉบับร่าง คิดค่าธรรเนียมในการออกฉบับร่าง THB1,000- ค่าธรรมเนียมการแก้ไข Domestic L/Cกรณีเพิ่มจำนวนเงินคิด 0.2% ของจำนวนเงินที่เพิ่ม ต่อ 1 ระยะเวลา เศษของ 30 วัน คิดเป็น หนึ่งระยะเวลา)ขั้นต่ำ THB1,000 บวกเพิ่ม ค่าแสตมป์ 30 บาทต่อฉบับ- ค่าธรรมเนียมการแก้ไข Domestic L/C กรณีเพิ่มระยะเวลาคิด 0.2% ของจำนวนเงินที่ที่เปิดหรือยอดคงเหลือ ต่อ 1 ระยะเวลาเศษของ 30 วัน คิดเป็น หนึ่งระยะเวลา ขั้นต่ำ THB1,000- ค่าธรรมเนียมการแก้ไข Domestic L/C กรณี อื่นๆTHB500-กรณีผู้ขอเปิดแจ้งขอยกเลิกเปิด DLC ไปยัง AdvisingBank ที่ไม่ใช่ Kbank ค่าธรรมเนียมยกเลิกเปิด DLC คิด ค่าธรรมเนียมTHB 500 บวก SWIFT THB400",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.2,
+    "min_fee": 30
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท เงื่อนไข: - กรณีธนาคารเป็นผู้เรียเก็บ คิดค่าบริการ 0.125%ของจำนวนเงินที่เรียเก็บ ขั้นต่ำ 1,000 บาท บวกเพิ่มค่าติดต่อสื่อสาร 100 บาท ต่อฉบับ- กรณีโอนไปยังธนาคารอื่น คิดค่าบริการ 0.0625% ของจำนวนเงินที่เรียเก็บ ขั้นต่ำ 500 บาท บวกเพิ่ม ค่าติดต่อสื่อสาร 100 บาท ต่อฉบับ- กรณีที่ต่างประเทศแจ้ง Free of Payment ค่าธรรมเนียมตั๋วที่ไม่เคยมีการจ่ายเงินคิดค่าบริการ 0.125%ของจำนวนเงินที่เรียเก็บ ขั้นต่ำ 1,000 บาท - กรณีมีการส่งเอกสารยังต่างประเทศ คิดค่าติดต่อสื่อสาร ตามจริง 400-1,500 บาท ตามประเทศที่ต้องส่งเอกสาร -กรณีมีการส่ง SWIFT อื่นๆ คิดค่า SWIFT THB400- กรณีชำระเงินด้วยสกุลเดียวกับภาระหนี้ คิด Commission in liue of exchange- USD และ CNY 0.25% ของจำนวนเงินตามภาระหนี้ ขั้นต่ำ 1,000- THB 0.25% ของจำนวนเงินตามภาระหนี้ ขั้นต่ำ 1,000- อิ่นๆ 0.5% ของจำนวนเงินตามภาระหนี้ ขั้นต่ำ 1,000- COMMISSION IN LIEU OF EXCHANGE กรณีโอนไปยังธนาคารอื่น- สกุล USD และ CNY 0.125 % ของจำนวนเงินตามภาระหนี้ ขั้นต่ำ 500.00 บาท- สกุล THB0.125 % ของจำนวนเงินตามภาระหนี้ ขั้นต่ำ 500.00 บาท- สกุลอื่น ๆ 0.25 % ของจำนวนเงินตามภาระหนี้ขั้นต่ำ 500.00 บาท",
@@ -450,7 +740,14 @@
   "international_fees": "เกียรตินาคินภัทร",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -458,21 +755,43 @@
     "conditions": [
      "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "1% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,500 บาท",
-   "domestic_lc": "ไม่มีบริการ"
+   "foreign_lc_numeric": {
+    "percent_fee": 1,
+    "min_fee": 500
+   },
+   "domestic_lc": "ไม่มีบริการ",
+   "domestic_lc_numeric": {}
   },
   "bill_collection_fees": {
    "inward_bill_fee": "ไม่มีบริการ",
@@ -496,7 +815,21 @@
   "international_fees": "ซีไอเอ็มบี ไทย",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:\n                                        \n                                        0.25% ของยอดเงินโอนเข้าขั้นต่ำ 200 บาท แต่ไม่เกิน 500 บาทยกเว้นค่าธรรมเนียม สำหรับการโอนเงินเข้าเป็นสกุลเงินบาทโดยสมาชิก CIMB Preferred ในต่างประเทศการชำระเงินด้วยสกุลเงินเดียวกันกับสกุลเงินที่โอน คิดค่าธรรมเนียม 1/4% ของยอดที่โอนเข้า ขั้นต่ำ 1,000 บาท",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข: 0.25% ของยอดเงินโอนเข้าขั้นต่ำ 200 บาท แต่ไม่เกิน 500 บาทยกเว้นค่าธรรมเนียม สำหรับการโอนเงินเข้าเป็นสกุลเงินบาทโดยสมาชิก CIMB Preferred ในต่างประเทศการชำระเงินด้วยสกุลเงินเดียวกันกับสกุลเงินที่โอน คิดค่าธรรมเนียม 1/4% ของยอดที่โอนเข้า ขั้นต่ำ 1,000 บาท"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500,
+     0.25,
+     200,
+     500,
+     1,
+     4,
+     1,
+     0
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -507,21 +840,46 @@
      "25% สำหรับสกุลเงิน USD THB-",
      "50% สำหรับสกุลเงินอื่นๆ"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท เงื่อนไข: Irrevocable L/C : เศษของระยะเวลาให้ถือเป็นอีก 1ระยะเวลาRevolving LC : 0.25 % ของจำนวนเงินตามคำขอเปิด Letter of Credit คูณด้วยจำนวนครั้งที่ Revolving Stanby L/C : 2.5 % Min. THB 1,000",
-   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 365 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนคิดเป็น 1 เดือน"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 0
+   },
+   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 365 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนคิดเป็น 1 เดือน",
+   "domestic_lc_numeric": {
+    "percent_fee": 2.5,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท เงื่อนไข: - กรณีธนาคารเป็นผู้เรียกเก็บจากผู้จ่ายเงิน ค่าบริการ 0.125% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 1,000 บาท- กรณีโอนไปยังธนาคารอื่นให้เรียกเก็บจากผู้จ่ายเงิน ค่าบริการ 0.0625% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 500 บาท",
@@ -545,7 +903,14 @@
   "international_fees": "ซูมิโตโม มิตซุย ทรัสต์ (ไทย)",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -556,21 +921,40 @@
      "125 ของมูลค่าเงินที่โอน/รายการโดยไม่ได้ระบุค่าธรรเนียมชดเชยอัตราแลกเปลี่ยนขั้นต่ำเป็นร้อยละ แต่กำหนดขั้นต่ำ",
      "00 บาทรายการ"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "ไม่มีบริการ",
-   "domestic_lc": "ไม่มีบริการ"
+   "foreign_lc_numeric": {},
+   "domestic_lc": "ไม่มีบริการ",
+   "domestic_lc_numeric": {}
   },
   "bill_collection_fees": {
    "inward_bill_fee": "ไม่มีบริการ",
@@ -598,7 +982,14 @@
   "international_fees": "ทหารไทยธนชาต",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -612,21 +1003,46 @@
      "25% สำหรับสกุลเงิน USD และ AUD-",
      "50% สำหรับสกุลเงิน EUR GBP JPY SGD CAD CHF DKK CNY"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของระยะเวลา 3 เดือนคิดเป็นอีก 1 ระยะเวลา",
-   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 365 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนคิดเป็น 1 เดือน"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 0
+   },
+   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 365 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนคิดเป็น 1 เดือน",
+   "domestic_lc_numeric": {
+    "percent_fee": 2.5,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท เงื่อนไข: - กรณีธนาคารเป็นผู้เรียกเก็บจากผู้จ่ายเงิน ค่าบริการ 0.125% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 1,000 บาท- กรณีโอนไปยังธนาคารอื่นให้เรียกเก็บจากผู้จ่ายเงิน ค่าบริการ 0.0625% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 500 บาท",
@@ -650,7 +1066,17 @@
   "international_fees": "ไทยเครดิต",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:\n                                        \n                                        0.25% ของยอดโอนเข้า ขั้นต่ำ 200 บาทสูงสุด 500 บาท",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข: 0.25% ของยอดโอนเข้า ขั้นต่ำ 200 บาทสูงสุด 500 บาท"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500,
+     0.25,
+     200,
+     500
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -663,21 +1089,40 @@
      "25% สำหรับสกุลเงิน USD THB-",
      "50% สำหรับสกุลเงินอื่น (นอกเหนือจาก USD THB)"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "ไม่มีบริการ",
-   "domestic_lc": "ไม่มีบริการ"
+   "foreign_lc_numeric": {},
+   "domestic_lc": "ไม่มีบริการ",
+   "domestic_lc_numeric": {}
   },
   "bill_collection_fees": {
    "inward_bill_fee": "ไม่มีบริการ",
@@ -701,7 +1146,32 @@
   "international_fees": "ไทยพาณิชย์",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:\n                                        \n                                        สำหรับลูกค้าธุรกิจสำหรับลูกค้าของศูนย์ธุรกิจต่างประเทศและลูกค้ากลุ่มธุรกิจขนาดใหญ่ ร้อยละ 0.25% ของยอดเงินโอนเข้า : ขั้นต่ำ 200.00 บาท สูงสุด 500.00 บาทสำหรับบริการ SWIFT- 0.25% ของจำนวนเงินโอนเข้า- ขั้นต่ำ 300 บาท สูงสุด 500 บาทสำหรับยกเลิกคำสั่งโอนเงิน (Cancellation Charge)- 1,000 บาท/รายการ หรือ USD 30.00 ต่อฉบับ หรือเทียบเท่า- รวมค่า TELEX/SWIFT แล้ว- เป็นรายการค่าธรรมเนียมที่ธนาคารจัดเก็บอยู่แล้ว ตามประกาศอัตราค่าบริการต่าง ๆ เบี้ยปรับที่เกี่ยวเนื่องกับเงินฝาก เงินให้สินเชื่อ และค่าบริการอื่น ๆ ค(6) ค่าบริการอื่นๆ กลุ่มบริการด้านการค้าต่างประเทศและเงินโอนต่างประเทศสำหรับบริการ MONEYGRAM และ RIA ไม่มีค่าธรรมเนียมสำหรับบริการรับเงินโอนระหว่างประเทศผ่านระบบพร้อมเพย์ (PromptPay International)- ไม่คิดค่าธรรมเนียมการรับเงินจากต่างประเทศ- ค่าธรรมเนียมลูกค้าสิงคโปร์ขอคืนเงินจากลูกค้า SCB 300 บาท/รายการ  (ธนาคารเรียกเก็บจากลูกค้าสิงคโปร์ กรณีที่ลูกค้า SCB ยินยอมคืนเงิน)",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข: สำหรับลูกค้าธุรกิจสำหรับลูกค้าของศูนย์ธุรกิจต่างประเทศและลูกค้ากลุ่มธุรกิจขนาดใหญ่ ร้อยละ 0.25% ของยอดเงินโอนเข้า : ขั้นต่ำ 200.00 บาท สูงสุด 500.00 บาทสำหรับบริการ SWIFT",
+     "0.25% ของจำนวนเงินโอนเข้า",
+     "ขั้นต่ำ 300 บาท สูงสุด 500 บาทสำหรับยกเลิกคำสั่งโอนเงิน (Cancellation Charge)",
+     "1,000 บาท/รายการ หรือ USD 30.00 ต่อฉบับ หรือเทียบเท่า",
+     "รวมค่า TELEX/SWIFT แล้ว",
+     "เป็นรายการค่าธรรมเนียมที่ธนาคารจัดเก็บอยู่แล้ว ตามประกาศอัตราค่าบริการต่าง ๆ เบี้ยปรับที่เกี่ยวเนื่องกับเงินฝาก เงินให้สินเชื่อ และค่าบริการอื่น ๆ ค(6) ค่าบริการอื่นๆ กลุ่มบริการด้านการค้าต่างประเทศและเงินโอนต่างประเทศสำหรับบริการ MONEYGRAM และ RIA ไม่มีค่าธรรมเนียมสำหรับบริการรับเงินโอนระหว่างประเทศผ่านระบบพร้อมเพย์ (PromptPay International)",
+     "ไม่คิดค่าธรรมเนียมการรับเงินจากต่างประเทศ",
+     "ค่าธรรมเนียมลูกค้าสิงคโปร์ขอคืนเงินจากลูกค้า SCB 300 บาท/รายการ (ธนาคารเรียกเก็บจากลูกค้าสิงคโปร์ กรณีที่ลูกค้า SCB ยินยอมคืนเงิน)"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500,
+     0.25,
+     200,
+     500,
+     0.25,
+     300,
+     500,
+     1,
+     0,
+     30,
+     6,
+     300
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -717,21 +1187,69 @@
      "25% ของจำนวนเงินที่โอนออกไม่มีขั้นต่ำ-กรณีโอนเงินเป็นสกุลอื่น (นอกเหนือจาก USD THB) คิด",
      "5% ของจำนวนเงินที่โอนออกไม่มีขั้นต่ำ"
     ],
+    "conditions_numeric": {
+     "fee_per_transaction": 0,
+     "cancellation_fee": 0
+    },
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "153 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        150 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "153 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        สำหรับการขาย DRAFT สกุลต่างประเทศ 150 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "draft_selling_fee": "603 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        603 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับสำหรับการขอยกเลิก DRAFT ทุกสกุล และขอรับเงินบาทคืน (นำ DRAFT มาคืนธนาคาร)-50 บาท/ฉบับ บวกค่า FOREIGN BANK CHARGESสำหรับการขอยกเลิก DRAFT ทุกสกุล และขอให้ออก DRAFT ใหม่ จำนวนเท่ากัน (นำ DRAFT มาคืนธนาคาร)-50 บาท/ฉบับ บวกค่า FOREIGN BANK CHARGES บวกค่าออก DRAFT ใหม่ บวกค่าอากรแสตมป์ 3 บาทสำหรับการขออายัด DRAFT ทุกสกุล และขอรับเงินบาทคืน  (ไม่มี DRAFT มาคืนธนาคาร)-100 บาท/ฉบับ บวกค่า FOREIGN BANK CHARGESสำหรับการขออายัด DRAFT ทุกสกุล และขอให้ออก DRAFT ใหม่จำนวนเท่ากัน  (ไม่มี DRAFT มาคืนธนาคาร)-100 บาท/ฉบับ บวกค่า FOREIGN BANK CHARGES บวกค่าออก DRAFT ใหม่ บวก ค่าอากรแสตมป์ 3 บาท            หมายเหตุ :  การยกเลิก DRAFT และการขออายัด DRAFT ต่างประเทศ สำหรับ DRAFT ที่ DRAWN ON ที่ธนาคาร CITIBANK จะมีค่า  FOREIGN BANK CHARGES จำนวน USD 3 (เฉพาะ สกุลเงิน NZD =  NZD 25 , AUD =  AUD 35)) ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "foreign_bill_buying_fee": "403 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        400 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับ สำหรับบริการตั๋วเงินเปล่า (B/R) ยกเลิกการรับซื้อสกุล EUR, NZDค่าธรรมเนียมตามสกุลเงิน บวกค่า Foreign Bank Charge บวกค่าอากรแสตมป์ 3 บาทต่อฉบับ สำหรับบริการตั๋วเงินเปล่า (B/C) ยกเลิกการรับซื้อสกุล NZD-ค่าธรรมเนียม USD 50 สำหรับสกุล EUR มูลค่ารับซื้อขั้นต่ำ EUR 501 -ค่าธรรมเนียม USD 35 สำหรับสกุล GBP มูลค่ารับซื้อขั้นต่ำ GBP 50-ค่าธรรมเนียม USD 15 สำหรับสกุล USD มูลค่ารับซื้อขั้นต่ำ USD 501 ยกเว้น Government Cheque-ค่าธรรมเนียม USD 15 สำหรับสกุลอื่นๆ                                  หมายเหตุ : ค่าธรรมเนียมคืนตั๋วเงินเปล่า B/R = 225 บาท  บวกค่า Foreign Bank Charge  B/C = 250 บาท  บวกค่า Foreign Bank Charge ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "153 บาท/ฉบับ เงื่อนไข: 150 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "traveler_cheque_buying_fee_numeric": {
+    "base_fee": 153,
+    "stamp_duty": 150
+   },
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "153 บาท/ฉบับ เงื่อนไข: สำหรับการขาย DRAFT สกุลต่างประเทศ 150 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "draft_buying_fee_numeric": {
+    "base_fee": 153,
+    "stamp_duty": 150
+   },
+   "draft_selling_fee": [
+    "603 บาท/ฉบับ เงื่อนไข: 603 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับสำหรับการขอยกเลิก DRAFT ทุกสกุล และขอรับเงินบาทคืน (นำ DRAFT มาคืนธนาคาร)",
+    "50 บาท/ฉบับ บวกค่า FOREIGN BANK CHARGESสำหรับการขอยกเลิก DRAFT ทุกสกุล และขอให้ออก DRAFT ใหม่ จำนวนเท่ากัน (นำ DRAFT มาคืนธนาคาร)",
+    "50 บาท/ฉบับ บวกค่า FOREIGN BANK CHARGES บวกค่าออก DRAFT ใหม่ บวกค่าอากรแสตมป์ 3 บาทสำหรับการขออายัด DRAFT ทุกสกุล และขอรับเงินบาทคืน (ไม่มี DRAFT มาคืนธนาคาร)",
+    "100 บาท/ฉบับ บวกค่า FOREIGN BANK CHARGESสำหรับการขออายัด DRAFT ทุกสกุล และขอให้ออก DRAFT ใหม่จำนวนเท่ากัน (ไม่มี DRAFT มาคืนธนาคาร)",
+    "100 บาท/ฉบับ บวกค่า FOREIGN BANK CHARGES บวกค่าออก DRAFT ใหม่ บวก ค่าอากรแสตมป์ 3 บาท หมายเหตุ : การยกเลิก DRAFT และการขออายัด DRAFT ต่างประเทศ สำหรับ DRAFT ที่ DRAWN ON ที่ธนาคาร CITIBANK จะมีค่า FOREIGN BANK CHARGES จำนวน USD 3 (เฉพาะ สกุลเงิน NZD = NZD 25 , AUD = AUD 35)) ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "draft_selling_fee_numeric": {
+    "base_fee": 100,
+    "stamp_duty": 3
+   },
+   "foreign_bill_buying_fee": [
+    "403 บาท/ฉบับ เงื่อนไข: 400 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับ สำหรับบริการตั๋วเงินเปล่า (B/R) ยกเลิกการรับซื้อสกุล EUR, NZDค่าธรรมเนียมตามสกุลเงิน บวกค่า Foreign Bank Charge บวกค่าอากรแสตมป์ 3 บาทต่อฉบับ สำหรับบริการตั๋วเงินเปล่า (B/C) ยกเลิกการรับซื้อสกุล NZD",
+    "ค่าธรรมเนียม USD 50 สำหรับสกุล EUR มูลค่ารับซื้อขั้นต่ำ EUR 501",
+    "ค่าธรรมเนียม USD 35 สำหรับสกุล GBP มูลค่ารับซื้อขั้นต่ำ GBP 50",
+    "ค่าธรรมเนียม USD 15 สำหรับสกุล USD มูลค่ารับซื้อขั้นต่ำ USD 501 ยกเว้น Government Cheque",
+    "ค่าธรรมเนียม USD 15 สำหรับสกุลอื่นๆ หมายเหตุ : ค่าธรรมเนียมคืนตั๋วเงินเปล่า B/R = 225 บาท บวกค่า Foreign Bank Charge B/C = 250 บาท บวกค่า Foreign Bank Charge ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "foreign_bill_buying_fee_numeric": {
+    "base_fee": 403,
+    "stamp_duty": 400
+   },
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท เงื่อนไข: ร้อยละ 0.25% ของจำนวนเงิน ต่อหนึ่งระยะเวลา 3 เดือน*(90วัน) เศษของหนึ่งระยะเวลาให้ถือเป็นอีกหนึ่งระยะเวลา *นับตั้งแต่วันเปิด L/C จนถึงวันสุดท้ายก่อนครบกำหนด 3 เดือน",
-   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 365 วันขั้นต่ำ 1,000 บาท เงื่อนไข: ร้อยละ 2.5% ต่อปี ของจำนวนเงินคำนวณเป็นรายเดือน* เศษของเดือนให้ถือเป็นอีก 1 เดือน*นับตั้งแต่วันเปิด DL/C จนถึงวันสุดท้ายก่อนครบกำหนด"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 0
+   },
+   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 365 วันขั้นต่ำ 1,000 บาท เงื่อนไข: ร้อยละ 2.5% ต่อปี ของจำนวนเงินคำนวณเป็นรายเดือน* เศษของเดือนให้ถือเป็นอีก 1 เดือน*นับตั้งแต่วันเปิด DL/C จนถึงวันสุดท้ายก่อนครบกำหนด",
+   "domestic_lc_numeric": {
+    "percent_fee": 2.5,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "2.5% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท เงื่อนไข: - ค่าธรรมเนียมการรับรองการชำระเงินสำหรับตั๋วเรียกเก็บแบบ D/P Term (Engagement Fee) ร้อยละ 2.5% ต่อปีของจำนวนเงินตามตั๋วเงิน- ค่าธรรมเนียมการเรียกเก็บเงิน (Collection Commission) ร้อยละ 0.125% ของจำนวนเงินที่เรียกเก็บ",
@@ -755,7 +1273,15 @@
   "international_fees": "ธ.ก.ส.",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:\n                                        \n                                        200 บาท/รายการ ,กรณีสกุลเงินบาท สำหรับเงินโอนต่างประเทศขาเข้าผ่านธนาคารส่งเสริมกสิกรรม (ธสก.) สปป.ลาว เข้าบัญชีปลายทางที่ ธ.ก.ส.",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข: 200 บาท/รายการ ,กรณีสกุลเงินบาท สำหรับเงินโอนต่างประเทศขาเข้าผ่านธนาคารส่งเสริมกสิกรรม (ธสก.) สปป.ลาว เข้าบัญชีปลายทางที่ ธ.ก.ส."
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500,
+     200
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -763,21 +1289,46 @@
     "conditions": [
      "ขั้นต่ำ 500 บาท/รายการ เงื่อนไข: กรณีผู้ขอโอนต้องการรับภาระค่าธรรมเนียมธนาคารในต่างประเทศต่อแรก (Charge OUR) เก็บเพิ่มจากค่าธรรมเนียมขั้นต่ำ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีค่าธรรมเนียม ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีค่าธรรมเนียม ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีค่าธรรมเนียม ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีค่าธรรมเนียม ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เก็บเพิ่มค่า SWIFT จากการเปิด Foreign L/C -MT700 1000 บาท -MT710 400 บาท/ข้อความ (ถ้ามี) ทั้งนี้ขึ้นอยู่กับความยาวของ L/C",
-   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เก็บเพิ่มค่า SWIFT จากการเปิด Foreign L/C -MT700 1000 บาท -MT710 400 บาท/ข้อความ (ถ้ามี) ทั้งนี้ขึ้นอยู่กับความยาวของ L/C"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 400
+   },
+   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เก็บเพิ่มค่า SWIFT จากการเปิด Foreign L/C -MT700 1000 บาท -MT710 400 บาท/ข้อความ (ถ้ามี) ทั้งนี้ขึ้นอยู่กับความยาวของ L/C",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.2,
+    "min_fee": 400
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท เงื่อนไข: - กรณีโอนไปยังธนาคารอื่นให้เรียกเก็บจากธนาคารผู้รับโอน: 0.0625% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 500 บาท",
@@ -801,7 +1352,14 @@
   "international_fees": "ธสน.",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:\n                                        \n                                        ใช้อัตรา T/T rate",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข: ใช้อัตรา T/T rate"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -811,21 +1369,46 @@
      "25% ขั้นต่ำ 1000 บาท/รายการ เงื่อนไข: หรือ",
      "00USD"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของ หนึ่งระยะเวลาให้ถือเป็น 1ระยะเวลา",
-   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนคิดเป็น 1 เดือน"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 0
+   },
+   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนคิดเป็น 1 เดือน",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.2,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "ตามอัตราที่กำหนดขั้นต่ำ 1,000 บาท เงื่อนไข: - Collection Commission 0.125% ขั้นต่ำ 1000.00 บาท- Engagement Fee (D/P Term) 2.5% ขั้นต่ำ 1000.00 บาท",
@@ -849,7 +1432,31 @@
   "international_fees": "มิซูโฮ สาขากรุงเทพฯ",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:\n                                        \n                                        -1/4% ขั้นต่ำ 200 บาท แต่ไม่เกิน 500 บาท/ รายการ ,กรณีสกุลเงินที่รับโอนเป็นสกุลเดียวกัน โดยไม่มีอัตราแลกเปลี่ยนจะเรียกเก็บค่าธรรมเนียมเพิ่มอีก 1/8% ของยอดที่โอน ขั้นต่ำ 500 บาท-1/4% ขั้นต่ำ USD9.00 แต่ไม่เกิน USD25.00/ รายการ ,กรณีสกุลเงินที่รับโอนเป็นสกุลเดียวกัน โดยไม่มีอัตราแลกเปลี่ยนจะเรียกเก็บค่าธรรมเนียมเพิ่มอีก 1/8% ของยอดที่โอน ขั้นต่ำ USD25.00 -สำหรับลูกค้ากัมพูชา",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:",
+     "1/4% ขั้นต่ำ 200 บาท แต่ไม่เกิน 500 บาท/ รายการ ,กรณีสกุลเงินที่รับโอนเป็นสกุลเดียวกัน โดยไม่มีอัตราแลกเปลี่ยนจะเรียกเก็บค่าธรรมเนียมเพิ่มอีก 1/8% ของยอดที่โอน ขั้นต่ำ 500 บาท",
+     "1/4% ขั้นต่ำ USD9.00 แต่ไม่เกิน USD25.00/ รายการ ,กรณีสกุลเงินที่รับโอนเป็นสกุลเดียวกัน โดยไม่มีอัตราแลกเปลี่ยนจะเรียกเก็บค่าธรรมเนียมเพิ่มอีก 1/8% ของยอดที่โอน ขั้นต่ำ USD25.00",
+     "สำหรับลูกค้ากัมพูชา"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500,
+     1,
+     4,
+     200,
+     500,
+     1,
+     8,
+     500,
+     1,
+     4,
+     9,
+     25,
+     1,
+     8,
+     25
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -858,21 +1465,49 @@
      "550 บาท/รายการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ขั้นต่ำ",
      "125% ขั้นต่ำ 500 บาท/รายการ"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "550 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ขั้นต่ำ 0.125% ขั้นต่ำ 500 บาท/รายการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "550 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ขั้นต่ำ 0.125% ขั้นต่ำ 500 บาท/รายการ"
+   ],
+   "draft_selling_fee_numeric": {
+    "base_fee": 550,
+    "stamp_duty": 0
+   },
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท เงื่อนไข: ค่าธรรมเนียม 45USD สำหรับลูกค้ากัมพูชา",
-   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: ค่าธรรมเนียม 45USD สำหรับลูกค้ากัมพูชา"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 0
+   },
+   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: ค่าธรรมเนียม 45USD สำหรับลูกค้ากัมพูชา",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.2,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท เงื่อนไข: ค่าธรรมเนียม 45USD สำหรับลูกค้ากัมพูชา",
@@ -896,7 +1531,20 @@
   "international_fees": "แลนด์ แอนด์ เฮ้าส์",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:\n                                        \n                                        กรณีผู้รับรับเป็นเงินบาทจ่ายโดยโอนเข้าบัญชีผู้รับเงิน- 0.25% ของจำนวนเงินโอน ขั้นต่ำ 200 บาท ไม่เกิน 500 บาท ต่อรายการจ่ายโดยโอนเงินผ่านธนาคารอื่น-\t0.125%",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข: กรณีผู้รับรับเป็นเงินบาทจ่ายโดยโอนเข้าบัญชีผู้รับเงิน",
+     "0.25% ของจำนวนเงินโอน ขั้นต่ำ 200 บาท ไม่เกิน 500 บาท ต่อรายการจ่ายโดยโอนเงินผ่านธนาคารอื่น",
+     "0.125%"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500,
+     0.25,
+     200,
+     500,
+     0.125
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -907,21 +1555,46 @@
      "25% ขั้นต่ำ 1000 บาท/รายการ เงื่อนไข: ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน (Commission in Lieu of Exchange):",
      "25% ขั้นต่ำ 1000 บาท/รายการ"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 3 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนให้คิดเป็นหนึ่งระยะเวลา",
-   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 1 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของระยะเวลา 1 เดือนให้คิดเป็นหนึ่งระยะเวลา"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 0
+   },
+   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 1 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของระยะเวลา 1 เดือนให้คิดเป็นหนึ่งระยะเวลา",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.2,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท เงื่อนไข: ตั๋วเรียกเก็บสินค้าเข้า (Import Bills for Collection)ค่าธรรมเนียมการเรียกเก็บ (Collection Commission)(1) กรณีธนาคารเป็นผู้เรียกเก็บจากผู้จ่ายเงิน - 0.125% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 1,000 บาท(2) กรณีโอนไปยังธนาคารอื่นให้เรียกเก็บจากผู้จ่ายเงิน - 0.0625% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 500 บาท(3) ค่าธรรมเนียมการดูแลรักษาเอกสารสินค้าขาเข้า (Maintenance Fees for Import Documents) เกิน 2 เดือน - USD 30 สำหรับเดือนแรก เดือนต่อไปคิด USD 30 ต่อเดือน เศษของเดือนคิดเป็น 1 เดือน (4) Engagement Fee Term ตั๋วเรียกเก็บแบบ D/P ค่าธรรมเนียมการรับรองการชำระเงินสำหรับตั๋วเรียกเก็บแบบ D/P Term (Engagement Fee) (กรณีมี Trust Receipt (TR) และ/หรือหลักประกัน) - 2.5% ต่อปี ของจำนวนเงินตามตั๋วเรียกเก็บเมื่อขอรับเอกสาร ขั้นต่ำ 1,000 บาท ค่าธรรมเนียมในกรณีตั๋ว B/C ที่ยังไม่เคยมีการจ่ายเงินและธนาคารที่ทำหน้าส่งคำสั่งเรียกเก็บ Remitting Bank อนุญาตให้ธนาคาร LH Bank ปล่อยเอกสารโดยไม่ต้องเรียกเก็บเงิน (ค่า Release Document with Free of Payment) - 0.125% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 1,000 บาทค่าธรรมเนียมในกรณีตั๋วสินค้าเข้าที่ไม่มีการชำระเงิน (DISHONORED BILLS FEE) / ค่าธรรมเนียมการคืนเอกสาร (Returned Item Fees) - USD 100 ต่อฉบับ ค่าธรรมเนียมการสั่งทำคำคัดค้าน (Protest Fees) - USD 100 ต่อครั้งบวกค่าทนายตามที่จ่ายจริงค่าธรรมเนียมเอกสารที่เรียกเก็บเป็นเงินบาท (Collection Commission on Bills for Collection in THB Currency) - 0.25% ของจำนวนเงิน ขั้นต่ำ 1,000 บาทการชำระเงินด้วยเงินสกุลเดียวกับภาระหนี้ (COMMISSION IN LIEU OF EXCHANGE)สกุล USD และสกุลอื่น ๆ - 0.25 % ของจำนวนเงินตามภาระหนี้ขั้นต่ำ 1,000 บาท(5) ค่าใช้จ่ายอื่นๆ -ค่าอากรแสตมป์ คิดตามที่จ่ายจริง ค่าติดต่อสื่อสาร (COMMUNICATION CHARGE) - ค่า SWIFT 500 บาทต่อฉบับ - ค่า POSTAGE / ค่าติดต่อสื่อสารในประเทศ 100 บาทต่อฉบับ - กรณีส่งโดย Courier ภายในประเทศ คิดตามน้ำหนักของพัสดุและค่าใช้จ่ายที่เกิดขึ้นตามจริง โดยเป็นไปตามเงื่อนไขการให้บริการของบริษัทผู้ให้บริการขนส่งพัสดุระหว่างประเทศที่ธนาคารได้ใช้บริการ",
@@ -945,7 +1618,17 @@
   "international_fees": "ออมสิน",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:\n                                        \n                                        0.25% ขั้นต่ำ 200 บาทแต่ไม่เกิน 500 บาท/รายการ",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข: 0.25% ขั้นต่ำ 200 บาทแต่ไม่เกิน 500 บาท/รายการ"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500,
+     0.25,
+     200,
+     500
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -954,21 +1637,43 @@
      "400 - 2000 บาท/รายการ เงื่อนไข: โอนเงินไปต่างประเทศ ผ่านเคาน์เตอร์ธนาคารกรณีโอนเงินตราต่างประเทศผู้โอนเป็นผู้รับภาระค่าธรรมเนียมในส่วนของธนาคารออมสิน (Charge BEN) คิด 400 บาทต่อรายการ ทุกสกุลที่ให้บริการโอนเงินไปต่างประเทศ ผ่านเคาน์เตอร์ธนาคารกรณีโอนเงินตราต่างประเทศ- ผู้โอนเป็นผู้รับภาระค่าธรรมเนียมในส่วนของธนาคารออมสินและธนาคารตัวแทนในต่างประเทศ (Charge OUR)ทุกสกุล 1150 บาทต่อรายการ ยกเว้น JPY EUR GBP- ผู้โอนเป็นผู้รับภาระค่าธรรมเนียมในส่วนของธนาคารออมสินและธนาคารตัวแทนในต่างประเทศ โดยรับประกันว่าธนาคารผู้รับเงินได้รับเงินเต็มจำนวน(Charge OUR-FVT) ให้บริการเฉพาะสกุลเงิน USDนอกประเทศสหรัฐอเมริกา 1500 บาทต่อรายการ-ผู้โอนเป็นผู้รับภาระค่าธรรมเนียมในส่วนของธนาคารออมสินและธนาคารตัวแทนในต่างประเทศ โดยรับประกันว่าธนาคารผู้รับเงินได้รับเงินเต็มจำนวน(Charge OUR-FVT) ให้บริการเฉพาะสกุเงิน EUR GBP 1700 บาทต่อรายการ- สกุลเงิน JPY คิด 400 บาท บวกค่าธรรมเนียมธนาคารต่างประเทศอีกร้อยละ",
      "05 ของมูลค่าเงินโอน (ขั้นต่ำ 1600 บาท) รวมเป็น 2000 บาทต่อรายการหากค่าธรรมเนียมของธนาคารต่างประเทศที่ธนาคารเก็บไว้ไม่พอชำระ ธนาคารจะเรียกเก็บค่าธรรมเนียมเพิ่มเติมตามที่เรียกเก็บมาจริง ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท",
-   "domestic_lc": "ไม่มีบริการ"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 0
+   },
+   "domestic_lc": "ไม่มีบริการ",
+   "domestic_lc_numeric": {}
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท เงื่อนไข: - กรณีธนาคารเป็นผู้เรียกเก็บจากผู้จ่ายเงิน ค่าบริการ 0.125% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 1,000 บาท- กรณีโอนไปยังธนาคารอื่นให้เรียกเก็บจากผู้จ่ายเงิน ค่าบริการ 0.0625% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 500 บาท- กรณีรับรองการชำระเงินสำหรับตั๋วเรียกเก็บแบบ D/P Term ค่าบริการ 2.5% ของจำนวนเงินตามตั๋วที่เรียกเก็บ ขั้นต่ำ 1,000 บาท-กรณีการส่งคืนเอกสาร USD100 ต่อฉบับ",
@@ -1076,7 +1781,18 @@
   "international_fees": "ไอซีบีซี (ไทย)",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:\n                                        \n                                        1/4% ของยอดเงินโอนขั้นต่ำ 200 บาท สูงสุด 500 บาท ต่อรายการ",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข: 1/4% ของยอดเงินโอนขั้นต่ำ 200 บาท สูงสุด 500 บาท ต่อรายการ"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     500,
+     1,
+     4,
+     200,
+     500
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1086,21 +1802,46 @@
      "05% ของจำนวนเงินโอน ต่อรายการ ขั้นต่ำ JPY 5000 - สกุล SGD คิดเพิ่ม 800 บาท หรือ SGD 30 ต่อรายการ - สกุล HKD คิดเพิ่ม 800 บาท หรือ HKD 200 ต่อรายการ - สกุล NZD คิดเพิ่ม 800 บาท หรือ NZD 30 ต่อรายการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):",
      "25% ขั้นต่ำ 500 บาท/รายการ เงื่อนไข: 1/4% ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน ขั้นต่ำ 500 บาท ต่อรายการ"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "ตามอัตราที่กำหนดขั้นต่ำ 1,000 บาท เงื่อนไข: ค่าธรรมเนียมการเปิดเลตเตอร์ออฟเครดิต- 1/4% ระยะเวลา90 วัน ค่าใช้จ่ายเป็นของผู้เปิดเลตเตอร์ออฟเครดิต ค่าธรรมเนียมขั้นต่ำ 1,000 บาท ค่าธรรมเนียมขั้นต่ำ USD75.00 ค่าใช้จ่ายเป็นของผู้รับประโยชน์ตามเลตเตอร์ออฟเครดิต ค่าธรรมเนียมการเปิดแสตน์บายเลตเตอร์ออฟเครดิต- 2% ระยะเวลา365 วัน ค่าใช้จ่ายเป็นของผู้เปิดสแตนด์บายเลตเตอร์ออฟเครดิตค่าธรรมเนียมขั้นต่ำ 1,000 บาท ค่าธรรมเนียมขั้นต่ำUSD75.00 ค่าใช้จ่ายเป็นของผู้รับประโยชน์ตามเลตเตอร์ออฟเครดิต - 1/4% ระยะเวลา90 วัน ค่าธรรมเนียมการแก้ไขเลตเตอร์ออฟ เครดิต, แสตนบายเลตเตอร์ออฟเครดิต และเลตเตอร์ออฟเครดิตในประเทศ(เพิ่มจำนวนเงินหรือขยายระยะเวลา)ค่าธรรมเนียมขั้นต่ำ 1,000 บาท(การแก้ไขอื่น ๆ) ค่าใช้จ่ายเป็นของผู้เปิดสแตนด์บายเลตเตอร์ ออฟเครดิต ค่าธรรมเนียม 500 บาท ค่าใช้จ่ายเป็นของผู้รับประโยชน์ตามเลตเตอร์ออฟเครดิต ค่าธรรมเนียม USD70.00- แจ้งการเปิดเลตเตอร์ออฟเครดิต กรณีค่าธรรมเนียมเรียกเก็บจากผู้รับประโยชน์ตามเลตเตอร์ออฟเครดิต ค่าธรรมเนียม 500 บาทค่าธรรมเนียมเรียกเก็บจากผู้ขอเปิดเลตเตอร์ออฟเครดิต ค่าธรรมเนียม USD50.00- แจ้งการแก้ไขเลตเตอร์ออฟเครดิต เรียกเก็บจากผู้รับประโยชน์ตามเลตเตอร์ออฟเครดิตค่าธรรมเนียม 500 บาท ค่าธรรมเนียมเก็บจากผู้ขอเปิดเลตเตอร์ออฟเครดิต ค่าธรรมเนียม USD40.00- 1/4% ค่าธรรมเนียมการโอนเลตเตอร์ออฟเครดิตค่าธรรมเนียมขั้นต่ำ 1,000 บาท- 1/4% ระยะเวลา30 วัน ค่าธรรมเนียมรับรองการชำระเงินตามเลตเตอร์ออฟเครดิต ชำระเมื่อเห็น และ กำหนระยะเวลาการชำระเงินเก็บจากผู้รับประโยชน์ตามเลตเตอร์ออฟเครดิตค่าธรรมเนียมขั้นต่ำ 2,000 บาท เก็บจากธนาคารที่เปิดเลตเตอร์ออฟเครดิต ค่าธรรมเนียมขั้นต่ำ USD60.00",
-   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท"
+   "foreign_lc_numeric": {
+    "percent_fee": 4,
+    "min_fee": 0
+   },
+   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.2,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท เงื่อนไข: -บริการตั๋วเรียกเก็บเงินสินค้าขาเข้า (DP/DA)",
@@ -1124,7 +1865,36 @@
   "international_fees": "กรุงเทพ",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข:\n                                        \n                                        - 1/4% ขั้นต่ำ 200 บาท แต่ไม่เกิน 500 บาท/รายการ กรณีเรียกเก็บค่าธรรมเนียมจากผู้รับเงิน-ไม่เรียกเก็บค่าธรรมเนียมจากผู้รับโอนกรณีผู้โอนเงินจ่ายค่าธรรมเนียมให้แทน-1/4 % ขั้นต่ำ 200 บาท แต่ไม่เกิน500 บาท/รายการ กรณีจ่ายเงินสดคิดค่าธรรมเนียมเพิ่มอีก 150 บาทต่อรายการ- กรณีลูกค้าขอไม่นำเงินเข้าบัญชี(ขอถือครองเงินตราต่างประเทศ) คิดค่าธรรมเนียม 1,000 บาท(เฉพาะครั้งแรก)โดยลูกค้าต้องแจ้งธนาคารล่วงหน้าอย่างน้อย 7 วันมิฉะนั้น ธนาคารจะนำเงินเข้าบัญชีลูกค้าตามวันที่กำหนดในคำสั่งจ่ายหรือวันที่ธนาคารได้รับคำสั่งจ่ายเงินที่สมบูรณ์- กรณีรับเงินโอนจากประเทศสิงคโปร์ผ่านระบบพร้อมเพย์(PromptPay International) ไม่มีค่าธรรมเนียมโดยผู้โอนเงินเป็นผู้จ่ายค่าธรรมเนียมแทน- 1/4 % ขั้นต่ำ 200 บาท แต่ไม่เกิน500 บาท/รายการ กรณีผู้รับเงินมีบัญชีกับธนาคารอื่นบวกเพิ่มค่าธรรมเนียมบาทเนตอีก 150 บาทต่อรายการ",
+    "fee": [
+     "0.25% ของมูลค่าเงินที่รับโอนขั้นต่ำ 200 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข:",
+     "1/4% ขั้นต่ำ 200 บาท แต่ไม่เกิน 500 บาท/รายการ กรณีเรียกเก็บค่าธรรมเนียมจากผู้รับเงิน",
+     "ไม่เรียกเก็บค่าธรรมเนียมจากผู้รับโอนกรณีผู้โอนเงินจ่ายค่าธรรมเนียมให้แทน",
+     "1/4 % ขั้นต่ำ 200 บาท แต่ไม่เกิน500 บาท/รายการ กรณีจ่ายเงินสดคิดค่าธรรมเนียมเพิ่มอีก 150 บาทต่อรายการ",
+     "กรณีลูกค้าขอไม่นำเงินเข้าบัญชี(ขอถือครองเงินตราต่างประเทศ) คิดค่าธรรมเนียม 1,000 บาท(เฉพาะครั้งแรก)โดยลูกค้าต้องแจ้งธนาคารล่วงหน้าอย่างน้อย 7 วันมิฉะนั้น ธนาคารจะนำเงินเข้าบัญชีลูกค้าตามวันที่กำหนดในคำสั่งจ่ายหรือวันที่ธนาคารได้รับคำสั่งจ่ายเงินที่สมบูรณ์",
+     "กรณีรับเงินโอนจากประเทศสิงคโปร์ผ่านระบบพร้อมเพย์(PromptPay International) ไม่มีค่าธรรมเนียมโดยผู้โอนเงินเป็นผู้จ่ายค่าธรรมเนียมแทน",
+     "1/4 % ขั้นต่ำ 200 บาท แต่ไม่เกิน500 บาท/รายการ กรณีผู้รับเงินมีบัญชีกับธนาคารอื่นบวกเพิ่มค่าธรรมเนียมบาทเนตอีก 150 บาทต่อรายการ"
+    ],
+    "fee_numeric": [
+     0.25,
+     200,
+     1,
+     4,
+     200,
+     500,
+     1,
+     4,
+     200,
+     500,
+     150,
+     1,
+     0,
+     7,
+     1,
+     4,
+     200,
+     500,
+     150
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1144,21 +1914,77 @@
      "125% ของมูลค่าเงินโอน ขั้นต่ำ 300 บาท สูงสุด 500 บาท/รายการ ยอดเงินโอนตั้งแต่ 400001 บาทขึ้นไป คิดค่าธรรมเนียม 400 บาท ต่อรายการบวกเพิ่มค่า Commission in Lieu of Exchange",
      "25 เปอร์เซนต์ จากมูลค่าของเงินโอน ขั้นต่ำ 300 บาท ต่อรายการ ทั้งนี้กรณีโอนเงินผ่านธนาคารอื่นในประเทศและต่างประเทศซึ่งคิดค่าธรรมเนียมเพิ่มจากที่สำรองไว้ให้แล้ว ธนาคารจะเรียกเก็บเพิ่มเติมตามที่เรียกเก็บมาจริง"
     ],
+    "conditions_numeric": {
+     "transaction_range": [
+      125,
+      300
+     ]
+    },
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "153 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        150 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):0.25 - 0.375% ขั้นต่ำ 500 บาท/รายการ เงื่อนไข:\n                                        \n                                        กรณีรับซื้อฝากเข้า บัญชี FCD- 0.25% สำหรับสกุลเงิน USD, EUR, GBP, JPY- 0.375% สำหรับสกุลเงิน AUD, CAD, CHF",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "403 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        - ตราสารการเงินต่างประเทศที่ระบุให้ธนาคารกรุงเทพในประเทศไทยเป็นผู้จ่ายค่าธรรมเนียม 200 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับ- ตราสารการเงินต่างประเทศกรณีธนาคารจ่ายเงินให้ก่อนเรียกเก็บจากธนาคารต่างประเทศ (Advance Payment) ค่าธรรมเนียม 400 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาท ต่อฉบับ- ตราสารการเงินต่างประเทศกรณีธนาคารเรียกเก็บจากธนาคารต่างประเทศก่อนจ่ายเงิน (Collection First)ค่าธรรมเนียม USD 15บวกอากรแสตมป์ 3 บาทต่อฉบับ พร้อมทั้งค่าธรรมเนียมที่ธนาคารต่างประเทศเรียกเก็บ (ถ้ามี)- ตราสารการเงินต่างประเทศกรณีธนาคารในต่างประเทศส่งคืนตราสารการเงินต่างประเทศกลับมา เนื่องจากไม่สามารถเรียกเก็บเงินได้ มีค่าธรรมเนียม 200 บาท บวกค่าธรรมเนียมที่ธนาคารต่างประเทศเรียกเก็บเพิ่ม พร้อมดอกเบี้ยที่คิดจากอัตราดอกเบี้ยสินเชื่อผิดนัดโดยใช้ระยะเวลาจากวันที่ธนาคารจ่ายเงินให้ลูกค้าก่อนส่งเรียกเก็บ จนถึงวันที่ลูกค้านำเงินมาชำระ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):0.25 - 0.375% ขั้นต่ำ 500 บาท/รายการ เงื่อนไข:\n                                        \n                                        กรณีระบุธนาคารต่างประเทศเป็นผู้จ่าย (เข้าบัญชีทันที) - สกุลเงิน USD, EUR, GBP, JPY คิดค่าธรรมเนียม 0.25% - สกุลเงิน AUD, CAD, HKD, SGD, DKK, NOK, คิดค่าธรรมเนียม 0.375% ขั้นต่ำ 500 บาท",
-   "draft_selling_fee": "403 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        - กรณีดร๊าฟที่ระบุให้ธนาคารต่างประเทศเป็นผู้สั่งจ่ายสกุล SGD เพิ่ม 50 บาทต่อฉบับ,สกุลเงิน GBP เพิ่ม 150 บาทต่อฉบับ- ค่าธรรมเนียมการขอเงินคืนคิดค่าธรรมเนียม 1,000 บาท/ฉบับ กรณีทำดร๊าฟท์สูญหายหรือกรณีขายคืนดร๊าฟท์ต่างประเทศ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):0.25 - 1.25% ขั้นต่ำ 500 บาท/รายการ เงื่อนไข:\n                                        \n                                        - 0.25% สำหรับสกุลเงิน USD, THB- 0.50% สำหรับสกุลเงิน GBP, JPY- 0.75% สำหรับสกุลเงิน AUD, HKD, NOK- 1.25% สำหรับสกุลเงิน SGD",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "153 บาท/ฉบับ เงื่อนไข: 150 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):0.25",
+    "0.375% ขั้นต่ำ 500 บาท/รายการ เงื่อนไข: กรณีรับซื้อฝากเข้า บัญชี FCD",
+    "0.25% สำหรับสกุลเงิน USD, EUR, GBP, JPY",
+    "0.375% สำหรับสกุลเงิน AUD, CAD, CHF"
+   ],
+   "traveler_cheque_buying_fee_numeric": {
+    "base_fee": 153,
+    "stamp_duty": 150
+   },
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "403 บาท/ฉบับ เงื่อนไข:",
+    "ตราสารการเงินต่างประเทศที่ระบุให้ธนาคารกรุงเทพในประเทศไทยเป็นผู้จ่ายค่าธรรมเนียม 200 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาทต่อฉบับ",
+    "ตราสารการเงินต่างประเทศกรณีธนาคารจ่ายเงินให้ก่อนเรียกเก็บจากธนาคารต่างประเทศ (Advance Payment) ค่าธรรมเนียม 400 บาท ต่อฉบับ บวกอากรแสตมป์ 3 บาท ต่อฉบับ",
+    "ตราสารการเงินต่างประเทศกรณีธนาคารเรียกเก็บจากธนาคารต่างประเทศก่อนจ่ายเงิน (Collection First)ค่าธรรมเนียม USD 15บวกอากรแสตมป์ 3 บาทต่อฉบับ พร้อมทั้งค่าธรรมเนียมที่ธนาคารต่างประเทศเรียกเก็บ (ถ้ามี)",
+    "ตราสารการเงินต่างประเทศกรณีธนาคารในต่างประเทศส่งคืนตราสารการเงินต่างประเทศกลับมา เนื่องจากไม่สามารถเรียกเก็บเงินได้ มีค่าธรรมเนียม 200 บาท บวกค่าธรรมเนียมที่ธนาคารต่างประเทศเรียกเก็บเพิ่ม พร้อมดอกเบี้ยที่คิดจากอัตราดอกเบี้ยสินเชื่อผิดนัดโดยใช้ระยะเวลาจากวันที่ธนาคารจ่ายเงินให้ลูกค้าก่อนส่งเรียกเก็บ จนถึงวันที่ลูกค้านำเงินมาชำระ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):0.25",
+    "0.375% ขั้นต่ำ 500 บาท/รายการ เงื่อนไข: กรณีระบุธนาคารต่างประเทศเป็นผู้จ่าย (เข้าบัญชีทันที)",
+    "สกุลเงิน USD, EUR, GBP, JPY คิดค่าธรรมเนียม 0.25%",
+    "สกุลเงิน AUD, CAD, HKD, SGD, DKK, NOK, คิดค่าธรรมเนียม 0.375% ขั้นต่ำ 500 บาท"
+   ],
+   "draft_buying_fee_numeric": {
+    "base_fee": 15,
+    "stamp_duty": 3
+   },
+   "draft_selling_fee": [
+    "403 บาท/ฉบับ เงื่อนไข:",
+    "กรณีดร๊าฟที่ระบุให้ธนาคารต่างประเทศเป็นผู้สั่งจ่ายสกุล SGD เพิ่ม 50 บาทต่อฉบับ,สกุลเงิน GBP เพิ่ม 150 บาทต่อฉบับ",
+    "ค่าธรรมเนียมการขอเงินคืนคิดค่าธรรมเนียม 1,000 บาท/ฉบับ กรณีทำดร๊าฟท์สูญหายหรือกรณีขายคืนดร๊าฟท์ต่างประเทศ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):0.25",
+    "1.25% ขั้นต่ำ 500 บาท/รายการ เงื่อนไข:",
+    "0.25% สำหรับสกุลเงิน USD, THB",
+    "0.50% สำหรับสกุลเงิน GBP, JPY",
+    "0.75% สำหรับสกุลเงิน AUD, HKD, NOK",
+    "1.25% สำหรับสกุลเงิน SGD"
+   ],
+   "draft_selling_fee_numeric": {
+    "base_fee": 1,
+    "stamp_duty": 0
+   },
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท เงื่อนไข: - เศษของวันคิดเป็นหนึ่งระยะเวลา- ค่าธรรมเนียมการเปิดแอล/ซีแบบหมุนเวียน: 0.25% ของจำนวนเงินตามคำขอเปิดแอล/ซี คูณด้วยจำนวนครั้งที่หมุนเวียน ขั้นต่ำ 1,000 บาท- ค่า SWIFT ในการเปิดแอล/ซี: หน้าแรก 1,000 บาท หน้าถัดไป 300 บาท ต่อหน้า- ค่า SWIFT กรณีมีคำสั่ง Reimbursement (MT 740): 200 บาท",
-   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 365 วันขั้นต่ำ 1,000 บาท เงื่อนไข: - เศษของเดือนคิดเป็น 1 เดือน"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 200
+   },
+   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 365 วันขั้นต่ำ 1,000 บาท เงื่อนไข: - เศษของเดือนคิดเป็น 1 เดือน",
+   "domestic_lc_numeric": {
+    "percent_fee": 2.5,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท เงื่อนไข: - ค่าธรรมเนียมการรับรองการชำระเงินตามตั๋วเงินประเภท Document Against Payment (D/P) ที่กำหนดระยะเวลา (Engagement Commission) กรณีมี Trust Receipt (T/R) และ/หรือหลักประกัน: 2.5% ต่อปีของจำนวนเงินตามตั๋ว ขั้นต่ำ 1,000- ค่าธรรมเนียมการทำคำคัดค้าน (Protest): USD 100 หรือสกุลเงินอื่นเทียบเท่าต่อรายการ บวกค่าใช้จ่ายอื่นๆ (เรียกเก็บกับ Remitting Bank)- ค่าธรรมเนียมในการคืนเอกสาร Dishonor หรือ Return Item: USD 100/ฉบับ- ค่าธรรมเนียมการดูแลรักษาเอกสารสินค้าขาเข้า: USD 30 ต่อเดือน (เศษของเดือนคิดเป็น 1 เดือน)",
@@ -1182,7 +2008,17 @@
   "international_fees": "อิสลาม",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ตามอัตราที่กำหนดขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข:\n                                        \n                                        1/4 % ของยอดเงิน ขั้นต่ำ 200 สูงสุด 500 บาท",
+    "fee": [
+     "ตามอัตราที่กำหนดขั้นต่ำ 200 บาทสูงสุด 500 บาท เงื่อนไข: 1/4 % ของยอดเงิน ขั้นต่ำ 200 สูงสุด 500 บาท"
+    ],
+    "fee_numeric": [
+     200,
+     500,
+     1,
+     4,
+     200,
+     500
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1193,21 +2029,46 @@
      "กรณี (Charge Our ให้ผู้รับในต่างประเทศได้รับเงินเต็มจำนวน) ธนาคารเรียกเก็บเพิ่ม ดังนี้ สกุล EUR : เพิ่มอีก 1200 บาท หรือ EUR 25 / ฉบับ สกุล USD เพิ่มอีก 800 บาท หรือ USD 30 / ฉบับ สกุล GBP เพิ่มอีก 1200 บาท หรือ GBP 20 / ฉบับ สกุล JPY เพิ่มอีก",
      "05 % ของจำนวนเงินที่โอน / ฉบับ (ค่าธรรมเนียมขั้นต่ำ Min JPY 5000 ) สกุลอื่นๆ เพิ่มอีก 800 บาท หรือ USD30 /ฉบับ หมายเหตุ : ในกรณีที่มีการเก็บเพิ่มจากธนาคารผู้รับเงินปลายทาง ให้เรียกเก็บตามความเป็นจริงจากผู้ขอส่งเงิน ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท",
-   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 365 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนคิดเป็น 1 เดือน"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 0
+   },
+   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 365 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนคิดเป็น 1 เดือน",
+   "domestic_lc_numeric": {
+    "percent_fee": 2.5,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท เงื่อนไข: -กรณีตั๋ว TERM จะมีค่าธรรมเนียม Engagemnt Commission on Bills = 2.5% p.a to be collected up front (Min THB 1,000.-)",
@@ -1231,7 +2092,15 @@
   "international_fees": "ยูโอบี",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ตามอัตราที่กำหนดขั้นต่ำ 500 บาทสูงสุด 500 บาท เงื่อนไข:\n                                        \n                                        500 บาทต่อรายการ สำหรับเข้าบัญชี150 บาทต่อฉบับ สำหรับ D/D DRAWN ON US",
+    "fee": [
+     "ตามอัตราที่กำหนดขั้นต่ำ 500 บาทสูงสุด 500 บาท เงื่อนไข: 500 บาทต่อรายการ สำหรับเข้าบัญชี150 บาทต่อฉบับ สำหรับ D/D DRAWN ON US"
+    ],
+    "fee_numeric": [
+     500,
+     500,
+     500,
+     150
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1247,21 +2116,49 @@
      "25% ของเงินโอน ขั้นต่ำ",
      "00 บาท"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีค่าธรรมเนียม ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "draft_selling_fee": "200 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        ค่าอากรแสตมป์3 บาทต่อฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):0.125% ขั้นต่ำ 300 บาท/รายการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีค่าธรรมเนียม ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "200 บาท/ฉบับ เงื่อนไข: ค่าอากรแสตมป์3 บาทต่อฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):0.125% ขั้นต่ำ 300 บาท/รายการ"
+   ],
+   "draft_selling_fee_numeric": {
+    "base_fee": 200,
+    "stamp_duty": 3
+   },
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท เงื่อนไข: ประเภทเพิกถอนไม่ได้ 1/4% ของจำนวนเงินต่อระยะเวลา 3 เดือน เศษของระยะเวลา 3 เดือนให้ถือเป็นอีกหนึ่งระยะเวลา ประเภทหมุนเวียน 1/4% ของจำนวนเงินต่อระยะเวลา 3 เดือน เศษของระยะเวลา 3 เดือนให้ถือเป็นอีกหนึ่งระยะเวลา และ 1/4% ของจำนวนเงินตามเอกสารที่มาเรียกเก็บเงินในแต่ละชุด ค่าธรรมเนียมในการแก้ไขเลตเตอร์ออฟเครดิต กรณีที่เพิ่มจำนวนเงิน และ/หรือต่ออายุ คำนวณจากจำนวนเงินที่เพิ่ม และหรือระยะเวลาที่ต่ออายุต่อระยะเวลา 3 เดือน เศษของระยะเวลา 3 เดือนให้ถือเป็นอีกระยะเวลากรณีอื่นๆ 500 บาท",
-   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนให้ถือเป็น 1 เดือน ค่าธรรมเนียมในการแก้ไขเลตเตอร์ออฟเครดิตในประเทศ กรณีที่เพิ่มจำนวนเงิน และ/หรือต่ออายุ คำนวณตามจำนวนเงินที่เพิ่ม และ/หรือต่ออายุ คำนวณตามจำนวนเงินที่เพิ่ม และ/หรือระยะเวลาที่ต่ออายุ เศษของเดือนให้ถือเป็น 1 เดือน กรณีอื่นๆ 500 บาท"
+   "foreign_lc_numeric": {
+    "percent_fee": 4,
+    "min_fee": 500
+   },
+   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนให้ถือเป็น 1 เดือน ค่าธรรมเนียมในการแก้ไขเลตเตอร์ออฟเครดิตในประเทศ กรณีที่เพิ่มจำนวนเงิน และ/หรือต่ออายุ คำนวณตามจำนวนเงินที่เพิ่ม และ/หรือต่ออายุ คำนวณตามจำนวนเงินที่เพิ่ม และ/หรือระยะเวลาที่ต่ออายุ เศษของเดือนให้ถือเป็น 1 เดือน กรณีอื่นๆ 500 บาท",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.2,
+    "min_fee": 500
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท เงื่อนไข: ค่าธรรมเนียมการรับรองการชำระเงินสำหรับตั๋วเรียกเก็บแบบ Usance D/P 2.5% ต่อปี ค่าธรรมเนียมสำหรับเอกสารที่ไม่มีการชำระเงิน USD 100 ต่อรายการ ค่าธรรมเนียมในการสั่งทำคำคัดค้าน USD 500 ต่อรายการ",
@@ -1290,7 +2187,18 @@
   "international_fees": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ตามอัตราที่กำหนดขั้นต่ำ 200 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข:\n                                        \n                                        - ขั้นต่ำ 200 บาท ต่อรายการ                                - ในกรณีรับเงินสกุลต่างประเทศเข้าบัญชีสกุลเงินต่างประเทศเดียวกัน  250 บาทต่อรายการ บวกเพิ่ม In Lieu of Exchange- ในกรณีรับเงินสกุลบาทเข้าบัญชีเงินบาท 250 บาทต่อรายการ",
+    "fee": [
+     "ตามอัตราที่กำหนดขั้นต่ำ 200 บาทสูงสุด ตามอัตราที่กำหนด เงื่อนไข:",
+     "ขั้นต่ำ 200 บาท ต่อรายการ",
+     "ในกรณีรับเงินสกุลต่างประเทศเข้าบัญชีสกุลเงินต่างประเทศเดียวกัน 250 บาทต่อรายการ บวกเพิ่ม In Lieu of Exchange",
+     "ในกรณีรับเงินสกุลบาทเข้าบัญชีเงินบาท 250 บาทต่อรายการ"
+    ],
+    "fee_numeric": [
+     200,
+     200,
+     250,
+     250
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1331,21 +2239,46 @@
      "- ขั้นสูง CAD",
      "-"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,200 บาท เงื่อนไข: ค่า swift 600 บาท ค่าธรรมเนียมในการแก้ไข L/C ทั่วไป THB500 ค่าอากร ตามจริงค่า courier - 600 บาท (น้ำหนักไม่เกิน 0.50 กิโลกรัม) สำหรับ ยุโรป, ตะวันออกกลาง และเอเชีย- 750 บาท (น้ำหนักไม่เกิน จ.50 กิโลกรัม) สำหรับ แอฟริกาใต้, อเมริกาเหนือ และอเมริกาใต้- 750 บาท (น้ำหนักไม่เกิน 1 กิโลกรัม) สำหรับ ยุโรป, ตะวันออกกลาง และเอเชีย- 1,000 บาท (น้ำหนักไม่เกิน 1 กิโลกรัม) สำหรับ แอฟริกาใต้, อเมริกาเหนือ และอเมริกาใต้กรณีน้ำหนักเกิน 1 กิโลกรัม ราคาตามตกลงเป็นกรณีไป",
-   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: ค่าอากร ตามจริงค่า swift THB 600"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 0
+   },
+   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: ค่าอากร ตามจริงค่า swift THB 600",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.2,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.25% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,200 บาท เงื่อนไข: 0.25% สำหรับยอดเงิน 1,000,000 บาท และ 0.125% สำหรับยอดเกิน 1,000,000 บาท ขั้นต่ำ 1,200 บาท Postage THB300",
@@ -1375,7 +2308,13 @@
   "international_fees": "ธนาคารแห่งอเมริกาเนชั่นแนลแอสโซซิเอชั่น",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ตามอัตราที่กำหนดขั้นต่ำ 600 บาท เงื่อนไข:\n                                        \n                                        600 บาท/รายการ",
+    "fee": [
+     "ตามอัตราที่กำหนดขั้นต่ำ 600 บาท เงื่อนไข: 600 บาท/รายการ"
+    ],
+    "fee_numeric": [
+     600,
+     600
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1384,21 +2323,46 @@
      "ขั้นต่ำ 750 บาท/รายการ เงื่อนไข: Foreign Wire Payment - STP = THB750Foreign Wire Payment - Repair = USD35Foreign Wire Payment- Manual = USD50 ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ขั้นต่ำ",
      "003% ขั้นต่ำ ตามอัตราที่กำหนด เงื่อนไข: ค่าธรรมเนียมชดเชยอัยตราแลกเปลี่ยนขั้นต่ำ = USD10"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.003% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท",
-   "domestic_lc": "0.002% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.003,
+    "min_fee": 0
+   },
+   "domestic_lc": "0.002% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.002,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "ตามอัตราที่กำหนดขั้นต่ำ 1,000 บาท เงื่อนไข: Drawer's A/C: 0.25%Drawee's A/C: 0.125%Commission is half of the above if item is further presented to another local bank for processing upon request from drawee",
@@ -1422,7 +2386,13 @@
   "international_fees": "ซิตี้แบงก์",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ตามอัตราที่กำหนด เงื่อนไข:\n                                        \n                                        - เงินโอนเข้าบัญชีธนาคารซิตี้แบงก์ เพื่อเข้าบัญชีสกุลเงินบาท ค่าคอมมิชชั่น 200 บาท",
+    "fee": [
+     "ตามอัตราที่กำหนด เงื่อนไข:",
+     "เงินโอนเข้าบัญชีธนาคารซิตี้แบงก์ เพื่อเข้าบัญชีสกุลเงินบาท ค่าคอมมิชชั่น 200 บาท"
+    ],
+    "fee_numeric": [
+     200
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1434,21 +2404,54 @@
      "125% ของยอดเงินโอน ขั้นต่ำ 250 บาท แต่ไม่เกิน 25000 บาท- การโอนออกจากบัญชีเงินตราต่างประเทศ ผ่านแบบฟอร์มคำสั่งด้วยรูปแบบกระดาษ ค่า Com. In Lieu",
      "125% ของยอดเงินโอน ขั้นต่ำ USD 10"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ตามอัตราที่กำหนด เงื่อนไข:\n                                        \n                                        - Clean Foreign Currency Checks- เช็คสกุลเงินUSDจ่ายในสหรัฐอเมริกา ราคา 200 บาท - เช็คสกุลเงินUSDจ่ายนอกสหรัฐอเมริกา ราคา 400 บาท - เช็คสกุลเงินอื่นๆจ่ายในประเทศต้นกำเนิด ราคา 1,500 บาท ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):0.125% ขั้นต่ำ ตามอัตราที่กำหนด เงื่อนไข:\n                                        \n                                        ขั้นต่ำ USD10 แต่ไม่เกิน USD3,000",
-   "foreign_bill_selling_fee": "ตามอัตราที่กำหนด เงื่อนไข:\n                                        \n                                        - Clean Foreign Currency Checks- เช็คสกุลเงินดอลล่าสหรัฐจ่ายในสหรัฐอเมริกา ราคา 200 บาท บวก0.125% ของค่าเช็ค- เช็คสกุลเงินดอลล่าสหรัฐจ่ายนอกสหรัฐอเมริกา ราคา 400 บาท บวก0.5% ของค่าเช็ค- เช็คสกุลเงินอื่นๆจ่ายในประเทศต้นกำเนิด ราคา 1,500 บาท บวก0.25% ของค่าเช็ค ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ตามอัตราที่กำหนด เงื่อนไข:",
+    "Clean Foreign Currency Checks",
+    "เช็คสกุลเงินUSDจ่ายในสหรัฐอเมริกา ราคา 200 บาท",
+    "เช็คสกุลเงินUSDจ่ายนอกสหรัฐอเมริกา ราคา 400 บาท",
+    "เช็คสกุลเงินอื่นๆจ่ายในประเทศต้นกำเนิด ราคา 1,500 บาท ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):0.125% ขั้นต่ำ ตามอัตราที่กำหนด เงื่อนไข: ขั้นต่ำ USD10 แต่ไม่เกิน USD3,000"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ตามอัตราที่กำหนด เงื่อนไข:",
+    "Clean Foreign Currency Checks",
+    "เช็คสกุลเงินดอลล่าสหรัฐจ่ายในสหรัฐอเมริกา ราคา 200 บาท บวก0.125% ของค่าเช็ค",
+    "เช็คสกุลเงินดอลล่าสหรัฐจ่ายนอกสหรัฐอเมริกา ราคา 400 บาท บวก0.5% ของค่าเช็ค",
+    "เช็คสกุลเงินอื่นๆจ่ายในประเทศต้นกำเนิด ราคา 1,500 บาท บวก0.25% ของค่าเช็ค ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,200 บาท เงื่อนไข: - เศษของระยะเวลา90วันให้ถือเป็นหนึ่งระยะเวลา- ค่าธรรมเนียมการเปิดRevolving L/C 0.25% ต่อ90วัน โดยเศษของระยะเวลา 90 วัน ให้ถือเป็นอีกหนึ่งระยะเวลา ขั้นต่ำ1,200บาท- หมายเหตุ สำหรับ Revolving LC Reinstatement คิดอัตราเดียวกันกับค่าธรรมเนียมการเปิด L/C- สำหรับการเบิกเกินวงเงิน(LC Overdrawn) ค่าธรรมเนียมอัตรา 0.25% ต่อธุรกรรมที่เกินวงเงิน ขั้นต่ำ 1,200 บาท หรือ USD 40",
-   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,200 บาท เงื่อนไข: โดยเศษของระยะเวลา 30 วันให้ถือเป็นอีกหนึ่งระยะเวลา"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 200
+   },
+   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,200 บาท เงื่อนไข: โดยเศษของระยะเวลา 30 วันให้ถือเป็นอีกหนึ่งระยะเวลา",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.2,
+    "min_fee": 200
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,200 บาท เงื่อนไข: - ขั้นต่ำ 1200 บาท กรณีเก็บจากผู้ซื้อ (Drawee)- ขั้นต่ำ USD 40 กรณีเก็บจากผู้ขาย (Drawer)- ค่าcable 700 บาท (ถ้ามี) '- ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน (Comm In Lieu) 0.125% Flat ขั้นต่ำ 1,000บาท หรือ USD35 (เฉพาะกรณีที่ตัดเงินสกุลเดียวกัน)",
@@ -1472,7 +2475,24 @@
   "international_fees": "ซูมิโตโม มิตซุย แบงกิ้ง คอร์ปอเรชั่น",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ตามอัตราที่กำหนด เงื่อนไข:\n                                        \n                                        -กรณีรับเงินเป็นสกุล THB คิดค่าธรรมเนียม 1/20%   ขั้นต่ำ 300 บาท- กรณีรับเงินเป็นเงิน USD และเงินตราต่างประเทศสกุลอื่นๆ คิดค่าธรรมเนียม USD10 สกุลเงิน JPY คิดค่าธรรมเนียม JPY1,500 (เงินโอนผ่านจากกลุ่มธนาคารในเครือ SMBC ไม่คิดค่าธรรมเนียม)- กรณีรับเงินโอนจากต่างประเทศและโอนบาทเน็ตไปธนาคารอื่น คิดค่าธรรมเนียม 1/20% (ขั้นต่ำ300 บาท)และค่าธรรมเนียมบาทเนตโอนออก 150 บาท",
+    "fee": [
+     "ตามอัตราที่กำหนด เงื่อนไข:",
+     "กรณีรับเงินเป็นสกุล THB คิดค่าธรรมเนียม 1/20% ขั้นต่ำ 300 บาท",
+     "กรณีรับเงินเป็นเงิน USD และเงินตราต่างประเทศสกุลอื่นๆ คิดค่าธรรมเนียม USD10 สกุลเงิน JPY คิดค่าธรรมเนียม JPY1,500 (เงินโอนผ่านจากกลุ่มธนาคารในเครือ SMBC ไม่คิดค่าธรรมเนียม)",
+     "กรณีรับเงินโอนจากต่างประเทศและโอนบาทเน็ตไปธนาคารอื่น คิดค่าธรรมเนียม 1/20% (ขั้นต่ำ300 บาท)และค่าธรรมเนียมบาทเนตโอนออก 150 บาท"
+    ],
+    "fee_numeric": [
+     1,
+     20,
+     300,
+     10,
+     1,
+     500,
+     1,
+     20,
+     300,
+     150
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1485,21 +2505,52 @@
      "25% สำหรับสกุลเงิน USD EUR SGD AUD และสกุลตราต่างประเทศอื่น-",
      "5% สำหรับสกุลเงิน JPY"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "800 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        ค่าทำรายการ 800 บาท เป็นค่า Cable 497 บาท ค่าอากรแสตมป์ 3 บาท/รายการ และค่าคอมมิชชั่น 300 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):0.25 - 0.5% ขั้นต่ำ 300 บาท/รายการ เงื่อนไข:\n                                        \n                                        -0.25%  สำหรับสกุลเงิน USD, EUR, SGD, AUD และสกุลตราต่างประเทศอื่น-0.5% สำหรับสกุลเงิน  JPY",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "800 บาท/ฉบับ เงื่อนไข: ค่าทำรายการ 800 บาท เป็นค่า Cable 497 บาท ค่าอากรแสตมป์ 3 บาท/รายการ และค่าคอมมิชชั่น 300 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):0.25",
+    "0.5% ขั้นต่ำ 300 บาท/รายการ เงื่อนไข:",
+    "0.25% สำหรับสกุลเงิน USD, EUR, SGD, AUD และสกุลตราต่างประเทศอื่น",
+    "0.5% สำหรับสกุลเงิน JPY"
+   ],
+   "draft_selling_fee_numeric": {
+    "base_fee": 800,
+    "stamp_duty": 800
+   },
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนคิดเป็น 1 เดือน",
-   "domestic_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนคิดเป็น 1 เดือน"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 0
+   },
+   "domestic_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนคิดเป็น 1 เดือน",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท เงื่อนไข: - กรณีธนาคารเป็นผู้เรียกเก็บจากผู้จ่ายเงิน ค่าบริการ 0.125% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 1,000 บาท- กรณีโอนไปยังธนาคารอื่นให้เรียกเก็บจากผู้จ่ายเงิน ค่าบริการ 0.0625% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 1,000 บาท",
@@ -1529,7 +2580,12 @@
   "international_fees": "ดอยซ์แบงก์",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ตามอัตราที่กำหนด เงื่อนไข:\n                                        \n                                        500 บาท/รายการ",
+    "fee": [
+     "ตามอัตราที่กำหนด เงื่อนไข: 500 บาท/รายการ"
+    ],
+    "fee_numeric": [
+     500
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1538,21 +2594,53 @@
      "500 - 1600 บาท/รายการ เงื่อนไข: ต่อรายการและยอดเงินที่โอนออก ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):",
      "25% ขั้นต่ำ 500 บาท/รายการ"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "200 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        200 บาท ต่อฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):0.25% ขั้นต่ำ 500 บาท/รายการ",
-   "foreign_bill_buying_fee": "1,000 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ขั้นต่ำ 0.25% ขั้นต่ำ 1,000 บาท/รายการ เงื่อนไข:\n                                        \n                                        collect from client Min THB1,000.- Collect from Non Client Min THB2,500.-",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "200 บาท/ฉบับ เงื่อนไข: 200 บาท ต่อฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):0.25% ขั้นต่ำ 500 บาท/รายการ"
+   ],
+   "draft_selling_fee_numeric": {
+    "base_fee": 200,
+    "stamp_duty": 200
+   },
+   "foreign_bill_buying_fee": [
+    "1,000 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ขั้นต่ำ 0.25% ขั้นต่ำ 1,000 บาท/รายการ เงื่อนไข: collect from client Min THB1,000.",
+    "Collect from Non Client Min THB2,500."
+   ],
+   "foreign_bill_buying_fee_numeric": {
+    "base_fee": 1,
+    "stamp_duty": 0
+   },
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 2,000 บาท เงื่อนไข: Opening comm by applicant Min THB2,000.- Opening comm by Beneficiary Min THB2,500.-",
-   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 2,000 บาท เงื่อนไข: Opening comm by applicant banks Min THB2,000.- Opening comm by Beneficiary Min THB2,500.-"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 0
+   },
+   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 2,000 บาท เงื่อนไข: Opening comm by applicant banks Min THB2,000.- Opening comm by Beneficiary Min THB2,500.-",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.2,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "ไม่มีบริการ",
@@ -1576,7 +2664,12 @@
   "international_fees": "บีเอ็นพี พารีบาส์",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ตามอัตราที่กำหนด เงื่อนไข:\n                                        \n                                        250 บาท/รายการ",
+    "fee": [
+     "ตามอัตราที่กำหนด เงื่อนไข: 250 บาท/รายการ"
+    ],
+    "fee_numeric": [
+     250
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1585,21 +2678,46 @@
      "ตามอัตราที่กำหนด เงื่อนไข: 600 บาท/รายการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):",
      "25% ขั้นต่ำ ตามอัตราที่กำหนด เงื่อนไข: ขั้นต่ำ 30 USD"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 2,000 บาท",
-   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 2,000 บาท"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 0
+   },
+   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 2,000 บาท",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.2,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 2,000 บาท",
@@ -1620,61 +2738,19 @@
   }
  },
  {
-  "international_fees": "เมกะ สากลพาณิชย์",
-  "international_transfer_fees": {
-   "inward_remittance": {
-    "fee": "ตามอัตราที่กำหนด เงื่อนไข:\n                                        \n                                        - กรณีลูกค้ารับงินโอนเป็นสกุลเงินตราต่างประเทศ คิดค่าธรรมเนียม USD12.00 x อัตราแลกเปลี่ยนขาเข้าเรทแรกสุดของวัน - กรณีลูกค้าต้องการรับเข้าบัญชีไทยบาท คิดค่าธรรม 120 บาท เทียบเคียงเป็นยูเอสดอลล่าร์สหรัฐไม่เกิน 3,000.00 และ 300 บาท และ เทียบเคียงเป็นยูเอสดอลล่าร์สหรัฐ ตั้งแต่ 3,000.00- กรณีรับเงินโอนสกุลไทยบาท ค่าธรรมเนียม 120 บาท สำหรับยอดเงินโอนเข้าไม่เกิน 100,000 บาท และ 300 บาท ถ้าได้รับเงินโอนตั้งแต่ 100,000 บาท",
-    "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
-   },
-   "outward_remittance": {
-    "fee_type": "ตามอัตราที่กำหนด",
-    "conditions": [
-     "450 บาท/รายการ - ตามอัตราที่กำหนด เงื่อนไข: - ปลายทางรับเต็มจำนวนเพิ่ม 1200 บาท เฉพาะสกุลเงินอลล่าร์สหรัฐ- สกุลเงินอื่น ๆ เรียกเก็บตามที่ธนาคารตัวแทนเรียกเก็บมา ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):",
-     "125% ขั้นต่ำ ตามอัตราที่กำหนด เงื่อนไข: -",
-     "125% ทุกสกุลเงินตราต่างประเทศ ขั้นต่ำ USD",
-     "00"
-    ],
-    "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
-   }
-  },
-  "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "300 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        - โซนเอชีย 400 บาท- โซนยุโรป และ สหรัฐอเมริกา 500 บาท- อื่น ๆ 800-1,200 บาท- ดราฟท์คืนกลับ 1,500 บาท ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "300 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        - โซนเอชีย 400 บาท- โซนยุโรป และ สหรัฐอเมริกา 500 บาท- อื่น ๆ 800-1,200 บาท- ดราฟท์คืนกลับ 1,500 บาท ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "300 บาท/ฉบับ เงื่อนไข:\n                                        \n                                        - โซนเอชีย 400 บาท- โซนยุโรป และ สหรัฐอเมริกา 500 บาท- อื่น ๆ 800-1,200 บาท- คืนกลับ 1,500 บาท ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีค่าธรรมเนียม",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
-  },
-  "letter_of_credit_fees": {
-   "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท เงื่อนไข: 1. ค่าธรรมเนียมเปิด LC (ต่างประเทศ) - ค่าบริการ 0.25% ของจำนวนเงินที่เปิด บวก Tolerance (ถ้ามี) ต่อ 1 ระยะเวลา (3 เดือน) (ขั้นต่ำ 1,000 บาท) - ค่าสวิฟท์/เคเบิ้ล 1,300 บาท - ค่าอากรแสตมป์ 30 บาท2. ค่าธรรมเนียมแก้ไข LC (ต่างประเทศ)2.1 กรณีเพิ่มจำนวน และ/หรือ ขยายวันหมดอายุ - ค่าบริการ 0.25% ของจำนวนเงินที่เพิ่ม บวก Tolerance (ถ้ามี) ต่อ 1 ระยะเวลา (3 เดือน) (ขั้นต่ำ 1,000 บาท) - ค่าสวิฟท์/เคเบิ้ล 350 บาท2.2 กรณีแก้ไข LC เงื่อนไขอื่น ๆ - ค่าธรรมเนียมแก้ไข 1,000 บาท - ค่าสวิฟท์/เคเบิ้ล 350 บาท2.3 กรณีขอยกเลิก LC - ค่าสวิฟท์/เคเบิ้ล 400 บาท หมายเหตุ- ระยะเวลาน้อยกว่า 3 เดือน ให้คิดเป็นอีก 1 ระยะเวลา",
-   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,000 บาท เงื่อนไข: 1. ค่าธรรมเนียมเปิด LC (ในประเทศ) - ค่าบริการ 0.20% ของจำนวนเงินที่เปิด บวก Tolerance (ถ้ามี) ต่อ 1 เดือน (ขั้นต่ำ 1,000 บาท) - ค่าสวิฟท์/เคเบิ้ล 500 บาท - ค่าอากรแสตมป์ 30 บาท2. ค่าธรรมเนียมแก้ไข LC (ในประเทศ) 2.1 กรณีเพิ่มจำนวน และ/หรือ ขยายวันหมดอายุ - ค่าบริการ 0.20% ของจำนวนเงินที่เพิ่ม บวก Tolerance (ถ้ามี) ต่อ 1 เดือน (ขั้นต่ำ 1,000 บาท) - ค่าสวิฟท์/เคเบิ้ล 500 บาท2.2 กรณีแก้ไขเงื่อนไขอื่น ๆ - ค่าธรรมเนียมแก้ไข 1,000 บาท - ค่าสวิฟท์/เคเบิ้ล 150 บาท2.3 กรณีขอยกเลิก LC - ค่าสวิฟท์/เคเบิ้ล 400 บาท หมายเหตุ - ระยะเวลาน้อยกว่า 1 เดือน ให้คิดเป็นอีก 1 เดือน"
-  },
-  "bill_collection_fees": {
-   "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 800 บาท เงื่อนไข: 1. ค่าธรรมเนียมเรียกเก็บเงินตามตั๋ว Inward Bill (D/P) 1.1 ค่าธรรมเนียมการจัดการ (Handling Fee) เรียกเก็บจากผู้จ่ายเงิน: ค่าบริการ 0.125% ของจำนวนเงินตามตั๋ว (ขั้นต่ำ 800 บาท)1.2 ค่าธรรมเนียมโอนจ่ายชำระตั๋วเรียกเก็บ D/P เรียกเก็บกับผู้สั่งจ่าย : ผู้ขาย (เว้นแต่ตามคำสั่งของธนาคารผู้เรียกเก็บ หรือ ขึ้นอยู่กับข้อตกลง 2 ฝ่าย) : ค่าบริการ USD100 ต่อฉบับ 2. ค่าธรรมเนียมเรียกเก็บเงินตามตั๋ว Inward Bill (D/A)2.1 - ค่ารับรองการชำระเงินตามตั๋วเงินที่มีกำหนดเวลาเรียกเก็บจากผู้จ่ายเงิน : ค่าบริการ 0.125% ของจำนวนเงินตามตั๋ว (ขั้นต่ำ 800 บาท) - ค่าเคเบิ้ล / สวิฟท์ : 300 บาท ต่อชุด 2.2 ค่าธรรมเนียมโอนจ่ายชำระตั๋วเรียกเก็บ D/A เรียกเก็บกับผู้สั่งจ่าย : ผู้ขาย (เว้นแต่ตามคำสั่งของธนาคารผู้เรียกเก็บ หรือ ขึ้นอยู่กับข้อตกลง 2 ฝ่าย) : ค่าบริการ USD100 ต่อฉบับ ทั้งข้อ 1. D/P และข้อ 2. D/A เรียกเก็บ ค่าอากรแสตมป์ เรียกเก็บจากผู้จ่าย - ตั๋วแลกเงิน 3 บาท ต่อ ฉบับ - ใบตราส่งสินค้า 2 บาท ต่อ ต้นฉบับ - กรมธรรม์ประกันภัย (ถ้ามี) เก็บตามมูลค่าของกรมธรรม์ฯ - ตั๋วสัญญาใช้เงินเพื่อกู้ D/P, D/A - T/R ชำระ : 3 บาท ต่อฉบับ (กรณีกู้ T/R ชำระต่างประเทศ)3. ค่าธรรมเนียมการคืนเอกสาร D/P : คิดค่าบริการ USD100 ต่อชุด (นับจากได้รับการยืนยันจากธนาคารผู้เรียกเก็บ)4. ค่าธรรมเนียมในการรักษาเอกสาร D/P เกินกว่า 2 เดือน : ค่าบริการ USD30 ต่อชุด ต่อเดือน",
-   "outward_bill_fee_exporter": "500 บาท/ฉบับ เงื่อนไข: 1. ตั๋วเรียกเก็บสินค้าออกภายใต้ B/C ( BILL FOR COLLECTION D/A, D/P )ค่าธรรมเนียมในการรับซื้อตั๋ว 500 บาท ต่อ ฉบับค่าธรรมเนียมสำหรับใบกำกับสินค้าฉบับต่อไป100 บาท ต่อ ฉบับ 2. ค่าติดต่อสื่อสาร ค่าจัดส่งเอกสารต่างประเทศ -ประเทศในทวิปเอเซีย ขั้นต่ำ 500 ต่อฉบับ -ประเทศในทวีปยุโรปขั้นต่ำ 1,200 ต่อฉบับ -ปรเทศในทวีปอเมริกาขั้นต่ำ 800 ต่อฉบับ -ประเทศในตะวันออกกลางขึ้นต่ำ 800 ต่อฉบับ -ประเทศในแถบอื่น ๆ ขั้นต่ำ 800 ต่อฉบับหมายเหตุ: หากอัตราจริงที่เรียกเก็บโดยผู้ให้บริการ courier สูงกว่าราคาขึ้นต่ำที่ธนาคารกำหนด ธนาคารจะเรียกเก็บจากราคาตามที่จ่ายผู้ให้บริการจริง. 3. ค่า swift 400 บาท ต่อฉบับ 4. ค่าอากรแสตมป์ 3 บาท ต่อ ฉบับ 5. ค่าธรรมเนียมการชำระเงินสกุลเดียวกันกับภาระ หนี้ USD12.- ต่อ ฉบับ",
-   "outward_bill_fee_importer": "0.125% ของจำนวนเงินเรียกเก็บ",
-   "import_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ ตามอัตราที่กำหนด เงื่อนไข: 1. ค่าธรรมเนียมตั๋วขาเข้าภายใต้ LC Import Bill1.1 ค่าธรรมเนียมจ่ายตั๋วขาเข้าตาม LC-ต่างประเทศ (1) ตั๋วจ่ายทันทีเมื่อเห็น (AT SIGHT) เรียกเก็บจากผู้รับผลประโยชน์ตาม LC (เว้นแต่ LC ระบุให้เรียกเก็บกับผู้เปิด LC) : ค่าบริการ USD120 ต่อชุด (2) ตั๋วจ่ายเมื่อมีกำหนดระยะเวลา (USANCE) เรียกเก็บจากผู้รับผลประโยชน์ตาม LC (เว้นแต่ LC ระบุให้เรียกเก็บกับผู้เปิด LC) : ค่าบริการ USD150 ต่อชุด - ค่ารับรองตั๋วเงินที่มีกำนหดเวลา (Acceptance Fee / Engagement Fee) : 0.125% ของจำนวนเงินตามตั๋ว ต่อเดือน (ขั้นต่ำ 500 บาท) ทั้ง (1) AT SIGHT และ (2) USANCE คิด : - ค่าอากรแสตมป์ เรียกเก็บจากผู้จ่าย - ตั๋วแลกเงิน 3 บาท ต่อ ฉบับ - ใบตราส่งสินค้า 2 บาท ต่อ ต้นฉบับ - กรมธรรม์ประกันภัย (ถ้ามี) เรียกเก็บตามมูลค่าของกรมธรรม์ฯ - ตั๋วสัญญาใช้เงินเพื่อกู้ LC - T/R ชำระ : 3 บาท ต่อฉบับ (กรณีกู้ T/R ชำระต่างประเทศ) - ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน กรณีชำระด้วยสกุลต่างประเทศ (Commission in lieu of exchange) : 0.125% ของจำนวนเงินที่ชำระ (ขั้นต่ำ USD20.-) 1.2 ค่าธรรมเนียมจ่ายตั๋วขาเข้าตาม LC-ในประเทศ 1) ค่าธรรมเนียมจัดการ (Handling Fee) : ค่าบริการ 800 บาท ต่อชุด 2) บาทเน็ท : 150 บาท ต่อชุด 3) ค่าอากรแสตมป์ เรียกเก็บจากผู้จ่าย - ตั๋วแลกเงิน 3 บาท ต่อ ฉบับ - ใบตราส่งสินค้า 2 บาท ต่อ ต้นฉบับ - กรมธรรม์ประกันภัย (ถ้ามี) เรียกเก็บตามมูลค่าของกรมธรรม์ฯ - ตั๋วสัญญาใช้เงินเพื่อกู้ T/R ชำระ : 3 บาท ต่อฉบับ2. ค่าธรรมเนียมในการออกหนังสือค้ำประกันให้กับสายเรือ และ/หรือ การโอนสิทธิ์การรับสินค้าตามใบสั่งปล่อยของสายการบิน : ค่าบริการ ฉบับละ 500 บาท ต่อเดือน เศษของเดือนคิดเป็นอีก 1 เดือน3. ค่าธรรมเนียมบริการค้นหาเอกสาร 3.1 อายุเอกสาร 3 เดือนขึ้นไป แต่ไม่เกิน 1 ปี : ค่าบริการ 500 บาท ต่อชุด 3.2 อายุเอกสารเกินกว่า 1 ปี : ค่าบริการ 1,000 บาท ต่อชุด",
-   "export_bill_fee_seller": {
-    "first_invoice": "",
-    "subsequent_invoices": ""
-   },
-   "export_bill_fee_buyer": "ตามอัตราที่กำหนด เงื่อนไข: ขั้นต่ำ 91 USD หมายเหตุ. - ค่าธรรมเนียมในการรับซื้อตั๋ว 35 USD - ค่าจัดส่งเอกสารต่างประเทศ 30 USD - CORR.BANK CHGS 25 USD - ค่าอากรแสตมป์ 1 USD"
-  },
-  "other_fees": {
-   "other_fee": [
-    "บริการด้านการนำเข้า1.ค่าสวิฟท์/เคเบิ้ล คิดค่าบริการ : 400 บาท ต่อฉบับ2.ค่าส่งเอกสารไปรษณีย์, EMS และ/หรือค่าบริการ Courier คิดค่าธรรมเนียม ขั้นต่ำ : 100 บาท ต่อฉบับ (หากอัตราจริงที่เรียกเก็บโดยผู้ให้บริการ Courier สูงกว่าราคาขั้นต่ำที่ธนาคารกำหนด ธนาคารจะเรียกเก็บจากราคาตามที่จ่ายผู้ให้บริการจริง)บริการด้านการส่งออก1. เลตเตอร์ออฟเครดิตด้านสินค้าออก 1.1 ค่าธรรมเนียมในการแจ้งแลตเตอร์ออฟเครดิต อัตราค่าบริการ 800 บาท ต่อ ฉบับ 1.2 ค่าธรรมเนียมในการแจ้งแก้ไขแลตเตอร์ออฟเครดิต อัตราค่าบริการ 1,000 บาท ต่อ ฉบับ 1.3 ค่าธรรมเนียมในการยืนยันเลตเตอร์ออฟเครดิต อัตราค่าบริการ 0.25% ของจำนวน เงินที่ยีนยัน ต่อทุก 3 เดือน2. ค่าธรรมเนียมในการโอนเลตเตอร์ออฟเครดิต 2.1 โอนภายในประเทศ อัตราค่าบริการ 0.15% ของจำนวนที่โอน 2.2 โอนต่างประเทศ อัตราค่าบริการ 0.25% ของจำนวนที่โอนหมายเหตุ: อัตราค่าบริการขั้นต่ำ 2,000 บาท + swift 400 บาท"
-   ]
-  },
-  "additional_information": {
-   "fee_url": "https://www.global-ebanking.com/ebcontent.jsp"
-  }
- },
- {
   "international_fees": "สแตนดาร์ดชาร์เตอร์ด (ไทย)",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ตามอัตราที่กำหนด เงื่อนไข:\n                                        \n                                        - เงินโอนเข้าบัญชีธนาคารสแตนดาร์ดชาร์เตอร์ด(ไทย) เพื่อเข้าบัญชีสกุลเงินบาท ค่าคอมมิชชั่น 250 บาท- เงินโอนเข้าเป็นสกุลเงินบาท เพื่อเข้าบัญชีธนาคารอื่นเป็นเงินสกุลบาท ค่าคอมมิชชั่น 1,000บาท",
+    "fee": [
+     "ตามอัตราที่กำหนด เงื่อนไข:",
+     "เงินโอนเข้าบัญชีธนาคารสแตนดาร์ดชาร์เตอร์ด(ไทย) เพื่อเข้าบัญชีสกุลเงินบาท ค่าคอมมิชชั่น 250 บาท",
+     "เงินโอนเข้าเป็นสกุลเงินบาท เพื่อเข้าบัญชีธนาคารอื่นเป็นเงินสกุลบาท ค่าคอมมิชชั่น 1,000บาท"
+    ],
+    "fee_numeric": [
+     250,
+     1,
+     0
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1685,21 +2761,46 @@
      "25% ของยอดเงินโอน (ขั้นต่ำ 500 บาท)- การโอนออกจากบัญชีเงินตราต่างประเทศ (ตัดจากบัญชีสกุลเงินตราต่างประเทศ) โอนเงินออกเป็นสกุลเงินตราต่างประเทศ ค่า Com. In Lieu",
      "25% ของยอดเงินโอน (ขั้นต่ำ 500 บาท)"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,200 บาท เงื่อนไข: - สำหรับ Revocable and Irrevocable L/C at Sight / Usance, Back-to-Back L/C, Revolving L/C ขั้นต่ำ 1,200 บาท หรือ USD40 โดยเศษของระยะเวลา 90 วันให้ถือเป็นอีกหนึ่งระยะเวลา- หมายเหตุ สำหรับ Revolving LC Reinstatement คิดอัตราเดียวกันกับค่าธรรมเนียมการเปิด L/C- สำหรับการเบิกเกินวงเงิน ค่าธรรมเนียมอัตราร้อยละ 0.25 ต่อธุรกรรมที่เกินวงเงิน ขั้นต่ำ 1,200 บาท หรือ USD 40- Standby LC คิดค่าธรรมเนียมการเปิดร้อยละ 2.5ต่อปี ขั้นต่ำ 1,200 บาท หรือ USD40",
-   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,200 บาท เงื่อนไข: ขั้นต่ำ 1,200 บาท โดยเศษของระยะเวลา 30 วันให้ถือเป็นอีกหนึ่งระยะเวลา"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 200
+   },
+   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 30 วันขั้นต่ำ 1,200 บาท เงื่อนไข: ขั้นต่ำ 1,200 บาท โดยเศษของระยะเวลา 30 วันให้ถือเป็นอีกหนึ่งระยะเวลา",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.2,
+    "min_fee": 200
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,200 บาท เงื่อนไข: Import Bill for Collection (Handling Fee - Sight and Usance Bill)- ขั้นต่ำ 1,200 บาท หรือ USD 40 กรณีเก็บจากผู้ซื้อ (Drawee)- ขั้นต่ำ USD 100 กรณีเก็บจากผู้ขาย (Drawer)",
@@ -1727,7 +2828,25 @@
   "international_fees": "อาร์ เอช บี",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ตามอัตราที่กำหนด เงื่อนไข:\n                                        \n                                        คำนวณตามจำนวนเงินโอนหรือเทียบเท่า ดังนี้จำนวนเงินโอน 1 - 80,000 บาท ค่าธรรมเนียม 200 บาท  จำนวนเงินโอน 80,001 - 99,999 บาท ค่าธรรมเนียม 250 บาท  จำนวนเงินโอนตั้งแต่100,000 ขึ้นไป ค่าธรรมเนียม 500 บาท",
+    "fee": [
+     "ตามอัตราที่กำหนด เงื่อนไข: คำนวณตามจำนวนเงินโอนหรือเทียบเท่า ดังนี้จำนวนเงินโอน 1",
+     "80,000 บาท ค่าธรรมเนียม 200 บาท จำนวนเงินโอน 80,001",
+     "99,999 บาท ค่าธรรมเนียม 250 บาท จำนวนเงินโอนตั้งแต่100,000 ขึ้นไป ค่าธรรมเนียม 500 บาท"
+    ],
+    "fee_numeric": [
+     1,
+     80,
+     0,
+     200,
+     80,
+     1,
+     99,
+     999,
+     250,
+     100,
+     0,
+     500
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1736,21 +2855,46 @@
      "500 บาท/รายการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):",
      "25% ขั้นต่ำ 1000 บาท/รายการ"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของวันคิดเป็น 1 ระยะเวลา (ค่าธรรมเนียมในการเปิด L/C ต่อ 1 ครั้ง มีดังนี้คือ ค่าธรรมเนียมการเปิด + ค่า Swift 1,000 บาท + ค่าอากรแสตมป์ 30 บาท)",
-   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 365 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนคิดเป็น 1 เดือน"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 30
+   },
+   "domestic_lc": "2.5% ของจำนวนเงินที่เปิด L/C ต่อ 365 วันขั้นต่ำ 1,000 บาท เงื่อนไข: เศษของเดือนคิดเป็น 1 เดือน",
+   "domestic_lc_numeric": {
+    "percent_fee": 2.5,
+    "min_fee": 0
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท",
@@ -1777,7 +2921,22 @@
   "international_fees": "อินเดียนโอเวอร์ซีส์",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ตามอัตราที่กำหนด เงื่อนไข:\n                                        \n                                        - Upto USD 1,000.00 or its equivalent 400/per remittanlce. - Above USD 1,000.00 or its equivalent 600/per remittanlce. - Additional Charges for holding IR beyond 1 Month from its value Date without conversion p.m. additionally 600/per remittance.",
+    "fee": [
+     "ตามอัตราที่กำหนด เงื่อนไข:",
+     "Upto USD 1,000.00 or its equivalent 400/per remittanlce.",
+     "Above USD 1,000.00 or its equivalent 600/per remittanlce.",
+     "Additional Charges for holding IR beyond 1 Month from its value Date without conversion p.m. additionally 600/per remittance."
+    ],
+    "fee_numeric": [
+     1,
+     0,
+     400,
+     1,
+     0,
+     600,
+     1,
+     600
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1786,21 +2945,52 @@
      "100 - 600 บาท/รายการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):",
      "2%"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "300 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "200 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "800 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "300 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {
+    "base_fee": 300
+   },
+   "draft_selling_fee": [
+    "200 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {
+    "base_fee": 200
+   },
+   "foreign_bill_buying_fee": [
+    "800 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {
+    "base_fee": 800
+   },
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,500 บาท",
-   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,500 บาท"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 500
+   },
+   "domestic_lc": "0.2% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,500 บาท",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.2,
+    "min_fee": 500
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,000 บาท",
@@ -1824,7 +3014,25 @@
   "international_fees": "โอเวอร์ซี-ไชนีสแบงกิ้งคอร์ปอเรชั่น",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ตามอัตราที่กำหนด เงื่อนไข:\n                                        \n                                        -ค่าธรรมเนียมการโอนเงิน Inward Remittance 300 บาท-กรณีเงินเข้าเป็นสกุลUSD : คิดค่าธรรมเนียมเพิ่ม  THB400 กรณีฝากเข้าบัญชี THB- ค่าธรรมเนียม commission in lieu of exchange - 0.25% flat ขั้นต่ำ USD25- ค่าธรรมเนียมการส่งเอกสาร : เอเซีย 600 บาท, ยุโรปและอเมริการ 1,000 บาท, อื่นๆ จ่ายตามจริง- Fee for Holding of Foreign Currency Fund 500 บาท / รายการ",
+    "fee": [
+     "ตามอัตราที่กำหนด เงื่อนไข:",
+     "ค่าธรรมเนียมการโอนเงิน Inward Remittance 300 บาท",
+     "กรณีเงินเข้าเป็นสกุลUSD : คิดค่าธรรมเนียมเพิ่ม THB400 กรณีฝากเข้าบัญชี THB",
+     "ค่าธรรมเนียม commission in lieu of exchange",
+     "0.25% flat ขั้นต่ำ USD25",
+     "ค่าธรรมเนียมการส่งเอกสาร : เอเซีย 600 บาท, ยุโรปและอเมริการ 1,000 บาท, อื่นๆ จ่ายตามจริง",
+     "Fee for Holding of Foreign Currency Fund 500 บาท / รายการ"
+    ],
+    "fee_numeric": [
+     300,
+     400,
+     0.25,
+     25,
+     600,
+     1,
+     0,
+     500
+    ],
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1835,21 +3043,48 @@
      "25% ขั้นต่ำ ตามอัตราที่กำหนด เงื่อนไข: - ค่าธรรมเนียม commission in lieu of exchange -",
      "25% flat ขั้นต่ำ USD25 / GBP15 / EUR20"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "300 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "300 บาท/ฉบับ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {
+    "base_fee": 300
+   },
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,200 บาท เงื่อนไข: - เศษของ 90 วัน ให้ถือเป็นอีกหนึ่งระยะเวลา- ค่าสวิฟท์/เคเบิ้ล - การเปิด LC 1,000 บาท-ค่าสวิฟท์/เคเบิ้ล - การแก้ไข LC 600 บาท-ค่าสวิฟท์/เคเบิ้ล - กรณีอื่นๆ 500 บาท- ค่าอากรแสตมป์ 30 บาท-ค่าธรรมเนียมการแก้ไขเพิ่มจำนวนเงินของLC -0.25% ต่อ 3 เดือน (ขั้นต่ำ 1,200 บาท)-ค่าธรรมเนียมการแก้ไขเพิ่มระยะเวลาของLC -0.25% ต่อ 3 เดือน (ขั้นต่ำ 1,200 บาท)-ค่าธรรมเนียมการแก้ไขข้อความอื่นๆ ของLC -1,200 บาท-ค่าธรรมเนียมการขอยกเลิก LC 1,200 บาท",
-   "domestic_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,200 บาท เงื่อนไข: - เศษของ 90 วัน ให้ถือเป็นอีกหนึ่งระยะเวลา- ค่าสวิฟท์/เคเบิ้ล - การเปิด LC 1,000 บาท-ค่าสวิฟท์/เคเบิ้ล - การแก้ไข LC 600 บาท-ค่าสวิฟท์/เคเบิ้ล - กรณีอื่นๆ 500 บาท- ค่าอากรแสตมป์ 30 บาท-ค่าธรรมเนียมการแก้ไขเพิ่มจำนวนเงินของLC -0.25% ต่อ 3 เดือน (ขั้นต่ำ 1,200 บาท)-ค่าธรรมเนียมการแก้ไขเพิ่มระยะเวลาของLC -0.25% ต่อ 3 เดือน (ขั้นต่ำ 1,200 บาท)-ค่าธรรมเนียมการแก้ไขข้อความอื่นๆ ของLC -1,200 บาท-ค่าธรรมเนียมการขอยกเลิก LC 1,200 บาท"
+   "foreign_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 200
+   },
+   "domestic_lc": "0.25% ของจำนวนเงินที่เปิด L/C ต่อ 90 วันขั้นต่ำ 1,200 บาท เงื่อนไข: - เศษของ 90 วัน ให้ถือเป็นอีกหนึ่งระยะเวลา- ค่าสวิฟท์/เคเบิ้ล - การเปิด LC 1,000 บาท-ค่าสวิฟท์/เคเบิ้ล - การแก้ไข LC 600 บาท-ค่าสวิฟท์/เคเบิ้ล - กรณีอื่นๆ 500 บาท- ค่าอากรแสตมป์ 30 บาท-ค่าธรรมเนียมการแก้ไขเพิ่มจำนวนเงินของLC -0.25% ต่อ 3 เดือน (ขั้นต่ำ 1,200 บาท)-ค่าธรรมเนียมการแก้ไขเพิ่มระยะเวลาของLC -0.25% ต่อ 3 เดือน (ขั้นต่ำ 1,200 บาท)-ค่าธรรมเนียมการแก้ไขข้อความอื่นๆ ของLC -1,200 บาท-ค่าธรรมเนียมการขอยกเลิก LC 1,200 บาท",
+   "domestic_lc_numeric": {
+    "percent_fee": 0.25,
+    "min_fee": 200
+   }
   },
   "bill_collection_fees": {
    "inward_bill_fee": "0.125% ของจำนวนเงินเรียกเก็บขั้นต่ำ 1,200 บาท เงื่อนไข: - กรณีธนาคารเป็นผู้เรียกเก็บจากผู้จ่ายเงิน: คิดค่าบริการ 0.125% ของจำนวนเงินที่เรียกเก็บ ขั้นต่ำ 1,200 บาท- ค่าธรรมเนียมสำหรับตั๋วเรียกเก็บแบบ D/A (acceptance commission)- 0.125% / เดือน ขั้นต่ำ 1,200 บาท - ค่าธรรมเนียม commission in lieu of exchange - 0.25% flat ขั้นต่ำ 1,200 บาท- ค่าธรรมเนียมการสั่งทำคำคัดค้าน: คิดค่าบริการ USD 150/ครั้ง - ค่าธรรมเนียมการคืนเอกสาร: คิดค่าบริการ USD 60/ครั้ง- ค่าธรรมเนียมการส่งข้อความ 500 บาท / ข้อความ- ค่าธรรมเนียมการส่งเอกสาร จ่ายตามจริง",
@@ -1873,7 +3108,10 @@
   "international_fees": "ทรู มันนี่",
   "international_transfer_fees": {
    "inward_remittance": {
-    "fee": "ไม่มีบริการ",
+    "fee": [
+     "ไม่มีบริการ"
+    ],
+    "fee_numeric": null,
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    },
    "outward_remittance": {
@@ -1881,21 +3119,40 @@
     "conditions": [
      "ไม่มีค่าธรรมเนียม ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
     ],
+    "conditions_numeric": {},
     "exchange_compensation_fee": "ไม่มีค่าธรรมเนียม"
    }
   },
   "check_and_draft_fees": {
-   "traveler_cheque_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "traveler_cheque_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "draft_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_buying_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "foreign_bill_selling_fee": "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ",
-   "exchange_compensation_fee": ""
+   "traveler_cheque_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": [
+    "ไม่มีบริการ ค่าธรรมเนียมชดเชยอัตราแลกเปลี่ยน(Commission in Lieu of Exchange):ไม่มีบริการ"
+   ],
+   "exchange_compensation_fee": null
   },
   "letter_of_credit_fees": {
    "foreign_lc": "ไม่มีบริการ",
-   "domestic_lc": "ไม่มีบริการ"
+   "foreign_lc_numeric": {},
+   "domestic_lc": "ไม่มีบริการ",
+   "domestic_lc_numeric": {}
   },
   "bill_collection_fees": {
    "inward_bill_fee": "ไม่มีบริการ",
@@ -1913,6 +3170,58 @@
   },
   "additional_information": {
    "fee_url": "https://truemoney.com.mm/en/\nhttps://truemoneytransfer.truemoney.com/"
+  }
+ },
+ {
+  "international_fees": "",
+  "international_transfer_fees": {
+   "inward_remittance": {
+    "fee": null,
+    "fee_numeric": null,
+    "exchange_compensation_fee": "ไม่มีบริการ"
+   },
+   "outward_remittance": {
+    "fee_type": "ไม่มีบริการ",
+    "conditions": null,
+    "conditions_numeric": {},
+    "exchange_compensation_fee": "ไม่มีบริการ"
+   }
+  },
+  "check_and_draft_fees": {
+   "traveler_cheque_buying_fee": null,
+   "traveler_cheque_buying_fee_numeric": {},
+   "traveler_cheque_selling_fee": null,
+   "draft_buying_fee": null,
+   "draft_buying_fee_numeric": {},
+   "draft_selling_fee": null,
+   "draft_selling_fee_numeric": {},
+   "foreign_bill_buying_fee": null,
+   "foreign_bill_buying_fee_numeric": {},
+   "foreign_bill_selling_fee": null,
+   "exchange_compensation_fee": null
+  },
+  "letter_of_credit_fees": {
+   "foreign_lc": "",
+   "foreign_lc_numeric": {},
+   "domestic_lc": "",
+   "domestic_lc_numeric": {}
+  },
+  "bill_collection_fees": {
+   "inward_bill_fee": "",
+   "outward_bill_fee_exporter": "",
+   "outward_bill_fee_importer": "",
+   "import_bill_fee": "",
+   "export_bill_fee_seller": {
+    "first_invoice": "",
+    "subsequent_invoices": ""
+   },
+   "export_bill_fee_buyer": ""
+  },
+  "other_fees": {
+   "other_fee": null
+  },
+  "additional_information": {
+   "fee_url": null
   }
  }
 ]

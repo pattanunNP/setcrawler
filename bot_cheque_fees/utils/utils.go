@@ -1,7 +1,9 @@
 package utils
 
 import (
+	"cheque_fee/models"
 	"net/http"
+	"regexp"
 	"strconv"
 	"strings"
 
@@ -43,26 +45,38 @@ func AddHeader(req *http.Request) {
 	req.Header.Set("X-Requested-With", "XMLHttpRequest")
 }
 
-func ExtractFee(doc *goquery.Document, element, col string) string {
-	return CleanText(doc.Find("tr." + element + " td." + col).Text())
+func ExtractFee(doc *goquery.Document, element, col string) models.FeeDetail {
+	text := CleanText(doc.Find("tr." + element + " td." + col).Text())
+	minFee, maxFee, percentageFee := extractNumericValues(text)
+
+	return models.FeeDetail{
+		Text:          text,
+		MinFee:        minFee,
+		MaxFee:        maxFee,
+		PercentageFee: percentageFee,
+		FeeUnit:       "บาท/ฉบับ",
+		Condition:     extractCondition(text),
+	}
 }
 
-// Extracts an array of fees from the text content based on element and column, split by "-" and newline
-func ExtractFeeArray(doc *goquery.Document, element, col string) []string {
-	var fees []string
+func ExtractFeeArray(doc *goquery.Document, element, col string) []models.FeeDetail {
+	var fees []models.FeeDetail
 	doc.Find("tr." + element + " td." + col).Each(func(i int, s *goquery.Selection) {
-		fee := CleanText(s.Text())
-		if fee != "" {
-			splitFees := strings.Split(fee, "-")
-			for _, f := range splitFees {
-				fees = append(fees, CleanText(f))
-			}
-		}
+		text := CleanText(s.Text())
+		minFee, maxFee, percentageFee := extractNumericValues(text)
+
+		fees = append(fees, models.FeeDetail{
+			Text:          text,
+			MinFee:        minFee,
+			MaxFee:        maxFee,
+			PercentageFee: percentageFee,
+			FeeUnit:       "บาท/ฉบับ",
+			Condition:     extractCondition(text),
+		})
 	})
 	return fees
 }
 
-// Extracts a link based on element and column
 func ExtractLink(doc *goquery.Document, element, col string) string {
 	link, _ := doc.Find("tr." + element + " td." + col + " a").Attr("href")
 	return link
@@ -73,14 +87,90 @@ func CleanText(text string) string {
 	return strings.Join(parts, " ")
 }
 
-func SplitByCondition(text string) []string {
-	parts := strings.Split(text, "เงื่อนไข")
-	var result []string
-	for _, part := range parts {
-		cleaned := CleanText(part)
-		if cleaned != "" {
-			result = append(result, "เงื่อนไข"+cleaned)
+func extractNumericValues(text string) (*float64, *float64, *float64) {
+	var minFee, maxFee, percentageFee *float64
+
+	if strings.Contains(text, "%") {
+		percentageFee = extractPercentage(text)
+	} else {
+		minFee, maxFee = extractMinMaxFees(text)
+	}
+
+	return minFee, maxFee, percentageFee
+}
+
+func extractMinMaxFees(text string) (*float64, *float64) {
+	// Extract numeric values from the text
+	r := regexp.MustCompile(`\d+(\.\d+)?`)
+	nums := r.FindAllString(text, -1)
+
+	var minFee, maxFee *float64
+
+	if len(nums) > 0 {
+		// Parse first number as minFee
+		min, err := strconv.ParseFloat(nums[0], 64)
+		if err == nil {
+			minFee = &min
+		}
+	} else {
+		minFee = nil // Ensure minFee is explicitly set to nil
+	}
+
+	if len(nums) > 1 {
+		// Parse second number as maxFee if exists
+		max, err := strconv.ParseFloat(nums[1], 64)
+		if err == nil {
+			maxFee = &max
+		}
+	} else {
+		maxFee = nil // Ensure maxFee is explicitly set to nil
+	}
+
+	// Check for specific patterns like "ขั้นต่ำ 10 บาท"
+	if strings.Contains(text, "ขั้นต่ำ") {
+		minValue := findMinValue(text)
+		if minValue != nil {
+			minFee = minValue
 		}
 	}
-	return result
+
+	return minFee, maxFee
+}
+
+func findMinValue(text string) *float64 {
+	// Regular expression to match "ขั้นต่ำ X บาท"
+	r := regexp.MustCompile(`ขั้นต่ำ\s*(\d+(\.\d+)?)\s*บาท`)
+	matches := r.FindStringSubmatch(text)
+	if len(matches) > 1 {
+		minVal, err := strconv.ParseFloat(matches[1], 64)
+		if err == nil {
+			return &minVal
+		}
+	}
+	return nil
+}
+
+func extractPercentage(text string) *float64 {
+	// Find percentage in text
+	r := regexp.MustCompile(`(\d+(\.\d+)?)%`)
+	matches := r.FindStringSubmatch(text)
+	if len(matches) > 1 {
+		percentageStr := matches[1]
+		percentage, err := strconv.ParseFloat(percentageStr, 64)
+		if err == nil {
+			return &percentage
+		}
+	}
+	return nil // Ensure percentageFee is explicitly set to nil if not found
+}
+
+func extractCondition(text string) string {
+	// Extract conditions from text
+	if strings.Contains(text, "เงื่อนไข") {
+		conditionParts := strings.Split(text, "เงื่อนไข:")
+		if len(conditionParts) > 1 {
+			return strings.TrimSpace(conditionParts[1])
+		}
+	}
+	return ""
 }

@@ -12,6 +12,7 @@ import (
 	"net/http"
 	"os"
 	"strconv"
+	"time"
 
 	"github.com/PuerkitoBio/goquery"
 )
@@ -110,6 +111,8 @@ func main() {
 				AdditionalInfo:    additionalInfo,
 			})
 		}
+
+		time.Sleep(2 * time.Second)
 	}
 
 	jsonData, err := json.MarshalIndent(debitFees, "", " ")

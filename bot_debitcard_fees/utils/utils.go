@@ -56,3 +56,60 @@ func DetermineTotalPage(doc *goquery.Document) int {
 	})
 	return totalPages
 }
+
+// Extracts numerical fee amount from a string
+func ExtractFeeAmount(text *string) int {
+	if text == nil {
+		return 0
+	}
+	re := regexp.MustCompile(`\d+`)
+	match := re.FindString(*text)
+	if match == "" {
+		return 0
+	}
+	amount, err := strconv.Atoi(match)
+	if err != nil {
+		return 0
+	}
+	return amount
+}
+
+// Extracts the first numerical fee amount from an array of strings
+func ExtractFeeAmountFromArray(feeArray *[]string) int {
+	if feeArray == nil || len(*feeArray) == 0 {
+		return 0
+	}
+	return ExtractFeeAmount(&(*feeArray)[0])
+}
+
+// Extracts percentage value from fee string
+func ExtractFeePercent(text *string) float64 {
+	if text == nil {
+		return 0.0
+	}
+	re := regexp.MustCompile(`\d+(\.\d+)?%`)
+	match := re.FindString(*text)
+	if match == "" {
+		return 0.0
+	}
+	match = strings.TrimSuffix(match, "%")
+	percent, err := strconv.ParseFloat(match, 64)
+	if err != nil {
+		return 0.0
+	}
+	return percent
+}
+
+// Extracts the number of free transactions from text
+func ExtractFreeTransactionCount(text string) int {
+	re := regexp.MustCompile(`\d+`)
+	match := re.FindString(text)
+	if match == "" {
+		return 0
+	}
+	count, err := strconv.Atoi(match)
+	if err != nil {
+		return 0
+	}
+	return count
+}

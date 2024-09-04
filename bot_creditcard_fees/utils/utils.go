@@ -30,8 +30,15 @@ func AddHeader(req *http.Request) {
 }
 
 func CleanText(text string) string {
+	// Replace commas with empty strings
+	text = strings.ReplaceAll(text, ",", "")
+
+	// Normalize whitespace (replace multiple spaces with a single space)
 	re := regexp.MustCompile(`\s+`)
-	return strings.TrimSpace(re.ReplaceAllString(text, " "))
+	text = re.ReplaceAllString(text, " ")
+
+	// Trim leading and trailing spaces
+	return strings.TrimSpace(text)
 }
 
 // SplitByCondition splits text by a condition and returns a slice

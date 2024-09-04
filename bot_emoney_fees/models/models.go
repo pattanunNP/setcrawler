@@ -17,17 +17,23 @@ type TopUpDetails struct {
 }
 
 type GeneralFees struct {
-	EntranceFee        string `json:"entrance_fee"`
-	AnnualFee          string `json:"annual_fee"`
-	CardReplacementFee string `json:"card_replacement_fee"`
-	MaintenaceFee      string `json:"maintenance_fee"`
+	EntranceFee           string  `json:"entrance_fee"`
+	AnnualFee             string  `json:"annual_fee"`
+	CardReplacementFee    string  `json:"card_replacement_fee"`
+	CardReplacementAmount float64 `json:"card_replacement_amount"`
+	CardReplacementCond   string  `json:"card_replacement_conditions"`
+	MaintenanceFee        string  `json:"maintenance_fee"`
 }
 
 type SpendingFees struct {
-	SpendingFee           string `json:"spending_fee"`
-	SpendingAlertFee      string `json:"spending_alert_fee"`
-	OverseasWithdrawalFee string `json:"overseas_withdrawal_fee"`
-	CurrencyConversionFee string `json:"currency_conversion_fee"`
+	SpendingFee              string  `json:"spending_fee"`
+	SpendingAlertFee         string  `json:"spending_alert_fee"`
+	OverseasWithdrawalFee    string  `json:"overseas_withdrawal_fee"`
+	OverseasWithdrawalAmount float64 `json:"overseas_withdrawal_amount"`
+	OverseasWithdrawalCond   string  `json:"overseas_withdrawal_conditions"`
+	CurrencyConversionFee    string  `json:"currency_conversion_fee"`
+	CurrencyConversionRate   float64 `json:"currency_conversion_rate"`
+	CurrencyConversionCond   string  `json:"currency_conversion_conditions"`
 }
 
 type TerminationFees struct {

@@ -4,8 +4,6 @@ import (
 	"debitcard_fees/models"
 	"debitcard_fees/utils"
 	"fmt"
-	"log"
-	"regexp"
 	"strconv"
 	"strings"
 
@@ -27,20 +25,7 @@ func ParseGeneralFees(doc *goquery.Document, index int) models.Fee {
 		}
 	} else {
 		// Attempt to extract a numerical value from the text
-		re := regexp.MustCompile(`\d+(?:,\d+)*`)
-		amountStr := re.FindString(annualFeeText)
-		amountStr = strings.ReplaceAll(amountStr, ",", "")
-		amount := 0
-
-		if amountStr != "" {
-			var err error
-			amount, err = strconv.Atoi(amountStr)
-			if err != nil {
-				log.Printf("Error parsing annual fee amount: %v", err)
-				amount = 0
-			}
-		}
-
+		amount := utils.ExtractFeeAmount(&annualFeeText)
 		// Only set conditions if they exist
 		var conditions *string
 		if annualFeeConditions != "" {
@@ -52,36 +37,55 @@ func ParseGeneralFees(doc *goquery.Document, index int) models.Fee {
 		}
 	}
 
+	entranceFeeText := utils.CleanText(doc.Find(fmt.Sprintf("tr.attr-CardHolderEntranceFee td.cmpr-col.%s span", col)).Text())
+	entranceFeeAmount := utils.ExtractFeeAmount(&entranceFeeText) // Utility function to extract amounts
+
 	return models.Fee{
-		EntranceFee:                utils.CleanText(doc.Find(fmt.Sprintf("tr.attr-CardHolderEntranceFee td.cmpr-col.%s span", col)).Text()),
-		AnnualFee:                  annualFee,
-		CardReplacementFee:         parseOptionalArray(doc, fmt.Sprintf("tr.attr-CardReplacementFee td.cmpr-col.%s span", col)),
-		PINReplacementFee:          parseOptionalString(doc, fmt.Sprintf("tr.attr-CardPINReplacement td.cmpr-col.%s span", col)),
-		StatementRequestFee:        parseOptionalArray(doc, fmt.Sprintf("tr.attr-CopyStatementFee td.cmpr-col.%s span", col)),
-		TransactionSlipRequestFee:  parseOptionalString(doc, fmt.Sprintf("tr.attr-CopySaleSlipFee td.cmpr-col.%s span", col)),
-		TransactionVerificationFee: parseOptionalString(doc, fmt.Sprintf("tr.attr-TransactionVerification td.cmpr-col.%s span", col)),
+		EntranceFee:                      entranceFeeText,
+		EntranceFeeAmount:                entranceFeeAmount,
+		AnnualFee:                        annualFee,
+		CardReplacementFee:               parseOptionalArray(doc, fmt.Sprintf("tr.attr-CardReplacementFee td.cmpr-col.%s span", col)),
+		CardReplacementFeeAmount:         utils.ExtractFeeAmountFromArray(parseOptionalArray(doc, fmt.Sprintf("tr.attr-CardReplacementFee td.cmpr-col.%s span", col))),
+		PINReplacementFee:                parseOptionalString(doc, fmt.Sprintf("tr.attr-CardPINReplacement td.cmpr-col.%s span", col)),
+		PINReplacementFeeAmount:          utils.ExtractFeeAmount(parseOptionalString(doc, fmt.Sprintf("tr.attr-CardPINReplacement td.cmpr-col.%s span", col))),
+		StatementRequestFee:              parseOptionalArray(doc, fmt.Sprintf("tr.attr-CopyStatementFee td.cmpr-col.%s span", col)),
+		StatementRequestFeeAmount:        utils.ExtractFeeAmountFromArray(parseOptionalArray(doc, fmt.Sprintf("tr.attr-CopyStatementFee td.cmpr-col.%s span", col))),
+		TransactionSlipRequestFee:        parseOptionalString(doc, fmt.Sprintf("tr.attr-CopySaleSlipFee td.cmpr-col.%s span", col)),
+		TransactionSlipRequestFeeAmount:  utils.ExtractFeeAmount(parseOptionalString(doc, fmt.Sprintf("tr.attr-CopySaleSlipFee td.cmpr-col.%s span", col))),
+		TransactionVerificationFee:       parseOptionalString(doc, fmt.Sprintf("tr.attr-TransactionVerification td.cmpr-col.%s span", col)),
+		TransactionVerificationFeeAmount: utils.ExtractFeeAmount(parseOptionalString(doc, fmt.Sprintf("tr.attr-TransactionVerification td.cmpr-col.%s span", col))),
 	}
 }
 
 func ParseDomesticFees(doc *goquery.Document, index int) models.DomesticTransaction {
 	col := "col" + strconv.Itoa(index)
 	freeTransactionText := utils.CleanText(doc.Find(fmt.Sprintf("tr.attr-FeeInternal td.cmpr-col.%s span", col)).Text())
-	freeTransactionArray := parseOptionalArrayFromString(freeTransactionText, "-")
+
+	// Extract the number of free transactions
+	freeTransactionCount := utils.ExtractFreeTransactionCount(freeTransactionText)
+	freeTransactionConditions := parseOptionalArrayFromString(freeTransactionText, "-")
 
 	return models.DomesticTransaction{
-		FreeTransactionCount:    freeTransactionArray,
-		BalanceInquiryFeeOut:    parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskCheckBalanceFee td.cmpr-col.%s span", col)),
-		WithdrawFeeOut:          parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskWitddrawFee td.cmpr-col.%s span", col)),
-		TransferFeeOut:          parseOptionalString(doc, fmt.Sprintf("tr.attr-KiosTransferFee td.cmpr-col.%s span", col)),
-		BalanceInquiryFeeIn:     parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskBalanceInFee td.cmpr-col.%s span", col)),
-		WithdrawFeeIn:           parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskWithdrawInFee td.cmpr-col.%s span", col)),
-		TransferFeeIn:           parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskTransferInFee td.cmpr-col.%s span", col)),
-		BalanceInquiryFeeOutAlt: parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskBalanceOutFee td.cmpr-col.%s span", col)),
-		WithdrawFeeOutAlt:       parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskWithdrawOutFee td.cmpr-col.%s span", col)),
-		TransferFeeOutAlt:       parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskTransferOutFee td.cmpr-col.%s span", col)),
-		TransferLimit10k:        parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskTransfer10kFee td.cmpr-col.%s span", col)),
-		TransferLimit50k:        parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskTransfer50kFee td.cmpr-col.%s span", col)),
-		AdditionalFee:           parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskOtherFee td.cmpr-col.%s span", col)),
+		FreeTransactionCount:       freeTransactionCount,
+		FreeTransactionConditions:  freeTransactionConditions,
+		BalanceInquiryFeeOut:       parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskCheckBalanceFee td.cmpr-col.%s span", col)),
+		BalanceInquiryFeeOutAmount: utils.ExtractFeeAmount(parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskCheckBalanceFee td.cmpr-col.%s span", col))), // Extracted as int
+		WithdrawFeeOut:             parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskWitddrawFee td.cmpr-col.%s span", col)),
+		WithdrawFeeOutAmount:       utils.ExtractFeeAmount(parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskWitddrawFee td.cmpr-col.%s span", col))), // Extracted as int
+		TransferFeeOut:             parseOptionalString(doc, fmt.Sprintf("tr.attr-KiosTransferFee td.cmpr-col.%s span", col)),
+		TransferFeeOutAmount:       utils.ExtractFeeAmount(parseOptionalString(doc, fmt.Sprintf("tr.attr-KiosTransferFee td.cmpr-col.%s span", col))), // Extracted as int
+		BalanceInquiryFeeIn:        parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskBalanceInFee td.cmpr-col.%s span", col)),
+		BalanceInquiryFeeInAmount:  utils.ExtractFeeAmount(parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskBalanceInFee td.cmpr-col.%s span", col))), // Extracted as int
+		WithdrawFeeIn:              parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskWithdrawInFee td.cmpr-col.%s span", col)),
+		WithdrawFeeInAmount:        utils.ExtractFeeAmount(parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskWithdrawInFee td.cmpr-col.%s span", col))), // Extracted as int
+		TransferFeeIn:              parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskTransferInFee td.cmpr-col.%s span", col)),
+		TransferFeeInAmount:        utils.ExtractFeeAmount(parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskTransferInFee td.cmpr-col.%s span", col))), // Extracted as int
+		TransferLimit10k:           parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskTransfer10kFee td.cmpr-col.%s span", col)),
+		TransferLimit10kAmount:     utils.ExtractFeeAmount(parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskTransfer10kFee td.cmpr-col.%s span", col))), // Extracted as int
+		TransferLimit50k:           parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskTransfer50kFee td.cmpr-col.%s span", col)),
+		TransferLimit50kAmount:     utils.ExtractFeeAmount(parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskTransfer50kFee td.cmpr-col.%s span", col))), // Extracted as int
+		AdditionalFee:              parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskOtherFee td.cmpr-col.%s span", col)),
+		AdditionalFeeAmount:        utils.ExtractFeeAmount(parseOptionalString(doc, fmt.Sprintf("tr.attr-KioskOtherFee td.cmpr-col.%s span", col))), // Extracted as int
 	}
 }
 
@@ -96,9 +100,12 @@ func ParseInternationalFees(doc *goquery.Document, index int) *models.Internatio
 	}
 
 	return &models.InternationalTransaction{
-		WithdrawalFee:       withdrawalFee,
-		BalanceInquiryFee:   balanceInquiryFee,
-		CurrencyExchangeFee: currencyExchangeFee,
+		WithdrawalFee:              withdrawalFee,
+		WithdrawalFeeAmount:        utils.ExtractFeeAmount(withdrawalFee),
+		BalanceInquiryFee:          balanceInquiryFee,
+		BalanceInquiryFeeAmount:    utils.ExtractFeeAmount(balanceInquiryFee),
+		CurrencyExchangeFee:        currencyExchangeFee,
+		CurrencyExchangeFeePercent: utils.ExtractFeePercent(currencyExchangeFee), // Assuming you have a function to extract percentage
 	}
 }
 
@@ -111,8 +118,11 @@ func ParseOtherFees(doc *goquery.Document, index int) *models.OtherFees {
 		return nil
 	}
 
+	otherFeesAmount := utils.ExtractFeeAmountFromArray(otherFeesArray)
+
 	return &models.OtherFees{
-		OtherFees: otherFeesArray,
+		OtherFees:       otherFeesArray,
+		OtherFeesAmount: otherFeesAmount,
 	}
 }
 

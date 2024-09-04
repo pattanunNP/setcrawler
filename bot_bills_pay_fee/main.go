@@ -7,20 +7,21 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"regexp"
 	"strconv"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
 )
 
-// BillsPaymentFees represents the structure for the JSON output
+// Structs Definitions
+
 type BillsPaymentFees struct {
 	Provider       string         `json:"provider"`
 	Fees           FeeCategories  `json:"fees"`
 	AdditionalInfo AdditionalInfo `json:"additional_info,omitempty"`
 }
 
-// FeeCategories holds various fee categories
 type FeeCategories struct {
 	ElectricityBill            []FeeDetail `json:"electricity_bill,omitempty"`
 	WaterBill                  []FeeDetail `json:"water_bill,omitempty"`
@@ -33,16 +34,31 @@ type FeeCategories struct {
 	ProductOrServiceBill       []FeeDetail `json:"product_or_service_bill,omitempty"`
 }
 
-// FeeDetail represents a single fee detail
 type FeeDetail struct {
-	Description string   `json:"description"`
-	Details     []string `json:"details"`
+	Description       string            `json:"description"`
+	Details           []string          `json:"details"`
+	StructuredDetails StructuredDetails `json:"structured_details"`
 }
 
-// AdditionalInfo represents additional information such as URLs
+type StructuredDetails struct {
+	AutoDebit       *FeeDetails `json:"auto_debit,omitempty"`
+	BranchPayment   *FeeDetails `json:"branch_payment,omitempty"`
+	ATMPayment      *FeeDetails `json:"atm_payment,omitempty"`
+	InternetBanking *FeeDetails `json:"internet_banking,omitempty"`
+	MobileApp       *FeeDetails `json:"mobile_application,omitempty"`
+}
+
+type FeeDetails struct {
+	FeeText   string   `json:"fee_text"`
+	FeeAmount *int     `json:"fee_amount,omitempty"`
+	Providers []string `json:"providers,omitempty"`
+}
+
 type AdditionalInfo struct {
 	FeeURL string `json:"fee_url"`
 }
+
+// Main Function
 
 func main() {
 	url := "https://app.bot.or.th/1213/MCPD/FeeApp/BillPaymentFee/CompareProductList"
@@ -161,7 +177,8 @@ func main() {
 	fmt.Println("Data successfully saved to bills_payment_fee.json")
 }
 
-// determineTotalPage determines the total number of pages from the pagination element
+// Helper Functions
+
 func determineTotalPage(doc *goquery.Document) int {
 	totalPages := 1
 
@@ -177,7 +194,6 @@ func determineTotalPage(doc *goquery.Document) int {
 	return totalPages
 }
 
-// addHeaders adds necessary headers to the HTTP request
 func addHeaders(req *http.Request) {
 	req.Header.Set("Accept", "text/plain, */*; q=0.01")
 	req.Header.Set("Accept-Language", "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7")
@@ -197,7 +213,6 @@ func addHeaders(req *http.Request) {
 	req.Header.Set("X-Requested-With", "XMLHttpRequest")
 }
 
-// extractFeeCategories extracts fee details for each provider based on the column class
 func extractFeeCategories(doc *goquery.Document, col string) FeeCategories {
 	var fees FeeCategories
 
@@ -214,7 +229,6 @@ func extractFeeCategories(doc *goquery.Document, col string) FeeCategories {
 	return fees
 }
 
-// extractFeeDetails extracts the fee details for a specific fee type and column
 func extractFeeDetails(doc *goquery.Document, col, feeType string) []FeeDetail {
 	var details []FeeDetail
 	doc.Find("tr.attr-header.attr-" + feeType + " td.cmpr-col." + col).Each(func(i int, s *goquery.Selection) {
@@ -223,9 +237,51 @@ func extractFeeDetails(doc *goquery.Document, col, feeType string) []FeeDetail {
 		cleanedLines := cleanTextLines(lines)
 
 		if len(cleanedLines) > 0 {
+			// Initialize structured details
+			structuredDetails := StructuredDetails{}
+
+			// Extract structured details
+			for _, line := range cleanedLines {
+				feeAmount := extractFeeAmount(line)
+				providers := extractProviders(line)
+
+				if strings.Contains(line, "การหักบัญชีอัตโนมัติ") {
+					structuredDetails.AutoDebit = &FeeDetails{
+						FeeText:   line,
+						FeeAmount: feeAmount,
+						Providers: providers,
+					}
+				} else if strings.Contains(line, "สาขา / จุดรับชำระเงิน") {
+					structuredDetails.BranchPayment = &FeeDetails{
+						FeeText:   line,
+						FeeAmount: feeAmount,
+						Providers: providers,
+					}
+				} else if strings.Contains(line, "เครื่องรับชำระเงินอัตโนมัติ") {
+					structuredDetails.ATMPayment = &FeeDetails{
+						FeeText:   line,
+						FeeAmount: feeAmount,
+						Providers: providers,
+					}
+				} else if strings.Contains(line, "Internet banking") {
+					structuredDetails.InternetBanking = &FeeDetails{
+						FeeText:   line,
+						FeeAmount: feeAmount,
+						Providers: providers,
+					}
+				} else if strings.Contains(line, "Mobile application") {
+					structuredDetails.MobileApp = &FeeDetails{
+						FeeText:   line,
+						FeeAmount: feeAmount,
+						Providers: providers,
+					}
+				}
+			}
+
 			detail := FeeDetail{
-				Description: feeType,
-				Details:     cleanedLines,
+				Description:       feeType,
+				Details:           cleanedLines,
+				StructuredDetails: structuredDetails,
 			}
 			details = append(details, detail)
 		}
@@ -233,7 +289,35 @@ func extractFeeDetails(doc *goquery.Document, col, feeType string) []FeeDetail {
 	return details
 }
 
-// cleanTextLines trims whitespace and removes empty lines from the slice of strings
+func extractFeeAmount(line string) *int {
+	// Use regex to find numerical fee amounts
+	re := regexp.MustCompile(`\d+`)
+	matches := re.FindAllString(line, -1)
+
+	if len(matches) > 0 {
+		amount, err := strconv.Atoi(matches[0])
+		if err == nil {
+			return &amount
+		}
+	}
+	return nil
+}
+
+func extractProviders(line string) []string {
+	if strings.Contains(line, ":") {
+		parts := strings.Split(line, ":")
+		if len(parts) > 1 {
+			providerText := strings.TrimSpace(parts[1])
+			providers := strings.Split(providerText, "-")
+			for i, provider := range providers {
+				providers[i] = strings.TrimSpace(provider)
+			}
+			return providers
+		}
+	}
+	return nil
+}
+
 func cleanTextLines(lines []string) []string {
 	var cleaned []string
 	for _, line := range lines {

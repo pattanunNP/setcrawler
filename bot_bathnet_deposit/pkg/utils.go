@@ -2,32 +2,37 @@ package pkg
 
 import (
 	"net/http"
+	"regexp"
 	"strconv"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
 )
 
-func ExtractFeeData(doc *goquery.Document, attrClass, col string) []string {
-	var lines []string
+func ExtractFeeData(doc *goquery.Document, attrClass, col string) []FeeEntry {
+	var lines []FeeEntry
 	doc.Find("tr." + attrClass + " td.cmpr-col." + col + " span").Each(func(i int, s *goquery.Selection) {
 		text := s.Text()
 		cleanedText := CleanText(text)
 		if cleanedText != "" {
-			lines = append(lines, cleanedText)
+			line := FeeEntry{
+				Description: cleanedText,
+				Extracted:   ExtractDetails(cleanedText),
+			}
+			lines = append(lines, line)
 		}
 	})
 	if len(lines) == 0 {
 		return nil
 	}
 
-	combinedText := strings.Join(lines, " ")
-	cleanedText := CleanText(combinedText)
-	feeLines := strings.Split(cleanedText, "/")
-	for i := range feeLines {
-		feeLines[i] = strings.TrimSpace(feeLines[i])
-	}
-	return feeLines
+	// combinedText := strings.Join(lines, " ")
+	// cleanedText := CleanText(combinedText)
+	// feeLines := strings.Split(cleanedText, "/")
+	// for i := range feeLines {
+	// 	feeLines[i] = strings.TrimSpace(feeLines[i])
+	// }
+	return lines
 }
 
 func CleanText(text string) string {
@@ -51,6 +56,59 @@ func DetermineTotalPage(doc *goquery.Document) int {
 		}
 	})
 	return totalPages
+}
+
+func ExtractDetails(text string) ExtractedDetails {
+	var details ExtractedDetails
+
+	if strings.Contains(text, "ผู้สั่งโอน") {
+		payer := "ผู้สั่งโอน"
+		details.Payer = &payer
+	} else if strings.Contains(text, "ผู้รับโอน") {
+		payer := "ผู้รับโอน"
+		details.Payer = &payer
+	}
+
+	if fee := extractFeeAmount(text); fee != nil {
+		details.Fee = fee
+		currency := "THB"
+		details.Currency = &currency
+	}
+
+	if condition := extractCondition(text); condition != nil {
+		details.Condition = condition
+	}
+
+	return details
+}
+
+func extractFeeAmount(text string) *int {
+	// Use a regular expression to find numbers followed by "บาท"
+	re := regexp.MustCompile(`\d+`)
+	matches := re.FindStringSubmatch(text)
+
+	if len(matches) > 0 {
+		// Convert the first match to an integer
+		if fee, err := strconv.Atoi(matches[0]); err == nil {
+			return &fee
+		}
+	}
+
+	// Check if the text indicates "no fee"
+	if strings.Contains(text, "ไม่มีค่าธรรมเนียม") {
+		fee := 0
+		return &fee
+	}
+
+	return nil
+}
+
+func extractCondition(text string) *string {
+	if strings.Contains(text, "ค่าธรรมเนียมโอนเงินข้ามเขต") {
+		condition := "ค่าธรรมเนียมโอนเงินข้ามเขต"
+		return &condition
+	}
+	return nil
 }
 
 func AddHeaders(req *http.Request) {

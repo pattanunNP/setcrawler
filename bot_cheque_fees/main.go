@@ -11,6 +11,7 @@ import (
 	"net/http"
 	"os"
 	"strconv"
+	"time"
 
 	"github.com/PuerkitoBio/goquery"
 )
@@ -98,17 +99,17 @@ func main() {
 			chequeFees = append(chequeFees, models.ChequeFee{
 				Providers: provider,
 				FeesTypes: models.FeesTypes{
-					ChequeBookPurchase:                utils.SplitByCondition(utils.ExtractFee(doc, "attr-ChequeBookPurchase", col)),
-					ChequeDepositAcross:               utils.SplitByCondition(utils.ExtractFee(doc, "attr-ChequeDepositAcross", col)),
-					ChequeDepositInbranch:             utils.SplitByCondition(utils.ExtractFee(doc, "attr-ChequeDepositInbranch", col)),
-					ChequeReturnFromInstrument:        utils.SplitByCondition(utils.ExtractFee(doc, "attr-ChequeReturnFromInstrument", col)),
+					ChequeBookPurchase:                utils.ExtractFeeArray(doc, "attr-ChequeBookPurchase", col),
+					ChequeDepositAcross:               utils.ExtractFeeArray(doc, "attr-ChequeDepositAcross", col),
+					ChequeDepositInbranch:             utils.ExtractFeeArray(doc, "attr-ChequeDepositInbranch", col),
+					ChequeReturnFromInstrument:        utils.ExtractFeeArray(doc, "attr-ChequeReturnFromInstrument", col),
 					ChequeFeeReturned:                 utils.ExtractFeeArray(doc, "attr-ChequeFeeReturned", col),
 					ChequeGiftPurchase:                utils.ExtractFee(doc, "attr-ChequeGiftPurchase", col),
 					ChequeCashWithdrawAcross:          utils.ExtractFeeArray(doc, "attr-ChequeCashWithdrawAcross", col),
 					ChequeCashWithdrawInbranch:        utils.ExtractFee(doc, "attr-ChequeCashWithdrawInbranch", col),
 					CashierChequePurchase:             utils.ExtractFeeArray(doc, "attr-ChequeCashierPurchase", col),
-					CashierChequeCashWithdrawAcross:   utils.SplitByCondition(utils.ExtractFee(doc, "attr-ChequeCashierCashWithdrawAcross", col)),
-					CashierChequeCashWithdrawInbranch: utils.SplitByCondition(utils.ExtractFee(doc, "attr-ChequeCashierCashWithdrawInbranch", col)),
+					CashierChequeCashWithdrawAcross:   utils.ExtractFeeArray(doc, "attr-ChequeCashierCashWithdrawAcross", col),
+					CashierChequeCashWithdrawInbranch: utils.ExtractFeeArray(doc, "attr-ChequeCashierCashWithdrawInbranch", col),
 					DraftPurchaseFee:                  utils.ExtractFeeArray(doc, "attr-DraftPurchaseFee", col),
 					PublicationFee:                    utils.ExtractFee(doc, "attr-PublicationFee", col),
 					ChequeCancellationFee:             utils.ExtractFee(doc, "attr-ChequeCancellationFee", col),
@@ -122,6 +123,7 @@ func main() {
 				},
 			})
 		}
+		time.Sleep(2 * time.Second)
 	}
 
 	jsonData, err := json.MarshalIndent(chequeFees, "", "  ")

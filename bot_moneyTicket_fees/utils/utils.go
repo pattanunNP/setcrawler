@@ -1,8 +1,10 @@
 package utils
 
 import (
+	"moneyticket_fees/models"
 	"net/http"
 	"regexp"
+	"strconv"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
@@ -105,4 +107,58 @@ func SplitAndCleanText(text string) []string {
 		result = append(result, strings.TrimSpace(strings.ReplaceAll(currentText, ",", "")))
 	}
 	return result
+}
+
+func ExtractNumericInfo(acceptanceFee, avalFee []string) models.ExtractedInfo {
+	var extractedInfo models.ExtractedInfo
+
+	// Define regex patterns for extracting numbers
+	percentagePattern := regexp.MustCompile(`(\d+(\.\d+)?)%`)
+	minFeePattern := regexp.MustCompile(`ขั้นต่ำ (\d+) บาท`)
+	cancellationFeePattern := regexp.MustCompile(`ค่าธรรมเนียมฉบับละ (\d+) บาท`)
+
+	// Extract values for acceptance fees
+	for _, fee := range acceptanceFee {
+		if percentagePattern.MatchString(fee) {
+			percentage, _ := strconv.ParseFloat(percentagePattern.FindStringSubmatch(fee)[1], 64)
+			extractedInfo.MaxAcceptanceFeePercentage = &percentage
+		}
+		if minFeePattern.MatchString(fee) {
+			minFee, _ := strconv.Atoi(minFeePattern.FindStringSubmatch(fee)[1])
+			extractedInfo.MinAcceptanceFeeBaht = &minFee
+		}
+		if cancellationFeePattern.MatchString(fee) {
+			cancellationFee, _ := strconv.Atoi(cancellationFeePattern.FindStringSubmatch(fee)[1])
+			extractedInfo.CancellationFeeBaht = &cancellationFee
+		}
+	}
+
+	// Extract values for aval fees
+	for _, fee := range avalFee {
+		if percentagePattern.MatchString(fee) {
+			percentage, _ := strconv.ParseFloat(percentagePattern.FindStringSubmatch(fee)[1], 64)
+			extractedInfo.MaxAvalFeePercentage = &percentage
+		}
+		if minFeePattern.MatchString(fee) {
+			minFee, _ := strconv.Atoi(minFeePattern.FindStringSubmatch(fee)[1])
+			extractedInfo.MinAvalFeeBaht = &minFee
+		}
+	}
+
+	return extractedInfo
+}
+
+func DetermineTotalPage(doc *goquery.Document) int {
+	totalPages := 1
+
+	doc.Find("ul.pagination li a").Each(func(i int, s *goquery.Selection) {
+		pagenum, exists := s.Attr("data-page")
+		if exists {
+			page, err := strconv.Atoi(pagenum)
+			if err == nil && page > totalPages {
+				totalPages = page
+			}
+		}
+	})
+	return totalPages
 }

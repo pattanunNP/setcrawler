@@ -13,6 +13,13 @@
       "คำนวณตามจริงเป็นรายวัน (365 วัน = 1 ปี) ตั้งแต่วันที่ออกตั๋วจนถึงวันครบกำหนดชำระเงิน",
       "กรณียกเลิกไม่รับตั๋วเงินที่ขอรับรอง/อาวัลไว้ มีค่าธรรมเนียมฉบับละ 500 บาท"
     ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "min_acceptance_fee_baht": 500,
+      "cancellation_fee_baht": 500,
+      "max_aval_fee_percentage": 5,
+      "min_aval_fee_baht": 500
+    },
     "additional_info": {
       "fee_links": [
         "https://www.tmbbank.com/rates/fee"
@@ -28,6 +35,10 @@
     "aval_fee": [
       "ไม่มีบริการ"
     ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "min_acceptance_fee_baht": 500
+    },
     "additional_info": {
       "fee_links": [
         "https://www.exim.go.th/th/announce/rate.aspx"
@@ -44,6 +55,406 @@
       "ไม่เกิน",
       "5% ของวงเงินการรับอาวัลต่อปี ขั้นต่ำ 2,000 บาท/ฉบับ"
     ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "max_aval_fee_percentage": 5
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.hsbc.co.th/"
+      ]
+    }
+  },
+  {
+    "provider": "ทหารไทยธนชาต",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+      "คำนวณตามจริงเป็นรายวัน (365 วัน = 1 ปี) ตั้งแต่วันที่ออกตั๋วจนถึงวันครบกำหนดชำระเงิน",
+      "กรณียกเลิกไม่รับตั๋วเงินที่ขอรับรอง/อาวัลไว้ มีค่าธรรมเนียมฉบับละ 500 บาท"
+    ],
+    "aval_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับอาวัลต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+      "คำนวณตามจริงเป็นรายวัน (365 วัน = 1 ปี) ตั้งแต่วันที่ออกตั๋วจนถึงวันครบกำหนดชำระเงิน",
+      "กรณียกเลิกไม่รับตั๋วเงินที่ขอรับรอง/อาวัลไว้ มีค่าธรรมเนียมฉบับละ 500 บาท"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "min_acceptance_fee_baht": 500,
+      "cancellation_fee_baht": 500,
+      "max_aval_fee_percentage": 5,
+      "min_aval_fee_baht": 500
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.tmbbank.com/rates/fee"
+      ]
+    }
+  },
+  {
+    "provider": "ธสน.",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: เก็บล่วงหน้าตามระยะเวลาการอาวัลตั๋วสัญญาใช้เงิน"
+    ],
+    "aval_fee": [
+      "ไม่มีบริการ"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "min_acceptance_fee_baht": 500
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.exim.go.th/th/announce/rate.aspx"
+      ]
+    }
+  },
+  {
+    "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 2,000 บาท/ฉบับ"
+    ],
+    "aval_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับอาวัลต่อปี ขั้นต่ำ 2,000 บาท/ฉบับ"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "max_aval_fee_percentage": 5
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.hsbc.co.th/"
+      ]
+    }
+  },
+  {
+    "provider": "ทหารไทยธนชาต",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+      "คำนวณตามจริงเป็นรายวัน (365 วัน = 1 ปี) ตั้งแต่วันที่ออกตั๋วจนถึงวันครบกำหนดชำระเงิน",
+      "กรณียกเลิกไม่รับตั๋วเงินที่ขอรับรอง/อาวัลไว้ มีค่าธรรมเนียมฉบับละ 500 บาท"
+    ],
+    "aval_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับอาวัลต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+      "คำนวณตามจริงเป็นรายวัน (365 วัน = 1 ปี) ตั้งแต่วันที่ออกตั๋วจนถึงวันครบกำหนดชำระเงิน",
+      "กรณียกเลิกไม่รับตั๋วเงินที่ขอรับรอง/อาวัลไว้ มีค่าธรรมเนียมฉบับละ 500 บาท"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "min_acceptance_fee_baht": 500,
+      "cancellation_fee_baht": 500,
+      "max_aval_fee_percentage": 5,
+      "min_aval_fee_baht": 500
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.tmbbank.com/rates/fee"
+      ]
+    }
+  },
+  {
+    "provider": "ธสน.",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: เก็บล่วงหน้าตามระยะเวลาการอาวัลตั๋วสัญญาใช้เงิน"
+    ],
+    "aval_fee": [
+      "ไม่มีบริการ"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "min_acceptance_fee_baht": 500
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.exim.go.th/th/announce/rate.aspx"
+      ]
+    }
+  },
+  {
+    "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 2,000 บาท/ฉบับ"
+    ],
+    "aval_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับอาวัลต่อปี ขั้นต่ำ 2,000 บาท/ฉบับ"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "max_aval_fee_percentage": 5
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.hsbc.co.th/"
+      ]
+    }
+  },
+  {
+    "provider": "ทหารไทยธนชาต",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+      "คำนวณตามจริงเป็นรายวัน (365 วัน = 1 ปี) ตั้งแต่วันที่ออกตั๋วจนถึงวันครบกำหนดชำระเงิน",
+      "กรณียกเลิกไม่รับตั๋วเงินที่ขอรับรอง/อาวัลไว้ มีค่าธรรมเนียมฉบับละ 500 บาท"
+    ],
+    "aval_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับอาวัลต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+      "คำนวณตามจริงเป็นรายวัน (365 วัน = 1 ปี) ตั้งแต่วันที่ออกตั๋วจนถึงวันครบกำหนดชำระเงิน",
+      "กรณียกเลิกไม่รับตั๋วเงินที่ขอรับรอง/อาวัลไว้ มีค่าธรรมเนียมฉบับละ 500 บาท"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "min_acceptance_fee_baht": 500,
+      "cancellation_fee_baht": 500,
+      "max_aval_fee_percentage": 5,
+      "min_aval_fee_baht": 500
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.tmbbank.com/rates/fee"
+      ]
+    }
+  },
+  {
+    "provider": "ธสน.",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: เก็บล่วงหน้าตามระยะเวลาการอาวัลตั๋วสัญญาใช้เงิน"
+    ],
+    "aval_fee": [
+      "ไม่มีบริการ"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "min_acceptance_fee_baht": 500
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.exim.go.th/th/announce/rate.aspx"
+      ]
+    }
+  },
+  {
+    "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 2,000 บาท/ฉบับ"
+    ],
+    "aval_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับอาวัลต่อปี ขั้นต่ำ 2,000 บาท/ฉบับ"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "max_aval_fee_percentage": 5
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.hsbc.co.th/"
+      ]
+    }
+  },
+  {
+    "provider": "ทหารไทยธนชาต",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+      "คำนวณตามจริงเป็นรายวัน (365 วัน = 1 ปี) ตั้งแต่วันที่ออกตั๋วจนถึงวันครบกำหนดชำระเงิน",
+      "กรณียกเลิกไม่รับตั๋วเงินที่ขอรับรอง/อาวัลไว้ มีค่าธรรมเนียมฉบับละ 500 บาท"
+    ],
+    "aval_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับอาวัลต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+      "คำนวณตามจริงเป็นรายวัน (365 วัน = 1 ปี) ตั้งแต่วันที่ออกตั๋วจนถึงวันครบกำหนดชำระเงิน",
+      "กรณียกเลิกไม่รับตั๋วเงินที่ขอรับรอง/อาวัลไว้ มีค่าธรรมเนียมฉบับละ 500 บาท"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "min_acceptance_fee_baht": 500,
+      "cancellation_fee_baht": 500,
+      "max_aval_fee_percentage": 5,
+      "min_aval_fee_baht": 500
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.tmbbank.com/rates/fee"
+      ]
+    }
+  },
+  {
+    "provider": "ธสน.",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: เก็บล่วงหน้าตามระยะเวลาการอาวัลตั๋วสัญญาใช้เงิน"
+    ],
+    "aval_fee": [
+      "ไม่มีบริการ"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "min_acceptance_fee_baht": 500
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.exim.go.th/th/announce/rate.aspx"
+      ]
+    }
+  },
+  {
+    "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 2,000 บาท/ฉบับ"
+    ],
+    "aval_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับอาวัลต่อปี ขั้นต่ำ 2,000 บาท/ฉบับ"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "max_aval_fee_percentage": 5
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.hsbc.co.th/"
+      ]
+    }
+  },
+  {
+    "provider": "ทหารไทยธนชาต",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+      "คำนวณตามจริงเป็นรายวัน (365 วัน = 1 ปี) ตั้งแต่วันที่ออกตั๋วจนถึงวันครบกำหนดชำระเงิน",
+      "กรณียกเลิกไม่รับตั๋วเงินที่ขอรับรอง/อาวัลไว้ มีค่าธรรมเนียมฉบับละ 500 บาท"
+    ],
+    "aval_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับอาวัลต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+      "คำนวณตามจริงเป็นรายวัน (365 วัน = 1 ปี) ตั้งแต่วันที่ออกตั๋วจนถึงวันครบกำหนดชำระเงิน",
+      "กรณียกเลิกไม่รับตั๋วเงินที่ขอรับรอง/อาวัลไว้ มีค่าธรรมเนียมฉบับละ 500 บาท"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "min_acceptance_fee_baht": 500,
+      "cancellation_fee_baht": 500,
+      "max_aval_fee_percentage": 5,
+      "min_aval_fee_baht": 500
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.tmbbank.com/rates/fee"
+      ]
+    }
+  },
+  {
+    "provider": "ธสน.",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: เก็บล่วงหน้าตามระยะเวลาการอาวัลตั๋วสัญญาใช้เงิน"
+    ],
+    "aval_fee": [
+      "ไม่มีบริการ"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "min_acceptance_fee_baht": 500
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.exim.go.th/th/announce/rate.aspx"
+      ]
+    }
+  },
+  {
+    "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 2,000 บาท/ฉบับ"
+    ],
+    "aval_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับอาวัลต่อปี ขั้นต่ำ 2,000 บาท/ฉบับ"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "max_aval_fee_percentage": 5
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.hsbc.co.th/"
+      ]
+    }
+  },
+  {
+    "provider": "ทหารไทยธนชาต",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+      "คำนวณตามจริงเป็นรายวัน (365 วัน = 1 ปี) ตั้งแต่วันที่ออกตั๋วจนถึงวันครบกำหนดชำระเงิน",
+      "กรณียกเลิกไม่รับตั๋วเงินที่ขอรับรอง/อาวัลไว้ มีค่าธรรมเนียมฉบับละ 500 บาท"
+    ],
+    "aval_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับอาวัลต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข:",
+      "คำนวณตามจริงเป็นรายวัน (365 วัน = 1 ปี) ตั้งแต่วันที่ออกตั๋วจนถึงวันครบกำหนดชำระเงิน",
+      "กรณียกเลิกไม่รับตั๋วเงินที่ขอรับรอง/อาวัลไว้ มีค่าธรรมเนียมฉบับละ 500 บาท"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "min_acceptance_fee_baht": 500,
+      "cancellation_fee_baht": 500,
+      "max_aval_fee_percentage": 5,
+      "min_aval_fee_baht": 500
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.tmbbank.com/rates/fee"
+      ]
+    }
+  },
+  {
+    "provider": "ธสน.",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 500 บาท/ฉบับ เงื่อนไข: เก็บล่วงหน้าตามระยะเวลาการอาวัลตั๋วสัญญาใช้เงิน"
+    ],
+    "aval_fee": [
+      "ไม่มีบริการ"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "min_acceptance_fee_baht": 500
+    },
+    "additional_info": {
+      "fee_links": [
+        "https://www.exim.go.th/th/announce/rate.aspx"
+      ]
+    }
+  },
+  {
+    "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น",
+    "acceptance_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับรองตั๋วเงินต่อปี ขั้นต่ำ 2,000 บาท/ฉบับ"
+    ],
+    "aval_fee": [
+      "ไม่เกิน",
+      "5% ของวงเงินการรับอาวัลต่อปี ขั้นต่ำ 2,000 บาท/ฉบับ"
+    ],
+    "extracted_info": {
+      "max_acceptance_fee_percentage": 5,
+      "max_aval_fee_percentage": 5
+    },
     "additional_info": {
       "fee_links": [
         "https://www.hsbc.co.th/"

@@ -8,25 +8,35 @@ type ChequeFee struct {
 }
 
 type FeesTypes struct {
-	ChequeBookPurchase                []string `json:"cheque_book_purchase"`
-	ChequeDepositAcross               []string `json:"cheque_deposit_across"`
-	ChequeDepositInbranch             []string `json:"cheque_deposit_inbranch"`
-	ChequeReturnFromInstrument        []string `json:"cheque_return_from_insufficient_funds"`
-	ChequeFeeReturned                 []string `json:"cheque_fee_returned"`
-	ChequeGiftPurchase                string   `json:"cheque_gift_purchase"`
-	ChequeCashWithdrawAcross          []string `json:"cheque_cash_withdraw_across"`
-	ChequeCashWithdrawInbranch        string   `json:"cheque_cash_withdraw_inbranch"`
-	CashierChequePurchase             []string `json:"cashier_cheque_purchase"`
-	CashierChequeCashWithdrawAcross   []string `json:"cashier_cheque_cash_withdraw_across"`
-	CashierChequeCashWithdrawInbranch []string `json:"cashier_cheque_cash_withdraw_inbranch"`
-	DraftPurchaseFee                  []string `json:"draft_purchase_fee"`
-	PublicationFee                    string   `json:"publication_fee"`
-	ChequeCancellationFee             string   `json:"cheque_cancellation_fee"`
-	ChequeAdvanceDepositFee           string   `json:"cheque_advance_deposit_fee"`
+	ChequeBookPurchase                []FeeDetail `json:"cheque_book_purchase"`
+	ChequeDepositAcross               []FeeDetail `json:"cheque_deposit_across"`
+	ChequeDepositInbranch             []FeeDetail `json:"cheque_deposit_inbranch"`
+	ChequeReturnFromInstrument        []FeeDetail `json:"cheque_return_from_insufficient_funds"`
+	ChequeFeeReturned                 []FeeDetail `json:"cheque_fee_returned"`
+	ChequeGiftPurchase                FeeDetail   `json:"cheque_gift_purchase"`
+	ChequeCashWithdrawAcross          []FeeDetail `json:"cheque_cash_withdraw_across"`
+	ChequeCashWithdrawInbranch        FeeDetail   `json:"cheque_cash_withdraw_inbranch"`
+	CashierChequePurchase             []FeeDetail `json:"cashier_cheque_purchase"`
+	CashierChequeCashWithdrawAcross   []FeeDetail `json:"cashier_cheque_cash_withdraw_across"`
+	CashierChequeCashWithdrawInbranch []FeeDetail `json:"cashier_cheque_cash_withdraw_inbranch"`
+	DraftPurchaseFee                  []FeeDetail `json:"draft_purchase_fee"`
+	PublicationFee                    FeeDetail   `json:"publication_fee"`
+	ChequeCancellationFee             FeeDetail   `json:"cheque_cancellation_fee"`
+	ChequeAdvanceDepositFee           FeeDetail   `json:"cheque_advance_deposit_fee"`
+}
+
+type FeeDetail struct {
+	Text          string   `json:"text"`
+	MinFee        *float64 `json:"min_fee,omitempty"`
+	MaxFee        *float64 `json:"max_fee,omitempty"`
+	PercentageFee *float64 `json:"percentage_fee,omitempty"`
+	FeeUnit       string   `json:"fee_unit,omitempty"`
+	Condition     string   `json:"condition,omitempty"`
+	Service       string   `json:"service,omitempty"`
 }
 
 type OthersFees struct {
-	OtherFees string `json:"other_fees"`
+	OtherFees FeeDetail `json:"other_fees"`
 }
 
 type AdditionalInfo struct {

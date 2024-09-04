@@ -1,38 +1,45 @@
 package models
 
+type FeeDetail struct {
+	Text       string   `json:"text"`
+	Amount     *int     `json:"amount,omitempty"`
+	Percentage *float64 `json:"percentage,omitempty"`
+}
+
+type AnnualFeeDetail struct {
+	Text          string `json:"text"`
+	InitialAmount *int   `json:"initial_amount,omitempty"`
+}
+
 type GeneralFees struct {
-	EntranceFeeMainCard          string   `json:"main_card_entrance_fee"`
-	AnnualFeeMainCard            []string `json:"main_card_annual_fee"`
-	CurrencyConversionRisk       []string `json:"currency_conversion_risk"`
-	CashAdvanceFee               string   `json:"cash_advance_fee"`
-	ReplacementCardFee           string   `json:"replacement_card_fee"`
-	EntranceFeeSupplementaryCard string   `json:"supplementary_card_entrance_fee"`
-	AnnualFeeSupplementaryCard   []string `json:"supplementary_card_annual_fee"`
-	NewPINRequestFee             string   `json:"new_pin_request_fee"`
-	StatementCopyFee             string   `json:"statement_copy_fee"`
-	TransactionVerificationFee   string   `json:"transaction_verification_fee"`
-	SalesSlipCopyFee             string   `json:"sales_slip_copy_fee"`
-	ReturnedChequeFee            string   `json:"returned_cheque_fee"`
-	TaxPaymentFee                string   `json:"tax_payment_fee"`
-	DebtCollectionFee            []string `json:"debt_collection_fee"`
+	EntranceFeeMainCard          FeeDetail         `json:"main_card_entrance_fee"`
+	AnnualFeeMainCard            []AnnualFeeDetail `json:"main_card_annual_fee"`
+	CurrencyConversionRisk       FeeDetail         `json:"currency_conversion_risk"`
+	CashAdvanceFee               FeeDetail         `json:"cash_advance_fee"`
+	ReplacementCardFee           FeeDetail         `json:"replacement_card_fee"`
+	EntranceFeeSupplementaryCard FeeDetail         `json:"supplementary_card_entrance_fee"`
+	AnnualFeeSupplementaryCard   []AnnualFeeDetail `json:"supplementary_card_annual_fee"`
+	NewPINRequestFee             FeeDetail         `json:"new_pin_request_fee"`
+	StatementCopyFee             FeeDetail         `json:"statement_copy_fee"`
+	TransactionVerificationFee   FeeDetail         `json:"transaction_verification_fee"`
+	SalesSlipCopyFee             FeeDetail         `json:"sales_slip_copy_fee"`
+	ReturnedChequeFee            FeeDetail         `json:"returned_cheque_fee"`
+	TaxPaymentFee                FeeDetail         `json:"tax_payment_fee"`
+	DebtCollectionFee            []FeeDetail       `json:"debt_collection_fee"`
 }
 
 type PaymentFees struct {
-	FeeFreeChannels        []string `json:"fee_free_channels"`
-	DirectDebitServiceFee  string   `json:"direct_debit_service_fee"`
-	DirectDebitOtherFee    string   `json:"direct_debit_other_fee"`
-	BankCounterFee         string   `json:"bank_counter_fee"`
-	OtherBankCounterFee    string   `json:"other_bank_counter_fee"`
-	PaymentServicePointFee []string `json:"payment_service_point_fee"`
-	OnlinePaymentFee       string   `json:"online_payment_fee"`
-	ATMPaymentFee          string   `json:"atm_payment_fee"`
-	PhonePaymentFee        string   `json:"phone_payment_fee"`
-	ChequeOrMoneyOrderFee  string   `json:"cheque_or_money_order_fee"`
-	OtherPaymentChannels   []string `json:"other_payment_channels"`
+	FeeFreeChannels       []string  `json:"fee_free_channels"`
+	DirectDebitServiceFee FeeDetail `json:"direct_debit_service_fee"`
+	BankCounterFee        FeeDetail `json:"bank_counter_fee"`
+	OnlinePaymentFee      FeeDetail `json:"online_payment_fee"`
+	ATMPaymentFee         FeeDetail `json:"atm_payment_fee"`
+	PhonePaymentFee       FeeDetail `json:"phone_payment_fee"`
+	OtherPaymentChannels  []string  `json:"other_payment_channels"`
 }
 
 type OthersFees struct {
-	OtherFees *string `json:"other_fees"`
+	OtherFees *FeeDetail `json:"other_fees"`
 }
 
 type AdditionalInfo struct {

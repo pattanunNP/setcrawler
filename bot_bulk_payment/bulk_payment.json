@@ -4,37 +4,61 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
     ]
    },
    "transfer_same_day_100k": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "75 บาท/รายการ"
+    "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "200 บาท/รายการ"
+    "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB"
    },
    "promptpay_100k": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "10 - 25 บาท/รายการ"
+    "description": "10 - 25 บาท/รายการ",
+    "min_amount": 10,
+    "max_amount": 25,
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "30 - 45 บาท/รายการ"
+    "description": "30 - 45 บาท/รายการ",
+    "min_amount": 30,
+    "max_amount": 45,
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "10 - 25 บาท/รายการ"
+    "description": "10 - 25 บาท/รายการ",
+    "min_amount": 10,
+    "max_amount": 25,
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "30 - 45 บาท/รายการ"
+    "description": "30 - 45 บาท/รายการ",
+    "min_amount": 30,
+    "max_amount": 45,
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -51,43 +75,59 @@
   "provider": "กรุงศรีอยุธยา",
   "Fees": {
    "transfer_next_day": {
-    "description": "12 บาท/รายการ"
+    "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB"
    },
    "transfer_same_day_100k": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "75 บาท/รายการ"
+    "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "200 บาท/รายการ"
+    "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB"
    },
    "promptpay_100k": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
     "description": "ตามอัตราที่กำหนด",
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: Samday 20 ฿/รายการ \u0026 Nextday 15฿/รายการ"
     ]
    },
    "direct_credit_across_branch": {
     "description": "ตามอัตราที่กำหนด",
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: Samday 35 ฿/รายการ \u0026 Nextday 30฿/รายการ"
     ]
    },
    "direct_debit_in_branch": {
     "description": "ตามอัตราที่กำหนด",
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: 15 บาท/รายการ"
     ]
    },
    "direct_debit_across_branch": {
     "description": "ตามอัตราที่กำหนด",
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: 30 บาท/รายการ"
     ]
@@ -97,7 +137,9 @@
    }
   },
   "other_fees": {
-   "description": "3000 บาท/ปี"
+   "description": "3000 บาท/ปี",
+   "amount": 3000,
+   "currency": "THB"
   },
   "additional_info": {
    "fee_website": "https://www2.krungsribizonline.com/GCPCW/"
@@ -107,37 +149,57 @@
   "provider": "กสิกรไทย",
   "Fees": {
    "transfer_next_day": {
-    "description": "12 บาท/รายการ"
+    "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB"
    },
    "transfer_same_day_100k": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "75 บาท/รายการ"
+    "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "200 บาท/รายการ"
+    "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB"
    },
    "promptpay_100k": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "ขั้นต่ำ 15 บาท/รายการ"
+    "description": "ขั้นต่ำ 15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
     "description": "ขั้นต่ำ 25 บาท/รายการ",
+    "amount": 25,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: ค่าธรรมเนียมการโอนนอกเขต 25 บาทต่อรายการ อัตรค่าธรรมเนียมขั้นต่ำ 1,500 บาทต่อการส่งรายการหนึ่งครั้ง"
     ]
    },
    "direct_debit_in_branch": {
-    "description": "ขั้นต่ำ 10 บาท/รายการ"
+    "description": "ขั้นต่ำ 10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "ขั้นต่ำ 20 บาท/รายการ"
+    "description": "ขั้นต่ำ 20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -155,36 +217,54 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: วงเงินไม่เกิน 2,000,000 บาท/รายการ คิดรายการละ 12 บาท"
     ]
    },
    "transfer_same_day_100k": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "75 บาท/รายการ"
+    "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "200 บาท/รายการ"
+    "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB"
    },
    "promptpay_100k": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -201,40 +281,57 @@
   "provider": "เจพีมอร์แกน เชส",
   "Fees": {
    "transfer_next_day": {
-    "description": "12 บาท/รายการ"
+    "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB"
    },
    "transfer_same_day_100k": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "75 บาท/รายการ"
+    "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "200 บาท/รายการ"
+    "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB"
    },
    "promptpay_100k": {
     "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: i) Bulk Payment PromptPay Same Day = THB15 ii) Bulk Payment PromptPay Next Day = THB10"
     ]
    },
    "promptpay_two_million": {
     "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: i) Bulk Payment PromptPay Same Day = THB15 ii) Bulk Payment PromptPay Next Day = THB10"
     ]
    },
    "direct_credit_in_branch": {
-    "description": "25 บาท/รายการ"
+    "description": "25 บาท/รายการ",
+    "amount": 25,
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -252,51 +349,69 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: ไม่เกินวงเงิน 2,000,000 บาทต่อรายการ"
     ]
    },
    "transfer_same_day_100k": {
     "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: ไม่เกิน 2,000,000 บาทต่อรายการ"
     ]
    },
    "transfer_same_day_500k": {
     "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: ไม่เกิน 2,000,000 บาทต่อรายการ"
     ]
    },
    "transfer_same_day_two_million": {
     "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: ไม่เกิน 2,000,000 บาทต่อรายการ"
     ]
    },
    "promptpay_100k": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
     "description": "ไม่มีค่าธรรมเนียม - 10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: โอนเงินระหว่างบัญชี ของบุคคลเดียวกัน ไม่คิดค่าธรรมเนียมโอนเงินระหว่างบัญชี ที่ไม่ใช่บุคคลเดียวกัน คิด 10 บาท/รายการ"
     ]
    },
    "direct_credit_across_branch": {
-    "description": "ไม่เกิน 10 บาท/รายการ"
+    "description": "ไม่เกิน 10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
     "description": "ไม่เกิน 20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: อัตราค่าธรรมเนียมเป็นไปตามหน่วยงาน/ผู้เรียกเก็บเงิน"
     ]
    },
    "direct_debit_across_branch": {
     "description": "ไม่เกิน 30 บาท/รายการ",
+    "amount": 30,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: อัตราค่าธรรมเนียมเป็นไปตามหน่วยงาน/ผู้เรียกเก็บเงิน"
     ]
@@ -317,51 +432,71 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: คิดค่าธรรมเนียมต่อรายการ (ยอดโอนสูงสุด ไม่เกิน 2,000,000 บาทต่อรายการ)"
     ]
    },
    "transfer_same_day_100k": {
     "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: คิดค่าธรรมเนียมต่อรายการ ในอัตราตามวงเงินที่โอน (ยอดโอนสูงสุด ไม่เกิน 2,000,000 บาทต่อรายการ)"
     ]
    },
    "transfer_same_day_500k": {
     "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: คิดค่าธรรมเนียมต่อรายการ ในอัตราตามวงเงินที่โอน (ยอดโอนสูงสุด ไม่เกิน 2,000,000 บาทต่อรายการ)"
     ]
    },
    "transfer_same_day_two_million": {
     "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: คิดค่าธรรมเนียมต่อรายการ ในอัตราตามวงเงินที่โอน (ยอดโอนสูงสุด ไม่เกิน 2,000,000 บาทต่อรายการ)"
     ]
    },
    "promptpay_100k": {
     "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: โอนได้ไม่เกิน 2,000,000 บาทต่อรายการ"
     ]
    },
    "promptpay_two_million": {
     "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: โอนได้ไม่เกิน 2,000,000 บาทต่อรายการ"
     ]
    },
    "direct_credit_in_branch": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "30 บาท/รายการ"
+    "description": "30 บาท/รายการ",
+    "amount": 30,
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -379,6 +514,8 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
@@ -386,6 +523,8 @@
    },
    "transfer_same_day_100k": {
     "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
@@ -393,6 +532,8 @@
    },
    "transfer_same_day_500k": {
     "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
@@ -400,6 +541,8 @@
    },
    "transfer_same_day_two_million": {
     "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
@@ -407,6 +550,8 @@
    },
    "promptpay_100k": {
     "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
@@ -414,25 +559,33 @@
    },
    "promptpay_two_million": {
     "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
     ]
    },
    "direct_credit_in_branch": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
     "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: เฉพาะรายการหักบัญชีอัตโนมัติสำหรับการประปาส่วนภูมิภาคเท่านั้น"
     ]
    },
    "direct_debit_across_branch": {
     "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: เฉพาะรายการหักบัญชีอัตโนมัติสำหรับการประปาส่วนภูมิภาคเท่านั้น"
     ]
@@ -453,54 +606,73 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: จํานวนเงินโอนสูงสุดต่อรายการ: 2,000,000 บาท"
     ]
    },
    "transfer_same_day_100k": {
     "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: จํานวนเงินโอนสูงสุดต่อรายการ: 2,000,000 บาท"
     ]
    },
    "transfer_same_day_500k": {
     "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: จํานวนเงินโอนสูงสุดต่อรายการ: 2,000,000 บาท"
     ]
    },
    "transfer_same_day_two_million": {
     "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: จํานวนเงินโอนสูงสุดต่อรายการ: 2,000,000 บาท"
     ]
    },
    "promptpay_100k": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
     "description": "15 - 50 บาท/รายการ",
+    "min_amount": 15,
+    "max_amount": 50,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: Next Day: 15 บาท Same Day: 50 บาท"
     ]
    },
    "direct_credit_across_branch": {
     "description": "30 - 1,000 บาท/รายการ",
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: Next Day: 30 บาท Same Day: 50 บาท * กรณีนอกเขตชำระเกิน 50,000 บาท / รายการ คิดส่วนที่เกินเพิ่มอีกในอัตราร้อยละ 0.1 โดยค่าธรรมเนียมรวมทั้งสิ้นไม่เกิน 1,000 บาท"
     ]
    },
    "direct_debit_in_branch": {
     "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: คิดค่าธรรมเนียมในเขตรายการละ 15.00 บาท"
     ]
    },
    "direct_debit_across_branch": {
     "description": "30 - 1,000 บาท/รายการ",
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: กรณีหักบัญชีนอกเขตสำนักหักบัญชี ขำระเกิน 50,000 บาท/รายการ คิดส่วนที่เกินเพิ่มอีกในอัตราร้อยละ 0.1 โดยค่าธรรมเนียมรวมทั้งสิ้นไม่เกิน 1,000 บาท"
     ]
@@ -520,34 +692,52 @@
   "provider": "ธ.ก.ส.",
   "Fees": {
    "transfer_next_day": {
-    "description": "12 บาท/รายการ"
+    "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB"
    },
    "transfer_same_day_100k": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "75 บาท/รายการ"
+    "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "200 บาท/รายการ"
+    "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB"
    },
    "promptpay_100k": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -565,36 +755,50 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวัน ต่อหนึ่งบัญชีผู้รับโอน"
     ]
    },
    "transfer_same_day_100k": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "75 บาท/รายการ"
+    "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "200 บาท/รายการ"
+    "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB"
    },
    "promptpay_100k": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -611,40 +815,56 @@
   "provider": "ออมสิน",
   "Fees": {
    "transfer_next_day": {
-    "description": "12 บาท/รายการ"
+    "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB"
    },
    "transfer_same_day_100k": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "75 บาท/รายการ"
+    "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "200 บาท/รายการ"
+    "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB"
    },
    "promptpay_100k": {
     "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: สำหรับการโอนเงินระหว่างนิติบุคคล และสำหรับการโอนเงินระหว่างบุคคล วงเงินไม่เกิน 100,000 บาท ค่าธรรมเนียม 5.00 บาท/รายการ วงเงินมากกว่า 100,000 แต่ไม่เกิน 2,000,000 บาท ค่าธรรมเนียม 10.00 บาท/รายการ"
     ]
    },
    "promptpay_two_million": {
     "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: สำหรับการโอนเงินระหว่างนิติบุคคล และสำหรับการโอนเงินระหว่างบุคคล วงเงินไม่เกิน 100,000 บาท ค่าธรรมเนียม 5.00 บาท/รายการ วงเงินมากกว่า 100,000 แต่ไม่เกิน 2,000,000 บาท ค่าธรรมเนียม 10.00 บาท/รายการ"
     ]
    },
    "direct_credit_in_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -661,34 +881,50 @@
   "provider": "ไอซีบีซี (ไทย)",
   "Fees": {
    "transfer_next_day": {
-    "description": "12 บาท/รายการ"
+    "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB"
    },
    "transfer_same_day_100k": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "75 บาท/รายการ"
+    "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "200 บาท/รายการ"
+    "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB"
    },
    "promptpay_100k": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "7.5 บาท/รายการ"
+    "description": "7.5 บาท/รายการ",
+    "amount": 7.5,
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -706,37 +942,51 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
     ]
    },
    "transfer_same_day_100k": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "75 บาท/รายการ"
+    "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "200 บาท/รายการ"
+    "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB"
    },
    "promptpay_100k": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -754,45 +1004,63 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: THB20 per record, THB100 per file"
     ]
    },
    "transfer_same_day_100k": {
     "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: THB20 per record, THB100 per file"
     ]
    },
    "transfer_same_day_500k": {
     "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: THB20 per record, THB100 per file"
     ]
    },
    "transfer_same_day_two_million": {
     "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: THB20 per record, THB100 per file"
     ]
    },
    "promptpay_100k": {
-    "description": "5 บาท/รายการ"
+    "description": "5 บาท/รายการ",
+    "amount": 5,
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "5 บาท/รายการ"
+    "description": "5 บาท/รายการ",
+    "amount": 5,
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "12 บาท/รายการ"
+    "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -810,37 +1078,53 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
     ]
    },
    "transfer_same_day_100k": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "75 บาท/รายการ"
+    "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "200 บาท/รายการ"
+    "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB"
    },
    "promptpay_100k": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -857,34 +1141,50 @@
   "provider": "ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น",
   "Fees": {
    "transfer_next_day": {
-    "description": "12 บาท/รายการ"
+    "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB"
    },
    "transfer_same_day_100k": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "75 บาท/รายการ"
+    "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "200 บาท/รายการ"
+    "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB"
    },
    "promptpay_100k": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -902,45 +1202,63 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: ค่าธรรมเนียมยกเลิกรายการเฉพาะช่องทาง Internet Banking"
     ]
    },
    "transfer_same_day_100k": {
     "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: ค่าธรรมเนียมยกเลิกรายการเฉพาะช่องทาง Internet Banking"
     ]
    },
    "transfer_same_day_500k": {
     "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: ค่าธรรมเนียมยกเลิกรายการเฉพาะช่องทาง Internet Banking"
     ]
    },
    "transfer_same_day_two_million": {
     "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: ค่าธรรมเนียมยกเลิกรายการเฉพาะช่องทาง Internet Banking"
     ]
    },
    "promptpay_100k": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
     "description": "ตามอัตราที่กำหนด",
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: เฉพาะการหักบัญชี (Direct Debit) นอกเขตสำนักหักบัญชีกรุงเทพฯ หากยอดเงินหักบัญชีเกิน 30,000 บาท/รายการ ให้คิดในอัตราเงินโอนข้ามจังหวัด (หมื่นบาทละ 10 บาท ส่วนเกินคิดตามส่วนเลขหลักพัน) ค่าบริการสูงสุดไม่เกิน 1,000 บาท/รายการกรณีการหักบัญชี (Direct Debit) ที่ไม่สามารถหักบัญชีได้ ให้คิดค่าบริการครึ่งหนึ่งของอัตราค่าบริการหากคิดค่าบริการหักบัญชี (Direct Debit) ทุกรายการรวมกันแล้วต่ำกว่า 1,000 บาท ให้คิดค่าบริการขั้นต่ำ 1,000 บาท/สื่อบันทึกข้อมูล"
     ]
@@ -961,36 +1279,50 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: โอนได้ไม่เกิน 2,000,000 บาทต่อรายการ"
     ]
    },
    "transfer_same_day_100k": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "75 บาท/รายการ"
+    "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "200 บาท/รายการ"
+    "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB"
    },
    "promptpay_100k": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -1008,43 +1340,58 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: โอนได้ไม่เกิน 2,000,000.00 บาท ต่อ 1รายการ"
     ]
    },
    "transfer_same_day_100k": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "promptpay_100k": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
    }
   },
   "other_fees": {
-   "description": "-  การโอนเงินผ่าน Direct Credit ไปยังธนาคารพันธมิตร (BBL, KBANK, SCB) 100.00 บาท/รายการ ไม่กำหนดจำนวนเงินโอน-  การรับชำระเงินแทนสำหรับค่าไฟฟ้าการไฟฟ้านครหลวง ชำระผ่าน Internet banking / website ของผู้ให้บริการ 10 บาท / 1 รายการ และ ค่าธรรมเนียมรายเดือนละ 100 บาท-  การรับชำระเงินแทนสำหรับค่าไฟฟ้าการไฟฟ้านครหลวง ชำระผ่านการหักบัญชีอัตโนมัติ 15 บาท / 1 รายการ-  การรับชำระเงินแทนสำหรับค่าไฟฟ้าการไฟฟ้าส่วนภูมิภาค ชำระผ่านการหักบัญชีอัตโนมัติ ไม่มีค่าธรรมเนียม-  การรับชำระเงินแทนสำหรับค่าภาษีกรมสรรพากร ชำระผ่าน Internet banking / website ของผู้ให้บริการ ค่าธรรมเนียมรายเดือนละ 300 บาท-  การรับชำระเงินแทนสำหรับค่าภาษีกรมสรรพสามิตร ชำระผ่าน Internet banking / website ของผู้ให้บริการ ค่าธรรมเนียมรายเดือนละ 100 บาท-  การรับชำระเงินแทนสำหรับค่าภาษีกรมศุลกากร ชำระผ่าน Internet banking / website ของผู้ให้บริการ 15 บาท / 1 รายการ-  การรับชำระเงินแทนสำหรับค่าบริการอื่นๆของสำนักงานประกันสังคม ชำระผ่าน Internet banking / website ของผู้ให้บริการ ไม่มีค่าธรรมเนียม"
+   "description": "-  การโอนเงินผ่าน Direct Credit ไปยังธนาคารพันธมิตร (BBL, KBANK, SCB) 100.00 บาท/รายการ ไม่กำหนดจำนวนเงินโอน-  การรับชำระเงินแทนสำหรับค่าไฟฟ้าการไฟฟ้านครหลวง ชำระผ่าน Internet banking / website ของผู้ให้บริการ 10 บาท / 1 รายการ และ ค่าธรรมเนียมรายเดือนละ 100 บาท-  การรับชำระเงินแทนสำหรับค่าไฟฟ้าการไฟฟ้านครหลวง ชำระผ่านการหักบัญชีอัตโนมัติ 15 บาท / 1 รายการ-  การรับชำระเงินแทนสำหรับค่าไฟฟ้าการไฟฟ้าส่วนภูมิภาค ชำระผ่านการหักบัญชีอัตโนมัติ ไม่มีค่าธรรมเนียม-  การรับชำระเงินแทนสำหรับค่าภาษีกรมสรรพากร ชำระผ่าน Internet banking / website ของผู้ให้บริการ ค่าธรรมเนียมรายเดือนละ 300 บาท-  การรับชำระเงินแทนสำหรับค่าภาษีกรมสรรพสามิตร ชำระผ่าน Internet banking / website ของผู้ให้บริการ ค่าธรรมเนียมรายเดือนละ 100 บาท-  การรับชำระเงินแทนสำหรับค่าภาษีกรมศุลกากร ชำระผ่าน Internet banking / website ของผู้ให้บริการ 15 บาท / 1 รายการ-  การรับชำระเงินแทนสำหรับค่าบริการอื่นๆของสำนักงานประกันสังคม ชำระผ่าน Internet banking / website ของผู้ให้บริการ ไม่มีค่าธรรมเนียม",
+   "currency": "THB"
   },
   "additional_info": {
    "fee_website": "https://www.mizuhogroup.com/asia-pacific/thailand/service"
@@ -1055,45 +1402,63 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: ยอดเงินไม่เกิน 2,000,000 ต่อรายการ"
     ]
    },
    "transfer_same_day_100k": {
     "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: ค่าธรรมเนียมขอคืนเงิน 200 บาท บวกค่าใช้จ่ายที่เกิดขึ้นจริง"
     ]
    },
    "transfer_same_day_500k": {
     "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: ค่าธรรมเนียมขอคืนเงิน 200 บาท บวกค่าใช้จ่ายที่เกิดขึ้นจริง"
     ]
    },
    "transfer_same_day_two_million": {
     "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: ค่าธรรมเนียมขอคืนเงิน 200 บาท บวกค่าใช้จ่ายที่เกิดขึ้นจริง"
     ]
    },
    "promptpay_100k": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "15 - 50 บาท/รายการ"
+    "description": "15 - 50 บาท/รายการ",
+    "min_amount": 15,
+    "max_amount": 50,
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -1111,30 +1476,40 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
     ]
    },
    "transfer_same_day_100k": {
     "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
     ]
    },
    "transfer_same_day_500k": {
     "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
     ]
    },
    "transfer_same_day_two_million": {
     "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
     ]
    },
    "promptpay_100k": {
     "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: การโอนเงินครั้งละหลายรายการแบบ Batch",
      "การโอนเงินภายในวันทำการถัดไป (Next Day) 10 บาท/รายการสำหรับการโอนตั้งแต่ 0",
@@ -1146,6 +1521,8 @@
    },
    "promptpay_two_million": {
     "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: การโอนเงินครั้งละหลายรายการแบบ Batch",
      "การโอนเงินภายในวันทำการถัดไป (Next Day) 10 บาท/รายการสำหรับการโอนตั้งแต่ 0",
@@ -1156,16 +1533,20 @@
     ]
    },
    "direct_credit_in_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -1183,6 +1564,8 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
@@ -1190,6 +1573,8 @@
    },
    "transfer_same_day_100k": {
     "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
@@ -1197,6 +1582,8 @@
    },
    "transfer_same_day_500k": {
     "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
@@ -1204,6 +1591,8 @@
    },
    "transfer_same_day_two_million": {
     "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
@@ -1211,6 +1600,8 @@
    },
    "promptpay_100k": {
     "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
@@ -1218,22 +1609,32 @@
    },
    "promptpay_two_million": {
     "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการโดยไม่จำกัดจำนวนรายการต่อวันต่อหนึ่งบัญชีผู้รับโอน"
     ]
    },
    "direct_credit_in_branch": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "25 บาท/รายการ"
+    "description": "25 บาท/รายการ",
+    "amount": 25,
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -1251,6 +1652,8 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการ",
@@ -1259,6 +1662,8 @@
    },
    "transfer_same_day_100k": {
     "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "ค่าธรรมเนียมในการขอยกเลิกรายการ คิด 200.00 บาทต่อ ไฟล์ข้อมูล"
@@ -1266,6 +1671,8 @@
    },
    "transfer_same_day_500k": {
     "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "ค่าธรรมเนียมในการขอยกเลิกรายการ คิด 200.00 บาทต่อ ไฟล์ข้อมูล"
@@ -1273,28 +1680,42 @@
    },
    "transfer_same_day_two_million": {
     "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "ค่าธรรมเนียมในการขอยกเลิกรายการ คิด 200.00 บาทต่อ ไฟล์ข้อมูล"
     ]
    },
    "promptpay_100k": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -1312,6 +1733,8 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "โอนได้ไม่เกิน 2,000,000 บาทต่อรายการ",
@@ -1320,6 +1743,8 @@
    },
    "transfer_same_day_100k": {
     "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "ค่าธรรมเนียมในการขอยกเลิกรายการ คิด 200.00 บาทต่อ ไฟล์ข้อมูล"
@@ -1327,6 +1752,8 @@
    },
    "transfer_same_day_500k": {
     "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "ค่าธรรมเนียมในการขอยกเลิกรายการ คิด 200.00 บาทต่อ ไฟล์ข้อมูล"
@@ -1334,28 +1761,42 @@
    },
    "transfer_same_day_two_million": {
     "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข:",
      "ค่าธรรมเนียมในการขอยกเลิกรายการ คิด 200.00 บาทต่อ ไฟล์ข้อมูล"
     ]
    },
    "promptpay_100k": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -1373,36 +1814,56 @@
   "Fees": {
    "transfer_next_day": {
     "description": "12 บาท/รายการ",
+    "amount": 12,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: โอนได้ไม่เกิน 2,000,000 บาทต่อรายการ"
     ]
    },
    "transfer_same_day_100k": {
-    "description": "20 บาท/รายการ"
+    "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB"
    },
    "transfer_same_day_500k": {
-    "description": "75 บาท/รายการ"
+    "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB"
    },
    "transfer_same_day_two_million": {
-    "description": "200 บาท/รายการ"
+    "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB"
    },
    "promptpay_100k": {
-    "description": "10 บาท/รายการ"
+    "description": "10 บาท/รายการ",
+    "amount": 10,
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_credit_across_branch": {
-    "description": "25 บาท/รายการ"
+    "description": "25 บาท/รายการ",
+    "amount": 25,
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "15 บาท/รายการ"
+    "description": "15 บาท/รายการ",
+    "amount": 15,
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "25 บาท/รายการ"
+    "description": "25 บาท/รายการ",
+    "amount": 25,
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
@@ -1420,6 +1881,8 @@
   "Fees": {
    "transfer_next_day": {
     "description": "16 บาท/รายการ",
+    "amount": 16,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: THB 200: STP",
      "รายการอัตโนมัติTHB 800: Repair",
@@ -1430,6 +1893,8 @@
    },
    "transfer_same_day_100k": {
     "description": "20 บาท/รายการ",
+    "amount": 20,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: STP",
      "รายการอัตโนมัติ"
@@ -1437,6 +1902,8 @@
    },
    "transfer_same_day_500k": {
     "description": "75 บาท/รายการ",
+    "amount": 75,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: STP",
      "รายการอัตโนมัติ"
@@ -1444,32 +1911,41 @@
    },
    "transfer_same_day_two_million": {
     "description": "200 บาท/รายการ",
+    "amount": 200,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: STP",
      "รายการอัตโนมัติ"
     ]
    },
    "promptpay_100k": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "promptpay_two_million": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_credit_in_branch": {
     "description": "ขั้นต่ำ 104 บาท/รายการ",
+    "amount": 104,
+    "currency": "THB",
     "conditions": [
      "เงื่อนไข: STP",
      "รายการอัตโนมัติ"
     ]
    },
    "direct_credit_across_branch": {
-    "description": "ไม่มีค่าธรรมเนียม"
+    "description": "ไม่มีค่าธรรมเนียม",
+    "currency": "THB"
    },
    "direct_debit_in_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "direct_debit_across_branch": {
-    "description": "ไม่มีบริการ"
+    "description": "ไม่มีบริการ",
+    "currency": "THB"
    },
    "other_fees": {
     "description": null
