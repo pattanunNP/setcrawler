@@ -3,6 +3,7 @@ package models
 import (
 	"carinsurance/utils"
 	"sort"
+	"strings"
 )
 
 type CarInsuranceDetails struct {
@@ -17,13 +18,13 @@ type CarInsuranceDetails struct {
 
 type GeneralFees struct {
 	LatePaymentInterest      string    `json:"late_payment_interest"`
+	LatePaymentInterestValue float64   `json:"late_payment_interest_value,omitempty"`
 	DebtCollectionFee        []string  `json:"debt_collection_fee"`
-	StampDutyFee             []string  `json:"stamp_duty_fee"`
-	ChequeReturnFee          string    `json:"cheque_return_fee"`
-	LatePaymentInterestValue float64   `json:"-"`
 	DebtCollectionFeeValues  []int     `json:"debt_collection_fee_values,omitempty"`
+	StampDutyFee             []string  `json:"stamp_duty_fee"`
 	StampDutyFeeValues       []float64 `json:"stamp_duty_fee_values,omitempty"`
-	ChequeReturnFeeValue     float64   `json:"-"`
+	ChequeReturnFee          string    `json:"cheque_return_fee"`
+	ChequeReturnFeeValue     float64   `json:"cheque_return_fee_value,omitempty"`
 }
 
 type CardFees struct {
@@ -36,6 +37,7 @@ type PaymentFees struct {
 	FreePaymentChannels          []string `json:"free_payment_channels"`
 	ProviderAccountDeductionFee  string   `json:"provider_account_deduction_fee"`
 	OtherProviderAccountFee      string   `json:"other_provider_account_fee"`
+	OtherProviderAccountFeeValue float64  `json:"other_provider_account_fee_value,omitempty"`
 	ServiceProviderBranchFee     string   `json:"service_provider_branch_fee"`
 	OtherBranchFee               string   `json:"other_branch_fee"`
 	ServiceCounterFee            string   `json:"service_counter_fee"`
@@ -47,8 +49,9 @@ type PaymentFees struct {
 }
 
 type OtherFees struct {
-	LawyerFeeLitigation []string `json:"lawyer_fee_litigation"`
-	OtherFees           *string  `json:"other_fees,omitempty"`
+	LawyerFeeLitigation []string  `json:"lawyer_fee_litigation"`
+	LawyerFeeValues     []float64 `json:"lawyer_fee_values,omitempty"`
+	OtherFees           *string   `json:"other_fees,omitempty"`
 }
 
 type AdditionalInformation struct {
@@ -59,6 +62,8 @@ func (c *CarInsuranceDetails) PopulateComparableFields() {
 	// Populate comparable fields based on text values
 	c.GeneralFees.LatePaymentInterestValue = utils.ConvertTextToFloat(c.GeneralFees.LatePaymentInterest)
 	c.GeneralFees.ChequeReturnFeeValue = utils.ConvertTextToFloat(c.GeneralFees.ChequeReturnFee)
+	c.GeneralFees.DebtCollectionFeeValues = utils.ExtractNumbersFromText(strings.Join(c.GeneralFees.DebtCollectionFee, " "))
+	c.GeneralFees.StampDutyFeeValues = utils.ExtractFloatNumbersFromText(strings.Join(c.GeneralFees.StampDutyFee, " "))
 }
 
 func SortByServiceProvider(details []CarInsuranceDetails) {

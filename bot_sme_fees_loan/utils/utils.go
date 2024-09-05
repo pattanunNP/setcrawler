@@ -73,3 +73,76 @@ func DetermineTotalPage(doc *goquery.Document) int {
 	})
 	return totalPages
 }
+
+func ExtractPercentages(text string) (minPercentage, maxPercentage float64) {
+	// Regex to capture percentages, both individual and ranges with decimals
+	re := regexp.MustCompile(`(\d+(\.\d+)?) ?%? ?-? ?(\d+(\.\d+)?)? ?%`)
+
+	// Find all matches in the text
+	matches := re.FindStringSubmatch(text)
+
+	// Check if there are matches
+	if len(matches) > 0 {
+		// Extract the first percentage as minPercentage
+		minPercentage, err1 := strconv.ParseFloat(matches[1], 64)
+		if err1 != nil {
+			minPercentage = 0
+		}
+
+		// If there's a second percentage, extract it as maxPercentage
+		if len(matches) > 3 && matches[3] != "" {
+			maxPercentage, err2 := strconv.ParseFloat(matches[3], 64)
+			if err2 != nil {
+				maxPercentage = minPercentage
+			}
+			return minPercentage, maxPercentage
+		}
+
+		// If no second percentage, return the first one as both min and max
+		return minPercentage, minPercentage
+	}
+
+	// Default return if no percentages are found
+	return 0, 0
+}
+
+func ExtractAmounts(text string) (minAmount, maxAmount int) {
+	// Adjust regex to focus on numeric ranges, ignoring extra words
+	re := regexp.MustCompile(`(\d+(?:,\d{3})*)`)
+	matches := re.FindAllString(text, -1)
+
+	// Handle cases where we have two numbers (min and max) or just one
+	if len(matches) >= 2 {
+		minAmount, err := strconv.Atoi(strings.ReplaceAll(matches[0], ",", ""))
+		if err != nil {
+			return 0, 0
+		}
+		maxAmount, err := strconv.Atoi(strings.ReplaceAll(matches[1], ",", ""))
+		if err != nil {
+			return minAmount, minAmount // If second value fails, fallback to first
+		}
+		return minAmount, maxAmount
+	} else if len(matches) == 1 {
+		// Only one value, use as both min and max
+		amount, err := strconv.Atoi(strings.ReplaceAll(matches[0], ",", ""))
+		if err == nil {
+			return amount, amount
+		}
+	}
+
+	// Default return in case of no matches or error
+	return 0, 0
+}
+
+func SplitByHyphen(text string) []string {
+	// Clean up spaces and split by hyphen
+	parts := strings.Split(text, "-")
+
+	// Trim whitespace from each part
+	for i, part := range parts {
+		parts[i] = strings.TrimSpace(part)
+	}
+
+	// Return the resulting array
+	return parts
+}

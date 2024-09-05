@@ -18,7 +18,6 @@ import (
 
 type ProductDetails struct {
 	ProductName                string               `json:"product_name"`
-	NormalizedProductName      string               `json:"normalized_product_name"`
 	ProductFeatures            Features             `json:"product_features_conditions"`
 	PrimaryCardApplicantAge    int                  `json:"primary_card_applicant_age"`
 	MinimumIncomeAndConditions IncomeConditions     `json:"minimum_income_and_conditions"`
@@ -44,10 +43,17 @@ type IncomeConditions struct {
 }
 
 type GeneralFee struct {
-	FeeType     string       `json:"fee_type"`
-	Amount      int          `json:"amount,omitempty"`
-	AmountRange *AmountRange `json:"amount_range"`
-	Conditions  []string     `json:"conditions"`
+	FeeType     string         `json:"fee_type"`
+	Amount      int            `json:"amount,omitempty"`
+	AmountRange *AmountRange   `json:"amount_range"`
+	Conditions  []FeeCondition `json:"conditions"` // Changed to structured conditions
+}
+
+type FeeCondition struct {
+	Platform string `json:"platform"`
+	Amount   int    `json:"amount"`
+	Currency string `json:"currency"`
+	Note     string `json:"note"`
 }
 
 type AmountRange struct {
@@ -122,8 +128,8 @@ type AdditionInfo struct {
 
 func main() {
 	url := "https://app.bot.or.th/1213/MCPD/ProductApp/Credit/CompareProductList"
-	payloadTemplate := `{"ProductIdList":"3629,3622,3630,5578,5580,5582,4655,4656,1604,1607,2259,5573,5161,2251,5534,5537,5177,5491,5593,5592,3627,3631,3600,3664,3624,3601,3625,3603,3633,3626,3604,3661,3620,3634,3636,3635,3606,3638,3637,3640,3639,3605,3672,3668,3628,3662,3621,3648,3607,3642,3649,3643,3651,3613,3644,3652,3609,3645,3653,3646,3647,3615,3656,3610,3650,3671,3658,3655,3616,3670,3612,4653,4657,4658,4659,4660,5568,5528,2256,5570,2245,5531,4471,4472,4467,5479,5494,5484,5497,5483,5503,1603,4760,4765,5473,3804,3800,4445,4482,4483,4479,4480,4452,4453,4476,4477,4454,4456,4457,4458,4460,4461,4462,4463,4464,4465,4444,4446,4447,4449,4450,4473,4470,5498,5501,5486,5540,5555,2242,5560,5496,1605,1600,1601,1602,4475,2246,5563,5565,5539,5525,5567,5556,2244,5562,2255,5536,2260,5574,2252,5546,5548,5538,5577,5589,5590,5594,5586,5527,3802,5529,5542,2258,5572,2249,5533,5587,4459,4474,4469,5499,5492,5481,5148,5435,3608,3641,3669,3611,3617,3660,5114,5287,5282,5285,5193,5137,5211,5173,5162,5156,5222,5126,5202,5158,5147,5240,5294,5296,5323,5306,5300,5329,749,753,752,751,750,754,5489,5500,5480,5495,4484,4481,4478,4455,4466,4451,3808,3797,3798,5502,5482,5566,2257,5571,2247,5532,5575,5576,5541,5554,2248,5544,2240,5558,5429,3996,3993,5591,3994,3995,3602,3632,3654,3665,3663,3618,3657,3623,1606,5526,5553,5552,3806,3799,3801,2253,5535,5564,3614,3666,3667,3619,3659,2250,5545,2241,5559,5549,2254,5547,2243,5561,5550,4448,4468,5588,5493,5266,5305,5304,5246,4654,5462,5213,5233,5478,5467,3997,5180,5557,5543,5551,5524,5335","Page":%d,"Limit":3}`
-	// payloadTemplate := `{"ProductIdList":"3629,3622,3630,4633,4632,4634,4655,4656,1604,1607,2259,5573,5161,2251,5534,5537,5177,5491,5593,5592,3627,3631,3600,3664,3624,3601,3625,3603,3633,3626,3604,3661,3620,3634","Page":%d,"Limit":3}`
+	// payloadTemplate := `{"ProductIdList":"3629,3622,3630,5578,5580,5582,4655,4656,1604,1607,2259,5573,5161,2251,5534,5537,5177,5491,5593,5592,3627,3631,3600,3664,3624,3601,3625,3603,3633,3626,3604,3661,3620,3634,3636,3635,3606,3638,3637,3640,3639,3605,3672,3668,3628,3662,3621,3648,3607,3642,3649,3643,3651,3613,3644,3652,3609,3645,3653,3646,3647,3615,3656,3610,3650,3671,3658,3655,3616,3670,3612,4653,4657,4658,4659,4660,5568,5528,2256,5570,2245,5531,4471,4472,4467,5479,5494,5484,5497,5483,5503,1603,4760,4765,5473,3804,3800,4445,4482,4483,4479,4480,4452,4453,4476,4477,4454,4456,4457,4458,4460,4461,4462,4463,4464,4465,4444,4446,4447,4449,4450,4473,4470,5498,5501,5486,5540,5555,2242,5560,5496,1605,1600,1601,1602,4475,2246,5563,5565,5539,5525,5567,5556,2244,5562,2255,5536,2260,5574,2252,5546,5548,5538,5577,5589,5590,5594,5586,5527,3802,5529,5542,2258,5572,2249,5533,5587,4459,4474,4469,5499,5492,5481,5148,5435,3608,3641,3669,3611,3617,3660,5114,5287,5282,5285,5193,5137,5211,5173,5162,5156,5222,5126,5202,5158,5147,5240,5294,5296,5323,5306,5300,5329,749,753,752,751,750,754,5489,5500,5480,5495,4484,4481,4478,4455,4466,4451,3808,3797,3798,5502,5482,5566,2257,5571,2247,5532,5575,5576,5541,5554,2248,5544,2240,5558,5429,3996,3993,5591,3994,3995,3602,3632,3654,3665,3663,3618,3657,3623,1606,5526,5553,5552,3806,3799,3801,2253,5535,5564,3614,3666,3667,3619,3659,2250,5545,2241,5559,5549,2254,5547,2243,5561,5550,4448,4468,5588,5493,5266,5305,5304,5246,4654,5462,5213,5233,5478,5467,3997,5180,5557,5543,5551,5524,5335","Page":%d,"Limit":3}`
+	payloadTemplate := `{"ProductIdList":"3629,3622,3630,4633,4632,4634,4655,4656,1604,1607,2259","Page":%d,"Limit":3}`
 
 	// First, get the total number of pages from the initial request
 	initialPage := fmt.Sprintf(payloadTemplate, 1)
@@ -224,7 +230,7 @@ func main() {
 		})
 
 		// Stop for 5 seconds before making the next request to avoid overloading the server
-		time.Sleep(5 * time.Second)
+		time.Sleep(2 * time.Second)
 	}
 
 	// Convert the combined products to JSON and save to a file
@@ -336,33 +342,62 @@ func extractCreditLimit(doc *goquery.Document, colCount int) int {
 	return limit
 }
 
+func extractFeeConditions(conditions []string) []FeeCondition {
+	var feeConditions []FeeCondition
+
+	// Regular expression to extract amount, currency, and platform
+	re := regexp.MustCompile(`(\d+)\s*(บาท)\s*/ครั้ง/รายการใช้จ่ายผ่านบัตร\s*(\w+)(.*)`)
+
+	for _, condition := range conditions {
+		matches := re.FindStringSubmatch(condition)
+		if len(matches) > 0 {
+			amount, _ := strconv.Atoi(matches[1])
+			currency := matches[2]
+			platform := matches[3]
+			note := strings.TrimSpace(matches[4])
+
+			// Create a new FeeCondition record
+			feeCondition := FeeCondition{
+				Platform: platform,
+				Amount:   amount,
+				Currency: currency,
+				Note:     note,
+			}
+			feeConditions = append(feeConditions, feeCondition)
+		}
+	}
+	return feeConditions
+}
+
 func extractGeneralFees(doc *goquery.Document, colCount int) []GeneralFee {
 	var generalFees []GeneralFee
 
 	feeTypes := []struct {
-		FeeTypeSelector string
-		AmountSelector  string
-		IsAmountRange   bool
+		FeeTypeSelector   string
+		AmountSelector    string
+		IsAmountRange     bool
+		ConditionSelector string
 	}{
-		{"attr-primaryHolderEntranceFeeDisplay", "attr-primaryHolderEntranceFeeDisplay", false},
-		{"attr-primaryHolderAnnualFee", "attr-primaryHolderAnnualFee", true},
-		{"attr-replacementCardFee", "attr-replacementCardFee", false},
-		{"attr-CostFXRisk", "attr-CostFXRisk", true},
-		{"attr-replacementCardFPinFee", "attr-replacementCardFPinFee", false},
-		{"attr-copyStatementFee", "attr-copyStatementFee", false},
-		{"attr-TransactionVerifyFee", "attr-TransactionVerifyFee", true},
-		{"attr-copySaleSlipFee", "attr-copySaleSlipFee", false},
-		{"attr-fineChequeReturn", "attr-fineChequeReturn", false},
-		{"attr-GovernmentAgencyRelatedPaymentFee", "attr-GovernmentAgencyRelatedPaymentFee", true},
-		{"attr-otherFee", "attr-otherFee", false},
+		{"attr-primaryHolderEntranceFeeDisplay", "attr-primaryHolderEntranceFeeDisplay", false, "attr-primaryHolderEntranceFeeDisplay"},
+		{"attr-primaryHolderAnnualFee", "attr-primaryHolderAnnualFee", true, "attr-primaryHolderAnnualFee"},
+		{"attr-replacementCardFee", "attr-replacementCardFee", false, "attr-replacementCardFee"},
+		{"attr-CostFXRisk", "attr-CostFXRisk", true, "attr-CostFXRisk"},
+		{"attr-replacementCardFPinFee", "attr-replacementCardFPinFee", false, "attr-replacementCardFPinFee"},
+		{"attr-copyStatementFee", "attr-copyStatementFee", false, "attr-copyStatementFee"},
+		{"attr-TransactionVerifyFee", "attr-TransactionVerifyFee", true, "attr-TransactionVerifyFee"},
+		{"attr-copySaleSlipFee", "attr-copySaleSlipFee", false, "attr-copySaleSlipFee"},
+		{"attr-fineChequeReturn", "attr-fineChequeReturn", false, "attr-fineChequeReturn"},
+		{"attr-GovernmentAgencyRelatedPaymentFee", "attr-GovernmentAgencyRelatedPaymentFee", true, "attr-GovernmentAgencyRelatedPaymentFee"},
+		{"attr-otherFee", "attr-otherFee", false, "attr-otherFee"},
 	}
 
 	for _, feeType := range feeTypes {
 		fee := GeneralFee{
 			FeeType: cleanText(doc.Find(fmt.Sprintf("tr.%s .text-center.frst-col", feeType.FeeTypeSelector)).Text()),
 		}
-		conditionsText := cleanText(doc.Find(fmt.Sprintf("tr.%s .text-primary", feeType.FeeTypeSelector)).Text())
-		fee.Conditions = splitAndClean(conditionsText)
+		conditionsText := cleanText(doc.Find(fmt.Sprintf("tr.%s .cmpr-col.col%d", feeType.ConditionSelector, colCount)).Text())
+		rawConditions := splitAndClean(conditionsText)
+		fee.Conditions = extractFeeConditions(rawConditions) // Store structured conditions
 
 		if feeType.IsAmountRange {
 			amountRange := extractAmountRange(doc, colCount, feeType.AmountSelector)
@@ -516,10 +551,51 @@ func extractLatePaymentPenalties(doc *goquery.Document, colCount int) []LatePaym
 
 		conditionsText := cleanText(doc.Find(fmt.Sprintf("tr.%s .text-primary", pt.ConditionsSelector)).Text())
 		penalty.Conditions = splitAndClean(conditionsText)
+
+		// Extract structured amounts from conditions
+		penalty.Amounts = extractConditions(penalty.Conditions)
+
 		penalties = append(penalties, penalty)
 	}
 
 	return penalties
+}
+
+func extractConditions(conditions []string) []Amount {
+	var amounts []Amount
+
+	// Regular expression to capture the amount and currency from the text.
+	amountRegex := regexp.MustCompile(`(\d+)\s*(บาท)`)
+	frequencyRegex := regexp.MustCompile(`(ต่อรอบการทวงถามหนี้|ต่องวดการค้างชำระ)`)
+
+	for _, condition := range conditions {
+		var amount int
+		var currency, frequency string
+
+		// Extract amount and currency dynamically using regex
+		matches := amountRegex.FindStringSubmatch(condition)
+		if len(matches) > 1 {
+			amount, _ = strconv.Atoi(matches[1])
+			currency = matches[2]
+		}
+
+		// Extract frequency dynamically using regex
+		frequencyMatches := frequencyRegex.FindStringSubmatch(condition)
+		if len(frequencyMatches) > 0 {
+			frequency = frequencyMatches[0]
+		}
+
+		if amount > 0 && currency != "" {
+			amounts = append(amounts, Amount{
+				Condition: condition,
+				Amount:    amount,
+				Currency:  currency,
+				Frequency: frequency,
+			})
+		}
+	}
+
+	return amounts
 }
 
 func extractCashWithdrawalFees(doc *goquery.Document, colCount int) []CashWithdrawalFee {
